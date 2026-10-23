@@ -1,0 +1,35 @@
+{% extends "base.html.j2" %}
+{% from "_macros.html.j2" import filters, feed %}
+
+{% block main %}
+<div class="layout">
+  <section class="content" aria-labelledby="page-title">
+    <header class="page-head">
+      <h1 id="page-title">{{ title }} <span class="count" data-count>{{ count }}</span></h1>
+      <p>{{ subtitle }}</p>
+    </header>
+    {{ filters(options, periods, display_days, default_domain, kind=kind, show_segments=(kind == 'company')) }}
+    {{ feed(groups, root) }}
+  </section>
+
+  <aside class="side" aria-label="{{ 'Institutions' if kind == 'institution' else 'Entreprises' }}">
+    <details class="side-box" open>
+      <summary><h2>{{ 'Institutions' if kind == 'institution' else 'Entreprises' }}</h2>
+        <span class="hint">articles selon les filtres · clic : fiche</span></summary>
+      {% for g in sidebar %}
+      <div class="side-group">
+        <h3>{{ g.label }}</h3>
+        <ul>
+          {% for e in g.entities %}
+          <li data-side-entity="{{ e.id }}">
+            <a href="{{ root }}entite/{{ e.id }}.html">{{ e.name }}</a>
+            <span class="n" data-entity-count="{{ e.id }}">{{ e.count }}</span>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+      {% endfor %}
+    </details>
+  </aside>
+</div>
+{% endblock %}

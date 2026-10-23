@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="robots" content="noindex">
+  <title>{% block title %}{{ title }}{% endblock %} · Veille Géospatial & New Space</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='6' fill='%232563eb'/%3E%3Cellipse cx='16' cy='16' rx='14' ry='5' fill='none' stroke='%232563eb' stroke-width='2' transform='rotate(-25 16 16)'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="{{ root }}static/style.css?v={{ asset_version }}">
+  {% block styles %}{% endblock %}
+</head>
+<body data-page="{{ page }}" data-root="{{ root }}">
+  <header class="top">
+    <div class="top-inner">
+      <a class="brand" href="{{ root }}index.html">
+        <span class="brand-name">Veille</span> <span class="brand-sub">Géospatial &amp; New Space</span>
+      </a>
+      <nav class="tabs" aria-label="Rubriques">
+        {% for key, file, label in tabs %}
+        <a href="{{ root }}{{ file }}"{% if page == key %} aria-current="page"{% endif %}>{{ label }}</a>
+        {% endfor %}
+      </nav>
+      <label class="jump">
+        <span class="sr-only">Ouvrir une fiche</span>
+        <input type="search" id="jump" list="entity-list" placeholder="Fiche : ICEYE, CNES…" autocomplete="off">
+        <datalist id="entity-list">
+          {% for e in entity_index %}<option value="{{ e.name }}"></option>{% endfor %}
+        </datalist>
+      </label>
+      <p class="updated">Mis à jour le <time datetime="{{ updated_at.isoformat() }}">{{ updated_label }}</time></p>
+    </div>
+  </header>
+
+  <main>
+    {% block main %}{% endblock %}
+  </main>
+
+  <footer class="foot">
+    <p>
+      {{ feeds_ok }}/{{ feeds_total }} flux éditeurs et {{ searches_ok }}/{{ searches_total }} recherches Google News
+      lors de la dernière mise à jour. Titres et extraits fournis par les éditeurs ; cliquer pour lire l'article sur
+      le site source. Faits des fiches : Wikidata, complétés à la main.
+    </p>
+    {% if feeds_err %}
+    <p class="errors">Flux en erreur :
+      {% for s in feeds_err %}<span title="{{ s.url }}">{{ s.name }} ({{ s.error }})</span>{% if not loop.last %}, {% endif %}{% endfor %}
+    </p>
+    {% endif %}
+  </footer>
+
+  <script type="application/json" id="entity-index">{{ entity_index | tojson }}</script>
+  <script src="{{ root }}static/app.js?v={{ asset_version }}"></script>
+  {% block scripts %}{% endblock %}
+</body>
+</html>

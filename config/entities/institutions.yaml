@@ -1,0 +1,386 @@
+# Institutions suivies. Identifiants Wikidata vérifiés le 2026-10-23.
+#
+# Champs :
+#   id, name, wikidata, aliases, aliases_cs, description, highlights, news_query : comme companies.yaml
+#   full_name    nom développé
+#   type         clé de la section `types` ci-dessous
+#   countries    codes pays ISO ; vide pour une organisation multinationale
+#   region       région de rattachement pour une organisation multinationale (voir config/geo.yaml)
+#   domains      geospatial | newspace
+#   facts        (optionnel) corrige un fait Wikidata périmé (voir companies.yaml)
+
+types:
+  agence_spatiale: Agence spatiale
+  agence_civile: Agence civile
+  defense: Défense
+  renseignement: Renseignement
+  ue: Union européenne
+  international: Organisation internationale
+  regulateur: Régulateur
+
+institutions:
+  # ------------------------------------------------------------ France
+  - id: cnes
+    name: CNES
+    full_name: Centre national d'études spatiales
+    wikidata: Q48756
+    type: agence_spatiale
+    countries: [FR]
+    domains: [newspace, geospatial]
+    aliases: [Centre national d'études spatiales, French space agency]
+    aliases_cs: [CNES]
+    description: >-
+      Agence spatiale française : conçoit et finance les programmes spatiaux civils et duaux, et
+      représente la France à l'ESA.
+    highlights: [SWOT, CO3D]
+
+  - id: commandement-espace
+    name: Commandement de l'Espace
+    full_name: Commandement de l'Espace (armée de l'Air et de l'Espace)
+    wikidata: Q67185799
+    type: defense
+    countries: [FR]
+    domains: [newspace, geospatial]
+    aliases: [Commandement de l'espace, French Space Command]
+    description: >-
+      Commandement de l'armée de l'Air et de l'Espace chargé des opérations spatiales militaires
+      françaises, créé en 2019 et basé à Toulouse.
+    highlights: [AsterX, Syracuse IV, CSO]
+    news_query: '"Commandement de l''espace" OR "French Space Command"'
+
+  - id: dga
+    name: DGA
+    full_name: Direction générale de l'armement
+    wikidata: Q3029559
+    type: defense
+    countries: [FR]
+    domains: [newspace, geospatial]
+    aliases: [Direction générale de l'armement]
+    aliases_cs: [DGA]
+    description: >-
+      Agence d'acquisition du ministère des Armées : conduit les programmes d'armement, dont les
+      satellites militaires (CSO, Syracuse, CERES).
+    highlights: [CSO, Syracuse IV, CERES]
+    facts: {director: Emmanuel Chiva}   # Wikidata indique encore Joël Barre
+    news_query: '"DGA" spatial OR satellite OR espace'
+
+  - id: ministere-armees
+    name: Ministère des Armées
+    full_name: Ministère des Armées
+    wikidata: Q75706
+    type: defense
+    countries: [FR]
+    domains: [newspace, geospatial]
+    aliases: [ministère des Armées, ministre des Armées, French Ministry of the Armed Forces,
+              French Ministry of Armed Forces, French armed forces minister]
+    description: >-
+      Ministère français de la Défense : porte la loi de programmation militaire et la stratégie
+      spatiale de défense.
+    highlights: [Loi de programmation militaire]
+    facts: {director: Catherine Vautrin}   # Wikidata indique encore Sébastien Lecornu
+    news_query: '"ministère des Armées" spatial OR satellite OR espace'
+
+  # ------------------------------------------------------------ Europe
+  - id: esa
+    name: ESA
+    full_name: Agence spatiale européenne
+    wikidata: Q42262
+    type: agence_spatiale
+    countries: []
+    region: europe
+    domains: [newspace, geospatial]
+    aliases: [European Space Agency, Agence spatiale européenne]
+    aliases_cs: [ESA]
+    description: >-
+      Agence spatiale intergouvernementale européenne (siège à Paris) : sciences, lanceurs,
+      observation de la Terre, navigation et exploration.
+    highlights: [Ariane 6, Copernicus (segment spatial), European Launcher Challenge]
+    news_query: '"ESA" space OR satellite OR spatial'
+    news_editions: [en, fr]
+
+  - id: commission-europeenne
+    name: Commission européenne (DG DEFIS)
+    full_name: Direction générale de l'industrie de la défense et de l'espace
+    wikidata: Q82664954
+    type: ue
+    countries: []
+    region: europe
+    domains: [newspace, geospatial]
+    aliases: [DG DEFIS, Directorate-General for Defence Industry and Space, European Commission,
+              Commission européenne, EU Commission]
+    description: >-
+      Direction de la Commission européenne chargée de l'industrie de défense et de l'espace :
+      programme spatial de l'UE (Galileo, Copernicus, IRIS²) et Fonds européen de la défense.
+    highlights: [Galileo, Copernicus, IRIS², EU Space Act]
+    news_query: '"European Commission" space OR satellite OR "DG DEFIS" OR "EU Space Act"'
+    news_editions: [en, fr]
+
+  - id: euspa
+    name: EUSPA
+    full_name: Agence de l'Union européenne pour le programme spatial
+    wikidata: Q55610347
+    type: ue
+    countries: []
+    region: europe
+    domains: [geospatial, newspace]
+    aliases: [EUSPA, EU Agency for the Space Programme, European Union Agency for the Space Programme]
+    description: >-
+      Agence de l'UE basée à Prague, chargée de l'exploitation de Galileo et d'EGNOS, de la
+      sécurité du programme spatial et du marché aval de Copernicus.
+    highlights: [Galileo, EGNOS, GOVSATCOM]
+
+  - id: aed
+    name: AED
+    full_name: Agence européenne de défense
+    wikidata: Q1134173
+    type: ue
+    countries: []
+    region: europe
+    domains: [newspace, geospatial]
+    aliases: [European Defence Agency, Agence européenne de défense]
+    aliases_cs: [EDA]
+    description: >-
+      Agence de l'UE qui soutient la coopération capacitaire et la recherche de défense entre
+      États membres.
+    highlights: []
+    facts: {director: André Denk}   # Wikidata indique encore Jiří Šedivý
+    news_query: '"European Defence Agency"'
+
+  - id: satcen
+    name: SatCen
+    full_name: Centre satellitaire de l'Union européenne
+    wikidata: Q1388519
+    type: ue
+    countries: []
+    region: europe
+    domains: [geospatial]
+    aliases: [SatCen, EU Satellite Centre, European Union Satellite Centre,
+              Centre satellitaire de l'Union européenne]
+    description: >-
+      Centre satellitaire de l'UE (Torrejón, Espagne) : produits de renseignement géospatial au
+      profit de la politique de sécurité et de défense commune et des États membres.
+    highlights: []
+
+  - id: dlr
+    name: DLR
+    full_name: Centre allemand pour l'aéronautique et l'astronautique
+    wikidata: Q157332
+    type: agence_spatiale
+    countries: [DE]
+    domains: [newspace, geospatial]
+    aliases: [German Aerospace Center, Deutsches Zentrum für Luft- und Raumfahrt]
+    aliases_cs: [DLR]
+    description: >-
+      Centre allemand de recherche aérospatiale, qui gère aussi l'agence spatiale allemande.
+    highlights: []
+    news_query: '"DLR" space OR satellite OR Raumfahrt'
+
+  - id: asi
+    name: ASI
+    full_name: Agence spatiale italienne
+    wikidata: Q392953
+    type: agence_spatiale
+    countries: [IT]
+    domains: [newspace, geospatial]
+    aliases: [Italian Space Agency, Agenzia Spaziale Italiana, Agence spatiale italienne]
+    aliases_cs: [ASI]
+    description: >-
+      Agence spatiale italienne : programmes nationaux, dont COSMO-SkyMed avec la Défense, et
+      contribution à l'ESA.
+    highlights: [COSMO-SkyMed, IRIDE]
+    news_query: '"Italian Space Agency" OR "Agenzia Spaziale Italiana"'
+
+  - id: uksa
+    name: UK Space Agency
+    full_name: UK Space Agency
+    wikidata: Q1140638
+    type: agence_spatiale
+    countries: [GB]
+    domains: [newspace, geospatial]
+    aliases: [UK Space Agency]
+    aliases_cs: [UKSA]
+    description: >-
+      Agence spatiale britannique : financement des programmes civils et contribution du
+      Royaume-Uni à l'ESA.
+    highlights: []
+    news_query: '"UK Space Agency"'
+
+  # ------------------------------------------------------------ International
+  - id: otan
+    name: OTAN
+    full_name: Organisation du traité de l'Atlantique nord
+    wikidata: Q7184
+    type: international
+    countries: []
+    region: international
+    domains: [newspace, geospatial]
+    aliases: [NATO, OTAN, North Atlantic Treaty Organization, Organisation du traité de l'Atlantique nord]
+    description: >-
+      Alliance militaire transatlantique qui a reconnu l'espace comme domaine d'opérations et
+      développe ses capacités spatiales (programme APSS de surveillance depuis l'espace).
+    highlights: [APSS]
+    news_query: '"NATO" space OR satellite'
+    news_editions: [en, fr]
+
+  - id: uit
+    name: UIT
+    full_name: Union internationale des télécommunications
+    wikidata: Q376150
+    type: regulateur
+    countries: []
+    region: international
+    domains: [newspace]
+    aliases: [International Telecommunication Union, Union internationale des télécommunications]
+    aliases_cs: [ITU, UIT]
+    description: >-
+      Agence de l'ONU qui coordonne les fréquences radio et les positions orbitales des
+      satellites.
+    highlights: []
+    facts: {ceo: null, director: Doreen Bogdan-Martin}   # Wikidata indique encore Houlin Zhao
+    news_query: '"ITU" satellite OR spectrum OR orbit'
+
+  # ------------------------------------------------------------ États-Unis
+  - id: nasa
+    name: NASA
+    full_name: National Aeronautics and Space Administration
+    wikidata: Q23548
+    type: agence_spatiale
+    countries: [US]
+    domains: [newspace]
+    aliases: [NASA]
+    description: >-
+      Agence spatiale civile américaine : exploration (Artemis), sciences, et achats croissants de
+      services commerciaux.
+    highlights: [Artemis]
+
+  - id: ussf
+    name: US Space Force
+    full_name: United States Space Force
+    wikidata: Q55088961
+    type: defense
+    countries: [US]
+    domains: [newspace, geospatial]
+    aliases: [US Space Force, U.S. Space Force, United States Space Force, Space Force]
+    aliases_cs: [USSF]
+    description: >-
+      Branche spatiale des forces armées américaines, créée en 2019 ; premier client militaire
+      mondial du secteur spatial.
+    highlights: [Golden Dome]
+    news_query: '"Space Force"'
+
+  - id: sda
+    name: Space Development Agency
+    full_name: Space Development Agency
+    wikidata: Q75746123
+    type: defense
+    countries: [US]
+    domains: [newspace]
+    aliases: [Space Development Agency]
+    aliases_cs: [SDA]
+    description: >-
+      Agence de l'US Space Force qui achète par tranches des centaines de satellites en orbite
+      basse (transport de données, suivi de missiles).
+    highlights: [Proliferated Warfighter Space Architecture]
+    news_query: '"Space Development Agency"'
+
+  - id: nro
+    name: NRO
+    full_name: National Reconnaissance Office
+    wikidata: Q427818
+    type: renseignement
+    countries: [US]
+    domains: [geospatial]
+    aliases: [National Reconnaissance Office]
+    aliases_cs: [NRO]
+    description: >-
+      Agence américaine qui conçoit et opère les satellites de renseignement et achète de
+      l'imagerie commerciale.
+    highlights: []
+    news_query: '"National Reconnaissance Office" OR "NRO" satellite'
+
+  - id: nga
+    name: NGA
+    full_name: National Geospatial-Intelligence Agency
+    wikidata: Q1296491
+    type: renseignement
+    countries: [US]
+    domains: [geospatial]
+    aliases: [National Geospatial-Intelligence Agency]
+    aliases_cs: [NGA]
+    description: >-
+      Agence américaine du renseignement géospatial (GEOINT), grande acheteuse de données et
+      d'analyses commerciales.
+    highlights: []
+    news_query: '"National Geospatial-Intelligence Agency" OR "NGA" geospatial'
+
+  - id: noaa
+    name: NOAA
+    full_name: National Oceanic and Atmospheric Administration
+    wikidata: Q214700
+    type: agence_civile
+    countries: [US]
+    domains: [geospatial]
+    aliases: [National Oceanic and Atmospheric Administration]
+    aliases_cs: [NOAA]
+    description: >-
+      Agence américaine de l'océan et de l'atmosphère : satellites météorologiques et licences de
+      télédétection commerciale.
+    highlights: []
+    news_query: '"NOAA" satellite'
+
+  - id: fcc
+    name: FCC
+    full_name: Federal Communications Commission
+    wikidata: Q128831
+    type: regulateur
+    countries: [US]
+    domains: [newspace]
+    aliases: [Federal Communications Commission]
+    aliases_cs: [FCC]
+    description: >-
+      Régulateur américain des télécommunications : autorise les constellations de satellites et
+      attribue les fréquences.
+    highlights: []
+    news_query: '"FCC" satellite OR spectrum'
+
+  # ------------------------------------------------------------ Asie
+  - id: jaxa
+    name: JAXA
+    full_name: Agence d'exploration aérospatiale japonaise
+    wikidata: Q179103
+    type: agence_spatiale
+    countries: [JP]
+    domains: [newspace, geospatial]
+    aliases: [JAXA, Japan Aerospace Exploration Agency]
+    description: >-
+      Agence spatiale japonaise : lanceur H3, exploration et observation de la Terre.
+    highlights: [H3]
+
+  - id: isro
+    name: ISRO
+    full_name: Organisation indienne de recherche spatiale
+    wikidata: Q229058
+    type: agence_spatiale
+    countries: [IN]
+    domains: [newspace, geospatial]
+    aliases: [ISRO, Indian Space Research Organisation]
+    description: >-
+      Agence spatiale indienne : lanceurs PSLV, GSLV et LVM3, programme habité Gaganyaan, et
+      ouverture au secteur privé.
+    highlights: [Gaganyaan, LVM3]
+
+  - id: cnsa
+    name: CNSA
+    full_name: Administration spatiale nationale chinoise
+    wikidata: Q320644
+    type: agence_spatiale
+    countries: [CN]
+    domains: [newspace]
+    aliases: [China National Space Administration]
+    aliases_cs: [CNSA]
+    description: >-
+      Agence spatiale chinoise : exploration lunaire (Chang'e) et martienne, coopération
+      internationale.
+    highlights: [Chang'e]
+
+    news_query: '"CNSA" OR "China National Space Administration"'

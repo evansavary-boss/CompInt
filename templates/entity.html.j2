@@ -1,0 +1,98 @@
+{% extends "base.html.j2" %}
+{% from "_macros.html.j2" import filters, feed %}
+{% set e = view.entity %}
+
+{% block main %}
+<div class="layout">
+  <section class="content">
+    <nav class="crumbs" aria-label="Fil d'Ariane">
+      <a href="{{ root }}{{ 'index.html' if e.kind == 'institution' else 'economie.html' }}">{{ 'Politique' if e.kind == 'institution' else 'Économie' }}</a>
+      <span aria-hidden="true">›</span> <span>{{ e.name }}</span>
+    </nav>
+
+    <article class="profile">
+      <header class="profile-head">
+        {% if view.logo %}
+        <div class="logo"><img src="{{ view.logo }}" alt="Logo {{ e.name }}" loading="lazy" referrerpolicy="no-referrer"></div>
+        {% endif %}
+        <div>
+          <h1>{{ e.name }}</h1>
+          {% if e.full_name and e.full_name != e.name %}<p class="full-name">{{ e.full_name }}</p>{% endif %}
+          <p class="badges">
+            {% for t in view.tags %}<span class="badge">{{ t }}</span>{% endfor %}
+            {% if view.places %}<span class="badge badge-geo">{{ view.places }}</span>{% endif %}
+            {% for d in e.domains %}<span class="tag tag-{{ d }}">{{ 'Géo' if d == 'geospatial' else 'New Space' }}</span>{% endfor %}
+          </p>
+        </div>
+      </header>
+
+      <p class="description">{{ e.description }}</p>
+
+      <div class="profile-grid">
+        {% if view.facts %}
+        <dl class="facts">
+          {% for label, value in view.facts %}
+          <div><dt>{{ label }}</dt><dd>{{ value }}</dd></div>
+          {% endfor %}
+        </dl>
+        {% endif %}
+        {% if e.highlights %}
+        <div class="highlights">
+          <h2>{{ 'Programmes clés' if e.kind == 'institution' else 'Produits et satellites clés' }}</h2>
+          <ul>{% for h in e.highlights %}<li>{{ h }}</li>{% endfor %}</ul>
+        </div>
+        {% endif %}
+      </div>
+
+      <p class="links">
+        {% if view.website %}<a href="{{ view.website }}" target="_blank" rel="noopener noreferrer">{{ view.website_label }}</a>{% endif %}
+        {% if view.wikipedia %}<a href="{{ view.wikipedia }}" target="_blank" rel="noopener noreferrer">Wikipédia</a>{% endif %}
+        {% if e.wikidata %}<a href="https://www.wikidata.org/wiki/{{ e.wikidata }}" target="_blank" rel="noopener noreferrer">Wikidata</a>{% endif %}
+      </p>
+      <p class="source-note">
+        Faits issus de Wikidata{% if view.facts_fetched %} (consulté le {{ view.facts_fetched }}){% endif %}{% if view.facts_overridden %}, corrigés à la main pour : {{ view.facts_overridden | join(', ') }}{% endif %}.
+        Description rédigée.
+      </p>
+    </article>
+
+    <header class="page-head">
+      <h2 class="feed-title">Actualités <span class="count" data-count>{{ view.count }}</span></h2>
+    </header>
+    {{ filters(view.options, periods, retention_days, 'all') }}
+    {{ feed(view.groups, root, current=e.id) }}
+  </section>
+
+  <aside class="side">
+    <div class="side-box">
+      <h2>Activité</h2>
+      <p class="windows">
+        <span><strong>{{ view.windows[7] }}</strong> articles sur 7 j</span>
+        <span><strong>{{ view.windows[30] }}</strong> sur 30 j</span>
+        <span><strong>{{ view.windows[90] }}</strong> sur 90 j</span>
+      </p>
+      {% if view.events %}
+      <h3>Par type d'événement (90 j)</h3>
+      <ul class="bars">
+        {% for k, label, n in view.events %}
+        <li><span class="bar-label">{{ label }}</span>
+          <span class="bar"><span class="bar-fill ev-{{ k }}" style="width: {{ (100 * n / view.events_max) | round(0) }}%"></span></span>
+          <span class="n">{{ n }}</span></li>
+        {% endfor %}
+      </ul>
+      {% else %}
+      <p class="muted">Aucun événement détecté sur la période.</p>
+      {% endif %}
+    </div>
+    {% if view.related %}
+    <div class="side-box">
+      <h2>Souvent cités avec</h2>
+      <ul class="related">
+        {% for r in view.related %}
+        <li><a class="chip chip-{{ r.kind }}" href="{{ root }}entite/{{ r.id }}.html">{{ r.name }}</a> <span class="n">{{ r.count }}</span></li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endif %}
+  </aside>
+</div>
+{% endblock %}

@@ -4,6 +4,11 @@ on:
   schedule:
     - cron: "0 6 * * *"   # 06:00 UTC = 08:00 Paris (heure d'été) / 07:00 (heure d'hiver)
   workflow_dispatch:       # bouton "Run workflow" dans l'onglet Actions
+    inputs:
+      backfill:
+        description: "Rattrapage Google News sur 30 jours (premier lancement)"
+        type: boolean
+        default: false
 
 permissions:
   contents: write          # commit de data/ et docs/
@@ -15,7 +20,7 @@ concurrency:
 jobs:
   update:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 30    # ~100 recherches Google News espacées de 1,5 s
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -32,7 +37,11 @@ jobs:
       - name: Tests
         run: python -m pytest -q
 
-      - name: Collect, market and build
+      - name: Backfill Google News (optional)
+        if: ${{ inputs.backfill }}
+        run: python -m src.collect --backfill
+
+      - name: Refresh entities, collect, classify and build
         run: python -m src.build
 
       - name: Commit data and site
@@ -44,5 +53,6 @@ jobs:
             echo "Nothing to commit."
           else
             git commit -m "Mise à jour du $(TZ=Europe/Paris date +'%Y-%m-%d %H:%M')"
+            git pull --rebase
             git push
           fi

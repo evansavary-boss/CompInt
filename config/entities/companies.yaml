@@ -1,0 +1,692 @@
+# Entreprises suivies. Identifiants Wikidata vérifiés le 2026-10-23.
+#
+# Champs :
+#   id           identifiant court (URL de la fiche : entite/<id>.html)
+#   name         nom affiché
+#   wikidata     identifiant Wikidata (Q…) : siège, création, dirigeant, effectif, site, logo
+#   countries    codes pays ISO (voir config/geo.yaml) ; le premier est le pays principal
+#   segments     clés de la section `segments` ci-dessous
+#   domains      geospatial | newspace
+#   aliases      termes détectés dans les articles (insensibles à la casse et aux accents)
+#   aliases_cs   termes détectés en respectant la casse (sigles ambigus : SES, RFA…)
+#   description  2 lignes rédigées, modifiables
+#   highlights   produits, satellites ou lanceurs clés
+#   news_query   (optionnel) requête Google News ; par défaut : "<name>"
+#   facts        (optionnel) corrige un fait Wikidata périmé, prioritaire sur Wikidata ;
+#                null masque le champ. Clés : founded, headquarters, country, ceo, director,
+#                parent, employees, website, logo, wikipedia
+
+segments:
+  eo_optique: Observation optique
+  eo_radar: Observation radar (SAR)
+  eo_thermique: Observation thermique et hyperspectrale
+  rf_intel: Renseignement radiofréquence
+  geoint: Analyse géospatiale et logiciels
+  launcher: Lanceurs
+  telecom: Télécoms par satellite
+  manufacturing: Constructeurs de satellites
+  in_orbit: Services en orbite et exploration
+  defense: Défense et systèmes
+
+companies:
+  # ------------------------------------------------------------ Géospatial
+  - id: airbus-ds
+    name: Airbus Defence and Space
+    wikidata: Q15529123
+    countries: [FR, DE, ES]
+    segments: [eo_optique, eo_radar, manufacturing, defense]
+    domains: [geospatial, newspace]
+    aliases: [Airbus Defence and Space, Airbus Defense and Space, Airbus DS, Airbus Space, Pléiades Neo]
+    description: >-
+      Division spatiale et défense d'Airbus : constructeur de satellites (télécoms, observation,
+      navigation) et opérateur d'imagerie optique et radar (Pléiades Neo, TerraSAR-X).
+    highlights: [Pléiades Neo, SPOT, TerraSAR-X, OneSat]
+    news_query: '"Airbus Defence and Space" OR "Airbus DS"'
+
+  - id: planet
+    name: Planet Labs
+    wikidata: Q17085620
+    countries: [US]
+    segments: [eo_optique, geoint]
+    domains: [geospatial]
+    aliases: [Planet Labs, Planet PBC]
+    description: >-
+      Opérateur américain de la plus grande flotte de satellites d'imagerie optique, offrant une
+      couverture quasi quotidienne de la Terre et des données analytiques.
+    highlights: [PlanetScope, SkySat, Pelican, Tanager]
+
+  - id: vantor
+    name: Vantor (ex-Maxar Intelligence)
+    wikidata: Q136461484
+    countries: [US]
+    segments: [eo_optique, geoint]
+    domains: [geospatial]
+    aliases: [Vantor, Maxar Intelligence, Maxar Technologies, Maxar]
+    description: >-
+      Ex-Maxar Intelligence, rebaptisée Vantor en 2025 : imagerie optique très haute résolution
+      (WorldView) et renseignement géospatial, notamment pour la défense américaine.
+    highlights: [WorldView Legion, WorldView-3]
+    news_query: '"Vantor" OR "Maxar"'
+
+  - id: blacksky
+    name: BlackSky
+    wikidata: Q56314218
+    countries: [US]
+    segments: [eo_optique, geoint]
+    domains: [geospatial]
+    aliases: [BlackSky]
+    description: >-
+      Opérateur américain de petits satellites optiques à revisite rapide et de la plateforme
+      d'analyse Spectra, fournisseur du renseignement américain.
+    highlights: [Gen-3, Spectra]
+
+  - id: iceye
+    name: ICEYE
+    wikidata: Q31086161
+    countries: [FI]
+    segments: [eo_radar]
+    domains: [geospatial]
+    aliases: [ICEYE]
+    description: >-
+      Leader finlandais des constellations de microsatellites radar (SAR), qui observent de nuit et
+      par tous temps ; nombreux contrats défense en Europe.
+    highlights: [Constellation SAR ICEYE]
+
+  - id: capella
+    name: Capella Space
+    wikidata: Q43401532
+    countries: [US]
+    segments: [eo_radar]
+    domains: [geospatial]
+    aliases: [Capella Space]
+    description: >-
+      Opérateur américain de satellites radar (SAR) à haute résolution.
+    highlights: [Acadia]
+
+  - id: umbra
+    name: Umbra
+    wikidata: Q121644709
+    countries: [US]
+    segments: [eo_radar]
+    domains: [geospatial]
+    aliases: [Umbra Space]
+    aliases_cs: [Umbra]
+    description: >-
+      Opérateur américain de satellites radar (SAR) à très haute résolution, qui vend ses images
+      en ligne.
+    highlights: []
+    news_query: '"Umbra" SAR satellite'
+
+  - id: satellogic
+    name: Satellogic
+    wikidata: Q22669551
+    countries: [US, AR]
+    segments: [eo_optique]
+    domains: [geospatial]
+    aliases: [Satellogic]
+    description: >-
+      Constructeur-opérateur de microsatellites optiques, d'origine argentine et coté aux
+      États-Unis, proposant de l'imagerie haute résolution à bas coût.
+    highlights: [NewSat]
+
+  - id: unseenlabs
+    name: Unseenlabs
+    wikidata: Q86681367
+    countries: [FR]
+    segments: [rf_intel]
+    domains: [geospatial]
+    aliases: [Unseenlabs]
+    description: >-
+      Start-up rennaise de renseignement électromagnétique depuis l'espace : géolocalisation de
+      navires par leurs émissions radio.
+    highlights: [BRO]
+
+  - id: hawkeye360
+    name: HawkEye 360
+    wikidata: Q104845338
+    countries: [US]
+    segments: [rf_intel]
+    domains: [geospatial]
+    aliases: [HawkEye 360, HawkEye360]
+    description: >-
+      Opérateur américain d'une constellation de détection et de géolocalisation de signaux
+      radiofréquence.
+    highlights: []
+
+  - id: earthdaily
+    name: EarthDaily
+    wikidata: Q139855840
+    countries: [CA]
+    segments: [eo_optique, geoint]
+    domains: [geospatial]
+    aliases: [EarthDaily]
+    description: >-
+      Groupe canadien d'analyse géospatiale qui déploie la constellation optique EarthDaily pour
+      le suivi quotidien des terres (agriculture, assurance, défense).
+    highlights: [Constellation EarthDaily]
+
+  - id: pixxel
+    name: Pixxel
+    wikidata: Q104846573
+    countries: [IN]
+    segments: [eo_thermique]
+    domains: [geospatial]
+    aliases: [Pixxel]
+    description: >-
+      Start-up indienne d'imagerie hyperspectrale.
+    highlights: [Fireflies]
+
+  - id: satellite-vu
+    name: Satellite Vu
+    wikidata: Q141253660
+    countries: [GB]
+    segments: [eo_thermique]
+    domains: [geospatial]
+    aliases: [Satellite Vu, SatVu]
+    description: >-
+      Société britannique d'imagerie thermique infrarouge haute résolution depuis l'espace.
+    highlights: [HotSat]
+
+  - id: constellr
+    name: constellr
+    wikidata: Q131891628
+    countries: [DE]
+    segments: [eo_thermique]
+    domains: [geospatial]
+    aliases: [constellr]
+    description: >-
+      Start-up allemande de mesure de la température de surface par satellite (infrarouge
+      thermique) pour l'agriculture et le climat.
+    highlights: []
+
+  - id: safran-ai
+    name: Safran.AI (ex-Preligens)
+    wikidata: Q120312510
+    countries: [FR]
+    segments: [geoint, defense]
+    domains: [geospatial]
+    aliases: [Safran.AI, Safran AI, Preligens]
+    description: >-
+      Ex-Preligens, rachetée par Safran en 2024 : intelligence artificielle d'analyse d'images
+      satellite et de renseignement pour la défense.
+    highlights: []
+    news_query: '"Safran.AI" OR "Preligens"'
+
+  - id: esri
+    name: Esri
+    wikidata: Q1045778
+    countries: [US]
+    segments: [geoint]
+    domains: [geospatial]
+    aliases: [ArcGIS]
+    aliases_cs: [Esri]   # « ESRI » en capitales désigne aussi un institut irlandais
+    description: >-
+      Éditeur américain leader des systèmes d'information géographique.
+    highlights: [ArcGIS]
+
+  - id: open-cosmos
+    name: Open Cosmos
+    wikidata: Q125456828
+    countries: [GB, ES]
+    segments: [manufacturing, eo_optique]
+    domains: [geospatial, newspace]
+    aliases: [Open Cosmos]
+    description: >-
+      Société britannique, très présente en Espagne et au Portugal, qui conçoit et opère de petits
+      satellites et des constellations d'observation pour des clients institutionnels.
+    highlights: []
+
+  - id: aerospacelab
+    name: Aerospacelab
+    wikidata: Q113833269
+    countries: [BE]
+    segments: [manufacturing, eo_optique]
+    domains: [geospatial, newspace]
+    aliases: [Aerospacelab]
+    description: >-
+      Constructeur belge de petits satellites produits en série, également opérateur d'une
+      constellation d'observation.
+    highlights: []
+
+  - id: spire
+    name: Spire Global
+    wikidata: Q19877982
+    countries: [US, LU]
+    segments: [rf_intel, geoint]
+    domains: [geospatial]
+    aliases: [Spire Global]
+    description: >-
+      Opérateur américano-européen de nanosatellites collectant des données de suivi (navires,
+      avions) et météorologiques.
+    highlights: []
+
+  - id: synspective
+    name: Synspective
+    wikidata: Q110017262
+    countries: [JP]
+    segments: [eo_radar]
+    domains: [geospatial]
+    aliases: [Synspective]
+    description: >-
+      Start-up japonaise de petits satellites radar et de solutions d'analyse.
+    highlights: [StriX]
+
+  - id: iqps
+    name: iQPS
+    wikidata: Q124040109
+    countries: [JP]
+    segments: [eo_radar]
+    domains: [geospatial]
+    aliases: [iQPS, QPS-SAR]
+    description: >-
+      Société japonaise de Fukuoka qui déploie la constellation radar QPS-SAR.
+    highlights: [QPS-SAR]
+
+  # ------------------------------------------------------------ New Space & industrie
+  - id: spacex
+    name: SpaceX
+    wikidata: Q193701
+    countries: [US]
+    segments: [launcher, telecom]
+    domains: [newspace]
+    aliases: [SpaceX, Starlink, Starshield, Falcon 9, Falcon Heavy, Starship]
+    description: >-
+      Leader mondial du lancement (Falcon 9, Starship) et opérateur de la mégaconstellation
+      Starlink ; offre Starshield pour les clients militaires.
+    highlights: [Falcon 9, Starship, Starlink, Starshield]
+
+  - id: rocket-lab
+    name: Rocket Lab
+    wikidata: Q116319
+    countries: [US, NZ]
+    segments: [launcher, manufacturing]
+    domains: [newspace]
+    aliases: [Rocket Lab]
+    description: >-
+      Lanceur (Electron, Neutron en développement) et constructeur de satellites et de
+      composants, américain d'origine néo-zélandaise.
+    highlights: [Electron, Neutron, Photon]
+
+  - id: blue-origin
+    name: Blue Origin
+    wikidata: Q885836
+    countries: [US]
+    segments: [launcher, in_orbit]
+    domains: [newspace]
+    aliases: [Blue Origin, New Glenn, New Shepard]
+    description: >-
+      Société de Jeff Bezos : lanceur lourd New Glenn, vols suborbitaux New Shepard et
+      atterrisseur lunaire Blue Moon.
+    highlights: [New Glenn, New Shepard, Blue Moon]
+
+  - id: arianespace
+    name: Arianespace
+    wikidata: Q309867
+    countries: [FR]
+    segments: [launcher]
+    domains: [newspace]
+    aliases: [Arianespace, Ariane 6]
+    description: >-
+      Opérateur européen de lancement, filiale d'ArianeGroup, qui commercialise Ariane 6.
+    highlights: [Ariane 6]
+    facts: {ceo: David Cavaillolès}   # Wikidata indique encore Stéphane Israël
+
+  - id: arianegroup
+    name: ArianeGroup
+    wikidata: Q19951610
+    countries: [FR, DE]
+    segments: [launcher, defense]
+    domains: [newspace]
+    aliases: [ArianeGroup]
+    description: >-
+      Coentreprise Airbus-Safran, maître d'œuvre d'Ariane 6 et des missiles de la dissuasion
+      océanique française.
+    highlights: [Ariane 6, M51]
+
+  - id: avio
+    name: Avio
+    wikidata: Q791069
+    countries: [IT]
+    segments: [launcher]
+    domains: [newspace]
+    aliases: [Avio, Vega C, Vega E]
+    description: >-
+      Industriel italien maître d'œuvre et opérateur commercial des lanceurs Vega, et fournisseur
+      de propulsion solide.
+    highlights: [Vega C, Vega E]
+    news_query: '"Avio" Vega'
+
+  - id: maiaspace
+    name: MaiaSpace
+    wikidata: Q110680517
+    countries: [FR]
+    segments: [launcher]
+    domains: [newspace]
+    aliases: [MaiaSpace]
+    description: >-
+      Filiale d'ArianeGroup qui développe Maia, un mini-lanceur partiellement réutilisable.
+    highlights: [Maia]
+
+  - id: isar
+    name: Isar Aerospace
+    wikidata: Q104779603
+    countries: [DE]
+    segments: [launcher]
+    domains: [newspace]
+    aliases: [Isar Aerospace]
+    description: >-
+      Start-up allemande du lanceur léger Spectrum, candidate au marché européen des
+      micro-lanceurs.
+    highlights: [Spectrum]
+
+  - id: rfa
+    name: Rocket Factory Augsburg
+    wikidata: Q108317599
+    countries: [DE]
+    segments: [launcher]
+    domains: [newspace]
+    aliases: [Rocket Factory Augsburg, RFA One]
+    aliases_cs: [RFA]
+    description: >-
+      Start-up allemande, filiale du groupe OHB, qui développe le lanceur léger RFA One.
+    highlights: [RFA One]
+
+  - id: pld-space
+    name: PLD Space
+    wikidata: Q21076153
+    countries: [ES]
+    segments: [launcher]
+    domains: [newspace]
+    aliases: [PLD Space, Miura 5]
+    description: >-
+      Start-up espagnole des lanceurs Miura (Miura 1 suborbital, Miura 5 orbital en
+      développement).
+    highlights: [Miura 5]
+
+  - id: the-exploration-company
+    name: The Exploration Company
+    wikidata: Q121291156
+    countries: [DE, FR]
+    segments: [in_orbit]
+    domains: [newspace]
+    aliases: [The Exploration Company]
+    description: >-
+      Start-up franco-allemande qui développe Nyx, une capsule cargo réutilisable destinée au
+      ravitaillement des stations spatiales.
+    highlights: [Nyx]
+
+  - id: thales-alenia-space
+    name: Thales Alenia Space
+    wikidata: Q128356
+    countries: [FR, IT]
+    segments: [manufacturing]
+    domains: [newspace, geospatial]
+    aliases: [Thales Alenia Space]
+    description: >-
+      Coentreprise Thales (67 %) et Leonardo (33 %), l'un des premiers constructeurs européens de
+      satellites et de modules orbitaux.
+    highlights: []
+
+  - id: ohb
+    name: OHB
+    wikidata: Q471019
+    countries: [DE]
+    segments: [manufacturing]
+    domains: [newspace, geospatial]
+    aliases: [OHB]
+    description: >-
+      Groupe spatial allemand de Brême (satellites de navigation, d'observation et météo), maison
+      mère de Rocket Factory Augsburg.
+    highlights: [Galileo, SARah]
+
+  - id: eutelsat
+    name: Eutelsat
+    wikidata: Q848336
+    countries: [FR]
+    segments: [telecom]
+    domains: [newspace]
+    aliases: [Eutelsat, OneWeb]
+    description: >-
+      Opérateur français de satellites de télécommunications, fusionné avec OneWeb (orbite
+      basse) ; pièce clé de la connectivité souveraine européenne.
+    highlights: [OneWeb]
+
+  - id: ses
+    name: SES
+    wikidata: Q333025
+    countries: [LU]
+    segments: [telecom]
+    domains: [newspace]
+    aliases: [SES Satellites, SES S.A., O3b mPOWER]
+    aliases_cs: [SES]
+    description: >-
+      Opérateur luxembourgeois de satellites de télécommunications en orbites géostationnaire et
+      moyenne, qui a racheté Intelsat en 2025.
+    highlights: [O3b mPOWER]
+    news_query: '"SES" satellite'
+
+  - id: amazon-leo
+    name: Amazon Leo (ex-Kuiper)
+    wikidata: Q62812537
+    countries: [US]
+    segments: [telecom]
+    domains: [newspace]
+    aliases: [Amazon Leo, Project Kuiper, Kuiper]
+    description: >-
+      Mégaconstellation d'internet par satellite d'Amazon, ex-Projet Kuiper, en cours de
+      déploiement.
+    highlights: []
+    news_query: '"Amazon Leo" OR "Project Kuiper"'
+
+  - id: exotrail
+    name: Exotrail
+    wikidata: Q97189175
+    countries: [FR]
+    segments: [in_orbit]
+    domains: [newspace]
+    aliases: [Exotrail]
+    description: >-
+      Start-up française de propulsion électrique et de véhicules de transfert orbital.
+    highlights: [spacevan]
+
+  - id: d-orbit
+    name: D-Orbit
+    wikidata: Q116214401
+    countries: [IT]
+    segments: [in_orbit]
+    domains: [newspace]
+    aliases: [D-Orbit]
+    description: >-
+      Société italienne de logistique spatiale : véhicule de transfert orbital ION et services en
+      orbite.
+    highlights: [ION]
+
+  - id: loft-orbital
+    name: Loft Orbital
+    wikidata: Q136918026
+    countries: [US, FR]
+    segments: [in_orbit, manufacturing]
+    domains: [newspace]
+    aliases: [Loft Orbital]
+    description: >-
+      Société franco-américaine qui héberge les charges utiles de ses clients sur ses propres
+      plateformes satellitaires (satellite « en tant que service »).
+    highlights: []
+
+  - id: firefly
+    name: Firefly Aerospace
+    wikidata: Q17492679
+    countries: [US]
+    segments: [launcher, in_orbit]
+    domains: [newspace]
+    aliases: [Firefly Aerospace]
+    description: >-
+      Société américaine du lanceur Alpha et de l'atterrisseur lunaire Blue Ghost.
+    highlights: [Alpha, Blue Ghost]
+
+  - id: hemeria
+    name: Hemeria
+    wikidata: Q86669309
+    countries: [FR]
+    segments: [manufacturing]
+    domains: [newspace]
+    aliases: [Hemeria]
+    description: >-
+      Industriel toulousain qui conçoit des nanosatellites et des équipements spatiaux,
+      notamment pour le CNES et la défense.
+    highlights: []
+
+  - id: latitude
+    name: Latitude
+    wikidata: Q106599373
+    countries: [FR]
+    segments: [launcher]
+    domains: [newspace]
+    aliases: [Latitude Zephyr, lanceur Zephyr, Zephyr rocket, Venture Orbital]
+    description: >-
+      Start-up rémoise (ex-Venture Orbital Systems) qui développe le micro-lanceur Zephyr.
+    highlights: [Zephyr]
+    news_query: '"Latitude" Zephyr'
+
+  - id: redwire
+    name: Redwire
+    wikidata: Q106432676
+    countries: [US]
+    segments: [manufacturing, in_orbit]
+    domains: [newspace]
+    aliases: [Redwire]
+    description: >-
+      Fournisseur américain d'infrastructures spatiales (panneaux solaires déployables,
+      plateformes) et, depuis le rachat d'Edge Autonomy, de drones de défense.
+    highlights: []
+
+  - id: intuitive-machines
+    name: Intuitive Machines
+    wikidata: Q60760151
+    countries: [US]
+    segments: [in_orbit]
+    domains: [newspace]
+    aliases: [Intuitive Machines]
+    description: >-
+      Société américaine d'exploration lunaire (atterrisseurs Nova-C) et de services de
+      communication lunaires.
+    highlights: [Nova-C]
+
+  - id: ast-spacemobile
+    name: AST SpaceMobile
+    wikidata: Q112659289
+    countries: [US]
+    segments: [telecom]
+    domains: [newspace]
+    aliases: [AST SpaceMobile]
+    description: >-
+      Opérateur américain de très grands satellites assurant une connexion haut débit directe
+      vers les smartphones.
+    highlights: [BlueBird]
+
+  # ------------------------------------------------------------ Défense
+  - id: thales
+    name: Thales
+    wikidata: Q1161666
+    countries: [FR]
+    segments: [defense]
+    domains: [newspace, geospatial]
+    aliases: [Thales Group]
+    aliases_cs: [Thales]
+    description: >-
+      Groupe français de défense, d'aérospatial et de cybersécurité ; contrôle Thales Alenia
+      Space avec Leonardo.
+    highlights: []
+    news_query: '"Thales" space OR satellite OR spatial'
+
+  - id: safran
+    name: Safran
+    wikidata: Q1886126
+    countries: [FR]
+    segments: [defense]
+    domains: [newspace]
+    aliases: [Safran]
+    description: >-
+      Groupe français d'aéronautique et de défense (moteurs, équipements, optronique),
+      coactionnaire d'ArianeGroup.
+    highlights: []
+    news_query: '"Safran" space OR satellite OR spatial'
+
+  - id: leonardo
+    name: Leonardo
+    wikidata: Q910379
+    countries: [IT]
+    segments: [defense, manufacturing]
+    domains: [newspace, geospatial]
+    aliases: [Leonardo S.p.A., Leonardo SpA]
+    aliases_cs: [Leonardo]
+    description: >-
+      Groupe italien de défense et d'aérospatial, partenaire de Thales dans le spatial
+      (Thales Alenia Space, Telespazio).
+    highlights: [Telespazio, e-GEOS]
+    news_query: '"Leonardo" space OR satellite'
+
+  - id: rheinmetall
+    name: Rheinmetall
+    wikidata: Q161544
+    countries: [DE]
+    segments: [defense]
+    domains: [geospatial, newspace]
+    aliases: [Rheinmetall]
+    description: >-
+      Premier groupe de défense allemand (munitions, blindés), qui investit dans le spatial
+      militaire avec ICEYE (satellites radar).
+    highlights: []
+    news_query: '"Rheinmetall" satellite OR space'
+
+  - id: hensoldt
+    name: Hensoldt
+    wikidata: Q21236526
+    countries: [DE]
+    segments: [defense]
+    domains: [geospatial]
+    aliases: [Hensoldt]
+    description: >-
+      Spécialiste allemand de l'électronique de défense (radars, optronique, guerre
+      électronique).
+    highlights: []
+    news_query: '"Hensoldt" space OR satellite'
+
+  - id: lockheed-martin
+    name: Lockheed Martin
+    wikidata: Q7240
+    countries: [US]
+    segments: [defense, manufacturing]
+    domains: [newspace]
+    aliases: [Lockheed Martin]
+    description: >-
+      Premier groupe de défense mondial, acteur majeur des satellites militaires (GPS III, alerte
+      avancée) et de l'architecture de la Space Development Agency.
+    highlights: [GPS III]
+    news_query: '"Lockheed Martin" satellite OR space'
+
+  - id: northrop-grumman
+    name: Northrop Grumman
+    wikidata: Q329953
+    countries: [US]
+    segments: [defense, manufacturing]
+    domains: [newspace]
+    aliases: [Northrop Grumman]
+    description: >-
+      Groupe de défense américain : satellites, propulsion solide, services en orbite (MEV) et
+      programmes spatiaux classifiés.
+    highlights: [MEV]
+    news_query: '"Northrop Grumman" satellite OR space'
+
+  - id: l3harris
+    name: L3Harris
+    wikidata: Q30291091
+    countries: [US]
+    segments: [defense, manufacturing]
+    domains: [newspace, geospatial]
+    aliases: [L3Harris]
+    description: >-
+      Groupe de défense américain : capteurs et satellites (alerte missile, renseignement) et
+      moteurs-fusées (Aerojet Rocketdyne).
+    highlights: [Aerojet Rocketdyne]
+    news_query: '"L3Harris" satellite OR space'

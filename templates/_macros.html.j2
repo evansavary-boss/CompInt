@@ -1,0 +1,108 @@
+{# Shared building blocks: one news item, the filter bar, the feed. #}
+
+{% macro item_card(row, root, current=None) %}
+{% set i = row.item %}
+<article class="item"
+  data-tags="{{ i.tags | join(' ') }}"
+  data-entities="{{ i.entities | join(' ') }}"
+  data-countries="{{ i.countries | join(' ') }}"
+  data-regions="{{ i.regions | join(' ') }}"
+  data-events="{{ i.events | join(' ') }}"
+  data-segments="{{ row.segments | join(' ') }}"
+  data-age="{{ row.age }}"
+  data-search="{{ row.search }}">
+  <h4><a href="{{ i.url }}" target="_blank" rel="noopener noreferrer">{{ i.title }}</a></h4>
+  <p class="meta">
+    <span class="src">{{ i.source }}</span>{% if i.via == 'gnews' %}<span class="via" title="Trouvé via Google News"> · GN</span>{% endif %}
+    <span aria-hidden="true">·</span>
+    <time datetime="{{ i.published }}" title="{{ row.date }}">{% if i.date_estimated %}≈ {% endif %}{{ row.time }}</time>
+    {% if row.countries %}<span aria-hidden="true">·</span> <span class="geo">{{ row.countries[:3] | join(', ') }}</span>{% endif %}
+  </p>
+  {% if row.events or row.entities %}
+  <p class="labels">
+    {% for ev in row.events %}<span class="ev ev-{{ ev.key }}">{{ ev.label }}</span>{% endfor %}
+    {% for e in row.entities[:5] %}{% if e.id != current %}<a class="chip chip-{{ e.kind }}" href="{{ root }}entite/{{ e.id }}.html">{{ e.name }}</a>{% endif %}{% endfor %}
+  </p>
+  {% endif %}
+  {% if i.summary %}<p class="excerpt">{{ i.summary }}</p>{% endif %}
+</article>
+{% endmacro %}
+
+
+{% macro filters(options, periods, default_days, default_domain, kind=None, show_segments=False) %}
+<div class="filters" data-default-days="{{ default_days }}" data-default-domain="{{ default_domain }}">
+  <div class="filter-row">
+    <div class="segmented" role="group" aria-label="Domaine">
+      <button type="button" data-domain="geospatial">Géospatial</button>
+      <button type="button" data-domain="newspace">New Space</button>
+      <button type="button" data-domain="all">Tout</button>
+    </div>
+    <label class="search">
+      <span class="sr-only">Rechercher</span>
+      <svg aria-hidden="true" viewBox="0 0 20 20" width="16" height="16"><path d="M8.5 3a5.5 5.5 0 0 1 4.38 8.83l3.65 3.64-1.06 1.06-3.64-3.65A5.5 5.5 0 1 1 8.5 3Zm0 1.5a4 4 0 1 0 0 8 4 4 0 0 0 0-8Z" fill="currentColor"/></svg>
+      <input type="search" data-filter="q" placeholder="Rechercher (mot-clé, programme…)" autocomplete="off">
+    </label>
+    <label class="select">
+      <span class="sr-only">Période</span>
+      <select data-filter="days">
+        {% for d in periods %}<option value="{{ d }}"{% if d == default_days %} selected{% endif %}>{{ d }} derniers jours</option>{% endfor %}
+      </select>
+    </label>
+  </div>
+  <div class="filter-row">
+    <label class="select">
+      <span class="sr-only">Région</span>
+      <select data-filter="regions">
+        <option value="">Toutes les régions</option>
+        {% for k, label in options.regions %}<option value="{{ k }}">{{ label }}</option>{% endfor %}
+      </select>
+    </label>
+    <label class="select">
+      <span class="sr-only">Pays</span>
+      <select data-filter="countries">
+        <option value="">Tous les pays</option>
+        {% for k, label, n in options.countries %}<option value="{{ k }}">{{ label }} ({{ n }})</option>{% endfor %}
+      </select>
+    </label>
+    {% if kind %}
+    <label class="select">
+      <span class="sr-only">{{ 'Institution' if kind == 'institution' else 'Entreprise' }}</span>
+      <select data-filter="entities">
+        <option value="">{{ 'Toutes les institutions' if kind == 'institution' else 'Toutes les entreprises' }}</option>
+        {% for k, label, n in options.entities %}<option value="{{ k }}">{{ label }} ({{ n }})</option>{% endfor %}
+      </select>
+    </label>
+    {% endif %}
+    {% if show_segments %}
+    <label class="select">
+      <span class="sr-only">Segment</span>
+      <select data-filter="segments">
+        <option value="">Tous les segments</option>
+        {% for k, label in options.segments %}<option value="{{ k }}">{{ label }}</option>{% endfor %}
+      </select>
+    </label>
+    {% endif %}
+    <button type="button" class="reset" data-reset hidden>Effacer les filtres</button>
+  </div>
+  {% if options.events %}
+  <div class="chips" role="group" aria-label="Type d'événement">
+    {% for k, label, n in options.events %}
+    <button type="button" class="ev ev-{{ k }}" data-event="{{ k }}" aria-pressed="false">{{ label }} <span class="n" data-event-count="{{ k }}">{{ n }}</span></button>
+    {% endfor %}
+  </div>
+  {% endif %}
+</div>
+{% endmacro %}
+
+
+{% macro feed(groups, root, current=None) %}
+<div class="feed" data-feed>
+  {% for g in groups %}
+  <section class="day" data-age="{{ g.age }}">
+    <h3 class="day-label">{{ g.label }}</h3>
+    {% for row in g.rows %}{{ item_card(row, root, current) }}{% endfor %}
+  </section>
+  {% endfor %}
+  <p class="empty" hidden>Aucun article ne correspond à ces filtres. Élargir la période ou passer le domaine sur « Tout ».</p>
+</div>
+{% endmacro %}

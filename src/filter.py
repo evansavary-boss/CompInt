@@ -5,7 +5,7 @@ from __future__ import annotations
 import re
 import unicodedata
 from difflib import SequenceMatcher
-from typing import Any, Iterable
+from typing import Any, Callable, Iterable
 from urllib.parse import parse_qsl, urlencode, urlsplit, urlunsplit
 
 from .models import Item
@@ -74,26 +74,28 @@ class KeywordMatcher:
 def tag_items(
     items: list[Item],
     matcher: KeywordMatcher,
-    sources: dict[str, dict[str, Any]],
+    sources: dict[str, dict[str, Any]] | None = None,
+    source: dict[str, Any] | None = None,
 ) -> list[Item]:
     """Tag items and drop those that are excluded or off-topic.
 
     Specialised sources (require_keywords: false) keep every item and fall back
-    to their default domain; general sources only keep keyword matches.
+    to their default domain(s); general sources only keep keyword matches.
+    Pass `source` when all items come from one source, else `sources` keyed by name.
     """
     kept = []
     for item in items:
-        source = sources.get(item.source, {})
-        if any(p in item.url for p in source.get("exclude_url_patterns") or []):
+        src = source if source is not None else (sources or {}).get(item.source, {})
+        if any(p in item.url for p in src.get("exclude_url_patterns") or []):
             continue
         text = f"{item.title} {item.summary}"
         if matcher.is_excluded(text):
             continue
         tags = matcher.match(text)
         if not tags:
-            if source.get("require_keywords", True):
+            if src.get("require_keywords", True):
                 continue
-            tags = [source["domain"]] if source.get("domain") else []
+            tags = list(src.get("domains") or ([src["domain"]] if src.get("domain") else []))
         item.tags = tags
         kept.append(item)
     return kept
@@ -132,28 +134,68 @@ def titles_similar(a: str, b: str, threshold: float) -> bool:
     return SequenceMatcher(None, ka, kb).ratio() >= threshold
 
 
+class _TitleIndex:
+    """Near-duplicate title lookup; only titles sharing a significant word are compared."""
+
+    def __init__(self, threshold: float):
+        self.threshold = threshold
+        self.entries: list[tuple[str, set[str], Item]] = []
+        self.by_word: dict[str, list[int]] = {}
+
+    def add(self, item: Item) -> None:
+        key = _title_key(item.title)
+        words = set(key.split())
+        idx = len(self.entries)
+        self.entries.append((key, words, item))
+        for w in words:
+            if len(w) > 3:
+                self.by_word.setdefault(w, []).append(idx)
+
+    def find(self, title: str) -> Item | None:
+        key = _title_key(title)
+        if not key:
+            return None
+        words = set(key.split())
+        candidates = {i for w in words if len(w) > 3 for i in self.by_word.get(w, ())}
+        for i in sorted(candidates):
+            other_key, other_words, other = self.entries[i]
+            if key == other_key:
+                return other
+            if len(words & other_words) / max(len(words | other_words), 1) < 0.4:
+                continue
+            if SequenceMatcher(None, key, other_key).ratio() >= self.threshold:
+                return other
+        return None
+
+
 def dedupe(
     items: list[Item],
     threshold: float,
     tracking_params: Iterable[str] = (),
     existing: Iterable[Item] = (),
+    on_duplicate: Callable[[Item, Item], None] | None = None,
 ) -> list[Item]:
     """Drop duplicates, first by canonical URL then by near-identical title.
 
     Items in `existing` win over new ones; among new items, the first one wins
     (callers sort oldest first so the original publication is kept).
+    `on_duplicate(kept, dropped)` lets callers merge information from the dropped item.
     """
     tracking_params = list(tracking_params)
-    seen_urls = {canonical_url(i.url, tracking_params) for i in existing}
-    seen_titles = [i.title for i in existing]
+    by_url: dict[str, Item] = {}
+    titles = _TitleIndex(threshold)
+    for i in existing:
+        by_url[canonical_url(i.url, tracking_params)] = i
+        titles.add(i)
     result = []
     for item in items:
         cu = canonical_url(item.url, tracking_params)
-        if cu in seen_urls:
+        kept = by_url.get(cu) or titles.find(item.title)
+        if kept is not None:
+            if on_duplicate:
+                on_duplicate(kept, item)
             continue
-        if any(titles_similar(item.title, t, threshold) for t in seen_titles):
-            continue
-        seen_urls.add(cu)
-        seen_titles.append(item.title)
+        by_url[cu] = item
+        titles.add(item)
         result.append(item)
     return result

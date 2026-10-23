@@ -1,0 +1,344 @@
+# Types d'événements détectés dans les titres et extraits.
+#
+# Champs :
+#   section     economie | politique : onglet où l'événement fait apparaître l'article ;
+#               auto : Politique si une institution est citée, Économie si c'est une entreprise
+#   label       libellé affiché
+#   patterns    expressions (insensibles à la casse et aux accents, mots entiers, pluriels simples)
+#   patterns_cs (optionnel) sigles sensibles à la casse (IPO, MoU, ITAR…)
+#   regex       (optionnel) expressions régulières, sur le texte normalisé (minuscules, sans accents)
+#   requires    (optionnel) company : l'événement n'est retenu que si une entreprise suivie est citée
+#               (évite « data acquisition », « raises concerns », « NATO partnership »…)
+#   overrides   (optionnel) types masqués quand celui-ci est détecté
+#               (ex. « contrat annulé » l'emporte sur « contrat gagné »)
+#
+# Un article peut porter plusieurs types. L'ordre du fichier est l'ordre d'affichage.
+
+events:
+  # ------------------------------------------------------------ Économie
+  contract_won:
+    section: economie
+    label: Contrat gagné
+    overrides: [funding]   # « secures $36M in contracts » n'est pas une levée de fonds
+    patterns_cs: [IDIQ]
+    patterns:
+      - wins contract
+      - won a contract
+      - secures contract
+      - lands contract
+      - contract award
+      - contract modification
+      - selected by
+      - selects
+      - task order
+      - framework agreement
+      - remporte
+      - décroche
+      - attribue
+      - attribué
+      - attribuée
+      - notifie
+      - sélectionné par
+      - choisi par
+    regex:
+      # verb, then within a few words: contract / deal / order (EN)
+      - '\b(wins?|won|secures?|secured|lands?|landed|receives?|received|gets|awards?|awarded|signs?|signed|inks?|inked|books?|booked)\b.{0,70}\b(contract|deal|order|task order|agreement)s?\b'
+      - '\b(contract|order|deal)s? (worth|valued at)\b'
+      # FR
+      - '\b(remporte|decroche|signe|obtient|notifie|attribue)\b.{0,70}\b(contrat|commande|marche)s?\b'
+      - '\b(contrat|commande)s? (de|d''un montant de) [0-9]'
+
+  contract_lost:
+    section: economie
+    label: Contrat perdu ou annulé
+    overrides: [contract_won]
+    patterns:
+      - loses contract
+      - lost the contract
+      - contract cancelled
+      - contract canceled
+      - cancels contract
+      - terminates contract
+      - contract termination
+      - bid protest
+      - GAO protest
+      - scrapped
+      - perd le contrat
+      - contrat annulé
+      - annule le contrat
+      - résilie
+      - résiliation
+    regex:
+      - "\\b(cancel(s|led|ed)?|terminat(es|ed)|scrap(s|ped)) (the |its |a )?(contract|order|program)"
+
+  launch:
+    section: economie
+    label: Lancement
+    patterns:
+      - liftoff
+      - lifts off
+      - successful launch
+      - launches satellite
+      - launches satellites
+      - launched satellite
+      - reaches orbit
+      - maiden flight
+      - first flight
+      - launch window
+      - décollage
+      - décolle
+      - mise en orbite
+      - mis en orbite
+      - vol inaugural
+      - premier vol
+      - lancement réussi
+    regex:
+      - "\\b(launch|launches|launched)\\b.*\\b(satellite|mission|rocket|spacecraft)s?\\b"
+      - "\\blancement d[eu']? ?(la |du |des |l')?(fusee|satellite|mission|lanceur)"
+
+  incident:
+    section: economie
+    label: Échec ou incident
+    patterns:
+      - launch failure
+      - failure
+      - failed
+      - fails
+      - anomaly
+      - explodes
+      - explosion
+      - mishap
+      - failed to reach orbit
+      - lost contact
+      - échec
+      - anomalie
+      - perte de contact
+
+  product:
+    section: economie
+    requires: company
+    label: Nouveau satellite ou produit
+    patterns:
+      - unveils
+      - introduces
+      - debuts
+      - rolls out
+      - new satellite
+      - new product
+      - first images
+      - first light
+      - enters service
+      - commissioning
+      - now available
+      - dévoile
+      - présente sa
+      - présente son
+      - nouveau satellite
+      - nouvelle offre
+      - premières images
+      - mise en service
+
+  funding:
+    section: economie
+    label: Levée de fonds
+    patterns_cs: [IPO, SPAC]
+    patterns:
+      - funding round
+      - Series A
+      - Series B
+      - Series C
+      - Series D
+      - Series E
+      - seed round
+      - pre-seed
+      - venture funding
+      - goes public
+      - lève
+      - levée de fonds
+      - tour de table
+      - introduction en Bourse
+    regex:
+      - '\b(raises?|raised|secures?|secured|closes?|closed)\b.{0,30}(\$|€|£|\beur\b|\busd\b|[0-9]+ ?(m|million|bn|billion|millions|milliards?))'
+      - '\bleve\b.{0,30}[0-9]'
+
+  mna:
+    section: economie
+    requires: company
+    label: Rachat ou fusion
+    patterns:
+      - acquires
+      - acquired
+      - acquisition
+      - to acquire
+      - merger
+      - merges
+      - takeover
+      - buys
+      - stake in
+      - rachète
+      - rachat
+      - fusion
+      - prise de participation
+      - cession
+      - cède
+
+  partnership:
+    section: economie
+    requires: company
+    label: Partenariat
+    patterns_cs: [MoU]
+    patterns:
+      - partnership
+      - partners with
+      - teams up
+      - memorandum of understanding
+      - joint venture
+      - strategic agreement
+      - partenariat
+      - s'associe
+      - protocole d'accord
+      - coentreprise
+      - alliance
+
+  financials:
+    section: economie
+    requires: company
+    label: Résultats financiers
+    patterns:
+      - revenue
+      - earnings
+      - quarterly results
+      - first quarter
+      - second quarter
+      - third quarter
+      - fourth quarter
+      - backlog
+      - guidance
+      - chiffre d'affaires
+      - résultats annuels
+      - résultats semestriels
+      - résultats trimestriels
+      - carnet de commandes
+    regex:
+      - "\\bq[1-4] (20[0-9]{2} )?(results|revenue|earnings)"
+
+  # ------------------------------------------------------------ Politique
+  budget:
+    section: politique
+    label: Budget et financement public
+    patterns_cs: [NDAA, LPM]
+    patterns:
+      - budget
+      - appropriations
+      - defense spending
+      - space spending
+      - ministerial council
+      - ministerial conference
+      - loi de programmation militaire
+      - crédits
+      - conseil ministériel
+
+  strategy:
+    section: politique
+    label: Stratégie et programmes
+    patterns:
+      - national space strategy
+      - space strategy
+      - defence strategy
+      - defense strategy
+      - roadmap
+      - white paper
+      - stratégie spatiale
+      - stratégie nationale
+      - feuille de route
+      - livre blanc
+      - Golden Dome
+      - IRIS²
+      - European Launcher Challenge
+
+  regulation:
+    section: politique
+    label: Réglementation
+    patterns:
+      - regulation
+      - regulatory
+      - licence
+      - license
+      - licensing
+      - spectrum
+      - space law
+      - EU Space Act
+      - legislation
+      - réglementation
+      - loi spatiale
+      - licence d'exploitation
+      - fréquences
+      - autorisation
+
+  export_sanctions:
+    section: politique
+    label: Exports et sanctions
+    patterns_cs: [ITAR]
+    patterns:
+      - export control
+      - export controls
+      - sanctions
+      - embargo
+      - export licence
+      - export license
+      - contrôle des exportations
+      - contrôle des exports
+
+  appointment:
+    section: auto
+    label: Nomination
+    patterns:
+      - appointed
+      - appoints
+      - named as
+      - names new
+      - new CEO
+      - new chief
+      - new director
+      - promotes
+      - promoted to
+      - hires
+      - nominee
+      - confirmed as
+      - steps down
+      - resigns
+      - nommé
+      - nommée
+      - nomination
+      - démission
+      - prend la tête
+
+  cooperation:
+    section: politique
+    label: Coopération internationale
+    patterns:
+      - cooperation agreement
+      - bilateral
+      - signs agreement
+      - joins ESA
+      - accord de coopération
+      - coopération
+      - signe un accord
+      - adhère
+
+  security:
+    section: politique
+    label: Sécurité et menaces spatiales
+    patterns_cs: [ASAT]
+    patterns:
+      - anti-satellite
+      - jamming
+      - spoofing
+      - cyberattack
+      - rendezvous and proximity
+      - space threat
+      - counterspace
+      - brouillage
+      - menace spatiale
+      - arme antisatellite
+      - cyberattaque

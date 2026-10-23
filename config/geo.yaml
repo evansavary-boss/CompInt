@@ -1,0 +1,93 @@
+# Pays et régions détectés dans les articles.
+#
+# Un article est rattaché à un pays si l'un de ses termes apparaît (insensible à la casse et aux
+# accents, mots entiers, pluriels simples acceptés), ou s'il cite une entité de ce pays.
+#   aliases     noms et gentilés en français et en anglais
+#   aliases_cs  sigles sensibles à la casse (US, UK, UAE…)
+# Mettre entre guillemets les codes que YAML lirait comme un booléen ("NO" pour la Norvège).
+
+regions:
+  europe: Europe
+  north_america: Amérique du Nord
+  latin_america: Amérique latine
+  asia_pacific: Asie-Pacifique
+  middle_east: Moyen-Orient
+  africa: Afrique
+  russia_eurasia: Russie et Eurasie
+  international: International
+
+countries:
+  # ------------------------------------------------------------ Europe
+  FR: {name: France, region: europe, aliases: [France, French, français, française]}
+  DE: {name: Allemagne, region: europe, aliases: [Germany, German, Allemagne, allemand, allemande]}
+  IT: {name: Italie, region: europe, aliases: [Italy, Italian, Italie, italien, italienne]}
+  ES: {name: Espagne, region: europe, aliases: [Spain, Spanish, Espagne, espagnol, espagnole]}
+  GB: {name: Royaume-Uni, region: europe, aliases: [United Kingdom, Britain, British, Royaume-Uni, britannique], aliases_cs: [UK]}
+  BE: {name: Belgique, region: europe, aliases: [Belgium, Belgian, Belgique, belge]}
+  NL: {name: Pays-Bas, region: europe, aliases: [Netherlands, Dutch, Pays-Bas, néerlandais, néerlandaise]}
+  LU: {name: Luxembourg, region: europe, aliases: [Luxembourg, luxembourgeois, luxembourgeoise]}
+  PT: {name: Portugal, region: europe, aliases: [Portugal, Portuguese, portugais, portugaise]}
+  SE: {name: Suède, region: europe, aliases: [Sweden, Swedish, Suède, suédois, suédoise]}
+  "NO": {name: Norvège, region: europe, aliases: [Norway, Norwegian, Norvège, norvégien, norvégienne]}
+  FI: {name: Finlande, region: europe, aliases: [Finland, Finnish, Finlande, finlandais, finlandaise]}
+  DK: {name: Danemark, region: europe, aliases: [Denmark, Danish, Danemark, danois, danoise]}
+  PL: {name: Pologne, region: europe, aliases: [Poland, Polish, Pologne, polonais, polonaise]}
+  CZ: {name: Tchéquie, region: europe, aliases: [Czech Republic, Czechia, Czech, Tchéquie, République tchèque, tchèque]}
+  AT: {name: Autriche, region: europe, aliases: [Austria, Austrian, Autriche, autrichien, autrichienne]}
+  CH: {name: Suisse, region: europe, aliases: [Switzerland, Swiss, Suisse]}
+  GR: {name: Grèce, region: europe, aliases: [Greece, Greek, Grèce]}
+  RO: {name: Roumanie, region: europe, aliases: [Romania, Romanian, Roumanie, roumain, roumaine]}
+  HU: {name: Hongrie, region: europe, aliases: [Hungary, Hungarian, Hongrie, hongrois, hongroise]}
+  IE: {name: Irlande, region: europe, aliases: [Ireland, Irish, Irlande, irlandais, irlandaise]}
+  EE: {name: Estonie, region: europe, aliases: [Estonia, Estonian, Estonie]}
+  LT: {name: Lituanie, region: europe, aliases: [Lithuania, Lithuanian, Lituanie]}
+  LV: {name: Lettonie, region: europe, aliases: [Latvia, Latvian, Lettonie]}
+  UA: {name: Ukraine, region: europe, aliases: [Ukraine, Ukrainian, ukrainien, ukrainienne]}
+
+  # ------------------------------------------------------------ Amérique du Nord
+  US: {name: États-Unis, region: north_america, aliases: [United States, USA, American, États-Unis, américain, américaine, Pentagon, Pentagone], aliases_cs: [US, U.S.]}
+  CA: {name: Canada, region: north_america, aliases: [Canada, Canadian, canadien, canadienne]}
+  MX: {name: Mexique, region: latin_america, aliases: [Mexico, Mexican, Mexique, mexicain, mexicaine]}
+
+  # ------------------------------------------------------------ Amérique latine
+  BR: {name: Brésil, region: latin_america, aliases: [Brazil, Brazilian, Brésil, brésilien, brésilienne]}
+  AR: {name: Argentine, region: latin_america, aliases: [Argentina, Argentinian, Argentine, argentin]}
+  CL: {name: Chili, region: latin_america, aliases: [Chile, Chilean, Chili, chilien, chilienne]}
+
+  # ------------------------------------------------------------ Asie-Pacifique
+  CN: {name: Chine, region: asia_pacific, aliases: [China, Chinese, Chine, chinois, chinoise, Beijing, Pékin]}
+  JP: {name: Japon, region: asia_pacific, aliases: [Japan, Japanese, Japon, japonais, japonaise]}
+  KR: {name: Corée du Sud, region: asia_pacific, aliases: [South Korea, South Korean, Corée du Sud, sud-coréen, sud-coréenne]}
+  KP: {name: Corée du Nord, region: asia_pacific, aliases: [North Korea, North Korean, Corée du Nord, nord-coréen, nord-coréenne]}
+  IN: {name: Inde, region: asia_pacific, aliases: [India, Indian, Inde, indien, indienne]}
+  AU: {name: Australie, region: asia_pacific, aliases: [Australia, Australian, Australie, australien, australienne]}
+  NZ: {name: Nouvelle-Zélande, region: asia_pacific, aliases: [New Zealand, Nouvelle-Zélande, néo-zélandais, néo-zélandaise]}
+  TW: {name: Taïwan, region: asia_pacific, aliases: [Taiwan, Taiwanese, Taïwan, taïwanais, taïwanaise]}
+  SG: {name: Singapour, region: asia_pacific, aliases: [Singapore, Singapour]}
+  ID: {name: Indonésie, region: asia_pacific, aliases: [Indonesia, Indonesian, Indonésie]}
+  VN: {name: Viêt Nam, region: asia_pacific, aliases: [Vietnam, Viet Nam, Vietnamese, Viêt Nam]}
+  PH: {name: Philippines, region: asia_pacific, aliases: [Philippines, Philippine]}
+  TH: {name: Thaïlande, region: asia_pacific, aliases: [Thailand, Thai, Thaïlande]}
+  MY: {name: Malaisie, region: asia_pacific, aliases: [Malaysia, Malaysian, Malaisie]}
+  PK: {name: Pakistan, region: asia_pacific, aliases: [Pakistan, Pakistani, pakistanais]}
+
+  # ------------------------------------------------------------ Moyen-Orient
+  AE: {name: Émirats arabes unis, region: middle_east, aliases: [United Arab Emirates, Emirati, Émirats arabes unis, émirien, Abu Dhabi, Dubai, Dubaï], aliases_cs: [UAE, EAU]}
+  SA: {name: Arabie saoudite, region: middle_east, aliases: [Saudi Arabia, Saudi, Arabie saoudite, saoudien, saoudienne]}
+  IL: {name: Israël, region: middle_east, aliases: [Israel, Israeli, Israël, israélien, israélienne]}
+  IR: {name: Iran, region: middle_east, aliases: [Iran, Iranian, iranien, iranienne]}
+  TR: {name: Turquie, region: middle_east, aliases: [Turkey, Türkiye, Turkish, Turquie, turc, turque]}
+  QA: {name: Qatar, region: middle_east, aliases: [Qatar, Qatari]}
+
+  # ------------------------------------------------------------ Afrique
+  EG: {name: Égypte, region: africa, aliases: [Egypt, Egyptian, Égypte, égyptien, égyptienne]}
+  MA: {name: Maroc, region: africa, aliases: [Morocco, Moroccan, Maroc, marocain, marocaine]}
+  DZ: {name: Algérie, region: africa, aliases: [Algeria, Algerian, Algérie, algérien, algérienne]}
+  NG: {name: Nigeria, region: africa, aliases: [Nigeria, Nigerian, nigérian, nigériane]}
+  KE: {name: Kenya, region: africa, aliases: [Kenya, Kenyan, kényan, kényane]}
+  ZA: {name: Afrique du Sud, region: africa, aliases: [South Africa, South African, Afrique du Sud, sud-africain, sud-africaine]}
+
+  # ------------------------------------------------------------ Russie et Eurasie
+  RU: {name: Russie, region: russia_eurasia, aliases: [Russia, Russian, Russie, russe, Moscow, Moscou, Kremlin, Roscosmos]}
+  KZ: {name: Kazakhstan, region: russia_eurasia, aliases: [Kazakhstan, Baikonur, Baïkonour]}
+  BY: {name: Biélorussie, region: russia_eurasia, aliases: [Belarus, Belarusian, Biélorussie]}

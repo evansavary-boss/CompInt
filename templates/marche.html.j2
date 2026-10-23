@@ -1,0 +1,100 @@
+{% extends "base.html.j2" %}
+
+{% block styles %}<link rel="stylesheet" href="{{ root }}static/market.css?v={{ asset_version }}">{% endblock %}
+
+{% block main %}
+<div class="layout layout-single market">
+  <section class="content">
+    <header class="page-head">
+      <h1>{{ title }}</h1>
+      <p>{{ subtitle }}. Comptages par article : un article peut porter plusieurs types.</p>
+    </header>
+
+    <div class="filters market-filters" data-market-filters>
+      <div class="filter-row">
+        <div class="segmented" role="group" aria-label="Domaine">
+          <button type="button" data-domain="geospatial" aria-pressed="false">Géospatial</button>
+          <button type="button" data-domain="newspace" aria-pressed="false">New Space</button>
+          <button type="button" data-domain="all" aria-pressed="true">Tout</button>
+        </div>
+        <label class="select">
+          <span class="sr-only">Période</span>
+          <select data-mfilter="days">
+            {% for d in periods %}<option value="{{ d }}"{% if d == market_days %} selected{% endif %}>{{ d }} derniers jours</option>{% endfor %}
+          </select>
+        </label>
+        <label class="select">
+          <span class="sr-only">Région</span>
+          <select data-mfilter="region">
+            <option value="">Toutes les régions</option>
+            {% for r in market.regions %}<option value="{{ r.key }}">{{ r.label }}</option>{% endfor %}
+          </select>
+        </label>
+        <p class="coverage" data-coverage></p>
+      </div>
+    </div>
+
+    <noscript><p class="placeholder">Cette page a besoin de JavaScript pour calculer les graphiques.</p></noscript>
+
+    <div class="kpis" data-kpis aria-live="polite"></div>
+
+    <div class="viz-grid">
+      <figure class="card viz-card viz-wide" data-weekly>
+        <figcaption class="viz-head">
+          <div>
+            <h2>Activité par semaine</h2>
+            <p>Articles par type d'événement, semaines glissantes de 7 jours</p>
+          </div>
+          <button type="button" class="table-toggle" data-table-toggle aria-pressed="false">Tableau</button>
+        </figcaption>
+        <div class="legend" data-legend></div>
+        <div class="viz-body" data-chart></div>
+        <div class="table-view" data-table hidden></div>
+        <div class="tip" role="status" hidden></div>
+      </figure>
+
+      <figure class="card viz-card" data-regions>
+        <figcaption class="viz-head"><div>
+          <h2>Par région</h2>
+          <p>Articles avec un événement économique · clic : voir les articles</p>
+        </div></figcaption>
+        <div class="hbars" data-bars></div>
+      </figure>
+    </div>
+
+    <figure class="card viz-card" data-heatmap>
+      <figcaption class="viz-head"><div>
+        <h2>Segments et types d'événements</h2>
+        <p>Nombre d'articles par segment des entreprises citées · clic sur une case : voir les articles</p>
+      </div></figcaption>
+      <div class="heat-wrap" data-heat></div>
+      <div class="scale-legend" data-scale></div>
+    </figure>
+
+    <div class="viz-grid">
+      <figure class="card viz-card" data-companies>
+        <figcaption class="viz-head"><div>
+          <h2>Entreprises les plus actives</h2>
+          <p>Événements détectés, par type · clic : fiche</p>
+        </div></figcaption>
+        <div class="hbars" data-bars></div>
+        <div class="tip" role="status" hidden></div>
+      </figure>
+      <figure class="card viz-card" data-customers>
+        <figcaption class="viz-head"><div>
+          <h2>Principaux donneurs d'ordre</h2>
+          <p>Institutions citées dans les articles « contrat gagné » · clic : fiche</p>
+        </div></figcaption>
+        <div class="hbars" data-bars></div>
+      </figure>
+    </div>
+
+    <div class="lists" data-lists></div>
+  </section>
+</div>
+<script type="application/json" id="market-data">{{ market | tojson }}</script>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ root }}static/market.js?v={{ asset_version }}"></script>
+{% endblock %}

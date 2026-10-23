@@ -10,8 +10,10 @@ http:
   retry_delay_seconds: 3
 
 history:
-  retention_days: 30      # durée de conservation dans data/items.json
-  display_days: 14        # fenêtre affichée par défaut sur le site
+  retention_days: 90      # durée de conservation dans data/items.json
+  display_days: 14        # fenêtre affichée par défaut sur les onglets
+  periods: [7, 14, 30, 90]  # choix de période proposés sur le site (jours)
+  default_domain: geospatial  # filtre de domaine par défaut des onglets : geospatial | newspace | all
 
 dedup:
   title_similarity: 0.88  # ratio difflib au-delà duquel deux titres sont des doublons
@@ -42,20 +44,65 @@ text:
     - "Continue reading.*$"
     - "Read more.*$"
 
-market:
-  history_period: 3mo         # historique téléchargé pour calculer les variations
-  week_days: 7                # variation "1 sem" : dernière clôture vs clôture d'il y a 7 jours
-  month_days: 30              # variation "1 mois"
-  earnings_horizon_days: 60   # résultats à venir affichés dans cette fenêtre
+google_news:
+  enabled: true
+  base_url: https://news.google.com/rss/search
+  when: 3d                  # fenêtre de recherche lors de la mise à jour quotidienne
+  backfill_when: 30d        # fenêtre utilisée avec --backfill (premier remplissage)
+  delay_seconds: 1.5        # pause entre deux requêtes (une seule requête à la fois)
+  max_items_per_query: 25   # articles les plus récents gardés par requête
+  # Titres écartés (regex) : pages d'archives que Google News re-date, ex. « … - 19/11 ».
+  title_exclude_regex:
+    - ' - \d{2}/\d{2}$'
+  editions:                 # éditions Google News (langue / pays)
+    en: {hl: en-US, gl: US, ceid: "US:en"}
+    fr: {hl: fr, gl: FR, ceid: "FR:fr"}
+  default_editions: [en]
+  country_editions:         # éditions supplémentaires selon le pays principal de l'entité
+    FR: [en, fr]
+  # Entités dont les articles ne sont gardés que s'ils contiennent un mot-clé spatial ou
+  # géospatial (groupes diversifiés). Surcharge possible par entité : news_require_keywords.
+  require_keywords_for:
+    segments: [defense]
+    types: [defense, ue, international, regulateur, agence_civile]
+
+market:                     # onglet Marché (synthèse tirée des actualités classées)
+  series: [contract_won, funding, mna, launch]   # indicateurs et séries du graphique hebdomadaire
+  lists:                    # listes « derniers … » : type d'événement -> nombre de lignes
+    contract_won: 10
+    funding: 8
+    mna: 8
+  top_companies: 12
+  top_customers: 8          # institutions citées dans les contrats (donneurs d'ordre)
+  default_days: 30
+
+wikidata:
+  api_url: https://www.wikidata.org/w/api.php
+  languages: [fr, en]       # langue des libellés, par ordre de préférence
+  batch_size: 50            # identifiants par requête (maximum de l'API)
+  refresh_days: 7           # faits re-téléchargés au-delà de cet âge ; sinon cache data/entities.json
+  properties:               # champ de fiche -> propriété Wikidata
+    founded: P571           # date de création
+    headquarters: P159      # siège
+    country: P17            # pays
+    ceo: P169               # directeur général
+    director: P1037         # directeur / dirigeant (institutions)
+    parent: P749            # organisation mère
+    employees: P1128        # effectif
+    website: P856           # site officiel
+    logo: P154              # logo (Wikimedia Commons)
 
 enricher: noop           # noop (V0) ; claude (V1, non implémenté)
 
 paths:
   sources: config/sources.yaml
   keywords: config/keywords.yaml
-  tickers: config/tickers.yaml
+  companies: config/entities/companies.yaml
+  institutions: config/entities/institutions.yaml
+  geo: config/geo.yaml
+  events: config/events.yaml
   items: data/items.json
-  market: data/market.json
+  entities: data/entities.json
   templates: templates
   static: static
   output_dir: docs
