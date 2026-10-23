@@ -1,0 +1,61 @@
+# Paramètres généraux du pipeline (aucune valeur métier n'est codée en dur dans src/).
+
+timezone: Europe/Paris
+
+http:
+  user_agent: "VeilleGeoNewSpace/0.1 (veille personnelle ; 1 requete par flux et par jour)"
+  timeout_seconds: 20
+  max_workers: 4          # requêtes simultanées (hôtes différents)
+  retries: 1              # nouvel essai en cas d'erreur réseau ou 5xx
+  retry_delay_seconds: 3
+
+history:
+  retention_days: 30      # durée de conservation dans data/items.json
+  display_days: 14        # fenêtre affichée par défaut sur le site
+
+dedup:
+  title_similarity: 0.88  # ratio difflib au-delà duquel deux titres sont des doublons
+  tracking_params:        # paramètres d'URL retirés pour l'URL canonique
+    - utm_source
+    - utm_medium
+    - utm_campaign
+    - utm_term
+    - utm_content
+    - utm_id
+    - fbclid
+    - gclid
+    - mc_cid
+    - mc_eid
+    - xtor
+    - at_medium
+    - at_campaign
+    - ref
+
+text:
+  raw_summary_max_chars: 1000   # texte conservé en mémoire avant enrichissement
+  excerpt_max_chars: 200        # extrait affiché (jamais d'article complet)
+  summary_strip_patterns:       # regex retirées des résumés (mentions WordPress, etc.)
+    - "The post .*? appeared first on .*?\\.?$"
+    - "L[’']article .*? est apparu en premier sur .*?\\.?$"
+    - "Cet article .*? est apparu en premier sur .*?\\.?$"
+    - "\\[(…|\\.\\.\\.)\\]\\s*$"
+    - "Continue reading.*$"
+    - "Read more.*$"
+
+market:
+  history_period: 3mo         # historique téléchargé pour calculer les variations
+  week_days: 7                # variation "1 sem" : dernière clôture vs clôture d'il y a 7 jours
+  month_days: 30              # variation "1 mois"
+  earnings_horizon_days: 60   # résultats à venir affichés dans cette fenêtre
+
+enricher: noop           # noop (V0) ; claude (V1, non implémenté)
+
+paths:
+  sources: config/sources.yaml
+  keywords: config/keywords.yaml
+  tickers: config/tickers.yaml
+  items: data/items.json
+  market: data/market.json
+  templates: templates
+  static: static
+  output_dir: docs

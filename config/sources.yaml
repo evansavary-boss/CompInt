@@ -1,0 +1,270 @@
+# Flux RSS suivis. Tous vérifiés le 2026-10-22 (HTTP 200 + entrées récentes).
+#
+# Champs :
+#   name              nom affiché
+#   url               URL du flux RSS/Atom
+#   section           politique | entreprises
+#   domain            geospatial | newspace : tag par défaut si aucun mot-clé ne correspond
+#   require_keywords  true  = source généraliste : un item n'est gardé que s'il contient un mot-clé
+#                     false = source spécialisée : tout est gardé, le tag par défaut s'applique
+#   lang              fr | en (informatif)
+#   exclude_url_patterns  (optionnel) items écartés si leur URL contient l'un de ces fragments
+
+sources:
+  # ---------------------------------------------------------------- Politique
+  - name: Opex360 (Zone Militaire)
+    url: https://www.opex360.com/feed/
+    section: politique
+    domain: newspace
+    require_keywords: true
+    lang: fr
+
+  - name: Forces Operations Blog
+    url: https://forcesoperations.com/feed/
+    section: politique
+    domain: newspace
+    require_keywords: true
+    lang: fr
+
+  - name: La Tribune – Aéronautique & Défense
+    url: https://www.latribune.fr/entreprises-finance/industrie/aeronautique-defense/feed.xml
+    section: politique
+    domain: newspace
+    require_keywords: true
+    lang: fr
+
+  - name: IRIS
+    url: https://www.iris-france.org/feed/
+    section: politique
+    domain: newspace
+    require_keywords: true
+    lang: fr
+
+  - name: ESA – Space News
+    url: https://www.esa.int/rssfeed/Our_Activities/Space_News
+    section: politique
+    domain: newspace
+    require_keywords: false
+    lang: en
+
+  - name: ESA – Observing the Earth
+    url: https://www.esa.int/rssfeed/Applications/Observing_the_Earth
+    section: politique
+    domain: geospatial
+    require_keywords: false
+    lang: en
+
+  - name: EUSPA
+    url: https://www.euspa.europa.eu/rss.xml
+    section: politique
+    domain: geospatial
+    require_keywords: false
+    lang: en
+    exclude_url_patterns:   # offres d'emploi, registre documentaire, fiches techniques
+      - /node/
+      - /register-of-documents/
+      - /publications-multimedia/resources/
+
+  - name: Copernicus
+    url: https://www.copernicus.eu/en/rss.xml
+    section: politique
+    domain: geospatial
+    require_keywords: false
+    lang: en
+
+  - name: Eurospace
+    url: https://eurospace.org/feed/
+    section: politique
+    domain: newspace
+    require_keywords: false
+    lang: en
+
+  - name: SpacePolicyOnline
+    url: https://spacepolicyonline.com/feed/
+    section: politique
+    domain: newspace
+    require_keywords: false
+    lang: en
+
+  - name: Breaking Defense – Space
+    url: https://breakingdefense.com/category/space/feed/
+    section: politique
+    domain: newspace
+    require_keywords: false
+    lang: en
+
+  - name: Defense News
+    url: https://www.defensenews.com/arc/outboundfeeds/rss/?outputType=xml
+    section: politique
+    domain: newspace
+    require_keywords: true
+    lang: en
+
+  - name: Defense One
+    url: https://www.defenseone.com/rss/all/
+    section: politique
+    domain: newspace
+    require_keywords: true
+    lang: en
+
+  - name: C4ISRNet
+    url: https://www.c4isrnet.com/arc/outboundfeeds/rss/?outputType=xml
+    section: politique
+    domain: newspace
+    require_keywords: true
+    lang: en
+
+  - name: USGIF (GEOINT)
+    url: https://usgif.org/feed/
+    section: politique
+    domain: geospatial
+    require_keywords: false
+    lang: en
+
+  # ---------------------------------------------------------------- Entreprises
+  - name: SpaceNews
+    url: https://spacenews.com/feed/
+    section: entreprises
+    domain: newspace
+    require_keywords: false
+    lang: en
+
+  - name: European Spaceflight
+    url: https://europeanspaceflight.com/feed/
+    section: entreprises
+    domain: newspace
+    require_keywords: false
+    lang: en
+
+  - name: Via Satellite
+    url: https://www.satellitetoday.com/feed/
+    section: entreprises
+    domain: newspace
+    require_keywords: false
+    lang: en
+
+  - name: Payload
+    url: https://payloadspace.com/feed/
+    section: entreprises
+    domain: newspace
+    require_keywords: false
+    lang: en
+
+  - name: SatNews
+    url: https://satnews.com/feed/
+    section: entreprises
+    domain: newspace
+    require_keywords: false
+    lang: en
+
+  - name: Space Intel Report
+    url: https://www.spaceintelreport.com/feed/
+    section: entreprises
+    domain: newspace
+    require_keywords: false
+    lang: en
+
+  - name: SpaceWatch.Global
+    url: https://spacewatch.global/feed/
+    section: entreprises
+    domain: newspace
+    require_keywords: false
+    lang: en
+
+  - name: SpaceQ
+    url: https://spaceq.ca/feed/
+    section: entreprises
+    domain: newspace
+    require_keywords: false
+    lang: en
+
+  - name: NASASpaceflight
+    url: https://www.nasaspaceflight.com/feed/
+    section: entreprises
+    domain: newspace
+    require_keywords: false
+    lang: en
+
+  - name: Spaceflight Now
+    url: https://spaceflightnow.com/feed/
+    section: entreprises
+    domain: newspace
+    require_keywords: false
+    lang: en
+
+  - name: Space Daily
+    url: https://spacedaily.com/feed/
+    section: entreprises
+    domain: newspace
+    require_keywords: false
+    lang: en
+
+  - name: Geospatial World
+    url: https://geospatialworld.net/feed/
+    section: entreprises
+    domain: geospatial
+    require_keywords: false
+    lang: en
+
+  - name: Earth Imaging Journal
+    url: https://eijournal.com/feed
+    section: entreprises
+    domain: geospatial
+    require_keywords: false
+    lang: en
+
+  - name: GIM International
+    url: https://www.gim-international.com/rss/news.xml
+    section: entreprises
+    domain: geospatial
+    require_keywords: true
+    lang: en
+
+  - name: Geo Week News
+    url: https://www.geoweeknews.com/feed/
+    section: entreprises
+    domain: geospatial
+    require_keywords: true
+    lang: en
+
+  - name: Journal de l'Aviation
+    url: https://www.journal-aviation.com/feed
+    section: entreprises
+    domain: newspace
+    require_keywords: true
+    lang: fr
+
+  - name: Aerobuzz
+    url: https://www.aerobuzz.fr/feed/
+    section: entreprises
+    domain: newspace
+    require_keywords: true
+    lang: fr
+
+  - name: L'Usine Nouvelle
+    url: https://www.usinenouvelle.com/arc/outboundfeeds/rss/
+    section: entreprises
+    domain: newspace
+    require_keywords: true
+    lang: fr
+
+  - name: Le Monde – Espace
+    url: https://www.lemonde.fr/espace/rss_full.xml
+    section: entreprises
+    domain: newspace
+    require_keywords: true
+    lang: fr
+
+  - name: Futura – Espace
+    url: https://www.futura-sciences.com/rss/espace/actualites.xml
+    section: entreprises
+    domain: newspace
+    require_keywords: true
+    lang: fr
+
+  - name: Space.com
+    url: https://www.space.com/feeds.xml
+    section: entreprises
+    domain: newspace
+    require_keywords: true
+    lang: en

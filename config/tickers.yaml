@@ -1,0 +1,43 @@
+# Panier de valeurs suivies. Symboles Yahoo Finance vérifiés le 2026-10-22.
+#
+# Champs :
+#   symbol    symbole Yahoo Finance (suffixe de place : .PA Paris, .DE Xetra, .MI Milan…)
+#   name      nom affiché
+#   group     spatial | geospatial | defense
+#   currency  devise de cotation (EUR, USD…)
+
+groups:
+  geospatial: Géospatial
+  spatial: Spatial
+  defense: Défense & aéronautique
+
+tickers:
+  # Géospatial
+  - { symbol: PL,      name: Planet Labs,        group: geospatial, currency: USD }
+  - { symbol: BKSY,    name: BlackSky,           group: geospatial, currency: USD }
+
+  # Spatial
+  - { symbol: ETL.PA,  name: Eutelsat,           group: spatial, currency: EUR }
+  - { symbol: SESG.PA, name: SES,                group: spatial, currency: EUR }
+  - { symbol: OHB.DE,  name: OHB,                group: spatial, currency: EUR }
+  - { symbol: RKLB,    name: Rocket Lab,         group: spatial, currency: USD }
+  - { symbol: RDW,     name: Redwire,            group: spatial, currency: USD }
+  - { symbol: LUNR,    name: Intuitive Machines, group: spatial, currency: USD }
+
+  # Défense & aéronautique
+  - { symbol: AIR.PA,  name: Airbus,             group: defense, currency: EUR }
+  - { symbol: HO.PA,   name: Thales,             group: defense, currency: EUR }
+  - { symbol: SAF.PA,  name: Safran,             group: defense, currency: EUR }
+  - { symbol: LDO.MI,  name: Leonardo,           group: defense, currency: EUR }
+  - { symbol: RHM.DE,  name: Rheinmetall,        group: defense, currency: EUR }
+
+  # Suggestions vérifiées (décommenter pour les ajouter) :
+  # - { symbol: SATL,      name: Satellogic,    group: geospatial, currency: USD }
+  # - { symbol: SPIR,      name: Spire Global,  group: geospatial, currency: USD }
+  # - { symbol: HEXA-B.ST, name: Hexagon,       group: geospatial, currency: SEK }
+  # - { symbol: MDA.TO,    name: MDA Space,     group: spatial,    currency: CAD }
+  # - { symbol: AVIO.MI,   name: Avio,          group: spatial,    currency: EUR }
+  # - { symbol: ASTS,      name: AST SpaceMobile, group: spatial,  currency: USD }
+  # - { symbol: HAG.DE,    name: Hensoldt,      group: defense,    currency: EUR }
+  # - { symbol: EXA.PA,    name: Exail,         group: defense,    currency: EUR }
+  # - { symbol: KOG.OL,    name: Kongsberg,     group: defense,    currency: NOK }

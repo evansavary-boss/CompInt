@@ -1,0 +1,225 @@
+# Mots-clés de filtrage et de tagging.
+#
+# Règles de correspondance :
+#   - include / exclude : insensibles à la casse et aux accents, sur mots entiers
+#     (un pluriel simple en s/x/es est accepté : "lanceur" trouve "lanceurs").
+#   - acronyms : sensibles à la casse (ex. "SAR" ne trouve pas "sar").
+#   - Un item reçoit le tag d'un domaine si au moins un mot-clé include ou acronym
+#     de ce domaine est présent ET aucun mot-clé exclude de ce domaine.
+#   - global_exclude : l'item est écarté quel que soit le domaine.
+
+domains:
+  geospatial:
+    include:
+      # français
+      - observation de la Terre
+      - imagerie satellite
+      - imagerie satellitaire
+      - imagerie spatiale
+      - image satellite
+      - images satellites
+      - renseignement géospatial
+      - renseignement d'origine image
+      - renseignement d'origine électromagnétique
+      - géospatial
+      - géospatiale
+      - géospatiales
+      - géoinformation
+      - géolocalisation
+      - télédétection
+      - radar à synthèse d'ouverture
+      - satellite de reconnaissance
+      - satellite espion
+      - satellite d'observation
+      - satellites d'observation
+      - hyperspectral
+      - hyperspectrale
+      - multispectral
+      - multispectrale
+      - Composante spatiale optique
+      - Pléiades
+      - Pléiades Neo
+      - Galileo
+      # anglais
+      - Earth observation
+      - satellite imagery
+      - satellite image
+      - satellite data
+      - geospatial
+      - geospatial intelligence
+      - remote sensing
+      - synthetic aperture radar
+      - radar satellite
+      - reconnaissance satellite
+      - spy satellite
+      - imaging satellite
+      - change detection
+      - geolocation
+      - RF geolocation
+      # programmes et acteurs
+      - Copernicus
+      - Sentinel-1
+      - Sentinel-2
+      - Sentinel-3
+      - Sentinel-5P
+      - Sentinel-6
+      - Landsat
+      - Planet Labs
+      - Maxar
+      - Vantor
+      - BlackSky
+      - ICEYE
+      - Capella Space
+      - Umbra
+      - Satellogic
+      - Unseenlabs
+      - HawkEye 360
+      - Kleos
+      - EarthDaily
+      - Pixxel
+      - Satellite Vu
+      - constellr
+      - Safran.AI
+      - Preligens
+      - Esri
+    acronyms:
+      - SAR
+      - InSAR
+      - GEOINT
+      - IMINT
+      - SIGINT
+      - ROIM
+      - ROEM
+      - GIS
+      - NGA
+      - NRO
+      - CSO
+    exclude:
+      - search and rescue
+      - recherche et sauvetage
+      - executive order
+
+  newspace:
+    include:
+      # français
+      - lanceur
+      - fusée
+      - mise en orbite
+      - en orbite
+      - orbite basse
+      - orbite géostationnaire
+      - constellation
+      - mégaconstellation
+      - petits satellites
+      - nanosatellite
+      - microsatellite
+      - satellite
+      - spatial
+      - spatiale
+      - spatiaux
+      - Commandement de l'espace
+      - station spatiale
+      - start-up spatiale
+      - industrie spatiale
+      - défense spatiale
+      # anglais
+      - launcher
+      - launch vehicle
+      - rocket launch
+      - orbital rocket
+      - rideshare
+      - megaconstellation
+      - smallsat
+      - small satellite
+      - cubesat
+      - low Earth orbit
+      - spacecraft
+      - orbit
+      - orbital
+      - in-orbit servicing
+      - space situational awareness
+      - space domain awareness
+      - space startup
+      - Space Force
+      - Space Command
+      - Space Development Agency
+      - Golden Dome
+      # programmes et acteurs
+      - Ariane 6
+      - Vega C
+      - Vega-C
+      - ArianeGroup
+      - Arianespace
+      - Avio
+      - MaiaSpace
+      - The Exploration Company
+      - Hemeria
+      - Isar Aerospace
+      - Rocket Factory Augsburg
+      - Orbex
+      - PLD Space
+      - Skyrora
+      - SpaceX
+      - Starlink
+      - Starship
+      - Falcon 9
+      - Rocket Lab
+      - Firefly
+      - Relativity Space
+      - Blue Origin
+      - New Glenn
+      - Kuiper
+      - Amazon Leo
+      - OneWeb
+      - IRIS²
+      - Eutelsat
+      - OHB
+      - Thales Alenia Space
+      - Airbus Defence and Space
+      - Redwire
+      - Intuitive Machines
+      - D-Orbit
+      - Exotrail
+      - Loft Orbital
+    acronyms:
+      - LEO
+      - MEO
+      - GEO
+      - SDA
+      - SSA
+      - ESA
+      - CNES
+      - EUSPA
+      - ISS
+      - SES
+    exclude: []
+
+global_exclude:
+  - horoscope
+  - black hole
+  - trou noir
+  - exoplanet
+  - exoplanète
+  - galaxy
+  - galaxie
+  - supernova
+  - nebula
+  - nébuleuse
+  - aurora
+  - aurore boréale
+  - meteor shower
+  - étoiles filantes
+  - comet
+  - comète
+  - night sky
+  - ciel nocturne
+  - nebulous
+  - star-forming
+  - formation d'étoiles
+  - brown dwarf
+  - naine brune
+  - space photo of the day
+  - on this day in space
+  - photo de la semaine
+  - telescope deal
+  - sponsored
