@@ -1,0 +1,77 @@
+# Regroupement des articles en sujets et analyse des sujets par Claude.
+#
+# Les listes ci-dessous (onglets, thèmes, industries, niveaux d'impact) servent à la fois :
+#   - au prompt envoyé à Claude (les définitions y sont recopiées automatiquement),
+#   - au schéma JSON qui contraint sa réponse (seules ces clés sont acceptées),
+#   - aux filtres du site.
+
+stories:
+  window_hours: 48          # un article rejoint un sujet publié moins de 48 h avant lui
+  title_similarity: 0.5     # recouvrement des mots du titre (Jaccard) suffisant à lui seul
+  entity_similarity: 0.3    # recouvrement suffisant si une entité et un type d'événement sont communs
+  max_sources_listed: 12    # articles listés sous « N sources » sur une carte
+
+analysis:
+  enabled: true
+  engine: claude_cli        # claude_cli (Claude Code avec ton abonnement) | noop (règles seules)
+  command: claude           # exécutable Claude Code
+  model: sonnet             # alias de modèle Claude Code : sonnet | haiku | opus
+  batch_size: 20            # sujets par appel
+  max_stories_per_run: 150  # plafond quotidien (protège ton quota)
+  max_age_days: 14          # sujets plus anciens jamais analysés (rattrapage limité)
+  reanalyse_growth: 2.0     # ré-analyse un sujet récent dont le nombre d'articles a doublé
+  reanalyse_max_age_days: 3
+  recent_for_duplicates: 80 # sujets récents déjà analysés montrés à Claude pour repérer les doublons
+  timeout_seconds: 600      # par appel
+  prompt_file: config/prompts/analyse_sujets.md
+
+tabs:
+  geopolitique:
+    label: Géopolitique
+    description: conflits, crises, sanctions, ressources, décisions d'États et d'alliances qui modifient le contexte du secteur
+  economie:
+    label: Économie
+    description: budgets publics, réglementation, lobbying, financements, rachats, programmes et partenariats
+  marche:
+    label: Marché
+    description: appels d'offres, contrats attribués, demande des clients institutionnels et commerciaux
+  concurrents:
+    label: Concurrents
+    description: mouvements des concurrents d'Airbus en géospatial (contrats, partenariats, satellites, produits, financements)
+
+themes:
+  conflits: {label: Conflits et défense, tab: geopolitique}
+  sanctions: {label: Sanctions et tensions commerciales, tab: geopolitique}
+  ressources: {label: Ressources et maritime, tab: geopolitique}
+  crises: {label: Crises et climat, tab: geopolitique}
+  budgets: {label: Budgets et décisions publiques, tab: economie}
+  reglementation: {label: Réglementation et lobbying, tab: economie}
+  financements: {label: Financements et consolidation, tab: economie}
+  programmes: {label: Programmes et partenariats, tab: economie}
+  appels_offres: {label: Appels d'offres et contrats, tab: marche}
+  produits: {label: Nouveaux satellites et produits, tab: concurrents}
+  lancements: {label: Lancements et opérations spatiales, tab: concurrents}
+
+# Industries clientes, reprises d'Airbus Space Solutions (space-solutions.airbus.com/industries).
+industries:
+  defense: Défense et systèmes spatiaux
+  securite: Sécurité
+  maritime: Maritime
+  ogme: Pétrole, gaz, mines et énergie
+  agriculture: Agriculture
+  foret_environnement: Forêt et environnement
+  infrastructures: Génie civil et infrastructures
+  foncier: Administration foncière
+  finance_assurance: Finance, banque et assurance
+  connectivite: Connectivité sécurisée
+
+impact:
+  fort:
+    label: Impact fort
+    description: modifie durablement la demande, la concurrence ou l'accès au marché du géospatial ou de la défense (guerre ou crise majeure, budget ou loi structurant, gros contrat, rachat ou lancement de constellation d'un concurrent direct)
+  moyen:
+    label: Impact moyen
+    description: utile à suivre pour un client, un pays ou un concurrent, sans changer la donne à lui seul
+  faible:
+    label: Impact faible
+    description: information de contexte, peu de conséquence directe pour le secteur

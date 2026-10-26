@@ -92,8 +92,6 @@ wikidata:
     website: P856           # site officiel
     logo: P154              # logo (Wikimedia Commons)
 
-enricher: noop           # noop (V0) ; claude (V1, non implémenté)
-
 paths:
   sources: config/sources.yaml
   keywords: config/keywords.yaml
@@ -101,8 +99,10 @@ paths:
   institutions: config/entities/institutions.yaml
   geo: config/geo.yaml
   events: config/events.yaml
+  analysis: config/analysis.yaml
   items: data/items.json
   entities: data/entities.json
+  stories: data/stories.json
   templates: templates
   static: static
   output_dir: docs

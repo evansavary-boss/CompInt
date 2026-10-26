@@ -9,6 +9,10 @@ on:
         description: "Rattrapage Google News sur 30 jours (premier lancement)"
         type: boolean
         default: false
+      analyse_max:
+        description: "Nombre maximal de sujets analysés par Claude (vide = réglage par défaut)"
+        type: string
+        default: ""
 
 permissions:
   contents: write          # commit de data/ et docs/
@@ -34,6 +38,16 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
+      # Claude Code analyses the stories with the owner's Claude subscription. Without the
+      # CLAUDE_CODE_OAUTH_TOKEN secret the build still runs, with rule-based classification only.
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install Claude Code
+        run: npm install -g @anthropic-ai/claude-code
+
       - name: Tests
         run: python -m pytest -q
 
@@ -41,8 +55,16 @@ jobs:
         if: ${{ inputs.backfill }}
         run: python -m src.collect --backfill
 
-      - name: Refresh entities, collect, classify and build
-        run: python -m src.build
+      - name: Refresh entities, collect, classify, analyse and build
+        env:
+          CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          ANALYSE_MAX: ${{ inputs.analyse_max }}
+        run: |
+          if [ -n "$ANALYSE_MAX" ]; then
+            python -m src.build --analyse-max "$ANALYSE_MAX"
+          else
+            python -m src.build
+          fi
 
       - name: Commit data and site
         run: |

@@ -44,6 +44,8 @@ pip install -r requirements.txt
 | `python -m src.collect --reclassify` | reclasse tout l'historique sans rien télécharger (après un changement de mots-clés) |
 | `python -m src.collect --no-gnews` / `--dry-run` | flux éditeurs seuls / sans écrire `data/items.json` |
 | `python -m src.entities` | vérifie le référentiel et rafraîchit les fiches Wikidata (`--force`, `--offline`) |
+| `python -m src.stories` | regroupe les articles en sujets et fait analyser les nouveaux par Claude (`--no-analyse`, `--max 50`) |
+| `python -m src.collect --no-analyse` | collecte et regroupement sans appeler Claude |
 | `python -m pytest` | tests (hors ligne) |
 
 Un flux, une recherche ou Wikidata en erreur ne fait jamais échouer le build : l'erreur est journalisée,
@@ -53,9 +55,11 @@ les données précédentes sont conservées, et les flux en échec apparaissent 
 
 ```
 flux RSS éditeurs ─┐
-                   ├─> filtre (mots-clés, exclusions) ─> dédoublonnage ─> extrait ─> classement ─> data/items.json ─> docs/
+                   ├─> filtre (mots-clés, exclusions) ─> dédoublonnage ─> extrait ─> classement ─> data/items.json
 Google News /      ┘                                                                  │
 entité suivie                                              entités, pays, région, type d'événement, onglet
+                                                                                       │
+                   sujets (articles qui racontent la même chose) ─> analyse Claude ─> data/stories.json ─> docs/
 Wikidata ─────────────────────────────────────────────> data/entities.json (fiches) ─┘
 ```
 
@@ -66,6 +70,12 @@ Wikidata ───────────────────────�
 - **Classement par règles**, entièrement piloté par les fichiers YAML et refait sur tout l'historique à
   chaque passage : un changement de mot-clé s'applique donc aussi aux anciens articles.
 - **Historique** : 90 jours dans `data/items.json`.
+- **Sujets** : les articles qui racontent la même information (titres proches, mêmes acteurs, même
+  fenêtre de 48 h) sont regroupés en un sujet ; le site affiche une carte par sujet avec ses sources
+  dépliables. Un sujet garde le même identifiant d'un jour à l'autre (`data/stories.json`).
+- **Analyse par Claude** (voir plus bas) : titre et résumé en français, « pourquoi c'est important »,
+  impact fort / moyen / faible, thèmes, industries clientes, pays, et fusion des doublons dans une autre
+  langue. Sans jeton ou quand le quota est atteint, le site se met à jour avec les règles seules.
 
 Limites connues : le classement par règles détecte bien les contrats, lancements, levées et rachats
 annoncés dans le titre, beaucoup moins les événements politiques ; les liens Google News passent par
@@ -79,17 +89,20 @@ config/
   sources.yaml           flux RSS des éditeurs
   keywords.yaml          mots-clés de domaine (géospatial / New Space) et exclusions
   events.yaml            types d'événements et expressions qui les signalent
+  analysis.yaml          regroupement en sujets, analyse par Claude, onglets, thèmes, industries, impact
+  prompts/analyse_sujets.md   consigne envoyée à Claude (les listes d'analysis.yaml y sont ajoutées)
   geo.yaml               pays (noms, gentilés) et régions
   entities/companies.yaml, entities/institutions.yaml   entreprises et institutions suivies
 src/
   collect.py   collecte (RSS + Google News), filtre, dédoublonnage, stockage
   classify.py  entités, pays, régions, événements, onglets      textmatch.py  détection rapide de termes
   entities.py  référentiel + Wikidata                            filter.py     mots-clés, dédoublonnage
-  market.py    données de l'onglet Marché                        enrich.py     extrait (V0) / Claude (V1)
+  market.py    données de l'onglet Marché                        enrich.py     extrait + analyse Claude
+  stories.py   regroupement des articles en sujets
   build.py     génération des pages                              store.py, models.py, config.py
 templates/     base, onglets, fiche, marché (Jinja2)
 static/        style.css, app.js (filtres), market.css, market.js (graphiques)
-data/          items.json, entities.json (générés)
+data/          items.json, stories.json, entities.json (générés)
 docs/          site généré, servi par GitHub Pages
 tests/
 ```
@@ -190,13 +203,27 @@ planifiées de quelques minutes, et suspend les workflows planifiés d'un dépô
 La page porte une balise `noindex` pour ne pas être référencée par les moteurs de recherche, mais elle reste
 accessible à toute personne qui a le lien.
 
-## Évolution prévue (V1)
+## Analyse par Claude (avec ton abonnement)
 
-`src/enrich.py` définit l'interface `Enricher` ; la V0 utilise `NoopEnricher` (extrait du flux tel quel).
-Un futur `ClaudeEnricher` pourra résumer en deux lignes et affiner le classement (contrats perdus,
-événements politiques, pays concernés) via l'API Anthropic : il suffira de l'enregistrer dans
-`ENRICHERS`, de passer `enricher: claude` dans `config/settings.yaml` et d'ajouter la clé API dans
-**Settings → Secrets and variables → Actions** (jamais dans le dépôt).
+Chaque matin, les nouveaux sujets (150 au plus, les plus repris d'abord) sont analysés par Claude Code
+en mode non interactif, avec ton abonnement Claude (Pro, Max, Team ou Enterprise) : pas de clé API ni de
+facturation à l'usage, mais une consommation de ton quota. Réglages : `config/analysis.yaml` (modèle,
+plafond quotidien, taille des lots) et `config/prompts/analyse_sujets.md` (consigne).
+
+**Mise en place (une fois) :**
+
+1. Installer Claude Code sur ton PC (`winget install Anthropic.ClaudeCode`), puis générer un jeton valable
+   un an avec `claude setup-token` (connexion dans le navigateur ; le jeton commence par `sk-ant-oat`).
+2. Sur GitHub : **Settings → Secrets and variables → Actions → New repository secret**, nom
+   `CLAUDE_CODE_OAUTH_TOKEN`, valeur : le jeton. Ne jamais l'écrire dans un fichier du dépôt.
+3. Premier remplissage : **Actions → Mise à jour quotidienne → Run workflow**, champ « Nombre maximal de
+   sujets analysés » à 400 par exemple.
+
+**En local :** après `claude auth login` (ou avec la variable `CLAUDE_CODE_OAUTH_TOKEN`),
+`python -m src.stories --max 20` analyse 20 sujets. Le bilan indique ce que le passage aurait coûté au
+tarif de l'API : c'est une indication, rien n'est facturé, seul le quota de l'abonnement est consommé
+(vérifier que l'« usage supplémentaire » payant est désactivé dans les paramètres de claude.ai). Le jeton
+expire au bout d'un an : refaire les étapes 1 et 2.
 
 ## Sources non retenues
 

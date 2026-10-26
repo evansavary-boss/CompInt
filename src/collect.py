@@ -6,6 +6,7 @@ Usage:
     python -m src.collect --dry-run     # same, without writing anything
     python -m src.collect --backfill    # wider Google News window (first fill)
     python -m src.collect --no-gnews    # publisher feeds only
+    python -m src.collect --no-analyse  # group stories without calling Claude
 """
 
 from __future__ import annotations
@@ -29,7 +30,8 @@ import requests
 
 from .classify import Classifier
 from .config import load_settings, load_yaml, resolve
-from .enrich import get_enricher
+from . import stories as stories_mod
+from .enrich import truncate
 from .entities import load_reference
 from .filter import KeywordMatcher, canonical_url, dedupe, tag_items
 from .models import Item, SourceStatus
@@ -252,7 +254,8 @@ def _merge_query_entities(kept: Item, dropped: Item) -> None:
 
 
 def run(settings: dict[str, Any] | None = None, dry_run: bool = False,
-        backfill: bool = False, use_gnews: bool = True) -> dict[str, Any]:
+        backfill: bool = False, use_gnews: bool = True, analyse: bool = True,
+        analyse_max: int | None = None) -> dict[str, Any]:
     """Full news update. Returns a summary used by the CLI report and build."""
     settings = settings or load_settings()
     paths = settings["paths"]
@@ -302,13 +305,16 @@ def run(settings: dict[str, Any] | None = None, dry_run: bool = False,
                        on_duplicate=_merge_query_entities)
     new_items += dedupe(oldest_first(search_items), threshold, tracking, existing=existing + new_items,
                         on_duplicate=_merge_query_entities)
-    new_items = get_enricher(settings).enrich(new_items)
+    for item in new_items:
+        item.summary = truncate(item.summary, settings["text"]["excerpt_max_chars"])
 
     # Exclusions and classification are cheap and rule-based: redo them on the whole
     # history so that keyword, alias or pattern changes apply retroactively.
     all_items = sort_items(classifier.classify_all(drop_excluded(existing + new_items, matcher, settings)))
+    book = None
     if not dry_run:
         save_items(items_path, all_items, statuses, now)
+        book = stories_mod.update(all_items, settings, ref, analyse=analyse, max_stories=analyse_max)
 
     return {
         "updated_at": now,
@@ -316,6 +322,7 @@ def run(settings: dict[str, Any] | None = None, dry_run: bool = False,
         "new_items": new_items,
         "items": all_items,
         "ref": ref,
+        "book": book,
         "display_days": settings["history"]["display_days"],
     }
 
@@ -362,6 +369,9 @@ def print_report(summary: dict[str, Any]) -> None:
         ents = Counter(e for i in tab_items for e in i.entities if ref["entities"][e]["kind"] == kind)
         print("  Entités    :", top(ents, {k: v["name"] for k, v in ref["entities"].items()}, 15))
 
+    if summary.get("book") is not None:
+        stories_mod.print_report(summary["book"], items)
+
     unclassified = [i for i in items if not i.entities and not i.events]
     print(f"\nSans entité ni événement : {len(unclassified)} / {len(items)}")
     silent = [e["name"] for eid, e in ref["entities"].items() if not any(eid in i.entities for i in items)]
@@ -378,9 +388,12 @@ def reclassify(settings: dict[str, Any] | None = None, dry_run: bool = False) ->
     items = sort_items(Classifier(ref).classify_all(drop_excluded(items, matcher, settings)))
     statuses = [SourceStatus(**s) for s in meta.get("sources", [])]
     updated_at = datetime.fromisoformat(meta["updated_at"]) if meta.get("updated_at") else datetime.now()
+    book = None
     if not dry_run:
         save_items(path, items, statuses, updated_at)
-    return {"updated_at": updated_at, "statuses": statuses, "new_items": [], "items": items, "ref": ref}
+        book = stories_mod.update(items, settings, ref, analyse=False)
+    return {"updated_at": updated_at, "statuses": statuses, "new_items": [], "items": items, "ref": ref,
+            "book": book}
 
 
 def main(argv: list[str] | None = None) -> int:
@@ -388,6 +401,7 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--dry-run", action="store_true", help="do not write data/items.json")
     parser.add_argument("--backfill", action="store_true", help="wider Google News window")
     parser.add_argument("--no-gnews", action="store_true", help="publisher feeds only")
+    parser.add_argument("--no-analyse", action="store_true", help="group stories without calling Claude")
     parser.add_argument("--reclassify", action="store_true",
                         help="no download: re-run classification on data/items.json")
     args = parser.parse_args(argv)
@@ -397,7 +411,8 @@ def main(argv: list[str] | None = None) -> int:
     if args.reclassify:
         print_report(reclassify(dry_run=args.dry_run))
     else:
-        print_report(run(dry_run=args.dry_run, backfill=args.backfill, use_gnews=not args.no_gnews))
+        print_report(run(dry_run=args.dry_run, backfill=args.backfill, use_gnews=not args.no_gnews,
+                         analyse=not args.no_analyse))
     return 0
 
 

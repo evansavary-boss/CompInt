@@ -1,30 +1,48 @@
-{# Shared building blocks: one news item, the filter bar, the feed. #}
+{# Shared building blocks: one story (articles about the same news), the filter bar, the feed. #}
 
-{% macro item_card(row, root, current=None) %}
-{% set i = row.item %}
-<article class="item"
-  data-tags="{{ i.tags | join(' ') }}"
-  data-entities="{{ i.entities | join(' ') }}"
-  data-countries="{{ i.countries | join(' ') }}"
-  data-regions="{{ i.regions | join(' ') }}"
-  data-events="{{ i.events | join(' ') }}"
+{% macro story_card(row, root, current=None) %}
+<article class="item story{% if row.impact %} impact-{{ row.impact }}{% endif %}"
+  data-tags="{{ row.tags | join(' ') }}"
+  data-entities="{{ row.entity_ids | join(' ') }}"
+  data-countries="{{ row.countries | join(' ') }}"
+  data-regions="{{ row.regions | join(' ') }}"
+  data-events="{{ row.event_keys | join(' ') }}"
   data-segments="{{ row.segments | join(' ') }}"
+  data-industries="{{ row.industries | map('first') | join(' ') }}"
+  data-impact="{{ row.impact_rank }}"
   data-age="{{ row.age }}"
   data-search="{{ row.search }}">
-  <h4><a href="{{ i.url }}" target="_blank" rel="noopener noreferrer">{{ i.title }}</a></h4>
+  <h4><a href="{{ row.url }}" target="_blank" rel="noopener noreferrer">{{ row.title }}</a></h4>
   <p class="meta">
-    <span class="src">{{ i.source }}</span>{% if i.via == 'gnews' %}<span class="via" title="Trouvé via Google News"> · GN</span>{% endif %}
+    {% if row.impact %}<span class="impact-badge impact-badge-{{ row.impact }}">{{ row.impact_label }}</span>{% endif %}
+    <span class="src">{{ row.source }}</span>{% if row.via == 'gnews' %}<span class="via" title="Trouvé via Google News"> · GN</span>{% endif %}
+    {% if row.n_sources > 1 %}<span class="n-sources">+ {{ row.n_sources - 1 }} source{{ 's' if row.n_sources > 2 }}</span>{% endif %}
     <span aria-hidden="true">·</span>
-    <time datetime="{{ i.published }}" title="{{ row.date }}">{% if i.date_estimated %}≈ {% endif %}{{ row.time }}</time>
-    {% if row.countries %}<span aria-hidden="true">·</span> <span class="geo">{{ row.countries[:3] | join(', ') }}</span>{% endif %}
+    <time datetime="{{ row.last.isoformat() }}" title="{{ row.date }}">{{ row.time }}</time>
+    {% if row.country_names %}<span aria-hidden="true">·</span> <span class="geo">{{ row.country_names[:3] | join(', ') }}</span>{% endif %}
   </p>
-  {% if row.events or row.entities %}
+  {% if row.summary %}<p class="excerpt">{{ row.summary }}</p>{% endif %}
+  {% if row.why %}<p class="why"><span>Pourquoi c'est important</span> {{ row.why }}</p>{% endif %}
+  {% if row.events or row.entities or row.themes or row.industries %}
   <p class="labels">
     {% for ev in row.events %}<span class="ev ev-{{ ev.key }}">{{ ev.label }}</span>{% endfor %}
+    {% for k, label in row.themes %}<span class="theme">{{ label }}</span>{% endfor %}
+    {% for k, label in row.industries %}<span class="industry">{{ label }}</span>{% endfor %}
     {% for e in row.entities[:5] %}{% if e.id != current %}<a class="chip chip-{{ e.kind }}" href="{{ root }}entite/{{ e.id }}.html">{{ e.name }}</a>{% endif %}{% endfor %}
   </p>
   {% endif %}
-  {% if i.summary %}<p class="excerpt">{{ i.summary }}</p>{% endif %}
+  {% if row.n_items > 1 %}
+  <details class="sources">
+    <summary>{{ row.n_items }} articles de {{ row.n_sources }} source{{ 's' if row.n_sources > 1 }}</summary>
+    <ul>
+      {% for s in row.sources %}
+      <li><a href="{{ s.url }}" target="_blank" rel="noopener noreferrer">{{ s.title }}</a>
+        <span class="list-meta">{{ s.source }}{% if s.via == 'gnews' %} · GN{% endif %} · {{ s.date }}</span></li>
+      {% endfor %}
+      {% if row.more_sources %}<li class="list-meta">… et {{ row.more_sources }} autre{{ 's' if row.more_sources > 1 }}</li>{% endif %}
+    </ul>
+  </details>
+  {% endif %}
 </article>
 {% endmacro %}
 
@@ -49,6 +67,24 @@
       </select>
     </label>
   </div>
+  {% if options.analysed %}
+  <div class="filter-row">
+    <div class="segmented" role="group" aria-label="Impact">
+      <button type="button" data-impact="0">Tous les sujets</button>
+      <button type="button" data-impact="2">Impact moyen et fort</button>
+      <button type="button" data-impact="3">Impact fort</button>
+    </div>
+    {% if options.industries %}
+    <label class="select">
+      <span class="sr-only">Industrie</span>
+      <select data-filter="industries">
+        <option value="">Toutes les industries</option>
+        {% for k, label, n in options.industries %}<option value="{{ k }}">{{ label }} ({{ n }})</option>{% endfor %}
+      </select>
+    </label>
+    {% endif %}
+  </div>
+  {% endif %}
   <div class="filter-row">
     <label class="select">
       <span class="sr-only">Région</span>
@@ -100,9 +136,9 @@
   {% for g in groups %}
   <section class="day" data-age="{{ g.age }}">
     <h3 class="day-label">{{ g.label }}</h3>
-    {% for row in g.rows %}{{ item_card(row, root, current) }}{% endfor %}
+    {% for row in g.rows %}{{ story_card(row, root, current) }}{% endfor %}
   </section>
   {% endfor %}
-  <p class="empty" hidden>Aucun article ne correspond à ces filtres. Élargir la période ou passer le domaine sur « Tout ».</p>
+  <p class="empty" hidden>Aucun sujet ne correspond à ces filtres. Élargir la période ou passer le domaine sur « Tout ».</p>
 </div>
 {% endmacro %}
