@@ -16,6 +16,7 @@ import os
 import shutil
 import subprocess
 import tempfile
+import time
 from abc import ABC, abstractmethod
 from dataclasses import dataclass
 from datetime import datetime, timedelta
@@ -299,7 +300,14 @@ def analyse_stories(book, items: list[Item], acfg: dict[str, Any], ref: dict[str
     by_id = {i.id: i for i in items}
     due = select(book, by_id, acfg, now, max_stories or cfg["max_stories_per_run"])
     cost = 0.0
+    started = time.monotonic()
+    budget = cfg.get("time_budget_minutes", 15) * 60
     for start in range(0, len(due), cfg["batch_size"]):
+        if time.monotonic() - started > budget:
+            report["error"] = (f"budget de temps atteint ({cfg.get('time_budget_minutes', 15)} min) : "
+                               f"{len(due) - start} sujets reportés au prochain passage")
+            log.info(report["error"])
+            break
         batch = due[start:start + cfg["batch_size"]]
         ids = {v["story"].id for v in batch}
         recent = recent_analysed(book, by_id, now, ids, cfg["recent_for_duplicates"])

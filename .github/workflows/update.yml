@@ -24,7 +24,7 @@ concurrency:
 jobs:
   update:
     runs-on: ubuntu-latest
-    timeout-minutes: 30    # ~100 recherches Google News espacées de 1,5 s
+    timeout-minutes: 45    # collecte (~5 min) + analyse Claude (plafonnée à 15 min) + marge
     steps:
       - name: Checkout
         uses: actions/checkout@v4

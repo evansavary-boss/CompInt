@@ -23,6 +23,8 @@ analysis:
   reanalyse_max_age_days: 3
   recent_for_duplicates: 80 # sujets récents déjà analysés montrés à Claude pour repérer les doublons
   timeout_seconds: 600      # par appel
+  time_budget_minutes: 15   # au-delà, l'analyse s'arrête et reprend au passage suivant (le workflow
+                            # GitHub est limité dans le temps : il ne doit jamais être coupé)
   prompt_file: config/prompts/analyse_sujets.md
 
 tabs:

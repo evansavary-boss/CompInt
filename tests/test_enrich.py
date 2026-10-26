@@ -124,6 +124,20 @@ def test_selection_cap_age_and_priority(fake, ref):
     assert book.stories["sold"].analysis == {}          # too old, never analysed
 
 
+def test_time_budget_stops_between_batches(fake, ref, monkeypatch):
+    items = [item(f"i{n}", f"Distinct story number {n} about topic {n}") for n in range(3)]
+    book = book_with(items)
+    acfg = json.loads(json.dumps(ACFG))
+    acfg["analysis"]["batch_size"] = 1
+    acfg["analysis"]["time_budget_minutes"] = 1
+    clock = iter([0, 0, 120, 120])               # start, batch 1, then past the 60 s budget
+    monkeypatch.setattr(enrich.time, "monotonic", lambda: next(clock))
+    analyzer = fake()
+    report = enrich.analyse_stories(book, items, acfg, ref, NOW)
+    assert len(analyzer.calls) == 1 and report["analysed"] == 1
+    assert "budget de temps" in report["error"] and "2 sujets" in report["error"]
+
+
 def test_unavailable_cli_is_reported(ref):
     acfg = json.loads(json.dumps(ACFG))
     acfg["analysis"]["command"] = "definitely-not-a-real-binary-xyz"
