@@ -1,5 +1,5 @@
-// Vanilla JS: feed filters (domain, period, region, country, entity, segment, event types,
-// full-text search) kept in the URL hash, live counts, and the "open a profile" box.
+// Vanilla JS: feed filters (domain, period, impact, region, country, entity, segment, industry,
+// event types, full-text search) kept in the URL hash, live counts, and the "open a profile" box.
 (function () {
   "use strict";
 
@@ -36,21 +36,23 @@
   const feed = document.querySelector("[data-feed]");
   if (!bar || !feed) return;
 
-  const SET_FIELDS = ["tags", "entities", "countries", "regions", "events", "segments"];
-  const SELECTS = ["regions", "countries", "entities", "segments"];
+  const SET_FIELDS = ["tags", "entities", "countries", "regions", "events", "segments", "industries"];
+  const SELECTS = ["regions", "countries", "entities", "segments", "industries"];
   const defaults = {
     domain: bar.dataset.defaultDomain || "all",
     days: Number(bar.dataset.defaultDays) || 14,
   };
-  const state = { ...defaults, q: "", regions: "", countries: "", entities: "", segments: "", events: new Set() };
+  const EMPTY = { q: "", impact: 0, regions: "", countries: "", entities: "", segments: "", industries: "" };
+  const state = { ...defaults, ...EMPTY, events: new Set() };
 
   const items = Array.from(feed.querySelectorAll(".item")).map((el) => {
-    const it = { el, age: Number(el.dataset.age), search: el.dataset.search };
+    const it = { el, age: Number(el.dataset.age), impact: Number(el.dataset.impact || 0), search: el.dataset.search };
     SET_FIELDS.forEach((f) => { it[f] = new Set((el.dataset[f] || "").split(" ").filter(Boolean)); });
     return it;
   });
   const days = Array.from(feed.querySelectorAll(".day"));
   const domainButtons = bar.querySelectorAll("[data-domain]");
+  const impactButtons = bar.querySelectorAll("[data-impact]");
   const selects = bar.querySelectorAll("select[data-filter]");
   const searchInput = bar.querySelector('input[data-filter="q"]');
   const chips = bar.querySelectorAll("[data-event]");
@@ -59,6 +61,7 @@
   function matches(it, except) {
     if (state.domain !== "all" && !it.tags.has(state.domain)) return false;
     if (it.age >= state.days) return false;
+    if (state.impact && it.impact < state.impact) return false;
     for (const f of SELECTS) {
       if (f !== except && state[f] && !it[f].has(state[f])) return false;
     }
@@ -84,13 +87,14 @@
   }
 
   function isDefault() {
-    return state.domain === defaults.domain && state.days === defaults.days && !state.q
+    return state.domain === defaults.domain && state.days === defaults.days && !state.q && !state.impact
       && SELECTS.every((f) => !state[f]) && !state.events.size;
   }
 
   function writeHash() {
     const p = new URLSearchParams();
     if (state.domain !== defaults.domain) p.set("domain", state.domain);
+    if (state.impact) p.set("impact", state.impact);
     if (state.days !== defaults.days) p.set("days", state.days);
     SELECTS.forEach((f) => { if (state[f]) p.set(f, state[f]); });
     if (state.events.size) p.set("events", Array.from(state.events).join(","));
@@ -102,6 +106,7 @@
   function readHash() {
     const p = new URLSearchParams(window.location.hash.slice(1));
     if (p.get("domain")) state.domain = p.get("domain");
+    state.impact = Number(p.get("impact")) || 0;
     if (p.get("days")) state.days = Number(p.get("days")) || defaults.days;
     SELECTS.forEach((f) => { state[f] = p.get(f) || ""; });
     state.events = new Set((p.get("events") || "").split(",").filter(Boolean));
@@ -110,6 +115,7 @@
 
   function syncControls() {
     domainButtons.forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.domain === state.domain)));
+    impactButtons.forEach((b) => b.setAttribute("aria-pressed", String(Number(b.dataset.impact) === state.impact)));
     selects.forEach((s) => {
       const f = s.dataset.filter;
       const value = f === "days" ? String(state.days) : state[f];
@@ -154,6 +160,9 @@
   }
 
   // ------------------------------------------------------------ events
+  impactButtons.forEach((b) => b.addEventListener("click", () => {
+    state.impact = Number(b.dataset.impact); syncControls(); apply();
+  }));
   domainButtons.forEach((b) => b.addEventListener("click", () => {
     state.domain = b.dataset.domain; syncControls(); apply();
   }));
@@ -173,7 +182,7 @@
     timer = setTimeout(() => { state.q = searchInput.value.trim(); apply(); }, 150);
   });
   if (resetButton) resetButton.addEventListener("click", () => {
-    Object.assign(state, defaults, { q: "", regions: "", countries: "", entities: "", segments: "" });
+    Object.assign(state, defaults, EMPTY);
     state.events = new Set();
     syncControls(); apply();
   });

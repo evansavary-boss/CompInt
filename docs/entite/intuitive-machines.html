@@ -7,7 +7,7 @@
   <meta name="robots" content="noindex">
   <title>Intuitive Machines · Veille Géospatial & New Space</title>
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='6' fill='%232563eb'/%3E%3Cellipse cx='16' cy='16' rx='14' ry='5' fill='none' stroke='%232563eb' stroke-width='2' transform='rotate(-25 16 16)'/%3E%3C/svg%3E">
-  <link rel="stylesheet" href="../static/style.css?v=202610260731">
+  <link rel="stylesheet" href="../static/style.css?v=202610262057">
 </head>
 <body data-page="entite" data-root="../">
   <header class="top">
@@ -26,7 +26,7 @@
         <datalist id="entity-list">
 <option value="AED"></option><option value="Aerospacelab"></option><option value="Airbus Defence and Space"></option><option value="Amazon Leo (ex-Kuiper)"></option><option value="ArianeGroup"></option><option value="Arianespace"></option><option value="ASI"></option><option value="AST SpaceMobile"></option><option value="Avio"></option><option value="BlackSky"></option><option value="Blue Origin"></option><option value="Capella Space"></option><option value="CNES"></option><option value="CNSA"></option><option value="Commandement de l&#39;Espace"></option><option value="Commission européenne (DG DEFIS)"></option><option value="constellr"></option><option value="D-Orbit"></option><option value="DGA"></option><option value="DLR"></option><option value="EarthDaily"></option><option value="ESA"></option><option value="Esri"></option><option value="EUSPA"></option><option value="Eutelsat"></option><option value="Exotrail"></option><option value="FCC"></option><option value="Firefly Aerospace"></option><option value="HawkEye 360"></option><option value="Hemeria"></option><option value="Hensoldt"></option><option value="ICEYE"></option><option value="Intuitive Machines"></option><option value="iQPS"></option><option value="Isar Aerospace"></option><option value="ISRO"></option><option value="JAXA"></option><option value="L3Harris"></option><option value="Latitude"></option><option value="Leonardo"></option><option value="Lockheed Martin"></option><option value="Loft Orbital"></option><option value="MaiaSpace"></option><option value="Ministère des Armées"></option><option value="NASA"></option><option value="NGA"></option><option value="NOAA"></option><option value="Northrop Grumman"></option><option value="NRO"></option><option value="OHB"></option><option value="Open Cosmos"></option><option value="OTAN"></option><option value="Pixxel"></option><option value="Planet Labs"></option><option value="PLD Space"></option><option value="Redwire"></option><option value="Rheinmetall"></option><option value="Rocket Factory Augsburg"></option><option value="Rocket Lab"></option><option value="Safran"></option><option value="Safran.AI (ex-Preligens)"></option><option value="SatCen"></option><option value="Satellite Vu"></option><option value="Satellogic"></option><option value="SES"></option><option value="Space Development Agency"></option><option value="SpaceX"></option><option value="Spire Global"></option><option value="Synspective"></option><option value="Thales"></option><option value="Thales Alenia Space"></option><option value="The Exploration Company"></option><option value="UIT"></option><option value="UK Space Agency"></option><option value="Umbra"></option><option value="Unseenlabs"></option><option value="US Space Force"></option><option value="Vantor (ex-Maxar Intelligence)"></option>        </datalist>
       </label>
-      <p class="updated">Mis à jour le <time datetime="2026-10-26T07:31:31+01:00">26 oct. 2026 à 07:31</time></p>
+      <p class="updated">Mis à jour le <time datetime="2026-10-26T20:57:46+01:00">26 oct. 2026 à 20:57</time></p>
     </div>
   </header>
 
@@ -70,7 +70,7 @@
     </article>
 
     <header class="page-head">
-      <h2 class="feed-title">Actualités <span class="count" data-count>24</span></h2>
+      <h2 class="feed-title">Actualités <span class="count" data-count>13</span></h2>
     </header>
     <div class="filters" data-default-days="90" data-default-domain="all">
   <div class="filter-row">
@@ -91,37 +91,102 @@
     </label>
   </div>
   <div class="filter-row">
+    <div class="segmented" role="group" aria-label="Impact">
+      <button type="button" data-impact="0">Tous les sujets</button>
+      <button type="button" data-impact="2">Impact moyen et fort</button>
+      <button type="button" data-impact="3">Impact fort</button>
+    </div>
+    <label class="select">
+      <span class="sr-only">Industrie</span>
+      <select data-filter="industries">
+        <option value="">Toutes les industries</option>
+<option value="defense">Défense et systèmes spatiaux (1)</option><option value="connectivite">Connectivité sécurisée (1)</option>      </select>
+    </label>
+  </div>
+  <div class="filter-row">
     <label class="select">
       <span class="sr-only">Région</span>
       <select data-filter="regions">
         <option value="">Toutes les régions</option>
-<option value="north_america">Amérique du Nord</option><option value="asia_pacific">Asie-Pacifique</option>      </select>
+<option value="north_america">Amérique du Nord</option>      </select>
     </label>
     <label class="select">
       <span class="sr-only">Pays</span>
       <select data-filter="countries">
         <option value="">Tous les pays</option>
-<option value="US">États-Unis (24)</option><option value="IN">Inde (1)</option><option value="CA">Canada (1)</option>      </select>
+<option value="US">États-Unis (13)</option>      </select>
     </label>
     <button type="button" class="reset" data-reset hidden>Effacer les filtres</button>
   </div>
   <div class="chips" role="group" aria-label="Type d'événement">
     <button type="button" class="ev ev-launch" data-event="launch" aria-pressed="false">Lancement <span class="n" data-event-count="launch">1</span></button>
-    <button type="button" class="ev ev-financials" data-event="financials" aria-pressed="false">Résultats financiers <span class="n" data-event-count="financials">2</span></button>
-    <button type="button" class="ev ev-appointment" data-event="appointment" aria-pressed="false">Nomination <span class="n" data-event-count="appointment">4</span></button>
+    <button type="button" class="ev ev-financials" data-event="financials" aria-pressed="false">Résultats financiers <span class="n" data-event-count="financials">1</span></button>
+    <button type="button" class="ev ev-appointment" data-event="appointment" aria-pressed="false">Nomination <span class="n" data-event-count="appointment">1</span></button>
   </div>
 </div>
 
     <div class="feed" data-feed>
-  <section class="day" data-age="1">
-    <h3 class="day-label">Hier</h3>
-<article class="item"
+  <section class="day" data-age="0">
+    <h3 class="day-label">Aujourd&#39;hui</h3>
+<article class="item story impact-faible"
   data-tags="newspace"
   data-entities="intuitive-machines"
   data-countries="US"
   data-regions="north_america"
   data-events=""
   data-segments="in_orbit"
+  data-industries=""
+  data-impact="1"
+  data-age="0"
+  data-search="intuitive machines : l&#39;action chute de 30% sur fond de litige contractuel l&#39;action d&#39;intuitive machines a perdu environ 30% suite a des problemes lies a un contrat, selon la presse financiere americaine. intuitive machines est un acteur des services lunaires et spatiaux ; ses difficultes contractuelles illustrent les risques financiers du secteur. intuitive machines just dropped 30% in a month. is it time to sell? intuitive machines stock plunges 30% amid contr... 24/7 wall st. pluang intuitive machines etats-unis financements et consolidation">
+  <h4><a href="https://news.google.com/rss/articles/CBMirAFBVV95cUxOZ1RBWjU4d0FYVkVSSC0yaHpRbG82d0lVajFoRjd6b3NLVkMwTE9CREl4Zy1qU0ZBZnNQQ0pJTjM5QnZ4WXQ0S2ptakFnNnZHVHNENVpoMXc3ZFRpNEEydmtxQU9VdDFIR2pDb2ZIMVN4YzJZbWd4cDZHSzJlbkR4eEc2dmZyZEE5QzFMLW5TaW9XRXFPUnpwdDZXZ1J0dVpvXzlIUW5VSk92ZHBq?oc=5" target="_blank" rel="noopener noreferrer">Intuitive Machines : l&#39;action chute de 30% sur fond de litige contractuel</a></h4>
+  <p class="meta">
+<span class="impact-badge impact-badge-faible">Impact faible</span>    <span class="src">24/7 Wall St.</span><span class="via" title="Trouvé via Google News"> · GN</span><span class="n-sources">+ 1 source</span>    <span aria-hidden="true">·</span>
+    <time datetime="2026-10-26T20:05:47+01:00" title="26 oct. 2026">20:05</time>
+<span aria-hidden="true">·</span> <span class="geo">États-Unis</span>  </p>
+<p class="excerpt">L&#39;action d&#39;Intuitive Machines a perdu environ 30% suite à des problèmes liés à un contrat, selon la presse financière américaine.</p><p class="why"><span>Pourquoi c'est important</span> Intuitive Machines est un acteur des services lunaires et spatiaux ; ses difficultés contractuelles illustrent les risques financiers du secteur.</p>  <p class="labels">
+<span class="theme">Financements et consolidation</span>  </p>
+  <details class="sources">
+    <summary>2 articles de 2 sources</summary>
+    <ul>
+      <li><a href="https://news.google.com/rss/articles/CBMikAFBVV95cUxPWHgxLXczZVJFZEU0Q0dkZFk5MmtXVlFpYVBfYm41SzJzdk10dlpRUGdMQm1LckJHa2lJcklTYzJWR3dteVlKYzRwU3NPTTdad0xZa2dmS0dUc0pxeGZJc2gyMnJsMWthVThrR21lR2Z2Nm9JZkV4RzA2Mms5Q0VWYk5lS05fb3hFSkZqTi1NMDU?oc=5" target="_blank" rel="noopener noreferrer">Intuitive Machines stock plunges 30% amid contr...</a>
+        <span class="list-meta">Pluang · GN · 26 oct. · 20:05</span></li>
+      <li><a href="https://news.google.com/rss/articles/CBMirAFBVV95cUxOZ1RBWjU4d0FYVkVSSC0yaHpRbG82d0lVajFoRjd6b3NLVkMwTE9CREl4Zy1qU0ZBZnNQQ0pJTjM5QnZ4WXQ0S2ptakFnNnZHVHNENVpoMXc3ZFRpNEEydmtxQU9VdDFIR2pDb2ZIMVN4YzJZbWd4cDZHSzJlbkR4eEc2dmZyZEE5QzFMLW5TaW9XRXFPUnpwdDZXZ1J0dVpvXzlIUW5VSk92ZHBq?oc=5" target="_blank" rel="noopener noreferrer">Intuitive Machines Just Dropped 30% in a Month. Is It Time to Sell?</a>
+        <span class="list-meta">24/7 Wall St. · GN · 26 oct. · 19:53</span></li>
+    </ul>
+  </details>
+</article>
+<article class="item story"
+  data-tags="newspace"
+  data-entities="intuitive-machines"
+  data-countries="US"
+  data-regions="north_america"
+  data-events=""
+  data-segments="in_orbit"
+  data-industries=""
+  data-impact="0"
+  data-age="0"
+  data-search="intuitive machines, inc. tokenized stock (coinbase) price today, lunrc to usd live price, marketcap and chart coinmarketcap intuitive machines etats-unis">
+  <h4><a href="https://news.google.com/rss/articles/CBMijgFBVV95cUxOWDBDd2ljbkdlZGhVVVlhRFdMWUo4NV9JeHZnLUxRbkFaRGpvWDBhTF9PQTVycVRONVd6Nnp2XzliTUhtUmtXaVpLRnMwVkVxTk96WTBzM21xdkZoRk5EMmk1eDBLR2tuMlJELV9tQjdYdnVBbmtDTS1SWGI0SlRIU3BiZGxKVmRyT0pFWUVn?oc=5" target="_blank" rel="noopener noreferrer">Intuitive Machines, Inc. Tokenized Stock (Coinbase) price today, LUNRc to USD live price, marketcap and chart</a></h4>
+  <p class="meta">
+    <span class="src">CoinMarketCap</span><span class="via" title="Trouvé via Google News"> · GN</span>    <span aria-hidden="true">·</span>
+    <time datetime="2026-10-26T07:22:52+01:00" title="26 oct. 2026">07:22</time>
+<span aria-hidden="true">·</span> <span class="geo">États-Unis</span>  </p>
+  <p class="labels">
+  </p>
+</article>
+  </section>
+  <section class="day" data-age="1">
+    <h3 class="day-label">Hier</h3>
+<article class="item story"
+  data-tags="newspace"
+  data-entities="intuitive-machines"
+  data-countries="US"
+  data-regions="north_america"
+  data-events=""
+  data-segments="in_orbit"
+  data-industries=""
+  data-impact="0"
   data-age="1"
   data-search="intuitive machines (lunr) gets a new board voice as narrative value stays in focus simply wall street intuitive machines etats-unis">
   <h4><a href="https://news.google.com/rss/articles/CBMi2AFBVV95cUxOWkJ0MHdRZVkxY0QtdGFXQTYyNjJObGNpOU9MWExZV3Y4TUp3RFpQQklzMktucVpyRVpmUS1Yd2Rac19CY0h1YmlQOU9BRGttY3QxVVBPYkJaYUdvSElDSVBjWDVpejUxVjg4Y3FoQjRVMmkzQkNHejlLLTU3WS1FT29tQjJSSHp1amRkQ1FLZXdIenJRSXVLVkpERktSSXpxUVJQektLN2JCTjFDT3pUaDdCbnlta0hvNXU0MXBtUlo2ZUx2c0o3TWFjRUVIcTdnRzVSRjJ5MGTSAd4BQVVfeXFMTlRIbGhDU3FrS3l2eDFBUVhucnZBRDMtMFlTY2s1b0tkMUxDQU5qQS1sNG10Y1RSOUVzOVczMTV0d2pZdEVGRlFSWHg5NlVxWmFnck1feTZsTU12MlQzNU94VS1waTlGVkx1TDhkQ0tYRGN0OXF5WU1QaDdOTmFQVFJla1JQWWU0NWxGZkRqci1xWXNiWG1hMS1yMTZuS2lyd3dDc1c2QzdOX2ZrSmJERHJBR2ZJXzg0eFVVREtucElOMy1ZbHZBV191RzVhTGU5TmhuX0JzQzlxcjFsVHB3?oc=5" target="_blank" rel="noopener noreferrer">Intuitive Machines (LUNR) Gets A New Board Voice As Narrative Value Stays In Focus</a></h4>
@@ -135,13 +200,15 @@
   </section>
   <section class="day" data-age="2">
     <h3 class="day-label">Samedi 24 oct.</h3>
-<article class="item"
+<article class="item story"
   data-tags="newspace"
   data-entities="intuitive-machines"
   data-countries="US"
   data-regions="north_america"
   data-events="financials"
   data-segments="in_orbit"
+  data-industries=""
+  data-impact="0"
   data-age="2"
   data-search="stifel highlights this &#39;important&#39; factor for intuitive machines despite q2 earnings miss – lunr stock heads for fourth straight session of gains stocktwits intuitive machines etats-unis">
   <h4><a href="https://news.google.com/rss/articles/CBMirgJBVV95cUxPX3E0SS1HU2tCUG9acE91MlFERmYwRFFiMWhOMl9ZeXMzaW1zakhMV0VqZzVqZllGWENUSEFrUkJIOUhhSmVhVktObXZQa25JRENZTS1KR3B5dWNvd0ZkNGhEdXFTM0d1MFdZZThGX1Nwdk9GVDZ5R3pLTzlpbldiV0lTUlp0M3BHU2pVanY1cjcxUkNFSndqTG40WnRjbnhOZjgzbTFyS19jdjhCak5vNm5GWm1YMTljWUNTaWp0UTd4VmR6TGtUbml4aTNKV1RkZERJQlhsYTZFaXRaYkg3VElhTl80cWt5QjMwakQybjNwdUlFWVlsaE9kM3RzeG1jc2kyanZXaDFWaVFQNE1FanB0SzloRFNXOG5wNGVWUGp0M2ExRkJJSURSNk9Ydw?oc=5" target="_blank" rel="noopener noreferrer">Stifel Highlights This ‘Important’ Factor For Intuitive Machines Despite Q2 Earnings Miss – LUNR Stock Heads For Fourth Straight Session Of Gains</a></h4>
@@ -152,13 +219,15 @@
   <p class="labels">
 <span class="ev ev-financials">Résultats financiers</span>  </p>
 </article>
-<article class="item"
+<article class="item story"
   data-tags="newspace"
   data-entities="intuitive-machines"
   data-countries="US"
   data-regions="north_america"
   data-events=""
   data-segments="in_orbit"
+  data-industries=""
+  data-impact="0"
   data-age="2"
   data-search="how investors may respond to intuitive machines stock board appointment simply wall street intuitive machines etats-unis">
   <h4><a href="https://news.google.com/rss/articles/CBMi3gFBVV95cUxPaDVFc0F4dDI1RGpDSVNxdzhOSE5DT0RMTVkwTWVyU0xaTnQ3aFN5Mjl0MzBSa2lBaGlzYzJhUG9CcjBQYjZfdjNpek0ybTJwNGxjV2c2WFN1RDdYekp3WkRGOWltU192UU5rcWVfUzNEWHNRVUU4YWdyV2NWTy12ZUQ1MUNaV3NYV0tKUGpQdDR4aU81MmhuMHJMbHY2Mm1qLTRZaVQ3TG9xajBwZkRfOXlVMF9wMlk0eDBtWFJiNlYxdndWOHFRSEUydk1Xa0tSMEo5ajlGYW1HeUFFNVHSAd4BQVVfeXFMT2g1RXNBeHQyNURqQ0lTcXc4TkhOQ09ETE1ZME1lclNMWk50N2hTeTI5dDMwUmtpQWhpc2MyYVBvQnIwUGI2X3YzaXpNMm0ycDRsY1dnNlhTdUQ3WHpKd1pERjlpbVNfdlFOa3FlX1MzRFhzUVVFOGFncldjVk8tdmVENTFDWldzWFdLSlBqUHQ0eGlPNTJobjByTGx2NjJtai00WWlUN0xvcWowcGZEXzl5VTBfcDJZNHgwbVhSYjZWMXZ3VjhxUUhFMnZNV2tLUjBKOWo5RmFtR3lBRTVR?oc=5" target="_blank" rel="noopener noreferrer">How Investors May Respond To Intuitive Machines Stock Board Appointment</a></h4>
@@ -172,13 +241,55 @@
   </section>
   <section class="day" data-age="3">
     <h3 class="day-label">Vendredi 23 oct.</h3>
-<article class="item"
+<article class="item story impact-faible"
+  data-tags="newspace geospatial"
+  data-entities="nasa intuitive-machines nro"
+  data-countries="US"
+  data-regions="north_america"
+  data-events="appointment"
+  data-segments="in_orbit"
+  data-industries="defense"
+  data-impact="1"
+  data-age="3"
+  data-search="intuitive machines nomme l&#39;ancien directeur du nro a son conseil christopher scolese, ancien directeur du nro et ancien responsable de la nasa, rejoint le conseil d&#39;administration d&#39;intuitive machines. rapprochement avec le renseignement americain ; contexte de gouvernance. a former nasa leader joins intuitive machines&#39; board intuitive machines appoints dr. christopher scolese to board, announces resignation of michael blitzer intuitive machines appoints dr. christopher scolese to board of directors intuitive machines names former nro director to board of directors intuitive machines appoints dr. christopher sco... intuitive machines appoints former nro director to board dr christopher scolese joins intuitive machines board as leadership shifts former nro director christopher scolese joins intuitive machines board stock titan quiver quantitative the manila times streetinsider pluang investing.com traders union govcon wire nasa intuitive machines nro etats-unis defense et systemes spatiaux">
+  <h4><a href="https://news.google.com/rss/articles/CBMiuAFBVV95cUxNb0tKVzhmTnU1WXRRX3pzZFFXNW1FSGNvc01yUEMyNlZJLU5DU0twUEI4X3dIa3VOVHZGUHJLU0xNRUdsSU51UkE3RmJ4b3QtYTlMajdPV0hWMl94eFhHSmdkZjJfV2ZiZHA1ckJJVmh1MnNXLVptZEFQWWlOWmJBdUF4ZXY3UTcxSTBwa1J4enZaZ3UxRFVnS2pHcWtBZU9yaC1ZR1FlbzlVOHJhSUNlT2FCbFowR1V4?oc=5" target="_blank" rel="noopener noreferrer">Intuitive Machines nomme l&#39;ancien directeur du NRO à son conseil</a></h4>
+  <p class="meta">
+<span class="impact-badge impact-badge-faible">Impact faible</span>    <span class="src">Stock Titan</span><span class="via" title="Trouvé via Google News"> · GN</span><span class="n-sources">+ 7 sources</span>    <span aria-hidden="true">·</span>
+    <time datetime="2026-10-23T11:48:15+02:00" title="23 oct. 2026">11:48</time>
+<span aria-hidden="true">·</span> <span class="geo">États-Unis</span>  </p>
+<p class="excerpt">Christopher Scolese, ancien directeur du NRO et ancien responsable de la NASA, rejoint le conseil d&#39;administration d&#39;Intuitive Machines.</p><p class="why"><span>Pourquoi c'est important</span> Rapprochement avec le renseignement américain ; contexte de gouvernance.</p>  <p class="labels">
+<span class="ev ev-appointment">Nomination</span><span class="industry">Défense et systèmes spatiaux</span><a class="chip chip-institution" href="../entite/nasa.html">NASA</a><a class="chip chip-institution" href="../entite/nro.html">NRO</a>  </p>
+  <details class="sources">
+    <summary>8 articles de 8 sources</summary>
+    <ul>
+      <li><a href="https://news.google.com/rss/articles/CBMilwFBVV95cUxOV0NFUm9rU0g5Y1JpU1pPN2tqV2VGUS1rczd6NzZXWS1iTG9DOFBoUWQzdzVxa0ZMbjJtQTFiN3BONE1ib3psTzR6Y1pGN21HdGEzZmR3emxIalVCYW41bEIyeWtUV2RFNWNSRGpnNFJpWHJ4YzZJTDcxdWhyLXRlUG12aGo3OUI5NzgtcUJERHRNLTN5c2ZN?oc=5" target="_blank" rel="noopener noreferrer">Former NRO Director Christopher Scolese Joins Intuitive Machines Board</a>
+        <span class="list-meta">GovCon Wire · GN · 23 oct. · 11:48</span></li>
+      <li><a href="https://news.google.com/rss/articles/CBMijgFBVV95cUxPSWFJWEZpX3NMWlg2QXNfTTkwMHpRSXY3Z3cySkNjWlF3TXJYS3haT1VHMWpMU3B6Uk5FOWNyaE11Y3I0VjJmWTJaajNGM2lpSVl2VXpsMGczbjViRlRKZzlJSW9UZkw2eXl4VnZVb1l0QTg0UE5NNWc3Q3p2NG91TDBhUTlxaG1pcTF6cjJ3?oc=5" target="_blank" rel="noopener noreferrer">Dr Christopher Scolese joins Intuitive Machines board as leadership shifts</a>
+        <span class="list-meta">Traders Union · GN · 23 oct. · 04:46</span></li>
+      <li><a href="https://news.google.com/rss/articles/CBMiswFBVV95cUxNLVhVdmZ3ZHdDT3BZeU5SNUE0NDFVVUkycmxGTFlicHowRFFTeE1SOGpXSTdET0psU1pmTVU4cHBaMmhlSnlTejJIWHFtXzVacVp0Q0YyMjViQWJjWHUzN1B5MGJmNlVhNmxHT1pYcUxnVmJIMXUwMmRITzUxQ2EzUmkyNjF3YmVSQVFfNlRXZEdhT2VWS0p5Vko1UFlQWndtUWs1SnpLb0toM1E4aDZHUXp2VQ?oc=5" target="_blank" rel="noopener noreferrer">Intuitive Machines appoints former NRO director to board</a>
+        <span class="list-meta">Investing.com · GN · 22 oct. · 23:39</span></li>
+      <li><a href="https://news.google.com/rss/articles/CBMirwFBVV95cUxNamgwX3NZQUNCREZUQWdzbkVfWHUzZ3FBN3ZKVW05MmEwaWo1WnhsQmU5Ylk4S2VxOTVqa3VDVGMxT2tDeEJBUmJqQ2ZhSjJmYjU0LVotSGZ3R1pKbEhaNzRyM3ppZjdEcVM2bWJ3ek9jYVk1MGRlMFNoX0IzZ2ZCd0VOdF9sTHZSa1FhNUdZVFVVZmxHRHVUNjJTbDZpVlh5U3BNMG1ZeFcxX1N3TE53?oc=5" target="_blank" rel="noopener noreferrer">Intuitive Machines appoints Dr. Christopher Sco...</a>
+        <span class="list-meta">Pluang · GN · 22 oct. · 23:24</span></li>
+      <li><a href="https://news.google.com/rss/articles/CBMiwgFBVV95cUxPQTY2RG1YMUZHS1FwSkd2ZUFOT29uZGc4emdtSVBwcWRMYlBxNXN0elpRT3RvcnRFNnBZZk1MZmg2M0hFRXZSQkpqOWlERTk2YlRHY0hyS21sbWluZGMtN0p3R2Z5VWpWd0M1RjRodVY1YXVyYWdOTE51aDJ1aC1NdlVZNm1nZU9zdkJkWjgzWFlKQjBWc1hRYVJTWkh0cVdPLWEwS2NaWHcwRnFSTlBHYnVYRW5rcDVpU251emtiSVFnQQ?oc=5" target="_blank" rel="noopener noreferrer">Intuitive Machines names former NRO director to board of directors</a>
+        <span class="list-meta">StreetInsider · GN · 22 oct. · 23:12</span></li>
+      <li><a href="https://news.google.com/rss/articles/CBMi3wFBVV95cUxNbUFSaHNMTjBrWDh1cDlmQ1NiazU4T09odjZuU0I2dkc1bHdwNDg3SHpDSzF0QlU3d1htdFRRM2otUXFEWnRRS055VW05dlJ2ZzRsSGlxWEtxZzF0RU1rWVpaRXR5X1Zrd0MxMHBVTFF2d2w0d0MwRWZNNFk1T3lnVlpBWUJiNGVEUm9RSGYzMURFRUU3VERZR3FQenVDeWc5djc1SDJFYnkzRU85SmdzaUZKUk9jd1NSdUZQRGdqc28xTnNUbkNjc0xiTE5xNm04RDMyTEUtWWJ0cmdabEJN0gHkAUFVX3lxTFBJcXhtd1NvN3AwLV9DSXpGWnppQ2cyNzNLd2xYLWZsT0FIdHoycV9lc0doNVVtbVlfUmxYa0tYWVJTX0FXZ08tNTFfYVpTS2pTWkUxY1Vuei1NSXFvdy1FaW1HRDlYNmlhbmdENXMxLVl3dkxYUTNDMmdMeFV1NnV3OE1lRzNrYWs0dzdfVlhZVjNzY2NsTkdIc1pSX3FhTnR3eERBNDBFR3dERXJ5cUpzY0pHUlR0dEJRRDk2aU9lNlVtVmtiYTEtUXUzcm5Ua1RvWTNxclhoa1RPa0lWTDlTRmxEUg?oc=5" target="_blank" rel="noopener noreferrer">Intuitive Machines Appoints Dr. Christopher Scolese to Board of Directors</a>
+        <span class="list-meta">The Manila Times · GN · 22 oct. · 23:11</span></li>
+      <li><a href="https://news.google.com/rss/articles/CBMi0wFBVV95cUxQZEJjb1JTNncybTF0WGpFNXpEUzJjQXhiZGlxcDBWdFFVVDlEVGpxZWZYY3pncm5yWkI0Zk45RkpBQkdKZTMyTU5XZGNzUUdlZGFvOEQ4TDNNV1BodGVqMW5Nd0FyZVVvU3I2TnFvclVoQ1NLbGRZMU9rVHRwNjNvNnlUU2IxTUNxU01CTDBpTlBENmZQSmYySEFjNlpZbU9PcnY1N3FHbkt4ZVU3bUgzdFJjb0FDSFc3Ui0ybG1xMW1IRVp3d2JaUmpzd1dXc080RlJB?oc=5" target="_blank" rel="noopener noreferrer">Intuitive Machines Appoints Dr. Christopher Scolese to Board, Announces Resignation of Michael Blitzer</a>
+        <span class="list-meta">Quiver Quantitative · GN · 22 oct. · 23:10</span></li>
+      <li><a href="https://news.google.com/rss/articles/CBMiuAFBVV95cUxNb0tKVzhmTnU1WXRRX3pzZFFXNW1FSGNvc01yUEMyNlZJLU5DU0twUEI4X3dIa3VOVHZGUHJLU0xNRUdsSU51UkE3RmJ4b3QtYTlMajdPV0hWMl94eFhHSmdkZjJfV2ZiZHA1ckJJVmh1MnNXLVptZEFQWWlOWmJBdUF4ZXY3UTcxSTBwa1J4enZaZ3UxRFVnS2pHcWtBZU9yaC1ZR1FlbzlVOHJhSUNlT2FCbFowR1V4?oc=5" target="_blank" rel="noopener noreferrer">A former NASA leader joins Intuitive Machines&#39; board</a>
+        <span class="list-meta">Stock Titan · GN · 22 oct. · 23:05</span></li>
+    </ul>
+  </details>
+</article>
+<article class="item story"
   data-tags="newspace"
   data-entities="intuitive-machines"
   data-countries="US"
   data-regions="north_america"
   data-events=""
   data-segments="in_orbit"
+  data-industries=""
+  data-impact="0"
   data-age="3"
   data-search="intuitive machines, inc. estimates – nasdaq:lunr tradingview intuitive machines etats-unis">
   <h4><a href="https://news.google.com/rss/articles/CBMieEFVX3lxTFByT0xoQ3daZFV1MkpxN21pcmF3OG5hSDN4SmIxZndVZ05KWV9FQnBLc0p2eUpVN3RCU2lHVEJ2RUdwSzg0N08xdkt2UmRkVlhzZG9HQ1dfSVpZSWJlX29fZTc0bzdsQWlueDBITlo0NTFQNU5CZ09IWg?oc=5" target="_blank" rel="noopener noreferrer">Intuitive Machines, Inc. Estimates – NASDAQ:LUNR</a></h4>
@@ -189,101 +300,18 @@
   <p class="labels">
   </p>
 </article>
-<article class="item"
-  data-tags="geospatial newspace"
-  data-entities="nro intuitive-machines"
-  data-countries="US"
-  data-regions="north_america"
-  data-events=""
-  data-segments="in_orbit"
-  data-age="3"
-  data-search="former nro director christopher scolese joins intuitive machines board govcon wire nro intuitive machines etats-unis">
-  <h4><a href="https://news.google.com/rss/articles/CBMilwFBVV95cUxOV0NFUm9rU0g5Y1JpU1pPN2tqV2VGUS1rczd6NzZXWS1iTG9DOFBoUWQzdzVxa0ZMbjJtQTFiN3BONE1ib3psTzR6Y1pGN21HdGEzZmR3emxIalVCYW41bEIyeWtUV2RFNWNSRGpnNFJpWHJ4YzZJTDcxdWhyLXRlUG12aGo3OUI5NzgtcUJERHRNLTN5c2ZN?oc=5" target="_blank" rel="noopener noreferrer">Former NRO Director Christopher Scolese Joins Intuitive Machines Board</a></h4>
-  <p class="meta">
-    <span class="src">GovCon Wire</span><span class="via" title="Trouvé via Google News"> · GN</span>    <span aria-hidden="true">·</span>
-    <time datetime="2026-10-23T11:48:15+02:00" title="23 oct. 2026">11:48</time>
-<span aria-hidden="true">·</span> <span class="geo">États-Unis</span>  </p>
-  <p class="labels">
-<a class="chip chip-institution" href="../entite/nro.html">NRO</a>  </p>
-</article>
-<article class="item"
-  data-tags="newspace"
-  data-entities="intuitive-machines"
-  data-countries="IN US"
-  data-regions="asia_pacific north_america"
-  data-events=""
-  data-segments="in_orbit"
-  data-age="3"
-  data-search="intuitive machines tokenized stock (ondo) price today in india | lunron to inr live price &amp; chart binance intuitive machines inde etats-unis">
-  <h4><a href="https://news.google.com/rss/articles/CBMihgFBVV95cUxONW5kSUZEUlFlYTFSbFBHNk9JLV9CbE5FYlpvYXhnY3c4WGF1aFRKOXR1bkVJcmFoaWdtZzBGMHRkTHBjT0x0NFB0aHp3a00temU0YzRGV190SXVFbGhQajlhWkIzcUU3UlFMcEZNak9pYVRTaDJYX2ZiTnlySlNTUUxyOVp3QQ?oc=5" target="_blank" rel="noopener noreferrer">Intuitive Machines Tokenized Stock (Ondo) Price Today in India | LUNRon to INR Live Price &amp; Chart</a></h4>
-  <p class="meta">
-    <span class="src">Binance</span><span class="via" title="Trouvé via Google News"> · GN</span>    <span aria-hidden="true">·</span>
-    <time datetime="2026-10-23T09:10:00+02:00" title="23 oct. 2026">09:10</time>
-<span aria-hidden="true">·</span> <span class="geo">Inde, États-Unis</span>  </p>
-  <p class="labels">
-  </p>
-</article>
-<article class="item"
-  data-tags="newspace"
-  data-entities="intuitive-machines"
-  data-countries="US"
-  data-regions="north_america"
-  data-events=""
-  data-segments="in_orbit"
-  data-age="3"
-  data-search="live intuitive machines inc (derivatives) price today: lunr to usd, market cap &amp; charts cryptodaily intuitive machines etats-unis">
-  <h4><a href="https://news.google.com/rss/articles/CBMidEFVX3lxTE0xVTEzd3A3X3VqQjhGanN3bW42WEVKckNVQUg5VExGdTJyck8zZUJJR1I3VHNtUDFlYkRHdVhlU1ZrQURvekh3QmI2a1p1aHp3YXotdnhwQ2VNMWRhN3hNSXpMcTdYT2tfcmtnejRIN1A4STRN?oc=5" target="_blank" rel="noopener noreferrer">Live Intuitive Machines Inc (Derivatives) Price Today: LUNR to USD, Market Cap &amp; Charts</a></h4>
-  <p class="meta">
-    <span class="src">CryptoDaily</span><span class="via" title="Trouvé via Google News"> · GN</span>    <span aria-hidden="true">·</span>
-    <time datetime="2026-10-23T09:00:00+02:00" title="23 oct. 2026">09:00</time>
-<span aria-hidden="true">·</span> <span class="geo">États-Unis</span>  </p>
-  <p class="labels">
-  </p>
-</article>
-<article class="item"
-  data-tags="newspace"
-  data-entities="intuitive-machines"
-  data-countries="US"
-  data-regions="north_america"
-  data-events=""
-  data-segments="in_orbit"
-  data-age="3"
-  data-search="dr christopher scolese joins intuitive machines board as leadership shifts traders union intuitive machines etats-unis">
-  <h4><a href="https://news.google.com/rss/articles/CBMijgFBVV95cUxPSWFJWEZpX3NMWlg2QXNfTTkwMHpRSXY3Z3cySkNjWlF3TXJYS3haT1VHMWpMU3B6Uk5FOWNyaE11Y3I0VjJmWTJaajNGM2lpSVl2VXpsMGczbjViRlRKZzlJSW9UZkw2eXl4VnZVb1l0QTg0UE5NNWc3Q3p2NG91TDBhUTlxaG1pcTF6cjJ3?oc=5" target="_blank" rel="noopener noreferrer">Dr Christopher Scolese joins Intuitive Machines board as leadership shifts</a></h4>
-  <p class="meta">
-    <span class="src">Traders Union</span><span class="via" title="Trouvé via Google News"> · GN</span>    <span aria-hidden="true">·</span>
-    <time datetime="2026-10-23T04:46:16+02:00" title="23 oct. 2026">04:46</time>
-<span aria-hidden="true">·</span> <span class="geo">États-Unis</span>  </p>
-  <p class="labels">
-  </p>
-</article>
   </section>
   <section class="day" data-age="4">
     <h3 class="day-label">Jeudi 22 oct.</h3>
-<article class="item"
-  data-tags="geospatial newspace"
-  data-entities="intuitive-machines nro"
-  data-countries="US"
-  data-regions="north_america"
-  data-events="appointment"
-  data-segments="in_orbit"
-  data-age="4"
-  data-search="intuitive machines appoints former nro director to board investing.com intuitive machines nro etats-unis">
-  <h4><a href="https://news.google.com/rss/articles/CBMiswFBVV95cUxNLVhVdmZ3ZHdDT3BZeU5SNUE0NDFVVUkycmxGTFlicHowRFFTeE1SOGpXSTdET0psU1pmTVU4cHBaMmhlSnlTejJIWHFtXzVacVp0Q0YyMjViQWJjWHUzN1B5MGJmNlVhNmxHT1pYcUxnVmJIMXUwMmRITzUxQ2EzUmkyNjF3YmVSQVFfNlRXZEdhT2VWS0p5Vko1UFlQWndtUWs1SnpLb0toM1E4aDZHUXp2VQ?oc=5" target="_blank" rel="noopener noreferrer">Intuitive Machines appoints former NRO director to board</a></h4>
-  <p class="meta">
-    <span class="src">Investing.com</span><span class="via" title="Trouvé via Google News"> · GN</span>    <span aria-hidden="true">·</span>
-    <time datetime="2026-10-22T23:39:29+02:00" title="22 oct. 2026">23:39</time>
-<span aria-hidden="true">·</span> <span class="geo">États-Unis</span>  </p>
-  <p class="labels">
-<span class="ev ev-appointment">Nomination</span><a class="chip chip-institution" href="../entite/nro.html">NRO</a>  </p>
-</article>
-<article class="item"
+<article class="item story"
   data-tags="newspace"
   data-entities="intuitive-machines"
   data-countries="US"
   data-regions="north_america"
   data-events=""
   data-segments="in_orbit"
+  data-industries=""
+  data-impact="0"
   data-age="4"
   data-search="form 8k intuitive machines inc for: 22 october by investing.com investing.com canada intuitive machines etats-unis">
   <h4><a href="https://news.google.com/rss/articles/CBMiqgFBVV95cUxNbWQ0elJRRFJHNUF0N3BUM2hDWExfU0ZZYnU5ZTEzdWp4RVozMXhnNnNZbDI4dVpUelFmUURaVTVzYWVFVDBLcUdJaFNidkh4aFNxbHpEMTlydkszRE5sYW1xb0luMGVEMEw5MElLSU1CNURnaU5nN0lraG5xRkRuUm1CbzdlSVY4WThEZUxEMGFsQWg3QXdlazZGWXNTb3Z4RjFEWml5NExfdw?oc=5" target="_blank" rel="noopener noreferrer">Form 8K Intuitive Machines Inc For: 22 October By Investing.com</a></h4>
@@ -294,152 +322,18 @@
   <p class="labels">
   </p>
 </article>
-<article class="item"
-  data-tags="newspace"
-  data-entities="intuitive-machines"
-  data-countries="US"
-  data-regions="north_america"
-  data-events="appointment"
-  data-segments="in_orbit"
-  data-age="4"
-  data-search="intuitive machines appoints dr. christopher sco... pluang intuitive machines etats-unis">
-  <h4><a href="https://news.google.com/rss/articles/CBMirwFBVV95cUxNamgwX3NZQUNCREZUQWdzbkVfWHUzZ3FBN3ZKVW05MmEwaWo1WnhsQmU5Ylk4S2VxOTVqa3VDVGMxT2tDeEJBUmJqQ2ZhSjJmYjU0LVotSGZ3R1pKbEhaNzRyM3ppZjdEcVM2bWJ3ek9jYVk1MGRlMFNoX0IzZ2ZCd0VOdF9sTHZSa1FhNUdZVFVVZmxHRHVUNjJTbDZpVlh5U3BNMG1ZeFcxX1N3TE53?oc=5" target="_blank" rel="noopener noreferrer">Intuitive Machines appoints Dr. Christopher Sco...</a></h4>
-  <p class="meta">
-    <span class="src">Pluang</span><span class="via" title="Trouvé via Google News"> · GN</span>    <span aria-hidden="true">·</span>
-    <time datetime="2026-10-22T23:24:50+02:00" title="22 oct. 2026">23:24</time>
-<span aria-hidden="true">·</span> <span class="geo">États-Unis</span>  </p>
-  <p class="labels">
-<span class="ev ev-appointment">Nomination</span>  </p>
-</article>
-<article class="item"
-  data-tags="geospatial newspace"
-  data-entities="intuitive-machines nro"
-  data-countries="US"
-  data-regions="north_america"
-  data-events=""
-  data-segments="in_orbit"
-  data-age="4"
-  data-search="intuitive machines names former nro director to board of directors streetinsider intuitive machines nro etats-unis">
-  <h4><a href="https://news.google.com/rss/articles/CBMiwgFBVV95cUxPQTY2RG1YMUZHS1FwSkd2ZUFOT29uZGc4emdtSVBwcWRMYlBxNXN0elpRT3RvcnRFNnBZZk1MZmg2M0hFRXZSQkpqOWlERTk2YlRHY0hyS21sbWluZGMtN0p3R2Z5VWpWd0M1RjRodVY1YXVyYWdOTE51aDJ1aC1NdlVZNm1nZU9zdkJkWjgzWFlKQjBWc1hRYVJTWkh0cVdPLWEwS2NaWHcwRnFSTlBHYnVYRW5rcDVpU251emtiSVFnQQ?oc=5" target="_blank" rel="noopener noreferrer">Intuitive Machines names former NRO director to board of directors</a></h4>
-  <p class="meta">
-    <span class="src">StreetInsider</span><span class="via" title="Trouvé via Google News"> · GN</span>    <span aria-hidden="true">·</span>
-    <time datetime="2026-10-22T23:12:17+02:00" title="22 oct. 2026">23:12</time>
-<span aria-hidden="true">·</span> <span class="geo">États-Unis</span>  </p>
-  <p class="labels">
-<a class="chip chip-institution" href="../entite/nro.html">NRO</a>  </p>
-</article>
-<article class="item"
-  data-tags="newspace"
-  data-entities="intuitive-machines"
-  data-countries="US"
-  data-regions="north_america"
-  data-events="appointment"
-  data-segments="in_orbit"
-  data-age="4"
-  data-search="intuitive machines appoints dr. christopher scolese to board of directors the manila times intuitive machines etats-unis">
-  <h4><a href="https://news.google.com/rss/articles/CBMi3wFBVV95cUxNbUFSaHNMTjBrWDh1cDlmQ1NiazU4T09odjZuU0I2dkc1bHdwNDg3SHpDSzF0QlU3d1htdFRRM2otUXFEWnRRS055VW05dlJ2ZzRsSGlxWEtxZzF0RU1rWVpaRXR5X1Zrd0MxMHBVTFF2d2w0d0MwRWZNNFk1T3lnVlpBWUJiNGVEUm9RSGYzMURFRUU3VERZR3FQenVDeWc5djc1SDJFYnkzRU85SmdzaUZKUk9jd1NSdUZQRGdqc28xTnNUbkNjc0xiTE5xNm04RDMyTEUtWWJ0cmdabEJN0gHkAUFVX3lxTFBJcXhtd1NvN3AwLV9DSXpGWnppQ2cyNzNLd2xYLWZsT0FIdHoycV9lc0doNVVtbVlfUmxYa0tYWVJTX0FXZ08tNTFfYVpTS2pTWkUxY1Vuei1NSXFvdy1FaW1HRDlYNmlhbmdENXMxLVl3dkxYUTNDMmdMeFV1NnV3OE1lRzNrYWs0dzdfVlhZVjNzY2NsTkdIc1pSX3FhTnR3eERBNDBFR3dERXJ5cUpzY0pHUlR0dEJRRDk2aU9lNlVtVmtiYTEtUXUzcm5Ua1RvWTNxclhoa1RPa0lWTDlTRmxEUg?oc=5" target="_blank" rel="noopener noreferrer">Intuitive Machines Appoints Dr. Christopher Scolese to Board of Directors</a></h4>
-  <p class="meta">
-    <span class="src">The Manila Times</span><span class="via" title="Trouvé via Google News"> · GN</span>    <span aria-hidden="true">·</span>
-    <time datetime="2026-10-22T23:11:26+02:00" title="22 oct. 2026">23:11</time>
-<span aria-hidden="true">·</span> <span class="geo">États-Unis</span>  </p>
-  <p class="labels">
-<span class="ev ev-appointment">Nomination</span>  </p>
-</article>
-<article class="item"
-  data-tags="newspace"
-  data-entities="intuitive-machines"
-  data-countries="US"
-  data-regions="north_america"
-  data-events="appointment"
-  data-segments="in_orbit"
-  data-age="4"
-  data-search="intuitive machines appoints dr. christopher scolese to board, announces resignation of michael blitzer quiver quantitative intuitive machines etats-unis">
-  <h4><a href="https://news.google.com/rss/articles/CBMi0wFBVV95cUxQZEJjb1JTNncybTF0WGpFNXpEUzJjQXhiZGlxcDBWdFFVVDlEVGpxZWZYY3pncm5yWkI0Zk45RkpBQkdKZTMyTU5XZGNzUUdlZGFvOEQ4TDNNV1BodGVqMW5Nd0FyZVVvU3I2TnFvclVoQ1NLbGRZMU9rVHRwNjNvNnlUU2IxTUNxU01CTDBpTlBENmZQSmYySEFjNlpZbU9PcnY1N3FHbkt4ZVU3bUgzdFJjb0FDSFc3Ui0ybG1xMW1IRVp3d2JaUmpzd1dXc080RlJB?oc=5" target="_blank" rel="noopener noreferrer">Intuitive Machines Appoints Dr. Christopher Scolese to Board, Announces Resignation of Michael Blitzer</a></h4>
-  <p class="meta">
-    <span class="src">Quiver Quantitative</span><span class="via" title="Trouvé via Google News"> · GN</span>    <span aria-hidden="true">·</span>
-    <time datetime="2026-10-22T23:10:00+02:00" title="22 oct. 2026">23:10</time>
-<span aria-hidden="true">·</span> <span class="geo">États-Unis</span>  </p>
-  <p class="labels">
-<span class="ev ev-appointment">Nomination</span>  </p>
-</article>
-<article class="item"
-  data-tags="newspace"
-  data-entities="nasa intuitive-machines"
-  data-countries="US"
-  data-regions="north_america"
-  data-events=""
-  data-segments="in_orbit"
-  data-age="4"
-  data-search="a former nasa leader joins intuitive machines&#39; board stock titan nasa intuitive machines etats-unis">
-  <h4><a href="https://news.google.com/rss/articles/CBMiuAFBVV95cUxNb0tKVzhmTnU1WXRRX3pzZFFXNW1FSGNvc01yUEMyNlZJLU5DU0twUEI4X3dIa3VOVHZGUHJLU0xNRUdsSU51UkE3RmJ4b3QtYTlMajdPV0hWMl94eFhHSmdkZjJfV2ZiZHA1ckJJVmh1MnNXLVptZEFQWWlOWmJBdUF4ZXY3UTcxSTBwa1J4enZaZ3UxRFVnS2pHcWtBZU9yaC1ZR1FlbzlVOHJhSUNlT2FCbFowR1V4?oc=5" target="_blank" rel="noopener noreferrer">A former NASA leader joins Intuitive Machines&#39; board</a></h4>
-  <p class="meta">
-    <span class="src">Stock Titan</span><span class="via" title="Trouvé via Google News"> · GN</span>    <span aria-hidden="true">·</span>
-    <time datetime="2026-10-22T23:05:00+02:00" title="22 oct. 2026">23:05</time>
-<span aria-hidden="true">·</span> <span class="geo">États-Unis</span>  </p>
-  <p class="labels">
-<a class="chip chip-institution" href="../entite/nasa.html">NASA</a>  </p>
-</article>
-<article class="item"
-  data-tags="newspace"
-  data-entities="intuitive-machines"
-  data-countries="US"
-  data-regions="north_america"
-  data-events=""
-  data-segments="in_orbit"
-  data-age="4"
-  data-search="intuitive machines, inc. (lunr) options chain yahoo! finance canada intuitive machines etats-unis">
-  <h4><a href="https://news.google.com/rss/articles/CBMikgFBVV95cUxOYXkzclBiYnZEek9fSXpVRnprOUg2cWR5ZVZxNXVNN3ZkTm00U1F2MHBtUWwtOTFGQ3BBNk5jczM1VnJITC1Ea05rTDl1ejl2TTN1eVpiaUo2eUVCb0I3M1lLd3d6Q04yTFYwVjNaT3Y3NktneHQ5elRGY2JnVV93RkQ5d3dvZmo2MzB1ZFVQMWY1dw?oc=5" target="_blank" rel="noopener noreferrer">Intuitive Machines, Inc. (LUNR) Options Chain</a></h4>
-  <p class="meta">
-    <span class="src">Yahoo! Finance Canada</span><span class="via" title="Trouvé via Google News"> · GN</span>    <span aria-hidden="true">·</span>
-    <time datetime="2026-10-22T20:16:40+02:00" title="22 oct. 2026">20:16</time>
-<span aria-hidden="true">·</span> <span class="geo">États-Unis</span>  </p>
-  <p class="labels">
-  </p>
-</article>
   </section>
   <section class="day" data-age="5">
     <h3 class="day-label">Mercredi 21 oct.</h3>
-<article class="item"
-  data-tags="geospatial newspace"
-  data-entities="spacex intuitive-machines redwire planet"
-  data-countries="US"
-  data-regions="north_america"
-  data-events="financials"
-  data-segments="eo_optique geoint in_orbit launcher manufacturing telecom"
-  data-age="5"
-  data-search="space stocks rally as spacex&#39;s strong q3 results boost intuitive machines, redwire, and planet labs. pluang spacex intuitive machines redwire planet labs etats-unis">
-  <h4><a href="https://news.google.com/rss/articles/CBMipwFBVV95cUxQLU4wWWlFbFpIUkpiQXJSWkZvOTNTdGxfYm8tVE5zNWlBQmNQZ3hPNkxRb1YxbHNzOE9QN01ELU56NzNoNHlEeTR0bXZiNHNDdlRrLUVuMlIyb1hJMXhWcjFTVnAzbDhyQjk2SUNUSVBJWm1MY1p4N0JuTzZiRVlFVGNLalF4dmlyT0JKSkFUU1R2SGM0VURvdFVYaWxpREVqMFRSV3FfNA?oc=5" target="_blank" rel="noopener noreferrer">Space stocks rally as SpaceX&#39;s strong Q3 results boost Intuitive Machines, Redwire, and Planet Labs.</a></h4>
-  <p class="meta">
-    <span class="src">Pluang</span><span class="via" title="Trouvé via Google News"> · GN</span>    <span aria-hidden="true">·</span>
-    <time datetime="2026-10-21T17:05:26+02:00" title="21 oct. 2026">17:05</time>
-<span aria-hidden="true">·</span> <span class="geo">États-Unis</span>  </p>
-  <p class="labels">
-<span class="ev ev-financials">Résultats financiers</span><a class="chip chip-company" href="../entite/spacex.html">SpaceX</a><a class="chip chip-company" href="../entite/redwire.html">Redwire</a><a class="chip chip-company" href="../entite/planet.html">Planet Labs</a>  </p>
-</article>
-<article class="item"
-  data-tags="geospatial newspace"
-  data-entities="spacex intuitive-machines redwire planet"
-  data-countries="US"
-  data-regions="north_america"
-  data-events=""
-  data-segments="eo_optique geoint in_orbit launcher manufacturing telecom"
-  data-age="5"
-  data-search="space stocks rally as spacex results lift sector: intuitive machines advances 5%, redwire and planet labs climb 4% 24/7 wall st. spacex intuitive machines redwire planet labs etats-unis">
-  <h4><a href="https://news.google.com/rss/articles/CBMi6gFBVV95cUxOeVNsSldEOThqMlFickJvV09jbWRXN2YyQnp0WXBIWHdzWUx3WThvZHpyeGRiMFBHYV9pUkIybEp0VkJTYzFFYkhpWFJNTFBBSTFtQzFENlp5ZnBuVEttUnNOcWlacDVMeUVuS2YtQlJDekRqRTJpSlRmdXZoTGhtQXc2aVlXaGNyVGtza0ZmYjBhcjF3RnJyWXJBNVR6VjdldW9MSVhZOW1reUF0dDFzSmFneWItVkpLZWV1S25qcU54Y1NOSWYxRzlYWDRBeXVsVGYzck1IZFZuS0xGQlRXUnJCd0NWQ2VlSnc?oc=5" target="_blank" rel="noopener noreferrer">Space Stocks Rally as SpaceX Results Lift Sector: Intuitive Machines Advances 5%, Redwire and Planet Labs Climb 4%</a></h4>
-  <p class="meta">
-    <span class="src">24/7 Wall St.</span><span class="via" title="Trouvé via Google News"> · GN</span>    <span aria-hidden="true">·</span>
-    <time datetime="2026-10-21T16:50:00+02:00" title="21 oct. 2026">16:50</time>
-<span aria-hidden="true">·</span> <span class="geo">États-Unis</span>  </p>
-  <p class="labels">
-<a class="chip chip-company" href="../entite/spacex.html">SpaceX</a><a class="chip chip-company" href="../entite/redwire.html">Redwire</a><a class="chip chip-company" href="../entite/planet.html">Planet Labs</a>  </p>
-</article>
-<article class="item"
+<article class="item story"
   data-tags="newspace"
   data-entities="intuitive-machines"
   data-countries="US"
   data-regions="north_america"
   data-events="launch"
   data-segments="in_orbit"
+  data-industries=""
+  data-impact="0"
   data-age="5"
   data-search="intuitive machines stock lifts off: what&#39;s happening? benzinga intuitive machines etats-unis">
   <h4><a href="https://news.google.com/rss/articles/CBMisAFBVV95cUxPMEViUms2OFNjRDNVSWJRVFl2UzBmRjlxc2o2UEhIZW5KQnYxb2F6Qkc5NFdvTWpTak9tZTdNMDhkUlNOLVVxbVpJUmJLUm92aDVIcTJkbzNycjhJN2V0LTlmM1M4RmpfM25WWXN0a0tFM0VFck1iWGNZT1o2UXNObUVXcS1UMmlqaG9welRqTVNVeWtveHdVUnJxbXZyQlFfLTdUNzBYVDJUb19FSjlHcQ?oc=5" target="_blank" rel="noopener noreferrer">Intuitive Machines Stock Lifts Off: What&#39;s Happening?</a></h4>
@@ -450,13 +344,15 @@
   <p class="labels">
 <span class="ev ev-launch">Lancement</span>  </p>
 </article>
-<article class="item"
+<article class="item story"
   data-tags="newspace"
   data-entities="intuitive-machines"
   data-countries="US"
   data-regions="north_america"
   data-events=""
   data-segments="in_orbit"
+  data-industries=""
+  data-impact="0"
   data-age="5"
   data-search="why are fallen growth stocks bouncing: bloom (nyse:be), intuitive machines (nasdaq:lunr), erock (nyse:eroc) and terawulf (nasdaq:wulf)? kalkine.ca intuitive machines etats-unis">
   <h4><a href="https://news.google.com/rss/articles/CBMi7AFBVV95cUxNZ2Q1eXNuWEFXYUE3bWt2VU9XdUh5ZTZUOUFnR29tZGNRdmlHNXZwV3hUYWVlV3hQbHZ2WWVYU09pTlVuY2dGQ2VRR2ltZE50OXM3TXR4SjhRb2JhMjMzSUZyaEhydlNXbm1EMTB3XzEyUUM3aXpGM1FTMTlhTF9IR1ZEMW5TUjJvdGFEVXlwZ1hRWG8yVko1TTJiYW5xYWNTcHhWSEFGcy1mOWlXZU5HQzNiOGw5YVkzQVBYbkU5SF9VU0s5MmhtTHpXakZ6ZnN4VFNrNENreDBvc3c2a25MaTlfbDV0cTZjbzJnOQ?oc=5" target="_blank" rel="noopener noreferrer">Why Are Fallen Growth Stocks Bouncing: Bloom (NYSE:BE), Intuitive Machines (NASDAQ:LUNR), ERock (NYSE:EROC) and TeraWulf (NASDAQ:WULF)?</a></h4>
@@ -467,50 +363,46 @@
   <p class="labels">
   </p>
 </article>
-<article class="item"
+<article class="item story"
   data-tags="newspace"
-  data-entities="intuitive-machines"
-  data-countries="CA US"
-  data-regions="north_america"
-  data-events=""
-  data-segments="in_orbit"
-  data-age="5"
-  data-search="intuitive machines, inc. $lunr position boosted by td waterhouse canada inc. marketbeat intuitive machines canada etats-unis">
-  <h4><a href="https://news.google.com/rss/articles/CBMizgFBVV95cUxQaHhiNGx1TWZQaTJjZTJNZWJGZDU2TDJiSnNOejVOaU9WM3FvQ1dRQTdQbTBMUDh1Zml0MzAzb1NjbUl6MHBnRXJ4bURZTmY0bVdQZy1CVEJxVnJ1cnprWnYtdlNBUkhWNTI4ZUZOQjhrbTFzVkZhbnYxS09RSkJDVnFpSjFjX2xCa1BxMzExNWgwQkNxektzTkNoM0dUblh2c1JWb0c4aTc1QWpxbjByUl9uT0Nicnl2RTRkSHVGSjBIbXpzYnlvcFk2RG5XZw?oc=5" target="_blank" rel="noopener noreferrer">Intuitive Machines, Inc. $LUNR Position Boosted by TD Waterhouse Canada Inc.</a></h4>
-  <p class="meta">
-    <span class="src">MarketBeat</span><span class="via" title="Trouvé via Google News"> · GN</span>    <span aria-hidden="true">·</span>
-    <time datetime="2026-10-21T10:46:40+02:00" title="21 oct. 2026">10:46</time>
-<span aria-hidden="true">·</span> <span class="geo">Canada, États-Unis</span>  </p>
-  <p class="labels">
-  </p>
-</article>
-<article class="item"
-  data-tags="newspace"
-  data-entities="intuitive-machines"
+  data-entities="redwire intuitive-machines"
   data-countries="US"
   data-regions="north_america"
   data-events=""
-  data-segments="in_orbit"
+  data-segments="in_orbit manufacturing"
+  data-industries=""
+  data-impact="0"
   data-age="5"
-  data-search="intuitive machines inc (derivatives) price (lunr/usd) today | live price, market cap &amp; chart binance intuitive machines etats-unis">
-  <h4><a href="https://news.google.com/rss/articles/CBMidkFVX3lxTE4zRWJPZER0bHJuX2lQZXhkTDAxVWREZmZjbVRqcVBXcUVBT09mek9kbmY0UmRmOEg0dlFwSC03LVdUZmZXSjBRZWUxb3drcEFXdkRKS3lncE9ZNWxzVkdPUHZ6SWRpYUc5cnZpY1M3UGFkTmV2Q1E?oc=5" target="_blank" rel="noopener noreferrer">Intuitive Machines Inc (Derivatives) Price (LUNR/USD) Today | Live Price, Market Cap &amp; Chart</a></h4>
+  data-search="redwire corp (derivatives) price (rdw/usd) today | live price, market cap &amp; chart intuitive machines inc (derivatives) price (lunr/usd) today | live price, market cap &amp; chart binance redwire intuitive machines etats-unis">
+  <h4><a href="https://news.google.com/rss/articles/CBMiaEFVX3lxTE1pWkYyejJaZV9Qdmd3ZnJTUEU3WkkwZWNzT2psYXFNRllYMHg1XzZIWk0yVlN0SVM3QzZUQ09xOU01anhnWG9Gb21OYnhjZG1aRjBCYTFFdFk4dktpTkRwdDZTci1lWkt6?oc=5" target="_blank" rel="noopener noreferrer">Redwire Corp (Derivatives) Price (RDW/USD) Today | Live Price, Market Cap &amp; Chart</a></h4>
   <p class="meta">
     <span class="src">Binance</span><span class="via" title="Trouvé via Google News"> · GN</span>    <span aria-hidden="true">·</span>
     <time datetime="2026-10-21T08:19:00+02:00" title="21 oct. 2026">08:19</time>
 <span aria-hidden="true">·</span> <span class="geo">États-Unis</span>  </p>
   <p class="labels">
-  </p>
+<a class="chip chip-company" href="../entite/redwire.html">Redwire</a>  </p>
+  <details class="sources">
+    <summary>2 articles de 1 source</summary>
+    <ul>
+      <li><a href="https://news.google.com/rss/articles/CBMidkFVX3lxTE4zRWJPZER0bHJuX2lQZXhkTDAxVWREZmZjbVRqcVBXcUVBT09mek9kbmY0UmRmOEg0dlFwSC03LVdUZmZXSjBRZWUxb3drcEFXdkRKS3lncE9ZNWxzVkdPUHZ6SWRpYUc5cnZpY1M3UGFkTmV2Q1E?oc=5" target="_blank" rel="noopener noreferrer">Intuitive Machines Inc (Derivatives) Price (LUNR/USD) Today | Live Price, Market Cap &amp; Chart</a>
+        <span class="list-meta">Binance · GN · 21 oct. · 08:19</span></li>
+      <li><a href="https://news.google.com/rss/articles/CBMiaEFVX3lxTE1pWkYyejJaZV9Qdmd3ZnJTUEU3WkkwZWNzT2psYXFNRllYMHg1XzZIWk0yVlN0SVM3QzZUQ09xOU01anhnWG9Gb21OYnhjZG1aRjBCYTFFdFk4dktpTkRwdDZTci1lWkt6?oc=5" target="_blank" rel="noopener noreferrer">Redwire Corp (Derivatives) Price (RDW/USD) Today | Live Price, Market Cap &amp; Chart</a>
+        <span class="list-meta">Binance · GN · 20 oct. · 08:47</span></li>
+    </ul>
+  </details>
 </article>
   </section>
   <section class="day" data-age="6">
     <h3 class="day-label">Mardi 20 oct.</h3>
-<article class="item"
+<article class="item story"
   data-tags="newspace"
   data-entities="intuitive-machines"
   data-countries="US"
   data-regions="north_america"
   data-events=""
   data-segments="in_orbit"
+  data-industries=""
+  data-impact="0"
   data-age="6"
   data-search="intuitive machines initiated at outperform by macquarie moomoo intuitive machines etats-unis">
   <h4><a href="https://news.google.com/rss/articles/CBMioAFBVV95cUxQUkt2aDhBRlA2al9XdjkyaXVOZklRMGZORGpKWFphR3JKYTNWR041M2dVOHBMcWx0RE1IQjdVYWJQVkJ1dzVYcFY5YUMtd251czFXSDBxV0dZaXNvMUpGdEVGaTZNbzAtdUN2dVEzcHlGeVoyVkp0NXdpbFZhUzRxX1Y5RFM0YlNwT2hfekdjT3hXbVNEcnoyZWg1ZEdDeUhH?oc=5" target="_blank" rel="noopener noreferrer">Intuitive Machines Initiated at Outperform by Macquarie</a></h4>
@@ -524,25 +416,36 @@
   </section>
   <section class="day" data-age="13">
     <h3 class="day-label">Mardi 13 oct.</h3>
-<article class="item"
+<article class="item story impact-faible"
   data-tags="newspace"
-  data-entities="firefly intuitive-machines"
+  data-entities="ast-spacemobile firefly intuitive-machines"
   data-countries="US"
   data-regions="north_america"
   data-events=""
-  data-segments="in_orbit launcher"
+  data-segments="in_orbit launcher telecom"
+  data-industries="connectivite"
+  data-impact="1"
   data-age="13"
-  data-search="firefly aerospace vs. intuitive machines: which space infrastructure stock is a better buy in 2026? yahoo finance firefly aerospace intuitive machines etats-unis">
-  <h4><a href="https://news.google.com/rss/articles/CBMipwFBVV95cUxPUlRlY043TTJkSU1XT2ZOVUJjdXRkamdEMHAtYmF6TkpTWEduM2hKX1A5cmE1R0N5Q3Fua1l6MHctX2xJV05DUDdWNDlqcGd0TVdOWVllcC04RmNkSXRYdUN3bml1NUszWk5rTkk0Z0lldjR0blVadExXOHVzTXc1VHhjQnoxQWhza0pKbEtrSGd0RGxnanZHa216T0pSVHlZVFhud3F1dw?oc=5" target="_blank" rel="noopener noreferrer">Firefly Aerospace vs. Intuitive Machines: Which Space Infrastructure Stock Is a Better Buy in 2026?</a></h4>
+  data-search="comparatif boursier : ast spacemobile, firefly aerospace et intuitive machines article d&#39;analyse comparant l&#39;attractivite boursiere d&#39;ast spacemobile, firefly aerospace et intuitive machines pour 2026. indicateur de l&#39;interet des investisseurs pour des acteurs du spatial commercial et de la connectivite satellite. ast spacemobile vs. firefly aerospace: which space-based venture&#39;s stock is a better buy in 2026? firefly aerospace vs. intuitive machines: which space infrastructure stock is a better buy in 2026? the motley fool yahoo finance ast spacemobile firefly aerospace intuitive machines etats-unis financements et consolidation connectivite securisee">
+  <h4><a href="https://news.google.com/rss/articles/CBMi4AFBVV95cUxPMnNkMGxmTHRZRGc1N0hYWUpoeWNUWXVUMm1xNGE5TkdHYnJ6azlWV1RESUxYVHJZUm9LaUxSQkNxdW4yS1FITVVIRVBQNmZWQlE5NjZtWG5kNlNfdnVlQks2U296UmNNQk9RU3FVaXRpUEhrRDhyVmZKZkZLWlR5RXRxRmo3dzR0UXJybWd4SnNIRW9KWU5pUHhTbk55RUM0bUx1enNtOXlxMW1EaGZMLUFiMGl6dXUtdHB1SjRzUFFqSkR6LVNQU0t6M3RSZ1BoRC1MVm5EeGxJY1N5ZWNGOQ?oc=5" target="_blank" rel="noopener noreferrer">Comparatif boursier : AST SpaceMobile, Firefly Aerospace et Intuitive Machines</a></h4>
   <p class="meta">
-    <span class="src">Yahoo Finance</span><span class="via" title="Trouvé via Google News"> · GN</span>    <span aria-hidden="true">·</span>
+<span class="impact-badge impact-badge-faible">Impact faible</span>    <span class="src">The Motley Fool</span><span class="via" title="Trouvé via Google News"> · GN</span><span class="n-sources">+ 1 source</span>    <span aria-hidden="true">·</span>
     <time datetime="2026-10-13T21:42:02+02:00" title="13 oct. 2026">21:42</time>
 <span aria-hidden="true">·</span> <span class="geo">États-Unis</span>  </p>
-  <p class="labels">
-<a class="chip chip-company" href="../entite/firefly.html">Firefly Aerospace</a>  </p>
+<p class="excerpt">Article d&#39;analyse comparant l&#39;attractivité boursière d&#39;AST SpaceMobile, Firefly Aerospace et Intuitive Machines pour 2026.</p><p class="why"><span>Pourquoi c'est important</span> Indicateur de l&#39;intérêt des investisseurs pour des acteurs du spatial commercial et de la connectivité satellite.</p>  <p class="labels">
+<span class="theme">Financements et consolidation</span><span class="industry">Connectivité sécurisée</span><a class="chip chip-company" href="../entite/ast-spacemobile.html">AST SpaceMobile</a><a class="chip chip-company" href="../entite/firefly.html">Firefly Aerospace</a>  </p>
+  <details class="sources">
+    <summary>2 articles de 2 sources</summary>
+    <ul>
+      <li><a href="https://news.google.com/rss/articles/CBMipwFBVV95cUxPUlRlY043TTJkSU1XT2ZOVUJjdXRkamdEMHAtYmF6TkpTWEduM2hKX1A5cmE1R0N5Q3Fua1l6MHctX2xJV05DUDdWNDlqcGd0TVdOWVllcC04RmNkSXRYdUN3bml1NUszWk5rTkk0Z0lldjR0blVadExXOHVzTXc1VHhjQnoxQWhza0pKbEtrSGd0RGxnanZHa216T0pSVHlZVFhud3F1dw?oc=5" target="_blank" rel="noopener noreferrer">Firefly Aerospace vs. Intuitive Machines: Which Space Infrastructure Stock Is a Better Buy in 2026?</a>
+        <span class="list-meta">Yahoo Finance · GN · 13 oct. · 21:42</span></li>
+      <li><a href="https://news.google.com/rss/articles/CBMi4AFBVV95cUxPMnNkMGxmTHRZRGc1N0hYWUpoeWNUWXVUMm1xNGE5TkdHYnJ6azlWV1RESUxYVHJZUm9LaUxSQkNxdW4yS1FITVVIRVBQNmZWQlE5NjZtWG5kNlNfdnVlQks2U296UmNNQk9RU3FVaXRpUEhrRDhyVmZKZkZLWlR5RXRxRmo3dzR0UXJybWd4SnNIRW9KWU5pUHhTbk55RUM0bUx1enNtOXlxMW1EaGZMLUFiMGl6dXUtdHB1SjRzUFFqSkR6LVNQU0t6M3RSZ1BoRC1MVm5EeGxJY1N5ZWNGOQ?oc=5" target="_blank" rel="noopener noreferrer">AST SpaceMobile vs. Firefly Aerospace: Which Space-Based Venture&#39;s Stock Is a Better Buy in 2026?</a>
+        <span class="list-meta">The Motley Fool · GN · 12 oct. · 09:00</span></li>
+    </ul>
+  </details>
 </article>
   </section>
-  <p class="empty" hidden>Aucun article ne correspond à ces filtres. Élargir la période ou passer le domaine sur « Tout ».</p>
+  <p class="empty" hidden>Aucun sujet ne correspond à ces filtres. Élargir la période ou passer le domaine sur « Tout ».</p>
 </div>
 
   </section>
@@ -551,31 +454,30 @@
     <div class="side-box">
       <h2>Activité</h2>
       <p class="windows">
-        <span><strong>23</strong> articles sur 7 j</span>
-        <span><strong>24</strong> sur 30 j</span>
-        <span><strong>24</strong> sur 90 j</span>
+        <span><strong>12</strong> articles sur 7 j</span>
+        <span><strong>13</strong> sur 30 j</span>
+        <span><strong>13</strong> sur 90 j</span>
       </p>
       <h3>Par type d'événement (90 j)</h3>
       <ul class="bars">
         <li><span class="bar-label">Lancement</span>
-          <span class="bar"><span class="bar-fill ev-launch" style="width: 25.0%"></span></span>
+          <span class="bar"><span class="bar-fill ev-launch" style="width: 100.0%"></span></span>
           <span class="n">1</span></li>
         <li><span class="bar-label">Résultats financiers</span>
-          <span class="bar"><span class="bar-fill ev-financials" style="width: 50.0%"></span></span>
-          <span class="n">2</span></li>
+          <span class="bar"><span class="bar-fill ev-financials" style="width: 100.0%"></span></span>
+          <span class="n">1</span></li>
         <li><span class="bar-label">Nomination</span>
           <span class="bar"><span class="bar-fill ev-appointment" style="width: 100.0%"></span></span>
-          <span class="n">4</span></li>
+          <span class="n">1</span></li>
       </ul>
     </div>
     <div class="side-box">
       <h2>Souvent cités avec</h2>
       <ul class="related">
-        <li><a class="chip chip-institution" href="../entite/nro.html">NRO</a> <span class="n">3</span></li>
-        <li><a class="chip chip-company" href="../entite/spacex.html">SpaceX</a> <span class="n">2</span></li>
-        <li><a class="chip chip-company" href="../entite/redwire.html">Redwire</a> <span class="n">2</span></li>
-        <li><a class="chip chip-company" href="../entite/planet.html">Planet Labs</a> <span class="n">2</span></li>
         <li><a class="chip chip-institution" href="../entite/nasa.html">NASA</a> <span class="n">1</span></li>
+        <li><a class="chip chip-institution" href="../entite/nro.html">NRO</a> <span class="n">1</span></li>
+        <li><a class="chip chip-company" href="../entite/redwire.html">Redwire</a> <span class="n">1</span></li>
+        <li><a class="chip chip-company" href="../entite/ast-spacemobile.html">AST SpaceMobile</a> <span class="n">1</span></li>
         <li><a class="chip chip-company" href="../entite/firefly.html">Firefly Aerospace</a> <span class="n">1</span></li>
       </ul>
     </div>
@@ -592,6 +494,6 @@
   </footer>
 
   <script type="application/json" id="entity-index">[{"id": "aed", "kind": "institution", "name": "AED"}, {"id": "aerospacelab", "kind": "company", "name": "Aerospacelab"}, {"id": "airbus-ds", "kind": "company", "name": "Airbus Defence and Space"}, {"id": "amazon-leo", "kind": "company", "name": "Amazon Leo (ex-Kuiper)"}, {"id": "arianegroup", "kind": "company", "name": "ArianeGroup"}, {"id": "arianespace", "kind": "company", "name": "Arianespace"}, {"id": "asi", "kind": "institution", "name": "ASI"}, {"id": "ast-spacemobile", "kind": "company", "name": "AST SpaceMobile"}, {"id": "avio", "kind": "company", "name": "Avio"}, {"id": "blacksky", "kind": "company", "name": "BlackSky"}, {"id": "blue-origin", "kind": "company", "name": "Blue Origin"}, {"id": "capella", "kind": "company", "name": "Capella Space"}, {"id": "cnes", "kind": "institution", "name": "CNES"}, {"id": "cnsa", "kind": "institution", "name": "CNSA"}, {"id": "commandement-espace", "kind": "institution", "name": "Commandement de l\u0027Espace"}, {"id": "commission-europeenne", "kind": "institution", "name": "Commission europ\u00e9enne (DG DEFIS)"}, {"id": "constellr", "kind": "company", "name": "constellr"}, {"id": "d-orbit", "kind": "company", "name": "D-Orbit"}, {"id": "dga", "kind": "institution", "name": "DGA"}, {"id": "dlr", "kind": "institution", "name": "DLR"}, {"id": "earthdaily", "kind": "company", "name": "EarthDaily"}, {"id": "esa", "kind": "institution", "name": "ESA"}, {"id": "esri", "kind": "company", "name": "Esri"}, {"id": "euspa", "kind": "institution", "name": "EUSPA"}, {"id": "eutelsat", "kind": "company", "name": "Eutelsat"}, {"id": "exotrail", "kind": "company", "name": "Exotrail"}, {"id": "fcc", "kind": "institution", "name": "FCC"}, {"id": "firefly", "kind": "company", "name": "Firefly Aerospace"}, {"id": "hawkeye360", "kind": "company", "name": "HawkEye 360"}, {"id": "hemeria", "kind": "company", "name": "Hemeria"}, {"id": "hensoldt", "kind": "company", "name": "Hensoldt"}, {"id": "iceye", "kind": "company", "name": "ICEYE"}, {"id": "intuitive-machines", "kind": "company", "name": "Intuitive Machines"}, {"id": "iqps", "kind": "company", "name": "iQPS"}, {"id": "isar", "kind": "company", "name": "Isar Aerospace"}, {"id": "isro", "kind": "institution", "name": "ISRO"}, {"id": "jaxa", "kind": "institution", "name": "JAXA"}, {"id": "l3harris", "kind": "company", "name": "L3Harris"}, {"id": "latitude", "kind": "company", "name": "Latitude"}, {"id": "leonardo", "kind": "company", "name": "Leonardo"}, {"id": "lockheed-martin", "kind": "company", "name": "Lockheed Martin"}, {"id": "loft-orbital", "kind": "company", "name": "Loft Orbital"}, {"id": "maiaspace", "kind": "company", "name": "MaiaSpace"}, {"id": "ministere-armees", "kind": "institution", "name": "Minist\u00e8re des Arm\u00e9es"}, {"id": "nasa", "kind": "institution", "name": "NASA"}, {"id": "nga", "kind": "institution", "name": "NGA"}, {"id": "noaa", "kind": "institution", "name": "NOAA"}, {"id": "northrop-grumman", "kind": "company", "name": "Northrop Grumman"}, {"id": "nro", "kind": "institution", "name": "NRO"}, {"id": "ohb", "kind": "company", "name": "OHB"}, {"id": "open-cosmos", "kind": "company", "name": "Open Cosmos"}, {"id": "otan", "kind": "institution", "name": "OTAN"}, {"id": "pixxel", "kind": "company", "name": "Pixxel"}, {"id": "planet", "kind": "company", "name": "Planet Labs"}, {"id": "pld-space", "kind": "company", "name": "PLD Space"}, {"id": "redwire", "kind": "company", "name": "Redwire"}, {"id": "rheinmetall", "kind": "company", "name": "Rheinmetall"}, {"id": "rfa", "kind": "company", "name": "Rocket Factory Augsburg"}, {"id": "rocket-lab", "kind": "company", "name": "Rocket Lab"}, {"id": "safran", "kind": "company", "name": "Safran"}, {"id": "safran-ai", "kind": "company", "name": "Safran.AI (ex-Preligens)"}, {"id": "satcen", "kind": "institution", "name": "SatCen"}, {"id": "satellite-vu", "kind": "company", "name": "Satellite Vu"}, {"id": "satellogic", "kind": "company", "name": "Satellogic"}, {"id": "ses", "kind": "company", "name": "SES"}, {"id": "sda", "kind": "institution", "name": "Space Development Agency"}, {"id": "spacex", "kind": "company", "name": "SpaceX"}, {"id": "spire", "kind": "company", "name": "Spire Global"}, {"id": "synspective", "kind": "company", "name": "Synspective"}, {"id": "thales", "kind": "company", "name": "Thales"}, {"id": "thales-alenia-space", "kind": "company", "name": "Thales Alenia Space"}, {"id": "the-exploration-company", "kind": "company", "name": "The Exploration Company"}, {"id": "uit", "kind": "institution", "name": "UIT"}, {"id": "uksa", "kind": "institution", "name": "UK Space Agency"}, {"id": "umbra", "kind": "company", "name": "Umbra"}, {"id": "unseenlabs", "kind": "company", "name": "Unseenlabs"}, {"id": "ussf", "kind": "institution", "name": "US Space Force"}, {"id": "vantor", "kind": "company", "name": "Vantor (ex-Maxar Intelligence)"}]</script>
-  <script src="../static/app.js?v=202610260731"></script>
+  <script src="../static/app.js?v=202610262057"></script>
 </body>
 </html>

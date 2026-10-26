@@ -7,7 +7,7 @@
   <meta name="robots" content="noindex">
   <title>AST SpaceMobile · Veille Géospatial & New Space</title>
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='6' fill='%232563eb'/%3E%3Cellipse cx='16' cy='16' rx='14' ry='5' fill='none' stroke='%232563eb' stroke-width='2' transform='rotate(-25 16 16)'/%3E%3C/svg%3E">
-  <link rel="stylesheet" href="../static/style.css?v=202610260731">
+  <link rel="stylesheet" href="../static/style.css?v=202610262057">
 </head>
 <body data-page="entite" data-root="../">
   <header class="top">
@@ -26,7 +26,7 @@
         <datalist id="entity-list">
 <option value="AED"></option><option value="Aerospacelab"></option><option value="Airbus Defence and Space"></option><option value="Amazon Leo (ex-Kuiper)"></option><option value="ArianeGroup"></option><option value="Arianespace"></option><option value="ASI"></option><option value="AST SpaceMobile"></option><option value="Avio"></option><option value="BlackSky"></option><option value="Blue Origin"></option><option value="Capella Space"></option><option value="CNES"></option><option value="CNSA"></option><option value="Commandement de l&#39;Espace"></option><option value="Commission européenne (DG DEFIS)"></option><option value="constellr"></option><option value="D-Orbit"></option><option value="DGA"></option><option value="DLR"></option><option value="EarthDaily"></option><option value="ESA"></option><option value="Esri"></option><option value="EUSPA"></option><option value="Eutelsat"></option><option value="Exotrail"></option><option value="FCC"></option><option value="Firefly Aerospace"></option><option value="HawkEye 360"></option><option value="Hemeria"></option><option value="Hensoldt"></option><option value="ICEYE"></option><option value="Intuitive Machines"></option><option value="iQPS"></option><option value="Isar Aerospace"></option><option value="ISRO"></option><option value="JAXA"></option><option value="L3Harris"></option><option value="Latitude"></option><option value="Leonardo"></option><option value="Lockheed Martin"></option><option value="Loft Orbital"></option><option value="MaiaSpace"></option><option value="Ministère des Armées"></option><option value="NASA"></option><option value="NGA"></option><option value="NOAA"></option><option value="Northrop Grumman"></option><option value="NRO"></option><option value="OHB"></option><option value="Open Cosmos"></option><option value="OTAN"></option><option value="Pixxel"></option><option value="Planet Labs"></option><option value="PLD Space"></option><option value="Redwire"></option><option value="Rheinmetall"></option><option value="Rocket Factory Augsburg"></option><option value="Rocket Lab"></option><option value="Safran"></option><option value="Safran.AI (ex-Preligens)"></option><option value="SatCen"></option><option value="Satellite Vu"></option><option value="Satellogic"></option><option value="SES"></option><option value="Space Development Agency"></option><option value="SpaceX"></option><option value="Spire Global"></option><option value="Synspective"></option><option value="Thales"></option><option value="Thales Alenia Space"></option><option value="The Exploration Company"></option><option value="UIT"></option><option value="UK Space Agency"></option><option value="Umbra"></option><option value="Unseenlabs"></option><option value="US Space Force"></option><option value="Vantor (ex-Maxar Intelligence)"></option>        </datalist>
       </label>
-      <p class="updated">Mis à jour le <time datetime="2026-10-26T07:31:31+01:00">26 oct. 2026 à 07:31</time></p>
+      <p class="updated">Mis à jour le <time datetime="2026-10-26T20:57:46+01:00">26 oct. 2026 à 20:57</time></p>
     </div>
   </header>
 
@@ -70,7 +70,7 @@
     </article>
 
     <header class="page-head">
-      <h2 class="feed-title">Actualités <span class="count" data-count>66</span></h2>
+      <h2 class="feed-title">Actualités <span class="count" data-count>50</span></h2>
     </header>
     <div class="filters" data-default-days="90" data-default-domain="all">
   <div class="filter-row">
@@ -91,6 +91,19 @@
     </label>
   </div>
   <div class="filter-row">
+    <div class="segmented" role="group" aria-label="Impact">
+      <button type="button" data-impact="0">Tous les sujets</button>
+      <button type="button" data-impact="2">Impact moyen et fort</button>
+      <button type="button" data-impact="3">Impact fort</button>
+    </div>
+    <label class="select">
+      <span class="sr-only">Industrie</span>
+      <select data-filter="industries">
+        <option value="">Toutes les industries</option>
+<option value="connectivite">Connectivité sécurisée (6)</option>      </select>
+    </label>
+  </div>
+  <div class="filter-row">
     <label class="select">
       <span class="sr-only">Région</span>
       <select data-filter="regions">
@@ -101,44 +114,173 @@
       <span class="sr-only">Pays</span>
       <select data-filter="countries">
         <option value="">Tous les pays</option>
-<option value="US">États-Unis (66)</option><option value="BR">Brésil (1)</option><option value="JP">Japon (1)</option>      </select>
+<option value="US">États-Unis (50)</option><option value="BR">Brésil (3)</option><option value="JP">Japon (1)</option>      </select>
     </label>
     <button type="button" class="reset" data-reset hidden>Effacer les filtres</button>
   </div>
   <div class="chips" role="group" aria-label="Type d'événement">
+    <button type="button" class="ev ev-contract_won" data-event="contract_won" aria-pressed="false">Contrat gagné <span class="n" data-event-count="contract_won">1</span></button>
     <button type="button" class="ev ev-mna" data-event="mna" aria-pressed="false">Rachat ou fusion <span class="n" data-event-count="mna">1</span></button>
     <button type="button" class="ev ev-financials" data-event="financials" aria-pressed="false">Résultats financiers <span class="n" data-event-count="financials">1</span></button>
-    <button type="button" class="ev ev-regulation" data-event="regulation" aria-pressed="false">Réglementation <span class="n" data-event-count="regulation">4</span></button>
+    <button type="button" class="ev ev-regulation" data-event="regulation" aria-pressed="false">Réglementation <span class="n" data-event-count="regulation">5</span></button>
   </div>
 </div>
 
     <div class="feed" data-feed>
-  <section class="day" data-age="1">
-    <h3 class="day-label">Hier</h3>
-<article class="item"
+  <section class="day" data-age="0">
+    <h3 class="day-label">Aujourd&#39;hui</h3>
+<article class="item story impact-moyen"
+  data-tags="newspace"
+  data-entities="ast-spacemobile"
+  data-countries="BR US"
+  data-regions="latin_america north_america"
+  data-events="regulation contract_won"
+  data-segments="telecom"
+  data-industries="connectivite"
+  data-impact="2"
+  data-age="0"
+  data-search="ast spacemobile obtient l&#39;autorisation de spectre au bresil et signe avec quatre operateurs ast spacemobile recoit l&#39;approbation de l&#39;anatel pour le spectre s-band et la bande 700 mhz au bresil, et conclut des accords avec quatre operateurs regionaux. cette expansion renforce la position d&#39;ast spacemobile sur le marche latino-americain de la connectivite satellite-vers-mobile, concurrent du secteur. ast spacemobile advances brazil expansion with anatel&#39;s approval for s-band spectrum and secondary use of the 700 mhz band, agreements with four regional operators and planned ground infrastructure ast spacemobile secures brazil spectrum, adds four mobile partners ast spacemobile secures spectrum authorization in brazil by investing.com ast spacemobile wins brazil spectrum approval, signs deals with regional operators ast spacemobile gains s-band authorisation in brazil business wire tradingview investing.com canada marketscreener.com developing telecoms ast spacemobile bresil etats-unis programmes et partenariats connectivite securisee">
+  <h4><a href="https://news.google.com/rss/articles/CBMi7AJBVV95cUxQQ2sxdW5YNUdJYTZjZUUzUDh6M1NrZm5NUTRLbGdyVEVPRGV6TzFhemhJT0FkUDA2eGVFQWxnX2hCOU5MY3pGWGR3dkhXakV4a0hhcnVKOE5DRjByY1NWZmhqZlMxT3QzeExwanFUZzE3RFdSOW5VdUpaalVTLUNCaFN0OEFpOFlvOU9rbDQzeGUtazRad3FXS2FwMlJqNGIyWWVKeG1wRnYyWXgxZW8xcHI2RExIcGhpN2lncWNQcnlPbVJQdFhCYXgyTjJKa0VfLW9zRkdmRm1QSmRCSzc0Y0V2VExEUTNUVldRODcxcVhiZjNpUVpqM0E0alVEelFjaE1iVmNwWjNzMmgwejZtYjBzWWwtTXQ0R1Zkcl96TzZGNFVQWkxmUlFyZTVzTzFNMm0zRGxhWk9pWnY1WUJMV2FaZjA4dnk1TlBXTE5ZcGU4MmpqeUstNU92MnUxVk9UczlEYVFLVV9fTWFj?oc=5" target="_blank" rel="noopener noreferrer">AST SpaceMobile obtient l&#39;autorisation de spectre au Brésil et signe avec quatre opérateurs</a></h4>
+  <p class="meta">
+<span class="impact-badge impact-badge-moyen">Impact moyen</span>    <span class="src">Business Wire</span><span class="via" title="Trouvé via Google News"> · GN</span><span class="n-sources">+ 4 sources</span>    <span aria-hidden="true">·</span>
+    <time datetime="2026-10-26T20:05:46+01:00" title="26 oct. 2026">20:05</time>
+<span aria-hidden="true">·</span> <span class="geo">Brésil, États-Unis</span>  </p>
+<p class="excerpt">AST SpaceMobile reçoit l&#39;approbation de l&#39;Anatel pour le spectre S-band et la bande 700 MHz au Brésil, et conclut des accords avec quatre opérateurs régionaux.</p><p class="why"><span>Pourquoi c'est important</span> Cette expansion renforce la position d&#39;AST SpaceMobile sur le marché latino-américain de la connectivité satellite-vers-mobile, concurrent du secteur.</p>  <p class="labels">
+<span class="ev ev-regulation">Réglementation</span><span class="ev ev-contract_won">Contrat gagné</span><span class="theme">Programmes et partenariats</span><span class="industry">Connectivité sécurisée</span>  </p>
+  <details class="sources">
+    <summary>5 articles de 5 sources</summary>
+    <ul>
+      <li><a href="https://news.google.com/rss/articles/CBMi5gFBVV95cUxPS1hRd0FVbU1ZNHRSNjRpcWdHb1RkN0N0Z2psVVR4SnVnRnFhNjRWTzVLc2JTVHRNTS1vZFROaGJLcnlpZW0wSjlEekRjWTZUY3RQUEhLbTZFU2hkeDJRMDZYaVhraW1hOUF1dXlqbzNobDF5R25NY01IbC1RZDBBNGFtMUpyN2lkcWVjQk9QclpMeFpPQWlYTmVtdXF4RXVjRVAzbnhEUDNFcnFZZDNqMm5XODk5WWNZV1g1dk9ESXRZaHJ0MS1mNmJpVHBMdFF4cW9TaW15UEp3YkxkOGtmeDROT3NJdw?oc=5" target="_blank" rel="noopener noreferrer">AST SpaceMobile gains S-band authorisation in Brazil</a>
+        <span class="list-meta">Developing Telecoms · GN · 26 oct. · 20:05</span></li>
+      <li><a href="https://news.google.com/rss/articles/CBMizwFBVV95cUxPWDVvZ3NMUm8ydTRkWDVMRk9YTVNIaXJKTGxnczVJbTVGSkxESkxqVGRLb05vNnJsSFNMT2NpVFRPX1hsT1JHY2ZVZXdLTmFMdGhiY0MyRk15VFJDYW40enB5TzdWLTZKWUFSeU1ldVVtcG50THk2Zy1LTllTTUt5ZEgyZUx3LW1pVXhtMzNfc3dpRlhab3pkSXBobFVQMTdHZGt6V0xiOEgtZldJRUpLb21LTVpvLU40NVAtazVMUGtxeUI2bU56eW1hXzByOVE?oc=5" target="_blank" rel="noopener noreferrer">AST SpaceMobile Wins Brazil Spectrum Approval, Signs Deals With Regional Operators</a>
+        <span class="list-meta">marketscreener.com · GN · 26 oct. · 13:43</span></li>
+      <li><a href="https://news.google.com/rss/articles/CBMiuAFBVV95cUxObkxXTXl3NWtubVFuZzZsTFd5cVR2MXlMSzJQbU00NUJsRHMwQ09nOElHVjg1RllZcEl3Ujg3QnE5UV9oc2dVQnRsLUpHbnl4bUtMM1RvWFlkLU81azE2X2FQUHFadjBxMXpDQXJSV3BQd29oR0QwLXJHeTYtTmdQSkV0RmRzX2NJTF8zWi10QTdOeXJLMmNNQjN3QU1JOHVNUVBxNTFIanFGNmcyQTRLNVo3eGt6STVt?oc=5" target="_blank" rel="noopener noreferrer">AST SpaceMobile secures spectrum authorization in Brazil By Investing.com</a>
+        <span class="list-meta">Investing.com Canada · GN · 26 oct. · 13:09</span></li>
+      <li><a href="https://news.google.com/rss/articles/CBMixwFBVV95cUxNMVl4UFhvdEhQVDFJY3pBMkI0TmE3Ymw0WDh3cVVlN0Fta1JHSDhjWExTTWdhVGhIVWpoNG80TTZfN0RrYzMzVjFoT2I4U1lVeEh5bEs1ZUIwTXNuLTd5andwSkNXS1FqZXd4Zjc3akJ6X2VvQWFlaGJscGJfX2RsTEk1WmMwVGtaaVBYSG1ZRFdMUTVCRTdqZTRDSHl4MThYXzJBN1FSQzc5Tk55OEU3cWRxMnAteU5ERkh1bjJweVpnZlFYMS13?oc=5" target="_blank" rel="noopener noreferrer">AST SpaceMobile secures Brazil spectrum, adds four mobile partners</a>
+        <span class="list-meta">TradingView · GN · 26 oct. · 13:03</span></li>
+      <li><a href="https://news.google.com/rss/articles/CBMi7AJBVV95cUxQQ2sxdW5YNUdJYTZjZUUzUDh6M1NrZm5NUTRLbGdyVEVPRGV6TzFhemhJT0FkUDA2eGVFQWxnX2hCOU5MY3pGWGR3dkhXakV4a0hhcnVKOE5DRjByY1NWZmhqZlMxT3QzeExwanFUZzE3RFdSOW5VdUpaalVTLUNCaFN0OEFpOFlvOU9rbDQzeGUtazRad3FXS2FwMlJqNGIyWWVKeG1wRnYyWXgxZW8xcHI2RExIcGhpN2lncWNQcnlPbVJQdFhCYXgyTjJKa0VfLW9zRkdmRm1QSmRCSzc0Y0V2VExEUTNUVldRODcxcVhiZjNpUVpqM0E0alVEelFjaE1iVmNwWjNzMmgwejZtYjBzWWwtTXQ0R1Zkcl96TzZGNFVQWkxmUlFyZTVzTzFNMm0zRGxhWk9pWnY1WUJMV2FaZjA4dnk1TlBXTE5ZcGU4MmpqeUstNU92MnUxVk9UczlEYVFLVV9fTWFj?oc=5" target="_blank" rel="noopener noreferrer">AST SpaceMobile Advances Brazil Expansion with Anatel’s Approval for S-band Spectrum and Secondary Use of the 700 MHz Band, Agreements with Four Regional Operators and Planned Ground Infrastructure</a>
+        <span class="list-meta">Business Wire · GN · 26 oct. · 12:30</span></li>
+    </ul>
+  </details>
+</article>
+<article class="item story impact-faible"
+  data-tags="newspace"
+  data-entities="ast-spacemobile"
+  data-countries="US BR"
+  data-regions="north_america latin_america"
+  data-events=""
+  data-segments="telecom"
+  data-industries="connectivite"
+  data-impact="1"
+  data-age="0"
+  data-search="ast spacemobile gagne de nouveaux partenaires malgre une baisse de son cours les operateurs bresiliens brisanet et unifique s&#39;associent a ast spacemobile, dont l&#39;action connait toutefois un repli. l&#39;expansion commerciale d&#39;ast spacemobile renforce la concurrence sur le marche de la connectivite satellite directe aux mobiles. ast spacemobile&#39;s partner momentum meets a sobering price reset brisanet and unifique partner with ast spacemobile tx-ast-spacemobile ad-hoc-news.de telecompaper gazettextra ast spacemobile etats-unis bresil programmes et partenariats connectivite securisee">
+  <h4><a href="https://news.google.com/rss/articles/CBMi0AFBVV95cUxPVGg5REF4cXN6ZFVmRTgweWQtV1ItVWx2OGg4bEx0OTdqZHo4QW1SZjBFc2hzTmdCY3pyZmF3ZXFtVHg0bHI2R2k5NF9DREcyM3BUVUV3U1k4S1Vrd1hoNC1SRnpRQWVrOFpmc0U1Nml2Vi1FTXRHNEtUWXVoUTlKZ0R3ZHFUZ0lJOVJ1ektCdERBZmhVQllSUFpsR3phZFVtVGRNRUlxM3Uydi1sMjMzZ1dzUllLTHZMMWk5cFUyeHlfUEM4UThVeHA2YlJmOGl2?oc=5" target="_blank" rel="noopener noreferrer">AST SpaceMobile gagne de nouveaux partenaires malgré une baisse de son cours</a></h4>
+  <p class="meta">
+<span class="impact-badge impact-badge-faible">Impact faible</span>    <span class="src">ad-hoc-news.de</span><span class="via" title="Trouvé via Google News"> · GN</span><span class="n-sources">+ 2 sources</span>    <span aria-hidden="true">·</span>
+    <time datetime="2026-10-26T12:30:48+01:00" title="26 oct. 2026">12:30</time>
+<span aria-hidden="true">·</span> <span class="geo">États-Unis, Brésil</span>  </p>
+<p class="excerpt">Les opérateurs brésiliens Brisanet et Unifique s&#39;associent à AST SpaceMobile, dont l&#39;action connaît toutefois un repli.</p><p class="why"><span>Pourquoi c'est important</span> L&#39;expansion commerciale d&#39;AST SpaceMobile renforce la concurrence sur le marché de la connectivité satellite directe aux mobiles.</p>  <p class="labels">
+<span class="theme">Programmes et partenariats</span><span class="industry">Connectivité sécurisée</span>  </p>
+  <details class="sources">
+    <summary>3 articles de 3 sources</summary>
+    <ul>
+      <li><a href="https://news.google.com/rss/articles/CBMisgFBVV95cUxQNWNPeVBTMWgzUXVrQUZydHU1LXR3cDc1RFdGX0R5eWhIYnVJN2lucGdXRHAxZEtEbEdlMTRRQkJqcFF6WGhhREJSWjNhdUt4OHBUMlNvcXhkME5MQkVpNmExbXdLVjVwVmpLMzJqNHhmSTVWWlFrcmlYUDV2WEY0VlB5Ym9mbmtJVEozaUZfcTlVYkNJTENLWkNPUjdtenk5LWtrSFVzcXJMeVNfTWFDVlN3?oc=5" target="_blank" rel="noopener noreferrer">TX-AST-SPACEMOBILE</a>
+        <span class="list-meta">GazetteXtra · GN · 26 oct. · 12:30</span></li>
+      <li><a href="https://news.google.com/rss/articles/CBMimAFBVV95cUxNT2hsN243cFBHTXNhaEFDbEhEX0g0THJnZGx6Sk1FSzFtbnUxVUNZSHVXTVE4czUtamVFdzhLV21JdVN0R3o5LWplNU9DaGFHRFRVczNoOEFjVmE4dEZTRGNnNUV4dEF6cEJUVkg0Rkp5bHFlN18wSTlVTWtUUFVyRjloaTdMbXh3VW5nMVB4TFpMVUZpcFVJQw?oc=5" target="_blank" rel="noopener noreferrer">Brisanet and Unifique partner with AST SpaceMobile</a>
+        <span class="list-meta">Telecompaper · GN · 26 oct. · 08:22</span></li>
+      <li><a href="https://news.google.com/rss/articles/CBMi0AFBVV95cUxPVGg5REF4cXN6ZFVmRTgweWQtV1ItVWx2OGg4bEx0OTdqZHo4QW1SZjBFc2hzTmdCY3pyZmF3ZXFtVHg0bHI2R2k5NF9DREcyM3BUVUV3U1k4S1Vrd1hoNC1SRnpRQWVrOFpmc0U1Nml2Vi1FTXRHNEtUWXVoUTlKZ0R3ZHFUZ0lJOVJ1ektCdERBZmhVQllSUFpsR3phZFVtVGRNRUlxM3Uydi1sMjMzZ1dzUllLTHZMMWk5cFUyeHlfUEM4UThVeHA2YlJmOGl2?oc=5" target="_blank" rel="noopener noreferrer">AST SpaceMobile&#39;s Partner Momentum Meets a Sobering Price Reset</a>
+        <span class="list-meta">ad-hoc-news.de · GN · 24 oct. · 18:50</span></li>
+    </ul>
+  </details>
+</article>
+<article class="item story"
   data-tags="newspace"
   data-entities="ast-spacemobile"
   data-countries="US"
   data-regions="north_america"
   data-events=""
   data-segments="telecom"
-  data-age="1"
-  data-search="asts investor alert: rgrd law announces that ast spacemobile, inc. investors with substantial losses may seek to lead class action lawsuit before november 13, 2026 deadline lincolnjournal.com ast spacemobile etats-unis">
-  <h4><a href="https://news.google.com/rss/articles/CBMiuAJBVV95cUxONmNUM2QyTFhDRVNGUzRYLXI5ajJWOEpFa0tBYmlnVGREVUFBZHdRSDl2RlFGOGRFajUtbmlqZGcwTGFQRVppc0wwbHlZaXByMENXa1BYTkRmWUFpWTBUM3kwTUlkR05lQ0lDa3M5ZmJENGxOSkNXeDRNRllrTnVkN3VXTkhvUGpWaDVQbEcyTmdyTlZtOWtWU19IN2NBY0NWTmxkaVVQR1ZIYlppNEs4TEpNQnhyV1FVOS1aQlFuNEZCd0VJdy1KX1YzWXplcDhqbmVXY3k1bjVEdFpTUzgyeHh2alFYaXRYa1lCZDhHV2FXS213NUxITFZHWU5tUkZTNEo0N0NYS2kydk5wZ0Vob3lyTDZaQlZXWFJlM1RhY2tZT1NWd3J6cEJCWjMyWHBRSHZLVFhpdHM?oc=5" target="_blank" rel="noopener noreferrer">ASTS INVESTOR ALERT: RGRD Law Announces that AST SpaceMobile, Inc. Investors with Substantial Losses May Seek to Lead Class Action Lawsuit Before November 13, 2026 Deadline</a></h4>
+  data-industries=""
+  data-impact="0"
+  data-age="0"
+  data-search="ast spacemobile stock is gaining monday: what&#39;s going on? - ast spacemobile (nasdaq:asts) benzinga ast spacemobile etats-unis">
+  <h4><a href="https://news.google.com/rss/articles/CBMi2gFBVV95cUxNbnhyeElwR3hoVTFsMTRMN1lqNHNvcG9JX3MxZ1BZT1FYNjEyNk1KS0dSZmdneEZHOGlCOGRJNlFueTJvRGhsRDRRamc2eWhPc0hiR0hNR2M1RHlKcnptaUoxUkswWnFkaFZqbGNNdElnRXhBbktTQjFpaHIwNWlLdlJMc042eUNPMHJqTHdDa3hFRFJscThFb29YbHA3dDBoSEI5blhXRzducFVaTWlFWUxjLVJiNk9JZE51NzhFMWIxMWdPQjQxd1RpU1FCUUdjQzdhbFlHaGIwZw?oc=5" target="_blank" rel="noopener noreferrer">AST SpaceMobile Stock Is Gaining Monday: What&#39;s Going On? - AST SpaceMobile (NASDAQ:ASTS)</a></h4>
   <p class="meta">
-    <span class="src">lincolnjournal.com</span><span class="via" title="Trouvé via Google News"> · GN</span>    <span aria-hidden="true">·</span>
-    <time datetime="2026-10-25T21:00:00+01:00" title="25 oct. 2026">21:00</time>
+    <span class="src">Benzinga</span><span class="via" title="Trouvé via Google News"> · GN</span>    <span aria-hidden="true">·</span>
+    <time datetime="2026-10-26T17:16:20+01:00" title="26 oct. 2026">17:16</time>
 <span aria-hidden="true">·</span> <span class="geo">États-Unis</span>  </p>
   <p class="labels">
   </p>
 </article>
-<article class="item"
+<article class="item story"
+  data-tags="newspace"
+  data-entities="ast-spacemobile"
+  data-countries="US"
+  data-regions="north_america"
+  data-events=""
+  data-segments="telecom"
+  data-industries=""
+  data-impact="0"
+  data-age="0"
+  data-search="ast spacemobile: buy now for 134% upside! asts stock analysis africa corps (tbjxotwdyd) unisba media ast spacemobile etats-unis">
+  <h4><a href="https://news.google.com/rss/articles/CBMiggFBVV95cUxNVFlyZVdpd1FlUkhjOVpxd3Q2N05RcDRVZHRCYXM5M2diazFxT2hwVGUxWEpiVU5XSHIwTUVKRFh0Y05fYTc0S1BIaGpCcXdnZnpXekpDX2J1TWkxQ2lDVlo2SE5KMDZhTXVxb3dUWnlGQ01PMlIzclAycngyMlpVMU53?oc=5" target="_blank" rel="noopener noreferrer">AST SpaceMobile: Buy Now For 134% Upside! ASTS Stock Analysis Africa Corps (tbJXoTWdyD)</a></h4>
+  <p class="meta">
+    <span class="src">Unisba Media</span><span class="via" title="Trouvé via Google News"> · GN</span>    <span aria-hidden="true">·</span>
+    <time datetime="2026-10-26T06:23:24+01:00" title="26 oct. 2026">06:23</time>
+<span aria-hidden="true">·</span> <span class="geo">États-Unis</span>  </p>
+  <p class="labels">
+  </p>
+</article>
+<article class="item story"
+  data-tags="newspace"
+  data-entities="ast-spacemobile"
+  data-countries="US"
+  data-regions="north_america"
+  data-events=""
+  data-segments="telecom"
+  data-industries=""
+  data-impact="0"
+  data-age="0"
+  data-search="ast spacemobile stock news (oct 26, 2026): asts rises 2.6% to $39.79 gotrade ast spacemobile etats-unis">
+  <h4><a href="https://news.google.com/rss/articles/CBMiiwFBVV95cUxOV3NtUVlFLWxQOTFWWUlGWERhZi1fYlR0S1VtV3NYd0lwcFk4SGNIejhWNUdlOFJsWHNzRGdaYmFEaTBhblQtUTFaV191akV5bHRlcXpubmZ5YmpQSEJmVkFNaU5nejFfOGtoYWV5WXRXRXZIQTY4Mm9ZTHktMkZjUUpLZTFFV21jc1Nv?oc=5" target="_blank" rel="noopener noreferrer">AST SpaceMobile Stock News (Oct 26, 2026): ASTS Rises 2.6% to $39.79</a></h4>
+  <p class="meta">
+    <span class="src">Gotrade</span><span class="via" title="Trouvé via Google News"> · GN</span>    <span aria-hidden="true">·</span>
+    <time datetime="2026-10-26T05:00:00+01:00" title="26 oct. 2026">05:00</time>
+<span aria-hidden="true">·</span> <span class="geo">États-Unis</span>  </p>
+  <p class="labels">
+  </p>
+</article>
+  </section>
+  <section class="day" data-age="1">
+    <h3 class="day-label">Hier</h3>
+<article class="item story"
+  data-tags="newspace"
+  data-entities="ast-spacemobile"
+  data-countries="US"
+  data-regions="north_america"
+  data-events=""
+  data-segments="telecom"
+  data-industries=""
+  data-impact="0"
+  data-age="1"
+  data-search="going global | ast spacemobile explained (episode 9) coco gauff (07tfgahrcw) unisba media ast spacemobile etats-unis">
+  <h4><a href="https://news.google.com/rss/articles/CBMiggFBVV95cUxOaHdZb1NCQmI3ZzdzalFSbEFwZUZEZ3o1NzhQRmc1UGo1d1p3SFk3NzZRQjF1bWFueVBKbXZvVWlCSzNDbUdkQWplcXpNVGo1R2lWRFBwRGVzYTBOb0k5ZnIwLXpWVWlKZ185V0gtbkxkTFZfV2RRc2k4Sno3RVMtcFpn?oc=5" target="_blank" rel="noopener noreferrer">Going Global | AST SpaceMobile Explained (Episode 9) Coco Gauff (07tFgAhrCw)</a></h4>
+  <p class="meta">
+    <span class="src">Unisba Media</span><span class="via" title="Trouvé via Google News"> · GN</span>    <span aria-hidden="true">·</span>
+    <time datetime="2026-10-25T21:00:14+01:00" title="25 oct. 2026">21:00</time>
+<span aria-hidden="true">·</span> <span class="geo">États-Unis</span>  </p>
+  <p class="labels">
+  </p>
+</article>
+<article class="item story"
   data-tags="newspace"
   data-entities="ast-spacemobile spacex"
   data-countries="US"
   data-regions="north_america"
   data-events=""
   data-segments="launcher telecom"
+  data-industries=""
+  data-impact="0"
   data-age="1"
   data-search="asts stock slips overnight: ast spacemobile president cashes out $3.3m as bluebird 9 nears spacex mission stocktwits ast spacemobile spacex etats-unis">
   <h4><a href="https://news.google.com/rss/articles/CBMivgFBVV95cUxOeTRrUXlFamVwWjN3dWdhNl9DWmhmcmFDOEFueUdya1hTRnVxc2pZbDFhamxTRllobW92QWJWLXpjR3Vqc0FzbzY2bG5SN2NQSzJqbldKLW9hT1JNYl9lZWNpWGlRaE1tV3hPbHNiY1VuOUc5VGdkYzZxNGZuR3BVUFFsZDE2TUVJTjZUVWNmXzFsbDhCWXBILURKZ3FnRWFOU2FFZ0JpOGZOSXhoZlVtVU5Fa3c5b05OQ0hMTENB?oc=5" target="_blank" rel="noopener noreferrer">ASTS Stock Slips Overnight: AST SpaceMobile President Cashes Out $3.3M As BlueBird 9 Nears SpaceX Mission</a></h4>
@@ -149,13 +291,15 @@
   <p class="labels">
 <a class="chip chip-company" href="../entite/spacex.html">SpaceX</a>  </p>
 </article>
-<article class="item"
+<article class="item story"
   data-tags="newspace"
   data-entities="ast-spacemobile"
   data-countries="US"
   data-regions="north_america"
   data-events=""
   data-segments="telecom"
+  data-industries=""
+  data-impact="0"
   data-age="1"
   data-search="bronstein, gewirtz &amp; grossman llc urges ast spacemobile, inc. investors to act: class action filed alleging investor harm wboc tv ast spacemobile etats-unis">
   <h4><a href="https://news.google.com/rss/articles/CBMiqwJBVV95cUxPTDA1bExLR1JrUVdIZGlNV1lsakF5MGdfRlYyZGpyMWdJR2tQZ2VZRVo3b010RTNvOGhZX0ViTG04YjFwMGNfaHhBTHVDVUplUGhTWG9ROFVldG1vX29jaHlXY2J2aW9UUEVXWFhKLXNScVJOdGs5b2E2T0hRTWtVX0FKYy1WQUFzNllRbFhRcXU2eU91djNtcHFHbUpWWnpRaEhySHlUOFFnS1RLamxUcVZqU1NVQ2F6c2FFZkYtQzlpaUtmLWRBYmhKeTZINXI2bVd0eUpzU1k1OURvbUlKVXlfYTM2VHdPTGdJWkFEYWdJdUk5N1plZVRrUzNOb2pzTjVQRGhLTFNuWFYwNEtlZndwMzFLaWlNc2RoVzdKWG1nQnkxdE53cjFQaw?oc=5" target="_blank" rel="noopener noreferrer">Bronstein, Gewirtz &amp; Grossman LLC Urges AST SpaceMobile, Inc. Investors to Act: Class Action Filed Alleging Investor Harm</a></h4>
@@ -166,67 +310,18 @@
   <p class="labels">
   </p>
 </article>
-<article class="item"
-  data-tags="newspace"
-  data-entities="ast-spacemobile"
-  data-countries="US"
-  data-regions="north_america"
-  data-events=""
-  data-segments="telecom"
-  data-age="1"
-  data-search="ast spacemobile, inc. (asts) lawsuit – investors urged to contact levi &amp; korsinsky before november 13, 2026 access newswire ast spacemobile etats-unis">
-  <h4><a href="https://news.google.com/rss/articles/CBMi5AFBVV95cUxPMk1yVVFkVW9NTnk0Tkl6dGsxSUhYU1hqYm1RbHVxUzVtTDRMSFp3emRkUDVvODhNR0Y3TE82azdLOXEyamx4SElGX3IxNGtYUzF4VWVZTTVUSFBGVGdJTnUyczZuUmxQT0N1TVZfek15eFc0SzdOLUZSWjZuWTNhOHBjRXE4OXV3bVUwbGY5Z2xoSnF0TWFpNHFWNFY5ek8zMks3aUlXM3EtVWFmaDh1ZDI2ZHB6QVdaU3VWVjBDcWVFaGdXMnJSUk1OMnEyaHdZdnhnakU5TmpiSC1wX0hGQkVXOHM?oc=5" target="_blank" rel="noopener noreferrer">AST SpaceMobile, Inc. (ASTS) Lawsuit – Investors Urged to Contact Levi &amp; Korsinsky Before November 13, 2026</a></h4>
-  <p class="meta">
-    <span class="src">ACCESS Newswire</span><span class="via" title="Trouvé via Google News"> · GN</span>    <span aria-hidden="true">·</span>
-    <time datetime="2026-10-25T14:50:00+01:00" title="25 oct. 2026">14:50</time>
-<span aria-hidden="true">·</span> <span class="geo">États-Unis</span>  </p>
-  <p class="labels">
-  </p>
-</article>
-<article class="item"
-  data-tags="newspace"
-  data-entities="ast-spacemobile"
-  data-countries="US"
-  data-regions="north_america"
-  data-events=""
-  data-segments="telecom"
-  data-age="1"
-  data-search="ast spacemobile, inc. class action reminder - robbins llp globenewswire ast spacemobile etats-unis">
-  <h4><a href="https://news.google.com/rss/articles/CBMirwJBVV95cUxONjVtNVpGc3FHZTNpRDFsT0ZnclVUS0c5Mklqd2RobWJ6VHdqaTRhdmRtNU5IVDZHRmJhR1p5WXAtOTJjeC1Fc2xHaG5OWktaYTBuRXhiM0pfYk85Ym1YV2VUUGxJR2JMQWgyUElYYzd6MUhzdVVMSlRXSlk5M1JzakZkNmluNWpEU2VQM0V1RHE0Z05yS2h2QXFGSUtkdzFmeFlVaTVacE8xWXZZOGpHYTVvUUFla2g5YWJTdDNHc1lhQkFtZmhPYk03eGJKelV4Y0FKVC1VcjZ2NTZjb1lSTDdlLURWMFZlUTRVb2pfSmRwQURLZTFmYTltcXNiQm5jUjlHTF9MQnlkTXQ4UlFDazNmdVY3b2JXa2Z6VWZfbGxhMklZc0tvOE5BckUyYk0?oc=5" target="_blank" rel="noopener noreferrer">AST SpaceMobile, Inc. Class Action Reminder - Robbins LLP</a></h4>
-  <p class="meta">
-    <span class="src">GlobeNewswire</span><span class="via" title="Trouvé via Google News"> · GN</span>    <span aria-hidden="true">·</span>
-    <time datetime="2026-10-25T00:49:20+02:00" title="25 oct. 2026">00:49</time>
-<span aria-hidden="true">·</span> <span class="geo">États-Unis</span>  </p>
-  <p class="labels">
-  </p>
-</article>
   </section>
   <section class="day" data-age="2">
     <h3 class="day-label">Samedi 24 oct.</h3>
-<article class="item"
+<article class="item story"
   data-tags="newspace"
   data-entities="ast-spacemobile"
   data-countries="US"
   data-regions="north_america"
   data-events=""
   data-segments="telecom"
-  data-age="2"
-  data-search="why is ast spacemobile stock rallying today? stocktwits ast spacemobile etats-unis">
-  <h4><a href="https://news.google.com/rss/articles/CBMiqwFBVV95cUxOM3dDT3Rqc1FMSzdBbTJyLXltZkV6MzVKVEg2R2pYZWZsamJFempULVZ1aXRoUl9tNDB5WnFmdnNLQU1aTnNudmNKb2pFMzFSd1hPTFlxQlVLV2w4NTJSSDAwWmZtYUQ5UXdZcy0zNWtmRk5zMTFWakNLV2gzTWRTWUtnbHp5QzBRZklGTGllZ2dKRnNVYzRJbXY3SFBnNVZSV09iNDdOOE1CaDg?oc=5" target="_blank" rel="noopener noreferrer">Why Is AST SpaceMobile Stock Rallying Today?</a></h4>
-  <p class="meta">
-    <span class="src">Stocktwits</span><span class="via" title="Trouvé via Google News"> · GN</span>    <span aria-hidden="true">·</span>
-    <time datetime="2026-10-24T23:42:53+02:00" title="24 oct. 2026">23:42</time>
-<span aria-hidden="true">·</span> <span class="geo">États-Unis</span>  </p>
-  <p class="labels">
-  </p>
-</article>
-<article class="item"
-  data-tags="newspace"
-  data-entities="ast-spacemobile"
-  data-countries="US"
-  data-regions="north_america"
-  data-events=""
-  data-segments="telecom"
+  data-industries=""
+  data-impact="0"
   data-age="2"
   data-search="ast spacemobile taps vodafone, deutsche telekom, orange for europe expansion – asts stock heads for best week in over a month stocktwits ast spacemobile etats-unis">
   <h4><a href="https://news.google.com/rss/articles/CBMilAJBVV95cUxOWkVYN1ZBc0I5V09McFlyZzVYbWppS2hiRlY3QTViZ2UzWmJoY2luVWwtcUVQanpBU1ZWUWl6dm5obVNVVE1rNUVScnQtSnZ2ZGRVN2l1X2VpbExhdHhEcV9ONE9ES1dKSHJoNnBFWl8zaFZmVjhIUlJvdUlsVkpzSTdrc09rUnlUemxpc1FTOEpDaGtGckI1eU9TZzgzN1JheENwbHR2UDBYUWZ4cWV3WmF6b0NGMTluX0QwNmRPN1NnM2F3NnE4NW9yMnJMbTZhN2Z1OE80dWh1M2V3enFMRFJkNE5uVmpJVHpqU2I5NW4ya1YxdXJkNXl3Qzh0MEY1QlJCTmJRS2xmaFhDVVQ5aFN2LXc?oc=5" target="_blank" rel="noopener noreferrer">AST SpaceMobile Taps Vodafone, Deutsche Telekom, Orange For Europe Expansion – ASTS Stock Heads For Best Week In Over A Month</a></h4>
@@ -237,30 +332,15 @@
   <p class="labels">
   </p>
 </article>
-<article class="item"
+<article class="item story"
   data-tags="newspace"
   data-entities="ast-spacemobile"
   data-countries="US"
   data-regions="north_america"
   data-events=""
   data-segments="telecom"
-  data-age="2"
-  data-search="ast spacemobile&#39;s partner momentum meets a sobering price reset ad-hoc-news.de ast spacemobile etats-unis">
-  <h4><a href="https://news.google.com/rss/articles/CBMi0AFBVV95cUxPVGg5REF4cXN6ZFVmRTgweWQtV1ItVWx2OGg4bEx0OTdqZHo4QW1SZjBFc2hzTmdCY3pyZmF3ZXFtVHg0bHI2R2k5NF9DREcyM3BUVUV3U1k4S1Vrd1hoNC1SRnpRQWVrOFpmc0U1Nml2Vi1FTXRHNEtUWXVoUTlKZ0R3ZHFUZ0lJOVJ1ektCdERBZmhVQllSUFpsR3phZFVtVGRNRUlxM3Uydi1sMjMzZ1dzUllLTHZMMWk5cFUyeHlfUEM4UThVeHA2YlJmOGl2?oc=5" target="_blank" rel="noopener noreferrer">AST SpaceMobile&#39;s Partner Momentum Meets a Sobering Price Reset</a></h4>
-  <p class="meta">
-    <span class="src">ad-hoc-news.de</span><span class="via" title="Trouvé via Google News"> · GN</span>    <span aria-hidden="true">·</span>
-    <time datetime="2026-10-24T18:50:42+02:00" title="24 oct. 2026">18:50</time>
-<span aria-hidden="true">·</span> <span class="geo">États-Unis</span>  </p>
-  <p class="labels">
-  </p>
-</article>
-<article class="item"
-  data-tags="newspace"
-  data-entities="ast-spacemobile"
-  data-countries="US"
-  data-regions="north_america"
-  data-events=""
-  data-segments="telecom"
+  data-industries=""
+  data-impact="0"
   data-age="2"
   data-search="telecom news: ast spacemobile, orange liberia, pilot fiber telecomlead ast spacemobile etats-unis">
   <h4><a href="https://news.google.com/rss/articles/CBMilgFBVV95cUxNYm1sYk5pNHNVQ3FsVU5SaHpDNklHS1k2dDYzMGxTT1FCanhKT1ZUanEtOFFDUXZ4SUozZTFZdjl2UF8yeVo0ZklBTndTeWtONkloandhdnFSVTIxVEo2V01zQ1ZoWU9JRmIxMEJ1Q1N2Wk1mcDVMbDZPWVJGT1NnTTVtWENmRGYyRm1JMHVqUk9JRXRlVEHSAZ4BQVVfeXFMUFlJVmdXYnFKUVVuUk8tQTFjbzg1S254Y3NJVEliNmZndjd2OEpXNl9oN3c5MXdnN2pEaU1vd3NtV3R1c0ZZa0RCX2JDNENlTTEwVEI4M2djbEI2STBqMHQ2V25JNVJ4eFlYa3RoYlhVd29yZjdzSUMtY0VmNEo4ZF9Hdmp2akFxUXhEQnNveGpQMFpXZVlJNTF5bW5hanc?oc=5" target="_blank" rel="noopener noreferrer">Telecom news: AST SpaceMobile, Orange Liberia, Pilot Fiber</a></h4>
@@ -271,30 +351,15 @@
   <p class="labels">
   </p>
 </article>
-<article class="item"
+<article class="item story"
   data-tags="newspace"
   data-entities="ast-spacemobile"
   data-countries="US"
   data-regions="north_america"
   data-events=""
   data-segments="telecom"
-  data-age="2"
-  data-search="asts deadline in 20 days: ast spacemobile, inc class action lawsuit: investors face november 13, 2026, deadline - kessler topaz meltzer &amp; check, llp pr newswire ast spacemobile etats-unis">
-  <h4><a href="https://news.google.com/rss/articles/CBMiowJBVV95cUxOSTJIdkUtcTFackZnekN3d3dSMFhyYlV3YnhqR1U2VzJXel9DMklZLWFGLUh1Yi1kVU4xbko2eEItVGIyYTY5eHk2SzFXd0JTSHRMYU56bkp4Tm8ySzVDMHNuZWFRRWVVWTVlc3JQdU41MU5OQ0pPT2JZVjBUYXBMRzNOazRKQmVVTUdSNVUzRE9yY0dRRzU2alJtcTRFaDI1RTR4X0N0akVBd1c5X0J3UGt2UWlnV3pFR0tYcnhVWWlVQ25nUVRPR2VqNjEtbE5Fc0tWUEFYOFlGWTRmQXZfSUc2Y052RnR3b2JmaUdxVVBBbGZRUU93aVE1dUZYX241ZnFEVklSZUd0RnpXWExjNXMzRkF4bkhyWGdwaTQ0MVJKdVk?oc=5" target="_blank" rel="noopener noreferrer">ASTS Deadline in 20 Days: AST SpaceMobile, Inc Class Action Lawsuit: Investors Face November 13, 2026, Deadline - Kessler Topaz Meltzer &amp; Check, LLP</a></h4>
-  <p class="meta">
-    <span class="src">PR Newswire</span><span class="via" title="Trouvé via Google News"> · GN</span>    <span aria-hidden="true">·</span>
-    <time datetime="2026-10-24T17:20:00+02:00" title="24 oct. 2026">17:20</time>
-<span aria-hidden="true">·</span> <span class="geo">États-Unis</span>  </p>
-  <p class="labels">
-  </p>
-</article>
-<article class="item"
-  data-tags="newspace"
-  data-entities="ast-spacemobile"
-  data-countries="US"
-  data-regions="north_america"
-  data-events=""
-  data-segments="telecom"
+  data-industries=""
+  data-impact="0"
   data-age="2"
   data-search="ast spacemobile wins wall street&#39;s confidence, but the scoreboard still reads &#39;pending&#39; ad-hoc-news.de ast spacemobile etats-unis">
   <h4><a href="https://news.google.com/rss/articles/CBMi7AFBVV95cUxNRC1PbHdXMkpLQ0hCR3FtbFlqdy15NUQ1TlZiY1FTMi10bk5kWEpnaXdSM1pGX2tzWkRmOTJoYUVuRTl1N0xXZ0lrNm9NMjdoem1jbDFyQWpSUkp1SnpYR0NVMVQ3NkZUYy1sNjlMS3FkdFhYLXZ6MUpjT3UzNFU3UkpFYkJ1c0FoS3pqVEFsbUFVV2ZwbFpKNmdDaXVuM2duNDRpTzdzSlV3bk90bGJjeGpKcEZxUVVFLTJLUXNyOVlTdTFTTlNEVFVuYmNVTU10dS1wY3k5MDRQUHh1UmNpTV9yUm9JRFZqVlJTbg?oc=5" target="_blank" rel="noopener noreferrer">AST SpaceMobile Wins Wall Street&#39;s Confidence, but the Scoreboard Still Reads &#39;Pending&#39;</a></h4>
@@ -305,13 +370,15 @@
   <p class="labels">
   </p>
 </article>
-<article class="item"
+<article class="item story"
   data-tags="newspace"
   data-entities="ast-spacemobile"
   data-countries="BR US"
   data-regions="latin_america north_america"
   data-events=""
   data-segments="telecom"
+  data-industries=""
+  data-impact="0"
   data-age="2"
   data-search="ast spacemobile&#39;s brazilian handshake and scotiabank&#39;s nod both stop short of a working service ad-hoc-news.de ast spacemobile bresil etats-unis">
   <h4><a href="https://news.google.com/rss/articles/CBMi-wFBVV95cUxQZ2pVTWR5TThHd2Z2RHRWaktYaU9BQ0VpcVl0WHpNVktKNWplNDVfU1ZxbWNoXzNlSUh5SzFxWUgzUGJWUVNkbGZaZC1LRVVIeTBRSEYxWEZfOGtvTm1Tc1duaENkWmpBVVA4SWFMUUw4eHR1VmJXWWxXamtJM3hmcUxRalVwYWEzSDFxZ2ExRlNPeGZaY3VxeUJsZDZMb3ZnMVlHN0xwQXlCMXY0ZENmcTh5UUJtNEZxLWg2ak1RSFdPeDVOUmVyMUtnbkR4X0ZaWmM5bHc0MUFlS2F4bFEteThSa0pxTnJmdWE4SXZhWVUwbjNhYURSLWNoZw?oc=5" target="_blank" rel="noopener noreferrer">AST SpaceMobile&#39;s Brazilian Handshake and Scotiabank&#39;s Nod Both Stop Short of a Working Service</a></h4>
@@ -322,13 +389,15 @@
   <p class="labels">
   </p>
 </article>
-<article class="item"
+<article class="item story"
   data-tags="newspace"
   data-entities="ast-spacemobile"
   data-countries="US"
   data-regions="north_america"
   data-events=""
   data-segments="telecom"
+  data-industries=""
+  data-impact="0"
   data-age="2"
   data-search="ast spacemobile (asts) stock forum and discussion moomoo ast spacemobile etats-unis">
   <h4><a href="https://news.google.com/rss/articles/CBMiWkFVX3lxTFBwcWJSTVNVM0E0OEw1R0t2NWdUdnBvTUxzbklqWDNBclhCNFdtNnppSTlUWmR4dWlyTERfWWJNaGxfcF9KZ3RpdGdpbFl3V2NzbUJkbU5rWk9IQQ?oc=5" target="_blank" rel="noopener noreferrer">AST SpaceMobile (ASTS) Stock Forum and Discussion</a></h4>
@@ -339,13 +408,15 @@
   <p class="labels">
   </p>
 </article>
-<article class="item"
+<article class="item story"
   data-tags="newspace"
   data-entities="ast-spacemobile"
   data-countries="US"
   data-regions="north_america"
   data-events="regulation"
   data-segments="telecom"
+  data-industries=""
+  data-impact="0"
   data-age="2"
   data-search="ast spacemobile&#39;s spectrum fight and analyst cheer belong to two different scorecards ad-hoc-news.de ast spacemobile etats-unis">
   <h4><a href="https://news.google.com/rss/articles/CBMi7gFBVV95cUxPdGxsbEgtMEItZ0Eyelktd1ZGTmpXZnJ4VWJ1dWg0c3FHdEhMQkdwR0oyMW1jN0REQlZvemVydkpXLVJLN0hrY0lTRnd6UXRPQWJvTWFIUUlQQXhNbVM5YlQ3bVdhNVBtZktmMlVRcGlWc25LekVMVVZ0M2lERkdvbTRVX0RrMktBaGhIWmV2YWo0Y050aWFQdVFGeFF2dExCYlR5dE1ubE00QzJoYk95MUk5dS1SSm5uN2x6REtQRXlZTENMLVZ1NnZCUGljd2VPUjFJeVYxcUptY2x4TzVjTl9qSHNoRlI2Q3lYUG5B?oc=5" target="_blank" rel="noopener noreferrer">AST SpaceMobile&#39;s Spectrum Fight and Analyst Cheer Belong to Two Different Scorecards</a></h4>
@@ -356,13 +427,15 @@
   <p class="labels">
 <span class="ev ev-regulation">Réglementation</span>  </p>
 </article>
-<article class="item"
+<article class="item story"
   data-tags="newspace"
   data-entities="ast-spacemobile fcc"
   data-countries="US"
   data-regions="north_america"
   data-events=""
   data-segments="telecom"
+  data-industries=""
+  data-impact="0"
   data-age="2"
   data-search="rklb stock suffers worst week ever: ast spacemobile partner challenges iridium deal — claims rival uses fcc to block competitors stocktwits ast spacemobile fcc etats-unis">
   <h4><a href="https://news.google.com/rss/articles/CBMi1gFBVV95cUxPdHRfUUNBVU84ZE4xcGx3WXRDX3o0cWVrY1FxdnppT0QzWjZqbmFLR2UxLUp4VGVhd0F5YXpsanVMbnRPai1nSWhFa1Azb2gwc21XR21YdVN1VUlrT2dEcHFwSm1wai1BRklFbHM2eWtYOGlMeVpfOEdtR0lmNEhENGNUS2NBS0FnVFBEaFUzN1NxUHAzSFVUWGlOaVFCNFRxT2t6X1R2OVhfWkNQYVpZbUdsZVRESDI5QVM2LTZjWVVFVG9GRWhZZkdKejJYQnJVNnZ2dzNn?oc=5" target="_blank" rel="noopener noreferrer">RKLB Stock Suffers Worst Week Ever: AST SpaceMobile Partner Challenges Iridium Deal — Claims Rival Uses FCC To Block Competitors</a></h4>
@@ -373,13 +446,15 @@
   <p class="labels">
 <a class="chip chip-institution" href="../entite/fcc.html">FCC</a>  </p>
 </article>
-<article class="item"
+<article class="item story"
   data-tags="newspace"
   data-entities="spacex ast-spacemobile"
   data-countries="US"
   data-regions="north_america"
   data-events=""
   data-segments="launcher telecom"
+  data-industries=""
+  data-impact="0"
   data-age="2"
   data-search="spacex&#39;s 80,000 cell site push a win for ast spacemobile, ericsson, nokia, nextnav, among others, says roth capital stocktwits spacex ast spacemobile etats-unis">
   <h4><a href="https://news.google.com/rss/articles/CBMi-AFBVV95cUxQRjFxSU9WMnV3eFBGVG5vSk80NlZyVFJ4ZDFIQWRHSjZGRVA0dnVQTHhCTlZBandHOEpNZVV5LVM3ZGE5bVNVWGRqamdTRDlPTjBmYzZmb3ViUVNUSEZtZGFpX2haWHg2MG1QcDRzT1lYU3B3ajQyQW1PbU5Id2lGTFFTVTV3d2NiZE02NHRlU3pIcGtKTmtENDhzS2lQeXJ5dDUySjUwLUhMUElITnVRR3MwWTlkVUFGMVotMF9rWG84RnVJSnJwSnNNZDgwRGs5dDJPX0M4MjRremxJQThHOTdxTkI0TnRzRnZQc1hGLWZQRmJFa2xlUw?oc=5" target="_blank" rel="noopener noreferrer">SpaceX’s 80,000 Cell Site Push A Win For AST SpaceMobile, Ericsson, Nokia, NextNav, Among Others, Says Roth Capital</a></h4>
@@ -393,13 +468,43 @@
   </section>
   <section class="day" data-age="3">
     <h3 class="day-label">Vendredi 23 oct.</h3>
-<article class="item"
+<article class="item story impact-faible"
+  data-tags="newspace"
+  data-entities="ast-spacemobile"
+  data-countries="US"
+  data-regions="north_america"
+  data-events=""
+  data-segments="telecom"
+  data-industries="connectivite"
+  data-impact="1"
+  data-age="3"
+  data-search="ast spacemobile avance au sol tandis que wall street se divise sur son calendrier de lancement ast spacemobile progresse dans ses infrastructures terrestres, alors que les analystes financiers restent divises sur le calendrier de ses prochains lancements satellites. le rythme de deploiement d&#39;ast spacemobile influence la dynamique concurrentielle du satellite-vers-mobile. ast spacemobile&#39;s ground game advances while wall street squares off over the launch clock ast spacemobile&#39;s ambition meets a wall street split over the launch clock ad hoc news ad-hoc-news.de ast spacemobile etats-unis nouveaux satellites et produits connectivite securisee">
+  <h4><a href="https://news.google.com/rss/articles/CBMi9AFBVV95cUxPQnBGbnNHSTUzZjlaN3lpRjhsQ2VjemNzZXBfSGZ1dWlGT0xCcFY0eE9BaVVsbWFwcWtyY2tfVVh2aVk1N2M2Z1UtTkdHbDdjaDlrMVN6Mk5HQmhnb1NtRUNMOC1hTV9KRHA5RUFxU2paN1NaWGdMNFlrTjV2Z283NTNIQXNocW0wcWFSMlEyN2tVVmwyV0NiUnhuZmZTQWVETE1TZ3VHYTRqZldqRUllN0dwVERXMHRlZkh3dFFnSHlRVl9FV3JxcGdDUzFPcXFsenRSN01CSGpVN2hjdzF0cElFMFlPUzhOZm1wNklmWWVUcWI0?oc=5" target="_blank" rel="noopener noreferrer">AST SpaceMobile avance au sol tandis que Wall Street se divise sur son calendrier de lancement</a></h4>
+  <p class="meta">
+<span class="impact-badge impact-badge-faible">Impact faible</span>    <span class="src">AD HOC NEWS</span><span class="via" title="Trouvé via Google News"> · GN</span><span class="n-sources">+ 1 source</span>    <span aria-hidden="true">·</span>
+    <time datetime="2026-10-23T18:41:47+02:00" title="23 oct. 2026">18:41</time>
+<span aria-hidden="true">·</span> <span class="geo">États-Unis</span>  </p>
+<p class="excerpt">AST SpaceMobile progresse dans ses infrastructures terrestres, alors que les analystes financiers restent divisés sur le calendrier de ses prochains lancements satellites.</p><p class="why"><span>Pourquoi c'est important</span> Le rythme de déploiement d&#39;AST SpaceMobile influence la dynamique concurrentielle du satellite-vers-mobile.</p>  <p class="labels">
+<span class="theme">Nouveaux satellites et produits</span><span class="industry">Connectivité sécurisée</span>  </p>
+  <details class="sources">
+    <summary>2 articles de 2 sources</summary>
+    <ul>
+      <li><a href="https://news.google.com/rss/articles/CBMi3wFBVV95cUxNbkh4TC00bmJtaktBVkJqMmVTZ2s3T0lUOUxabFVNT3FhbXBpTzlyRGdhUFNSLUFVYnpKbGEtNDFYa1NHYll0QUZoNnBZbVpZaGNFMkxlb2NsajllNExTeTNtNExUMHFqcm81TkRPdno3U3E1MTRQbWhOOW9GTDAyMkd5UFpPZHo2UGhUUFhyeHNSbjdmWkRnajl2TGNoanJ5eVp1Q3dUZHdZUFZNbU14aENVWkp2dkhRcVU3enZ4YjJfTXBYNHk1cG85X2VvUmk4Q1p2UkFDbXpMdDFTMnFv?oc=5" target="_blank" rel="noopener noreferrer">AST SpaceMobile&#39;s Ambition Meets a Wall Street Split Over the Launch Clock</a>
+        <span class="list-meta">ad-hoc-news.de · GN · 23 oct. · 18:41</span></li>
+      <li><a href="https://news.google.com/rss/articles/CBMi9AFBVV95cUxPQnBGbnNHSTUzZjlaN3lpRjhsQ2VjemNzZXBfSGZ1dWlGT0xCcFY0eE9BaVVsbWFwcWtyY2tfVVh2aVk1N2M2Z1UtTkdHbDdjaDlrMVN6Mk5HQmhnb1NtRUNMOC1hTV9KRHA5RUFxU2paN1NaWGdMNFlrTjV2Z283NTNIQXNocW0wcWFSMlEyN2tVVmwyV0NiUnhuZmZTQWVETE1TZ3VHYTRqZldqRUllN0dwVERXMHRlZkh3dFFnSHlRVl9FV3JxcGdDUzFPcXFsenRSN01CSGpVN2hjdzF0cElFMFlPUzhOZm1wNklmWWVUcWI0?oc=5" target="_blank" rel="noopener noreferrer">AST SpaceMobile&#39;s Ground Game Advances While Wall Street Squares Off Over the Launch Clock</a>
+        <span class="list-meta">AD HOC NEWS · GN · 23 oct. · 06:11</span></li>
+    </ul>
+  </details>
+</article>
+<article class="item story"
   data-tags="geospatial newspace"
   data-entities="rocket-lab spacex ast-spacemobile planet"
   data-countries="US"
   data-regions="north_america"
   data-events=""
   data-segments="eo_optique geoint launcher manufacturing telecom"
+  data-industries=""
+  data-impact="0"
   data-age="3"
   data-search="rocket lab (nasdaq: rklb) and viasat (nasdaq: vsat) outpace spacex etf (nysearca: spcx) as ast spacemobile (nasdaq: asts) and planet labs (nyse: pl) extend declines foreign policy journal rocket lab spacex ast spacemobile planet labs etats-unis">
   <h4><a href="https://news.google.com/rss/articles/CBMipAJBVV95cUxQSXdxOFVBeEFqS1JkREJXOUZhc240QVEzeVdGQ3BxUzdsTnoxU2F3ZGMwN1NCdmRUYlEzZHRoV2ZOR0h5djZ4bnpXaFhiQ3RRVmVXejBLVFdGM3lPQ1Rfa2NhaF9sRHVpdTVJQklwOFVoUWRnNEd3RHUxb0RnMUhWdl92ZHlSbkhmNWU3Sy1ucy1acFNTU1Q2bmx6TlFLVFFPY0l6bDhqWmZvRk0wTVRjUFVsSmRIQi1rdExzdXNtd0Y4MnExUjZuZDhGVnRVb2Rnd3ZZUEsyVzA5RmJCZWNZSnZkOTl1NkpTRjMyU0tEZTFsTUZvdk5QVWlBek96bUlSek1uQWNld1oySWhfQTFDZnRGakxpdVFpNWNFbTRrRl8zUHpK?oc=5" target="_blank" rel="noopener noreferrer">Rocket Lab (NASDAQ: RKLB) And Viasat (NASDAQ: VSAT) Outpace SpaceX ETF (NYSEARCA: SPCX) As AST SpaceMobile (NASDAQ: ASTS) And Planet Labs (NYSE: PL) Extend Declines</a></h4>
@@ -410,47 +515,15 @@
   <p class="labels">
 <a class="chip chip-company" href="../entite/rocket-lab.html">Rocket Lab</a><a class="chip chip-company" href="../entite/spacex.html">SpaceX</a><a class="chip chip-company" href="../entite/planet.html">Planet Labs</a>  </p>
 </article>
-<article class="item"
-  data-tags="newspace"
-  data-entities="ast-spacemobile"
-  data-countries="US"
-  data-regions="north_america"
-  data-events=""
-  data-segments="telecom"
-  data-age="3"
-  data-search="ast spacemobile (nasdaq:asts) shares up 2.6% - still a buy? marketbeat ast spacemobile etats-unis">
-  <h4><a href="https://news.google.com/rss/articles/CBMisgFBVV95cUxOY2JYV0kwY2RfZnQyWVZLV3pZampHZGNtdzRFd0Njd2gyenY3OW5nZTRxYWhINTJwLWs0YWF6dVdBTGJONW1QNzV1ZFdRQnhMc1Y3LXY1c095Z3dNYlhLSE9BQzFheUFPNGJxN1hYejdaa1FpRFNTVWtVWGVkNnBLNUZSaFRzeFlXb212c2xJVGYwM1pDWDBjZkl2VWhoNXRtVFBJdlJrWG1hb2dxTGlvSjVB?oc=5" target="_blank" rel="noopener noreferrer">AST SpaceMobile (NASDAQ:ASTS) Shares Up 2.6% - Still a Buy?</a></h4>
-  <p class="meta">
-    <span class="src">MarketBeat</span><span class="via" title="Trouvé via Google News"> · GN</span>    <span aria-hidden="true">·</span>
-    <time datetime="2026-10-23T23:33:44+02:00" title="23 oct. 2026">23:33</time>
-<span aria-hidden="true">·</span> <span class="geo">États-Unis</span>  </p>
-  <p class="labels">
-  </p>
-</article>
-<article class="item"
-  data-tags="newspace"
-  data-entities="ast-spacemobile"
-  data-countries="US"
-  data-regions="north_america"
-  data-events=""
-  data-segments="telecom"
-  data-age="3"
-  data-search="why the market dipped but ast spacemobile, inc. (asts) gained today yahoo finance ast spacemobile etats-unis">
-  <h4><a href="https://news.google.com/rss/articles/CBMinwFBVV95cUxPblBvQnRhSlVGUWN6WTNXVzZqaEFRdnoyMVVwRHhTdERfaXFCTzRvS3EwajNwQW56ck1ScmdVVC0za1hjX3plVllseHRpYTZtdmxfVzhYNEFRTmt4blk4ZEtEZzRTUHlZalhGM3J2TzRyWUpKbkJ4SjdoWm90SUMzdGNFMy01Q1dTZmVaX3FjMFhZTVU5RklxNnZkbHFOVU0?oc=5" target="_blank" rel="noopener noreferrer">Why the Market Dipped But AST SpaceMobile, Inc. (ASTS) Gained Today</a></h4>
-  <p class="meta">
-    <span class="src">Yahoo Finance</span><span class="via" title="Trouvé via Google News"> · GN</span>    <span aria-hidden="true">·</span>
-    <time datetime="2026-10-23T23:00:03+02:00" title="23 oct. 2026">23:00</time>
-<span aria-hidden="true">·</span> <span class="geo">États-Unis</span>  </p>
-  <p class="labels">
-  </p>
-</article>
-<article class="item"
+<article class="item story"
   data-tags="newspace"
   data-entities="ast-spacemobile spacex"
   data-countries="US"
   data-regions="north_america"
   data-events=""
   data-segments="launcher telecom"
+  data-industries=""
+  data-impact="0"
   data-age="3"
   data-search="ast spacemobile&#39;s partner model faces a two-front test as spacex circles terrestrial turf ad-hoc-news.de ast spacemobile spacex etats-unis">
   <h4><a href="https://news.google.com/rss/articles/CBMi8wFBVV95cUxPY0tuRmpnd21zRDNKaTc3TDZzc2UzR1dfb2VCS3lPTkp5bW9jQ1k5aUstWl9HTDRNRURfSnZvVTFpZUk4dGVjNUdvQldPNWRzZHd3UU9PUVppSTJrR01CcDNDaktYNTNHR3ZYNWs2ZFhqbWJFdGhKOUJCSUdtWnc1YWdHSXlsT3BFX0dhZ0FFUzhoSGM2Q0VoN1JTMDQyNjVnY21PQTZuUFN5eEVFMWFuaVlkT2VJSVFveWg0XzJZcm1OQVBqSzNQZVp3SDlNTFJWc0ZMczY5MW92bXUxN1ZVWGFzMmFBT0tISTQwYmRqV25BWUk?oc=5" target="_blank" rel="noopener noreferrer">AST SpaceMobile&#39;s Partner Model Faces a Two-Front Test as SpaceX Circles Terrestrial Turf</a></h4>
@@ -461,30 +534,15 @@
   <p class="labels">
 <a class="chip chip-company" href="../entite/spacex.html">SpaceX</a>  </p>
 </article>
-<article class="item"
+<article class="item story"
   data-tags="newspace"
   data-entities="ast-spacemobile"
   data-countries="US"
   data-regions="north_america"
   data-events=""
   data-segments="telecom"
-  data-age="3"
-  data-search="ast spacemobile&#39;s ambition meets a wall street split over the launch clock ad-hoc-news.de ast spacemobile etats-unis">
-  <h4><a href="https://news.google.com/rss/articles/CBMi3wFBVV95cUxNbkh4TC00bmJtaktBVkJqMmVTZ2s3T0lUOUxabFVNT3FhbXBpTzlyRGdhUFNSLUFVYnpKbGEtNDFYa1NHYll0QUZoNnBZbVpZaGNFMkxlb2NsajllNExTeTNtNExUMHFqcm81TkRPdno3U3E1MTRQbWhOOW9GTDAyMkd5UFpPZHo2UGhUUFhyeHNSbjdmWkRnajl2TGNoanJ5eVp1Q3dUZHdZUFZNbU14aENVWkp2dkhRcVU3enZ4YjJfTXBYNHk1cG85X2VvUmk4Q1p2UkFDbXpMdDFTMnFv?oc=5" target="_blank" rel="noopener noreferrer">AST SpaceMobile&#39;s Ambition Meets a Wall Street Split Over the Launch Clock</a></h4>
-  <p class="meta">
-    <span class="src">ad-hoc-news.de</span><span class="via" title="Trouvé via Google News"> · GN</span>    <span aria-hidden="true">·</span>
-    <time datetime="2026-10-23T18:41:47+02:00" title="23 oct. 2026">18:41</time>
-<span aria-hidden="true">·</span> <span class="geo">États-Unis</span>  </p>
-  <p class="labels">
-  </p>
-</article>
-<article class="item"
-  data-tags="newspace"
-  data-entities="ast-spacemobile"
-  data-countries="US"
-  data-regions="north_america"
-  data-events=""
-  data-segments="telecom"
+  data-industries=""
+  data-impact="0"
   data-age="3"
   data-search="ast spacemobile&#39;s partner-first strategy meets a two-front reality check ad-hoc-news.de ast spacemobile etats-unis">
   <h4><a href="https://news.google.com/rss/articles/CBMi3AFBVV95cUxOUlAyUlZ2SUdRbUxOZzBYMXJGcUFmQjVuanRtUi1nSDE1NWtvYjF1X3RoUFFvZThubEc2aTVRelpUZjZqWlV1WFE3SmRQZWxhS21STDQydHVqZXczdjlMMGZxazhJeWVwSXoydjEzenlsTTBXM2RjSjgtUUJsWHpnWHc0OFpPODFvSmducmRpWVRmUXYzY3lEdVd6RU5KU0owQzNBaVZDbDB1YmNmYzhSaFUxeUdJSG92MWYtTVRJOUsyNzlNc1h6ZHo1Y09HVzh6bkZTZVk1NVpsMXhx?oc=5" target="_blank" rel="noopener noreferrer">AST SpaceMobile&#39;s Partner-First Strategy Meets a Two-Front Reality Check</a></h4>
@@ -495,13 +553,15 @@
   <p class="labels">
   </p>
 </article>
-<article class="item"
+<article class="item story"
   data-tags="newspace"
   data-entities="ast-spacemobile"
   data-countries="US"
   data-regions="north_america"
   data-events=""
   data-segments="telecom"
+  data-industries=""
+  data-impact="0"
   data-age="3"
   data-search="rosen reminds ast spacemobile investors of nov. 13 lead-plaintiff deadline tokenpost ast spacemobile etats-unis">
   <h4><a href="https://news.google.com/rss/articles/CBMiW0FVX3lxTE5iWjVJMElsbFBWREVqNFIwX2NpNTVaLVFIdDJySlFlUnVSdjVSbGRnM0dCNjdEU1BLcmcxRWlNcS1SRVNOWTNtckN2cWlNM0tQTUwtcXUtQWUyOFU?oc=5" target="_blank" rel="noopener noreferrer">Rosen Reminds AST SpaceMobile Investors of Nov. 13 Lead-Plaintiff Deadline</a></h4>
@@ -512,30 +572,15 @@
   <p class="labels">
   </p>
 </article>
-<article class="item"
-  data-tags="newspace"
-  data-entities="ast-spacemobile"
-  data-countries="US"
-  data-regions="north_america"
-  data-events=""
-  data-segments="telecom"
-  data-age="3"
-  data-search="asts deadline: levi &amp; korsinsky reminds ast spacemobile, inc. investors of upcoming securities class action deadline financialcontent ast spacemobile etats-unis">
-  <h4><a href="https://news.google.com/rss/articles/CBMiiAJBVV95cUxPVUZvemtEb3J4bGJtdnlWSkd2bHNtUEdGZFptZFpCam9jMG1vRmRPUlpESVJoaFZiUmZldkdyTUVEOXlOczEyZVVTQVV4SUVuX3haeU0tZ1hwMlVlbGtGVnpxTzlveUlCLWNhLXZLeDNlb2ttRzBjU01hbWt3OTl1ckliY3VPeHpPR050MFltS3RxQmd0WU5EOVNvN2daVW5yaW1OUWJEc2RMM25BTC1mMEhSU0FjZm1aZjZBRlkwb3JvUDUwa2Y1eTBTV0tfYVFDcWpQZ1JzMGVoN01IWUgyRnF3ZTJ3dk9JbTUtZFByVnlYcTdSUjhkRlpwMEJrRmdPRHNuU3M0NnQ?oc=5" target="_blank" rel="noopener noreferrer">ASTS DEADLINE: Levi &amp; Korsinsky Reminds AST SpaceMobile, Inc. Investors of Upcoming Securities Class Action Deadline</a></h4>
-  <p class="meta">
-    <span class="src">FinancialContent</span><span class="via" title="Trouvé via Google News"> · GN</span>    <span aria-hidden="true">·</span>
-    <time datetime="2026-10-23T17:00:00+02:00" title="23 oct. 2026">17:00</time>
-<span aria-hidden="true">·</span> <span class="geo">États-Unis</span>  </p>
-  <p class="labels">
-  </p>
-</article>
-<article class="item"
+<article class="item story"
   data-tags="newspace"
   data-entities="ast-spacemobile spacex"
   data-countries="US"
   data-regions="north_america"
   data-events=""
   data-segments="launcher telecom"
+  data-industries=""
+  data-impact="0"
   data-age="3"
   data-search="ast spacemobile stock under pressure: spacex competition, viasat dispute benzinga ast spacemobile spacex etats-unis">
   <h4><a href="https://news.google.com/rss/articles/CBMiywFBVV95cUxPYkFKYk92TzcybnJuN2NGLUNLYjZMd2ptTnpGWTF2TWs3TVdPR3FjMHA4QzdrbGZZR0ZITTBlMk56T1Nua1B3TnhnbDVhWGpvZ3lDdXlYamFsVldQX3JrVk9aUThZbnZzV3licXVJLVRYd3Fia05HNjk1ME1PczZDeVJBQTl6TVNmUGhwdFJKcUgxcUtBT1gxZ1kwdHRVOV96THJLclg4YURPVVpPVFNVYkstM3I1Q1hYMWtHMzU1NnVwUWpRcVlPRXk2SQ?oc=5" target="_blank" rel="noopener noreferrer">AST SpaceMobile Stock Under Pressure: SpaceX Competition, ViaSat Dispute</a></h4>
@@ -546,47 +591,45 @@
   <p class="labels">
 <a class="chip chip-company" href="../entite/spacex.html">SpaceX</a>  </p>
 </article>
-<article class="item"
-  data-tags="newspace"
-  data-entities="ast-spacemobile"
-  data-countries="US"
-  data-regions="north_america"
-  data-events=""
-  data-segments="telecom"
-  data-age="3"
-  data-search="ast spacemobile advances global network expansion as stock falls 2.1% traders union ast spacemobile etats-unis">
-  <h4><a href="https://news.google.com/rss/articles/CBMilwFBVV95cUxNSnJZQzVFVUNtQmpFekV4NnpRZFhfLUZUVC1BYXdrWUI3cHNkRmZJUEkzamlBbk1HQXhsWDIxTDhuUHBhU0M4RnNzX1ZNSGFvX2lpYWJfYUljSE5qaHJXRU52ZWNyd2dTeEFGbGkwZmgtQURvNG1oWHZsVWRLVm5MMzVUN1I5X1Y0cnJFUi13T1hDeEItWjZz?oc=5" target="_blank" rel="noopener noreferrer">AST SpaceMobile advances global network expansion as stock falls 2.1%</a></h4>
-  <p class="meta">
-    <span class="src">Traders Union</span><span class="via" title="Trouvé via Google News"> · GN</span>    <span aria-hidden="true">·</span>
-    <time datetime="2026-10-23T16:20:31+02:00" title="23 oct. 2026">16:20</time>
-<span aria-hidden="true">·</span> <span class="geo">États-Unis</span>  </p>
-  <p class="labels">
-  </p>
-</article>
-<article class="item"
+<article class="item story"
   data-tags="newspace"
   data-entities="ast-spacemobile fcc"
   data-countries="US"
   data-regions="north_america"
   data-events=""
   data-segments="telecom"
+  data-industries=""
+  data-impact="0"
   data-age="3"
-  data-search="ast spacemobile shares drop more than 4% after viasat fcc challenge and class action lawsuit pressure traders union ast spacemobile fcc etats-unis">
-  <h4><a href="https://news.google.com/rss/articles/CBMilgFBVV95cUxOa25rZUUxaXM5emhoLXlFbFVXN1JZeXV2azJGU2hzQy1CMVRlNUpEeUNwcDZIdkNLVmJHSTBILUpTMDlJeXd4a1R3VVowVlZ3UGFXV2gxRFpDcXRfai1PcldkNHNCbGpsbGU5LXNMYi1rMmFPMGp3YUFHU1M1eU9qN0FtSXRLV0MxcVdkVU1QU0RNcmtFTEE?oc=5" target="_blank" rel="noopener noreferrer">AST SpaceMobile shares drop more than 4% after ViaSat FCC challenge and class action lawsuit pressure</a></h4>
+  data-search="ast spacemobile hit by class action lawsuit: asts remains under pressure ast spacemobile stock falls amid seller pressure and legal risks from class action lawsuits ast spacemobile shares drop more than 4% after viasat fcc challenge and class action lawsuit pressure traders union ast spacemobile fcc etats-unis">
+  <h4><a href="https://news.google.com/rss/articles/CBMijwFBVV95cUxNVU1jcjhacmRaZDdheS1aMkN4LTdDR3JyTTBKazZlVVM1SHFFVm5SeW9BOGpZdmdSSWRZYjVXNHpoc3A0bzdubDJyUHBLcVhFNWZKMTA3UDR0N0tPX0J0WFRBVERFUDFJT0UwWWZVUzBZYUhsX1JLeGI5d250STB5dTN2TDdXTUp6WEY2ejRjOA?oc=5" target="_blank" rel="noopener noreferrer">AST SpaceMobile hit by class action lawsuit: ASTS remains under pressure</a></h4>
   <p class="meta">
     <span class="src">Traders Union</span><span class="via" title="Trouvé via Google News"> · GN</span>    <span aria-hidden="true">·</span>
     <time datetime="2026-10-23T15:55:27+02:00" title="23 oct. 2026">15:55</time>
 <span aria-hidden="true">·</span> <span class="geo">États-Unis</span>  </p>
   <p class="labels">
 <a class="chip chip-institution" href="../entite/fcc.html">FCC</a>  </p>
+  <details class="sources">
+    <summary>3 articles de 1 source</summary>
+    <ul>
+      <li><a href="https://news.google.com/rss/articles/CBMilgFBVV95cUxOa25rZUUxaXM5emhoLXlFbFVXN1JZeXV2azJGU2hzQy1CMVRlNUpEeUNwcDZIdkNLVmJHSTBILUpTMDlJeXd4a1R3VVowVlZ3UGFXV2gxRFpDcXRfai1PcldkNHNCbGpsbGU5LXNMYi1rMmFPMGp3YUFHU1M1eU9qN0FtSXRLV0MxcVdkVU1QU0RNcmtFTEE?oc=5" target="_blank" rel="noopener noreferrer">AST SpaceMobile shares drop more than 4% after ViaSat FCC challenge and class action lawsuit pressure</a>
+        <span class="list-meta">Traders Union · GN · 23 oct. · 15:55</span></li>
+      <li><a href="https://news.google.com/rss/articles/CBMilgFBVV95cUxNekpOdkhBZmRMNFE3ZVFkcDUwZDZlNWFhM19YYzdDc0h0cXdaX25sdXJ6UjJ5MFlBaGM3RkYzTHYydlZwQ0Vic1FKR1d1aDBvQ2lLOFQzQU44Zm56TzBPT0hBVWsteHRscE15ZjlIcUJvczA0UWhVanN1M01NSkMtbTVUd3JuWmhVcXdvenZqajE4T1dSc3c?oc=5" target="_blank" rel="noopener noreferrer">AST SpaceMobile stock falls amid seller pressure and legal risks from class action lawsuits</a>
+        <span class="list-meta">Traders Union · GN · 23 oct. · 10:43</span></li>
+      <li><a href="https://news.google.com/rss/articles/CBMijwFBVV95cUxNVU1jcjhacmRaZDdheS1aMkN4LTdDR3JyTTBKazZlVVM1SHFFVm5SeW9BOGpZdmdSSWRZYjVXNHpoc3A0bzdubDJyUHBLcVhFNWZKMTA3UDR0N0tPX0J0WFRBVERFUDFJT0UwWWZVUzBZYUhsX1JLeGI5d250STB5dTN2TDdXTUp6WEY2ejRjOA?oc=5" target="_blank" rel="noopener noreferrer">AST SpaceMobile hit by class action lawsuit: ASTS remains under pressure</a>
+        <span class="list-meta">Traders Union · GN · 22 oct. · 20:31</span></li>
+    </ul>
+  </details>
 </article>
-<article class="item"
+<article class="item story"
   data-tags="newspace"
   data-entities="ast-spacemobile"
   data-countries="US"
   data-regions="north_america"
   data-events=""
   data-segments="telecom"
+  data-industries=""
+  data-impact="0"
   data-age="3"
   data-search="deutsche telekom (xtra:dte) joins ast spacemobile push, is it still 28% undervalued? simply wall street ast spacemobile etats-unis">
   <h4><a href="https://news.google.com/rss/articles/CBMi2AFBVV95cUxQenlqVHdxQ2c2c0ZNWFd6RUZ0Q0UxMEJKVmpEcG9MSGRIbG0ycVNUM2RWUEhvTmtWWlBIajlxQVJKMGx5OEIteURCeU5HRXZKMkNULW1hRUlfTlRnUHpWYnJNSHAwZWhsU0dyRTdnMkFiNzNmQ3o5UHRCWkJhdTZGeEt1ZzRxR1ZXeEZSd2J1TFBYNjl2d3I0UVhZZ3VITmsxdF9lZWExVE1uZTd1Vy1fM1BRZ1JVLWlNTnIyYy1WNktMNzZnMkNpTHMtSEtWM3Y3emxlT2EzLVrSAdgBQVVfeXFMUHp5alR3cUNnNnNGTVhXekVGdENFMTBCSlZqRHBvTEhkSGxtMnFTVDNkVlBIb05rVlpQSGo5cUFSSjBseThCLXlEQnlOR0V2SjJDVC1tYUVJX05UZ1B6VmJyTUhwMGVobFNHckU3ZzJBYjczZkN6OVB0QlpCYXU2RnhLdWc0cUdWV3hGUndidUxQWDY5dndyNFFYWWd1SE5rMXRfZWVhMVRNbmU3dVctXzNQUWdSVS1pTU5yMmMtVjZLTDc2ZzJDaUxzLUhLVjN2N3psZU9hMy1a?oc=5" target="_blank" rel="noopener noreferrer">Deutsche Telekom (XTRA:DTE) Joins AST SpaceMobile Push, Is It Still 28% Undervalued?</a></h4>
@@ -597,13 +640,15 @@
   <p class="labels">
   </p>
 </article>
-<article class="item"
+<article class="item story"
   data-tags="newspace"
   data-entities="ast-spacemobile"
   data-countries="US"
   data-regions="north_america"
   data-events=""
   data-segments="telecom"
+  data-industries=""
+  data-impact="0"
   data-age="3"
   data-search="ast spacemobile, inc. shs cert deposito arg repr 0.06666666 shs estimates – bcba:asts.ci tradingview ast spacemobile etats-unis">
   <h4><a href="https://news.google.com/rss/articles/CBMiekFVX3lxTE1ZYXUtYUdoZmZXWnFNYnQxb1hfbzRWemdnRWhOLWc2dFdiN3hpbGY2LVNqdk5rZVZFel9HSHBqSldIcV81MGhSTDhDRGFVU0xxS1V6V3NuYXFzMzhuS2hUaU1qSWFELW9DRFNTbnNfUkRuTXJ6RmoxNU53?oc=5" target="_blank" rel="noopener noreferrer">AST SpaceMobile, Inc. Shs Cert Deposito Arg Repr 0.06666666 Shs Estimates – BCBA:ASTS.CI</a></h4>
@@ -614,13 +659,15 @@
   <p class="labels">
   </p>
 </article>
-<article class="item"
+<article class="item story"
   data-tags="newspace"
   data-entities="rocket-lab ast-spacemobile"
   data-countries="US"
   data-regions="north_america"
   data-events=""
   data-segments="launcher manufacturing telecom"
+  data-industries=""
+  data-impact="0"
   data-age="3"
   data-search="rocket lab upgraded to buy on strong assets and iridium deal; ast spacemobile remains a sell amid delays and risks pluang rocket lab ast spacemobile etats-unis">
   <h4><a href="https://news.google.com/rss/articles/CBMinAFBVV95cUxQc2ZrcnRYSFhmYXA2QTk2Sk9LZFZXVkhxQ3hBWDJNVWs0UnhzdGNLX25rV2plLUh5QVVSd0steGx5c0hxUUh3aEU4UUlta0phcVF1UktOeFZHRUcyaTRWM3JKdm9xdDRRcjJBSm5ieWxQNFlac1BfUDJ6OXVVcGprNnU4V2tCdmVLWEU2aHNmcWRDZnNVcE5SdkR2MDk?oc=5" target="_blank" rel="noopener noreferrer">Rocket Lab upgraded to Buy on strong assets and Iridium deal; AST SpaceMobile remains a Sell amid delays and risks</a></h4>
@@ -631,30 +678,15 @@
   <p class="labels">
 <a class="chip chip-company" href="../entite/rocket-lab.html">Rocket Lab</a>  </p>
 </article>
-<article class="item"
+<article class="item story"
   data-tags="newspace"
   data-entities="ast-spacemobile"
   data-countries="US"
   data-regions="north_america"
   data-events=""
   data-segments="telecom"
-  data-age="3"
-  data-search="ast spacemobile stock falls amid seller pressure and legal risks from class action lawsuits traders union ast spacemobile etats-unis">
-  <h4><a href="https://news.google.com/rss/articles/CBMilgFBVV95cUxNekpOdkhBZmRMNFE3ZVFkcDUwZDZlNWFhM19YYzdDc0h0cXdaX25sdXJ6UjJ5MFlBaGM3RkYzTHYydlZwQ0Vic1FKR1d1aDBvQ2lLOFQzQU44Zm56TzBPT0hBVWsteHRscE15ZjlIcUJvczA0UWhVanN1M01NSkMtbTVUd3JuWmhVcXdvenZqajE4T1dSc3c?oc=5" target="_blank" rel="noopener noreferrer">AST SpaceMobile stock falls amid seller pressure and legal risks from class action lawsuits</a></h4>
-  <p class="meta">
-    <span class="src">Traders Union</span><span class="via" title="Trouvé via Google News"> · GN</span>    <span aria-hidden="true">·</span>
-    <time datetime="2026-10-23T10:43:28+02:00" title="23 oct. 2026">10:43</time>
-<span aria-hidden="true">·</span> <span class="geo">États-Unis</span>  </p>
-  <p class="labels">
-  </p>
-</article>
-<article class="item"
-  data-tags="newspace"
-  data-entities="ast-spacemobile"
-  data-countries="US"
-  data-regions="north_america"
-  data-events=""
-  data-segments="telecom"
+  data-industries=""
+  data-impact="0"
   data-age="3"
   data-search="axxcess wealth management llc makes new investment in ast spacemobile, inc. $asts marketbeat ast spacemobile etats-unis">
   <h4><a href="https://news.google.com/rss/articles/CBMi1gFBVV95cUxNYUhKNVBVZW9aemluNEhvUjIxai0zWmpRb1doTjJZTVNSdVVBNnEtaTl1NmU3ekw2Q2lBM2IxVkxYeURsd01jZHJOOTI4WEJUd2NYMFg0eHlaLXlEb09RRmcwUDFtSXZCd2FoRnQyYW1wUDh6cURuU3dTMGo2U0Noc3o1WWNxM3BvMHNvVmo4MFBWUThBQW81TkU4ZEU4cDZ1NGRDcEVjM08tb3pkM05RbS1QZXkwbF9aRUR1Wlp1V0k5NV9CMnZ0YnpoUU9QRUFZYzVVVWpR?oc=5" target="_blank" rel="noopener noreferrer">Axxcess Wealth Management LLC Makes New Investment in AST SpaceMobile, Inc. $ASTS</a></h4>
@@ -665,30 +697,15 @@
   <p class="labels">
   </p>
 </article>
-<article class="item"
+<article class="item story"
   data-tags="newspace"
   data-entities="ast-spacemobile"
   data-countries="US"
   data-regions="north_america"
   data-events=""
   data-segments="telecom"
-  data-age="3"
-  data-search="ast spacemobile&#39;s ground game advances while wall street squares off over the launch clock ad hoc news ast spacemobile etats-unis">
-  <h4><a href="https://news.google.com/rss/articles/CBMi9AFBVV95cUxPQnBGbnNHSTUzZjlaN3lpRjhsQ2VjemNzZXBfSGZ1dWlGT0xCcFY0eE9BaVVsbWFwcWtyY2tfVVh2aVk1N2M2Z1UtTkdHbDdjaDlrMVN6Mk5HQmhnb1NtRUNMOC1hTV9KRHA5RUFxU2paN1NaWGdMNFlrTjV2Z283NTNIQXNocW0wcWFSMlEyN2tVVmwyV0NiUnhuZmZTQWVETE1TZ3VHYTRqZldqRUllN0dwVERXMHRlZkh3dFFnSHlRVl9FV3JxcGdDUzFPcXFsenRSN01CSGpVN2hjdzF0cElFMFlPUzhOZm1wNklmWWVUcWI0?oc=5" target="_blank" rel="noopener noreferrer">AST SpaceMobile&#39;s Ground Game Advances While Wall Street Squares Off Over the Launch Clock</a></h4>
-  <p class="meta">
-    <span class="src">AD HOC NEWS</span><span class="via" title="Trouvé via Google News"> · GN</span>    <span aria-hidden="true">·</span>
-    <time datetime="2026-10-23T06:11:04+02:00" title="23 oct. 2026">06:11</time>
-<span aria-hidden="true">·</span> <span class="geo">États-Unis</span>  </p>
-  <p class="labels">
-  </p>
-</article>
-<article class="item"
-  data-tags="newspace"
-  data-entities="ast-spacemobile"
-  data-countries="US"
-  data-regions="north_america"
-  data-events=""
-  data-segments="telecom"
+  data-industries=""
+  data-impact="0"
   data-age="3"
   data-search="ast spacemobile builds the groundwork for a partial network—while the market argues over the clock ad hoc news ast spacemobile etats-unis">
   <h4><a href="https://news.google.com/rss/articles/CBMi_wFBVV95cUxQNjVtMDVRNllmU0tWcm1ONFc2MS10NVJ0TTlDelc5dTFDZFNua2ZXbmR6dXFjLVI5dDM3Z2duOUEzSEtocFdmTHMtWFljNjZveEJqWlVmWnRoNjI1aUpObWJ0MXdCTUpKYkNtT1NJd0dUZGNrQkQxa3BlTVZxMVdUdEZJMVVxaEtpNnNZVkJJcDlOTUJEMC1vUklRTWF5aE9iOGdTMEQ1WUJtZkN4VFlwUnJ0OVVDRFdVTHRCTnNETXBXMGREWTFmbHRsSTlIMmNJU2VZYWtwTmJKOEdQcG5uSW4xLXgxNHhibUJqT1dYZVZwVnd5MTlfNDE0WVlmNzg?oc=5" target="_blank" rel="noopener noreferrer">AST SpaceMobile Builds the Groundwork for a Partial Network—While the Market Argues Over the Clock</a></h4>
@@ -699,30 +716,15 @@
   <p class="labels">
   </p>
 </article>
-<article class="item"
-  data-tags="newspace"
-  data-entities="ast-spacemobile"
-  data-countries="US"
-  data-regions="north_america"
-  data-events=""
-  data-segments="telecom"
-  data-age="3"
-  data-search="ast spacemobile (asts) stock dropped, so what is driving attention now? yahoo finance ast spacemobile etats-unis">
-  <h4><a href="https://news.google.com/rss/articles/CBMioAFBVV95cUxNWm9ENHl1LXlZcVlleGJXRTZTM3I5amh4amRSYXUtTE9mYkFJdjk0MnpXaWVmWFEydmg0anktektoczNxd0xXcVBrQ2VlRGFfS1NvbkdGYzBFVWk5Zk5pVWhUclhDRWE5bUxCYnpzd2RZWnpNdVRjN2hlRmtyeWZ3YmpQbkE1QV9sZ3lDdUZnZU5WNWxHdENyaGJMcDB4YW1X?oc=5" target="_blank" rel="noopener noreferrer">AST SpaceMobile (ASTS) Stock Dropped, So What Is Driving Attention Now?</a></h4>
-  <p class="meta">
-    <span class="src">Yahoo Finance</span><span class="via" title="Trouvé via Google News"> · GN</span>    <span aria-hidden="true">·</span>
-    <time datetime="2026-10-23T05:17:00+02:00" title="23 oct. 2026">05:17</time>
-<span aria-hidden="true">·</span> <span class="geo">États-Unis</span>  </p>
-  <p class="labels">
-  </p>
-</article>
-<article class="item"
+<article class="item story"
   data-tags="newspace"
   data-entities="ast-spacemobile"
   data-countries="US"
   data-regions="north_america"
   data-events="regulation"
   data-segments="telecom"
+  data-industries=""
+  data-impact="0"
   data-age="3"
   data-search="orange (enxtpa:ora) could be 25% undervalued after ast spacemobile spectrum move simply wall street ast spacemobile etats-unis">
   <h4><a href="https://news.google.com/rss/articles/CBMiywFBVV95cUxQWHVlMF9zR2RNbk43dzJaZ1hwRjBHb3dzMmtmbmJDS25iYy1zX2hqWXJrTW1wUU9INmVVRXBRMEtOVXBaSXlla2RtblNIUHdJY2puckRTXzlWTGxjSVkxaHpJNGJkZHA3ajF6bXlyTlQ3N2tpUExtYldaZ0tUbU5SOVBqNElXekl3YTZhSzJPMHNuVTNjVmJ6bnZVc3dnZl9mdTVnQVpmN3NmbHFCZklSVjliYThiTHFlem1xblBmMjVKNG5fSjdab2tvMNIBywFBVV95cUxQWHVlMF9zR2RNbk43dzJaZ1hwRjBHb3dzMmtmbmJDS25iYy1zX2hqWXJrTW1wUU9INmVVRXBRMEtOVXBaSXlla2RtblNIUHdJY2puckRTXzlWTGxjSVkxaHpJNGJkZHA3ajF6bXlyTlQ3N2tpUExtYldaZ0tUbU5SOVBqNElXekl3YTZhSzJPMHNuVTNjVmJ6bnZVc3dnZl9mdTVnQVpmN3NmbHFCZklSVjliYThiTHFlem1xblBmMjVKNG5fSjdab2tvMA?oc=5" target="_blank" rel="noopener noreferrer">Orange (ENXTPA:ORA) Could Be 25% Undervalued After AST SpaceMobile Spectrum Move</a></h4>
@@ -733,13 +735,15 @@
   <p class="labels">
 <span class="ev ev-regulation">Réglementation</span>  </p>
 </article>
-<article class="item"
+<article class="item story"
   data-tags="newspace"
   data-entities="ast-spacemobile"
   data-countries="US"
   data-regions="north_america"
   data-events=""
   data-segments="telecom"
+  data-industries=""
+  data-impact="0"
   data-age="3"
   data-search="ast spacemobile advances service readiness ahead of initial space-based cellular broadband coverage in key global markets cyprus shipping news ast spacemobile etats-unis">
   <h4><a href="https://news.google.com/rss/articles/CBMi9wFBVV95cUxQQXpUQ3hudU1tTVJhazRSalVmejEzb3d0NlVSbkxRUFFZRlVnM0FyXy14anBscERSM3BzVW1Qd3R0anVObDFuc0RRN1c0YVlJRDAzeUx0akdMSkVuVnZESUsyYm1zOFZKYVdkbzNrRWVhdmdrWG1pZFRqbEZIR2thVWNkdm54eW55Y2lXdGN4dmhyb0JkSE1iTWx2X3k2RUdTTkc0M3lKNEx0RXR2d0lSYjF6NXdoOFFUNldQUFFMbFBxYVNvM1JCQ3YtVlh0SURHdXNUMDQyUmlzR0VwSTF0ekxZamxORkNhOFZJck1zRkhacDQzVmg0?oc=5" target="_blank" rel="noopener noreferrer">AST SpaceMobile advances service readiness ahead of initial space-based cellular broadband coverage in key global markets</a></h4>
@@ -750,67 +754,46 @@
   <p class="labels">
   </p>
 </article>
-<article class="item"
-  data-tags="newspace"
-  data-entities="ast-spacemobile"
-  data-countries="US"
-  data-regions="north_america"
-  data-events=""
-  data-segments="telecom"
-  data-age="3"
-  data-search="ast spacemobile, inc. tokenized stock (coinbase) price today, astsc to usd live price, marketcap and chart coinmarketcap ast spacemobile etats-unis">
-  <h4><a href="https://news.google.com/rss/articles/CBMiigFBVV95cUxOQ2pnVXlEM2UwaTBNNURrNDBCaDRpMWdYLURLQWVGc2h4MjZPSzgyVnhZdVhnRm5HaVZQTHpNUUd6MGcwX2RwUVhDSHJEdGtMdURnWHA1QUtGRDE5NDlZcmdmZ2paVEpWZTR2bi11Um94djhIbkpOX1R0SFBudkY2dmhrZGRQdVQ4MXc?oc=5" target="_blank" rel="noopener noreferrer">AST SpaceMobile, Inc. Tokenized Stock (Coinbase) price today, ASTSc to USD live price, marketcap and chart</a></h4>
-  <p class="meta">
-    <span class="src">CoinMarketCap</span><span class="via" title="Trouvé via Google News"> · GN</span>    <span aria-hidden="true">·</span>
-    <time datetime="2026-10-23T04:44:12+02:00" title="23 oct. 2026">04:44</time>
-<span aria-hidden="true">·</span> <span class="geo">États-Unis</span>  </p>
-  <p class="labels">
-  </p>
-</article>
-<article class="item"
-  data-tags="newspace"
-  data-entities="ast-spacemobile"
-  data-countries="US"
-  data-regions="north_america"
-  data-events=""
-  data-segments="telecom"
-  data-age="3"
-  data-search="ast spacemobile tokenized bstocks price (astsb/usd) today | live price, market cap &amp; chart binance ast spacemobile etats-unis">
-  <h4><a href="https://news.google.com/rss/articles/CBMidEFVX3lxTFBjcld1ajA1cHg2aDJtNDZPSlc4dHZXdm95a2J4ekRYU2FNUmxQX1RXNjlaTVVIUzhYbF91bUFnR2pHZEdOOFpoM0E2c1IycVYxS0hmU2ZrWjRtUm0yRlhDYm83QkE5TWs3SGFGSXZoR21DQ25P?oc=5" target="_blank" rel="noopener noreferrer">AST SpaceMobile Tokenized bStocks Price (ASTSB/USD) Today | Live Price, Market Cap &amp; Chart</a></h4>
-  <p class="meta">
-    <span class="src">Binance</span><span class="via" title="Trouvé via Google News"> · GN</span>    <span aria-hidden="true">·</span>
-    <time datetime="2026-10-23T04:30:38+02:00" title="23 oct. 2026">04:30</time>
-<span aria-hidden="true">·</span> <span class="geo">États-Unis</span>  </p>
-  <p class="labels">
-  </p>
-</article>
-<article class="item"
-  data-tags="newspace"
-  data-entities="ast-spacemobile"
-  data-countries="US"
-  data-regions="north_america"
-  data-events=""
-  data-segments="telecom"
-  data-age="3"
-  data-search="ast spacemobile (nasdaq:asts) stock falls 5.2% - should you sell? marketbeat ast spacemobile etats-unis">
-  <h4><a href="https://news.google.com/rss/articles/CBMiugFBVV95cUxOcTFyWXY2RDNOOGtJLVBCZFNLQ21DRG0zRzF0NkFXTFBmUVk1bTB1NFNfamNCdUFJbmpkcGh5VHpnU1Z6VW83S2pRSVhlaUF2MTJ0REc0U3VQeGFRYzlTYS03N0NfX2pVYXpQT3pLZER1VDVJVkljLTE3MlBhbm1EX295VmhfejFCYmhIdjBGSHM1U1FtblpPeTF1eVZyNHBhb2VvdE8yYVZQakg0aV9KaDVTNldIOEU4Wmc?oc=5" target="_blank" rel="noopener noreferrer">AST SpaceMobile (NASDAQ:ASTS) Stock Falls 5.2% - Should You Sell?</a></h4>
-  <p class="meta">
-    <span class="src">MarketBeat</span><span class="via" title="Trouvé via Google News"> · GN</span>    <span aria-hidden="true">·</span>
-    <time datetime="2026-10-23T01:25:35+02:00" title="23 oct. 2026">01:25</time>
-<span aria-hidden="true">·</span> <span class="geo">États-Unis</span>  </p>
-  <p class="labels">
-  </p>
-</article>
   </section>
   <section class="day" data-age="4">
     <h3 class="day-label">Jeudi 22 oct.</h3>
-<article class="item"
+<article class="item story impact-moyen"
+  data-tags="newspace"
+  data-entities="ast-spacemobile"
+  data-countries="US JP"
+  data-regions="north_america asia_pacific"
+  data-events=""
+  data-segments="telecom"
+  data-industries="connectivite"
+  data-impact="2"
+  data-age="4"
+  data-search="ast spacemobile avance avec rakuten vers un service cellulaire par satellite au japon ast spacemobile collabore avec rakuten mobile pour deployer un service de broadband cellulaire direct par satellite au japon. concurrence croissante sur la connectivite directe par satellite, segment strategique partage avec les operateurs geospatiaux. ast spacemobile advances space-based cellular broadband service readiness ast spacemobile works with rakuten mobile to bring space-based cellular broadband to japan as stock falls 6.1% the fast mode traders union ast spacemobile etats-unis japon nouveaux satellites et produits connectivite securisee">
+  <h4><a href="https://news.google.com/rss/articles/CBMixwFBVV95cUxPWnYwNkR2UVFvSExGcUxiTGd0dmZYcm1lYjg5NWpPamt4Zl9zVV9kYWFzcEVVamJZMW11d29HMWZfdHJXOE9YZzA4M0RycDd1NEhXcnNJUmxhTVpDSTZTQWVXbFZWNllRMmY4VV8wZVBlamlnZE5QYmNDeEJJQjQxMHRSXzVscE1VZ1I1OEVCS0JydGNxMHJaUFRKQ29xOXkyLUd0eEllZVN5b2pUQ3FTLXB4YVB5eUFOS3NDMGNiaHpjakpBeEFv?oc=5" target="_blank" rel="noopener noreferrer">AST SpaceMobile avance avec Rakuten vers un service cellulaire par satellite au Japon</a></h4>
+  <p class="meta">
+<span class="impact-badge impact-badge-moyen">Impact moyen</span>    <span class="src">The Fast Mode</span><span class="via" title="Trouvé via Google News"> · GN</span><span class="n-sources">+ 1 source</span>    <span aria-hidden="true">·</span>
+    <time datetime="2026-10-22T22:00:44+02:00" title="22 oct. 2026">22:00</time>
+<span aria-hidden="true">·</span> <span class="geo">États-Unis, Japon</span>  </p>
+<p class="excerpt">AST SpaceMobile collabore avec Rakuten Mobile pour déployer un service de broadband cellulaire direct par satellite au Japon.</p><p class="why"><span>Pourquoi c'est important</span> Concurrence croissante sur la connectivité directe par satellite, segment stratégique partagé avec les opérateurs géospatiaux.</p>  <p class="labels">
+<span class="theme">Nouveaux satellites et produits</span><span class="industry">Connectivité sécurisée</span>  </p>
+  <details class="sources">
+    <summary>2 articles de 2 sources</summary>
+    <ul>
+      <li><a href="https://news.google.com/rss/articles/CBMilwFBVV95cUxPR3RuaHBKSy1ZYnBYS3o5cWo5d3VoVTY3TXVNRTRJZFRlaW5uUkZJbUs4WFNrQWNYTTQtYzROSmFZU3ItT0J5R2MtejhXMVhrMlJ6SU9SWjEzQXp2T2F4QVNlNXFKeHRFR1V3YThBRzBuai1SSUI2OXFoZ1ZaQldXQ1RCUGtyZnZvUjRVdWsyNGUxLTRSbUFZ?oc=5" target="_blank" rel="noopener noreferrer">AST SpaceMobile works with Rakuten Mobile to bring space-based cellular broadband to Japan as stock falls 6.1%</a>
+        <span class="list-meta">Traders Union · GN · 22 oct. · 22:00</span></li>
+      <li><a href="https://news.google.com/rss/articles/CBMixwFBVV95cUxPWnYwNkR2UVFvSExGcUxiTGd0dmZYcm1lYjg5NWpPamt4Zl9zVV9kYWFzcEVVamJZMW11d29HMWZfdHJXOE9YZzA4M0RycDd1NEhXcnNJUmxhTVpDSTZTQWVXbFZWNllRMmY4VV8wZVBlamlnZE5QYmNDeEJJQjQxMHRSXzVscE1VZ1I1OEVCS0JydGNxMHJaUFRKQ29xOXkyLUd0eEllZVN5b2pUQ3FTLXB4YVB5eUFOS3NDMGNiaHpjakpBeEFv?oc=5" target="_blank" rel="noopener noreferrer">AST SpaceMobile Advances Space-Based Cellular Broadband Service Readiness</a>
+        <span class="list-meta">The Fast Mode · GN · 21 oct. · 01:34</span></li>
+    </ul>
+  </details>
+</article>
+<article class="item story"
   data-tags="newspace"
   data-entities="ast-spacemobile"
   data-countries="US"
   data-regions="north_america"
   data-events=""
   data-segments="telecom"
+  data-industries=""
+  data-impact="0"
   data-age="4"
   data-search="ast spacemobile, inc. (asts) falls more steeply than broader market: what investors need to know yahoo finance ast spacemobile etats-unis">
   <h4><a href="https://news.google.com/rss/articles/CBMimwFBVV95cUxQdkh3QWZZcnVQT2VZWmJNR1ROMzVFcmJuMXM4R0pJLXVOWnNRT3JXbGRLcENqVFo1MG5RaE96c2xDOEJ1djVROGdpU29Zc1JpdzRhc1B0Q000OGJjYVpmWXRTbHg1dkFONmt1NnVHZ0xLUmltOGFwbUxSaTNHRmxJREt3M1lrS29KVjFCbHhfaWwtdV9KWEhuYUVHUQ?oc=5" target="_blank" rel="noopener noreferrer">AST SpaceMobile, Inc. (ASTS) Falls More Steeply Than Broader Market: What Investors Need to Know</a></h4>
@@ -821,30 +804,15 @@
   <p class="labels">
   </p>
 </article>
-<article class="item"
-  data-tags="newspace"
-  data-entities="ast-spacemobile"
-  data-countries="JP US"
-  data-regions="asia_pacific north_america"
-  data-events=""
-  data-segments="telecom"
-  data-age="4"
-  data-search="ast spacemobile works with rakuten mobile to bring space-based cellular broadband to japan as stock falls 6.1% traders union ast spacemobile japon etats-unis">
-  <h4><a href="https://news.google.com/rss/articles/CBMilwFBVV95cUxPR3RuaHBKSy1ZYnBYS3o5cWo5d3VoVTY3TXVNRTRJZFRlaW5uUkZJbUs4WFNrQWNYTTQtYzROSmFZU3ItT0J5R2MtejhXMVhrMlJ6SU9SWjEzQXp2T2F4QVNlNXFKeHRFR1V3YThBRzBuai1SSUI2OXFoZ1ZaQldXQ1RCUGtyZnZvUjRVdWsyNGUxLTRSbUFZ?oc=5" target="_blank" rel="noopener noreferrer">AST SpaceMobile works with Rakuten Mobile to bring space-based cellular broadband to Japan as stock falls 6.1%</a></h4>
-  <p class="meta">
-    <span class="src">Traders Union</span><span class="via" title="Trouvé via Google News"> · GN</span>    <span aria-hidden="true">·</span>
-    <time datetime="2026-10-22T22:00:44+02:00" title="22 oct. 2026">22:00</time>
-<span aria-hidden="true">·</span> <span class="geo">Japon, États-Unis</span>  </p>
-  <p class="labels">
-  </p>
-</article>
-<article class="item"
+<article class="item story"
   data-tags="newspace"
   data-entities="ast-spacemobile"
   data-countries="US"
   data-regions="north_america"
   data-events=""
   data-segments="telecom"
+  data-industries=""
+  data-impact="0"
   data-age="4"
   data-search="what could ast spacemobile (asts) 2026 rollout mean for its global service plan? simply wall street ast spacemobile etats-unis">
   <h4><a href="https://news.google.com/rss/articles/CBMizgFBVV95cUxPOXA1V19lQTNmSHdIcTNEYy0tbHhDaFA1dF9RM2dFNTRDWWc4WU5BX1p5ZEgzNEY4YWotMkZnR1Y4eVVFQmFubGhUMEw3anZIaXBzT2tqa2FrTGRtQWhJLXotaUhYOGJCTWpKdklzbGpPeXFYeXctZkpXUzk4UmRuODVwUHo2ZGVJMER3ZGR2ZVdmSWczSFFKRVI2RUtuUTk4WThJdkN0MFB5dHlYdjNVOGRWRWNwcnpLQlZ3NVJJMFVKVkhuOU9pWnNjYnVmd9IB0wFBVV95cUxQT0YzaG13R2hDZEF5WU9POW82bjhValVIUm5iaGx1TWpNZkFxQWNyREZzNzlGOURmRTdCUWgyUEtEMDBLYmVnU0JUUEx0ODhZQjN2eVpULXAyWVFLdHdvTmotSFdSRmhRUTBDcVpzQzI3UTlOaEthZlFFQ2g3Q2FaVVlldml1c0pxVExCc1U5ZWNieXZLX3BQTkZxRXp3LV81cS0xd0lZWFFtT3ZFakdtbGo5d1p5RDVZbjJRclhGa1lvbURDUlV2eHJVc2ktbjJEbFM0?oc=5" target="_blank" rel="noopener noreferrer">What Could AST SpaceMobile (ASTS) 2026 Rollout Mean For Its Global Service Plan?</a></h4>
@@ -855,13 +823,15 @@
   <p class="labels">
   </p>
 </article>
-<article class="item"
+<article class="item story"
   data-tags="newspace"
   data-entities="rocket-lab ast-spacemobile spacex"
   data-countries="US"
   data-regions="north_america"
   data-events=""
   data-segments="launcher manufacturing telecom"
+  data-industries=""
+  data-impact="0"
   data-age="4"
   data-search="long rocket lab, short ast spacemobile: one owns its path, the other rents it from spacex seeking alpha rocket lab ast spacemobile spacex etats-unis">
   <h4><a href="https://news.google.com/rss/articles/CBMixgFBVV95cUxNQS1VWE42b1JvR3R6X214OEtRclNvY3Y1dXZzal9WN19qb283SWlSa3RTbjdqY2xad1M5eVFHWE5nZFh3MHdJaTh2d2dvd1hiY1FSRzF0eGszdDF2NEtNbmp2aW9OWHdwSl9hMmd5S3A1UFllS1RfamtsSkh4Vld0bFprUmZxSHY4UXZ3VEwydXlsOTV1NjAzVmhVcVhpRkhJaDZOdk5GaFhNRG9KZXVZM2xmazBVTEtLQkwycjJCNHhJUXBqNEE?oc=5" target="_blank" rel="noopener noreferrer">Long Rocket Lab, Short AST SpaceMobile: One Owns Its Path, The Other Rents It From SpaceX</a></h4>
@@ -872,13 +842,15 @@
   <p class="labels">
 <a class="chip chip-company" href="../entite/rocket-lab.html">Rocket Lab</a><a class="chip chip-company" href="../entite/spacex.html">SpaceX</a>  </p>
 </article>
-<article class="item"
+<article class="item story"
   data-tags="newspace"
   data-entities="ast-spacemobile"
   data-countries="US"
   data-regions="north_america"
   data-events=""
   data-segments="telecom"
+  data-industries=""
+  data-impact="0"
   data-age="4"
   data-search="what&#39;s going on with ast spacemobile shares on thursday? tradingview ast spacemobile etats-unis">
   <h4><a href="https://news.google.com/rss/articles/CBMiaEFVX3lxTE03TWNiS3hCU2ZRR19kNlhIcUZ2Y3VIa2EzT2RwSk1TS1EzcGRybXN6Wkc5aGJycDN6dUs2QVRMbmREVWZuZnFVY0Ytd0Z3SFE2ckhBYjh4UXJQWWpYTHpjclpPR3UtTW16?oc=5" target="_blank" rel="noopener noreferrer">What&#39;s Going On with AST SpaceMobile Shares On Thursday?</a></h4>
@@ -889,30 +861,15 @@
   <p class="labels">
   </p>
 </article>
-<article class="item"
-  data-tags="newspace"
-  data-entities="ast-spacemobile"
-  data-countries="US"
-  data-regions="north_america"
-  data-events=""
-  data-segments="telecom"
-  data-age="4"
-  data-search="ast spacemobile hit by class action lawsuit: asts remains under pressure traders union ast spacemobile etats-unis">
-  <h4><a href="https://news.google.com/rss/articles/CBMijwFBVV95cUxNVU1jcjhacmRaZDdheS1aMkN4LTdDR3JyTTBKazZlVVM1SHFFVm5SeW9BOGpZdmdSSWRZYjVXNHpoc3A0bzdubDJyUHBLcVhFNWZKMTA3UDR0N0tPX0J0WFRBVERFUDFJT0UwWWZVUzBZYUhsX1JLeGI5d250STB5dTN2TDdXTUp6WEY2ejRjOA?oc=5" target="_blank" rel="noopener noreferrer">AST SpaceMobile hit by class action lawsuit: ASTS remains under pressure</a></h4>
-  <p class="meta">
-    <span class="src">Traders Union</span><span class="via" title="Trouvé via Google News"> · GN</span>    <span aria-hidden="true">·</span>
-    <time datetime="2026-10-22T20:31:35+02:00" title="22 oct. 2026">20:31</time>
-<span aria-hidden="true">·</span> <span class="geo">États-Unis</span>  </p>
-  <p class="labels">
-  </p>
-</article>
-<article class="item"
+<article class="item story"
   data-tags="newspace"
   data-entities="spacex ast-spacemobile rocket-lab"
   data-countries="US"
   data-regions="north_america"
   data-events=""
   data-segments="launcher manufacturing telecom"
+  data-industries=""
+  data-impact="0"
   data-age="4"
   data-search="spacex and ast spacemobile sink 6%, rocket lab falls 5% as tech selloff hits high-flying space stocks 24/7 wall st. spacex ast spacemobile rocket lab etats-unis">
   <h4><a href="https://news.google.com/rss/articles/CBMi2gFBVV95cUxPQW1ETTF4UWFQcUp4Q1psbTBmYmg2NUVCaUVaaDBkSndESWxMX2twamhVZFBjZS03SUpsMEZkc2MwdHhzZ0RMR190UHhCcklkcTdaYWRkODhjRWJNaTJhbDVVVWhnTzMzR3dYdEpUWW1XbXFsNndQa3ctM3MwdUo5QTY3MzZhd2NWVG1EZ1JWOTVYSzlkLTBYLXlmc2J0eGx5aWM4ZkZ6cE5hU2l2aU4zS2J4cnB1MElvVmJKQ2ZiQ3hQN2kzemRzc2ZxdDJnSHRDTE45Wi1CZ0NsZw?oc=5" target="_blank" rel="noopener noreferrer">SpaceX and AST SpaceMobile Sink 6%, Rocket Lab Falls 5% as Tech Selloff Hits High-Flying Space Stocks</a></h4>
@@ -923,13 +880,15 @@
   <p class="labels">
 <a class="chip chip-company" href="../entite/spacex.html">SpaceX</a><a class="chip chip-company" href="../entite/rocket-lab.html">Rocket Lab</a>  </p>
 </article>
-<article class="item"
+<article class="item story"
   data-tags="newspace"
   data-entities="spacex ast-spacemobile"
   data-countries="US"
   data-regions="north_america"
   data-events=""
   data-segments="launcher telecom"
+  data-industries=""
+  data-impact="0"
   data-age="4"
   data-search="the spacex killer? why boost mobile&#39;s founder is betting big on ast spacemobile phonearena spacex ast spacemobile etats-unis">
   <h4><a href="https://news.google.com/rss/articles/CBMiugFBVV95cUxOSGpQLUo5eEJFcHhDSmhHTG85SjJCT0NoUVB5T2tmWG5PVjk5eVhSam9adnBKX2VYZUZHSl9Wal9ocGt0Y05kTTZuRU9mdGpQemNTYk1sR0JGUWpVa3pzZDh0RTgtUXlqSHQ3dVVQRE9lVDd6MkdZVG5lNi1vLVBxbzY1NXlMMG1aRjJTMWppM3hpcUZjRGg0UFhuWVppVXRWT0tTdTZiQmpWRjMwV3A4aExreUdLcGJiYWc?oc=5" target="_blank" rel="noopener noreferrer">The SpaceX killer? Why Boost Mobile’s founder is betting big on AST SpaceMobile</a></h4>
@@ -943,30 +902,47 @@
   </section>
   <section class="day" data-age="5">
     <h3 class="day-label">Mercredi 21 oct.</h3>
-<article class="item"
+<article class="item story impact-faible"
   data-tags="newspace"
   data-entities="ast-spacemobile"
   data-countries="US"
   data-regions="north_america"
   data-events=""
   data-segments="telecom"
+  data-industries="connectivite"
+  data-impact="1"
   data-age="5"
-  data-search="should you sell your ast spacemobile stock now? yahoo finance ast spacemobile etats-unis">
-  <h4><a href="https://news.google.com/rss/articles/CBMimwFBVV95cUxNY2dEX1NZczJ4TWhEblJuank0MnhMSEx6NGJNMk1KS25OR1paM2FIQnR5aVk4VXNkTWpPQ0phcS14eGFvS1dtZ2xkWElQbXFtOVpLNzlvTWdJMEUtNUVuTVhmQmlEb3BSbUFkcXoxOXlXWEZRX1RKMGRNdWpCNDkyMnItc0pFM3ItR1hVaTlqTk5XY2pGb2tKYzktZw?oc=5" target="_blank" rel="noopener noreferrer">Should You Sell Your AST SpaceMobile Stock Now?</a></h4>
+  data-search="ast spacemobile vise un service initial dans cinq pays d&#39;ici fin 2026 ast spacemobile prevoit de lancer d&#39;ici fin 2026 un premier service haut debit satellite-smartphone dans cinq pays. concurrence accrue dans la connectivite directe vers mobile ; peu d&#39;effet direct sur l&#39;imagerie. ast spacemobile outlines plans for initial service in first markets ast spacemobile plans initial broadband coverage by year-end ast spacemobile targets initial satellite broadband coverage in five countries by end of 2026 ast spacemobile says initial satellite-to-smartphone service will launch by year-end aviation week investing.com yahoo finance telecompetitor ast spacemobile etats-unis programmes et partenariats connectivite securisee">
+  <h4><a href="https://news.google.com/rss/articles/CBMipAFBVV95cUxOTFRMZk5rZmdlVmFCeTV1TTh0c0JjcUNSSHZWWDlZdEVHM09TRHlrVHNvcVNBSkZOdTJPUGw1aF9jQ0k0c0FEdFFCX19QNXZkaF8wOUlRai1kT3pYTk1BV3UtbmhrZURaQmN3QmlCUnd2UGNUd01wRXVSTGVsMFdzVDFITktqYjZ3NnUybEpYQVZIRXRXRm1rUVNmcFRuOG5HU3BfWg?oc=5" target="_blank" rel="noopener noreferrer">AST SpaceMobile vise un service initial dans cinq pays d&#39;ici fin 2026</a></h4>
   <p class="meta">
-    <span class="src">Yahoo Finance</span><span class="via" title="Trouvé via Google News"> · GN</span>    <span aria-hidden="true">·</span>
-    <time datetime="2026-10-21T23:55:31+02:00" title="21 oct. 2026">23:55</time>
+<span class="impact-badge impact-badge-faible">Impact faible</span>    <span class="src">Aviation Week</span><span class="via" title="Trouvé via Google News"> · GN</span><span class="n-sources">+ 3 sources</span>    <span aria-hidden="true">·</span>
+    <time datetime="2026-10-21T17:30:00+02:00" title="21 oct. 2026">17:30</time>
 <span aria-hidden="true">·</span> <span class="geo">États-Unis</span>  </p>
-  <p class="labels">
-  </p>
+<p class="excerpt">AST SpaceMobile prévoit de lancer d&#39;ici fin 2026 un premier service haut débit satellite-smartphone dans cinq pays.</p><p class="why"><span>Pourquoi c'est important</span> Concurrence accrue dans la connectivité directe vers mobile ; peu d&#39;effet direct sur l&#39;imagerie.</p>  <p class="labels">
+<span class="theme">Programmes et partenariats</span><span class="industry">Connectivité sécurisée</span>  </p>
+  <details class="sources">
+    <summary>4 articles de 4 sources</summary>
+    <ul>
+      <li><a href="https://news.google.com/rss/articles/CBMitwFBVV95cUxORmFuX0hEX1BZX3VwYk5falhaRzV3MnphVE5GWG9kYU1rWEUzV0FWUE5hdFdNSkxObnYycnl1V2s3RC1YQ2ZiOFpUNjRnOXdDeXBFYkZWd3RGNWhHYkpJQTRiU0tGTVdnd2RUR3FyR0JEcmdDdUpPYlVwb2ZDR1NfRFJVeWhTR0pOVzV3Unh2SU56YXcxTmgzV1RZWl9VYXItNzczVmZuUlF5M3BGcmZtaVJTX1RqTnM?oc=5" target="_blank" rel="noopener noreferrer">AST SpaceMobile says initial satellite-to-smartphone service will launch by year-end</a>
+        <span class="list-meta">Telecompetitor · GN · 21 oct. · 17:30</span></li>
+      <li><a href="https://news.google.com/rss/articles/CBMipAFBVV95cUxOWDMxS29UQy0wSlJrZzRBYy1YVE1Del83a3N0VzdadUVUa0c3UHFZeUNuSWd6N3FYcFYxVVBGZjZrLU1CSDJuTGZyYkxlRi1OMTdxLXR0M08xU1pKYmVFTzcxa0NBLVBRV1VlYXdMbDdjN3dwX0NHMVpqNy1tRklCdGlJRFZueW5OOFZYOXIzOFNVMDZoU2RZNlJLckZUQU0zSkZYMg?oc=5" target="_blank" rel="noopener noreferrer">AST SpaceMobile Targets Initial Satellite Broadband Coverage in Five Countries by End of 2026</a>
+        <span class="list-meta">Yahoo Finance · GN · 21 oct. · 15:54</span></li>
+      <li><a href="https://news.google.com/rss/articles/CBMivgFBVV95cUxPdnQtd0lqOTFQRm1XUXhxcUd4QUlpMlRaREpBNG5Za0h1ZnVEUG9HT1k4OGZIVUp2aXdiWW5VbGlxc0RFdmp3OGVMZk9fUzZlNnhtN1Fkamg4MzJ4RkRfOF9GRHJYd1pCZ1pCWVpOTjZ5M1B4WWR2SDJqLWNRZmVJMGREVEZvajA3c0FleHVPdkE1ZV9kWDR3YVQ0MVhUME00RWVOVEt0V2lUcUljcDF2cC1PSEV4THhtN3E4c0ZR?oc=5" target="_blank" rel="noopener noreferrer">AST SpaceMobile plans initial broadband coverage by year-end</a>
+        <span class="list-meta">Investing.com · GN · 21 oct. · 11:11</span></li>
+      <li><a href="https://news.google.com/rss/articles/CBMipAFBVV95cUxOTFRMZk5rZmdlVmFCeTV1TTh0c0JjcUNSSHZWWDlZdEVHM09TRHlrVHNvcVNBSkZOdTJPUGw1aF9jQ0k0c0FEdFFCX19QNXZkaF8wOUlRai1kT3pYTk1BV3UtbmhrZURaQmN3QmlCUnd2UGNUd01wRXVSTGVsMFdzVDFITktqYjZ3NnUybEpYQVZIRXRXRm1rUVNmcFRuOG5HU3BfWg?oc=5" target="_blank" rel="noopener noreferrer">AST SpaceMobile Outlines Plans For Initial Service In First Markets</a>
+        <span class="list-meta">Aviation Week · GN · 20 oct. · 18:14</span></li>
+    </ul>
+  </details>
 </article>
-<article class="item"
+<article class="item story"
   data-tags="newspace"
   data-entities="ast-spacemobile spacex"
   data-countries="US"
   data-regions="north_america"
   data-events="regulation"
   data-segments="launcher telecom"
+  data-industries=""
+  data-impact="0"
   data-age="5"
   data-search="ast spacemobile hit a 52-week low days after spacex spent $8 billion on spectrum. that&#39;s not a coincidence. yahoo finance ast spacemobile spacex etats-unis">
   <h4><a href="https://news.google.com/rss/articles/CBMilwFBVV95cUxOUW9ZU21TNkFxSXpFQlNyZjNWV3g2TWlYU2RGNDJBQ3dXM0pGbXdnd2tKMWdHbVNROWNfTHpPdTEzU1J1NUdwYzRIUUNJRy1YWnFEbGk5MG93NUF1ZjZyRWdsVUdHUE9wb0hqVWtoeDBEdjJrTkJ4ZHRpOUwycWpSaDMxSGhPSS11WW5fc2NWa29JYTlTdmxz?oc=5" target="_blank" rel="noopener noreferrer">AST SpaceMobile Hit a 52-Week Low Days After SpaceX Spent $8 Billion on Spectrum. That&#39;s Not a Coincidence.</a></h4>
@@ -977,30 +953,15 @@
   <p class="labels">
 <span class="ev ev-regulation">Réglementation</span><a class="chip chip-company" href="../entite/spacex.html">SpaceX</a>  </p>
 </article>
-<article class="item"
+<article class="item story"
   data-tags="newspace"
   data-entities="ast-spacemobile"
   data-countries="US"
   data-regions="north_america"
   data-events=""
   data-segments="telecom"
-  data-age="5"
-  data-search="ast spacemobile says initial satellite-to-smartphone service will launch by year-end telecompetitor ast spacemobile etats-unis">
-  <h4><a href="https://news.google.com/rss/articles/CBMitwFBVV95cUxORmFuX0hEX1BZX3VwYk5falhaRzV3MnphVE5GWG9kYU1rWEUzV0FWUE5hdFdNSkxObnYycnl1V2s3RC1YQ2ZiOFpUNjRnOXdDeXBFYkZWd3RGNWhHYkpJQTRiU0tGTVdnd2RUR3FyR0JEcmdDdUpPYlVwb2ZDR1NfRFJVeWhTR0pOVzV3Unh2SU56YXcxTmgzV1RZWl9VYXItNzczVmZuUlF5M3BGcmZtaVJTX1RqTnM?oc=5" target="_blank" rel="noopener noreferrer">AST SpaceMobile says initial satellite-to-smartphone service will launch by year-end</a></h4>
-  <p class="meta">
-    <span class="src">Telecompetitor</span><span class="via" title="Trouvé via Google News"> · GN</span>    <span aria-hidden="true">·</span>
-    <time datetime="2026-10-21T17:30:00+02:00" title="21 oct. 2026">17:30</time>
-<span aria-hidden="true">·</span> <span class="geo">États-Unis</span>  </p>
-  <p class="labels">
-  </p>
-</article>
-<article class="item"
-  data-tags="newspace"
-  data-entities="ast-spacemobile"
-  data-countries="US"
-  data-regions="north_america"
-  data-events=""
-  data-segments="telecom"
+  data-industries=""
+  data-impact="0"
   data-age="5"
   data-search="ast spacemobile stock gets a new catalyst. wall street sees 93% upside. barchart.com ast spacemobile etats-unis">
   <h4><a href="https://news.google.com/rss/articles/CBMisgFBVV95cUxPc1lxMjh6S1BnbWx0WDRhbmltUV9rM2pWOWhranQwcnpLRzZIOFA1WnlQaW90QlpDZDV5U05Gb3Fvd1J2OTlET01rVWNNVWJ3N3Y3dEw4X053SlNxa191MUgwcm5NeXRTNUZNQWkzVi1EZHVIRU1uR2lnRU4tTXlVX3JHNm8wcjZKVkpCWFNPZG5yaFRMRndzc09ReEVzVXR3ZEd4WWhOUVJVTGlpckcyaU9n?oc=5" target="_blank" rel="noopener noreferrer">AST SpaceMobile Stock Gets a New Catalyst. Wall Street Sees 93% Upside.</a></h4>
@@ -1011,30 +972,15 @@
   <p class="labels">
   </p>
 </article>
-<article class="item"
-  data-tags="newspace"
-  data-entities="ast-spacemobile"
-  data-countries="US"
-  data-regions="north_america"
-  data-events=""
-  data-segments="telecom"
-  data-age="5"
-  data-search="ast spacemobile targets initial satellite broadband coverage in five countries by end of 2026 yahoo finance ast spacemobile etats-unis">
-  <h4><a href="https://news.google.com/rss/articles/CBMipAFBVV95cUxOWDMxS29UQy0wSlJrZzRBYy1YVE1Del83a3N0VzdadUVUa0c3UHFZeUNuSWd6N3FYcFYxVVBGZjZrLU1CSDJuTGZyYkxlRi1OMTdxLXR0M08xU1pKYmVFTzcxa0NBLVBRV1VlYXdMbDdjN3dwX0NHMVpqNy1tRklCdGlJRFZueW5OOFZYOXIzOFNVMDZoU2RZNlJLckZUQU0zSkZYMg?oc=5" target="_blank" rel="noopener noreferrer">AST SpaceMobile Targets Initial Satellite Broadband Coverage in Five Countries by End of 2026</a></h4>
-  <p class="meta">
-    <span class="src">Yahoo Finance</span><span class="via" title="Trouvé via Google News"> · GN</span>    <span aria-hidden="true">·</span>
-    <time datetime="2026-10-21T15:54:55+02:00" title="21 oct. 2026">15:54</time>
-<span aria-hidden="true">·</span> <span class="geo">États-Unis</span>  </p>
-  <p class="labels">
-  </p>
-</article>
-<article class="item"
+<article class="item story"
   data-tags="newspace"
   data-entities="spacex rocket-lab ast-spacemobile"
   data-countries="US"
   data-regions="north_america"
   data-events="mna financials"
   data-segments="launcher manufacturing telecom"
+  data-industries=""
+  data-impact="0"
   data-age="5"
   data-search="spacex jumps 8% on q3 revenue beat as musk backs tesla merger idea; rocket lab and ast spacemobile edge higher 24/7 wall st. spacex rocket lab ast spacemobile etats-unis">
   <h4><a href="https://news.google.com/rss/articles/CBMi5wFBVV95cUxOZWR2Ni1BdFM0UHBwZTczUENFb2p3NGZkZ0lWYVB1b3FhZE1acHJjTE1MVGlXNkRycHY1NG1jR1QxZjRmN000V3NnNkVONFlUT2ZqTmRlR19yczA4bzNSek5tVGxiWVUzVldiLVczdTA3Tkc3akx4b2NsWkJ6Ymwwa3dCN1NKWjZRZ3ZVMlFhVlVJQVJJcVhSOEM4NHVpUHBVVWhtWFM2U2NIYThRQ19NOWR2OFhxTEtFLXdVYm5xdVhwZjhfaWl1VU1MeGktbGdKdHhwdmpMYlB0SzVyeVlUWWF1V0V6anc?oc=5" target="_blank" rel="noopener noreferrer">SpaceX Jumps 8% on Q3 Revenue Beat as Musk Backs Tesla Merger Idea; Rocket Lab and AST SpaceMobile Edge Higher</a></h4>
@@ -1045,13 +991,15 @@
   <p class="labels">
 <span class="ev ev-mna">Rachat ou fusion</span><span class="ev ev-financials">Résultats financiers</span><a class="chip chip-company" href="../entite/spacex.html">SpaceX</a><a class="chip chip-company" href="../entite/rocket-lab.html">Rocket Lab</a>  </p>
 </article>
-<article class="item"
+<article class="item story"
   data-tags="geospatial"
   data-entities="ast-spacemobile blacksky"
   data-countries="US"
   data-regions="north_america"
   data-events=""
   data-segments="eo_optique geoint telecom"
+  data-industries=""
+  data-impact="0"
   data-age="5"
   data-search="what links ast spacemobile (nasdaq:asts), blacksky technology (nyse:bksy) and wolfspeed (nyse:wolf) in space and defense? kalkine.ca ast spacemobile blacksky etats-unis">
   <h4><a href="https://news.google.com/rss/articles/CBMi3gFBVV95cUxNbUdLcmt4LWFDbzhRNDcxclRvc3p5dGFHOTZ6bjczRVE5cFFCV2JyOW4zU2F2Si1RbXVNcHBtNXFOUGJaVGJYVGg5UW9CRzFGNTBLeUlZeHI2dFJHbDdRaG5jZWs4TVV5SjRoZEI1Z2NmdmpuTXgxV3Zzd3FldzVtbGxVano4V2tzSkw2b2lGZjF1UHNTY2ZPOUEtTGVmaUJnOHpXX3NfN2tHc3YyTU8xZnY1ZXpRYXBDd2pQdkNaajdCNDBLelBVclNQeGFOVG5NNWE3enRadGN0V2ZwalE?oc=5" target="_blank" rel="noopener noreferrer">What Links AST SpaceMobile (NASDAQ:ASTS), BlackSky Technology (NYSE:BKSY) and Wolfspeed (NYSE:WOLF) in Space and Defense?</a></h4>
@@ -1062,13 +1010,15 @@
   <p class="labels">
 <a class="chip chip-company" href="../entite/blacksky.html">BlackSky</a>  </p>
 </article>
-<article class="item"
+<article class="item story"
   data-tags="newspace"
   data-entities="ast-spacemobile"
   data-countries="US"
   data-regions="north_america"
   data-events=""
   data-segments="telecom"
+  data-industries=""
+  data-impact="0"
   data-age="5"
   data-search="ast spacemobile limited coverage coming soon in us and beyond light reading ast spacemobile etats-unis">
   <h4><a href="https://news.google.com/rss/articles/CBMiqAFBVV95cUxNcVpjUGVaY2VWOE9uNUw3VjRMQUFUek80YlhCQTU4SWNVQzdEQlliMDJzd3VzNlVLY3lPUGRxODctTmFWX2JyRnhEaGNmc3l0YW5IYzdNdUdXcTRsTXQ1YjN2akJPVUFCLWo1SHRIWTUtaU5YOE9uWFZPTXlQMWlaRkdJdWt5MWY4bmkyd3FaYUJuV1ZGZXlsQUQtWHJ4MGZBcjRQT2dvLTg?oc=5" target="_blank" rel="noopener noreferrer">AST SpaceMobile limited coverage coming soon in US and beyond</a></h4>
@@ -1079,50 +1029,18 @@
   <p class="labels">
   </p>
 </article>
-<article class="item"
-  data-tags="newspace"
-  data-entities="ast-spacemobile"
-  data-countries="US"
-  data-regions="north_america"
-  data-events=""
-  data-segments="telecom"
-  data-age="5"
-  data-search="ast spacemobile plans initial broadband coverage by year-end investing.com ast spacemobile etats-unis">
-  <h4><a href="https://news.google.com/rss/articles/CBMivgFBVV95cUxPdnQtd0lqOTFQRm1XUXhxcUd4QUlpMlRaREpBNG5Za0h1ZnVEUG9HT1k4OGZIVUp2aXdiWW5VbGlxc0RFdmp3OGVMZk9fUzZlNnhtN1Fkamg4MzJ4RkRfOF9GRHJYd1pCZ1pCWVpOTjZ5M1B4WWR2SDJqLWNRZmVJMGREVEZvajA3c0FleHVPdkE1ZV9kWDR3YVQ0MVhUME00RWVOVEt0V2lUcUljcDF2cC1PSEV4THhtN3E4c0ZR?oc=5" target="_blank" rel="noopener noreferrer">AST SpaceMobile plans initial broadband coverage by year-end</a></h4>
-  <p class="meta">
-    <span class="src">Investing.com</span><span class="via" title="Trouvé via Google News"> · GN</span>    <span aria-hidden="true">·</span>
-    <time datetime="2026-10-21T11:11:02+02:00" title="21 oct. 2026">11:11</time>
-<span aria-hidden="true">·</span> <span class="geo">États-Unis</span>  </p>
-  <p class="labels">
-  </p>
-</article>
-<article class="item"
-  data-tags="newspace"
-  data-entities="ast-spacemobile"
-  data-countries="US"
-  data-regions="north_america"
-  data-events=""
-  data-segments="telecom"
-  data-age="5"
-  data-search="ast spacemobile advances space-based cellular broadband service readiness the fast mode ast spacemobile etats-unis">
-  <h4><a href="https://news.google.com/rss/articles/CBMixwFBVV95cUxPWnYwNkR2UVFvSExGcUxiTGd0dmZYcm1lYjg5NWpPamt4Zl9zVV9kYWFzcEVVamJZMW11d29HMWZfdHJXOE9YZzA4M0RycDd1NEhXcnNJUmxhTVpDSTZTQWVXbFZWNllRMmY4VV8wZVBlamlnZE5QYmNDeEJJQjQxMHRSXzVscE1VZ1I1OEVCS0JydGNxMHJaUFRKQ29xOXkyLUd0eEllZVN5b2pUQ3FTLXB4YVB5eUFOS3NDMGNiaHpjakpBeEFv?oc=5" target="_blank" rel="noopener noreferrer">AST SpaceMobile Advances Space-Based Cellular Broadband Service Readiness</a></h4>
-  <p class="meta">
-    <span class="src">The Fast Mode</span><span class="via" title="Trouvé via Google News"> · GN</span>    <span aria-hidden="true">·</span>
-    <time datetime="2026-10-21T01:34:39+02:00" title="21 oct. 2026">01:34</time>
-<span aria-hidden="true">·</span> <span class="geo">États-Unis</span>  </p>
-  <p class="labels">
-  </p>
-</article>
   </section>
   <section class="day" data-age="6">
     <h3 class="day-label">Mardi 20 oct.</h3>
-<article class="item"
+<article class="item story"
   data-tags="newspace"
   data-entities="ast-spacemobile"
   data-countries="US"
   data-regions="north_america"
   data-events=""
   data-segments="telecom"
+  data-industries=""
+  data-impact="0"
   data-age="6"
   data-search="ast spacemobile enters new employment agreement with cfo andrew m. johnson investing.com ast spacemobile etats-unis">
   <h4><a href="https://news.google.com/rss/articles/CBMiyAFBVV95cUxNNm9wU0hZNGNCdHpNekFobVBycHV6YTZiZDJvUVNyNUFhRzBNcC1aU0RDWmtkSjRveVpfX1ItejRDcEZUNFRzRjZfQWZGR25ENWotQUZ5NGhMZ0dXU1huMmVLWURFZzJDY0RJeXFWTG1yQTRhdV9lSC05ZS1OUFpJcXF6VUpLNy1NWlIwZ2dPZHQtRDYtUmg5WU9tdlpWQ19nTm9qaEQyQWpLWFZsYkR3Zk12N3FLRFgxMXlBOFVEZGdXU3lNUkgwYg?oc=5" target="_blank" rel="noopener noreferrer">AST SpaceMobile enters new employment agreement with CFO Andrew M. Johnson</a></h4>
@@ -1133,13 +1051,15 @@
   <p class="labels">
   </p>
 </article>
-<article class="item"
+<article class="item story"
   data-tags="newspace"
   data-entities="ast-spacemobile"
   data-countries="US"
   data-regions="north_america"
   data-events="regulation"
   data-segments="telecom"
+  data-industries=""
+  data-impact="0"
   data-age="6"
   data-search="ast spacemobile stocks rise 6.76% as europe&#39;s spectrum push raises a pricing question tradingview ast spacemobile etats-unis">
   <h4><a href="https://news.google.com/rss/articles/CBMi3AFBVV95cUxQMmZETHVUZWVMdzFQeTdvRWdSU2tNU1UwXy13bWhLbkpsTTYzTjMwZ3F4N19PREdvVTNhMWwwY3JXcHd1cjd6UUVaY29GRVlUVFhXckIxX0JRVHN5NHRpWTJ3TmVBNFlqczJrbFI0ckpjY2tzaUt4Vl9PeVFNSzR3aGxCLUc0M0xaTlZOTElONUtMYkl0WGFab2R6Ul9CeUVNVFBsdHVKSk9ucllwVFU0LUdiUVJSRjl5Vl96NVc4U1N3ZzFEYk12dEtSd2tUV0VKSG4zNmdsMmpVT0dV?oc=5" target="_blank" rel="noopener noreferrer">AST SpaceMobile Stocks Rise 6.76% as Europe&#39;s Spectrum Push Raises a Pricing Question</a></h4>
@@ -1150,13 +1070,15 @@
   <p class="labels">
 <span class="ev ev-regulation">Réglementation</span>  </p>
 </article>
-<article class="item"
+<article class="item story"
   data-tags="newspace"
   data-entities="ast-spacemobile"
   data-countries="US"
   data-regions="north_america"
   data-events=""
   data-segments="telecom"
+  data-industries=""
+  data-impact="0"
   data-age="6"
   data-search="ast spacemobile lost 40% in 2026: a wall street pro says it&#39;s going to double by 2027 yahoo finance ast spacemobile etats-unis">
   <h4><a href="https://news.google.com/rss/articles/CBMimAFBVV95cUxOcFl2NEJyMVhkWGVyWWhNLTdDVnBMUlpMZGxobmpiX1pCZk1BY1dNdEt5MTlqQzJXM2tnZTl2SmlvMmQ5OXpPV0haNU9hcWNidnlZcVo2N3dtemRzdG5GUnR2RnJ5bXUycml3YW1Uc2Y0c3FHQ2h3WEVVQUNUS0h5TmhPa0E3SjlxWlc5Q2FBdzk0MXQ2M1dBVA?oc=5" target="_blank" rel="noopener noreferrer">AST SpaceMobile Lost 40% In 2026: A Wall Street Pro Says It’s Going to Double By 2027</a></h4>
@@ -1167,30 +1089,15 @@
   <p class="labels">
   </p>
 </article>
-<article class="item"
+<article class="item story"
   data-tags="newspace"
   data-entities="ast-spacemobile"
   data-countries="US"
   data-regions="north_america"
   data-events=""
   data-segments="telecom"
-  data-age="6"
-  data-search="ast spacemobile outlines plans for initial service in first markets aviation week ast spacemobile etats-unis">
-  <h4><a href="https://news.google.com/rss/articles/CBMipAFBVV95cUxOTFRMZk5rZmdlVmFCeTV1TTh0c0JjcUNSSHZWWDlZdEVHM09TRHlrVHNvcVNBSkZOdTJPUGw1aF9jQ0k0c0FEdFFCX19QNXZkaF8wOUlRai1kT3pYTk1BV3UtbmhrZURaQmN3QmlCUnd2UGNUd01wRXVSTGVsMFdzVDFITktqYjZ3NnUybEpYQVZIRXRXRm1rUVNmcFRuOG5HU3BfWg?oc=5" target="_blank" rel="noopener noreferrer">AST SpaceMobile Outlines Plans For Initial Service In First Markets</a></h4>
-  <p class="meta">
-    <span class="src">Aviation Week</span><span class="via" title="Trouvé via Google News"> · GN</span>    <span aria-hidden="true">·</span>
-    <time datetime="2026-10-20T18:14:46+02:00" title="20 oct. 2026">18:14</time>
-<span aria-hidden="true">·</span> <span class="geo">États-Unis</span>  </p>
-  <p class="labels">
-  </p>
-</article>
-<article class="item"
-  data-tags="newspace"
-  data-entities="ast-spacemobile"
-  data-countries="US"
-  data-regions="north_america"
-  data-events=""
-  data-segments="telecom"
+  data-industries=""
+  data-impact="0"
   data-age="6"
   data-search="ast spacemobile lost 18% in a week. roth mkm says it could more than double yahoo finance ast spacemobile etats-unis">
   <h4><a href="https://news.google.com/rss/articles/CBMimAFBVV95cUxNVEhqNGxRN1pLWE8wR1ZXTXJGRlhUcjlqOXZ2M1JfRDN3SnJFWW9HY2Y0S3cwaUtsU1hod21yVk9QRzlHc3dWS0N3YkpwbUVyWUJmRktZUkR1NUlpQ3VQTXlGWjBEbDAyVC1jSkpSTE1YRWV1TEJaNFlidGhxQVdYZndaNzFwejJwT3FmTUVDbDhHNzZiZnhtZg?oc=5" target="_blank" rel="noopener noreferrer">AST SpaceMobile Lost 18% in a Week. Roth MKM Says It Could More Than Double</a></h4>
@@ -1201,13 +1108,15 @@
   <p class="labels">
   </p>
 </article>
-<article class="item"
+<article class="item story"
   data-tags="newspace"
   data-entities="ast-spacemobile"
   data-countries="US"
   data-regions="north_america"
   data-events=""
   data-segments="telecom"
+  data-industries=""
+  data-impact="0"
   data-age="6"
   data-search="ast spacemobile stock hits 52-week low at 39.85 usd investing.com ast spacemobile etats-unis">
   <h4><a href="https://news.google.com/rss/articles/CBMiqgFBVV95cUxQcDIwOXZicmh0d0ZzUWVaMDVCdUNEN2pkSDFKcWszcHJaVUo4OXpxV0daRlFtblBvTjFObzJsSXdra0l0VzJHZVhqUjN5WXljNFRWRDhkVUtDblA0ZHRJNnR4UWtkN0gxai14d2ZzVnBvVVl5YndrMTREZUVFbmZKNFpVNGJHSjB1b3llYjFXOVRaVDlfTTFDbkpYTEpKWm4xWFVpZU4xRmUwZw?oc=5" target="_blank" rel="noopener noreferrer">Ast Spacemobile stock hits 52-week low at 39.85 USD</a></h4>
@@ -1218,13 +1127,15 @@
   <p class="labels">
   </p>
 </article>
-<article class="item"
+<article class="item story"
   data-tags="newspace"
   data-entities="ast-spacemobile"
   data-countries="US"
   data-regions="north_america"
   data-events=""
   data-segments="telecom"
+  data-industries=""
+  data-impact="0"
   data-age="6"
   data-search="ast spacemobile targets year-end service in 5 markets as us rollout advances stocktwits ast spacemobile etats-unis">
   <h4><a href="https://news.google.com/rss/articles/CBMi2AFBVV95cUxQUFZuN3FLdlFDeHl1eWtaeGZfVFVsRHQ2eW5Oblg2djlSb1dxSHpaOXNtWm9VT3l3YmRiZUlLRnZsb2hRdkNaNndqMkhQYlRnWWktZjY0NHFsN2RLZ0dXT1U5UDM5ZnR1NlBnWDJhclhwSmpRdkt3WVExSHlaU0xpczJHTEUtZXFpLURuQTl5MERSUnJpaEtiZlpMMlE0emJseU9ZR1NvRGFlWEJnV2xnSHFPTHk5SHFiXzE5TC1IY29neklPTkNieFNycC1jUFlFNUpucGNqUVg?oc=5" target="_blank" rel="noopener noreferrer">AST SpaceMobile Targets Year-End Service In 5 Markets As US Rollout Advances</a></h4>
@@ -1236,27 +1147,38 @@
   </p>
 </article>
   </section>
-  <section class="day" data-age="14">
-    <h3 class="day-label">Lundi 12 oct.</h3>
-<article class="item"
+  <section class="day" data-age="13">
+    <h3 class="day-label">Mardi 13 oct.</h3>
+<article class="item story impact-faible"
   data-tags="newspace"
-  data-entities="ast-spacemobile firefly"
+  data-entities="ast-spacemobile firefly intuitive-machines"
   data-countries="US"
   data-regions="north_america"
   data-events=""
   data-segments="in_orbit launcher telecom"
-  data-age="14"
-  data-search="ast spacemobile vs. firefly aerospace: which space-based venture&#39;s stock is a better buy in 2026? the motley fool ast spacemobile firefly aerospace etats-unis">
-  <h4><a href="https://news.google.com/rss/articles/CBMi4AFBVV95cUxPMnNkMGxmTHRZRGc1N0hYWUpoeWNUWXVUMm1xNGE5TkdHYnJ6azlWV1RESUxYVHJZUm9LaUxSQkNxdW4yS1FITVVIRVBQNmZWQlE5NjZtWG5kNlNfdnVlQks2U296UmNNQk9RU3FVaXRpUEhrRDhyVmZKZkZLWlR5RXRxRmo3dzR0UXJybWd4SnNIRW9KWU5pUHhTbk55RUM0bUx1enNtOXlxMW1EaGZMLUFiMGl6dXUtdHB1SjRzUFFqSkR6LVNQU0t6M3RSZ1BoRC1MVm5EeGxJY1N5ZWNGOQ?oc=5" target="_blank" rel="noopener noreferrer">AST SpaceMobile vs. Firefly Aerospace: Which Space-Based Venture&#39;s Stock Is a Better Buy in 2026?</a></h4>
+  data-industries="connectivite"
+  data-impact="1"
+  data-age="13"
+  data-search="comparatif boursier : ast spacemobile, firefly aerospace et intuitive machines article d&#39;analyse comparant l&#39;attractivite boursiere d&#39;ast spacemobile, firefly aerospace et intuitive machines pour 2026. indicateur de l&#39;interet des investisseurs pour des acteurs du spatial commercial et de la connectivite satellite. ast spacemobile vs. firefly aerospace: which space-based venture&#39;s stock is a better buy in 2026? firefly aerospace vs. intuitive machines: which space infrastructure stock is a better buy in 2026? the motley fool yahoo finance ast spacemobile firefly aerospace intuitive machines etats-unis financements et consolidation connectivite securisee">
+  <h4><a href="https://news.google.com/rss/articles/CBMi4AFBVV95cUxPMnNkMGxmTHRZRGc1N0hYWUpoeWNUWXVUMm1xNGE5TkdHYnJ6azlWV1RESUxYVHJZUm9LaUxSQkNxdW4yS1FITVVIRVBQNmZWQlE5NjZtWG5kNlNfdnVlQks2U296UmNNQk9RU3FVaXRpUEhrRDhyVmZKZkZLWlR5RXRxRmo3dzR0UXJybWd4SnNIRW9KWU5pUHhTbk55RUM0bUx1enNtOXlxMW1EaGZMLUFiMGl6dXUtdHB1SjRzUFFqSkR6LVNQU0t6M3RSZ1BoRC1MVm5EeGxJY1N5ZWNGOQ?oc=5" target="_blank" rel="noopener noreferrer">Comparatif boursier : AST SpaceMobile, Firefly Aerospace et Intuitive Machines</a></h4>
   <p class="meta">
-    <span class="src">The Motley Fool</span><span class="via" title="Trouvé via Google News"> · GN</span>    <span aria-hidden="true">·</span>
-    <time datetime="2026-10-12T09:00:00+02:00" title="12 oct. 2026">09:00</time>
+<span class="impact-badge impact-badge-faible">Impact faible</span>    <span class="src">The Motley Fool</span><span class="via" title="Trouvé via Google News"> · GN</span><span class="n-sources">+ 1 source</span>    <span aria-hidden="true">·</span>
+    <time datetime="2026-10-13T21:42:02+02:00" title="13 oct. 2026">21:42</time>
 <span aria-hidden="true">·</span> <span class="geo">États-Unis</span>  </p>
-  <p class="labels">
-<a class="chip chip-company" href="../entite/firefly.html">Firefly Aerospace</a>  </p>
+<p class="excerpt">Article d&#39;analyse comparant l&#39;attractivité boursière d&#39;AST SpaceMobile, Firefly Aerospace et Intuitive Machines pour 2026.</p><p class="why"><span>Pourquoi c'est important</span> Indicateur de l&#39;intérêt des investisseurs pour des acteurs du spatial commercial et de la connectivité satellite.</p>  <p class="labels">
+<span class="theme">Financements et consolidation</span><span class="industry">Connectivité sécurisée</span><a class="chip chip-company" href="../entite/firefly.html">Firefly Aerospace</a><a class="chip chip-company" href="../entite/intuitive-machines.html">Intuitive Machines</a>  </p>
+  <details class="sources">
+    <summary>2 articles de 2 sources</summary>
+    <ul>
+      <li><a href="https://news.google.com/rss/articles/CBMipwFBVV95cUxPUlRlY043TTJkSU1XT2ZOVUJjdXRkamdEMHAtYmF6TkpTWEduM2hKX1A5cmE1R0N5Q3Fua1l6MHctX2xJV05DUDdWNDlqcGd0TVdOWVllcC04RmNkSXRYdUN3bml1NUszWk5rTkk0Z0lldjR0blVadExXOHVzTXc1VHhjQnoxQWhza0pKbEtrSGd0RGxnanZHa216T0pSVHlZVFhud3F1dw?oc=5" target="_blank" rel="noopener noreferrer">Firefly Aerospace vs. Intuitive Machines: Which Space Infrastructure Stock Is a Better Buy in 2026?</a>
+        <span class="list-meta">Yahoo Finance · GN · 13 oct. · 21:42</span></li>
+      <li><a href="https://news.google.com/rss/articles/CBMi4AFBVV95cUxPMnNkMGxmTHRZRGc1N0hYWUpoeWNUWXVUMm1xNGE5TkdHYnJ6azlWV1RESUxYVHJZUm9LaUxSQkNxdW4yS1FITVVIRVBQNmZWQlE5NjZtWG5kNlNfdnVlQks2U296UmNNQk9RU3FVaXRpUEhrRDhyVmZKZkZLWlR5RXRxRmo3dzR0UXJybWd4SnNIRW9KWU5pUHhTbk55RUM0bUx1enNtOXlxMW1EaGZMLUFiMGl6dXUtdHB1SjRzUFFqSkR6LVNQU0t6M3RSZ1BoRC1MVm5EeGxJY1N5ZWNGOQ?oc=5" target="_blank" rel="noopener noreferrer">AST SpaceMobile vs. Firefly Aerospace: Which Space-Based Venture&#39;s Stock Is a Better Buy in 2026?</a>
+        <span class="list-meta">The Motley Fool · GN · 12 oct. · 09:00</span></li>
+    </ul>
+  </details>
 </article>
   </section>
-  <p class="empty" hidden>Aucun article ne correspond à ces filtres. Élargir la période ou passer le domaine sur « Tout ».</p>
+  <p class="empty" hidden>Aucun sujet ne correspond à ces filtres. Élargir la période ou passer le domaine sur « Tout ».</p>
 </div>
 
   </section>
@@ -1265,21 +1187,24 @@
     <div class="side-box">
       <h2>Activité</h2>
       <p class="windows">
-        <span><strong>65</strong> articles sur 7 j</span>
-        <span><strong>66</strong> sur 30 j</span>
-        <span><strong>66</strong> sur 90 j</span>
+        <span><strong>49</strong> articles sur 7 j</span>
+        <span><strong>50</strong> sur 30 j</span>
+        <span><strong>50</strong> sur 90 j</span>
       </p>
       <h3>Par type d'événement (90 j)</h3>
       <ul class="bars">
+        <li><span class="bar-label">Contrat gagné</span>
+          <span class="bar"><span class="bar-fill ev-contract_won" style="width: 20.0%"></span></span>
+          <span class="n">1</span></li>
         <li><span class="bar-label">Rachat ou fusion</span>
-          <span class="bar"><span class="bar-fill ev-mna" style="width: 25.0%"></span></span>
+          <span class="bar"><span class="bar-fill ev-mna" style="width: 20.0%"></span></span>
           <span class="n">1</span></li>
         <li><span class="bar-label">Résultats financiers</span>
-          <span class="bar"><span class="bar-fill ev-financials" style="width: 25.0%"></span></span>
+          <span class="bar"><span class="bar-fill ev-financials" style="width: 20.0%"></span></span>
           <span class="n">1</span></li>
         <li><span class="bar-label">Réglementation</span>
           <span class="bar"><span class="bar-fill ev-regulation" style="width: 100.0%"></span></span>
-          <span class="n">4</span></li>
+          <span class="n">5</span></li>
       </ul>
     </div>
     <div class="side-box">
@@ -1291,6 +1216,7 @@
         <li><a class="chip chip-company" href="../entite/planet.html">Planet Labs</a> <span class="n">1</span></li>
         <li><a class="chip chip-company" href="../entite/blacksky.html">BlackSky</a> <span class="n">1</span></li>
         <li><a class="chip chip-company" href="../entite/firefly.html">Firefly Aerospace</a> <span class="n">1</span></li>
+        <li><a class="chip chip-company" href="../entite/intuitive-machines.html">Intuitive Machines</a> <span class="n">1</span></li>
       </ul>
     </div>
   </aside>
@@ -1306,6 +1232,6 @@
   </footer>
 
   <script type="application/json" id="entity-index">[{"id": "aed", "kind": "institution", "name": "AED"}, {"id": "aerospacelab", "kind": "company", "name": "Aerospacelab"}, {"id": "airbus-ds", "kind": "company", "name": "Airbus Defence and Space"}, {"id": "amazon-leo", "kind": "company", "name": "Amazon Leo (ex-Kuiper)"}, {"id": "arianegroup", "kind": "company", "name": "ArianeGroup"}, {"id": "arianespace", "kind": "company", "name": "Arianespace"}, {"id": "asi", "kind": "institution", "name": "ASI"}, {"id": "ast-spacemobile", "kind": "company", "name": "AST SpaceMobile"}, {"id": "avio", "kind": "company", "name": "Avio"}, {"id": "blacksky", "kind": "company", "name": "BlackSky"}, {"id": "blue-origin", "kind": "company", "name": "Blue Origin"}, {"id": "capella", "kind": "company", "name": "Capella Space"}, {"id": "cnes", "kind": "institution", "name": "CNES"}, {"id": "cnsa", "kind": "institution", "name": "CNSA"}, {"id": "commandement-espace", "kind": "institution", "name": "Commandement de l\u0027Espace"}, {"id": "commission-europeenne", "kind": "institution", "name": "Commission europ\u00e9enne (DG DEFIS)"}, {"id": "constellr", "kind": "company", "name": "constellr"}, {"id": "d-orbit", "kind": "company", "name": "D-Orbit"}, {"id": "dga", "kind": "institution", "name": "DGA"}, {"id": "dlr", "kind": "institution", "name": "DLR"}, {"id": "earthdaily", "kind": "company", "name": "EarthDaily"}, {"id": "esa", "kind": "institution", "name": "ESA"}, {"id": "esri", "kind": "company", "name": "Esri"}, {"id": "euspa", "kind": "institution", "name": "EUSPA"}, {"id": "eutelsat", "kind": "company", "name": "Eutelsat"}, {"id": "exotrail", "kind": "company", "name": "Exotrail"}, {"id": "fcc", "kind": "institution", "name": "FCC"}, {"id": "firefly", "kind": "company", "name": "Firefly Aerospace"}, {"id": "hawkeye360", "kind": "company", "name": "HawkEye 360"}, {"id": "hemeria", "kind": "company", "name": "Hemeria"}, {"id": "hensoldt", "kind": "company", "name": "Hensoldt"}, {"id": "iceye", "kind": "company", "name": "ICEYE"}, {"id": "intuitive-machines", "kind": "company", "name": "Intuitive Machines"}, {"id": "iqps", "kind": "company", "name": "iQPS"}, {"id": "isar", "kind": "company", "name": "Isar Aerospace"}, {"id": "isro", "kind": "institution", "name": "ISRO"}, {"id": "jaxa", "kind": "institution", "name": "JAXA"}, {"id": "l3harris", "kind": "company", "name": "L3Harris"}, {"id": "latitude", "kind": "company", "name": "Latitude"}, {"id": "leonardo", "kind": "company", "name": "Leonardo"}, {"id": "lockheed-martin", "kind": "company", "name": "Lockheed Martin"}, {"id": "loft-orbital", "kind": "company", "name": "Loft Orbital"}, {"id": "maiaspace", "kind": "company", "name": "MaiaSpace"}, {"id": "ministere-armees", "kind": "institution", "name": "Minist\u00e8re des Arm\u00e9es"}, {"id": "nasa", "kind": "institution", "name": "NASA"}, {"id": "nga", "kind": "institution", "name": "NGA"}, {"id": "noaa", "kind": "institution", "name": "NOAA"}, {"id": "northrop-grumman", "kind": "company", "name": "Northrop Grumman"}, {"id": "nro", "kind": "institution", "name": "NRO"}, {"id": "ohb", "kind": "company", "name": "OHB"}, {"id": "open-cosmos", "kind": "company", "name": "Open Cosmos"}, {"id": "otan", "kind": "institution", "name": "OTAN"}, {"id": "pixxel", "kind": "company", "name": "Pixxel"}, {"id": "planet", "kind": "company", "name": "Planet Labs"}, {"id": "pld-space", "kind": "company", "name": "PLD Space"}, {"id": "redwire", "kind": "company", "name": "Redwire"}, {"id": "rheinmetall", "kind": "company", "name": "Rheinmetall"}, {"id": "rfa", "kind": "company", "name": "Rocket Factory Augsburg"}, {"id": "rocket-lab", "kind": "company", "name": "Rocket Lab"}, {"id": "safran", "kind": "company", "name": "Safran"}, {"id": "safran-ai", "kind": "company", "name": "Safran.AI (ex-Preligens)"}, {"id": "satcen", "kind": "institution", "name": "SatCen"}, {"id": "satellite-vu", "kind": "company", "name": "Satellite Vu"}, {"id": "satellogic", "kind": "company", "name": "Satellogic"}, {"id": "ses", "kind": "company", "name": "SES"}, {"id": "sda", "kind": "institution", "name": "Space Development Agency"}, {"id": "spacex", "kind": "company", "name": "SpaceX"}, {"id": "spire", "kind": "company", "name": "Spire Global"}, {"id": "synspective", "kind": "company", "name": "Synspective"}, {"id": "thales", "kind": "company", "name": "Thales"}, {"id": "thales-alenia-space", "kind": "company", "name": "Thales Alenia Space"}, {"id": "the-exploration-company", "kind": "company", "name": "The Exploration Company"}, {"id": "uit", "kind": "institution", "name": "UIT"}, {"id": "uksa", "kind": "institution", "name": "UK Space Agency"}, {"id": "umbra", "kind": "company", "name": "Umbra"}, {"id": "unseenlabs", "kind": "company", "name": "Unseenlabs"}, {"id": "ussf", "kind": "institution", "name": "US Space Force"}, {"id": "vantor", "kind": "company", "name": "Vantor (ex-Maxar Intelligence)"}]</script>
-  <script src="../static/app.js?v=202610260731"></script>
+  <script src="../static/app.js?v=202610262057"></script>
 </body>
 </html>
