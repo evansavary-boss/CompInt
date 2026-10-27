@@ -1,11 +1,11 @@
 {
- "updated_at": "2026-10-26T21:00:52+01:00",
+ "updated_at": "2026-10-27T07:33:36+01:00",
  "last_run": {
-  "created": 432,
-  "analysed": 110,
-  "merged": 40,
+  "created": 71,
+  "analysed": 107,
+  "merged": 43,
   "error": "",
-  "cost_usd": 2.0426
+  "cost_usd": 1.6265
  },
  "stories": [
   {
@@ -8112,27 +8112,35 @@
     "ff16b8078091d9c2",
     "6984915752cb4908",
     "4d099030fce86ce1",
-    "ea3b33a01fa92749"
+    "ea3b33a01fa92749",
+    "609892874a74462b",
+    "49a49be5b4d30127",
+    "6cedcbf8b28dd7c1"
    ],
    "analysis": {
     "relevant": true,
-    "title_fr": "L'ISRO lancera le satellite de navigation NVS-03, très retardé, le 30 octobre",
-    "summary": "L'ISRO prévoit de lancer le 30 octobre le satellite de navigation indigène NVS-03, longtemps retardé.",
-    "why": "Renforce l'autonomie indienne en navigation par satellite.",
+    "title_fr": "L'Inde prévoit de lancer le satellite de navigation NVS-03 le 30 octobre",
+    "summary": "L'ISRO a validé le lancement, longtemps retardé, du satellite de navigation NavIC NVS-03 par une fusée GSLV le 30 octobre 2026.",
+    "why": "Illustre la montée en puissance des capacités spatiales souveraines indiennes, un marché clé pour les services géospatiaux.",
     "tabs": [
-     "concurrents"
+     "concurrents",
+     "economie"
     ],
     "themes": [
+     "programmes",
      "lancements"
     ],
-    "industries": [],
+    "industries": [
+     "defense",
+     "connectivite"
+    ],
     "countries": [
      "IN"
     ],
     "impact": "faible"
    },
-   "analysed_at": "2026-10-26T20:15:22+01:00",
-   "analysed_size": 3,
+   "analysed_at": "2026-10-27T07:33:36+01:00",
+   "analysed_size": 11,
    "analysis_model": "claude_cli:sonnet"
   },
   {
@@ -8540,7 +8548,8 @@
     "3f4e03b9e6f2df66",
     "70cefa294fa4aa4a",
     "6aeac8f50a84496e",
-    "b950710161d8885c"
+    "b950710161d8885c",
+    "3c863cdb0a82dd70"
    ],
    "analysis": {
     "relevant": true,
@@ -9008,13 +9017,15 @@
     "a70ce744ca07293b",
     "de604c73a3868655",
     "86307de13592cec3",
-    "caa5d4d072f41f64"
+    "caa5d4d072f41f64",
+    "1e4ffb251a59748a",
+    "5a82d3d116a89aed"
    ],
    "analysis": {
     "relevant": true,
-    "title_fr": "ICEYE et Nokia signent une lettre d'intention avec l'Ukraine sur le satcom souverain",
-    "summary": "ICEYE et Nokia ont signé une lettre d'intention avec le ministère ukrainien de la Défense pour développer une capacité satcom souveraine, après l'interruption de Starshield plus tôt ce mois-ci.",
-    "why": "ICEYE, concurrent direct en imagerie radar, s'implante davantage dans la défense ukrainienne et sur la connectivité souveraine.",
+    "title_fr": "ICEYE et Nokia signent une lettre d'intention avec l'Ukraine pour un satcom souverain",
+    "summary": "ICEYE et Nokia ont signé une lettre d'intention avec le ministère de la Défense ukrainien pour développer une capacité de communications satellitaires souveraine, dans le cadre d'accords finlandais de 300 M€.",
+    "why": "ICEYE, concurrent direct en imagerie SAR, étend son offre vers le satcom militaire en Ukraine, renforçant sa position de fournisseur défense.",
     "tabs": [
      "concurrents",
      "geopolitique"
@@ -9029,13 +9040,12 @@
     ],
     "countries": [
      "UA",
-     "FI",
-     "US"
+     "FI"
     ],
-    "impact": "fort"
+    "impact": "moyen"
    },
-   "analysed_at": "2026-10-26T20:15:22+01:00",
-   "analysed_size": 20,
+   "analysed_at": "2026-10-27T07:33:36+01:00",
+   "analysed_size": 44,
    "analysis_model": "claude_cli:sonnet"
   },
   {
@@ -9438,18 +9448,22 @@
     "1480161c367e5d97",
     "98fe3b918e414264",
     "64c84bdaf63d93df",
-    "3dd5b53602ff1d74"
+    "3dd5b53602ff1d74",
+    "36e9f44f7f22b802",
+    "0305852c5d3fef58"
    ],
    "analysis": {
     "relevant": true,
-    "title_fr": "SpaceX négocierait l'accès à 80 000 sites cellulaires pour un nouveau réseau",
-    "summary": "Selon Bloomberg, SpaceX chercherait à accéder à 80 000 sites cellulaires américains pour déployer un réseau sans fil terrestre lié à Starlink.",
-    "why": "Cette expansion terrestre renforcerait l'offre de connectivité de SpaceX face aux opérateurs télécoms traditionnels.",
+    "title_fr": "SpaceX négocierait l'accès à 80 000 sites cellulaires pour Starlink mobile",
+    "summary": "SpaceX serait en discussion pour accéder à 80 000 sites cellulaires américains afin d'étendre son réseau direct-vers-mobile, ce qui inquiète AT&T, T-Mobile et Verizon.",
+    "why": "Une expansion de Starlink Direct-to-Cell renforcerait la domination de SpaceX sur la connectivité satellitaire grand public.",
     "tabs": [
-     "concurrents"
+     "concurrents",
+     "economie"
     ],
     "themes": [
-     "programmes"
+     "reglementation",
+     "produits"
     ],
     "industries": [
      "connectivite"
@@ -9459,8 +9473,8 @@
     ],
     "impact": "moyen"
    },
-   "analysed_at": "2026-10-26T21:00:52+01:00",
-   "analysed_size": 4,
+   "analysed_at": "2026-10-27T07:33:36+01:00",
+   "analysed_size": 8,
    "analysis_model": "claude_cli:sonnet"
   },
   {
@@ -10008,32 +10022,35 @@
     "828137712802d528",
     "565a6961bae96ca7",
     "3bf3905442aef50b",
-    "d87f7d019e2c1ce1"
+    "d87f7d019e2c1ce1",
+    "857404e9c78b5f64",
+    "5c7a8d856f7cb64d",
+    "b2e0d6c89b6b5999"
    ],
    "analysis": {
     "relevant": true,
-    "title_fr": "Rocket Lab lance HawkEye 360 avec son 98e vol Electron",
-    "summary": "Rocket Lab a lancé depuis la Nouvelle-Zélande son 98e Electron, troisième mission dédiée à HawkEye 360, pour mettre en orbite de nouveaux satellites.",
-    "why": "Renforce la constellation de renseignement radiofréquence de HawkEye 360, acteur complémentaire et concurrent en renseignement géospatial.",
+    "title_fr": "Rocket Lab lance trois satellites HawkEye 360 de renseignement électromagnétique",
+    "summary": "Rocket Lab a réalisé son 98e vol Electron, plaçant en orbite trois satellites HawkEye 360 Cluster 16 dédiés au renseignement de signaux (SIGINT).",
+    "why": "Renforce l'offre commerciale de renseignement électromagnétique, un segment proche de la géoint où Airbus est présent.",
     "tabs": [
      "concurrents"
     ],
     "themes": [
-     "lancements"
+     "lancements",
+     "produits"
     ],
     "industries": [
      "defense",
-     "securite",
-     "maritime"
+     "securite"
     ],
     "countries": [
      "US",
      "NZ"
     ],
-    "impact": "faible"
+    "impact": "moyen"
    },
-   "analysed_at": "2026-10-26T20:15:22+01:00",
-   "analysed_size": 9,
+   "analysed_at": "2026-10-27T07:33:36+01:00",
+   "analysed_size": 24,
    "analysis_model": "claude_cli:sonnet"
   },
   {
@@ -11356,7 +11373,9 @@
     "9f40bee086e78e14",
     "569106b56217d601",
     "814ba4cac098ae4f",
-    "51712fa281afd712"
+    "51712fa281afd712",
+    "c9e9f6fa1bedc17c",
+    "edd4d8e44d3a7e69"
    ],
    "analysis": {
     "relevant": true,
@@ -11572,15 +11591,18 @@
     "ca0301cfc5d966db",
     "853304d003735364",
     "e2b6c2fc0f9980c9",
-    "1d19fbee36b22ac8"
+    "1d19fbee36b22ac8",
+    "f5d8d76b064fe00a",
+    "cb26240b8e67000a",
+    "3ae3f8c057fbb671"
    ],
    "analysis": {
     "relevant": true,
-    "title_fr": "NASA détaille les plans des missions Artemis III et IV",
-    "summary": "La NASA présente un calendrier actualisé pour les missions lunaires Artemis III et IV, avec un retour des astronautes américains visé pour 2028.",
-    "why": "Le calendrier lunaire influence les besoins en imagerie et services spatiaux liés à l'exploration et à la logistique lunaire.",
+    "title_fr": "La NASA détaille les missions lunaires Artemis III et IV",
+    "summary": "La NASA a présenté une mise à jour de son programme lunaire Artemis, visant un retour des astronautes en 2028, avec des précisions sur les missions III, IV et V impliquant SpaceX et Blue Origin.",
+    "why": "",
     "tabs": [
-     "economie"
+     "concurrents"
     ],
     "themes": [
      "programmes"
@@ -11589,10 +11611,10 @@
     "countries": [
      "US"
     ],
-    "impact": "moyen"
+    "impact": "faible"
    },
-   "analysed_at": "2026-10-26T21:00:52+01:00",
-   "analysed_size": 7,
+   "analysed_at": "2026-10-27T07:33:36+01:00",
+   "analysed_size": 34,
    "analysis_model": "claude_cli:sonnet"
   },
   {
@@ -12254,7 +12276,8 @@
    "id": "sc107a673cbfff359",
    "item_ids": [
     "c107a673cbfff359",
-    "127a82a55cceb8f9"
+    "127a82a55cceb8f9",
+    "be8b7fc53a5ae9c9"
    ],
    "analysis": {
     "relevant": true,
@@ -12282,7 +12305,13 @@
    "item_ids": [
     "845bd420be86281d",
     "e0d6e2295f5bfcf4",
-    "d0e6f3c74715c97b"
+    "d0e6f3c74715c97b",
+    "c70a901b79fdca10",
+    "876ea4f3862fe697",
+    "a44c03d81b7c4f55",
+    "bc80e8466f238630",
+    "24ed2232409554f1",
+    "c2539f225d13ccfa"
    ],
    "analysis": {
     "relevant": true,
@@ -12592,7 +12621,10 @@
    "id": "sc54220d64814fb1e",
    "item_ids": [
     "c54220d64814fb1e",
-    "d9fade1e86e554b0"
+    "d9fade1e86e554b0",
+    "db523d516c2ae3ad",
+    "4e424daebce1c08b",
+    "7227b7432becb43d"
    ],
    "analysis": {
     "relevant": true,
@@ -12738,12 +12770,26 @@
   {
    "id": "sfc9c0b42f64529d2",
    "item_ids": [
-    "fc9c0b42f64529d2"
+    "fc9c0b42f64529d2",
+    "1aa82dbef2f94c24",
+    "96277c9d72922dad"
    ],
-   "analysis": {},
-   "analysed_at": "",
-   "analysed_size": 0,
-   "analysis_model": ""
+   "analysis": {
+    "relevant": false,
+    "title_fr": "Analyse boursière de Rocket Lab après un nouveau lancement",
+    "summary": "Un article commente l'évolution du cours de l'action Rocket Lab (RKLB) après son dernier lancement, sans information nouvelle sur l'activité.",
+    "why": "",
+    "tabs": [],
+    "themes": [],
+    "industries": [],
+    "countries": [
+     "US"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-10-27T07:33:36+01:00",
+   "analysed_size": 3,
+   "analysis_model": "claude_cli:sonnet"
   },
   {
    "id": "sffbefb0b9f83fd7f",
@@ -12824,13 +12870,15 @@
     "054ddf90dfdfcf59",
     "d8416ce872a85cdf",
     "bf795d5b73343427",
-    "a5dc7b46b2ad155f"
+    "a5dc7b46b2ad155f",
+    "e9a0d5f80a76eea3",
+    "abeb11795a9f9f97"
    ],
    "analysis": {
     "relevant": true,
-    "title_fr": "USDA et NASA signent un protocole pour moderniser les données agricoles",
-    "summary": "La secrétaire à l'Agriculture Rollins et l'administrateur de la NASA Isaacman signent un protocole d'entente pour appliquer l'observation de la Terre aux statistiques agricoles américaines.",
-    "why": "Cette initiative élargit l'usage institutionnel de l'observation de la Terre pour l'agriculture, un marché clé du géospatial.",
+    "title_fr": "L'USDA et la NASA signent un accord pour moderniser les données agricoles",
+    "summary": "La secrétaire à l'Agriculture Rollins et l'administrateur de la NASA Isaacman ont signé un protocole pour moderniser l'accès aux données agricoles et améliorer les estimations de récoltes.",
+    "why": "Montre l'intérêt croissant des agences américaines pour les données géospatiales appliquées à l'agriculture, un marché pour Airbus.",
     "tabs": [
      "economie"
     ],
@@ -12843,10 +12891,10 @@
     "countries": [
      "US"
     ],
-    "impact": "moyen"
+    "impact": "faible"
    },
-   "analysed_at": "2026-10-26T21:00:52+01:00",
-   "analysed_size": 3,
+   "analysed_at": "2026-10-27T07:33:36+01:00",
+   "analysed_size": 8,
    "analysis_model": "claude_cli:sonnet"
   },
   {
@@ -12970,16 +13018,6 @@
    "analysis_model": ""
   },
   {
-   "id": "s1e4ffb251a59748a",
-   "item_ids": [
-    "1e4ffb251a59748a"
-   ],
-   "analysis": {},
-   "analysed_at": "",
-   "analysed_size": 0,
-   "analysis_model": ""
-  },
-  {
    "id": "sc6d7d00fdaaf6269",
    "item_ids": [
     "c6d7d00fdaaf6269"
@@ -12993,16 +13031,6 @@
    "id": "s279eba8efba7330f",
    "item_ids": [
     "279eba8efba7330f"
-   ],
-   "analysis": {},
-   "analysed_at": "",
-   "analysed_size": 0,
-   "analysis_model": ""
-  },
-  {
-   "id": "sf5d8d76b064fe00a",
-   "item_ids": [
-    "f5d8d76b064fe00a"
    ],
    "analysis": {},
    "analysed_at": "",
@@ -13533,29 +13561,30 @@
     "6c1ec323815b41b2",
     "6066ae438f7bb9ac",
     "a297c5770f8b365d",
-    "ff49db816f5afeee"
+    "ff49db816f5afeee",
+    "2c85b20d82abaf0a",
+    "03d0ec957fe1d840"
    ],
    "analysis": {
     "relevant": true,
-    "title_fr": "SpaceX confirme un financement de 40 milliards de dollars pour des puces IA",
-    "summary": "Elon Musk confirme que SpaceX a conclu un accord de dette de 40 milliards de dollars pour financer des puces IA, et anticipe une consolidation des acteurs du neocloud.",
-    "why": "Ce financement renforce la puissance financière de SpaceX, concurrent clé dans le spatial et la connectivité.",
+    "title_fr": "SpaceX bouclerait un financement de 40 Md$ pour des puces IA Nvidia",
+    "summary": "Elon Musk affirme que SpaceX a conclu un accord de dette de 40 milliards de dollars pour financer l'achat de puces d'intelligence artificielle Nvidia.",
+    "why": "Cette opération financière massive renforce la capacité d'investissement de SpaceX, concurrent majeur en lancement et connectivité.",
     "tabs": [
-     "concurrents"
+     "concurrents",
+     "economie"
     ],
     "themes": [
      "financements"
     ],
-    "industries": [
-     "connectivite"
-    ],
+    "industries": [],
     "countries": [
      "US"
     ],
     "impact": "moyen"
    },
-   "analysed_at": "2026-10-26T21:00:52+01:00",
-   "analysed_size": 4,
+   "analysed_at": "2026-10-27T07:33:36+01:00",
+   "analysed_size": 10,
    "analysis_model": "claude_cli:sonnet"
   },
   {
@@ -13813,7 +13842,10 @@
    "item_ids": [
     "24185fd99ae71cbc",
     "64100a32f8deb81c",
-    "70841692e2a4de9d"
+    "70841692e2a4de9d",
+    "808326998d310f80",
+    "05102a4fe30734e5",
+    "d232187496399144"
    ],
    "analysis": {
     "relevant": true,
@@ -13897,7 +13929,8 @@
    "id": "se3f4c03a7bc06536",
    "item_ids": [
     "e3f4c03a7bc06536",
-    "25b65ffdbb2a12da"
+    "25b65ffdbb2a12da",
+    "e1cab1a295ace29c"
    ],
    "analysis": {
     "relevant": true,
@@ -14046,21 +14079,13 @@
    "analysis_model": ""
   },
   {
-   "id": "sdb5be96d7ed497c5",
-   "item_ids": [
-    "db5be96d7ed497c5"
-   ],
-   "analysis": {},
-   "analysed_at": "",
-   "analysed_size": 0,
-   "analysis_model": ""
-  },
-  {
    "id": "se8584c600c322a36",
    "item_ids": [
     "e8584c600c322a36",
     "b22b5ec0ace948b4",
-    "8082677731b7c1c8"
+    "8082677731b7c1c8",
+    "db5be96d7ed497c5",
+    "52ca927951c34566"
    ],
    "analysis": {
     "relevant": true,
@@ -14109,12 +14134,29 @@
   {
    "id": "seadff97529943f5d",
    "item_ids": [
-    "eadff97529943f5d"
+    "eadff97529943f5d",
+    "edbe6a8c46224b4d"
    ],
-   "analysis": {},
-   "analysed_at": "",
-   "analysed_size": 0,
-   "analysis_model": ""
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Avio distingue Syensqo comme fournisseur de matières premières",
+    "summary": "Le lanceur italien Avio a récompensé le chimiste Syensqo pour sa fourniture de matières premières dans la chaîne d'approvisionnement spatiale.",
+    "why": "Illustre les liens de la chaîne industrielle des lanceurs européens, sans impact direct sur le géospatial.",
+    "tabs": [
+     "economie"
+    ],
+    "themes": [
+     "programmes"
+    ],
+    "industries": [],
+    "countries": [
+     "IT"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-10-27T07:33:36+01:00",
+   "analysed_size": 2,
+   "analysis_model": "claude_cli:sonnet"
   },
   {
    "id": "s88aec73ba29ebb84",
@@ -14156,40 +14198,6 @@
    "analysed_at": "",
    "analysed_size": 0,
    "analysis_model": ""
-  },
-  {
-   "id": "sc70a901b79fdca10",
-   "item_ids": [
-    "c70a901b79fdca10",
-    "876ea4f3862fe697",
-    "a44c03d81b7c4f55",
-    "bc80e8466f238630",
-    "24ed2232409554f1"
-   ],
-   "analysis": {
-    "relevant": true,
-    "title_fr": "AST SpaceMobile obtient l'autorisation de spectre au Brésil et signe avec quatre opérateurs",
-    "summary": "AST SpaceMobile reçoit l'approbation de l'Anatel pour le spectre S-band et la bande 700 MHz au Brésil, et conclut des accords avec quatre opérateurs régionaux.",
-    "why": "Cette expansion renforce la position d'AST SpaceMobile sur le marché latino-américain de la connectivité satellite-vers-mobile, concurrent du secteur.",
-    "tabs": [
-     "concurrents",
-     "marche"
-    ],
-    "themes": [
-     "programmes"
-    ],
-    "industries": [
-     "connectivite"
-    ],
-    "countries": [
-     "BR",
-     "US"
-    ],
-    "impact": "moyen"
-   },
-   "analysed_at": "2026-10-26T21:00:52+01:00",
-   "analysed_size": 2,
-   "analysis_model": "claude_cli:sonnet"
   },
   {
    "id": "s4ed42f592af8e48b",
@@ -14262,84 +14270,140 @@
    "analysis_model": ""
   },
   {
-   "id": "sbe8b7fc53a5ae9c9",
-   "item_ids": [
-    "be8b7fc53a5ae9c9"
-   ],
-   "analysis": {},
-   "analysed_at": "",
-   "analysed_size": 0,
-   "analysis_model": ""
-  },
-  {
    "id": "s95fd62381ea64832",
    "item_ids": [
     "95fd62381ea64832"
    ],
-   "analysis": {},
-   "analysed_at": "",
-   "analysed_size": 0,
-   "analysis_model": ""
+   "analysis": {
+    "relevant": false,
+    "title_fr": "JAXA prépare la mission MMX vers Phobos et Déimos",
+    "summary": "La JAXA prévoit de lancer la mission MMX pour explorer les lunes de Mars Phobos et Déimos et ramener des échantillons après trois ans d'étude.",
+    "why": "",
+    "tabs": [],
+    "themes": [],
+    "industries": [],
+    "countries": [
+     "JP"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-10-27T07:33:36+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
   },
   {
    "id": "sc15e0cdebc1f0952",
    "item_ids": [
-    "c15e0cdebc1f0952"
+    "c15e0cdebc1f0952",
+    "4b1388039a9b9c9a"
    ],
-   "analysis": {},
-   "analysed_at": "",
-   "analysed_size": 0,
-   "analysis_model": ""
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Rocket Lab : l'action chute de 25% après le retard du lanceur Neutron",
+    "summary": "L'action Rocket Lab a perdu 25% en raison du retard de son lanceur Neutron, mais des analystes voient un potentiel de hausse de près de 150%.",
+    "why": "Le retard de Neutron retarde l'accès de Rocket Lab au marché des lancements moyens, enjeu de concurrence pour les acteurs de lancement européens.",
+    "tabs": [
+     "concurrents"
+    ],
+    "themes": [
+     "lancements"
+    ],
+    "industries": [
+     "defense"
+    ],
+    "countries": [
+     "US"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-10-27T07:33:36+01:00",
+   "analysed_size": 2,
+   "analysis_model": "claude_cli:sonnet"
   },
   {
    "id": "s332a23b06c08de46",
    "item_ids": [
     "332a23b06c08de46"
    ],
-   "analysis": {},
-   "analysed_at": "",
-   "analysed_size": 0,
-   "analysis_model": ""
+   "analysis": {
+    "relevant": true,
+    "title_fr": "AUSA 2026 : lance-grenades semi-automatique et systèmes anti-drones présentés",
+    "summary": "Le salon de défense AUSA 2026 à Washington a présenté de nouvelles armes, drones et systèmes de protection contre les drones.",
+    "why": "Illustre la montée des besoins en contre-drones et surveillance, domaine connexe aux capacités de renseignement géospatial.",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [
+     "conflits"
+    ],
+    "industries": [
+     "defense",
+     "securite"
+    ],
+    "countries": [
+     "US"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-10-27T07:33:36+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
   },
   {
    "id": "s9564592976969bf1",
    "item_ids": [
-    "9564592976969bf1"
+    "9564592976969bf1",
+    "0e610c13260ef937"
    ],
-   "analysis": {},
-   "analysed_at": "",
-   "analysed_size": 0,
-   "analysis_model": ""
-  },
-  {
-   "id": "s4b1388039a9b9c9a",
-   "item_ids": [
-    "4b1388039a9b9c9a"
-   ],
-   "analysis": {},
-   "analysed_at": "",
-   "analysed_size": 0,
-   "analysis_model": ""
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Deutsche Bank abaisse son objectif de cours sur Eutelsat",
+    "summary": "Deutsche Bank Research a réduit son objectif de cours sur Eutelsat tout en maintenant sa recommandation neutre.",
+    "why": "Signal sur la perception financière d'Eutelsat, acteur satellite concurrent dans la connectivité.",
+    "tabs": [
+     "economie"
+    ],
+    "themes": [
+     "financements"
+    ],
+    "industries": [
+     "connectivite"
+    ],
+    "countries": [
+     "FR"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-10-27T07:33:36+01:00",
+   "analysed_size": 2,
+   "analysis_model": "claude_cli:sonnet"
   },
   {
    "id": "s93839e54dc6c90bd",
    "item_ids": [
     "93839e54dc6c90bd"
    ],
-   "analysis": {},
-   "analysed_at": "",
-   "analysed_size": 0,
-   "analysis_model": ""
-  },
-  {
-   "id": "s609892874a74462b",
-   "item_ids": [
-    "609892874a74462b"
-   ],
-   "analysis": {},
-   "analysed_at": "",
-   "analysed_size": 0,
-   "analysis_model": ""
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Le véhicule réutilisable de l'ESA s'écrase après l'échec du déploiement du parachute",
+    "summary": "Le démonstrateur de rentrée réutilisable de l'ESA s'est écrasé après une défaillance du parachute lors de son vol d'essai.",
+    "why": "Un échec technique freine les ambitions européennes de transport spatial réutilisable, enjeu pour l'autonomie spatiale européenne.",
+    "tabs": [
+     "concurrents",
+     "economie"
+    ],
+    "themes": [
+     "programmes"
+    ],
+    "industries": [
+     "defense"
+    ],
+    "countries": [],
+    "impact": "moyen"
+   },
+   "analysed_at": "2026-10-27T07:33:36+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
   },
   {
    "id": "s858b53e548acffad",
@@ -14348,13 +14412,15 @@
     "3e53ff0c56f1e0ae",
     "286913f003898005",
     "9530e0da49170dc0",
-    "5086fcec65b945cc"
+    "5086fcec65b945cc",
+    "563383174bed6e7e",
+    "631e71cfbac9d625"
    ],
    "analysis": {
     "relevant": true,
-    "title_fr": "SpaceX prévoit un lancement Starlink lundi soir depuis Vandenberg",
-    "summary": "SpaceX doit lancer une fusée Falcon 9 transportant des satellites Starlink depuis la base de Vandenberg lundi soir.",
-    "why": "Un lancement Starlink supplémentaire renforce la constellation de connectivité de SpaceX, concurrent indirect en services spatiaux.",
+    "title_fr": "SpaceX lance 27 satellites Starlink depuis Vandenberg",
+    "summary": "SpaceX a lancé 27 nouveaux satellites Starlink depuis la base spatiale de Vandenberg, poursuivant l'expansion de sa constellation.",
+    "why": "Confirme le rythme soutenu de déploiement de la constellation Starlink, renforçant la position dominante de SpaceX en connectivité.",
     "tabs": [
      "concurrents"
     ],
@@ -14369,59 +14435,124 @@
     ],
     "impact": "faible"
    },
-   "analysed_at": "2026-10-26T21:00:52+01:00",
-   "analysed_size": 2,
+   "analysed_at": "2026-10-27T07:33:36+01:00",
+   "analysed_size": 5,
    "analysis_model": "claude_cli:sonnet"
-  },
-  {
-   "id": "sd232187496399144",
-   "item_ids": [
-    "d232187496399144"
-   ],
-   "analysis": {},
-   "analysed_at": "",
-   "analysed_size": 0,
-   "analysis_model": ""
   },
   {
    "id": "se398854e7a238ee6",
    "item_ids": [
     "e398854e7a238ee6"
    ],
-   "analysis": {},
-   "analysed_at": "",
-   "analysed_size": 0,
-   "analysis_model": ""
+   "analysis": {
+    "relevant": true,
+    "title_fr": "CyberTech obtient la spécialité Imagerie d'Esri pour ses services d'analyse",
+    "summary": "CyberTech Systems and Software, partenaire Platinum d'Esri, a obtenu la spécialité Esri Imagery, reconnaissant son expertise en gestion et analyse de données d'imagerie en entreprise.",
+    "why": "Illustre la montée en puissance de l'écosystème logiciel autour de l'imagerie satellite, marché où Airbus doit se positionner face aux intégrateurs spécialisés.",
+    "tabs": [
+     "concurrents"
+    ],
+    "themes": [
+     "produits"
+    ],
+    "industries": [],
+    "countries": [
+     "US"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-10-27T07:33:36+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
   },
   {
    "id": "s6900fc39dbcc95c4",
    "item_ids": [
     "6900fc39dbcc95c4"
    ],
-   "analysis": {},
-   "analysed_at": "",
-   "analysed_size": 0,
-   "analysis_model": ""
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Telespazio et l'EUSPA signent l'extension du centre de contrôle Galileo de Fucino",
+    "summary": "Telespazio et l'Agence de l'UE pour le programme spatial (EUSPA) ont signé un accord pour agrandir le centre de contrôle Galileo de Fucino afin de préparer la constellation de seconde génération.",
+    "why": "Telespazio, filiale de Leonardo et Thales, renforce sa position sur les infrastructures sol européennes de PNT, segment clé pour la défense et la sécurité.",
+    "tabs": [
+     "economie",
+     "concurrents"
+    ],
+    "themes": [
+     "programmes"
+    ],
+    "industries": [
+     "defense",
+     "securite"
+    ],
+    "countries": [
+     "IT"
+    ],
+    "impact": "moyen"
+   },
+   "analysed_at": "2026-10-27T07:33:36+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
   },
   {
    "id": "s23eefb88a279a376",
    "item_ids": [
     "23eefb88a279a376"
    ],
-   "analysis": {},
-   "analysed_at": "",
-   "analysed_size": 0,
-   "analysis_model": ""
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Xona lève 250 M$ et lance six satellites pour un réseau de navigation commercial",
+    "summary": "Xona Space Systems a levé 250 millions de dollars en série D et mis en orbite six satellites pour son réseau de navigation commerciale, visant 50 satellites par an dès 2027.",
+    "why": "Une constellation PNT commerciale concurrente pourrait réduire la dépendance au GPS/Galileo et élargir l'offre de positionnement pour les clients défense et infrastructures.",
+    "tabs": [
+     "concurrents",
+     "economie"
+    ],
+    "themes": [
+     "financements",
+     "lancements"
+    ],
+    "industries": [
+     "defense",
+     "infrastructures"
+    ],
+    "countries": [
+     "US"
+    ],
+    "impact": "moyen"
+   },
+   "analysed_at": "2026-10-27T07:33:36+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
   },
   {
    "id": "seab5332a1ba02190",
    "item_ids": [
     "eab5332a1ba02190"
    ],
-   "analysis": {},
-   "analysed_at": "",
-   "analysed_size": 0,
-   "analysis_model": ""
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Sommet ESA à Rome : l'Europe face à un test critique sur le transport spatial",
+    "summary": "Le sommet de l'ESA à Rome met en lumière l'urgence pour l'Europe de réduire son retard en matière de transport spatial face aux Etats-Unis et à la Chine.",
+    "why": "L'issue du sommet pèsera sur les budgets et la souveraineté des lanceurs européens, un enjeu stratégique pour Airbus.",
+    "tabs": [
+     "geopolitique",
+     "economie"
+    ],
+    "themes": [
+     "budgets",
+     "programmes"
+    ],
+    "industries": [
+     "defense"
+    ],
+    "countries": [],
+    "impact": "moyen"
+   },
+   "analysed_at": "2026-10-27T07:33:36+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
   },
   {
    "id": "s2cc7dad505230497",
@@ -14460,70 +14591,152 @@
    "item_ids": [
     "c2e9028139b9119a"
    ],
-   "analysis": {},
-   "analysed_at": "",
-   "analysed_size": 0,
-   "analysis_model": ""
-  },
-  {
-   "id": "s5651e911526590f9",
-   "item_ids": [
-    "5651e911526590f9"
-   ],
-   "analysis": {},
-   "analysed_at": "",
-   "analysed_size": 0,
-   "analysis_model": ""
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Ottawa lance une consultation sur une loi spatiale canadienne et un plan PNT",
+    "summary": "La ministre canadienne de l'Industrie Mélanie Joly a ouvert une consultation sur un acte spatial encadrant les activités en orbite et le segment sol, avec un plan PNT.",
+    "why": "Une nouvelle réglementation canadienne pourrait redéfinir l'accès au marché spatial et les règles de segment sol pour les opérateurs étrangers.",
+    "tabs": [
+     "economie"
+    ],
+    "themes": [
+     "reglementation",
+     "programmes"
+    ],
+    "industries": [
+     "defense",
+     "connectivite"
+    ],
+    "countries": [
+     "CA"
+    ],
+    "impact": "moyen"
+   },
+   "analysed_at": "2026-10-27T07:33:36+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
   },
   {
    "id": "s6f8d8de1a4e03a07",
    "item_ids": [
     "6f8d8de1a4e03a07"
    ],
-   "analysis": {},
-   "analysed_at": "",
-   "analysed_size": 0,
-   "analysis_model": ""
+   "analysis": {
+    "relevant": false,
+    "title_fr": "Polémique en Inde sur le budget publicitaire de DD News face au salaire des scientifiques de l'ISRO",
+    "summary": "Une personnalité indienne critique les 15 crores dépensés par DD News comparés au salaire modeste du chef de l'ISRO, questionnant les priorités budgétaires.",
+    "why": "",
+    "tabs": [],
+    "themes": [],
+    "industries": [],
+    "countries": [
+     "IN"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-10-27T07:33:36+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
   },
   {
    "id": "sc9a28e3cb453fb6c",
    "item_ids": [
     "c9a28e3cb453fb6c"
    ],
-   "analysis": {},
-   "analysed_at": "",
-   "analysed_size": 0,
-   "analysis_model": ""
+   "analysis": {
+    "relevant": true,
+    "title_fr": "NV5 et CCCCC renforcent la résilience climatique des Caraïbes avec le lidar",
+    "summary": "NV5 et CCCCC utilisent des données lidar haute résolution pour aider les nations caribéennes à faire face à la montée des eaux et aux tempêtes.",
+    "why": "Illustre la demande croissante de données géospatiales pour l'adaptation climatique, un marché où Airbus est présent.",
+    "tabs": [
+     "marche"
+    ],
+    "themes": [
+     "appels_offres"
+    ],
+    "industries": [
+     "foret_environnement",
+     "infrastructures"
+    ],
+    "countries": [],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-10-27T07:33:36+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
   },
   {
    "id": "s31351d6404e56fd2",
    "item_ids": [
     "31351d6404e56fd2"
    ],
-   "analysis": {},
-   "analysed_at": "",
-   "analysed_size": 0,
-   "analysis_model": ""
+   "analysis": {
+    "relevant": true,
+    "title_fr": "La Space Force recherche des technologies commerciales pour moderniser ses réseaux",
+    "summary": "L'US Space Force cherche des solutions commerciales pour moderniser ses réseaux de données et ses logiciels.",
+    "why": "Une opportunité de marché pour les fournisseurs commerciaux de technologies spatiales et de données, dont les concurrents d'Airbus.",
+    "tabs": [
+     "marche"
+    ],
+    "themes": [
+     "appels_offres"
+    ],
+    "industries": [
+     "defense"
+    ],
+    "countries": [
+     "US"
+    ],
+    "impact": "moyen"
+   },
+   "analysed_at": "2026-10-27T07:33:36+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
   },
   {
    "id": "scd2a0da952be3a96",
    "item_ids": [
     "cd2a0da952be3a96"
    ],
-   "analysis": {},
-   "analysed_at": "",
-   "analysed_size": 0,
-   "analysis_model": ""
+   "analysis": {
+    "relevant": false,
+    "title_fr": "L'action OHB progresse de 9,06% face à la clôture Xetra",
+    "summary": "Le titre OHB a enregistré une hausse de 9,06% par rapport à sa clôture précédente sur Xetra, sans motif précis indiqué.",
+    "why": "",
+    "tabs": [],
+    "themes": [],
+    "industries": [],
+    "countries": [
+     "DE"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-10-27T07:33:36+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
   },
   {
    "id": "sb610545305bc7f7f",
    "item_ids": [
-    "b610545305bc7f7f"
+    "b610545305bc7f7f",
+    "1e6ab97270a4a8db"
    ],
-   "analysis": {},
-   "analysed_at": "",
-   "analysed_size": 0,
-   "analysis_model": ""
+   "analysis": {
+    "relevant": false,
+    "title_fr": "Règlement d'un recours collectif de 11 M$ lié à Planet Labs",
+    "summary": "Les anciens actionnaires de dMY Technology Group IV, qui a fusionné avec Planet Labs, peuvent réclamer leur part d'un règlement de 11 millions de dollars.",
+    "why": "",
+    "tabs": [],
+    "themes": [],
+    "industries": [],
+    "countries": [
+     "US"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-10-27T07:33:36+01:00",
+   "analysed_size": 2,
+   "analysis_model": "claude_cli:sonnet"
   },
   {
    "id": "sf120b3f6a0fee89c",
@@ -14532,485 +14745,944 @@
     "db3dc5d0ebd84bd2",
     "210982f6a8e464fe"
    ],
-   "analysis": {},
-   "analysed_at": "",
-   "analysed_size": 0,
-   "analysis_model": ""
+   "analysis": {
+    "relevant": false,
+    "title_fr": "Données de bilan financier de Rocket Lab (FWB:4XF)",
+    "summary": "Publication de données financières détaillées du titre Rocket Lab coté à Francfort, sans analyse qualitative.",
+    "why": "",
+    "tabs": [],
+    "themes": [],
+    "industries": [],
+    "countries": [
+     "CA",
+     "US"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-10-27T07:33:36+01:00",
+   "analysed_size": 3,
+   "analysis_model": "claude_cli:sonnet"
   },
   {
    "id": "s0169f074a9d2f80d",
    "item_ids": [
     "0169f074a9d2f80d"
    ],
-   "analysis": {},
-   "analysed_at": "",
-   "analysed_size": 0,
-   "analysis_model": ""
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Celeste de l'ESA démontre un service LEO-PNT complet en orbite",
+    "summary": "L'ESA a validé en orbite, de bout en bout, un service de positionnement, navigation et synchronisation en orbite basse avec sa mission Celeste.",
+    "why": "Une alternative européenne au GPS en orbite basse pourrait renforcer la souveraineté et concurrencer les futurs services PNT commerciaux.",
+    "tabs": [
+     "economie"
+    ],
+    "themes": [
+     "programmes"
+    ],
+    "industries": [
+     "defense",
+     "connectivite"
+    ],
+    "countries": [],
+    "impact": "moyen"
+   },
+   "analysed_at": "2026-10-27T07:33:36+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
   },
   {
    "id": "s56953120dd969fba",
    "item_ids": [
     "56953120dd969fba"
    ],
-   "analysis": {},
-   "analysed_at": "",
-   "analysed_size": 0,
-   "analysis_model": ""
-  },
-  {
-   "id": "sedd4d8e44d3a7e69",
-   "item_ids": [
-    "edd4d8e44d3a7e69"
-   ],
-   "analysis": {},
-   "analysed_at": "",
-   "analysed_size": 0,
-   "analysis_model": ""
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Rocket Lab franchit une étape tandis que Neutron et l'accord Iridium restent en attente",
+    "summary": "Rocket Lab a levé un obstacle réglementaire ou technique, alors que le lanceur Neutron et l'accord avec Iridium restent en suspens.",
+    "why": "Ces jalons conditionnent la montée en puissance d'un concurrent sur le lancement moyen et les services liés à Iridium.",
+    "tabs": [
+     "concurrents"
+    ],
+    "themes": [
+     "programmes",
+     "lancements"
+    ],
+    "industries": [
+     "defense",
+     "connectivite"
+    ],
+    "countries": [
+     "US"
+    ],
+    "impact": "moyen"
+   },
+   "analysed_at": "2026-10-27T07:33:36+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
   },
   {
    "id": "sac9fe696c4c8fc91",
    "item_ids": [
     "ac9fe696c4c8fc91"
    ],
-   "analysis": {},
-   "analysed_at": "",
-   "analysed_size": 0,
-   "analysis_model": ""
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Interview Vantor : GEOINT, IA et spatial commercial",
+    "summary": "Vantor, ex-Maxar Intelligence, évoque dans une interview ses positions sur le renseignement géospatial, l'IA et le spatial commercial.",
+    "why": "Vantor est un concurrent direct d'Airbus en imagerie et renseignement géospatial, ses orientations IA méritent d'être suivies.",
+    "tabs": [
+     "concurrents"
+    ],
+    "themes": [
+     "produits"
+    ],
+    "industries": [
+     "defense",
+     "securite"
+    ],
+    "countries": [
+     "US"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-10-27T07:33:36+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
   },
   {
    "id": "sba6620014e573d4d",
    "item_ids": [
     "ba6620014e573d4d"
    ],
-   "analysis": {},
-   "analysed_at": "",
-   "analysed_size": 0,
-   "analysis_model": ""
+   "analysis": {
+    "relevant": false,
+    "title_fr": "SpaceX contre Rocket Lab : avis d'investisseur sur la meilleure action spatiale",
+    "summary": "Un investisseur compare les actions SpaceX et Rocket Lab pour déterminer laquelle offre le meilleur potentiel boursier.",
+    "why": "",
+    "tabs": [],
+    "themes": [],
+    "industries": [],
+    "countries": [
+     "US"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-10-27T07:33:36+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
   },
   {
    "id": "scefdd5d463161ce8",
    "item_ids": [
     "cefdd5d463161ce8"
    ],
-   "analysis": {},
-   "analysed_at": "",
-   "analysed_size": 0,
-   "analysis_model": ""
-  },
-  {
-   "id": "s3f6b1e6515a47066",
-   "item_ids": [
-    "3f6b1e6515a47066"
-   ],
-   "analysis": {},
-   "analysed_at": "",
-   "analysed_size": 0,
-   "analysis_model": ""
+   "analysis": {
+    "relevant": true,
+    "title_fr": "L'action Rocket Lab progresse après une hausse de 137% du carnet de commandes",
+    "summary": "Rocket Lab a vu son action grimper de près de 4% après avoir annoncé une hausse de 137% de son carnet de commandes et plusieurs lancements réussis.",
+    "why": "Une forte croissance du carnet de commandes confirme la montée en puissance d'un concurrent direct en lancement et satellites.",
+    "tabs": [
+     "concurrents"
+    ],
+    "themes": [
+     "appels_offres",
+     "lancements"
+    ],
+    "industries": [
+     "defense"
+    ],
+    "countries": [
+     "US"
+    ],
+    "impact": "moyen"
+   },
+   "analysed_at": "2026-10-27T07:33:36+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
   },
   {
    "id": "s922573a7f8b6c01f",
    "item_ids": [
     "922573a7f8b6c01f"
    ],
-   "analysis": {},
-   "analysed_at": "",
-   "analysed_size": 0,
-   "analysis_model": ""
-  },
-  {
-   "id": "s4d42af804ba1cc74",
-   "item_ids": [
-    "4d42af804ba1cc74"
-   ],
-   "analysis": {},
-   "analysed_at": "",
-   "analysed_size": 0,
-   "analysis_model": ""
+   "analysis": {
+    "relevant": true,
+    "title_fr": "La FCC consulte sur la simplification des règles satellite pour les drones",
+    "summary": "L'autorité américaine des télécommunications lance une consultation pour simplifier les règles de communications satellite applicables aux drones.",
+    "why": "Une évolution réglementaire pourrait faciliter l'usage de liaisons satellite pour les drones, proche de la sécurité et de la connectivité.",
+    "tabs": [
+     "economie"
+    ],
+    "themes": [
+     "reglementation"
+    ],
+    "industries": [
+     "securite",
+     "connectivite"
+    ],
+    "countries": [
+     "US"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-10-27T07:33:36+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
   },
   {
    "id": "se3c4af9c1e3d6fad",
    "item_ids": [
     "e3c4af9c1e3d6fad"
    ],
-   "analysis": {},
-   "analysed_at": "",
-   "analysed_size": 0,
-   "analysis_model": ""
+   "analysis": {
+    "relevant": true,
+    "title_fr": "SpaceX teste le booster Super Heavy avant le vol Starship 15",
+    "summary": "SpaceX a réalisé un essai statique des moteurs du booster Super Heavy B22, lançant la campagne de préparation du 15e vol d'essai de Starship.",
+    "why": "Starship conditionne la capacité de lancement lourde future, un enjeu pour les concurrents et clients institutionnels.",
+    "tabs": [
+     "concurrents"
+    ],
+    "themes": [
+     "lancements"
+    ],
+    "industries": [],
+    "countries": [
+     "US"
+    ],
+    "impact": "moyen"
+   },
+   "analysed_at": "2026-10-27T07:33:36+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
   },
   {
    "id": "s7b2143c395e61d20",
    "item_ids": [
     "7b2143c395e61d20"
    ],
-   "analysis": {},
-   "analysed_at": "",
-   "analysed_size": 0,
-   "analysis_model": ""
+   "analysis": {
+    "relevant": false,
+    "title_fr": "Histoire de la première photo de la Terre prise depuis l'espace",
+    "summary": "Un article revient sur la première photographie de la Terre prise depuis l'espace, réalisée via une fusée V-2 après la Seconde Guerre mondiale.",
+    "why": "",
+    "tabs": [],
+    "themes": [],
+    "industries": [],
+    "countries": [],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-10-27T07:33:36+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
   },
   {
    "id": "s8c68f923fe64922d",
    "item_ids": [
     "8c68f923fe64922d"
    ],
-   "analysis": {},
-   "analysed_at": "",
-   "analysed_size": 0,
-   "analysis_model": ""
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Open Cosmos demande à l'UIT un report de délai pour sa constellation Connected Cosmos",
+    "summary": "Open Cosmos a soumis à l'UIT de nouvelles données de production satellite pour appuyer une demande de report du délai réglementaire de sa constellation Connected Cosmos.",
+    "why": "Un acteur émergent des petits satellites cherche à sécuriser ses droits spectraux, à suivre dans la concurrence géospatiale.",
+    "tabs": [
+     "concurrents",
+     "economie"
+    ],
+    "themes": [
+     "reglementation"
+    ],
+    "industries": [
+     "connectivite"
+    ],
+    "countries": [
+     "GB"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-10-27T07:33:36+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
   },
   {
    "id": "sd1cf958f51a5625d",
    "item_ids": [
     "d1cf958f51a5625d"
    ],
-   "analysis": {},
-   "analysed_at": "",
-   "analysed_size": 0,
-   "analysis_model": ""
+   "analysis": {
+    "relevant": true,
+    "title_fr": "L'action AST SpaceMobile progresse lundi, portée par les annonces sur les sites cellulaires SpaceX",
+    "summary": "Le titre AST SpaceMobile grimpe en bourse, probablement lié aux informations sur l'extension de SpaceX à 80 000 sites cellulaires.",
+    "why": "Mouvement boursier d'un concurrent sur le marché de la connectivité satellite-mobile.",
+    "tabs": [
+     "concurrents"
+    ],
+    "themes": [],
+    "industries": [
+     "connectivite"
+    ],
+    "countries": [
+     "US"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-10-27T07:33:36+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
   },
   {
    "id": "s1050a4e3024fa897",
    "item_ids": [
     "1050a4e3024fa897"
    ],
-   "analysis": {},
-   "analysed_at": "",
-   "analysed_size": 0,
-   "analysis_model": ""
+   "analysis": {
+    "relevant": false,
+    "title_fr": "Karman développe un parachute martien pour la NASA",
+    "summary": "L'entreprise Karman, basée à Huntington Beach, développe un système de parachute destiné aux missions martiennes de la NASA.",
+    "why": "",
+    "tabs": [],
+    "themes": [],
+    "industries": [],
+    "countries": [
+     "US"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-10-27T07:33:36+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
   },
   {
    "id": "s0cf412580782fc20",
    "item_ids": [
     "0cf412580782fc20"
    ],
-   "analysis": {},
-   "analysed_at": "",
-   "analysed_size": 0,
-   "analysis_model": ""
+   "analysis": {
+    "relevant": true,
+    "title_fr": "La Corée du Sud ouvre l'accès commercial aux infrastructures de défense spatiale (KASA)",
+    "summary": "L'Agence coréenne de l'espace (KASA) a annoncé le 26 octobre 2026 des réformes permettant aux entreprises spatiales commerciales d'accéder à l'entraide industrielle de défense et au centre spatial de Naro.",
+    "why": "Ouverture du marché spatial de défense coréen aux acteurs commerciaux, opportunité potentielle pour les fournisseurs internationaux.",
+    "tabs": [
+     "economie",
+     "geopolitique"
+    ],
+    "themes": [
+     "reglementation",
+     "programmes"
+    ],
+    "industries": [
+     "defense"
+    ],
+    "countries": [
+     "KR"
+    ],
+    "impact": "moyen"
+   },
+   "analysed_at": "2026-10-27T07:33:36+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
   },
   {
    "id": "s3f2fbe19c632f8a1",
    "item_ids": [
     "3f2fbe19c632f8a1"
    ],
-   "analysis": {},
-   "analysed_at": "",
-   "analysed_size": 0,
-   "analysis_model": ""
+   "analysis": {
+    "relevant": true,
+    "title_fr": "L'action Rocket Lab progresse grâce à un récent succès de lancement",
+    "summary": "Les investisseurs saluent un récent lancement réussi de Rocket Lab ainsi que de prochains catalyseurs attendus pour l'entreprise.",
+    "why": "Performance d'un concurrent lanceur dans le secteur spatial.",
+    "tabs": [
+     "concurrents"
+    ],
+    "themes": [
+     "lancements"
+    ],
+    "industries": [],
+    "countries": [
+     "US"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-10-27T07:33:36+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
   },
   {
    "id": "s26b2d256c577caf9",
    "item_ids": [
     "26b2d256c577caf9"
    ],
-   "analysis": {},
-   "analysed_at": "",
-   "analysed_size": 0,
-   "analysis_model": ""
+   "analysis": {
+    "relevant": true,
+    "title_fr": "SpaceX demande à la FCC d'ajouter la bande 902-928 MHz à sa couverture supplémentaire",
+    "summary": "SpaceX sollicite la FCC pour intégrer la bande de fréquence 902-928 MHz à son offre de couverture satellite-mobile complémentaire.",
+    "why": "Extension potentielle des capacités de connectivité directe de SpaceX, concurrent sur le marché de la connectivité sécurisée.",
+    "tabs": [
+     "concurrents",
+     "economie"
+    ],
+    "themes": [
+     "reglementation"
+    ],
+    "industries": [
+     "connectivite"
+    ],
+    "countries": [
+     "US"
+    ],
+    "impact": "moyen"
+   },
+   "analysed_at": "2026-10-27T07:33:36+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
   },
   {
    "id": "s6ab4d05461f1785c",
    "item_ids": [
     "6ab4d05461f1785c"
    ],
-   "analysis": {},
-   "analysed_at": "",
-   "analysed_size": 0,
-   "analysis_model": ""
+   "analysis": {
+    "relevant": true,
+    "title_fr": "L'IA de Google détecte davantage de panaches de méthane dans les données satellite de la NASA",
+    "summary": "Google utilise l'intelligence artificielle pour repérer de nouveaux panaches de méthane dans les données satellitaires de la NASA, améliorant la détection des émissions.",
+    "why": "Un acteur technologique renforce ses capacités d'analyse géospatiale environnementale, concurrence potentielle sur l'analytique satellite.",
+    "tabs": [
+     "concurrents"
+    ],
+    "themes": [
+     "produits"
+    ],
+    "industries": [
+     "ogme",
+     "foret_environnement"
+    ],
+    "countries": [
+     "US"
+    ],
+    "impact": "moyen"
+   },
+   "analysed_at": "2026-10-27T07:33:36+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
   },
   {
    "id": "s8dc5c674e9729b3e",
    "item_ids": [
     "8dc5c674e9729b3e"
    ],
-   "analysis": {},
-   "analysed_at": "",
-   "analysed_size": 0,
-   "analysis_model": ""
+   "analysis": {
+    "relevant": false,
+    "title_fr": "Une veste de Neil Armstrong et des actus Artemis III dans une newsletter spécialisée",
+    "summary": "Une newsletter consacrée au lancement spatial évoque la vente d'une veste de Neil Armstrong aux côtés d'actualités sur Artemis III.",
+    "why": "",
+    "tabs": [],
+    "themes": [],
+    "industries": [],
+    "countries": [
+     "US"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-10-27T07:33:36+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
   },
   {
    "id": "sd7c0462d0a56e5b6",
    "item_ids": [
-    "d7c0462d0a56e5b6"
-   ],
-   "analysis": {},
-   "analysed_at": "",
-   "analysed_size": 0,
-   "analysis_model": ""
-  },
-  {
-   "id": "sa967db933bf5c997",
-   "item_ids": [
+    "d7c0462d0a56e5b6",
     "a967db933bf5c997"
    ],
-   "analysis": {},
-   "analysed_at": "",
-   "analysed_size": 0,
-   "analysis_model": ""
-  },
-  {
-   "id": "s1c4636a66d915ef0",
-   "item_ids": [
-    "1c4636a66d915ef0"
-   ],
-   "analysis": {},
-   "analysed_at": "",
-   "analysed_size": 0,
-   "analysis_model": ""
-  },
-  {
-   "id": "sa6c7855fd46627a3",
-   "item_ids": [
-    "a6c7855fd46627a3"
-   ],
-   "analysis": {},
-   "analysed_at": "",
-   "analysed_size": 0,
-   "analysis_model": ""
+   "analysis": {
+    "relevant": true,
+    "title_fr": "La NASA confirme viser l'été 2027 pour le lancement des astronautes d'Artemis III",
+    "summary": "La NASA indique être en bonne voie pour lancer la mission habitée Artemis III vers la Lune à l'été 2027.",
+    "why": "Calendrier du programme lunaire américain, contexte pour les futurs besoins en observation et support spatial.",
+    "tabs": [
+     "economie"
+    ],
+    "themes": [
+     "programmes"
+    ],
+    "industries": [],
+    "countries": [
+     "US"
+    ],
+    "impact": "moyen"
+   },
+   "analysed_at": "2026-10-27T07:33:36+01:00",
+   "analysed_size": 2,
+   "analysis_model": "claude_cli:sonnet"
   },
   {
    "id": "s753c9cb723eeebdc",
    "item_ids": [
     "753c9cb723eeebdc"
    ],
-   "analysis": {},
-   "analysed_at": "",
-   "analysed_size": 0,
-   "analysis_model": ""
+   "analysis": {
+    "relevant": true,
+    "title_fr": "OHB sécurise un segment sol avant la conclusion d'un contrat satellite allemand de 10 Md€",
+    "summary": "Le groupe allemand OHB verrouille un segment sol 'éprouvé face aux catastrophes' juste avant la finalisation d'un contrat satellite national estimé à 10 milliards d'euros.",
+    "why": "OHB, concurrent direct d'Airbus, se positionne pour un contrat satellite majeur en Allemagne, risque pour l'accès au marché.",
+    "tabs": [
+     "concurrents",
+     "marche"
+    ],
+    "themes": [
+     "appels_offres",
+     "programmes"
+    ],
+    "industries": [
+     "defense",
+     "securite"
+    ],
+    "countries": [
+     "DE"
+    ],
+    "impact": "fort"
+   },
+   "analysed_at": "2026-10-27T07:33:36+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
   },
   {
    "id": "s222f7d18248a94c7",
    "item_ids": [
     "222f7d18248a94c7"
    ],
-   "analysis": {},
-   "analysed_at": "",
-   "analysed_size": 0,
-   "analysis_model": ""
-  },
-  {
-   "id": "s857404e9c78b5f64",
-   "item_ids": [
-    "857404e9c78b5f64"
-   ],
-   "analysis": {},
-   "analysed_at": "",
-   "analysed_size": 0,
-   "analysis_model": ""
+   "analysis": {
+    "relevant": false,
+    "title_fr": "La NASA organise une réunion publique de sa communauté scientifique",
+    "summary": "La NASA tient un 'town hall' destiné à sa communauté scientifique, sans annonce spécifique exploitable.",
+    "why": "",
+    "tabs": [],
+    "themes": [],
+    "industries": [],
+    "countries": [
+     "US"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-10-27T07:33:36+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
   },
   {
    "id": "s1fc79fd335abd4b0",
    "item_ids": [
     "1fc79fd335abd4b0"
    ],
-   "analysis": {},
-   "analysed_at": "",
-   "analysed_size": 0,
-   "analysis_model": ""
+   "analysis": {
+    "relevant": false,
+    "title_fr": "Le rover Perseverance bat un record de distance parcourue sur Mars",
+    "summary": "La NASA annonce que son rover Perseverance a établi un nouveau record de distance totale parcourue hors de la Terre.",
+    "why": "",
+    "tabs": [],
+    "themes": [],
+    "industries": [],
+    "countries": [
+     "US"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-10-27T07:33:36+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
   },
   {
    "id": "sde1437cf0cdb8fe1",
    "item_ids": [
     "de1437cf0cdb8fe1"
    ],
-   "analysis": {},
-   "analysed_at": "",
-   "analysed_size": 0,
-   "analysis_model": ""
+   "analysis": {
+    "relevant": false,
+    "title_fr": "Mention isolée : Stelios Tziortzis",
+    "summary": "Le sujet ne contient qu'un nom propre sans contexte exploitable pour la veille.",
+    "why": "",
+    "tabs": [],
+    "themes": [],
+    "industries": [],
+    "countries": [],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-10-27T07:33:36+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
   },
   {
    "id": "s45dd8776984028a5",
    "item_ids": [
     "45dd8776984028a5"
    ],
-   "analysis": {},
-   "analysed_at": "",
-   "analysed_size": 0,
-   "analysis_model": ""
+   "analysis": {
+    "relevant": true,
+    "title_fr": "La DGA accélère son rythme face à l'urgence militaire, y compris dans le spatial",
+    "summary": "La Direction générale de l'armement française change de méthode pour répondre plus vite aux besoins militaires urgents, notamment dans le spatial et sur le programme Rafale.",
+    "why": "Une DGA plus rapide peut accélérer les commandes de capacités spatiales de défense, opportunité pour Airbus Defence and Space.",
+    "tabs": [
+     "economie",
+     "geopolitique"
+    ],
+    "themes": [
+     "budgets",
+     "programmes"
+    ],
+    "industries": [
+     "defense"
+    ],
+    "countries": [
+     "FR"
+    ],
+    "impact": "moyen"
+   },
+   "analysed_at": "2026-10-27T07:33:36+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
   },
   {
    "id": "s02f73760f9834a69",
    "item_ids": [
     "02f73760f9834a69"
    ],
-   "analysis": {},
-   "analysed_at": "",
-   "analysed_size": 0,
-   "analysis_model": ""
-  },
-  {
-   "id": "sbf0fcff0c4c9eabe",
-   "item_ids": [
-    "bf0fcff0c4c9eabe"
-   ],
-   "analysis": {},
-   "analysed_at": "",
-   "analysed_size": 0,
-   "analysis_model": ""
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Le marché des systèmes de contrôle environnemental pour le tourisme suborbital en forte croissance",
+    "summary": "Un rapport de marché anticipe une forte croissance du secteur du contrôle environnemental pour le tourisme suborbital, citant Airbus, Thales et Safran parmi les acteurs clés.",
+    "why": "Signale l'intérêt croissant pour le tourisme spatial, secteur périphérique à l'activité géospatiale d'Airbus.",
+    "tabs": [
+     "economie"
+    ],
+    "themes": [
+     "produits"
+    ],
+    "industries": [],
+    "countries": [
+     "FR"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-10-27T07:33:36+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
   },
   {
    "id": "se468fc2b0bd51e3e",
    "item_ids": [
     "e468fc2b0bd51e3e"
    ],
-   "analysis": {},
-   "analysed_at": "",
-   "analysed_size": 0,
-   "analysis_model": ""
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Saft se lance dans les batteries tout-solide pour l'aéronautique et le spatial",
+    "summary": "Saft développe des batteries tout-solide à électrolyte sulfure et polymère pour électrifier l'aéronautique et le spatial.",
+    "why": "Nouveau fournisseur de batteries pour l'électrification des équipements spatiaux, un enjeu pour la chaîne d'approvisionnement du secteur.",
+    "tabs": [
+     "economie"
+    ],
+    "themes": [
+     "programmes"
+    ],
+    "industries": [],
+    "countries": [
+     "FR"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-10-27T07:33:36+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
   },
   {
    "id": "s46afcbbf302fdb16",
    "item_ids": [
     "46afcbbf302fdb16"
    ],
-   "analysis": {},
-   "analysed_at": "",
-   "analysed_size": 0,
-   "analysis_model": ""
+   "analysis": {
+    "relevant": true,
+    "title_fr": "L'USDA corrige un rapport sur les récoltes : la NASA peut-elle améliorer les données ?",
+    "summary": "Après une correction d'un rapport sur la production agricole, la question se pose de savoir si une collaboration avec la NASA pourrait améliorer la fiabilité des données.",
+    "why": "Souligne le besoin de données d'observation de la Terre plus fiables pour les statistiques agricoles publiques.",
+    "tabs": [
+     "economie"
+    ],
+    "themes": [
+     "programmes"
+    ],
+    "industries": [
+     "agriculture"
+    ],
+    "countries": [
+     "US"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-10-27T07:33:36+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
   },
   {
    "id": "sf15a28a5592bb5f7",
    "item_ids": [
     "f15a28a5592bb5f7"
    ],
-   "analysis": {},
-   "analysed_at": "",
-   "analysed_size": 0,
-   "analysis_model": ""
+   "analysis": {
+    "relevant": false,
+    "title_fr": "SpaceX se négocie désormais comme une valeur liée à l'IA",
+    "summary": "L'action SpaceX serait valorisée par les marchés comme une entreprise d'intelligence artificielle plutôt que spatiale.",
+    "why": "",
+    "tabs": [
+     "economie"
+    ],
+    "themes": [
+     "financements"
+    ],
+    "industries": [],
+    "countries": [
+     "US"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-10-27T07:33:36+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
   },
   {
    "id": "se812aaa5fd3344b9",
    "item_ids": [
     "e812aaa5fd3344b9"
    ],
-   "analysis": {},
-   "analysed_at": "",
-   "analysed_size": 0,
-   "analysis_model": ""
+   "analysis": {
+    "relevant": false,
+    "title_fr": "La NASA invite les médias à une simulation d'atterrissage lunaire en Californie",
+    "summary": "La NASA organise un événement médiatique de simulation d'atterrissage lunaire en Californie.",
+    "why": "",
+    "tabs": [
+     "economie"
+    ],
+    "themes": [
+     "programmes"
+    ],
+    "industries": [],
+    "countries": [
+     "US"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-10-27T07:33:36+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
   },
   {
    "id": "s9ec17ae62af2ab90",
    "item_ids": [
-    "9ec17ae62af2ab90"
+    "9ec17ae62af2ab90",
+    "b28fc44b875fcfea"
    ],
-   "analysis": {},
-   "analysed_at": "",
-   "analysed_size": 0,
-   "analysis_model": ""
+   "analysis": {
+    "relevant": false,
+    "title_fr": "Le pare-soleil de la mission NEO Surveyor de la NASA validé",
+    "summary": "Le pare-soleil de la future mission de détection d'astéroïdes NEO Surveyor de la NASA a passé avec succès une revue technique au Colorado.",
+    "why": "",
+    "tabs": [],
+    "themes": [],
+    "industries": [],
+    "countries": [
+     "US"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-10-27T07:33:36+01:00",
+   "analysed_size": 2,
+   "analysis_model": "claude_cli:sonnet"
   },
   {
    "id": "s60ec8fd89fc83625",
    "item_ids": [
     "60ec8fd89fc83625"
    ],
-   "analysis": {},
-   "analysed_at": "",
-   "analysed_size": 0,
-   "analysis_model": ""
+   "analysis": {
+    "relevant": false,
+    "title_fr": "Le patron de la NASA pilote un survol lors d'un match de football universitaire",
+    "summary": "Jared Isaacman, administrateur de la NASA, a réalisé un survol lors d'un match de football au stade Bryant-Denny.",
+    "why": "",
+    "tabs": [
+     "economie"
+    ],
+    "themes": [],
+    "industries": [],
+    "countries": [
+     "US"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-10-27T07:33:36+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
   },
   {
    "id": "s5a176eb31aec64b5",
    "item_ids": [
-    "5a176eb31aec64b5"
+    "5a176eb31aec64b5",
+    "e00109f84bc453d5"
    ],
-   "analysis": {},
-   "analysed_at": "",
-   "analysed_size": 0,
-   "analysis_model": ""
-  },
-  {
-   "id": "s47884325a07cf5b6",
-   "item_ids": [
-    "47884325a07cf5b6"
-   ],
-   "analysis": {},
-   "analysed_at": "",
-   "analysed_size": 0,
-   "analysis_model": ""
-  },
-  {
-   "id": "sfd043b8a733f03c3",
-   "item_ids": [
-    "fd043b8a733f03c3"
-   ],
-   "analysis": {},
-   "analysed_at": "",
-   "analysed_size": 0,
-   "analysis_model": ""
-  },
-  {
-   "id": "sabeb11795a9f9f97",
-   "item_ids": [
-    "abeb11795a9f9f97"
-   ],
-   "analysis": {},
-   "analysed_at": "",
-   "analysed_size": 0,
-   "analysis_model": ""
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Verizon relève ses prévisions et alerte la FCC sur le réseau mobile de SpaceX",
+    "summary": "Verizon publie des résultats supérieurs aux attentes et relève ses prévisions, tout en alertant le régulateur FCC sur le développement du réseau satellite-mobile de SpaceX.",
+    "why": "Révèle la pression concurrentielle exercée par les offres satellite-mobile de SpaceX sur les opérateurs télécoms traditionnels.",
+    "tabs": [
+     "concurrents",
+     "economie"
+    ],
+    "themes": [
+     "reglementation"
+    ],
+    "industries": [
+     "connectivite"
+    ],
+    "countries": [
+     "US"
+    ],
+    "impact": "moyen"
+   },
+   "analysed_at": "2026-10-27T07:33:36+01:00",
+   "analysed_size": 2,
+   "analysis_model": "claude_cli:sonnet"
   },
   {
    "id": "s9231a43586f95ff6",
    "item_ids": [
     "9231a43586f95ff6"
    ],
-   "analysis": {},
-   "analysed_at": "",
-   "analysed_size": 0,
-   "analysis_model": ""
+   "analysis": {
+    "relevant": false,
+    "title_fr": "Elon Musk prédit une consolidation du secteur du cloud IA",
+    "summary": "Elon Musk met en garde contre une vague de disparitions et de consolidations dans l'industrie du cloud IA, questionnant la spécificité de SpaceX.",
+    "why": "",
+    "tabs": [
+     "economie"
+    ],
+    "themes": [],
+    "industries": [],
+    "countries": [
+     "US"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-10-27T07:33:36+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
   },
   {
    "id": "s9a017087aaa01d51",
    "item_ids": [
     "9a017087aaa01d51"
    ],
-   "analysis": {},
-   "analysed_at": "",
-   "analysed_size": 0,
-   "analysis_model": ""
+   "analysis": {
+    "relevant": false,
+    "title_fr": "Les espoirs d'une fusion Tesla-SpaceX font chuter les paris baissiers à un plus bas de 11 ans",
+    "summary": "Les anticipations d'une fusion entre Tesla et SpaceX provoquent une baisse des positions baissières sur l'action Tesla à leur plus bas niveau en 11 ans.",
+    "why": "",
+    "tabs": [
+     "economie"
+    ],
+    "themes": [
+     "financements"
+    ],
+    "industries": [],
+    "countries": [
+     "US"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-10-27T07:33:36+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
   },
   {
    "id": "sb694755c0e29bb71",
    "item_ids": [
     "b694755c0e29bb71"
    ],
-   "analysis": {},
-   "analysed_at": "",
-   "analysed_size": 0,
-   "analysis_model": ""
+   "analysis": {
+    "relevant": false,
+    "title_fr": "L'IPO d'Anthropic profiterait indirectement à SpaceX via les dépenses de calcul IA",
+    "summary": "SpaceX pourrait bénéficier des dépenses informatiques d'Anthropic dans la perspective de son introduction en bourse.",
+    "why": "",
+    "tabs": [
+     "economie"
+    ],
+    "themes": [
+     "financements"
+    ],
+    "industries": [],
+    "countries": [
+     "US"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-10-27T07:33:36+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
   },
   {
    "id": "s1d48cf93847b57f0",
    "item_ids": [
-    "1d48cf93847b57f0"
+    "1d48cf93847b57f0",
+    "fd043b8a733f03c3",
+    "47884325a07cf5b6"
    ],
-   "analysis": {},
-   "analysed_at": "",
-   "analysed_size": 0,
-   "analysis_model": ""
-  },
-  {
-   "id": "se00109f84bc453d5",
-   "item_ids": [
-    "e00109f84bc453d5"
-   ],
-   "analysis": {},
-   "analysed_at": "",
-   "analysed_size": 0,
-   "analysis_model": ""
+   "analysis": {
+    "relevant": false,
+    "title_fr": "Une action en justice vise à annuler un accord fiscal de SpaceX en Louisiane",
+    "summary": "Des habitants et un groupe citoyen poursuivent en justice pour annuler un accord fiscal accordé à SpaceX, alléguant des réunions secrètes irrégulières.",
+    "why": "",
+    "tabs": [
+     "economie"
+    ],
+    "themes": [],
+    "industries": [],
+    "countries": [
+     "US"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-10-27T07:33:36+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
   },
   {
    "id": "sf31c67657522204f",
    "item_ids": [
     "f31c67657522204f"
    ],
-   "analysis": {},
-   "analysed_at": "",
-   "analysed_size": 0,
-   "analysis_model": ""
+   "analysis": {
+    "relevant": false,
+    "title_fr": "SpaceX conclurait un accord de 40 Md$ avec Apollo pour son expansion IA",
+    "summary": "SpaceX aurait signé un accord de financement de 40 milliards de dollars avec la société Apollo pour accélérer son expansion dans l'intelligence artificielle.",
+    "why": "",
+    "tabs": [
+     "economie"
+    ],
+    "themes": [
+     "financements"
+    ],
+    "industries": [],
+    "countries": [
+     "US"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-10-27T07:33:36+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
   },
   {
    "id": "s827a5310dd5781c8",
    "item_ids": [
-    "827a5310dd5781c8"
+    "827a5310dd5781c8",
+    "5f3ff4733eb43c87",
+    "1c4636a66d915ef0"
    ],
    "analysis": {
     "relevant": true,
@@ -15038,18 +15710,21 @@
   {
    "id": "sa283b3f1a8891c22",
    "item_ids": [
-    "a283b3f1a8891c22"
+    "a283b3f1a8891c22",
+    "e52d454ada14ae2d",
+    "b74165c34c93d89e",
+    "a6c7855fd46627a3",
+    "4d42af804ba1cc74"
    ],
    "analysis": {
     "relevant": true,
-    "title_fr": "Rocket Lab : l'action progresse malgré le retard de la fusée Neutron",
-    "summary": "L'action de Rocket Lab a grimpé de 4% malgré l'annonce d'un nouveau report du lancement de sa fusée Neutron.",
-    "why": "Rocket Lab est un concurrent dans le lancement de petits satellites, segment clé pour l'accès à l'orbite des charges géospatiales.",
+    "title_fr": "L'action Rocket Lab progresse malgré un nouveau retard du lanceur Neutron",
+    "summary": "Le titre Rocket Lab a grimpé de 4% après le succès d'un lancement Electron, malgré l'annonce d'un nouveau retard du lanceur moyen Neutron.",
+    "why": "Le retard de Neutron repousse l'arrivée d'un concurrent sur le marché des lancements moyens, utile pour l'accès à l'orbite des constellations géospatiales.",
     "tabs": [
      "concurrents"
     ],
     "themes": [
-     "lancements",
      "produits"
     ],
     "industries": [],
@@ -15058,8 +15733,8 @@
     ],
     "impact": "faible"
    },
-   "analysed_at": "2026-10-26T21:00:52+01:00",
-   "analysed_size": 1,
+   "analysed_at": "2026-10-27T07:33:36+01:00",
+   "analysed_size": 3,
    "analysis_model": "claude_cli:sonnet"
   },
   {
@@ -15070,23 +15745,21 @@
    ],
    "analysis": {
     "relevant": true,
-    "title_fr": "Intuitive Machines : l'action chute de 30% sur fond de litige contractuel",
-    "summary": "L'action d'Intuitive Machines a perdu environ 30% suite à des problèmes liés à un contrat, selon la presse financière américaine.",
-    "why": "Intuitive Machines est un acteur des services lunaires et spatiaux ; ses difficultés contractuelles illustrent les risques financiers du secteur.",
+    "title_fr": "L'action Intuitive Machines chute de 30% en un mois",
+    "summary": "Le titre d'Intuitive Machines a perdu 30% de sa valeur en un mois, dans un contexte de difficultés contractuelles évoquées mais non détaillées.",
+    "why": "Signale de possibles difficultés chez un acteur américain des services lunaires, à surveiller pour la concurrence sur les contrats institutionnels.",
     "tabs": [
      "concurrents"
     ],
-    "themes": [
-     "financements"
-    ],
+    "themes": [],
     "industries": [],
     "countries": [
      "US"
     ],
     "impact": "faible"
    },
-   "analysed_at": "2026-10-26T21:00:52+01:00",
-   "analysed_size": 1,
+   "analysed_at": "2026-10-27T07:33:36+01:00",
+   "analysed_size": 2,
    "analysis_model": "claude_cli:sonnet"
   },
   {
@@ -15160,7 +15833,8 @@
   {
    "id": "sa3a025bbfe633d85",
    "item_ids": [
-    "a3a025bbfe633d85"
+    "a3a025bbfe633d85",
+    "f735279382f8405d"
    ],
    "analysis": {
     "relevant": true,
@@ -15272,6 +15946,1158 @@
     "impact": "moyen"
    },
    "analysed_at": "2026-10-26T21:00:52+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s2a42cb17f028e7ae",
+   "item_ids": [
+    "2a42cb17f028e7ae"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sa70c6e84200b0b9b",
+   "item_ids": [
+    "a70c6e84200b0b9b"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s1656a6fdde63f530",
+   "item_ids": [
+    "1656a6fdde63f530"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s388fefe59f6a11f7",
+   "item_ids": [
+    "388fefe59f6a11f7"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "se091803fd4726376",
+   "item_ids": [
+    "e091803fd4726376"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s212d98f04956bb32",
+   "item_ids": [
+    "212d98f04956bb32"
+   ],
+   "analysis": {
+    "relevant": false,
+    "title_fr": "Alerte actionnaires concernant AST SpaceMobile",
+    "summary": "Une alerte juridique invite les actionnaires d'AST SpaceMobile à se faire connaître dans le cadre d'une possible action collective.",
+    "why": "",
+    "tabs": [],
+    "themes": [],
+    "industries": [],
+    "countries": [
+     "US"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-10-27T07:33:36+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s3269b09709895694",
+   "item_ids": [
+    "3269b09709895694"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "AST SpaceMobile pousse son approbation réglementaire au Brésil face aux zones blanches routières",
+    "summary": "AST SpaceMobile intensifie ses démarches réglementaires au Brésil, où la moitié des autoroutes manquent de couverture mobile, pour accéder à la plus grande économie d'Amérique latine.",
+    "why": "Expansion d'un concurrent direct de la connectivité satellite vers mobile sur un nouveau marché majeur.",
+    "tabs": [
+     "marche",
+     "concurrents"
+    ],
+    "themes": [
+     "reglementation",
+     "produits"
+    ],
+    "industries": [
+     "connectivite"
+    ],
+    "countries": [
+     "BR",
+     "US"
+    ],
+    "impact": "moyen"
+   },
+   "analysed_at": "2026-10-27T07:33:36+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "sec5654ad5bce2e73",
+   "item_ids": [
+    "ec5654ad5bce2e73",
+    "5651e911526590f9"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "EasyJet choisit Starlink pour équiper sa flotte en connectivité à bord",
+    "summary": "La compagnie low-cost britannique EasyJet va déployer le Wi-Fi Starlink de SpaceX sur sa flotte d'Airbus, une première pour la connectivité en vol chez le transporteur.",
+    "why": "Nouveau gain commercial pour Starlink face aux autres offres de connectivité satellite en aviation.",
+    "tabs": [
+     "concurrents"
+    ],
+    "themes": [
+     "produits"
+    ],
+    "industries": [
+     "connectivite"
+    ],
+    "countries": [
+     "GB",
+     "US"
+    ],
+    "impact": "moyen"
+   },
+   "analysed_at": "2026-10-27T07:33:36+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s319292471200b3b6",
+   "item_ids": [
+    "319292471200b3b6"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Flexell Space ouvre une filiale française pour renforcer sa présence européenne",
+    "summary": "Flexell Space crée Flexell Space France SAS à Paris pour soutenir des discussions de contrats et de production de volume avec des clients européens.",
+    "why": "Signale l'implantation d'un nouveau fournisseur dans la chaîne industrielle spatiale européenne.",
+    "tabs": [
+     "economie"
+    ],
+    "themes": [
+     "programmes"
+    ],
+    "industries": [],
+    "countries": [
+     "FR"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-10-27T07:33:36+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "sa82b81197759d887",
+   "item_ids": [
+    "a82b81197759d887",
+    "3f6b1e6515a47066"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "ST Engineering iDirect fournira le réseau sol du satellite souverain omanais MB Sat-1",
+    "summary": "ST Engineering iDirect va fournir le réseau sol du microGEO souverain MB Sat-1, construit par Astranis pour MBSat (groupe Mohammed Al Barwani) à Oman.",
+    "why": "Illustre la demande croissante pour des satellites de connectivité souveraine, un marché où Airbus est aussi présent.",
+    "tabs": [
+     "marche",
+     "concurrents"
+    ],
+    "themes": [
+     "appels_offres",
+     "produits"
+    ],
+    "industries": [
+     "connectivite"
+    ],
+    "countries": [
+     "OM",
+     "US"
+    ],
+    "impact": "moyen"
+   },
+   "analysed_at": "2026-10-27T07:33:36+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s5fff66d12171333a",
+   "item_ids": [
+    "5fff66d12171333a"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Astranis réserve un Falcon 9 dédié pour lancer 6 satellites MicroGEO en 2028",
+    "summary": "Astranis a opté pour un lancement Falcon 9 dédié afin de mettre en orbite six satellites MicroGEO de sa quatrième série en 2028, injectés directement sur orbite.",
+    "why": "Renforce la montée en puissance d'un concurrent sur le marché des petits satellites GEO et de la connectivité souveraine.",
+    "tabs": [
+     "concurrents"
+    ],
+    "themes": [
+     "lancements",
+     "produits"
+    ],
+    "industries": [
+     "connectivite"
+    ],
+    "countries": [
+     "US"
+    ],
+    "impact": "moyen"
+   },
+   "analysed_at": "2026-10-27T07:33:36+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "sa3d1aa6f15f38f1d",
+   "item_ids": [
+    "a3d1aa6f15f38f1d"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "La restructuration du programme satellitaire météo de la NOAA fait craindre une rupture de données",
+    "summary": "La réorganisation du programme de satellites météorologiques de la NOAA pourrait créer une lacune dans la collecte de données climatiques et météo.",
+    "why": "Une rupture de données météo satellitaires affecterait les secteurs dépendants de l'observation de la Terre comme l'agriculture et le maritime.",
+    "tabs": [
+     "economie"
+    ],
+    "themes": [
+     "budgets",
+     "reglementation"
+    ],
+    "industries": [
+     "agriculture",
+     "maritime",
+     "foret_environnement"
+    ],
+    "countries": [
+     "US"
+    ],
+    "impact": "moyen"
+   },
+   "analysed_at": "2026-10-27T07:33:36+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "sac4c81c15ab4f7d8",
+   "item_ids": [
+    "ac4c81c15ab4f7d8"
+   ],
+   "analysis": {
+    "relevant": false,
+    "title_fr": "L'action Rocket Lab surperforme le marché boursier",
+    "summary": "Le titre Rocket Lab (RKLB) a dépassé la performance générale du marché boursier le 26 octobre.",
+    "why": "",
+    "tabs": [],
+    "themes": [],
+    "industries": [],
+    "countries": [],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-10-27T07:33:36+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "sd2ab1876446e0c19",
+   "item_ids": [
+    "d2ab1876446e0c19"
+   ],
+   "analysis": {
+    "relevant": false,
+    "title_fr": "L'équipage simulé de la NASA pour Mars se prépare à revenir à la vie normale",
+    "summary": "Les participants d'une mission analogue martienne de la NASA se préparent à sortir de leur habitat simulé.",
+    "why": "",
+    "tabs": [],
+    "themes": [],
+    "industries": [],
+    "countries": [],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-10-27T07:33:36+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s28eb3f5010a79afa",
+   "item_ids": [
+    "28eb3f5010a79afa"
+   ],
+   "analysis": {
+    "relevant": false,
+    "title_fr": "Un administrateur d'Intuitive Machines reçoit des actions gratuites",
+    "summary": "Le directeur Christopher Scolese a reçu 11 798 unités d'actions d'Intuitive Machines (LUNR).",
+    "why": "",
+    "tabs": [],
+    "themes": [],
+    "industries": [],
+    "countries": [],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-10-27T07:33:36+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s10b4a36cd225331e",
+   "item_ids": [
+    "10b4a36cd225331e"
+   ],
+   "analysis": {
+    "relevant": false,
+    "title_fr": "L'observatoire Swift de la NASA achève 20 ans d'étude des explosions cosmiques",
+    "summary": "Le télescope Swift de la NASA met fin à une mission de 20 ans consacrée à l'étude des explosions les plus puissantes de l'univers.",
+    "why": "",
+    "tabs": [],
+    "themes": [],
+    "industries": [],
+    "countries": [],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-10-27T07:33:36+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s0a090a475cc2769a",
+   "item_ids": [
+    "0a090a475cc2769a"
+   ],
+   "analysis": {
+    "relevant": false,
+    "title_fr": "Volumes élevés d'options sur l'action Rocket Lab le 26 octobre",
+    "summary": "70 873 contrats d'options sur Rocket Lab ont été échangés le 26 octobre, avec 1,32 million de positions ouvertes.",
+    "why": "",
+    "tabs": [],
+    "themes": [],
+    "industries": [],
+    "countries": [],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-10-27T07:33:36+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "sfb36192b5c200742",
+   "item_ids": [
+    "fb36192b5c200742"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "La Space Force promeut 69 Gardiens aux grades E8 et E9",
+    "summary": "L'US Space Force a sélectionné 69 Gardiens pour une promotion aux grades de sous-officiers supérieurs E8 et E9.",
+    "why": "",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [],
+    "industries": [
+     "defense"
+    ],
+    "countries": [
+     "US"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-10-27T07:33:36+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "sfddc0a0dbd8b79ab",
+   "item_ids": [
+    "fddc0a0dbd8b79ab"
+   ],
+   "analysis": {
+    "relevant": false,
+    "title_fr": "Le rover Perseverance de la NASA observe la poussière de Neretva Vallis sur Mars",
+    "summary": "Le rover Perseverance a capturé des images de dépôts de poussière dans la région de Neretva Vallis sur Mars.",
+    "why": "",
+    "tabs": [],
+    "themes": [],
+    "industries": [],
+    "countries": [],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-10-27T07:33:36+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "sa4dca652bf2cc08f",
+   "item_ids": [
+    "a4dca652bf2cc08f"
+   ],
+   "analysis": {
+    "relevant": false,
+    "title_fr": "Inspection des cellules solaires de la mission NEO Surveyor de la NASA",
+    "summary": "La NASA a inspecté les cellules solaires de son télescope NEO Surveyor dédié à la détection d'astéroïdes.",
+    "why": "",
+    "tabs": [],
+    "themes": [],
+    "industries": [],
+    "countries": [],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-10-27T07:33:36+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "sf4bff9302b25db1c",
+   "item_ids": [
+    "f4bff9302b25db1c"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "AST SpaceMobile annoncera ses résultats du 3e trimestre 2026 le 9 novembre",
+    "summary": "AST SpaceMobile organisera une conférence téléphonique sur ses résultats du troisième trimestre 2026 le 9 novembre 2026.",
+    "why": "Permet de suivre l'avancée du déploiement de la connectivité satellite directe aux mobiles, marché concurrent des réseaux terrestres.",
+    "tabs": [
+     "concurrents"
+    ],
+    "themes": [
+     "produits"
+    ],
+    "industries": [
+     "connectivite"
+    ],
+    "countries": [
+     "US"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-10-27T07:33:36+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "sbca1841b1a5740cd",
+   "item_ids": [
+    "bca1841b1a5740cd"
+   ],
+   "analysis": {
+    "relevant": false,
+    "title_fr": "Le satellite TESS de la NASA cartographie le ciel et révèle des milliers d'exoplanètes",
+    "summary": "La mission TESS de la NASA a compilé 96 tranches du ciel en une carte révélant 679 exoplanètes confirmées et 5165 candidates.",
+    "why": "",
+    "tabs": [],
+    "themes": [],
+    "industries": [],
+    "countries": [],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-10-27T07:33:36+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "sa3b8a47e1e67b6b6",
+   "item_ids": [
+    "a3b8a47e1e67b6b6"
+   ],
+   "analysis": {
+    "relevant": false,
+    "title_fr": "Le télescope Subaru collabore avec un télescope spatial de la NASA",
+    "summary": "L'observatoire Subaru sur le Maunakea s'associe à un télescope spatial de la NASA pour des observations conjointes.",
+    "why": "",
+    "tabs": [],
+    "themes": [],
+    "industries": [],
+    "countries": [],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-10-27T07:33:36+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "sc0a2a3b772f96fcd",
+   "item_ids": [
+    "c0a2a3b772f96fcd"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "AT&T et Amazon Leo s'associent pour étendre le haut débit satellite aux entreprises",
+    "summary": "AT&T et Amazon Leo (ex-Kuiper) annoncent un partenariat pour proposer un service de connectivité satellite aux entreprises américaines.",
+    "why": "Accélère la concurrence sur la connectivité sécurisée par satellite, un marché stratégique pour les offres géospatiales et télécoms.",
+    "tabs": [
+     "concurrents",
+     "marche"
+    ],
+    "themes": [
+     "produits",
+     "programmes"
+    ],
+    "industries": [
+     "connectivite"
+    ],
+    "countries": [
+     "US"
+    ],
+    "impact": "moyen"
+   },
+   "analysed_at": "2026-10-27T07:33:36+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s27f4dcf65faee39b",
+   "item_ids": [
+    "27f4dcf65faee39b"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Rocket Lab : ventes d'actions d'initiés alors que l'accord Iridium avance et des programmes défense secrets sont évoqués",
+    "summary": "Des dirigeants de Rocket Lab ont vendu 5,5 M$ d'actions pendant que l'accord avec Iridium progresse et que le PDG évoque des programmes de défense confidentiels.",
+    "why": "Rocket Lab, concurrent direct, renforce ses liens avec la défense américaine, un signal à surveiller pour la compétition sur les contrats institutionnels.",
+    "tabs": [
+     "concurrents"
+    ],
+    "themes": [
+     "programmes",
+     "financements"
+    ],
+    "industries": [
+     "defense"
+    ],
+    "countries": [
+     "US"
+    ],
+    "impact": "moyen"
+   },
+   "analysed_at": "2026-10-27T07:33:36+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s236a94ec8274f08c",
+   "item_ids": [
+    "236a94ec8274f08c"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "La NASA observe un possible épisode El Niño majeur dans le Pacifique",
+    "summary": "La NASA signale un bombement océanique dans le Pacifique similaire à celui de 1997, annonçant un épisode El Niño potentiellement plus intense.",
+    "why": "Les données satellitaires d'observation climatique illustrent la demande pour le suivi environnemental par imagerie spatiale.",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [
+     "crises"
+    ],
+    "industries": [
+     "foret_environnement"
+    ],
+    "countries": [
+     "US"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-10-27T07:33:36+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s89752823ee4a4d37",
+   "item_ids": [
+    "89752823ee4a4d37"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "AST SpaceMobile accélère la production de ses satellites BlueBird à Midland",
+    "summary": "AST SpaceMobile étend sa capacité de production de satellites BlueBird sur son site de Midland, au Texas, malgré des inquiétudes d'investisseurs particuliers.",
+    "why": "Renforce la montée en cadence d'un concurrent sur la connectivité satellite directe aux mobiles, marché clé de la connectivité sécurisée.",
+    "tabs": [
+     "concurrents"
+    ],
+    "themes": [
+     "produits"
+    ],
+    "industries": [
+     "connectivite"
+    ],
+    "countries": [
+     "US"
+    ],
+    "impact": "moyen"
+   },
+   "analysed_at": "2026-10-27T07:33:36+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s9d8aabaca6e207e4",
+   "item_ids": [
+    "9d8aabaca6e207e4"
+   ],
+   "analysis": {
+    "relevant": false,
+    "title_fr": "Un ancien astronaute de la NASA visite un collège lors d'une tournée politique",
+    "summary": "Un ancien astronaute de la NASA intervient dans un collège local dans le cadre d'une tournée intitulée 'Vote for Freedom'.",
+    "why": "",
+    "tabs": [],
+    "themes": [],
+    "industries": [],
+    "countries": [
+     "US"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-10-27T07:33:36+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s78f60b64e28c9253",
+   "item_ids": [
+    "78f60b64e28c9253"
+   ],
+   "analysis": {
+    "relevant": false,
+    "title_fr": "Des traders misent sur une fusion SpaceX-Tesla via des options",
+    "summary": "Un article financier décrit une vente de put à 22 M$ sur SpaceX liée à des spéculations de fusion avec Tesla.",
+    "why": "",
+    "tabs": [],
+    "themes": [],
+    "industries": [],
+    "countries": [
+     "US"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-10-27T07:33:36+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s584a95bebcad4c58",
+   "item_ids": [
+    "584a95bebcad4c58",
+    "707f8a9bad552e40",
+    "bf0fcff0c4c9eabe"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "La NASA présente une stratégie de base lunaire estimée à 20 milliards de dollars",
+    "summary": "La NASA dévoile un plan ambitieux d'environ 20 milliards de dollars pour établir une base lunaire, détaillant les grandes lignes du programme.",
+    "why": "Un budget lunaire de cette ampleur structure la demande en capacités spatiales et peut créer des opportunités pour les acteurs géospatiaux.",
+    "tabs": [
+     "economie"
+    ],
+    "themes": [
+     "budgets",
+     "programmes"
+    ],
+    "industries": [],
+    "countries": [
+     "US"
+    ],
+    "impact": "moyen"
+   },
+   "analysed_at": "2026-10-27T07:33:36+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s9baf157bb852c8d9",
+   "item_ids": [
+    "9baf157bb852c8d9",
+    "808d12e45115ac77",
+    "b205b3cf4f5961ea"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Boryung s'associe au DLR pour les sciences de la vie spatiales",
+    "summary": "La société sud-coréenne Boryung a conclu un partenariat avec le Centre aérospatial allemand (DLR), devenant son premier client potentiel pour ses activités de sciences de la vie spatiales.",
+    "why": "",
+    "tabs": [
+     "economie"
+    ],
+    "themes": [
+     "programmes"
+    ],
+    "industries": [],
+    "countries": [
+     "DE"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-10-27T07:33:36+01:00",
+   "analysed_size": 2,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s1ee89154d61c2300",
+   "item_ids": [
+    "1ee89154d61c2300"
+   ],
+   "analysis": {
+    "relevant": false,
+    "title_fr": "La NASA met fin à la mission du télescope Swift après son entrée atmosphérique",
+    "summary": "La NASA termine la mission du télescope de sursauts gamma Swift, qui se dirige vers une rentrée atmosphérique à 171 miles d'altitude.",
+    "why": "",
+    "tabs": [],
+    "themes": [],
+    "industries": [],
+    "countries": [
+     "US"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-10-27T07:33:36+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "se749c0a52acf24be",
+   "item_ids": [
+    "e749c0a52acf24be",
+    "55170daf681efd31"
+   ],
+   "analysis": {
+    "relevant": false,
+    "title_fr": "Spéculation sur une fusion Tesla-SpaceX évoquée par Kevin O'Leary",
+    "summary": "L'investisseur Kevin O'Leary spécule sur une éventuelle fusion entre Tesla et SpaceX après une démonstration du Roadster, sans annonce officielle.",
+    "why": "",
+    "tabs": [],
+    "themes": [],
+    "industries": [],
+    "countries": [
+     "US"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-10-27T07:33:36+01:00",
+   "analysed_size": 2,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "sbb5308e5921bcbf8",
+   "item_ids": [
+    "bb5308e5921bcbf8"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Le cyclone Arnab menace la mission de relance du système NavIC de l'ISRO",
+    "summary": "Le cyclone Arnab complique les préparatifs de l'ISRO pour relancer son système de navigation NavIC en Inde.",
+    "why": "Souligne la vulnérabilité des opérations spatiales indiennes aux risques climatiques, un facteur pour les partenariats régionaux.",
+    "tabs": [
+     "concurrents",
+     "geopolitique"
+    ],
+    "themes": [
+     "crises"
+    ],
+    "industries": [],
+    "countries": [
+     "IN"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-10-27T07:33:36+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s411d17d70dddd551",
+   "item_ids": [
+    "411d17d70dddd551"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Cowboy Space dévoile un lanceur avec data center orbital 'Big Iron'",
+    "summary": "La startup Cowboy Space présente Big Iron, un lanceur dont l'étage supérieur reste en orbite pour fonctionner comme data center de classe mégawatt.",
+    "why": "Ouvre une nouvelle concurrence sur le calcul en orbite, pouvant répondre aux besoins de traitement des données géospatiales dans l'espace.",
+    "tabs": [
+     "concurrents"
+    ],
+    "themes": [
+     "produits",
+     "lancements"
+    ],
+    "industries": [
+     "connectivite"
+    ],
+    "countries": [],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-10-27T07:33:36+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s8c992e0a5a7f1af3",
+   "item_ids": [
+    "8c992e0a5a7f1af3"
+   ],
+   "analysis": {
+    "relevant": false,
+    "title_fr": "Elon Musk évoque une possible fusion entre SpaceX et Tesla",
+    "summary": "Elon Musk déclare qu'une fusion entre SpaceX et Tesla serait une bonne idée, un article analysant les implications pour les investisseurs.",
+    "why": "",
+    "tabs": [],
+    "themes": [],
+    "industries": [],
+    "countries": [
+     "US"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-10-27T07:33:36+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "sf688878cfadbbcaf",
+   "item_ids": [
+    "f688878cfadbbcaf"
+   ],
+   "analysis": {
+    "relevant": false,
+    "title_fr": "Un ancien astronaute de la NASA intervient lors d'un événement 'Liftoff'",
+    "summary": "Un astronaute retraité de la NASA prend la parole lors d'un événement public intitulé 'Liftoff: Red Rock to Red Planet'.",
+    "why": "",
+    "tabs": [],
+    "themes": [],
+    "industries": [],
+    "countries": [
+     "US"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-10-27T07:33:36+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s788510259619c656",
+   "item_ids": [
+    "788510259619c656"
+   ],
+   "analysis": {
+    "relevant": false,
+    "title_fr": "Cours de l'action Planet Labs publié par un site de cotation crypto",
+    "summary": "Un site de cotation lié aux cryptomonnaies publie le cours boursier de Planet Labs sans information sur son activité.",
+    "why": "",
+    "tabs": [],
+    "themes": [],
+    "industries": [],
+    "countries": [
+     "US"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-10-27T07:33:36+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s44e0f4c661a3d3fa",
+   "item_ids": [
+    "44e0f4c661a3d3fa",
+    "0004d4b3711e7292",
+    "68f214319ffd525a",
+    "cd5d6210a6d7ad73"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Blue Origin accélère la construction d'un nouveau pas de tir pour New Glenn agrandi",
+    "summary": "Blue Origin avance la construction d'un nouveau pas de tir destiné à une version plus grande de son lanceur New Glenn aux États-Unis.",
+    "why": "Renforce la capacité de lancement d'un concurrent direct dans les lanceurs lourds, un enjeu pour l'accès à l'orbite des charges géospatiales.",
+    "tabs": [
+     "concurrents"
+    ],
+    "themes": [
+     "lancements",
+     "produits"
+    ],
+    "industries": [],
+    "countries": [
+     "US"
+    ],
+    "impact": "moyen"
+   },
+   "analysed_at": "2026-10-27T07:33:36+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "sdc482c605686cc39",
+   "item_ids": [
+    "dc482c605686cc39"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Rubio affirme que SpaceX, et non la Maison Blanche, contrôle Starlink en Ukraine",
+    "summary": "Le secrétaire d'État Marco Rubio déclare que c'est SpaceX, non la Maison Blanche, qui contrôle l'accès au service Starlink utilisé par l'Ukraine, après que Trump a dit ignorer qui en était responsable.",
+    "why": "Révèle l'incertitude sur le contrôle d'une infrastructure satellite critique pour l'Ukraine, enjeu stratégique pour la connectivité sécurisée en conflit.",
+    "tabs": [
+     "geopolitique",
+     "concurrents"
+    ],
+    "themes": [
+     "conflits"
+    ],
+    "industries": [
+     "defense",
+     "connectivite"
+    ],
+    "countries": [
+     "UA",
+     "US"
+    ],
+    "impact": "moyen"
+   },
+   "analysed_at": "2026-10-27T07:33:36+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "sedb7f08c26615748",
+   "item_ids": [
+    "edb7f08c26615748"
+   ],
+   "analysis": {
+    "relevant": false,
+    "title_fr": "Conseil d'investissement spéculatif sur l'action SpaceX",
+    "summary": "Article d'incitation à l'investissement sur une hypothétique action SpaceX, sans information factuelle nouvelle.",
+    "why": "",
+    "tabs": [
+     "economie"
+    ],
+    "themes": [],
+    "industries": [],
+    "countries": [
+     "US"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-10-27T07:33:36+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "sb0867c77fbdd9942",
+   "item_ids": [
+    "b0867c77fbdd9942"
+   ],
+   "analysis": {
+    "relevant": false,
+    "title_fr": "Valorisations évoquées lors du dossier d'IPO d'Anthropic",
+    "summary": "Article financier mentionnant des valorisations d'Amazon et SpaceX dans le cadre du dossier d'introduction en bourse d'Anthropic.",
+    "why": "",
+    "tabs": [
+     "economie"
+    ],
+    "themes": [
+     "financements"
+    ],
+    "industries": [],
+    "countries": [
+     "US"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-10-27T07:33:36+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "se2586f992d5ac1cb",
+   "item_ids": [
+    "e2586f992d5ac1cb"
+   ],
+   "analysis": {
+    "relevant": false,
+    "title_fr": "Musk prédit des échecs parmi les sociétés de cloud IA",
+    "summary": "Article d'investissement spéculant sur l'action SpaceX après des propos de Musk sur les futures défaillances des sociétés de cloud IA.",
+    "why": "",
+    "tabs": [
+     "concurrents"
+    ],
+    "themes": [],
+    "industries": [],
+    "countries": [
+     "US"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-10-27T07:33:36+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s9706891daade20c1",
+   "item_ids": [
+    "9706891daade20c1"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Telesat Lightspeed nécessitera 14 lancements SpaceX",
+    "summary": "La constellation Telesat Lightspeed devrait nécessiter 14 lancements effectués par SpaceX pour être déployée.",
+    "why": "SpaceX consolide son rôle de lanceur incontournable pour les constellations concurrentes de connectivité.",
+    "tabs": [
+     "concurrents"
+    ],
+    "themes": [
+     "lancements"
+    ],
+    "industries": [
+     "connectivite"
+    ],
+    "countries": [
+     "US",
+     "CA"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-10-27T07:33:36+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s3ca1b599dc88725c",
+   "item_ids": [
+    "3ca1b599dc88725c"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Le Gigabay de SpaceX prend forme à Starbase",
+    "summary": "SpaceX construit un vaste bâtiment 'Gigabay' à Starbase, dans le cadre d'une expansion massive du site de production de Starship.",
+    "why": "Renforce la capacité industrielle de SpaceX, principal concurrent pour les lancements et les constellations.",
+    "tabs": [
+     "concurrents"
+    ],
+    "themes": [
+     "programmes"
+    ],
+    "industries": [],
+    "countries": [
+     "US"
+    ],
+    "impact": "moyen"
+   },
+   "analysed_at": "2026-10-27T07:33:36+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s74cab5e8a4a2a4b9",
+   "item_ids": [
+    "74cab5e8a4a2a4b9"
+   ],
+   "analysis": {
+    "relevant": false,
+    "title_fr": "Portrait d'un testeur d'odeurs pour la NASA",
+    "summary": "Article biographique sur un ancien pompier devenu testeur de matériaux par l'odorat pour la NASA.",
+    "why": "",
+    "tabs": [
+     "concurrents"
+    ],
+    "themes": [],
+    "industries": [],
+    "countries": [
+     "US"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-10-27T07:33:36+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "scc1d68d461de7340",
+   "item_ids": [
+    "cc1d68d461de7340"
+   ],
+   "analysis": {
+    "relevant": false,
+    "title_fr": "Une bourse NASA pour des travaux sur le refroidissement d'électronique",
+    "summary": "Un chercheur reçoit une bourse de la NASA pour ses travaux sur le refroidissement de composants électroniques puissants.",
+    "why": "",
+    "tabs": [
+     "concurrents"
+    ],
+    "themes": [],
+    "industries": [],
+    "countries": [
+     "US"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-10-27T07:33:36+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s84a425f9e10a0bd5",
+   "item_ids": [
+    "84a425f9e10a0bd5"
+   ],
+   "analysis": {
+    "relevant": false,
+    "title_fr": "Portrait d'un ancien technicien aérospatial devenu cadre à la NASA",
+    "summary": "Article biographique sur la carrière d'un ancien technicien aérospatial de la NASA devenu cadre dirigeant.",
+    "why": "",
+    "tabs": [
+     "concurrents"
+    ],
+    "themes": [],
+    "industries": [],
+    "countries": [
+     "US"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-10-27T07:33:36+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "sd8cba0a2dd1092a0",
+   "item_ids": [
+    "d8cba0a2dd1092a0"
+   ],
+   "analysis": {
+    "relevant": false,
+    "title_fr": "Portrait d'une couturière de la NASA pour la navette spatiale",
+    "summary": "Article biographique sur une employée de la NASA ayant confectionné à la main les isolants thermiques de la navette.",
+    "why": "",
+    "tabs": [
+     "concurrents"
+    ],
+    "themes": [],
+    "industries": [],
+    "countries": [
+     "US"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-10-27T07:33:36+01:00",
    "analysed_size": 1,
    "analysis_model": "claude_cli:sonnet"
   }
