@@ -1,0 +1,112 @@
+# Veille géopolitique : sources et familles de thèmes.
+#
+# Chaque article d'une source géopolitique n'est gardé que si son titre (ou son extrait pour les
+# flux éditeurs) contient au moins une expression d'une famille ci-dessous. La famille sert aussi
+# de thème « par défaut » tant que Claude n'a pas analysé le sujet.
+# Expressions : insensibles à la casse et aux accents, mots entiers, pluriels simples acceptés ;
+# `patterns_cs` pour les sigles sensibles à la casse.
+
+themes:
+  conflits:
+    patterns: [war, warfare, airstrike, air strike, missile, missiles, drone strike, drone attack,
+               troops, offensive, ceasefire, invasion, military, militants, insurgents, jihadist,
+               rebels, shelling, bombing, frontline, nuclear weapon, arms race, rearmament, NATO,
+               defence spending, defense spending, navy, warship, naval,
+               guerre, frappe, frappes, missile balistique, drone, troupes, offensive, cessez-le-feu,
+               militaire, armée, insurgés, djihadiste, rebelles, bombardement, front, OTAN,
+               réarmement, arme nucléaire, marine nationale]
+    patterns_cs: [ICBM, IDF]
+  sanctions:
+    patterns: [sanction, sanctions, embargo, export control, export controls, export ban, tariff,
+               tariffs, trade war, entity list, blacklist, price cap, decoupling,
+               contrôle des exportations, droits de douane, guerre commerciale, liste noire,
+               interdiction d'exporter, plafonnement des prix]
+  ressources:
+    patterns: [oil, crude, gas, LNG, pipeline, refinery, mining, mine, mines, miner, lithium, cobalt,
+               copper, nickel, uranium, rare earth, rare earths, critical minerals, shipping,
+               tanker, cargo ship, container ship, strait, Red Sea, Hormuz, Suez, Panama Canal,
+               South China Sea, Arctic, undersea cable, subsea cable, fishing, piracy, maritime,
+               pétrole, brut, gaz, GNL, gazoduc, oléoduc, raffinerie, minier, minière, lithium,
+               cuivre, terres rares, minerais critiques, transport maritime, pétrolier, détroit,
+               mer Rouge, canal de Suez, mer de Chine, Arctique, câble sous-marin, pêche,
+               piraterie]
+  crises:
+    patterns: [earthquake, flood, flooding, floods, wildfire, wildfires, drought, cyclone, hurricane,
+               typhoon, tsunami, volcano, eruption, landslide, heatwave, famine, humanitarian,
+               refugees, displaced, coup, putsch, protests, unrest, riots, state of emergency,
+               climate, disaster, séisme, tremblement de terre, inondation, inondations, incendie,
+               feux de forêt, sécheresse, ouragan, typhon, volcan, glissement de terrain, canicule,
+               humanitaire, réfugiés, déplacés, coup d'État, putsch, manifestations, émeutes,
+               état d'urgence, catastrophe, climat]
+
+# Titres écartés même s'ils contiennent un mot-clé (sport, culture, vie pratique…).
+exclude: [football, soccer, Premier League, Champions League, Ligue des champions, rugby, tennis,
+          cricket, Formula 1, Formule 1, box office, recipe, recette, horoscope, celebrity,
+          fashion, music, musique, film, movie, série, quiz, crossword, mots croisés,
+          weather forecast, météo du jour, gas station, prix de l'essence]
+
+# Flux éditeurs vérifiés le 2026-10-26 (HTTP 200, entrées récentes).
+#   max_items   articles les plus récents gardés par passage (certains flux renvoient des mois d'archives)
+#   title_only  le filtre par famille ne regarde que le titre (flux aux extraits trop larges)
+feeds:
+  - {name: GDACS (alertes catastrophes), url: "https://www.gdacs.org/xml/rss.xml", lang: en,
+     theme: crises, title_include_regex: '^(Orange|Red) '}
+  - {name: ReliefWeb, url: "https://reliefweb.int/updates/rss.xml", lang: en, title_only: true}
+  - {name: Crisis Group, url: "https://www.crisisgroup.org/rss.xml", lang: en}
+  - {name: War on the Rocks, url: "https://warontherocks.com/feed/", lang: en, title_only: true, max_items: 20}
+  - {name: The Diplomat, url: "https://thediplomat.com/feed/", lang: en, max_items: 20}
+  - {name: Foreign Policy, url: "https://foreignpolicy.com/feed/", lang: en}
+  - {name: Defense News – Global, url: "https://www.defensenews.com/global/feed/", lang: en}
+  - {name: Le Monde – International, url: "https://www.lemonde.fr/international/rss_full.xml", lang: fr}
+  - {name: France 24, url: "https://www.france24.com/fr/rss", lang: fr}
+  - {name: RFI, url: "https://www.rfi.fr/fr/rss", lang: fr}
+  - {name: BBC World, url: "https://feeds.bbci.co.uk/news/world/rss.xml", lang: en}
+  - {name: Al Jazeera, url: "https://www.aljazeera.com/xml/rss/all.xml", lang: en}
+  - {name: The Guardian – World, url: "https://www.theguardian.com/world/rss", lang: en}
+  - {name: gCaptain, url: "https://gcaptain.com/feed/", lang: en, theme: ressources}
+  - {name: OilPrice, url: "https://oilprice.com/rss/main", lang: en, theme: ressources}
+
+# Recherches Google News par thème (titre filtré par les expressions du thème).
+searches:
+  - {theme: conflits, edition: en, query: '"Ukraine" war OR front OR offensive'}
+  - {theme: conflits, edition: en, query: 'Israel Iran OR Gaza OR Lebanon military'}
+  - {theme: conflits, edition: en, query: '"Taiwan Strait" OR "PLA" military drills'}
+  - {theme: conflits, edition: en, query: 'Sahel OR Mali OR "Burkina Faso" OR Niger jihadist OR junta'}
+  - {theme: conflits, edition: en, query: 'Sudan war OR RSF'}
+  - {theme: conflits, edition: en, query: '"North Korea" missile launch'}
+  - {theme: conflits, edition: en, query: 'NATO defence spending OR rearmament'}
+  - {theme: conflits, edition: fr, query: 'guerre Ukraine OR Sahel OR "mer Rouge" armée'}
+  - {theme: sanctions, edition: en, query: 'sanctions Russia OR Iran OR "North Korea"'}
+  - {theme: sanctions, edition: en, query: '"export controls" China chips OR technology OR satellite'}
+  - {theme: sanctions, edition: en, query: 'tariffs "trade war"'}
+  - {theme: sanctions, edition: fr, query: 'sanctions OR "droits de douane" OR embargo'}
+  - {theme: ressources, edition: en, query: '"critical minerals" OR "rare earths" China OR export'}
+  - {theme: ressources, edition: en, query: '"Red Sea" OR Houthi shipping'}
+  - {theme: ressources, edition: en, query: '"Strait of Hormuz" OR "South China Sea" tanker OR navy'}
+  - {theme: ressources, edition: en, query: 'oil gas pipeline OR LNG attack OR sanctions'}
+  - {theme: ressources, edition: en, query: 'Arctic shipping OR military OR resources'}
+  - {theme: ressources, edition: en, query: '"illegal fishing" OR "dark fleet" OR "shadow fleet"'}
+  - {theme: ressources, edition: fr, query: '"terres rares" OR "minerais critiques" OR "mer Rouge"'}
+  - {theme: crises, edition: en, query: 'earthquake OR tsunami OR "volcanic eruption" deadly'}
+  - {theme: crises, edition: en, query: 'floods OR wildfire OR drought disaster'}
+  - {theme: crises, edition: en, query: 'coup OR "state of emergency" OR unrest government'}
+  - {theme: crises, edition: fr, query: 'séisme OR inondations OR "feux de forêt" OR "coup d''État"'}
+
+search_settings:
+  when: 2d                  # fenêtre de la mise à jour quotidienne
+  backfill_when: 14d
+  max_items_per_query: 15
+
+# GDELT (base mondiale d'articles de presse) : bruyant, donc titre filtré et requêtes espacées.
+gdelt:
+  enabled: true
+  url: https://api.gdeltproject.org/api/v2/doc/doc
+  delay_seconds: 12         # la limite affichée est d'une requête toutes les 5 secondes, en pratique plus stricte
+  retry_after_seconds: 20   # nouvel essai unique après un refus (HTTP 429)
+  timespan: 24h
+  max_records: 40
+  queries:
+    - {theme: conflits, query: '(airstrike OR offensive OR "military drills" OR ceasefire) sourcelang:english'}
+    - {theme: sanctions, query: '(sanctions OR "export controls" OR embargo) sourcelang:english'}
+    - {theme: ressources, query: '("critical minerals" OR "rare earths" OR "Red Sea" OR "Strait of Hormuz" OR "shadow fleet") sourcelang:english'}
+    - {theme: crises, query: '(earthquake OR floods OR wildfire OR coup) sourcelang:english'}

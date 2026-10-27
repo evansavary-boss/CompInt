@@ -4,6 +4,8 @@
 # accents, mots entiers, pluriels simples acceptés), ou s'il cite une entité de ce pays.
 #   aliases     noms et gentilés en français et en anglais
 #   aliases_cs  sigles sensibles à la casse (US, UK, UAE…)
+#   num         code ISO 3166 numérique (relie le pays au fond de carte)
+#   capital     capitale (affichée sur la fiche pays)
 # Mettre entre guillemets les codes que YAML lirait comme un booléen ("NO" pour la Norvège).
 
 regions:
@@ -18,76 +20,216 @@ regions:
 
 countries:
   # ------------------------------------------------------------ Europe
-  FR: {name: France, region: europe, aliases: [France, French, français, française]}
-  DE: {name: Allemagne, region: europe, aliases: [Germany, German, Allemagne, allemand, allemande]}
-  IT: {name: Italie, region: europe, aliases: [Italy, Italian, Italie, italien, italienne]}
-  ES: {name: Espagne, region: europe, aliases: [Spain, Spanish, Espagne, espagnol, espagnole]}
-  GB: {name: Royaume-Uni, region: europe, aliases: [United Kingdom, Britain, British, Royaume-Uni, britannique], aliases_cs: [UK]}
-  BE: {name: Belgique, region: europe, aliases: [Belgium, Belgian, Belgique, belge]}
-  NL: {name: Pays-Bas, region: europe, aliases: [Netherlands, Dutch, Pays-Bas, néerlandais, néerlandaise]}
-  LU: {name: Luxembourg, region: europe, aliases: [Luxembourg, luxembourgeois, luxembourgeoise]}
-  PT: {name: Portugal, region: europe, aliases: [Portugal, Portuguese, portugais, portugaise]}
-  SE: {name: Suède, region: europe, aliases: [Sweden, Swedish, Suède, suédois, suédoise]}
-  "NO": {name: Norvège, region: europe, aliases: [Norway, Norwegian, Norvège, norvégien, norvégienne]}
-  FI: {name: Finlande, region: europe, aliases: [Finland, Finnish, Finlande, finlandais, finlandaise]}
-  DK: {name: Danemark, region: europe, aliases: [Denmark, Danish, Danemark, danois, danoise]}
-  PL: {name: Pologne, region: europe, aliases: [Poland, Polish, Pologne, polonais, polonaise]}
-  CZ: {name: Tchéquie, region: europe, aliases: [Czech Republic, Czechia, Czech, Tchéquie, République tchèque, tchèque]}
-  AT: {name: Autriche, region: europe, aliases: [Austria, Austrian, Autriche, autrichien, autrichienne]}
-  CH: {name: Suisse, region: europe, aliases: [Switzerland, Swiss, Suisse]}
-  GR: {name: Grèce, region: europe, aliases: [Greece, Greek, Grèce]}
-  RO: {name: Roumanie, region: europe, aliases: [Romania, Romanian, Roumanie, roumain, roumaine]}
-  HU: {name: Hongrie, region: europe, aliases: [Hungary, Hungarian, Hongrie, hongrois, hongroise]}
-  IE: {name: Irlande, region: europe, aliases: [Ireland, Irish, Irlande, irlandais, irlandaise]}
-  EE: {name: Estonie, region: europe, aliases: [Estonia, Estonian, Estonie]}
-  LT: {name: Lituanie, region: europe, aliases: [Lithuania, Lithuanian, Lituanie]}
-  LV: {name: Lettonie, region: europe, aliases: [Latvia, Latvian, Lettonie]}
-  UA: {name: Ukraine, region: europe, aliases: [Ukraine, Ukrainian, ukrainien, ukrainienne]}
+  FR: {name: France, region: europe, num: "250", capital: "Paris", aliases: [France, French, français, française]}
+  DE: {name: Allemagne, region: europe, num: "276", capital: "Berlin", aliases: [Germany, German, Allemagne, allemand, allemande]}
+  IT: {name: Italie, region: europe, num: "380", capital: "Rome", aliases: [Italy, Italian, Italie, italien, italienne]}
+  ES: {name: Espagne, region: europe, num: "724", capital: "Madrid", aliases: [Spain, Spanish, Espagne, espagnol, espagnole]}
+  GB: {name: Royaume-Uni, region: europe, num: "826", capital: "London", aliases: [United Kingdom, Britain, British, Royaume-Uni, britannique], aliases_cs: [UK]}
+  BE: {name: Belgique, region: europe, num: "056", capital: "Brussels", aliases: [Belgium, Belgian, Belgique, belge]}
+  NL: {name: Pays-Bas, region: europe, num: "528", capital: "Amsterdam", aliases: [Netherlands, Dutch, Pays-Bas, néerlandais, néerlandaise]}
+  LU: {name: Luxembourg, region: europe, num: "442", capital: "Luxembourg", aliases: [Luxembourg, luxembourgeois, luxembourgeoise]}
+  PT: {name: Portugal, region: europe, num: "620", capital: "Lisbon", aliases: [Portugal, Portuguese, portugais, portugaise]}
+  SE: {name: Suède, region: europe, num: "752", capital: "Stockholm", aliases: [Sweden, Swedish, Suède, suédois, suédoise]}
+  "NO": {name: Norvège, region: europe, num: "578", capital: "Oslo", aliases: [Norway, Norwegian, Norvège, norvégien, norvégienne]}
+  FI: {name: Finlande, region: europe, num: "246", capital: "Helsinki", aliases: [Finland, Finnish, Finlande, finlandais, finlandaise]}
+  DK: {name: Danemark, region: europe, num: "208", capital: "Copenhagen", aliases: [Denmark, Danish, Danemark, danois, danoise]}
+  PL: {name: Pologne, region: europe, num: "616", capital: "Warsaw", aliases: [Poland, Polish, Pologne, polonais, polonaise]}
+  CZ: {name: Tchéquie, region: europe, num: "203", capital: "Prague", aliases: [Czech Republic, Czechia, Czech, Tchéquie, République tchèque, tchèque]}
+  AT: {name: Autriche, region: europe, num: "040", capital: "Vienna", aliases: [Austria, Austrian, Autriche, autrichien, autrichienne]}
+  CH: {name: Suisse, region: europe, num: "756", capital: "Bern", aliases: [Switzerland, Swiss, Suisse]}
+  GR: {name: Grèce, region: europe, num: "300", capital: "Athens", aliases: [Greece, Greek, Grèce]}
+  RO: {name: Roumanie, region: europe, num: "642", capital: "Bucharest", aliases: [Romania, Romanian, Roumanie, roumain, roumaine]}
+  HU: {name: Hongrie, region: europe, num: "348", capital: "Budapest", aliases: [Hungary, Hungarian, Hongrie, hongrois, hongroise]}
+  IE: {name: Irlande, region: europe, num: "372", capital: "Dublin", aliases: [Ireland, Irish, Irlande, irlandais, irlandaise]}
+  EE: {name: Estonie, region: europe, num: "233", capital: "Tallinn", aliases: [Estonia, Estonian, Estonie]}
+  LT: {name: Lituanie, region: europe, num: "440", capital: "Vilnius", aliases: [Lithuania, Lithuanian, Lituanie]}
+  LV: {name: Lettonie, region: europe, num: "428", capital: "Riga", aliases: [Latvia, Latvian, Lettonie]}
+  UA: {name: Ukraine, region: europe, num: "804", capital: "Kyiv", aliases: [Ukraine, Ukrainian, ukrainien, ukrainienne]}
 
   # ------------------------------------------------------------ Amérique du Nord
-  US: {name: États-Unis, region: north_america, aliases: [United States, USA, American, États-Unis, américain, américaine, Pentagon, Pentagone], aliases_cs: [US, U.S.]}
-  CA: {name: Canada, region: north_america, aliases: [Canada, Canadian, canadien, canadienne]}
-  MX: {name: Mexique, region: latin_america, aliases: [Mexico, Mexican, Mexique, mexicain, mexicaine]}
+  US: {name: États-Unis, region: north_america, num: "840", capital: "Washington D.C.", aliases: [United States, USA, American, États-Unis, américain, américaine, Pentagon, Pentagone], aliases_cs: [US, U.S.]}
+  CA: {name: Canada, region: north_america, num: "124", capital: "Ottawa", aliases: [Canada, Canadian, canadien, canadienne]}
+  MX: {name: Mexique, region: latin_america, num: "484", capital: "Mexico City", aliases: [Mexico, Mexican, Mexique, mexicain, mexicaine]}
 
   # ------------------------------------------------------------ Amérique latine
-  BR: {name: Brésil, region: latin_america, aliases: [Brazil, Brazilian, Brésil, brésilien, brésilienne]}
-  AR: {name: Argentine, region: latin_america, aliases: [Argentina, Argentinian, Argentine, argentin]}
-  CL: {name: Chili, region: latin_america, aliases: [Chile, Chilean, Chili, chilien, chilienne]}
+  BR: {name: Brésil, region: latin_america, num: "076", capital: "Brasília", aliases: [Brazil, Brazilian, Brésil, brésilien, brésilienne]}
+  AR: {name: Argentine, region: latin_america, num: "032", capital: "Buenos Aires", aliases: [Argentina, Argentinian, Argentine, argentin]}
+  CL: {name: Chili, region: latin_america, num: "152", capital: "Santiago", aliases: [Chile, Chilean, Chili, chilien, chilienne]}
 
   # ------------------------------------------------------------ Asie-Pacifique
-  CN: {name: Chine, region: asia_pacific, aliases: [China, Chinese, Chine, chinois, chinoise, Beijing, Pékin]}
-  JP: {name: Japon, region: asia_pacific, aliases: [Japan, Japanese, Japon, japonais, japonaise]}
-  KR: {name: Corée du Sud, region: asia_pacific, aliases: [South Korea, South Korean, Corée du Sud, sud-coréen, sud-coréenne]}
-  KP: {name: Corée du Nord, region: asia_pacific, aliases: [North Korea, North Korean, Corée du Nord, nord-coréen, nord-coréenne]}
-  IN: {name: Inde, region: asia_pacific, aliases: [India, Indian, Inde, indien, indienne]}
-  AU: {name: Australie, region: asia_pacific, aliases: [Australia, Australian, Australie, australien, australienne]}
-  NZ: {name: Nouvelle-Zélande, region: asia_pacific, aliases: [New Zealand, Nouvelle-Zélande, néo-zélandais, néo-zélandaise]}
-  TW: {name: Taïwan, region: asia_pacific, aliases: [Taiwan, Taiwanese, Taïwan, taïwanais, taïwanaise]}
-  SG: {name: Singapour, region: asia_pacific, aliases: [Singapore, Singapour]}
-  ID: {name: Indonésie, region: asia_pacific, aliases: [Indonesia, Indonesian, Indonésie]}
-  VN: {name: Viêt Nam, region: asia_pacific, aliases: [Vietnam, Viet Nam, Vietnamese, Viêt Nam]}
-  PH: {name: Philippines, region: asia_pacific, aliases: [Philippines, Philippine]}
-  TH: {name: Thaïlande, region: asia_pacific, aliases: [Thailand, Thai, Thaïlande]}
-  MY: {name: Malaisie, region: asia_pacific, aliases: [Malaysia, Malaysian, Malaisie]}
-  PK: {name: Pakistan, region: asia_pacific, aliases: [Pakistan, Pakistani, pakistanais]}
+  CN: {name: Chine, region: asia_pacific, num: "156", capital: "Beijing", aliases: [China, Chinese, Chine, chinois, chinoise, Beijing, Pékin]}
+  JP: {name: Japon, region: asia_pacific, num: "392", capital: "Tokyo", aliases: [Japan, Japanese, Japon, japonais, japonaise]}
+  KR: {name: Corée du Sud, region: asia_pacific, num: "410", capital: "Seoul", aliases: [South Korea, South Korean, Corée du Sud, sud-coréen, sud-coréenne]}
+  KP: {name: Corée du Nord, region: asia_pacific, num: "408", capital: "Pyongyang", aliases: [North Korea, North Korean, Corée du Nord, nord-coréen, nord-coréenne]}
+  IN: {name: Inde, region: asia_pacific, num: "356", capital: "New Delhi", aliases: [India, Indian, Inde, indien, indienne]}
+  AU: {name: Australie, region: asia_pacific, num: "036", capital: "Canberra", aliases: [Australia, Australian, Australie, australien, australienne]}
+  NZ: {name: Nouvelle-Zélande, region: asia_pacific, num: "554", capital: "Wellington", aliases: [New Zealand, Nouvelle-Zélande, néo-zélandais, néo-zélandaise]}
+  TW: {name: Taïwan, region: asia_pacific, num: "158", capital: "Taipei", aliases: [Taiwan, Taiwanese, Taïwan, taïwanais, taïwanaise]}
+  SG: {name: Singapour, region: asia_pacific, num: "702", capital: "Singapore", aliases: [Singapore, Singapour]}
+  ID: {name: Indonésie, region: asia_pacific, num: "360", capital: "Jakarta", aliases: [Indonesia, Indonesian, Indonésie]}
+  VN: {name: Viêt Nam, region: asia_pacific, num: "704", capital: "Hanoi", aliases: [Vietnam, Viet Nam, Vietnamese, Viêt Nam]}
+  PH: {name: Philippines, region: asia_pacific, num: "608", capital: "Manila", aliases: [Philippines, Philippine]}
+  TH: {name: Thaïlande, region: asia_pacific, num: "764", capital: "Bangkok", aliases: [Thailand, Thai, Thaïlande]}
+  MY: {name: Malaisie, region: asia_pacific, num: "458", capital: "Kuala Lumpur", aliases: [Malaysia, Malaysian, Malaisie]}
+  PK: {name: Pakistan, region: asia_pacific, num: "586", capital: "Islamabad", aliases: [Pakistan, Pakistani, pakistanais]}
 
   # ------------------------------------------------------------ Moyen-Orient
-  AE: {name: Émirats arabes unis, region: middle_east, aliases: [United Arab Emirates, Emirati, Émirats arabes unis, émirien, Abu Dhabi, Dubai, Dubaï], aliases_cs: [UAE, EAU]}
-  SA: {name: Arabie saoudite, region: middle_east, aliases: [Saudi Arabia, Saudi, Arabie saoudite, saoudien, saoudienne]}
-  IL: {name: Israël, region: middle_east, aliases: [Israel, Israeli, Israël, israélien, israélienne]}
-  IR: {name: Iran, region: middle_east, aliases: [Iran, Iranian, iranien, iranienne]}
-  TR: {name: Turquie, region: middle_east, aliases: [Turkey, Türkiye, Turkish, Turquie, turc, turque]}
-  QA: {name: Qatar, region: middle_east, aliases: [Qatar, Qatari]}
+  AE: {name: Émirats arabes unis, region: middle_east, num: "784", capital: "Abu Dhabi", aliases: [United Arab Emirates, Emirati, Émirats arabes unis, émirien, Abu Dhabi, Dubai, Dubaï], aliases_cs: [UAE, EAU]}
+  SA: {name: Arabie saoudite, region: middle_east, num: "682", capital: "Riyadh", aliases: [Saudi Arabia, Saudi, Arabie saoudite, saoudien, saoudienne]}
+  IL: {name: Israël, region: middle_east, num: "376", capital: "Jerusalem", aliases: [Israel, Israeli, Israël, israélien, israélienne]}
+  IR: {name: Iran, region: middle_east, num: "364", capital: "Tehran", aliases: [Iran, Iranian, iranien, iranienne]}
+  TR: {name: Turquie, region: middle_east, num: "792", capital: "Ankara", aliases: [Turkey, Türkiye, Turkish, Turquie, turc, turque]}
+  QA: {name: Qatar, region: middle_east, num: "634", capital: "Doha", aliases: [Qatar, Qatari]}
 
   # ------------------------------------------------------------ Afrique
-  EG: {name: Égypte, region: africa, aliases: [Egypt, Egyptian, Égypte, égyptien, égyptienne]}
-  MA: {name: Maroc, region: africa, aliases: [Morocco, Moroccan, Maroc, marocain, marocaine]}
-  DZ: {name: Algérie, region: africa, aliases: [Algeria, Algerian, Algérie, algérien, algérienne]}
-  NG: {name: Nigeria, region: africa, aliases: [Nigeria, Nigerian, nigérian, nigériane]}
-  KE: {name: Kenya, region: africa, aliases: [Kenya, Kenyan, kényan, kényane]}
-  ZA: {name: Afrique du Sud, region: africa, aliases: [South Africa, South African, Afrique du Sud, sud-africain, sud-africaine]}
+  EG: {name: Égypte, region: africa, num: "818", capital: "Cairo", aliases: [Egypt, Egyptian, Égypte, égyptien, égyptienne]}
+  MA: {name: Maroc, region: africa, num: "504", capital: "Rabat", aliases: [Morocco, Moroccan, Maroc, marocain, marocaine]}
+  DZ: {name: Algérie, region: africa, num: "012", capital: "Algiers", aliases: [Algeria, Algerian, Algérie, algérien, algérienne]}
+  NG: {name: Nigeria, region: africa, num: "566", capital: "Abuja", aliases: [Nigeria, Nigerian, nigérian, nigériane]}
+  KE: {name: Kenya, region: africa, num: "404", capital: "Nairobi", aliases: [Kenya, Kenyan, kényan, kényane]}
+  ZA: {name: Afrique du Sud, region: africa, num: "710", capital: "Pretoria", aliases: [South Africa, South African, Afrique du Sud, sud-africain, sud-africaine]}
 
   # ------------------------------------------------------------ Russie et Eurasie
-  RU: {name: Russie, region: russia_eurasia, aliases: [Russia, Russian, Russie, russe, Moscow, Moscou, Kremlin, Roscosmos]}
-  KZ: {name: Kazakhstan, region: russia_eurasia, aliases: [Kazakhstan, Baikonur, Baïkonour]}
-  BY: {name: Biélorussie, region: russia_eurasia, aliases: [Belarus, Belarusian, Biélorussie]}
+  RU: {name: Russie, region: russia_eurasia, num: "643", capital: "Moscow", aliases: [Russia, Russian, Russie, russe, Moscow, Moscou, Kremlin, Roscosmos]}
+  KZ: {name: Kazakhstan, region: russia_eurasia, num: "398", capital: "Astana", aliases: [Kazakhstan, Baikonur, Baïkonour]}
+  BY: {name: Biélorussie, region: russia_eurasia, num: "112", capital: "Minsk", aliases: [Belarus, Belarusian, Biélorussie]}
+
+  # ------------------------------------------------------------ Autres pays
+  # Générés depuis mledoze/countries (ODbL) ; alias ambigus (Georgia, Jordan, Chad…) retirés à la main.
+  AD: {name: "Andorre", region: europe, num: "020", capital: "Andorra la Vella", aliases: [Andorra, Andorre, Andorran, Andorrane, Andorra la Vella]}
+  AF: {name: "Afghanistan", region: asia_pacific, num: "004", capital: "Kabul", aliases: [Afghanistan, Afghan, Afghane, Kabul]}
+  AG: {name: "Antigua-et-Barbuda", region: latin_america, num: "028", capital: "Saint John's", aliases: [Antigua and Barbuda, Antigua-et-Barbuda]}
+  AL: {name: "Albanie", region: europe, num: "008", capital: "Tirana", aliases: [Albania, Albanie, Albanian, Albanais, Albanaise, Tirana]}
+  AM: {name: "Arménie", region: russia_eurasia, num: "051", capital: "Yerevan", aliases: [Armenia, Arménie, Armenian, Arménien, Arménienne, Yerevan]}
+  AO: {name: "Angola", region: africa, num: "024", capital: "Luanda", aliases: [Angola, Angolan, Angolais, Angolaise, Luanda]}
+  AZ: {name: "Azerbaïdjan", region: russia_eurasia, num: "031", capital: "Baku", aliases: [Azerbaijan, Azerbaïdjan, Azerbaijani, Azerbaïdjanais, Azerbaïdjanaise, Baku]}
+  BA: {name: "Bosnie-Herzégovine", region: europe, num: "070", capital: "Sarajevo", aliases: [Bosnia and Herzegovina, Bosnia, Bosnie-Herzégovine, Bosnie, bosnien]}
+  BB: {name: "Barbade", region: latin_america, num: "052", capital: "Bridgetown", aliases: [Barbados, Barbade, Barbadian, Barbadien, Barbadienne, Bridgetown]}
+  BD: {name: "Bangladesh", region: asia_pacific, num: "050", capital: "Dhaka", aliases: [Bangladesh, Bangladeshi, Bangladais, Bangladaise, Dhaka]}
+  BF: {name: "Burkina Faso", region: africa, num: "854", capital: "Ouagadougou", aliases: [Burkina Faso, Burkinabe, Burkinabé, Burkinabée, Ouagadougou]}
+  BG: {name: "Bulgarie", region: europe, num: "100", capital: "Sofia", aliases: [Bulgaria, Bulgarie, Bulgarian, Bulgare, Sofia]}
+  BH: {name: "Bahreïn", region: middle_east, num: "048", capital: "Manama", aliases: [Bahrain, Bahreïn, Bahraini, Bahreïnien, Bahreïnienne, Manama]}
+  BI: {name: "Burundi", region: africa, num: "108", capital: "Gitega", aliases: [Burundi, Burundian, Burundais, Burundaise, Gitega]}
+  BJ: {name: "Bénin", region: africa, num: "204", capital: "Porto-Novo", aliases: [Benin, Bénin, Beninese, Béninois, Béninoise, Porto-Novo]}
+  BN: {name: "Brunei", region: asia_pacific, num: "096", capital: "Bandar Seri Begawan", aliases: [Brunei, Bruneian, Brunéien, Brunéienne, Bandar Seri Begawan]}
+  BO: {name: "Bolivie", region: latin_america, num: "068", capital: "Sucre", aliases: [Bolivia, Bolivie, Bolivian, Bolivien, Bolivienne, Sucre]}
+  BS: {name: "Bahamas", region: latin_america, num: "044", capital: "Nassau", aliases: [Bahamas, Bahamian, Bahamien, Bahamienne]}
+  BT: {name: "Bhoutan", region: asia_pacific, num: "064", capital: "Thimphu", aliases: [Bhutan, Bhoutan, Bhutanese, Bhoutanais, Bhoutanaise, Thimphu]}
+  BW: {name: "Botswana", region: africa, num: "072", capital: "Gaborone", aliases: [Botswana, Motswana, Botswanais, Botswanaise, Gaborone]}
+  BZ: {name: "Belize", region: latin_america, num: "084", capital: "Belmopan", aliases: [Belize, Belizean, Bélizien, Bélizienne, Belmopan]}
+  CD: {name: "Congo (Rép. dém.)", region: africa, num: "180", capital: "Kinshasa", aliases: [Democratic Republic of the Congo, DR Congo, République démocratique du Congo, Congo, Kinshasa, congolais, congolaise, Congolese], aliases_cs: [DRC, RDC]}
+  CF: {name: "République centrafricaine", region: africa, num: "140", capital: "Bangui", aliases: [Central African Republic, Centrafrique, République centrafricaine, centrafricain, centrafricaine]}
+  CG: {name: "Congo", region: africa, num: "178", capital: "Brazzaville", aliases: [Republic of the Congo, Congo-Brazzaville, Brazzaville]}
+  CI: {name: "Côte d'Ivoire", region: africa, num: "384", capital: "Yamoussoukro", aliases: [Ivory Coast, "Côte d'Ivoire", ivoirien, ivoirienne, Ivorian]}
+  CM: {name: "Cameroun", region: africa, num: "120", capital: "Yaoundé", aliases: [Cameroon, Cameroun, Cameroonian, Camerounais, Camerounaise, Yaoundé]}
+  CO: {name: "Colombie", region: latin_america, num: "170", capital: "Bogotá", aliases: [Colombia, Colombie, Colombian, Colombien, Colombienne, Bogotá]}
+  CR: {name: "Costa Rica", region: latin_america, num: "188", capital: "San José", aliases: [Costa Rica, Costa Rican, Costaricain, Costaricaine]}
+  CU: {name: "Cuba", region: latin_america, num: "192", capital: "Havana", aliases: [Cuba, Cuban, Cubain, Cubaine, Havana]}
+  CV: {name: "Îles du Cap-Vert", region: africa, num: "132", capital: "Praia", aliases: [Cape Verde, Cabo Verde, Cap-Vert, cap-verdien]}
+  CY: {name: "Chypre", region: europe, num: "196", capital: "Nicosia", aliases: [Cyprus, Chypre, Cypriot, Chypriote, Nicosia]}
+  DJ: {name: "Djibouti", region: africa, num: "262", capital: "Djibouti", aliases: [Djibouti, Djiboutien, Djiboutienne]}
+  DM: {name: "Dominique", region: latin_america, num: "212", capital: "Roseau", aliases: [Dominica]}
+  DO: {name: "République dominicaine", region: latin_america, num: "214", capital: "Santo Domingo", aliases: [Dominican Republic, République dominicaine, dominicain, dominicaine]}
+  EC: {name: "Équateur", region: latin_america, num: "218", capital: "Quito", aliases: [Ecuador, Équateur, Ecuadorean, Équatorien, Équatorienne, Quito]}
+  EH: {name: "Sahara Occidental", region: africa, num: "732", capital: "El Aaiún", aliases: [Western Sahara, Sahara Occidental, Sahrawi, El Aaiún]}
+  ER: {name: "Érythrée", region: africa, num: "232", capital: "Asmara", aliases: [Eritrea, Érythrée, Eritrean, Érythréen, Érythréenne, Asmara]}
+  ET: {name: "Éthiopie", region: africa, num: "231", capital: "Addis Ababa", aliases: [Ethiopia, Éthiopie, Ethiopian, Éthiopien, Éthiopienne, Addis Ababa]}
+  FJ: {name: "Fidji", region: asia_pacific, num: "242", capital: "Suva", aliases: [Fiji, Fidji, Fijian, Fidjien, Fidjienne, Suva]}
+  FM: {name: "Micronésie", region: asia_pacific, num: "583", capital: "Palikir", aliases: [Micronesia, Micronésie, Micronesian, Micronésien, Micronésienne, Palikir]}
+  GA: {name: "Gabon", region: africa, num: "266", capital: "Libreville", aliases: [Gabon, Gabonese, Gabonais, Gabonaise, Libreville]}
+  GD: {name: "Grenade", region: latin_america, num: "308", capital: "St. George's", aliases: [Grenada, Grenade, Grenadian, Grenadien, Grenadienne]}
+  GE: {name: "Géorgie", region: russia_eurasia, num: "268", capital: "Tbilisi", aliases: [Géorgie, géorgien, géorgienne, Tbilisi]}
+  GH: {name: "Ghana", region: africa, num: "288", capital: "Accra", aliases: [Ghana, Ghanaian, Ghanéen, Ghanéenne, Accra]}
+  GM: {name: "Gambie", region: africa, num: "270", capital: "Banjul", aliases: [Gambia, Gambie, Gambian, Gambien, Gambienne, Banjul]}
+  GN: {name: "Guinée", region: africa, num: "324", capital: "Conakry", aliases: [Guinea, Guinée, guinéen, guinéenne, Conakry]}
+  GQ: {name: "Guinée équatoriale", region: africa, num: "226", capital: "Malabo", aliases: [Equatorial Guinea, Guinée équatoriale, Equatorial Guinean, Équato-guinéen, Équato-guinéenne, Malabo]}
+  GT: {name: "Guatemala", region: latin_america, num: "320", capital: "Guatemala City", aliases: [Guatemala, Guatemalan, Guatémaltèque, Guatemala City]}
+  GW: {name: "Guinée-Bissau", region: africa, num: "624", capital: "Bissau", aliases: [Guinea-Bissau, Guinée-Bissau, Guinea-Bissauan, Bissau-Guinéen, Bissau-Guinéenne, Bissau]}
+  GY: {name: "Guyana", region: latin_america, num: "328", capital: "Georgetown", aliases: [Guyana, Guyanese, Guyanien, Guyanienne]}
+  HN: {name: "Honduras", region: latin_america, num: "340", capital: "Tegucigalpa", aliases: [Honduras, Honduran, Hondurien, Hondurienne, Tegucigalpa]}
+  HR: {name: "Croatie", region: europe, num: "191", capital: "Zagreb", aliases: [Croatia, Croatie, Croatian, Croate, Zagreb]}
+  HT: {name: "Haïti", region: latin_america, num: "332", capital: "Port-au-Prince", aliases: [Haiti, Haïti, Haitian, Haïtien, Haïtienne, Port-au-Prince]}
+  IQ: {name: "Irak", region: middle_east, num: "368", capital: "Baghdad", aliases: [Iraq, Irak, Iraqi, Irakien, Irakienne, Baghdad]}
+  IS: {name: "Islande", region: europe, num: "352", capital: "Reykjavik", aliases: [Iceland, Islande, Icelander, Islandais, Islandaise, Reykjavik]}
+  JM: {name: "Jamaïque", region: latin_america, num: "388", capital: "Kingston", aliases: [Jamaica, Jamaïque, Jamaican, Jamaïcain, Jamaïcaine]}
+  JO: {name: "Jordanie", region: middle_east, num: "400", capital: "Amman", aliases: [Jordanie, jordanien, jordanienne, Amman]}
+  KG: {name: "Kirghizistan", region: russia_eurasia, num: "417", capital: "Bishkek", aliases: [Kyrgyzstan, Kirghizistan, Kirghiz, Kirghize, Bishkek]}
+  KH: {name: "Cambodge", region: asia_pacific, num: "116", capital: "Phnom Penh", aliases: [Cambodia, Cambodge, Cambodian, Cambodgien, Cambodgienne, Phnom Penh]}
+  KI: {name: "Kiribati", region: asia_pacific, num: "296", capital: "South Tarawa", aliases: [Kiribati, I-Kiribati, Kiribatien, Kiribatienne, South Tarawa]}
+  KM: {name: "Comores", region: africa, num: "174", capital: "Moroni", aliases: [Comoros, Comores, Comoran, Comorien, Comorienne, Moroni]}
+  KN: {name: "Saint-Christophe-et-Niévès", region: latin_america, num: "659", capital: "Basseterre", aliases: [Saint Kitts and Nevis, Saint-Christophe-et-Niévès, Kittitian or Nevisian, Kittitien-et-nevicien, Kittitienne-et-nevicienne]}
+  KW: {name: "Koweït", region: middle_east, num: "414", capital: "Kuwait City", aliases: [Kuwait, Koweït, Kuwaiti, Koweïtien, Koweïtienne, Kuwait City]}
+  LA: {name: "Laos", region: asia_pacific, num: "418", capital: "Vientiane", aliases: [Laos, Laotian, Laotien, Laotienne, Vientiane]}
+  LB: {name: "Liban", region: middle_east, num: "422", capital: "Beirut", aliases: [Lebanon, Lebanese, Liban, libanais, libanaise, Beirut, Beyrouth, Hezbollah]}
+  LC: {name: "Sainte-Lucie", region: latin_america, num: "662", capital: "Castries", aliases: [Saint Lucia, Sainte-Lucie, Saint Lucian, Saint-Lucien, Saint-Lucienne]}
+  LI: {name: "Liechtenstein", region: europe, num: "438", capital: "Vaduz", aliases: [Liechtenstein, Liechtensteiner, Liechtensteinois, Liechtensteinoise, Vaduz]}
+  LK: {name: "Sri Lanka", region: asia_pacific, num: "144", capital: "Colombo", aliases: [Sri Lanka, Sri Lankan, Sri-lankais, Sri-lankaise, Colombo]}
+  LR: {name: "Liberia", region: africa, num: "430", capital: "Monrovia", aliases: [Liberia, Liberian, Libérien, Libérienne, Monrovia]}
+  LS: {name: "Lesotho", region: africa, num: "426", capital: "Maseru", aliases: [Lesotho, Mosotho, Lésothien, Lésothienne, Maseru]}
+  LY: {name: "Libye", region: africa, num: "434", capital: "Tripoli", aliases: [Libya, Libye, Libyan, Libyen, Libyenne]}
+  MC: {name: "Monaco", region: europe, num: "492", capital: "Monaco", aliases: [Monaco, Monegasque, Monégasque]}
+  MD: {name: "Moldavie", region: europe, num: "498", capital: "Chișinău", aliases: [Moldova, Moldavie, Moldovan, Moldave, Chișinău]}
+  ME: {name: "Monténégro", region: europe, num: "499", capital: "Podgorica", aliases: [Montenegro, Monténégro, Montenegrin, Monténégrin, Monténégrine, Podgorica]}
+  MG: {name: "Madagascar", region: africa, num: "450", capital: "Antananarivo", aliases: [Madagascar, Malagasy, Malgache, Antananarivo]}
+  MH: {name: "Îles Marshall", region: asia_pacific, num: "584", capital: "Majuro", aliases: [Marshall Islands, Îles Marshall, Marshallese, Marshallais, Marshallaise, Majuro]}
+  MK: {name: "Macédoine du Nord", region: europe, num: "807", capital: "Skopje", aliases: [North Macedonia, Macédoine du Nord, macédonien]}
+  ML: {name: "Mali", region: africa, num: "466", capital: "Bamako", aliases: [Mali, Malian, Malien, Malienne, Bamako]}
+  MM: {name: "Birmanie", region: asia_pacific, num: "104", capital: "Naypyidaw", aliases: [Myanmar, Burma, Birmanie, birman, birmane, Burmese]}
+  MN: {name: "Mongolie", region: asia_pacific, num: "496", capital: "Ulan Bator", aliases: [Mongolia, Mongolie, Mongolian, Mongol, Mongole, Ulan Bator]}
+  MR: {name: "Mauritanie", region: africa, num: "478", capital: "Nouakchott", aliases: [Mauritania, Mauritanie, Mauritanian, Mauritanien, Mauritanienne, Nouakchott]}
+  MT: {name: "Malte", region: europe, num: "470", capital: "Valletta", aliases: [Malta, Malte, Maltese, Maltais, Maltaise, Valletta]}
+  MU: {name: "Île Maurice", region: africa, num: "480", capital: "Port Louis", aliases: [Mauritius, Île Maurice, Mauritian, Mauricien, Mauricienne, Port Louis]}
+  MV: {name: "Maldives", region: asia_pacific, num: "462", capital: "Malé", aliases: [Maldives, Maldivan, Maldivien, Maldivienne]}
+  MW: {name: "Malawi", region: africa, num: "454", capital: "Lilongwe", aliases: [Malawi, Malawian, Malawien, Malawienne, Lilongwe]}
+  MZ: {name: "Mozambique", region: africa, num: "508", capital: "Maputo", aliases: [Mozambique, Mozambican, Mozambicain, Mozambicaine, Maputo]}
+  "NA": {name: "Namibie", region: africa, num: "516", capital: "Windhoek", aliases: [Namibia, Namibie, Namibian, Namibien, Namibienne, Windhoek]}
+  NE: {name: "Niger", region: africa, num: "562", capital: "Niamey", aliases: [Niger, nigérien, nigérienne, Nigerien, Niamey]}
+  NI: {name: "Nicaragua", region: latin_america, num: "558", capital: "Managua", aliases: [Nicaragua, Nicaraguan, Nicaraguayen, Nicaraguayenne, Managua]}
+  NP: {name: "Népal", region: asia_pacific, num: "524", capital: "Kathmandu", aliases: [Nepal, Népal, Nepalese, Népalais, Népalaise, Kathmandu]}
+  NR: {name: "Nauru", region: asia_pacific, num: "520", capital: "Yaren", aliases: [Nauru, Nauruan, Nauruane, Yaren]}
+  OM: {name: "Oman", region: middle_east, num: "512", capital: "Muscat", aliases: [Oman, Omani, Omanais, Omanaise, Muscat]}
+  PA: {name: "Panama", region: latin_america, num: "591", capital: "Panama City", aliases: [Panama, Panamanian, Panaméen, Panaméenne, Panama City]}
+  PE: {name: "Pérou", region: latin_america, num: "604", capital: "Lima", aliases: [Peru, Pérou, Peruvian, Péruvien, Péruvienne, Lima]}
+  PG: {name: "Papouasie-Nouvelle-Guinée", region: asia_pacific, num: "598", capital: "Port Moresby", aliases: [Papua New Guinea, Papouasie-Nouvelle-Guinée, Papua New Guinean, Papouasien, Papouasienne, Port Moresby]}
+  PS: {name: "Palestine", region: middle_east, num: "275", capital: "Ramallah", aliases: [Palestine, Palestinian, palestinien, palestinienne, Gaza, West Bank, Cisjordanie]}
+  PW: {name: "Palaos (Palau)", region: asia_pacific, num: "585", capital: "Ngerulmud", aliases: [Palau, Palaos (Palau), Palauan, Paluan, Paluane, Ngerulmud]}
+  PY: {name: "Paraguay", region: latin_america, num: "600", capital: "Asunción", aliases: [Paraguay, Paraguayan, Paraguayen, Paraguayenne, Asunción]}
+  RS: {name: "Serbie", region: europe, num: "688", capital: "Belgrade", aliases: [Serbia, Serbie, Serbian, Serbe, Belgrade]}
+  RW: {name: "Rwanda", region: africa, num: "646", capital: "Kigali", aliases: [Rwanda, Rwandan, Rwandais, Rwandaise, Kigali]}
+  SB: {name: "Îles Salomon", region: asia_pacific, num: "090", capital: "Honiara", aliases: [Solomon Islands, Îles Salomon, Solomon Islander, Salomonien, Salomonienne, Honiara]}
+  SC: {name: "Seychelles", region: africa, num: "690", capital: "Victoria", aliases: [Seychelles, Seychellois, Seychelloise]}
+  SD: {name: "Soudan", region: africa, num: "729", capital: "Khartoum", aliases: [Sudan, Soudan, Sudanese, soudanais, soudanaise, Khartoum]}
+  SI: {name: "Slovénie", region: europe, num: "705", capital: "Ljubljana", aliases: [Slovenia, Slovénie, Slovene, Slovène, Ljubljana]}
+  SK: {name: "Slovaquie", region: europe, num: "703", capital: "Bratislava", aliases: [Slovakia, Slovaquie, Slovak, Slovaque, Bratislava]}
+  SL: {name: "Sierra Leone", region: africa, num: "694", capital: "Freetown", aliases: [Sierra Leone, Sierra Leonean, Sierra-leonais, Sierra-leonaise, Freetown]}
+  SM: {name: "Saint-Marin", region: europe, num: "674", capital: "City of San Marino", aliases: [San Marino, Saint-Marin, Sammarinese, Saint-Marinais, Saint-Marinaise, City of San Marino]}
+  SN: {name: "Sénégal", region: africa, num: "686", capital: "Dakar", aliases: [Senegal, Sénégal, Senegalese, Sénégalais, Sénégalaise, Dakar]}
+  SO: {name: "Somalie", region: africa, num: "706", capital: "Mogadishu", aliases: [Somalia, Somalie, Somali, Somalien, Somalienne, Mogadishu]}
+  SR: {name: "Surinam", region: latin_america, num: "740", capital: "Paramaribo", aliases: [Suriname, Surinam, Surinamer, Surinamais, Surinamaise, Paramaribo]}
+  SS: {name: "Soudan du Sud", region: africa, num: "728", capital: "Juba", aliases: [South Sudan, Soudan du Sud, sud-soudanais, Juba]}
+  ST: {name: "São Tomé et Príncipe", region: africa, num: "678", capital: "São Tomé", aliases: [São Tomé and Príncipe, Sao Tomean, Santoméen, Santoméenne, São Tomé]}
+  SV: {name: "Salvador", region: latin_america, num: "222", capital: "San Salvador", aliases: [El Salvador, Salvador, Salvadoran, Salvadorien, Salvadorienne, San Salvador]}
+  SY: {name: "Syrie", region: middle_east, num: "760", capital: "Damascus", aliases: [Syria, Syrian, Syrie, syrien, syrienne, Damascus, Damas]}
+  SZ: {name: "Swaziland", region: africa, num: "748", capital: "Lobamba", aliases: [Eswatini, Swaziland, Swazi, Swazie, Lobamba]}
+  TD: {name: "Tchad", region: africa, num: "148", capital: "N'Djamena", aliases: [Tchad, tchadien, tchadienne, Chadian, "N'Djamena"]}
+  TG: {name: "Togo", region: africa, num: "768", capital: "Lomé", aliases: [Togo, Togolese, Togolais, Togolaise, Lomé]}
+  TJ: {name: "Tadjikistan", region: russia_eurasia, num: "762", capital: "Dushanbe", aliases: [Tajikistan, Tadjikistan, Tadzhik, Tadjike, Dushanbe]}
+  TL: {name: "Timor oriental", region: asia_pacific, num: "626", capital: "Dili", aliases: [Timor-Leste, East Timor, Timor oriental]}
+  TM: {name: "Turkménistan", region: russia_eurasia, num: "795", capital: "Ashgabat", aliases: [Turkmenistan, Turkménistan, Turkmen, Turkmène, Ashgabat]}
+  TN: {name: "Tunisie", region: africa, num: "788", capital: "Tunis", aliases: [Tunisia, Tunisie, Tunisian, Tunisien, Tunisienne, Tunis]}
+  TO: {name: "Tonga", region: asia_pacific, num: "776", capital: "Nuku'alofa", aliases: [Tonga, Tongan, Tonguien, Tonguienne, "Nuku'alofa"]}
+  TT: {name: "Trinité-et-Tobago", region: latin_america, num: "780", capital: "Port of Spain", aliases: [Trinidad and Tobago, Trinité-et-Tobago, Trinidadian, Trinidadien, Trinidadienne, Port of Spain]}
+  TV: {name: "Tuvalu", region: asia_pacific, num: "798", capital: "Funafuti", aliases: [Tuvalu, Tuvaluan, Tuvaluane, Funafuti]}
+  TZ: {name: "Tanzanie", region: africa, num: "834", capital: "Dodoma", aliases: [Tanzania, Tanzanie, Tanzanian, Tanzanien, Tanzanienne, Dodoma]}
+  UG: {name: "Ouganda", region: africa, num: "800", capital: "Kampala", aliases: [Uganda, Ouganda, Ugandan, Ougandais, Ougandaise, Kampala]}
+  UY: {name: "Uruguay", region: latin_america, num: "858", capital: "Montevideo", aliases: [Uruguay, Uruguayan, Uruguayen, Uruguayenne, Montevideo]}
+  UZ: {name: "Ouzbékistan", region: russia_eurasia, num: "860", capital: "Tashkent", aliases: [Uzbekistan, Ouzbékistan, Uzbekistani, Ouzbèke, Tashkent]}
+  VA: {name: "Cité du Vatican", region: europe, num: "336", capital: "Vatican City", aliases: [Vatican, Holy See, Saint-Siège]}
+  VC: {name: "Saint-Vincent-et-les-Grenadines", region: latin_america, num: "670", capital: "Kingstown", aliases: [Saint-Vincent-et-les-Grenadines, Saint Vincentian, Vincentais, Vincentaise]}
+  VE: {name: "Venezuela", region: latin_america, num: "862", capital: "Caracas", aliases: [Venezuela, Venezuelan, Vénézuélien, Vénézuélienne, Caracas]}
+  VU: {name: "Vanuatu", region: asia_pacific, num: "548", capital: "Port Vila", aliases: [Vanuatu, Ni-Vanuatu, Vanuatuan, Vanuatuane, Port Vila]}
+  WS: {name: "Samoa", region: asia_pacific, num: "882", capital: "Apia", aliases: [Samoa, Samoan, Samoane]}
+  XK: {name: "Kosovo", region: europe, num: "", capital: "Pristina", aliases: [Kosovo, Kosovar, Kosovare, Pristina]}
+  "YE": {name: "Yémen", region: middle_east, num: "887", capital: "Sana'a", aliases: [Yemen, Yemeni, Yémen, yéménite, Houthi, Houthis, Houthistes]}
+  ZM: {name: "Zambie", region: africa, num: "894", capital: "Lusaka", aliases: [Zambia, Zambie, Zambian, Zambien, Zambienne, Lusaka]}
+  ZW: {name: "Zimbabwe", region: africa, num: "716", capital: "Harare", aliases: [Zimbabwe, Zimbabwean, Zimbabwéen, Zimbabwéenne, Harare]}

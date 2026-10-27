@@ -219,6 +219,7 @@ def aggregate(story: Story, by_id: dict[str, Item]) -> dict[str, Any]:
         "events": union("events"),
         "sections": union("sections"),
         "tags": union("tags"),
+        "geo_themes": union("geo_themes"),
     }
 
 

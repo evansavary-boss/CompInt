@@ -29,8 +29,12 @@ rebuilds daily at 06:00 UTC (`.github/workflows/update.yml`).
   country), regions, event types (`overrides`, `requires`, `section: auto`), tabs.
 - `entities.py`: loads/validates `config/entities/*.yaml`, `geo.yaml`, `events.yaml`; Wikidata facts
   cached in `data/entities.json`; YAML `facts` override Wikidata.
-- `build.py`: `SiteData` view models → `index.html` (Politique), `economie.html`, `marche.html`,
-  `entite/<id>.html`. `market.py` builds the compact records the Marché page aggregates in the browser.
+- Geopolitics: `config/geopolitics.yaml` (feeds, thematic Google News searches, GDELT, 4 families with
+  patterns, exclusions) → `collect.geo_sources` / `collect_gdelt` / `geo_gate` (title must match a family;
+  sets `Item.geo_themes`, section `geopolitique`). GDELT is rate-limited: keep requests spaced.
+- `build.py`: `SiteData` view models → `index.html` (Géopolitique, world map), `economie.html`,
+  `marche.html`, `entite/<id>.html`, `pays/<code>.html`. `on_page` routes stories by Claude's tabs, else
+  by rule sections. `worldmap.py` projects `config/geodata/countries-110m.json` (Equal Earth) to SVG. `market.py` builds the compact records the Marché page aggregates in the browser.
 - Front end: `static/app.js` (feed filters, URL hash, live counts), `static/market.js` + `market.css`
   (charts, built with DOM APIs; untrusted text via `textContent` only).
 

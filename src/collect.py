@@ -36,11 +36,14 @@ from .entities import load_reference
 from .filter import KeywordMatcher, canonical_url, dedupe, tag_items
 from .models import Item, SourceStatus
 from .store import load_items, prune, save_items, sort_items
+from .textmatch import TermIndex
 
 log = logging.getLogger("collect")
 
 _TAG_RE = re.compile(r"<[^>]+>")
 GNEWS = "gnews"
+GDELT = "gdelt"
+SEARCHES = (GNEWS, GDELT)
 
 
 def clean_html(raw: str, strip_patterns: list[re.Pattern] = (), max_chars: int | None = None) -> str:
@@ -113,6 +116,36 @@ def gnews_sources(ref: dict[str, Any], settings: dict[str, Any], backfill: bool 
                 "require_keywords": require,
                 "entity": eid,
                 "via": GNEWS,
+            })
+    return out
+
+
+def geo_sources(gcfg: dict[str, Any], settings: dict[str, Any], backfill: bool = False,
+                use_searches: bool = True) -> list[dict[str, Any]]:
+    """Geopolitics feeds, thematic Google News searches and GDELT queries."""
+    out = [{**f, "section": "geopolitique", "gate": "geo", "via": ""} for f in gcfg.get("feeds") or []]
+    if not use_searches:
+        return out
+    sset = gcfg.get("search_settings") or {}
+    when = sset.get("backfill_when" if backfill else "when", "2d")
+    cfg = settings["google_news"]
+    for s in gcfg.get("searches") or []:
+        params = {"q": f"{s['query']} when:{when}", **cfg["editions"][s["edition"]]}
+        out.append({
+            "name": f"Google News · {s['theme']} · {s['query'][:50]} ({s['edition']})",
+            "url": f"{cfg['base_url']}?{urlencode(params)}",
+            "section": "geopolitique", "gate": "geo", "theme": s["theme"], "via": GNEWS,
+            "max_items": sset.get("max_items_per_query", cfg["max_items_per_query"]),
+        })
+    g = gcfg.get("gdelt") or {}
+    if g.get("enabled"):
+        for q in g.get("queries") or []:
+            params = {"query": q["query"], "mode": "artlist", "format": "json", "sort": "datedesc",
+                      "maxrecords": g["max_records"], "timespan": "14d" if backfill else g["timespan"]}
+            out.append({
+                "name": f"GDELT · {q['theme']}", "url": f"{g['url']}?{urlencode(params)}",
+                "section": "geopolitique", "gate": "geo", "theme": q["theme"], "via": GDELT,
+                "delay": g.get("delay_seconds", 12), "retry_after": g.get("retry_after_seconds", 20),
             })
     return out
 
@@ -196,9 +229,53 @@ def collect_source(
                 query_entities=[source["entity"]] if source.get("entity") else [],
             )
         )
-    if is_gnews:
+    cap = source.get("max_items") or (settings["google_news"]["max_items_per_query"] if is_gnews else None)
+    if cap:
         items.sort(key=lambda i: datetime.fromisoformat(i.published), reverse=True)
-        items = items[: settings["google_news"]["max_items_per_query"]]
+        items = items[:cap]
+    status.ok = True
+    status.fetched = len(items)
+    return items, status
+
+
+def collect_gdelt(source: dict[str, Any], settings: dict[str, Any], tz: ZoneInfo,
+                  now: datetime) -> tuple[list[Item], SourceStatus]:
+    """GDELT DOC API article list (JSON). Rate-limited: callers space the requests."""
+    status = SourceStatus(name=source["name"], url=source["url"], ok=False, via=GDELT)
+    try:
+        for attempt in range(2):
+            resp = requests.get(source["url"], headers={"User-Agent": settings["http"]["user_agent"]},
+                                timeout=settings["http"]["timeout_seconds"] * 2)
+            if resp.status_code != 429 or attempt:
+                break
+            time.sleep(source.get("retry_after", 20))
+        resp.raise_for_status()
+        articles = resp.json().get("articles", [])
+    except ValueError:
+        status.error = "réponse non JSON (limite de requêtes GDELT ?)"
+        log.warning("%s: %s", source["name"], status.error)
+        return [], status
+    except Exception as exc:  # never let one source break the run
+        status.error = _short_error(exc)
+        log.warning("%s: %s", source["name"], status.error)
+        return [], status
+
+    tracking = settings["dedup"]["tracking_params"]
+    items = []
+    for art in articles:
+        url, title = art.get("url"), clean_html(art.get("title", ""))
+        if not url or not title:
+            continue
+        try:
+            when = datetime.strptime(art.get("seendate", ""), "%Y%m%dT%H%M%SZ").replace(tzinfo=timezone.utc)
+            published, estimated = min(when.astimezone(tz), now), False
+        except ValueError:
+            published, estimated = now, True
+        items.append(Item(
+            id=item_id(url, tracking), title=title, url=url, source=art.get("domain") or "GDELT",
+            section=source["section"], published=published.isoformat(timespec="seconds"), summary="",
+            first_seen=now.isoformat(timespec="seconds"), date_estimated=estimated, via=GDELT,
+        ))
     status.ok = True
     status.fetched = len(items)
     return items, status
@@ -216,9 +293,10 @@ def _short_error(exc: Exception) -> str:
 
 def fetch_all(sources: list[dict[str, Any]], settings: dict[str, Any], tz: ZoneInfo, now: datetime,
               strip_patterns: list[re.Pattern]) -> list[tuple[dict[str, Any], list[Item], SourceStatus]]:
-    """Publisher feeds in parallel (distinct hosts); Google News one request at a time."""
-    feeds = [s for s in sources if s.get("via") != GNEWS]
+    """Publisher feeds in parallel (distinct hosts); Google News and GDELT one request at a time."""
+    feeds = [s for s in sources if s.get("via") not in SEARCHES]
     searches = [s for s in sources if s.get("via") == GNEWS]
+    gdelt = [s for s in sources if s.get("via") == GDELT]
     results = []
     with ThreadPoolExecutor(max_workers=settings["http"]["max_workers"]) as pool:
         for src, (items, status) in zip(feeds, pool.map(
@@ -230,21 +308,60 @@ def fetch_all(sources: list[dict[str, Any]], settings: dict[str, Any], tz: ZoneI
             time.sleep(delay)
         items, status = collect_source(src, settings, tz, now, strip_patterns)
         results.append((src, items, status))
+    for n, src in enumerate(gdelt):
+        if n:
+            time.sleep(src.get("delay", 8))
+        items, status = collect_gdelt(src, settings, tz, now)
+        results.append((src, items, status))
     return results
 
 
 # ---------------------------------------------------------------- pipeline
 
 
-def drop_excluded(items: list[Item], matcher: KeywordMatcher, settings: dict[str, Any]) -> list[Item]:
-    """Remove items hit by `global_exclude` or, for Google News, by `title_exclude_regex`.
+def geo_exclusions(gcfg: dict[str, Any]) -> TermIndex:
+    index = TermIndex(plurals=False)
+    index.add_many(gcfg.get("exclude"), "x")
+    return index
 
-    Also applied to already stored items, so new exclusions clean the history.
+
+def geo_gate(items: list[Item], src: dict[str, Any], themes: TermIndex, exclude: TermIndex,
+             matcher: KeywordMatcher) -> list[Item]:
+    """Keep geopolitics items whose wording matches a family; set their families and domain tags.
+
+    Searches match on the title only (GDELT and Google News also search article bodies);
+    specialised publisher feeds (with a `theme`) keep their items under that family by default.
+    """
+    rx = re.compile(src["title_include_regex"]) if src.get("title_include_regex") else None
+    kept = []
+    for it in items:
+        if rx and not rx.search(it.title):
+            continue
+        if exclude.targets(it.title) or matcher.is_excluded(f"{it.title} {it.summary}"):
+            continue
+        found = themes.targets(it.title if (it.via or src.get("title_only")) else f"{it.title} {it.summary}")
+        if not found:
+            if src.get("theme") and not it.via:
+                found = [src["theme"]]
+            else:
+                continue
+        it.geo_themes = found
+        it.tags = matcher.match(f"{it.title} {it.summary}")
+        kept.append(it)
+    return kept
+
+
+def drop_excluded(items: list[Item], matcher: KeywordMatcher, settings: dict[str, Any],
+                  geo_exclude: TermIndex | None = None) -> list[Item]:
+    """Remove items hit by `global_exclude`, by Google News `title_exclude_regex`, or (geopolitics
+    items) by the geopolitics exclusions. Also applied to stored items, so new exclusions clean
+    the history.
     """
     title_rx = [re.compile(p) for p in settings["google_news"].get("title_exclude_regex") or []]
     return [i for i in items
             if not matcher.is_excluded(f"{i.title} {i.summary}")
-            and not (i.via == GNEWS and any(rx.search(i.title) for rx in title_rx))]
+            and not (i.via == GNEWS and any(rx.search(i.title) for rx in title_rx))
+            and not (geo_exclude and i.section == "geopolitique" and geo_exclude.targets(i.title))]
 
 
 def _merge_query_entities(kept: Item, dropped: Item) -> None:
@@ -263,10 +380,13 @@ def run(settings: dict[str, Any] | None = None, dry_run: bool = False,
     now = datetime.now(tz).replace(microsecond=0)
 
     ref = load_reference(settings)
-    classifier = Classifier(ref)
+    gcfg = load_yaml(paths["geopolitics"])
+    classifier = Classifier(ref, gcfg)
+    geo_exclude = geo_exclusions(gcfg)
     sources = load_yaml(paths["sources"])["sources"]
     if use_gnews:
         sources = sources + gnews_sources(ref, settings, backfill)
+    sources = sources + geo_sources(gcfg, settings, backfill, use_searches=use_gnews)
     matcher = KeywordMatcher(load_yaml(paths["keywords"]))
     strip_patterns = [
         re.compile(p, re.IGNORECASE) for p in settings["text"].get("summary_strip_patterns", [])
@@ -286,11 +406,15 @@ def run(settings: dict[str, Any] | None = None, dry_run: bool = False,
     feed_items: list[Item] = []
     search_items: list[Item] = []
     for src, items, status in results:
-        tagged = tag_items(items, matcher, source=src)
-        if src.get("via") == GNEWS:
+        if src.get("gate") == "geo":
+            tagged = geo_gate(items, src, classifier.geo_themes, geo_exclude, matcher)
+        else:
+            tagged = tag_items(items, matcher, source=src)
+        if src.get("entity"):
             # The searched entity must appear in the title: Google News also matches
             # on article bodies, which brings in many loosely related stories.
             tagged = [i for i in tagged if src["entity"] in classifier.find_entities(i.title)]
+        if src.get("via") in SEARCHES:
             search_items.extend(tagged)
         else:
             feed_items.extend(tagged)
@@ -310,7 +434,7 @@ def run(settings: dict[str, Any] | None = None, dry_run: bool = False,
 
     # Exclusions and classification are cheap and rule-based: redo them on the whole
     # history so that keyword, alias or pattern changes apply retroactively.
-    all_items = sort_items(classifier.classify_all(drop_excluded(existing + new_items, matcher, settings)))
+    all_items = sort_items(classifier.classify_all(drop_excluded(existing + new_items, matcher, settings, geo_exclude)))
     book = None
     if not dry_run:
         save_items(items_path, all_items, statuses, now)
@@ -334,18 +458,19 @@ def print_report(summary: dict[str, Any]) -> None:
     statuses: list[SourceStatus] = summary["statuses"]
     items: list[Item] = summary["items"]
     ref = summary["ref"]
-    feeds = [s for s in statuses if s.via != GNEWS]
+    feeds = [s for s in statuses if s.via not in SEARCHES]
     searches = [s for s in statuses if s.via == GNEWS]
+    gdelt = [s for s in statuses if s.via == GDELT]
 
     print(f"\nMise à jour : {summary['updated_at']:%Y-%m-%d %H:%M %Z}")
     print(f"Flux éditeurs actifs : {sum(s.ok for s in feeds)}/{len(feeds)}   "
-          f"Recherches Google News réussies : {sum(s.ok for s in searches)}/{len(searches)}")
-    for s in feeds:
+          f"Recherches Google News réussies : {sum(s.ok for s in searches)}/{len(searches)}   "
+          f"GDELT : {sum(s.ok for s in gdelt)}/{len(gdelt)}")
+    for s in feeds + searches + gdelt:
         if not s.ok:
             print(f"  [ERR] {s.name}: {s.error}")
-    for s in searches:
-        if not s.ok:
-            print(f"  [ERR] {s.name}: {s.error}")
+    if gdelt:
+        print(f"GDELT : {sum(s.fetched for s in gdelt)} lus, {sum(s.kept for s in gdelt)} gardés (titre filtré)")
     print(f"Google News : {sum(s.fetched for s in searches)} lus, {sum(s.kept for s in searches)} gardés "
           f"(entité citée dans le titre + filtres)")
 
@@ -355,6 +480,12 @@ def print_report(summary: dict[str, Any]) -> None:
 
     def top(counter: Counter, labels: dict[str, str] | None = None, n: int = 12) -> str:
         return ", ".join(f"{(labels or {}).get(k, k)} {v}" for k, v in counter.most_common(n))
+
+    geo = [i for i in items if "geopolitique" in i.sections]
+    print(f"\n== GÉOPOLITIQUE : {len(geo)} items (sources géopolitiques)")
+    print("  Familles   :", top(Counter(t for i in geo for t in i.geo_themes)))
+    print("  Pays       :", top(Counter(c for i in geo for c in i.countries),
+                                {k: v["name"] for k, v in ref["countries"].items()}, 15))
 
     for tab, label in (("politique", "POLITIQUE"), ("economie", "ÉCONOMIE")):
         tab_items = [i for i in items if tab in i.sections]
@@ -385,7 +516,9 @@ def reclassify(settings: dict[str, Any] | None = None, dry_run: bool = False) ->
     path = resolve(settings["paths"]["items"])
     items, meta = load_items(path)
     matcher = KeywordMatcher(load_yaml(settings["paths"]["keywords"]))
-    items = sort_items(Classifier(ref).classify_all(drop_excluded(items, matcher, settings)))
+    gcfg = load_yaml(settings["paths"]["geopolitics"])
+    items = sort_items(Classifier(ref, gcfg).classify_all(
+        drop_excluded(items, matcher, settings, geo_exclusions(gcfg))))
     statuses = [SourceStatus(**s) for s in meta.get("sources", [])]
     updated_at = datetime.fromisoformat(meta["updated_at"]) if meta.get("updated_at") else datetime.now()
     book = None

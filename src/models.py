@@ -23,6 +23,7 @@ class Item:
     date_estimated: bool = False   # True when the feed gave no usable date
     via: str = ""                  # "" (publisher feed) or "gnews"
     query_entities: list[str] = field(default_factory=list)  # entities whose Google News query found it
+    geo_themes: list[str] = field(default_factory=list)      # geopolitics families (config/geopolitics.yaml)
     # Set by src/classify.py
     entities: list[str] = field(default_factory=list)
     countries: list[str] = field(default_factory=list)

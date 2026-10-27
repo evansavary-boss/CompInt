@@ -6,7 +6,7 @@ import pytest
 
 from src import build
 from src.classify import Classifier
-from src.config import load_settings
+from src.config import load_settings, load_yaml
 from src.entities import load_reference
 from src.models import Item, SourceStatus
 from src.store import save_items
@@ -20,7 +20,7 @@ def site(tmp_path_factory):
     settings = copy.deepcopy(load_settings())
     settings["paths"].update(items=str(tmp / "items.json"), entities=str(tmp / "entities.json"),
                              output_dir=str(tmp / "docs"))
-    clf = Classifier(load_reference(settings))
+    clf = Classifier(load_reference(settings), load_yaml(settings["paths"]["geopolitics"]))
 
     def item(n, title, section, days_ago, tags=("newspace",), via=""):
         return clf.classify(Item(id=f"i{n}", title=title, url=f"https://example.com/{n}", source="Test",
@@ -32,6 +32,7 @@ def site(tmp_path_factory):
         item(1, "ICEYE wins contract with the Portuguese navy", "economie", 0, ("geospatial",)),
         item(2, "ESA Council names new directors", "politique", 2),
         item(3, "Old <script> story about CNES", "politique", 200),   # outside retention
+        item(4, "Sudan war: RSF advance near Khartoum", "geopolitique", 1),
     ]
     save_items(tmp / "items.json", items, [SourceStatus("Feed", "u", True)], NOW)
     build.render(settings)
@@ -47,7 +48,10 @@ def test_items_land_in_their_tab_with_filter_data(site):
     eco = (site / "economie.html").read_text(encoding="utf-8")
     pol = (site / "index.html").read_text(encoding="utf-8")
     assert "ICEYE wins contract" in eco and "ICEYE wins contract" not in pol
-    assert "ESA Council names new directors" in pol
+    assert "ESA Council names new directors" in eco          # institutions now live in Économie
+    assert "Sudan war: RSF advance near Khartoum" in pol      # Géopolitique is the home page
+    assert 'data-themes="conflits"' in pol
+    assert 'class="worldmap"' in pol and 'data-country="SD"' in pol
     assert 'data-entities="iceye"' in eco
     assert 'data-events="contract_won"' in eco
     assert 'data-tags="geospatial"' in eco
@@ -65,8 +69,16 @@ def test_entity_page_lists_its_news_and_profile(site):
 
 def test_sidebar_counts(site):
     eco = (site / "economie.html").read_text(encoding="utf-8")
-    assert 'data-entity-count="iceye">1<' in eco
-    assert 'data-entity-count="planet">0<' in eco
+    assert 'data-field="entities" data-key="iceye">1<' in eco
+    assert 'data-field="entities" data-key="planet">0<' in eco
+    pol = (site / "index.html").read_text(encoding="utf-8")
+    assert 'data-field="countries" data-key="SD">1<' in pol
+
+
+def test_country_pages(site):
+    page = (site / "pays" / "SD.html").read_text(encoding="utf-8")
+    assert "<h1>Soudan</h1>" in page and "Sudan war" in page
+    assert not (site / "pays" / "ZW.html").exists()           # only countries cited by a story
 
 
 def test_market_page_embeds_business_records(site):

@@ -13,6 +13,8 @@ history:
   retention_days: 90      # durée de conservation dans data/items.json
   display_days: 14        # fenêtre affichée par défaut sur les onglets
   periods: [7, 14, 30, 90]  # choix de période proposés sur le site (jours)
+  tab_days: 30            # les onglets ne contiennent que les 30 derniers jours (pages plus légères) ;
+                          # les fiches entité et pays gardent tout l'historique
   default_domain: geospatial  # filtre de domaine par défaut des onglets : geospatial | newspace | all
 
 dedup:
@@ -100,6 +102,8 @@ paths:
   geo: config/geo.yaml
   events: config/events.yaml
   analysis: config/analysis.yaml
+  geopolitics: config/geopolitics.yaml
+  world_map: config/geodata/countries-110m.json
   items: data/items.json
   entities: data/entities.json
   stories: data/stories.json

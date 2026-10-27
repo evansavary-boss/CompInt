@@ -1,5 +1,5 @@
 {% extends "base.html.j2" %}
-{% from "_macros.html.j2" import filters, feed %}
+{% from "_macros.html.j2" import filters, feed, sidebar_box with context %}
 
 {% block main %}
 <div class="layout">
@@ -8,28 +8,35 @@
       <h1 id="page-title">{{ title }} <span class="count" data-count>{{ count }}</span></h1>
       <p>{{ subtitle }}</p>
     </header>
-    {{ filters(options, periods, display_days, default_domain, kind=kind, show_segments=(kind == 'company')) }}
+    {{ filters(options, periods, display_days, default_domain if page != 'geopolitique' else 'all', kind=kind,
+               show_segments=(kind == 'company'), show_domain=(page != 'geopolitique'),
+               show_themes=(page == 'geopolitique')) }}
+    {% if world %}
+    <figure class="card map-card" data-map>
+      <figcaption class="viz-head">
+        <div>
+          <h2>Intensité par pays</h2>
+          <p>Sujets selon les filtres ci-dessus · clic sur un pays : filtrer le fil · double-clic : sa fiche</p>
+        </div>
+      </figcaption>
+      <svg class="worldmap" viewBox="0 0 {{ world.width }} {{ world.height }}" role="img"
+           aria-label="Carte du monde : nombre de sujets par pays (détail dans la liste des pays)">
+        <path class="land-other" d="{{ world.others }}"/>
+        {% for code, d in world.shapes.items() %}
+        <path class="land m0" data-country="{{ code }}" data-name="{{ world.names.get(code, code) }}" d="{{ d }}"/>
+        {% endfor %}
+      </svg>
+      <div class="map-legend" aria-hidden="true">
+        <span>Moins</span>{% for b in range(1, 6) %}<span class="scale-step m{{ b }}"></span>{% endfor %}<span data-map-max>Plus</span>
+      </div>
+      <div class="tip map-tip" role="status" hidden></div>
+    </figure>
+    {% endif %}
     {{ feed(groups, root) }}
   </section>
 
-  <aside class="side" aria-label="{{ 'Institutions' if kind == 'institution' else 'Entreprises' }}">
-    <details class="side-box" open>
-      <summary><h2>{{ 'Institutions' if kind == 'institution' else 'Entreprises' }}</h2>
-        <span class="hint">articles selon les filtres · clic : fiche</span></summary>
-      {% for g in sidebar %}
-      <div class="side-group">
-        <h3>{{ g.label }}</h3>
-        <ul>
-          {% for e in g.entities %}
-          <li data-side-entity="{{ e.id }}">
-            <a href="{{ root }}entite/{{ e.id }}.html">{{ e.name }}</a>
-            <span class="n" data-entity-count="{{ e.id }}">{{ e.count }}</span>
-          </li>
-          {% endfor %}
-        </ul>
-      </div>
-      {% endfor %}
-    </details>
+  <aside class="side">
+    {% for box in sidebars %}{{ sidebar_box(box, root, open=loop.first) }}{% endfor %}
   </aside>
 </div>
 {% endblock %}

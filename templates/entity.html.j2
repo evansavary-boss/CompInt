@@ -1,12 +1,12 @@
 {% extends "base.html.j2" %}
-{% from "_macros.html.j2" import filters, feed %}
+{% from "_macros.html.j2" import filters, feed with context %}
 {% set e = view.entity %}
 
 {% block main %}
 <div class="layout">
   <section class="content">
     <nav class="crumbs" aria-label="Fil d'Ariane">
-      <a href="{{ root }}{{ 'index.html' if e.kind == 'institution' else 'economie.html' }}">{{ 'Politique' if e.kind == 'institution' else 'Économie' }}</a>
+      <a href="{{ root }}economie.html">Économie</a>
       <span aria-hidden="true">›</span> <span>{{ e.name }}</span>
     </nav>
 

@@ -9,6 +9,7 @@
   data-events="{{ row.event_keys | join(' ') }}"
   data-segments="{{ row.segments | join(' ') }}"
   data-industries="{{ row.industries | map('first') | join(' ') }}"
+  data-themes="{{ row.theme_keys | join(' ') }}"
   data-impact="{{ row.impact_rank }}"
   data-age="{{ row.age }}"
   data-search="{{ row.search }}">
@@ -19,7 +20,11 @@
     {% if row.n_sources > 1 %}<span class="n-sources">+ {{ row.n_sources - 1 }} source{{ 's' if row.n_sources > 2 }}</span>{% endif %}
     <span aria-hidden="true">·</span>
     <time datetime="{{ row.last.isoformat() }}" title="{{ row.date }}">{{ row.time }}</time>
-    {% if row.country_names %}<span aria-hidden="true">·</span> <span class="geo">{{ row.country_names[:3] | join(', ') }}</span>{% endif %}
+    {% if row.countries %}<span aria-hidden="true">·</span> <span class="geo">
+      {%- for code in row.countries[:3] -%}
+      {%- if not loop.first %}, {% endif -%}
+      {%- if code in country_pages %}<a href="{{ root }}pays/{{ code }}.html">{{ row.country_names[loop.index0] }}</a>{% else %}{{ row.country_names[loop.index0] }}{% endif -%}
+      {%- endfor %}</span>{% endif %}
   </p>
   {% if row.summary %}<p class="excerpt">{{ row.summary }}</p>{% endif %}
   {% if row.why %}<p class="why"><span>Pourquoi c'est important</span> {{ row.why }}</p>{% endif %}
@@ -47,14 +52,17 @@
 {% endmacro %}
 
 
-{% macro filters(options, periods, default_days, default_domain, kind=None, show_segments=False) %}
+{% macro filters(options, periods, default_days, default_domain, kind=None, show_segments=False,
+                 show_domain=True, show_themes=False) %}
 <div class="filters" data-default-days="{{ default_days }}" data-default-domain="{{ default_domain }}">
   <div class="filter-row">
+    {% if show_domain %}
     <div class="segmented" role="group" aria-label="Domaine">
       <button type="button" data-domain="geospatial">Géospatial</button>
       <button type="button" data-domain="newspace">New Space</button>
       <button type="button" data-domain="all">Tout</button>
     </div>
+    {% endif %}
     <label class="search">
       <span class="sr-only">Rechercher</span>
       <svg aria-hidden="true" viewBox="0 0 20 20" width="16" height="16"><path d="M8.5 3a5.5 5.5 0 0 1 4.38 8.83l3.65 3.64-1.06 1.06-3.64-3.65A5.5 5.5 0 1 1 8.5 3Zm0 1.5a4 4 0 1 0 0 8 4 4 0 0 0 0-8Z" fill="currentColor"/></svg>
@@ -120,6 +128,13 @@
     {% endif %}
     <button type="button" class="reset" data-reset hidden>Effacer les filtres</button>
   </div>
+  {% if show_themes and options.themes %}
+  <div class="chips" role="group" aria-label="Famille d'événements">
+    {% for k, label, n in options.themes %}
+    <button type="button" class="theme-chip" data-theme="{{ k }}" aria-pressed="false">{{ label }} <span class="n" data-theme-count="{{ k }}">{{ n }}</span></button>
+    {% endfor %}
+  </div>
+  {% endif %}
   {% if options.events %}
   <div class="chips" role="group" aria-label="Type d'événement">
     {% for k, label, n in options.events %}
@@ -141,4 +156,25 @@
   {% endfor %}
   <p class="empty" hidden>Aucun sujet ne correspond à ces filtres. Élargir la période ou passer le domaine sur « Tout ».</p>
 </div>
+{% endmacro %}
+
+
+{% macro sidebar_box(box, root, open=True) %}
+<details class="side-box"{% if open %} open{% endif %}>
+  <summary><h2>{{ box.title }}</h2>
+    <span class="hint">sujets selon les filtres · clic : fiche</span></summary>
+  {% for g in box.groups %}
+  <div class="side-group">
+    <h3>{{ g.label }}</h3>
+    <ul>
+      {% for e in g.entities %}
+      <li data-side-entity="{{ e.id }}">
+        <a href="{{ root }}{{ e.href }}">{{ e.name }}</a>
+        <span class="n" data-live-count data-field="{{ box.field }}" data-key="{{ e.id }}">{{ e.count }}</span>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+  {% endfor %}
+</details>
 {% endmacro %}

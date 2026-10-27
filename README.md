@@ -3,10 +3,13 @@
 Tableau de bord statique, mis à jour chaque matin par GitHub Actions, pour suivre l'actualité
 **politique** et **économique** mondiale du géospatial et du New Space (focus France / Europe / défense).
 
-- **Politique** : défense et espace, institutions, budgets, réglementation, coopération. Filtres par
-  pays, région, institution et type d'événement.
-- **Économie** : contrats gagnés ou perdus, lancements, nouveaux satellites et produits, levées de fonds,
-  rachats, partenariats, résultats. Filtres par entreprise, segment, pays, région et type d'événement.
+- **Géopolitique** (page d'accueil) : conflits et défense, sanctions et tensions commerciales,
+  ressources et maritime, crises et climat. Carte du monde colorée selon l'intensité des sujets (clic sur
+  un pays : filtre ; double-clic : sa fiche), filtres par famille, pays, région, impact et industrie.
+- **Fiches pays** : une page par pays cité (sujets, thèmes, acteurs cités, acteurs suivis du pays).
+- **Économie** : institutions, budgets, réglementation, contrats gagnés ou perdus, lancements, nouveaux
+  satellites et produits, levées de fonds, rachats, partenariats, résultats. Filtres par entreprise,
+  segment, pays, région et type d'événement.
 - **Marché** : synthèse tirée des actualités classées (indicateurs, activité par semaine, régions,
   segments × événements, entreprises les plus actives, principaux donneurs d'ordre, derniers contrats,
   levées et rachats).
@@ -64,7 +67,9 @@ Wikidata ───────────────────────�
 ```
 
 - **Sources** : 36 flux RSS d'éditeurs vérifiés, plus une recherche Google News par entité suivie (édition
-  française en plus pour les entités françaises). Un article Google News n'est gardé que si l'entité
+  française en plus pour les entités françaises). Pour la géopolitique (`config/geopolitics.yaml`) : 15 flux
+  (GDACS, ReliefWeb, Crisis Group, The Diplomat, BBC, Le Monde…), une vingtaine de recherches Google News par
+  thème et 4 requêtes GDELT ; un article n'est gardé que si son titre relève d'une des 4 familles. Un article Google News n'est gardé que si l'entité
   recherchée est citée dans son titre ; pour les groupes diversifiés (défense, ministères…), il faut en
   plus un mot-clé spatial ou géospatial.
 - **Classement par règles**, entièrement piloté par les fichiers YAML et refait sur tout l'historique à
@@ -90,17 +95,19 @@ config/
   keywords.yaml          mots-clés de domaine (géospatial / New Space) et exclusions
   events.yaml            types d'événements et expressions qui les signalent
   analysis.yaml          regroupement en sujets, analyse par Claude, onglets, thèmes, industries, impact
+  geopolitics.yaml       sources géopolitiques, familles de thèmes et leurs expressions, exclusions
+  geodata/               fond de carte Natural Earth 1:110m (world-atlas, licence dans le dossier)
   prompts/analyse_sujets.md   consigne envoyée à Claude (les listes d'analysis.yaml y sont ajoutées)
-  geo.yaml               pays (noms, gentilés) et régions
+  geo.yaml               198 pays (noms, gentilés, capitale, code numérique pour la carte) et régions
   entities/companies.yaml, entities/institutions.yaml   entreprises et institutions suivies
 src/
   collect.py   collecte (RSS + Google News), filtre, dédoublonnage, stockage
   classify.py  entités, pays, régions, événements, onglets      textmatch.py  détection rapide de termes
   entities.py  référentiel + Wikidata                            filter.py     mots-clés, dédoublonnage
   market.py    données de l'onglet Marché                        enrich.py     extrait + analyse Claude
-  stories.py   regroupement des articles en sujets
+  stories.py   regroupement des articles en sujets                worldmap.py   projection de la carte
   build.py     génération des pages                              store.py, models.py, config.py
-templates/     base, onglets, fiche, marché (Jinja2)
+templates/     base, onglets, fiche entité, fiche pays, marché (Jinja2)
 static/        style.css, app.js (filtres), market.css, market.js (graphiques)
 data/          items.json, stories.json, entities.json (générés)
 docs/          site généré, servi par GitHub Pages

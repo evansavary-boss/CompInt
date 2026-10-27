@@ -1,0 +1,75 @@
+{% extends "base.html.j2" %}
+{% from "_macros.html.j2" import filters, feed with context %}
+{% set c = view.country %}
+
+{% block main %}
+<div class="layout">
+  <section class="content">
+    <nav class="crumbs" aria-label="Fil d'Ariane">
+      <a href="{{ root }}index.html">Géopolitique</a>
+      <span aria-hidden="true">›</span> <span>{{ c.name }}</span>
+    </nav>
+
+    <article class="profile">
+      <header class="profile-head">
+        <div>
+          <h1>{{ c.name }}</h1>
+          <p class="badges">
+            <span class="badge badge-geo">{{ view.region }}</span>
+            {% if c.capital %}<span class="badge">Capitale : {{ c.capital }}</span>{% endif %}
+          </p>
+        </div>
+      </header>
+      <div class="kpi-strip">
+        <div><strong>{{ view.windows[7] }}</strong><span>sujets sur 7 j</span></div>
+        <div><strong>{{ view.windows[30] }}</strong><span>sur 30 j</span></div>
+        <div><strong>{{ view.windows[90] }}</strong><span>sur 90 j</span></div>
+        <div><strong>{{ view.strong }}</strong><span>à impact fort</span></div>
+        <div><strong>{{ view.geo_count }}</strong><span>en géopolitique</span></div>
+      </div>
+      <p class="source-note">Appels d'offres du pays : à venir avec l'onglet Marché.</p>
+    </article>
+
+    <header class="page-head">
+      <h2 class="feed-title">Actualités <span class="count" data-count>{{ view.count }}</span></h2>
+    </header>
+    {{ filters(view.options, periods, retention_days, 'all', show_domain=False, show_themes=True) }}
+    {{ feed(view.groups, root) }}
+  </section>
+
+  <aside class="side">
+    {% if view.themes %}
+    <div class="side-box">
+      <h2>Thèmes (90 j)</h2>
+      <ul class="bars">
+        {% for k, label, n in view.themes %}
+        <li><span class="bar-label">{{ label }}</span>
+          <span class="bar"><span class="bar-fill" style="width: {{ (100 * n / view.themes_max) | round(0) }}%"></span></span>
+          <span class="n">{{ n }}</span></li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endif %}
+    {% if view.cited %}
+    <div class="side-box">
+      <h2>Acteurs cités</h2>
+      <ul class="related">
+        {% for r in view.cited %}
+        <li><a class="chip chip-{{ r.kind }}" href="{{ root }}entite/{{ r.id }}.html">{{ r.name }}</a> <span class="n">{{ r.count }}</span></li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endif %}
+    {% if view.local %}
+    <div class="side-box">
+      <h2>Acteurs suivis du pays</h2>
+      <ul class="related">
+        {% for e in view.local %}
+        <li><a class="chip chip-{{ e.kind }}" href="{{ root }}entite/{{ e.id }}.html">{{ e.name }}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endif %}
+  </aside>
+</div>
+{% endblock %}

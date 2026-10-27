@@ -12,12 +12,22 @@ from typing import Any, Iterable
 from .models import Item
 from .textmatch import TermIndex, fold
 
-TABS = ("politique", "economie")
+TABS = ("geopolitique", "politique", "economie")
+
+
+def geo_theme_index(geo_cfg: dict[str, Any] | None) -> TermIndex:
+    """Expressions of each geopolitics family (config/geopolitics.yaml)."""
+    index = TermIndex(plurals=True)
+    for key, theme in ((geo_cfg or {}).get("themes") or {}).items():
+        index.add_many(theme.get("patterns"), key)
+        index.add_many(theme.get("patterns_cs"), key, case_sensitive=True)
+    return index
 
 
 class Classifier:
-    def __init__(self, ref: dict[str, Any]):
+    def __init__(self, ref: dict[str, Any], geo_cfg: dict[str, Any] | None = None):
         self.ref = ref
+        self.geo_themes = geo_theme_index(geo_cfg)
         self.entities = TermIndex(plurals=False)
         for eid, e in ref["entities"].items():
             self.entities.add_many(e.get("aliases"), eid)
@@ -111,6 +121,9 @@ class Classifier:
         item.events = self.find_events(text, entity_ids)
         item.countries, item.regions = self.locate(text, entity_ids)
         item.sections = self.tabs(item.events, entity_ids, item.section)
+        if item.section == "geopolitique":
+            # Keep the source's default family when the wording no longer matches any expression.
+            item.geo_themes = self.geo_themes.targets(text) or item.geo_themes
         return item
 
     def classify_all(self, items: Iterable[Item]) -> list[Item]:

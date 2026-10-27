@@ -1,5 +1,6 @@
 // Vanilla JS: feed filters (domain, period, impact, region, country, entity, segment, industry,
-// event types, full-text search) kept in the URL hash, live counts, and the "open a profile" box.
+// families, event types, full-text search) kept in the URL hash, live counts, the world map of the
+// Géopolitique tab, and the "open a profile" box.
 (function () {
   "use strict";
 
@@ -36,14 +37,15 @@
   const feed = document.querySelector("[data-feed]");
   if (!bar || !feed) return;
 
-  const SET_FIELDS = ["tags", "entities", "countries", "regions", "events", "segments", "industries"];
+  const SET_FIELDS = ["tags", "entities", "countries", "regions", "events", "segments", "industries", "themes"];
   const SELECTS = ["regions", "countries", "entities", "segments", "industries"];
+  const CHIP_GROUPS = { events: "event", themes: "theme" };   // multi-select chips: field -> data attribute
   const defaults = {
     domain: bar.dataset.defaultDomain || "all",
     days: Number(bar.dataset.defaultDays) || 14,
   };
   const EMPTY = { q: "", impact: 0, regions: "", countries: "", entities: "", segments: "", industries: "" };
-  const state = { ...defaults, ...EMPTY, events: new Set() };
+  const state = { ...defaults, ...EMPTY, events: new Set(), themes: new Set() };
 
   const items = Array.from(feed.querySelectorAll(".item")).map((el) => {
     const it = { el, age: Number(el.dataset.age), impact: Number(el.dataset.impact || 0), search: el.dataset.search };
@@ -55,7 +57,8 @@
   const impactButtons = bar.querySelectorAll("[data-impact]");
   const selects = bar.querySelectorAll("select[data-filter]");
   const searchInput = bar.querySelector('input[data-filter="q"]');
-  const chips = bar.querySelectorAll("[data-event]");
+  const chips = Object.fromEntries(Object.entries(CHIP_GROUPS).map(([f, attr]) =>
+    [f, bar.querySelectorAll(`[data-${attr}]`)]));
   const resetButton = bar.querySelector("[data-reset]");
 
   function matches(it, except) {
@@ -65,9 +68,10 @@
     for (const f of SELECTS) {
       if (f !== except && state[f] && !it[f].has(state[f])) return false;
     }
-    if (except !== "events" && state.events.size) {
+    for (const f of Object.keys(CHIP_GROUPS)) {
+      if (f === except || !state[f].size) continue;
       let any = false;
-      for (const e of state.events) if (it.events.has(e)) { any = true; break; }
+      for (const v of state[f]) if (it[f].has(v)) { any = true; break; }
       if (!any) return false;
     }
     if (state.q) {
@@ -88,7 +92,7 @@
 
   function isDefault() {
     return state.domain === defaults.domain && state.days === defaults.days && !state.q && !state.impact
-      && SELECTS.every((f) => !state[f]) && !state.events.size;
+      && SELECTS.every((f) => !state[f]) && Object.keys(CHIP_GROUPS).every((f) => !state[f].size);
   }
 
   function writeHash() {
@@ -97,7 +101,7 @@
     if (state.impact) p.set("impact", state.impact);
     if (state.days !== defaults.days) p.set("days", state.days);
     SELECTS.forEach((f) => { if (state[f]) p.set(f, state[f]); });
-    if (state.events.size) p.set("events", Array.from(state.events).join(","));
+    Object.keys(CHIP_GROUPS).forEach((f) => { if (state[f].size) p.set(f, Array.from(state[f]).join(",")); });
     if (state.q) p.set("q", state.q);
     const hash = p.toString();
     history.replaceState(null, "", hash ? `#${hash}` : window.location.pathname + window.location.search);
@@ -109,7 +113,7 @@
     state.impact = Number(p.get("impact")) || 0;
     if (p.get("days")) state.days = Number(p.get("days")) || defaults.days;
     SELECTS.forEach((f) => { state[f] = p.get(f) || ""; });
-    state.events = new Set((p.get("events") || "").split(",").filter(Boolean));
+    Object.keys(CHIP_GROUPS).forEach((f) => { state[f] = new Set((p.get(f) || "").split(",").filter(Boolean)); });
     state.q = p.get("q") || "";
   }
 
@@ -119,13 +123,15 @@
     selects.forEach((s) => {
       const f = s.dataset.filter;
       const value = f === "days" ? String(state.days) : state[f];
-      if (f === "days" && !Array.from(s.options).some((o) => o.value === value)) {
-        s.add(new Option(`${value} derniers jours`, value));
+      if (value && !Array.from(s.options).some((o) => o.value === value)) {
+        // A value from the URL or the map that the static list does not offer.
+        s.add(new Option(f === "days" ? `${value} derniers jours` : value, value));
       }
       s.value = value;
     });
     if (searchInput) searchInput.value = state.q;
-    chips.forEach((c) => c.setAttribute("aria-pressed", String(state.events.has(c.dataset.event))));
+    Object.entries(CHIP_GROUPS).forEach(([f, attr]) => chips[f].forEach((c) =>
+      c.setAttribute("aria-pressed", String(state[f].has(c.dataset[attr])))));
   }
 
   function apply() {
@@ -139,24 +145,69 @@
     feed.querySelector(".empty").hidden = visible > 0;
     document.querySelectorAll("[data-count]").forEach((el) => { el.textContent = visible; });
 
-    // Live counts: entity list ignores the entity filter, chips ignore the event filter.
-    const entityCounts = countBy("entities", "entities");
-    document.querySelectorAll("[data-entity-count]").forEach((el) => {
-      const id = el.dataset.entityCount;
-      const n = entityCounts.get(id) || 0;
+    // Live counts: each list ignores its own filter (a country list ignores the country filter…).
+    const cache = {};
+    const counts = (field) => (cache[field] = cache[field] || countBy(field, field));
+    document.querySelectorAll("[data-live-count]").forEach((el) => {
+      const { field, key } = el.dataset;
+      const n = counts(field).get(key) || 0;
       el.textContent = n;
       const li = el.closest("li");
       li.classList.toggle("zero", n === 0);
-      li.classList.toggle("active", state.entities === id);
+      li.classList.toggle("active", state[field] === key);
     });
-    const eventCounts = countBy("events", "events");
-    document.querySelectorAll("[data-event-count]").forEach((el) => {
-      const n = eventCounts.get(el.dataset.eventCount) || 0;
-      el.textContent = n;
-      el.closest("button").classList.toggle("zero", n === 0);
+    Object.entries(CHIP_GROUPS).forEach(([f, attr]) => {
+      document.querySelectorAll(`[data-${attr}-count]`).forEach((el) => {
+        const n = counts(f).get(el.dataset[`${attr}Count`]) || 0;
+        el.textContent = n;
+        el.closest("button").classList.toggle("zero", n === 0);
+      });
     });
+    paintMap(counts("countries"));
     if (resetButton) resetButton.hidden = isDefault();
     writeHash();
+  }
+
+  // ------------------------------------------------------------ world map (Géopolitique)
+  const map = document.querySelector("[data-map]");
+  const shapes = map ? Array.from(map.querySelectorAll("path[data-country]")) : [];
+  const mapTip = map ? map.querySelector(".map-tip") : null;
+  let mapCounts = new Map();
+
+  function paintMap(countryCounts) {
+    if (!map) return;
+    mapCounts = countryCounts;
+    const max = Math.max(1, ...countryCounts.values());
+    shapes.forEach((p) => {
+      const n = countryCounts.get(p.dataset.country) || 0;
+      const bin = n ? 1 + Math.min(4, Math.floor((5 * (n - 1)) / max)) : 0;
+      p.setAttribute("class", `land m${bin}${state.countries === p.dataset.country ? " selected" : ""}`);
+    });
+    const maxEl = map.querySelector("[data-map-max]");
+    if (maxEl) maxEl.textContent = `Plus (max ${max})`;
+  }
+
+  if (map) {
+    shapes.forEach((p) => {
+      p.addEventListener("click", () => {
+        const code = p.dataset.country;
+        state.countries = state.countries === code ? "" : code;
+        syncControls(); apply();
+      });
+      p.addEventListener("dblclick", () => {
+        if (mapCounts.get(p.dataset.country)) window.location.href = `${root}pays/${p.dataset.country}.html`;
+      });
+      p.addEventListener("pointermove", (e) => {
+        const n = mapCounts.get(p.dataset.country) || 0;
+        mapTip.textContent = `${p.dataset.name} · ${n} sujet${n > 1 ? "s" : ""}`;
+        mapTip.hidden = false;
+        const box = map.getBoundingClientRect();
+        const x = Math.min(e.clientX - box.left + 12, box.width - mapTip.offsetWidth - 8);
+        mapTip.style.left = `${Math.max(8, x)}px`;
+        mapTip.style.top = `${e.clientY - box.top + 14}px`;
+      });
+      p.addEventListener("pointerleave", () => { mapTip.hidden = true; });
+    });
   }
 
   // ------------------------------------------------------------ events
@@ -171,11 +222,11 @@
     state[f] = f === "days" ? Number(s.value) : s.value;
     apply();
   }));
-  chips.forEach((c) => c.addEventListener("click", () => {
-    const k = c.dataset.event;
-    if (state.events.has(k)) state.events.delete(k); else state.events.add(k);
+  Object.entries(CHIP_GROUPS).forEach(([f, attr]) => chips[f].forEach((c) => c.addEventListener("click", () => {
+    const k = c.dataset[attr];
+    if (state[f].has(k)) state[f].delete(k); else state[f].add(k);
     syncControls(); apply();
-  }));
+  })));
   let timer;
   if (searchInput) searchInput.addEventListener("input", () => {
     clearTimeout(timer);
@@ -183,7 +234,7 @@
   });
   if (resetButton) resetButton.addEventListener("click", () => {
     Object.assign(state, defaults, EMPTY);
-    state.events = new Set();
+    Object.keys(CHIP_GROUPS).forEach((f) => { state[f] = new Set(); });
     syncControls(); apply();
   });
   window.addEventListener("hashchange", () => { readHash(); syncControls(); apply(); });

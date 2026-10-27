@@ -1,33 +1,13 @@
 {
- "updated_at": "2026-10-27T07:33:36+01:00",
+ "updated_at": "2026-10-27T08:34:16+01:00",
  "last_run": {
-  "created": 71,
-  "analysed": 107,
-  "merged": 43,
+  "created": 0,
+  "analysed": 37,
+  "merged": 3,
   "error": "",
-  "cost_usd": 1.6265
+  "cost_usd": 0.1684
  },
  "stories": [
-  {
-   "id": "s74d7f2981a6ccbf0",
-   "item_ids": [
-    "74d7f2981a6ccbf0"
-   ],
-   "analysis": {},
-   "analysed_at": "",
-   "analysed_size": 0,
-   "analysis_model": ""
-  },
-  {
-   "id": "sa087cfbfa34bb547",
-   "item_ids": [
-    "a087cfbfa34bb547"
-   ],
-   "analysis": {},
-   "analysed_at": "",
-   "analysed_size": 0,
-   "analysis_model": ""
-  },
   {
    "id": "s0356578da3138007",
    "item_ids": [
@@ -8115,7 +8095,9 @@
     "ea3b33a01fa92749",
     "609892874a74462b",
     "49a49be5b4d30127",
-    "6cedcbf8b28dd7c1"
+    "6cedcbf8b28dd7c1",
+    "de999f941a0fee9f",
+    "ce7ae320461d16bf"
    ],
    "analysis": {
     "relevant": true,
@@ -11379,9 +11361,9 @@
    ],
    "analysis": {
     "relevant": true,
-    "title_fr": "Les opérateurs télécoms américains contestent la réforme FCC sur le satellite-vers-mobile",
-    "summary": "AT&T, T-Mobile et Verizon s'opposent à un projet de la FCC qui faciliterait les services satellite-vers-mobile, jugé favorable à Starlink de SpaceX.",
-    "why": "Ce débat réglementaire pourrait modifier l'accès au marché de la connectivité satellite-mobile aux États-Unis.",
+    "title_fr": "AT&T, T-Mobile et Verizon contestent le projet de la FCC favorable à SpaceX",
+    "summary": "Avant la réunion de la FCC du 29 octobre, les trois opérateurs demandent d'exclure les bandes moyennes du cadre de couverture satellite-mobile, que Starlink Mobile pourrait exploiter.",
+    "why": "L'arbitrage du spectre conditionne la place de SpaceX dans la connectivité mobile par satellite aux États-Unis.",
     "tabs": [
      "economie"
     ],
@@ -11396,8 +11378,8 @@
     ],
     "impact": "moyen"
    },
-   "analysed_at": "2026-10-26T21:00:52+01:00",
-   "analysed_size": 3,
+   "analysed_at": "2026-10-27T08:34:16+01:00",
+   "analysed_size": 7,
    "analysis_model": "claude_cli:sonnet"
   },
   {
@@ -12301,43 +12283,6 @@
    "analysis_model": "claude_cli:sonnet"
   },
   {
-   "id": "s845bd420be86281d",
-   "item_ids": [
-    "845bd420be86281d",
-    "e0d6e2295f5bfcf4",
-    "d0e6f3c74715c97b",
-    "c70a901b79fdca10",
-    "876ea4f3862fe697",
-    "a44c03d81b7c4f55",
-    "bc80e8466f238630",
-    "24ed2232409554f1",
-    "c2539f225d13ccfa"
-   ],
-   "analysis": {
-    "relevant": true,
-    "title_fr": "AST SpaceMobile gagne de nouveaux partenaires malgré une baisse de son cours",
-    "summary": "Les opérateurs brésiliens Brisanet et Unifique s'associent à AST SpaceMobile, dont l'action connaît toutefois un repli.",
-    "why": "L'expansion commerciale d'AST SpaceMobile renforce la concurrence sur le marché de la connectivité satellite directe aux mobiles.",
-    "tabs": [
-     "concurrents"
-    ],
-    "themes": [
-     "programmes"
-    ],
-    "industries": [
-     "connectivite"
-    ],
-    "countries": [
-     "US",
-     "BR"
-    ],
-    "impact": "faible"
-   },
-   "analysed_at": "2026-10-26T21:00:52+01:00",
-   "analysed_size": 3,
-   "analysis_model": "claude_cli:sonnet"
-  },
-  {
    "id": "sdbf7322087ab03e2",
    "item_ids": [
     "dbf7322087ab03e2"
@@ -12628,26 +12573,23 @@
    ],
    "analysis": {
     "relevant": true,
-    "title_fr": "SpaceX annonce un profit, Musk écarte un rachat de fournisseurs de cloud IA",
-    "summary": "SpaceX se déclare rentable, tandis qu'Elon Musk exclut que l'entreprise rachète des fournisseurs de cloud IA (neoclouds).",
-    "why": "La rentabilité de SpaceX, acteur majeur du lancement et de la connectivité, conforte sa capacité d'investissement face à ses concurrents.",
+    "title_fr": "SpaceX annonce un bénéfice, résultat ajusté quadruplé au 3e trimestre",
+    "summary": "SpaceX publie des résultats profitables, avec un bénéfice ajusté multiplié par quatre au troisième trimestre selon la presse financière.",
+    "why": "La solidité financière de SpaceX renforce sa capacité d'investissement face aux acteurs européens.",
     "tabs": [
-     "concurrents",
-     "economie"
+     "concurrents"
     ],
     "themes": [
      "financements"
     ],
-    "industries": [
-     "connectivite"
-    ],
+    "industries": [],
     "countries": [
      "US"
     ],
     "impact": "moyen"
    },
-   "analysed_at": "2026-10-26T21:00:52+01:00",
-   "analysed_size": 2,
+   "analysed_at": "2026-10-27T08:34:16+01:00",
+   "analysed_size": 5,
    "analysis_model": "claude_cli:sonnet"
   },
   {
@@ -13849,9 +13791,9 @@
    ],
    "analysis": {
     "relevant": true,
-    "title_fr": "Qatar Media Corporation prolonge son accord de distribution satellite avec Eutelsat",
-    "summary": "Qatar Media Corporation renouvelle son contrat de distribution par satellite avec Eutelsat pour la diffusion directe à domicile.",
-    "why": "Ce renouvellement consolide la position d'Eutelsat, concurrent dans les services satellitaires, sur le marché qatari.",
+    "title_fr": "Eutelsat renouvelle son accord de diffusion avec Qatar Media Corporation",
+    "summary": "Qatar Media Corporation prolonge son contrat de distribution satellite DTH avec Eutelsat.",
+    "why": "Confirme la base de revenus broadcast d'Eutelsat au Moyen-Orient.",
     "tabs": [
      "concurrents"
     ],
@@ -13867,8 +13809,8 @@
     ],
     "impact": "faible"
    },
-   "analysed_at": "2026-10-26T21:00:52+01:00",
-   "analysed_size": 3,
+   "analysed_at": "2026-10-27T08:34:16+01:00",
+   "analysed_size": 6,
    "analysis_model": "claude_cli:sonnet"
   },
   {
@@ -14203,16 +14145,6 @@
    "id": "s4ed42f592af8e48b",
    "item_ids": [
     "4ed42f592af8e48b"
-   ],
-   "analysis": {},
-   "analysed_at": "",
-   "analysed_size": 0,
-   "analysis_model": ""
-  },
-  {
-   "id": "sde999f941a0fee9f",
-   "item_ids": [
-    "de999f941a0fee9f"
    ],
    "analysis": {},
    "analysed_at": "",
@@ -15633,12 +15565,12 @@
     "47884325a07cf5b6"
    ],
    "analysis": {
-    "relevant": false,
-    "title_fr": "Une action en justice vise à annuler un accord fiscal de SpaceX en Louisiane",
-    "summary": "Des habitants et un groupe citoyen poursuivent en justice pour annuler un accord fiscal accordé à SpaceX, alléguant des réunions secrètes irrégulières.",
-    "why": "",
+    "relevant": true,
+    "title_fr": "Des habitants attaquent en justice l'accord fiscal lié à SpaceX en Louisiane",
+    "summary": "Des résidents de la paroisse de Vermilion déposent plainte pour annuler un accord avec SpaceX, invoquant des réunions illégales.",
+    "why": "Risque local sur l'implantation de SpaceX, sans effet direct sur le géospatial.",
     "tabs": [
-     "economie"
+     "concurrents"
     ],
     "themes": [],
     "industries": [],
@@ -15647,8 +15579,8 @@
     ],
     "impact": "faible"
    },
-   "analysed_at": "2026-10-27T07:33:36+01:00",
-   "analysed_size": 1,
+   "analysed_at": "2026-10-27T08:34:16+01:00",
+   "analysed_size": 3,
    "analysis_model": "claude_cli:sonnet"
   },
   {
@@ -15686,14 +15618,14 @@
    ],
    "analysis": {
     "relevant": true,
-    "title_fr": "L'AFRL démontre un transport de cargo par l'espace avec SpaceX",
-    "summary": "Le laboratoire de recherche de l'US Air Force (AFRL) a réalisé une démonstration de transport de cargo via l'espace à l'aide d'une fusée SpaceX.",
-    "why": "Cette démonstration illustre l'intérêt croissant de la défense américaine pour la logistique spatiale rapide, un marché émergent.",
+    "title_fr": "L'AFRL teste une livraison logistique par fusée sur un vol SpaceX Bandwagon-5",
+    "summary": "Le 20 octobre, l'Air Force Research Laboratory a démontré en orbite la livraison militaire point à point par fusée, à bord d'un vol partagé SpaceX.",
+    "why": "Illustre l'intégration croissante de SpaceX dans les capacités militaires américaines.",
     "tabs": [
      "concurrents"
     ],
     "themes": [
-     "programmes"
+     "lancements"
     ],
     "industries": [
      "defense"
@@ -15701,10 +15633,10 @@
     "countries": [
      "US"
     ],
-    "impact": "moyen"
+    "impact": "faible"
    },
-   "analysed_at": "2026-10-26T21:00:52+01:00",
-   "analysed_size": 1,
+   "analysed_at": "2026-10-27T08:34:16+01:00",
+   "analysed_size": 3,
    "analysis_model": "claude_cli:sonnet"
   },
   {
@@ -16024,7 +15956,17 @@
   {
    "id": "s3269b09709895694",
    "item_ids": [
-    "3269b09709895694"
+    "3269b09709895694",
+    "845bd420be86281d",
+    "e0d6e2295f5bfcf4",
+    "d0e6f3c74715c97b",
+    "c70a901b79fdca10",
+    "876ea4f3862fe697",
+    "a44c03d81b7c4f55",
+    "bc80e8466f238630",
+    "24ed2232409554f1",
+    "c2539f225d13ccfa",
+    "a31f8fbb05b5951d"
    ],
    "analysis": {
     "relevant": true,
@@ -16060,14 +16002,14 @@
    ],
    "analysis": {
     "relevant": true,
-    "title_fr": "EasyJet choisit Starlink pour équiper sa flotte en connectivité à bord",
-    "summary": "La compagnie low-cost britannique EasyJet va déployer le Wi-Fi Starlink de SpaceX sur sa flotte d'Airbus, une première pour la connectivité en vol chez le transporteur.",
-    "why": "Nouveau gain commercial pour Starlink face aux autres offres de connectivité satellite en aviation.",
+    "title_fr": "easyJet équipera sa flotte de la connectivité Starlink",
+    "summary": "La compagnie britannique easyJet signe avec Starlink pour déployer le wifi à bord sur l'ensemble de sa flotte.",
+    "why": "Starlink consolide sa position sur la connectivité aérienne face aux opérateurs GEO.",
     "tabs": [
      "concurrents"
     ],
     "themes": [
-     "produits"
+     "appels_offres"
     ],
     "industries": [
      "connectivite"
@@ -16078,8 +16020,8 @@
     ],
     "impact": "moyen"
    },
-   "analysed_at": "2026-10-27T07:33:36+01:00",
-   "analysed_size": 1,
+   "analysed_at": "2026-10-27T08:34:16+01:00",
+   "analysed_size": 2,
    "analysis_model": "claude_cli:sonnet"
   },
   {
@@ -16116,28 +16058,25 @@
    ],
    "analysis": {
     "relevant": true,
-    "title_fr": "ST Engineering iDirect fournira le réseau sol du satellite souverain omanais MB Sat-1",
-    "summary": "ST Engineering iDirect va fournir le réseau sol du microGEO souverain MB Sat-1, construit par Astranis pour MBSat (groupe Mohammed Al Barwani) à Oman.",
-    "why": "Illustre la demande croissante pour des satellites de connectivité souveraine, un marché où Airbus est aussi présent.",
+    "title_fr": "ST Engineering iDirect fournira le segment sol du satellite omanais MB Sat-1",
+    "summary": "MBSat choisit la plateforme Intuition d'ST Engineering iDirect pour l'infrastructure sol de son satellite à Oman.",
+    "why": "Nouvel opérateur satcom au Moyen-Orient, marché de connectivité à suivre.",
     "tabs": [
-     "marche",
-     "concurrents"
+     "marche"
     ],
     "themes": [
-     "appels_offres",
-     "produits"
+     "appels_offres"
     ],
     "industries": [
      "connectivite"
     ],
     "countries": [
-     "OM",
-     "US"
+     "OM"
     ],
-    "impact": "moyen"
+    "impact": "faible"
    },
-   "analysed_at": "2026-10-27T07:33:36+01:00",
-   "analysed_size": 1,
+   "analysed_at": "2026-10-27T08:34:16+01:00",
+   "analysed_size": 2,
    "analysis_model": "claude_cli:sonnet"
   },
   {
@@ -16602,9 +16541,9 @@
    ],
    "analysis": {
     "relevant": true,
-    "title_fr": "La NASA présente une stratégie de base lunaire estimée à 20 milliards de dollars",
-    "summary": "La NASA dévoile un plan ambitieux d'environ 20 milliards de dollars pour établir une base lunaire, détaillant les grandes lignes du programme.",
-    "why": "Un budget lunaire de cette ampleur structure la demande en capacités spatiales et peut créer des opportunités pour les acteurs géospatiaux.",
+    "title_fr": "La NASA dévoile un plan lunaire de 20 Md$ jusqu'en 2032",
+    "summary": "La NASA présente une stratégie de base lunaire d'environ 20 milliards de dollars, avec des alunissages possibles sous deux ans.",
+    "why": "Budget spatial civil majeur, surtout pertinent pour les fournisseurs américains.",
     "tabs": [
      "economie"
     ],
@@ -16616,10 +16555,10 @@
     "countries": [
      "US"
     ],
-    "impact": "moyen"
+    "impact": "faible"
    },
-   "analysed_at": "2026-10-27T07:33:36+01:00",
-   "analysed_size": 1,
+   "analysed_at": "2026-10-27T08:34:16+01:00",
+   "analysed_size": 3,
    "analysis_model": "claude_cli:sonnet"
   },
   {
@@ -16825,24 +16764,23 @@
    ],
    "analysis": {
     "relevant": true,
-    "title_fr": "Blue Origin accélère la construction d'un nouveau pas de tir pour New Glenn agrandi",
-    "summary": "Blue Origin avance la construction d'un nouveau pas de tir destiné à une version plus grande de son lanceur New Glenn aux États-Unis.",
-    "why": "Renforce la capacité de lancement d'un concurrent direct dans les lanceurs lourds, un enjeu pour l'accès à l'orbite des charges géospatiales.",
+    "title_fr": "Blue Origin reconstruit son pas de tir à Cap Canaveral pour le New Glenn",
+    "summary": "Blue Origin achève une tour de lancement et poursuit les travaux d'un nouveau pas de tir pour un New Glenn plus grand, avec des permis de construire de plus d'1 M$.",
+    "why": "Plus de capacité de lancement américaine, utile aux constellations d'observation de la Terre.",
     "tabs": [
      "concurrents"
     ],
     "themes": [
-     "lancements",
-     "produits"
+     "lancements"
     ],
     "industries": [],
     "countries": [
      "US"
     ],
-    "impact": "moyen"
+    "impact": "faible"
    },
-   "analysed_at": "2026-10-27T07:33:36+01:00",
-   "analysed_size": 1,
+   "analysed_at": "2026-10-27T08:34:16+01:00",
+   "analysed_size": 4,
    "analysis_model": "claude_cli:sonnet"
   },
   {
@@ -17098,6 +17036,4974 @@
     "impact": "faible"
    },
    "analysed_at": "2026-10-27T07:33:36+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s31fa5a7ff25d6e0c",
+   "item_ids": [
+    "31fa5a7ff25d6e0c"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sb553d9de022e4f80",
+   "item_ids": [
+    "b553d9de022e4f80"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s4893a2e09913d55b",
+   "item_ids": [
+    "4893a2e09913d55b"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s913a52b6c801bd44",
+   "item_ids": [
+    "913a52b6c801bd44"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sfc1da75e9bb2577a",
+   "item_ids": [
+    "fc1da75e9bb2577a"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sf0e0a40a88d92668",
+   "item_ids": [
+    "f0e0a40a88d92668"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s7fc77335cde57a21",
+   "item_ids": [
+    "7fc77335cde57a21"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "se076ebdcb9baa793",
+   "item_ids": [
+    "e076ebdcb9baa793"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s1b5a2f2591394c80",
+   "item_ids": [
+    "1b5a2f2591394c80"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s9c28154c40668564",
+   "item_ids": [
+    "9c28154c40668564"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s37e46ec5a3b965e6",
+   "item_ids": [
+    "37e46ec5a3b965e6"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s16dc8994aef8d861",
+   "item_ids": [
+    "16dc8994aef8d861"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sf168df4dec5b6c96",
+   "item_ids": [
+    "f168df4dec5b6c96"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s89fee0d106dee218",
+   "item_ids": [
+    "89fee0d106dee218"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s482bd50fd4652849",
+   "item_ids": [
+    "482bd50fd4652849"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s23b2731456984878",
+   "item_ids": [
+    "23b2731456984878"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s4ee408ad9367a0af",
+   "item_ids": [
+    "4ee408ad9367a0af"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s70445d405749630f",
+   "item_ids": [
+    "70445d405749630f"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s28c11cf6f4b86a07",
+   "item_ids": [
+    "28c11cf6f4b86a07"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s6ecee8b3ac5546eb",
+   "item_ids": [
+    "6ecee8b3ac5546eb"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s7c51a8ad7411adff",
+   "item_ids": [
+    "7c51a8ad7411adff"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s2adf47648be61573",
+   "item_ids": [
+    "2adf47648be61573"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s00ea1e6e95ace3f7",
+   "item_ids": [
+    "00ea1e6e95ace3f7"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s167d8292e9dfb117",
+   "item_ids": [
+    "167d8292e9dfb117"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s786360eedaa73f5b",
+   "item_ids": [
+    "786360eedaa73f5b"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sd84e3d0230e3601c",
+   "item_ids": [
+    "d84e3d0230e3601c"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sc23b2e98ab9bbc8b",
+   "item_ids": [
+    "c23b2e98ab9bbc8b"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s790fa0865157c312",
+   "item_ids": [
+    "790fa0865157c312"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s86a73ba3bec15055",
+   "item_ids": [
+    "86a73ba3bec15055"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sd183561c91a67d3a",
+   "item_ids": [
+    "d183561c91a67d3a"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sc86911c73334c487",
+   "item_ids": [
+    "c86911c73334c487"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s8bc936c51a93c4bc",
+   "item_ids": [
+    "8bc936c51a93c4bc"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sbe54d52c3d90256a",
+   "item_ids": [
+    "be54d52c3d90256a"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s4a808e50756ce222",
+   "item_ids": [
+    "4a808e50756ce222"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s5b090ae83ae5cd83",
+   "item_ids": [
+    "5b090ae83ae5cd83"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s597880e62bb30c3c",
+   "item_ids": [
+    "597880e62bb30c3c"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sa4f9d9ec41223727",
+   "item_ids": [
+    "a4f9d9ec41223727"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sb366a28e9f9c329d",
+   "item_ids": [
+    "b366a28e9f9c329d"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s3636379e1efa6380",
+   "item_ids": [
+    "3636379e1efa6380"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sdea5307f5c69048c",
+   "item_ids": [
+    "dea5307f5c69048c"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s315d7b69e2ec24f5",
+   "item_ids": [
+    "315d7b69e2ec24f5"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s846ccbe1eb4ba10e",
+   "item_ids": [
+    "846ccbe1eb4ba10e"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sa5ded7699577bcb0",
+   "item_ids": [
+    "a5ded7699577bcb0"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "scb757e70fc1fab2d",
+   "item_ids": [
+    "cb757e70fc1fab2d"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sab110da075236037",
+   "item_ids": [
+    "ab110da075236037"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sc30aa580ffecafde",
+   "item_ids": [
+    "c30aa580ffecafde"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "scd7c775726a587b8",
+   "item_ids": [
+    "cd7c775726a587b8"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s093d531355665f2f",
+   "item_ids": [
+    "093d531355665f2f"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s8842d0530683866d",
+   "item_ids": [
+    "8842d0530683866d"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sb23f882cc67ca0ff",
+   "item_ids": [
+    "b23f882cc67ca0ff"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s5bb316a7d4f4648f",
+   "item_ids": [
+    "5bb316a7d4f4648f"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s597d48d99b4105f4",
+   "item_ids": [
+    "597d48d99b4105f4"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s5f4f4ea3f16e6bf0",
+   "item_ids": [
+    "5f4f4ea3f16e6bf0"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s65ba341701786974",
+   "item_ids": [
+    "65ba341701786974"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s263ddf9180ba31dd",
+   "item_ids": [
+    "263ddf9180ba31dd"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s512a8e324f2f897c",
+   "item_ids": [
+    "512a8e324f2f897c"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sfe86732429e64270",
+   "item_ids": [
+    "fe86732429e64270"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s47df6878e3b12d1b",
+   "item_ids": [
+    "47df6878e3b12d1b"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s00097f12d55a4baf",
+   "item_ids": [
+    "00097f12d55a4baf"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s8e79d2b608874255",
+   "item_ids": [
+    "8e79d2b608874255"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s0a6fc7397e0e532f",
+   "item_ids": [
+    "0a6fc7397e0e532f"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "saed75b10871df475",
+   "item_ids": [
+    "aed75b10871df475"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s5117d1f54590879f",
+   "item_ids": [
+    "5117d1f54590879f"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sea07c861526ce6c8",
+   "item_ids": [
+    "ea07c861526ce6c8"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s1bab4bcd573bf5bd",
+   "item_ids": [
+    "1bab4bcd573bf5bd"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sf1a626579a340972",
+   "item_ids": [
+    "f1a626579a340972"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s3e970bf79c7902fe",
+   "item_ids": [
+    "3e970bf79c7902fe"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "se756e48a9d57915e",
+   "item_ids": [
+    "e756e48a9d57915e"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s6df8da4ab505cf16",
+   "item_ids": [
+    "6df8da4ab505cf16"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s0f6a05ed31f94292",
+   "item_ids": [
+    "0f6a05ed31f94292"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s286894ceac3142de",
+   "item_ids": [
+    "286894ceac3142de"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s2a3b241b590d2a11",
+   "item_ids": [
+    "2a3b241b590d2a11"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sf03b7fdbb01b0cd1",
+   "item_ids": [
+    "f03b7fdbb01b0cd1"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sfdc2aed0ac6adf03",
+   "item_ids": [
+    "fdc2aed0ac6adf03"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sf426de06b8bda6a8",
+   "item_ids": [
+    "f426de06b8bda6a8"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s80bb02b904afcbae",
+   "item_ids": [
+    "80bb02b904afcbae"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sf4ca0f064131975c",
+   "item_ids": [
+    "f4ca0f064131975c"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s0cbc03d9e3132e09",
+   "item_ids": [
+    "0cbc03d9e3132e09"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sb4158e2006f35929",
+   "item_ids": [
+    "b4158e2006f35929"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s62c8c249f7b447cd",
+   "item_ids": [
+    "62c8c249f7b447cd"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s4b18e674f7095ba8",
+   "item_ids": [
+    "4b18e674f7095ba8"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s9c4a972e86018b27",
+   "item_ids": [
+    "9c4a972e86018b27"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s16b2b24faeefdcda",
+   "item_ids": [
+    "16b2b24faeefdcda"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s9ab28978ea77ee2d",
+   "item_ids": [
+    "9ab28978ea77ee2d"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s8465c726c80021f0",
+   "item_ids": [
+    "8465c726c80021f0"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sf5fba40e8a8d42e3",
+   "item_ids": [
+    "f5fba40e8a8d42e3"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sb1a5a50b93b578ea",
+   "item_ids": [
+    "b1a5a50b93b578ea"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s341b0936a416f2f7",
+   "item_ids": [
+    "341b0936a416f2f7"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s41237af1933ed6a6",
+   "item_ids": [
+    "41237af1933ed6a6"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sfcd3a088a843efc4",
+   "item_ids": [
+    "fcd3a088a843efc4"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s684d9307c5e341f9",
+   "item_ids": [
+    "684d9307c5e341f9"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s5c5fc637fb1b60c2",
+   "item_ids": [
+    "5c5fc637fb1b60c2"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sc923425e577e3fb5",
+   "item_ids": [
+    "c923425e577e3fb5"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sb6d3cda1d1b17118",
+   "item_ids": [
+    "b6d3cda1d1b17118"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "see5421527086882a",
+   "item_ids": [
+    "ee5421527086882a"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s0222a95a6edc9cbd",
+   "item_ids": [
+    "0222a95a6edc9cbd"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s3c95d28ad12c7cc9",
+   "item_ids": [
+    "3c95d28ad12c7cc9"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s33af2607395ba505",
+   "item_ids": [
+    "33af2607395ba505"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s0ed925027c0619f7",
+   "item_ids": [
+    "0ed925027c0619f7"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s749e2e18134ecea7",
+   "item_ids": [
+    "749e2e18134ecea7"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sd4e24e87b1a0839b",
+   "item_ids": [
+    "d4e24e87b1a0839b"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sdbb7bc987ee53be3",
+   "item_ids": [
+    "dbb7bc987ee53be3"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s194305830aef9939",
+   "item_ids": [
+    "194305830aef9939"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sf95cfb14c890e94c",
+   "item_ids": [
+    "f95cfb14c890e94c"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s70e60cb54de9b3f5",
+   "item_ids": [
+    "70e60cb54de9b3f5"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s3a40d56f5acc13b2",
+   "item_ids": [
+    "3a40d56f5acc13b2"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s2b716a5e6601aa66",
+   "item_ids": [
+    "2b716a5e6601aa66"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "se341ce5e8b86fb9c",
+   "item_ids": [
+    "e341ce5e8b86fb9c"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sd46da07a48c296c9",
+   "item_ids": [
+    "d46da07a48c296c9"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sef2fc69b86b16c28",
+   "item_ids": [
+    "ef2fc69b86b16c28"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sef590160c5ca5fc5",
+   "item_ids": [
+    "ef590160c5ca5fc5"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s82968623b0779d5c",
+   "item_ids": [
+    "82968623b0779d5c"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s694da0c740839fd2",
+   "item_ids": [
+    "694da0c740839fd2"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sfcd4c6bcdef3eb0a",
+   "item_ids": [
+    "fcd4c6bcdef3eb0a"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s3dbca3b308b9a74c",
+   "item_ids": [
+    "3dbca3b308b9a74c"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s351f2a4acce57743",
+   "item_ids": [
+    "351f2a4acce57743"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s811219e73b4318a8",
+   "item_ids": [
+    "811219e73b4318a8"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sd956c65857d26635",
+   "item_ids": [
+    "d956c65857d26635"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sba262d28e2023ac3",
+   "item_ids": [
+    "ba262d28e2023ac3"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sccf92c3f33312f4e",
+   "item_ids": [
+    "ccf92c3f33312f4e"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s6db482110f016903",
+   "item_ids": [
+    "6db482110f016903"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s51c1380c6e68f954",
+   "item_ids": [
+    "51c1380c6e68f954"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s27f72b13e9f0cc98",
+   "item_ids": [
+    "27f72b13e9f0cc98"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "scf821a3229d424aa",
+   "item_ids": [
+    "cf821a3229d424aa"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "se12da30ed43d4b89",
+   "item_ids": [
+    "e12da30ed43d4b89",
+    "eba92644d5510d54",
+    "a8acccd053c8fd82",
+    "c23ae8051804198b"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Musk accuse Kiev de violer les conditions d'usage de Starlink pour des frappes de drones",
+    "summary": "Elon Musk justifie les restrictions de Starlink en affirmant que l'armée ukrainienne a enfreint les conditions d'utilisation en menant des frappes de drones.",
+    "why": "Montre la dépendance des armées à un opérateur privé et renforce la demande de solutions souveraines européennes.",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [
+     "conflits"
+    ],
+    "industries": [
+     "defense",
+     "connectivite"
+    ],
+    "countries": [
+     "UA",
+     "US"
+    ],
+    "impact": "moyen"
+   },
+   "analysed_at": "2026-10-27T08:34:16+01:00",
+   "analysed_size": 4,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s2d390a45fd4f7e05",
+   "item_ids": [
+    "2d390a45fd4f7e05"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sd89a5980c5104381",
+   "item_ids": [
+    "d89a5980c5104381",
+    "276d70f8acbe1db3"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Le Sénat algérien approuve l'envoi de troupes au Niger",
+    "summary": "Selon un sénateur, le Sénat algérien a approuvé l'envoi de troupes au Niger. Deux sources rapportent l'information.",
+    "why": "Nouvelle projection militaire au Sahel : demande potentielle de renseignement géospatial et de surveillance des frontières.",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [
+     "conflits"
+    ],
+    "industries": [
+     "defense",
+     "securite"
+    ],
+    "countries": [
+     "DZ",
+     "NE"
+    ],
+    "impact": "moyen"
+   },
+   "analysed_at": "2026-10-27T08:34:16+01:00",
+   "analysed_size": 2,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s76df7b16e308ce00",
+   "item_ids": [
+    "76df7b16e308ce00"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s2152b12dfe552ab8",
+   "item_ids": [
+    "2152b12dfe552ab8"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "se6d003d555f3e703",
+   "item_ids": [
+    "e6d003d555f3e703"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s07579e7d16cfe7c7",
+   "item_ids": [
+    "07579e7d16cfe7c7"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sa27fd416e6a18ac0",
+   "item_ids": [
+    "a27fd416e6a18ac0"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "se4a05e61e1946c10",
+   "item_ids": [
+    "e4a05e61e1946c10"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s50a59484fbcf2a33",
+   "item_ids": [
+    "50a59484fbcf2a33"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "se79ab8caa8a847d4",
+   "item_ids": [
+    "e79ab8caa8a847d4"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sf3b9178fd80c7dff",
+   "item_ids": [
+    "f3b9178fd80c7dff"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s062cf44e91a256e0",
+   "item_ids": [
+    "062cf44e91a256e0"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s440f47d10ac0a794",
+   "item_ids": [
+    "440f47d10ac0a794"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s07ad84f900ac6833",
+   "item_ids": [
+    "07ad84f900ac6833"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s40dabf8847446423",
+   "item_ids": [
+    "40dabf8847446423"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s1ba40d8a663e794f",
+   "item_ids": [
+    "1ba40d8a663e794f"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sa7cb766adae97031",
+   "item_ids": [
+    "a7cb766adae97031"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sad22d3ad6a42d64c",
+   "item_ids": [
+    "ad22d3ad6a42d64c"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s69bd9300d58836aa",
+   "item_ids": [
+    "69bd9300d58836aa",
+    "2f19c17d001f232d"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Le Royaume-Uni détaillera sa trajectoire vers l'objectif OTAN dans son budget",
+    "summary": "Le Premier ministre britannique annonce que le budget de mercredi présentera la trajectoire vers l'objectif de dépenses de l'OTAN.",
+    "why": "Hausse probable des budgets de défense britanniques, favorable aux achats de renseignement et d'imagerie.",
+    "tabs": [
+     "economie"
+    ],
+    "themes": [
+     "budgets"
+    ],
+    "industries": [
+     "defense"
+    ],
+    "countries": [
+     "GB"
+    ],
+    "impact": "moyen"
+   },
+   "analysed_at": "2026-10-27T08:34:16+01:00",
+   "analysed_size": 2,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s40419538657266b1",
+   "item_ids": [
+    "40419538657266b1"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s33a907a303cd880a",
+   "item_ids": [
+    "33a907a303cd880a"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s722a49825de7eadf",
+   "item_ids": [
+    "722a49825de7eadf"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sf07f0b41cd9879a0",
+   "item_ids": [
+    "f07f0b41cd9879a0"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s171af6658ae098d9",
+   "item_ids": [
+    "171af6658ae098d9"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s524ff782d2aefc41",
+   "item_ids": [
+    "524ff782d2aefc41"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s2205737ba6c5ab0e",
+   "item_ids": [
+    "2205737ba6c5ab0e"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s1e9ae7a040f88049",
+   "item_ids": [
+    "1e9ae7a040f88049"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sa931fe94af6b95ba",
+   "item_ids": [
+    "a931fe94af6b95ba"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s608559a7c6fbc5d5",
+   "item_ids": [
+    "608559a7c6fbc5d5"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s0c643799c4ad484d",
+   "item_ids": [
+    "0c643799c4ad484d"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sdb0ed40862768e9f",
+   "item_ids": [
+    "db0ed40862768e9f",
+    "b2cb85ce6a5fe0a9"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Un pétrolier neutralisé par des tirs dans le détroit d'Ormuz",
+    "summary": "Un pétrolier a été immobilisé par un tir de projectile ou des tirs d'armes dans le détroit d'Ormuz, selon deux sources.",
+    "why": "Menace sur le trafic maritime et énergétique : soutient la demande de surveillance maritime et d'imagerie.",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [
+     "ressources",
+     "conflits"
+    ],
+    "industries": [
+     "maritime",
+     "ogme",
+     "securite"
+    ],
+    "countries": [
+     "IR"
+    ],
+    "impact": "moyen"
+   },
+   "analysed_at": "2026-10-27T08:34:16+01:00",
+   "analysed_size": 2,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s3da9563c4d492e13",
+   "item_ids": [
+    "3da9563c4d492e13"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s272a8c017ad1c822",
+   "item_ids": [
+    "272a8c017ad1c822"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "se1d970d0cbd09cbd",
+   "item_ids": [
+    "e1d970d0cbd09cbd"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s743b70c7d98a4307",
+   "item_ids": [
+    "743b70c7d98a4307"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s51bbb157ad845857",
+   "item_ids": [
+    "51bbb157ad845857"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s866fd84ef1fb4658",
+   "item_ids": [
+    "866fd84ef1fb4658"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s24cbb563b2f3347a",
+   "item_ids": [
+    "24cbb563b2f3347a"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s6433d8e348a826fd",
+   "item_ids": [
+    "6433d8e348a826fd"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sd898057239ec632c",
+   "item_ids": [
+    "d898057239ec632c"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s2d0ab63639ae9b78",
+   "item_ids": [
+    "2d0ab63639ae9b78"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s8ed482c56568854c",
+   "item_ids": [
+    "8ed482c56568854c"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s505e6b5aedef7e4f",
+   "item_ids": [
+    "505e6b5aedef7e4f"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s69f4880359ccce99",
+   "item_ids": [
+    "69f4880359ccce99"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "scdfd1c4478ddf0c8",
+   "item_ids": [
+    "cdfd1c4478ddf0c8"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s1a35d7759ceaf54c",
+   "item_ids": [
+    "1a35d7759ceaf54c"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s1a9d6245bfc3ffa5",
+   "item_ids": [
+    "1a9d6245bfc3ffa5"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s98988dfc9319e8f0",
+   "item_ids": [
+    "98988dfc9319e8f0"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s957bfc64447f6981",
+   "item_ids": [
+    "957bfc64447f6981"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s5293b936e3042451",
+   "item_ids": [
+    "5293b936e3042451"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sa340469cb73057fd",
+   "item_ids": [
+    "a340469cb73057fd"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sfc5a286d4fd2d6e0",
+   "item_ids": [
+    "fc5a286d4fd2d6e0"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sbe53de29f1658f61",
+   "item_ids": [
+    "be53de29f1658f61"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s353b12a8cc1fe181",
+   "item_ids": [
+    "353b12a8cc1fe181",
+    "d873c5e4f51aa0fe",
+    "80e703e24e563431"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "L'Égypte approuve un soutien militaire à l'Arabie saoudite après les attaques houthies",
+    "summary": "Le Parlement égyptien autorise un soutien militaire à Riyad alors que les attaques houthies s'intensifient.",
+    "why": "Escalade régionale qui accroît la demande de renseignement et de surveillance.",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [
+     "conflits"
+    ],
+    "industries": [
+     "defense",
+     "securite"
+    ],
+    "countries": [
+     "EG",
+     "SA",
+     "YE"
+    ],
+    "impact": "moyen"
+   },
+   "analysed_at": "2026-10-27T08:34:16+01:00",
+   "analysed_size": 3,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s662278c93955e523",
+   "item_ids": [
+    "662278c93955e523"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sc104d70f885f0d20",
+   "item_ids": [
+    "c104d70f885f0d20"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sabb96abc240f4c26",
+   "item_ids": [
+    "abb96abc240f4c26"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s2e3eb75f44391a33",
+   "item_ids": [
+    "2e3eb75f44391a33"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s10f07dd53d5dd7a6",
+   "item_ids": [
+    "10f07dd53d5dd7a6"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sd6fff4b1807d9bed",
+   "item_ids": [
+    "d6fff4b1807d9bed"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s5c6d8aa698d241b5",
+   "item_ids": [
+    "5c6d8aa698d241b5"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s9d6bdc2a6bceb7af",
+   "item_ids": [
+    "9d6bdc2a6bceb7af"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sefe813736a3058bf",
+   "item_ids": [
+    "efe813736a3058bf"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s40e6c9c0846ddf56",
+   "item_ids": [
+    "40e6c9c0846ddf56"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s864ee27a31c34baf",
+   "item_ids": [
+    "864ee27a31c34baf"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s495b0cb84ce22042",
+   "item_ids": [
+    "495b0cb84ce22042"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s1365eb2cd39519ef",
+   "item_ids": [
+    "1365eb2cd39519ef"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s213ab3e23fd4b52e",
+   "item_ids": [
+    "213ab3e23fd4b52e"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s5601a35eeb2fe8f1",
+   "item_ids": [
+    "5601a35eeb2fe8f1"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s9a167fa64772f423",
+   "item_ids": [
+    "9a167fa64772f423"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s6057d039baa8a4bd",
+   "item_ids": [
+    "6057d039baa8a4bd"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s55bb4067a17170ad",
+   "item_ids": [
+    "55bb4067a17170ad"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s3912ef13bdec7cf0",
+   "item_ids": [
+    "3912ef13bdec7cf0"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "se3ebf69f74603bc5",
+   "item_ids": [
+    "e3ebf69f74603bc5"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sfd0001932089bca8",
+   "item_ids": [
+    "fd0001932089bca8"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s5f34c8bddd10a3d9",
+   "item_ids": [
+    "5f34c8bddd10a3d9"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "scd26b6e204a30c8d",
+   "item_ids": [
+    "cd26b6e204a30c8d"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s3434b4ed36651fff",
+   "item_ids": [
+    "3434b4ed36651fff"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sdb3a4c3539249bc4",
+   "item_ids": [
+    "db3a4c3539249bc4"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s352fd4ec534ec243",
+   "item_ids": [
+    "352fd4ec534ec243"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sad31ee4e97402bbd",
+   "item_ids": [
+    "ad31ee4e97402bbd"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s87114b7475501b7b",
+   "item_ids": [
+    "87114b7475501b7b"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s932ab57ed7f48c70",
+   "item_ids": [
+    "932ab57ed7f48c70"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s107aa0b2f910cec0",
+   "item_ids": [
+    "107aa0b2f910cec0"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sd5875690cc0983ee",
+   "item_ids": [
+    "d5875690cc0983ee"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sbfa2b32fe8ecfee3",
+   "item_ids": [
+    "bfa2b32fe8ecfee3"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s6e1e392f75cac7d9",
+   "item_ids": [
+    "6e1e392f75cac7d9"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sac1383e103dff77b",
+   "item_ids": [
+    "ac1383e103dff77b"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s8d412421b5d7c23a",
+   "item_ids": [
+    "8d412421b5d7c23a",
+    "5d463b4697c27de5"
+   ],
+   "analysis": {
+    "relevant": false,
+    "title_fr": "France : Lecornu rencontre les leaders étudiants, Macron à Marseille",
+    "summary": "Le Premier ministre Lecornu doit rencontrer des représentants étudiants alors que Macron se rend à Marseille, sur fond de troubles sociaux en France.",
+    "why": "",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [
+     "crises"
+    ],
+    "industries": [],
+    "countries": [
+     "FR"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-10-27T08:34:16+01:00",
+   "analysed_size": 2,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s0be55b18cf6edc84",
+   "item_ids": [
+    "0be55b18cf6edc84"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s9cc0942a0f82f2e4",
+   "item_ids": [
+    "9cc0942a0f82f2e4"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s4ebfc6681bba46e0",
+   "item_ids": [
+    "4ebfc6681bba46e0"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sad0aa8844188876c",
+   "item_ids": [
+    "ad0aa8844188876c"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s6f3f6d895348f2de",
+   "item_ids": [
+    "6f3f6d895348f2de"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s53a569eb8997b5c8",
+   "item_ids": [
+    "53a569eb8997b5c8"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s5a75cfab167b8ebf",
+   "item_ids": [
+    "5a75cfab167b8ebf"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s89142d676edb5d19",
+   "item_ids": [
+    "89142d676edb5d19"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sc8a6a5a28aacccf8",
+   "item_ids": [
+    "c8a6a5a28aacccf8"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sb858892f842cca02",
+   "item_ids": [
+    "b858892f842cca02"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sfba6f2443c8981ee",
+   "item_ids": [
+    "fba6f2443c8981ee"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sf418ce1149a61af2",
+   "item_ids": [
+    "f418ce1149a61af2",
+    "3d546cfdf4dcee02"
+   ],
+   "analysis": {
+    "relevant": false,
+    "title_fr": "Guerre commerciale entre les États-Unis et le Canada",
+    "summary": "Deux articles d'analyse évoquent la guerre commerciale entre États-Unis et Canada et ses effets comparés sur les deux économies.",
+    "why": "",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [
+     "sanctions"
+    ],
+    "industries": [],
+    "countries": [
+     "CA",
+     "US"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-10-27T08:34:16+01:00",
+   "analysed_size": 2,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s7109b0457e0cd505",
+   "item_ids": [
+    "7109b0457e0cd505"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s6cc0b22af7210b9f",
+   "item_ids": [
+    "6cc0b22af7210b9f"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s3139c2755c7c964c",
+   "item_ids": [
+    "3139c2755c7c964c"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sa10ed809ebfa951b",
+   "item_ids": [
+    "a10ed809ebfa951b"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sedefc288f60013db",
+   "item_ids": [
+    "edefc288f60013db"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s60fd31cfc4d30ec8",
+   "item_ids": [
+    "60fd31cfc4d30ec8"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s3775e7fd6dcc775d",
+   "item_ids": [
+    "3775e7fd6dcc775d"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s15b570938d8a89ef",
+   "item_ids": [
+    "15b570938d8a89ef"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s25553c101d7106a5",
+   "item_ids": [
+    "25553c101d7106a5"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s32461db0357c77f5",
+   "item_ids": [
+    "32461db0357c77f5"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s62a9481448908667",
+   "item_ids": [
+    "62a9481448908667"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s726d52066e1e2195",
+   "item_ids": [
+    "726d52066e1e2195"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sad3c70ea9b9c6923",
+   "item_ids": [
+    "ad3c70ea9b9c6923"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s11b79d762610bdc4",
+   "item_ids": [
+    "11b79d762610bdc4"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s06d16dadb7fcd000",
+   "item_ids": [
+    "06d16dadb7fcd000"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sbc93f3fb081ddfc6",
+   "item_ids": [
+    "bc93f3fb081ddfc6"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "scca113cceb809332",
+   "item_ids": [
+    "cca113cceb809332"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "see28ac13b7f14941",
+   "item_ids": [
+    "ee28ac13b7f14941"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s59d9ac0e884aa798",
+   "item_ids": [
+    "59d9ac0e884aa798"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s26f7f61c01acc912",
+   "item_ids": [
+    "26f7f61c01acc912"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s0ceb5d760fc47b02",
+   "item_ids": [
+    "0ceb5d760fc47b02"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "saface21b2a4ed541",
+   "item_ids": [
+    "aface21b2a4ed541"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s01db9bda91c71197",
+   "item_ids": [
+    "01db9bda91c71197"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s7d4d8cc68c573d89",
+   "item_ids": [
+    "7d4d8cc68c573d89",
+    "329de37dcc3425eb"
+   ],
+   "analysis": {
+    "relevant": false,
+    "title_fr": "Les étudiants français poursuivent la mobilisation malgré les concessions du gouvernement",
+    "summary": "Les étudiants français annoncent de nouvelles manifestations malgré les concessions du gouvernement.",
+    "why": "",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [],
+    "industries": [],
+    "countries": [
+     "FR"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-10-27T08:34:16+01:00",
+   "analysed_size": 2,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "saffa527d148191b3",
+   "item_ids": [
+    "affa527d148191b3"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s544cc80d79595e8a",
+   "item_ids": [
+    "544cc80d79595e8a"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s8921fa29259fabd0",
+   "item_ids": [
+    "8921fa29259fabd0"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sfc107f93e1911083",
+   "item_ids": [
+    "fc107f93e1911083"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s21021b41ddb6da52",
+   "item_ids": [
+    "21021b41ddb6da52"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s02b9580fa83304e7",
+   "item_ids": [
+    "02b9580fa83304e7"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s0080f32bf17420ed",
+   "item_ids": [
+    "0080f32bf17420ed"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s067742701b608afd",
+   "item_ids": [
+    "067742701b608afd"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s484792427e2274f6",
+   "item_ids": [
+    "484792427e2274f6"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s98e09521440ad59c",
+   "item_ids": [
+    "98e09521440ad59c"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s2d582301f17bbcb6",
+   "item_ids": [
+    "2d582301f17bbcb6"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s3161f1ddc6120baa",
+   "item_ids": [
+    "3161f1ddc6120baa"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s0657230d2dad23b4",
+   "item_ids": [
+    "0657230d2dad23b4"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s3fc7d9d6e3b4eb2a",
+   "item_ids": [
+    "3fc7d9d6e3b4eb2a"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sc500f744a5b90c51",
+   "item_ids": [
+    "c500f744a5b90c51"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sedcb017e2e371a33",
+   "item_ids": [
+    "edcb017e2e371a33"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sd40e8bde141cd911",
+   "item_ids": [
+    "d40e8bde141cd911"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s472d21abf80df1d8",
+   "item_ids": [
+    "472d21abf80df1d8"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sf1d510374f46caa9",
+   "item_ids": [
+    "f1d510374f46caa9"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "se6af0717d7e36329",
+   "item_ids": [
+    "e6af0717d7e36329"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s2f8768d7b14c7255",
+   "item_ids": [
+    "2f8768d7b14c7255"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s415642d663bda0b1",
+   "item_ids": [
+    "415642d663bda0b1"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sf03eb158b007cf85",
+   "item_ids": [
+    "f03eb158b007cf85"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s8b6ae656745c8afb",
+   "item_ids": [
+    "8b6ae656745c8afb"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s0f0d9f1ec9f2dd34",
+   "item_ids": [
+    "0f0d9f1ec9f2dd34"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s842ed174ca2face6",
+   "item_ids": [
+    "842ed174ca2face6"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s9e118e8bd6194980",
+   "item_ids": [
+    "9e118e8bd6194980"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sd3a8ad90a83f17c3",
+   "item_ids": [
+    "d3a8ad90a83f17c3"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "se3c8736d54e34e1c",
+   "item_ids": [
+    "e3c8736d54e34e1c"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s4e4435f4b4d41dfa",
+   "item_ids": [
+    "4e4435f4b4d41dfa"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s55635b39829d644a",
+   "item_ids": [
+    "55635b39829d644a"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s74039b00d4d2cbdb",
+   "item_ids": [
+    "74039b00d4d2cbdb"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sfbe8d3ce3ae3f9e9",
+   "item_ids": [
+    "fbe8d3ce3ae3f9e9"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s2333411a0da104b7",
+   "item_ids": [
+    "2333411a0da104b7"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sb1dbcd964bcaee58",
+   "item_ids": [
+    "b1dbcd964bcaee58"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s439433e216bf0bc9",
+   "item_ids": [
+    "439433e216bf0bc9"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sb2fcf4ec95a3841f",
+   "item_ids": [
+    "b2fcf4ec95a3841f",
+    "6481ef7ccb839c47",
+    "14297cc02b913269"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "L'Australie révise sa stratégie sur les minéraux critiques, priorité au raffinage",
+    "summary": "Canberra met à jour sa stratégie sur les minéraux critiques et vise un avantage dans le raffinage face à la Chine.",
+    "why": "Soutient l'exploration minière et le besoin d'imagerie pour le secteur des mines.",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [
+     "ressources"
+    ],
+    "industries": [
+     "ogme"
+    ],
+    "countries": [
+     "AU",
+     "CN"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-10-27T08:34:16+01:00",
+   "analysed_size": 3,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s1140e8989a7544e8",
+   "item_ids": [
+    "1140e8989a7544e8"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s382fe791b7b3a810",
+   "item_ids": [
+    "382fe791b7b3a810"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s28f75bbdddd6f101",
+   "item_ids": [
+    "28f75bbdddd6f101"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sbcec49c3ea55c62b",
+   "item_ids": [
+    "bcec49c3ea55c62b"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "scb4ef461915605e6",
+   "item_ids": [
+    "cb4ef461915605e6"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s5b27e59278885d67",
+   "item_ids": [
+    "5b27e59278885d67"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sa2ed10463eb30f3f",
+   "item_ids": [
+    "a2ed10463eb30f3f"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s8dfcb912291939c9",
+   "item_ids": [
+    "8dfcb912291939c9"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s1a4a8d2037a9cfe4",
+   "item_ids": [
+    "1a4a8d2037a9cfe4"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "se51c37f785b070c0",
+   "item_ids": [
+    "e51c37f785b070c0"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s6513ce8379b170d6",
+   "item_ids": [
+    "6513ce8379b170d6"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sa8e46b276509d225",
+   "item_ids": [
+    "a8e46b276509d225"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sef737890ac114323",
+   "item_ids": [
+    "ef737890ac114323"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sfb68f799cb017d98",
+   "item_ids": [
+    "fb68f799cb017d98"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s05217dc04b9ab0bd",
+   "item_ids": [
+    "05217dc04b9ab0bd"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sd1bbbe9b292484e8",
+   "item_ids": [
+    "d1bbbe9b292484e8"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s4594e93cf24b695a",
+   "item_ids": [
+    "4594e93cf24b695a"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s54c15db290efd40c",
+   "item_ids": [
+    "54c15db290efd40c"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s387ccc8963a8a82a",
+   "item_ids": [
+    "387ccc8963a8a82a"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "saa9800d58ae815dc",
+   "item_ids": [
+    "aa9800d58ae815dc"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s4265130ecade0725",
+   "item_ids": [
+    "4265130ecade0725"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "se98397d65129905f",
+   "item_ids": [
+    "e98397d65129905f"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s977bad02cbffb574",
+   "item_ids": [
+    "977bad02cbffb574"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "se79e9d4b523d41a0",
+   "item_ids": [
+    "e79e9d4b523d41a0"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s4b398f46d0d9129d",
+   "item_ids": [
+    "4b398f46d0d9129d"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sfcc7100f89ef5d78",
+   "item_ids": [
+    "fcc7100f89ef5d78"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s5cb2d6c4ef6f4114",
+   "item_ids": [
+    "5cb2d6c4ef6f4114"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sc711ce3caf3b59ce",
+   "item_ids": [
+    "c711ce3caf3b59ce",
+    "e7c4b962b9282303"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s5d1d93e14ce17fe2",
+   "item_ids": [
+    "5d1d93e14ce17fe2"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s946b1d0a83c1027c",
+   "item_ids": [
+    "946b1d0a83c1027c"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s8235e87e5eb70e8b",
+   "item_ids": [
+    "8235e87e5eb70e8b"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s2de982e9997c1a3e",
+   "item_ids": [
+    "2de982e9997c1a3e"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s168e27adc71fd7a6",
+   "item_ids": [
+    "168e27adc71fd7a6",
+    "6398e35c2b11ad33",
+    "977cfe9202df93d2"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Les États-Unis, l'UE et 30 pays alertent sur le risque de famine au Soudan",
+    "summary": "Les États-Unis, l'UE et une trentaine de pays appellent les belligérants soudanais à lever les obstacles à l'aide humanitaire et alertent sur la famine.",
+    "why": "Crise humanitaire qui alimente la demande de suivi satellitaire pour l'aide et la sécurité alimentaire.",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [
+     "crises"
+    ],
+    "industries": [
+     "agriculture"
+    ],
+    "countries": [
+     "SD",
+     "US"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-10-27T08:34:16+01:00",
+   "analysed_size": 3,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s34ccd78cdda49965",
+   "item_ids": [
+    "34ccd78cdda49965"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s48bd5af63e30bba9",
+   "item_ids": [
+    "48bd5af63e30bba9"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s864d2c158541cb60",
+   "item_ids": [
+    "864d2c158541cb60"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "scd63217bda4fd60f",
+   "item_ids": [
+    "cd63217bda4fd60f"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s0da5a6bff017f78a",
+   "item_ids": [
+    "0da5a6bff017f78a"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s043ca38c2393ec39",
+   "item_ids": [
+    "043ca38c2393ec39"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "se3a906ae97945efd",
+   "item_ids": [
+    "e3a906ae97945efd"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s55c315644414d2e6",
+   "item_ids": [
+    "55c315644414d2e6"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sba099aa13e8f5518",
+   "item_ids": [
+    "ba099aa13e8f5518"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sf13a595734248b2b",
+   "item_ids": [
+    "f13a595734248b2b"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sb933f8ce9049cec7",
+   "item_ids": [
+    "b933f8ce9049cec7",
+    "ec7b631d95f78d14"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "La coalition saoudienne dit avoir intercepté missiles et drones houthis",
+    "summary": "La coalition menée par l'Arabie saoudite annonce avoir abattu des missiles et drones houthis, alors que Riyad, Ankara, Islamabad et Téhéran discutent de désescalade.",
+    "why": "Tensions régionales soutenant la demande de surveillance et d'alerte.",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [
+     "conflits"
+    ],
+    "industries": [
+     "defense",
+     "securite"
+    ],
+    "countries": [
+     "SA",
+     "YE",
+     "TR",
+     "PK",
+     "IR"
+    ],
+    "impact": "moyen"
+   },
+   "analysed_at": "2026-10-27T08:34:16+01:00",
+   "analysed_size": 2,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "sbc1c8d75570a85ff",
+   "item_ids": [
+    "bc1c8d75570a85ff"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s1258ab4c8049bc6f",
+   "item_ids": [
+    "1258ab4c8049bc6f"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s481c8511f7b1faac",
+   "item_ids": [
+    "481c8511f7b1faac"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s7b27f7a181c65f13",
+   "item_ids": [
+    "7b27f7a181c65f13"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s3a14228da35aeabf",
+   "item_ids": [
+    "3a14228da35aeabf"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s1d1cfbfd0a75147f",
+   "item_ids": [
+    "1d1cfbfd0a75147f"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s9520d3c582def7ba",
+   "item_ids": [
+    "9520d3c582def7ba"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s371e6cb68eee293f",
+   "item_ids": [
+    "371e6cb68eee293f"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s14fdeba9ccd5b0a6",
+   "item_ids": [
+    "14fdeba9ccd5b0a6"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s7b65cf4accf97d07",
+   "item_ids": [
+    "7b65cf4accf97d07"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s6f1ac667356773aa",
+   "item_ids": [
+    "6f1ac667356773aa"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s1a78ad229cadafc3",
+   "item_ids": [
+    "1a78ad229cadafc3"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s04187b6ce7f2d5f9",
+   "item_ids": [
+    "04187b6ce7f2d5f9"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s5e16c67ce595dd79",
+   "item_ids": [
+    "5e16c67ce595dd79"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s27d5c72efc705760",
+   "item_ids": [
+    "27d5c72efc705760"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s5cc7b1057fd4167b",
+   "item_ids": [
+    "5cc7b1057fd4167b"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s6b870013bdd5288e",
+   "item_ids": [
+    "6b870013bdd5288e"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s3cff1da2dd55b39d",
+   "item_ids": [
+    "3cff1da2dd55b39d"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s836a0fa72c231d48",
+   "item_ids": [
+    "836a0fa72c231d48"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s4e051279d579e336",
+   "item_ids": [
+    "4e051279d579e336"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s96aac3d7ad08183b",
+   "item_ids": [
+    "96aac3d7ad08183b"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sbf85d1bb314c9a6a",
+   "item_ids": [
+    "bf85d1bb314c9a6a"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "seea4c7bde64d054d",
+   "item_ids": [
+    "eea4c7bde64d054d"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s8e6cdeabaefdf78b",
+   "item_ids": [
+    "8e6cdeabaefdf78b"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s2538231ff09f81e1",
+   "item_ids": [
+    "2538231ff09f81e1"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s8c90fcefcb5273db",
+   "item_ids": [
+    "8c90fcefcb5273db"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s3a143b73018ca74c",
+   "item_ids": [
+    "3a143b73018ca74c"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s661fefdc79bb793c",
+   "item_ids": [
+    "661fefdc79bb793c"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s9e7ff69fd84967a3",
+   "item_ids": [
+    "9e7ff69fd84967a3"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sbc6a9fa3e5b74647",
+   "item_ids": [
+    "bc6a9fa3e5b74647"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s9aa1ee93911d766d",
+   "item_ids": [
+    "9aa1ee93911d766d"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sc3df1da124480f8a",
+   "item_ids": [
+    "c3df1da124480f8a"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sb4a32d401bfcab16",
+   "item_ids": [
+    "b4a32d401bfcab16"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s6c8f3750afe9f68c",
+   "item_ids": [
+    "6c8f3750afe9f68c"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "scde3923321dc7199",
+   "item_ids": [
+    "cde3923321dc7199",
+    "3dd134a6df497ade"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Séisme de magnitude 5,1 ressenti à Mayotte",
+    "summary": "Un séisme de magnitude 5,1 est détecté à 102 km à l'est-nord-est de Dzaoudzi et ressenti à Mayotte.",
+    "why": "Activité sismique suivie par imagerie et radar (déformation du sol).",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [
+     "crises"
+    ],
+    "industries": [
+     "foret_environnement"
+    ],
+    "countries": [
+     "FR",
+     "YT"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-10-27T08:34:16+01:00",
+   "analysed_size": 2,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "sa00fe678ee6b3cad",
+   "item_ids": [
+    "a00fe678ee6b3cad"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sf131c5e3b1d50be3",
+   "item_ids": [
+    "f131c5e3b1d50be3"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s21a3601a328eb0f8",
+   "item_ids": [
+    "21a3601a328eb0f8"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "se98df3575f5572b9",
+   "item_ids": [
+    "e98df3575f5572b9"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s3a01ef538d6cf69f",
+   "item_ids": [
+    "3a01ef538d6cf69f"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s2230d8a647570e2d",
+   "item_ids": [
+    "2230d8a647570e2d"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s0c44e59b3ae74a70",
+   "item_ids": [
+    "0c44e59b3ae74a70"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "se80e9b98c34ae515",
+   "item_ids": [
+    "e80e9b98c34ae515"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s854e99f90ceeb0a5",
+   "item_ids": [
+    "854e99f90ceeb0a5"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s17775faff1d6af82",
+   "item_ids": [
+    "17775faff1d6af82"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s9c7e562cf80ecad4",
+   "item_ids": [
+    "9c7e562cf80ecad4"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s8265c328bfec6d0d",
+   "item_ids": [
+    "8265c328bfec6d0d"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s4966efa866aef358",
+   "item_ids": [
+    "4966efa866aef358",
+    "300e2b3436524623",
+    "f919398bf33eb236",
+    "dfc56264f97b245a"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Cessez-le-feu local à Oleshky entre Russie et Ukraine, négocié par Melania Trump",
+    "summary": "Un cessez-le-feu limité à la ville d'Oleshky prend effet entre la Russie et l'Ukraine, selon un accord attribué à Melania Trump.",
+    "why": "Trêve très locale; le suivi satellitaire de son respect reste utile.",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [
+     "conflits"
+    ],
+    "industries": [
+     "defense"
+    ],
+    "countries": [
+     "RU",
+     "UA"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-10-27T08:34:16+01:00",
+   "analysed_size": 2,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s2548a536fd94df42",
+   "item_ids": [
+    "2548a536fd94df42"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sd31375dc12dab72b",
+   "item_ids": [
+    "d31375dc12dab72b"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sc157bf8416d9c343",
+   "item_ids": [
+    "c157bf8416d9c343"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s25a24b2171558333",
+   "item_ids": [
+    "25a24b2171558333"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sd4f35220480159e4",
+   "item_ids": [
+    "d4f35220480159e4"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s9df85abe2cfc371b",
+   "item_ids": [
+    "9df85abe2cfc371b"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s1d59096828618cb7",
+   "item_ids": [
+    "1d59096828618cb7"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s9a9d372d94b758e4",
+   "item_ids": [
+    "9a9d372d94b758e4"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s3bc6e58169acfa95",
+   "item_ids": [
+    "3bc6e58169acfa95"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sfb06749f4de0b8cc",
+   "item_ids": [
+    "fb06749f4de0b8cc"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s302fe94d1d4e06ce",
+   "item_ids": [
+    "302fe94d1d4e06ce"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s03584d7abba8e95f",
+   "item_ids": [
+    "03584d7abba8e95f"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sd6866424b9f24854",
+   "item_ids": [
+    "d6866424b9f24854"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s0cf549791c36499a",
+   "item_ids": [
+    "0cf549791c36499a"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s065c6b8152ee799d",
+   "item_ids": [
+    "065c6b8152ee799d"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s4eab128466913cad",
+   "item_ids": [
+    "4eab128466913cad"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "se641d63d77dc2a07",
+   "item_ids": [
+    "e641d63d77dc2a07"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s5f963ca9b193502d",
+   "item_ids": [
+    "5f963ca9b193502d"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "scb790ea78b57efdc",
+   "item_ids": [
+    "cb790ea78b57efdc"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s639cc056bd7ef46a",
+   "item_ids": [
+    "639cc056bd7ef46a"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s4eb885823786f1c4",
+   "item_ids": [
+    "4eb885823786f1c4"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s2a1df4df5e427cc1",
+   "item_ids": [
+    "2a1df4df5e427cc1"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sdd42dd2f51237e11",
+   "item_ids": [
+    "dd42dd2f51237e11"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sca1d2839557b1b8d",
+   "item_ids": [
+    "ca1d2839557b1b8d"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s06da0a1c2a17f137",
+   "item_ids": [
+    "06da0a1c2a17f137"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sa03b6050b90e85d4",
+   "item_ids": [
+    "a03b6050b90e85d4"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sfe664cf1b6a38cf3",
+   "item_ids": [
+    "fe664cf1b6a38cf3"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s2e3b9d7a750e5642",
+   "item_ids": [
+    "2e3b9d7a750e5642"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s2fab98a7a4d81c78",
+   "item_ids": [
+    "2fab98a7a4d81c78"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s50e2b9d06e7534e0",
+   "item_ids": [
+    "50e2b9d06e7534e0"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s3bc47f3a92e1cd20",
+   "item_ids": [
+    "3bc47f3a92e1cd20"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s116640c778c948de",
+   "item_ids": [
+    "116640c778c948de"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s8e554500836285cb",
+   "item_ids": [
+    "8e554500836285cb"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s4458803928c961b3",
+   "item_ids": [
+    "4458803928c961b3"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s612e3b70434bcf48",
+   "item_ids": [
+    "612e3b70434bcf48"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sedfd40cd277e95cf",
+   "item_ids": [
+    "edfd40cd277e95cf"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s3f5c383f15beb556",
+   "item_ids": [
+    "3f5c383f15beb556"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s8ea8e09efec2ee33",
+   "item_ids": [
+    "8ea8e09efec2ee33"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sabc1a8a354c9f285",
+   "item_ids": [
+    "abc1a8a354c9f285"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s6253541d25eca7f8",
+   "item_ids": [
+    "6253541d25eca7f8"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sb2699ebd9de5f284",
+   "item_ids": [
+    "b2699ebd9de5f284"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "se73bdba2d0d68c22",
+   "item_ids": [
+    "e73bdba2d0d68c22"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "se9a2c1527e9c20d8",
+   "item_ids": [
+    "e9a2c1527e9c20d8"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s03f7cf20f591b811",
+   "item_ids": [
+    "03f7cf20f591b811"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s6d824a64c8ccf195",
+   "item_ids": [
+    "6d824a64c8ccf195"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sa5c179b60591e9ff",
+   "item_ids": [
+    "a5c179b60591e9ff"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sf9c730ee1ebb1be7",
+   "item_ids": [
+    "f9c730ee1ebb1be7"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sa945ebe7b6b9f5ca",
+   "item_ids": [
+    "a945ebe7b6b9f5ca"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s49f95232cc1a9c1e",
+   "item_ids": [
+    "49f95232cc1a9c1e"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s35124b0a7256cc27",
+   "item_ids": [
+    "35124b0a7256cc27"
+   ],
+   "analysis": {
+    "relevant": false,
+    "title_fr": "ISRO : recrutement d'un responsable des comptes (finance) au DOS",
+    "summary": "Offre de recrutement d'un Accounts Officer (Finance) au Department of Space de l'ISRO, candidature hors ligne.",
+    "why": "",
+    "tabs": [
+     "economie"
+    ],
+    "themes": [],
+    "industries": [],
+    "countries": [
+     "IN"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-10-27T08:34:16+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "sc9f2a50ad027125c",
+   "item_ids": [
+    "c9f2a50ad027125c"
+   ],
+   "analysis": {
+    "relevant": false,
+    "title_fr": "Bouches-du-Rhône : le trafic SNCF reprend après les inondations",
+    "summary": "Le trafic SNCF reprend mardi 27 octobre dans les Bouches-du-Rhône après les inondations.",
+    "why": "",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [
+     "crises"
+    ],
+    "industries": [
+     "infrastructures"
+    ],
+    "countries": [
+     "FR"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-10-27T08:34:16+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s162f4aa303d88ba2",
+   "item_ids": [
+    "162f4aa303d88ba2"
+   ],
+   "analysis": {
+    "relevant": false,
+    "title_fr": "Interstellar Lab confie à Voyager la gestion d'une expérience végétale sur l'ISS",
+    "summary": "Voyager Technologies gérera la mission de l'expérience de culture de plantes BioPod EDEN d'Interstellar Lab à bord de l'ISS.",
+    "why": "",
+    "tabs": [
+     "concurrents"
+    ],
+    "themes": [
+     "programmes"
+    ],
+    "industries": [],
+    "countries": [
+     "US"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-10-27T08:34:16+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s2dbe473a9d3b8995",
+   "item_ids": [
+    "2dbe473a9d3b8995"
+   ],
+   "analysis": {
+    "relevant": false,
+    "title_fr": "Dolomites : la fonte des glaciers révèle des munitions de la Première Guerre mondiale",
+    "summary": "L'armée italienne a retiré et désamorcé 250 explosifs de la Première Guerre mondiale, mis au jour par la fonte des glaciers des Dolomites.",
+    "why": "",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [
+     "crises"
+    ],
+    "industries": [
+     "foret_environnement"
+    ],
+    "countries": [
+     "IT"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-10-27T08:34:16+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s54cc54e4ec5bd89b",
+   "item_ids": [
+    "54cc54e4ec5bd89b"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "OHB : résultats annoncés le 12 novembre 2026, titre en légère hausse",
+    "summary": "L'action OHB gagne 1 % avant l'ouverture. L'entreprise publiera ses résultats le 12 novembre 2026.",
+    "why": "Concurrent européen du spatial ; ses résultats seront un point de suivi.",
+    "tabs": [
+     "concurrents"
+    ],
+    "themes": [
+     "financements"
+    ],
+    "industries": [
+     "defense"
+    ],
+    "countries": [
+     "DE"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-10-27T08:34:16+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s5b9f9d335f0a6e32",
+   "item_ids": [
+    "5b9f9d335f0a6e32"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "L'Iran dirait avoir divulgué des secrets militaires israéliens",
+    "summary": "Une vidéo affirme que l'Iran a divulgué des images et des détails sur les troupes et protocoles de combat israéliens. Source unique, non vérifiée.",
+    "why": "Tension Iran-Israël persistante et guerre de l'information, à suivre pour le renseignement.",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [
+     "conflits"
+    ],
+    "industries": [
+     "defense"
+    ],
+    "countries": [
+     "IR",
+     "IL"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-10-27T08:34:16+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s0b203e7fde418fc0",
+   "item_ids": [
+    "0b203e7fde418fc0"
+   ],
+   "analysis": {
+    "relevant": false,
+    "title_fr": "Trump ordonne des négociations sur les importations d'éoliennes, sans droits de douane",
+    "summary": "Donald Trump ordonne des négociations sur les importations d'éoliennes, sans imposer de nouveaux droits de douane.",
+    "why": "",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [
+     "sanctions"
+    ],
+    "industries": [],
+    "countries": [
+     "US"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-10-27T08:34:16+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s27d54064c7e4437b",
+   "item_ids": [
+    "27d54064c7e4437b"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Soudan : des drones des FSR frappent une centrale électrique de Khartoum",
+    "summary": "Selon une source gouvernementale, des drones des Forces de soutien rapide ont touché une centrale électrique à Khartoum.",
+    "why": "Attaques sur les infrastructures énergétiques : cas d'usage pour l'évaluation des dégâts par imagerie.",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [
+     "conflits"
+    ],
+    "industries": [
+     "ogme",
+     "infrastructures"
+    ],
+    "countries": [
+     "SD"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-10-27T08:34:16+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s28dfbc35ac94421f",
+   "item_ids": [
+    "28dfbc35ac94421f"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Une frappe de drone sur Nyala, au Soudan, fait 21 morts et 40 blessés",
+    "summary": "Une frappe de drone sur Nyala, au Soudan, a tué 21 personnes et en a blessé 40, selon une source médicale.",
+    "why": "Les frappes de drones au Soudan accentuent le besoin de suivi humanitaire et sécuritaire par satellite.",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [
+     "conflits",
+     "crises"
+    ],
+    "industries": [
+     "securite"
+    ],
+    "countries": [
+     "SD"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-10-27T08:34:16+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s6a615d5e1de580c2",
+   "item_ids": [
+    "6a615d5e1de580c2"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Israël sans Netanyahou : toujours une nation en guerre",
+    "summary": "Analyse de la situation d'Israël, qui reste en guerre malgré le départ de Netanyahou.",
+    "why": "Le conflit persistant maintient la demande de renseignement au Moyen-Orient.",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [
+     "conflits"
+    ],
+    "industries": [
+     "defense"
+    ],
+    "countries": [
+     "IL"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-10-27T08:34:16+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s5b93985ca279cf6f",
+   "item_ids": [
+    "5b93985ca279cf6f"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Jour 1707 de la guerre en Ukraine : bilan des pertes russes",
+    "summary": "Point quotidien sur les pertes russes en Ukraine au 1707e jour de la guerre.",
+    "why": "La guerre se poursuit et entretient la demande de renseignement par imagerie.",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [
+     "conflits"
+    ],
+    "industries": [
+     "defense"
+    ],
+    "countries": [
+     "RU",
+     "UA"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-10-27T08:34:16+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "sa4b1da393197bb11",
+   "item_ids": [
+    "a4b1da393197bb11"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Détroit de Béring : économie, infrastructures et risque géopolitique",
+    "summary": "Analyse sur l'économie du détroit de Béring : navigation arctique, infrastructures et risques géopolitiques.",
+    "why": "L'Arctique alimente la demande de surveillance maritime par satellite.",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [
+     "ressources"
+    ],
+    "industries": [
+     "maritime",
+     "defense"
+    ],
+    "countries": [
+     "US",
+     "RU"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-10-27T08:34:16+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "sf21cfe8f35dc9562",
+   "item_ids": [
+    "f21cfe8f35dc9562"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Détroit de Béring : souveraineté, droits de navigation et rivalité des grandes puissances",
+    "summary": "Analyse sur la souveraineté, les droits de navigation et la rivalité entre grandes puissances dans le détroit de Béring.",
+    "why": "Contexte de tensions arctiques qui soutient les besoins de surveillance maritime.",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [
+     "ressources",
+     "conflits"
+    ],
+    "industries": [
+     "maritime",
+     "defense"
+    ],
+    "countries": [
+     "US",
+     "RU"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-10-27T08:34:16+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "sc75781ac8a72dc4c",
+   "item_ids": [
+    "c75781ac8a72dc4c"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Qui gouverne le Grand Nord européen ? Souveraineté, OTAN et coopération arctique",
+    "summary": "Analyse sur la souveraineté, le rôle de l'OTAN et la coopération arctique dans le Grand Nord européen.",
+    "why": "Contexte stratégique favorable à la surveillance spatiale de l'Arctique.",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [
+     "conflits"
+    ],
+    "industries": [
+     "defense",
+     "maritime"
+    ],
+    "countries": [],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-10-27T08:34:16+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s6422a0da5e7f27d8",
+   "item_ids": [
+    "6422a0da5e7f27d8"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Défense nordique de l'OTAN : flotte russe du Nord et passage GIUK",
+    "summary": "Analyse sur la défense nordique de l'OTAN, la flotte russe du Nord et le passage GIUK (Groenland-Islande-Royaume-Uni).",
+    "why": "Le suivi naval en Atlantique Nord est un cas d'usage clé du renseignement géospatial.",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [
+     "conflits"
+    ],
+    "industries": [
+     "defense",
+     "maritime"
+    ],
+    "countries": [
+     "RU"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-10-27T08:34:16+01:00",
    "analysed_size": 1,
    "analysis_model": "claude_cli:sonnet"
   }

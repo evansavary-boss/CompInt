@@ -13,6 +13,7 @@ from __future__ import annotations
 
 import argparse
 import functools
+import hashlib
 import http.server
 import json
 import logging
@@ -28,7 +29,7 @@ from zoneinfo import ZoneInfo
 
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 
-from . import collect, entities as entities_mod, market
+from . import collect, entities as entities_mod, market, worldmap
 from .config import load_settings, load_yaml, resolve
 from .filter import normalize_text
 from .models import Item
@@ -42,11 +43,14 @@ MONTHS = ["janv.", "févr.", "mars", "avr.", "mai", "juin",
 WEEKDAYS = ["lundi", "mardi", "mercredi", "jeudi", "vendredi", "samedi", "dimanche"]
 
 # Tabs: key, file, title, subtitle, entity kind listed in the sidebar.
+# Tabs: key, file, title, subtitle, sidebar kind ("country" or entity kinds).
+GEO = "geopolitique"
 TABS = [
-    ("politique", "index.html", "Politique",
-     "Défense et espace, institutions, budgets, réglementation, coopération", "institution"),
+    (GEO, "index.html", "Géopolitique",
+     "Conflits, sanctions, ressources, crises : le contexte mondial du géospatial et de la défense",
+     ("country",)),
     ("economie", "economie.html", "Économie",
-     "Contrats, lancements, levées de fonds, rachats, produits", "company"),
+     "Institutions, budgets, contrats, lancements, financements et entreprises", ("company", "institution")),
 ]
 MARKET_PAGE = ("marche", "marche.html", "Marché",
                "Contrats, levées de fonds, rachats et lancements détectés dans l'actualité", None)
@@ -89,6 +93,15 @@ def fmt_int(value: int) -> str:
 def site_domain(url: str) -> str:
     host = urlsplit(url or "").netloc
     return host[4:] if host.startswith("www.") else host
+
+
+def on_page(row: dict[str, Any], key: str) -> bool:
+    """Which tab lists a story: Claude's tabs when analysed, else the rule-based sections."""
+    tabs = row["analysis_tabs"]
+    if tabs:
+        return (GEO in tabs) if key == GEO else bool(set(tabs) - {GEO})
+    sections = set(row["sections"])
+    return (GEO in sections) if key == GEO else bool(sections & {"politique", "economie"})
 
 
 # ---------------------------------------------------------------- view models
@@ -172,7 +185,8 @@ class SiteData:
             if region not in regions:
                 regions.append(region)
         impact = a.get("impact", "")
-        themes = [(k, self.theme_names[k]) for k in a.get("themes", []) if k in self.theme_names]
+        theme_keys = a.get("themes") or view["geo_themes"]
+        themes = [(k, self.theme_names[k]) for k in theme_keys if k in self.theme_names]
         industries = [(k, self.industry_names[k]) for k in a.get("industries", []) if k in self.industry_names]
         limit = self.analysis["stories"]["max_sources_listed"]
         listed = []
@@ -209,6 +223,8 @@ class SiteData:
             "events": [{"key": k, "label": self.event_labels.get(k, k)} for k in view["events"]],
             "segments": sorted({s for e in ents for s in e.get("segments") or []}),
             "sections": view["sections"],
+            "analysis_tabs": a.get("tabs") or [],
+            "theme_keys": [k for k, _ in themes],
             "n_items": len(view["items"]),
             "n_sources": len(view["sources"]),
             "sources": listed,
@@ -242,8 +258,10 @@ class SiteData:
         events = Counter(e for r in rows for e in r["event_keys"])
         segments = Counter(s for r in rows for s in r["segments"])
         industries = Counter(k for r in rows for k, _ in r["industries"])
-        event_keys = [k for k, v in self.ref["events"].items()
-                      if k in events and (tab is None or v["section"] in (tab, "auto"))]
+        themes = Counter(k for r in rows for k in r["theme_keys"])
+        # Business/policy event chips everywhere except Géopolitique, which filters by family.
+        event_keys = [k for k in self.ref["events"] if k in events and tab != GEO]
+        theme_tabs = {GEO} if tab == GEO else ({"economie", "marche", "concurrents"} if tab else None)
         return {
             "regions": [(k, self.region_names[k]) for k in self.region_names if k in regions],
             "countries": [(k, self.country_names.get(k, k), n) for k, n in countries.most_common()],
@@ -253,24 +271,40 @@ class SiteData:
             "industries": [(k, v, industries[k]) for k, v in self.industry_names.items() if k in industries],
             "events": [(k, self.event_labels[k], events[k]) for k in event_keys],
             "analysed": any(r["analysed"] for r in rows),
+            "themes": [(k, v["label"], themes[k]) for k, v in self.analysis["themes"].items()
+                       if (theme_tabs is None or v["tab"] in theme_tabs) and themes[k]],
         }
 
-    def sidebar(self, kind: str, rows: list[dict[str, Any]]) -> list[dict[str, Any]]:
-        """Entities of one kind, grouped (segment or type), with their story counts."""
-        counts = Counter(e for r in rows for e in r["entity_ids"])
-        groups: dict[str, list] = {}
-        for e in self.entities.values():
-            if e["kind"] != kind:
-                continue
-            key = (e.get("segments") or ["autre"])[0] if kind == "company" else e.get("type", "autre")
-            groups.setdefault(key, []).append({"id": e["id"], "name": e["name"], "count": counts[e["id"]]})
-        labels = self.segment_names if kind == "company" else self.type_names
+    def sidebar(self, kind: str, rows: list[dict[str, Any]]) -> dict[str, Any]:
+        """One sidebar box: entities of a kind grouped by segment/type, or countries by region,
+        each with its story count (updated live by the filters)."""
+        if kind == "country":
+            counts = Counter(c for r in rows for c in r["countries"])
+            groups: dict[str, list] = {}
+            for code, n in counts.items():
+                c = self.ref["countries"].get(code)
+                if c:
+                    groups.setdefault(c["region"], []).append(
+                        {"id": code, "name": c["name"], "count": n, "href": f"pays/{code}.html"})
+            labels = self.region_names
+            title, field = "Pays", "countries"
+        else:
+            counts = Counter(e for r in rows for e in r["entity_ids"])
+            groups = {}
+            for e in self.entities.values():
+                if e["kind"] != kind:
+                    continue
+                key = (e.get("segments") or ["autre"])[0] if kind == "company" else e.get("type", "autre")
+                groups.setdefault(key, []).append({"id": e["id"], "name": e["name"], "count": counts[e["id"]],
+                                                   "href": f"entite/{e['id']}.html"})
+            labels = self.segment_names if kind == "company" else self.type_names
+            title, field = ("Entreprises" if kind == "company" else "Institutions"), "entities"
         out = []
         for key, label in labels.items():
             if key in groups:
                 ranked = sorted(groups[key], key=lambda r: (-r["count"], r["name"].lower()))
                 out.append({"label": label, "entities": ranked})
-        return out
+        return {"title": title, "field": field, "groups": out}
 
     # ------------------------------------------------------------ entity pages
 
@@ -321,12 +355,54 @@ class SiteData:
             "options": self.options(rows, None, None),
         }
 
+    # ------------------------------------------------------------ country pages
+
+    def country_codes(self) -> list[str]:
+        """Countries cited by at least one story (one page each)."""
+        cited = {c for r in self.stories for c in r["countries"]}
+        return sorted(c for c in cited if c in self.ref["countries"])
+
+    def country_view(self, code: str) -> dict[str, Any]:
+        c = self.ref["countries"][code]
+        rows = [r for r in self.stories if code in r["countries"]]
+        geo_rows = [r for r in rows if on_page(r, GEO)]
+        themes = Counter(k for r in rows for k in r["theme_keys"])
+        local = [e for e in self.entities.values() if code in (e.get("countries") or [])]
+        cited = Counter(e for r in rows for e in r["entity_ids"] if e in self.entities)
+        return {
+            "code": code,
+            "country": c,
+            "region": self.region_names.get(c["region"], ""),
+            "windows": {d: sum(1 for r in rows if r["age"] < d) for d in (7, 30, 90)},
+            "strong": sum(1 for r in rows if r["impact"] == "fort"),
+            "geo_count": len(geo_rows),
+            "themes": [(k, self.theme_names[k], n) for k, n in themes.most_common() if k in self.theme_names],
+            "themes_max": max(themes.values(), default=0),
+            "local": sorted(({"id": e["id"], "name": e["name"], "kind": e["kind"]} for e in local),
+                            key=lambda e: (e["kind"], e["name"].lower())),
+            "cited": [{"id": k, "name": self.entities[k]["name"], "kind": self.entities[k]["kind"], "count": n}
+                      for k, n in cited.most_common(12)],
+            "groups": self.group_by_day(rows),
+            "count": len(rows),
+            "options": self.options(rows, None, None),
+        }
+
     def entity_index(self) -> list[dict[str, str]]:
         return sorted(({"name": e["name"], "id": e["id"], "kind": e["kind"]} for e in self.entities.values()),
                       key=lambda r: r["name"].lower())
 
 
 # ---------------------------------------------------------------- render
+
+
+def static_version(directory: Path) -> str:
+    """Short hash of the static files, so browsers reload CSS/JS as soon as they change."""
+    digest = hashlib.sha1()
+    for path in sorted(directory.rglob("*")):
+        if path.is_file():
+            digest.update(path.name.encode())
+            digest.update(path.read_bytes())
+    return digest.hexdigest()[:10]
 
 
 def render(settings: dict[str, Any]) -> None:
@@ -338,12 +414,13 @@ def render(settings: dict[str, Any]) -> None:
         trim_blocks=True,
         lstrip_blocks=True,
     )
-    feeds = [s for s in data.sources if s.get("via") != collect.GNEWS]
-    searches = [s for s in data.sources if s.get("via") == collect.GNEWS]
+    feeds = [s for s in data.sources if s.get("via") not in collect.SEARCHES]
+    searches = [s for s in data.sources if s.get("via") in collect.SEARCHES]
     common = {
         "updated_at": data.updated_at,
         "updated_label": format_datetime(data.updated_at),
         "tabs": [(k, f, t) for k, f, t, _, _ in TABS] + [MARKET_PAGE[:3]],
+        "country_pages": set(data.country_codes()),
         "entity_index": data.entity_index(),
         "feeds_ok": sum(1 for s in feeds if s.get("ok")),
         "feeds_total": len(feeds),
@@ -354,7 +431,7 @@ def render(settings: dict[str, Any]) -> None:
         "display_days": settings["history"]["display_days"],
         "retention_days": settings["history"]["retention_days"],
         "default_domain": settings["history"].get("default_domain", "all"),
-        "asset_version": data.updated_at.strftime("%Y%m%d%H%M"),
+        "asset_version": static_version(resolve(paths["static"])),
     }
 
     out = resolve(paths["output_dir"])
@@ -364,14 +441,28 @@ def render(settings: dict[str, Any]) -> None:
         path = out / name
         path.parent.mkdir(parents=True, exist_ok=True)
         root = "../" * name.count("/")
-        html = env.get_template(template).render(root=root, **common, **ctx)
+        html = env.get_template(template).render(root=root, **{**common, **ctx})
         path.write_text(html, encoding="utf-8", newline="\n")
 
-    for key, filename, title, subtitle, kind in TABS:
-        tab_rows = [r for r in data.stories if key in r["sections"]]
-        write(filename, "tab.html.j2", page=key, title=title, subtitle=subtitle, kind=kind,
+    tab_days = settings["history"].get("tab_days", settings["history"]["retention_days"])
+    world = worldmap.build_paths(resolve(paths["world_map"]), data.ref["countries"])
+    world["names"] = {code: c["name"] for code, c in data.ref["countries"].items()}
+    for key, filename, title, subtitle, kinds in TABS:
+        tab_rows = [r for r in data.stories if on_page(r, key) and r["age"] < tab_days]
+        write(filename, "tab.html.j2", page=key, title=title, subtitle=subtitle,
+              kind=kinds[0] if kinds[0] != "country" else None,
               groups=data.group_by_day(tab_rows), count=len(tab_rows),
-              options=data.options(tab_rows, kind, key), sidebar=data.sidebar(kind, tab_rows))
+              options=data.options(tab_rows, kinds[0] if kinds[0] != "country" else None, key),
+              sidebars=[data.sidebar(k, tab_rows) for k in kinds],
+              periods=[d for d in settings["history"]["periods"] if d <= tab_days],
+              world=world if key == GEO else None)
+
+    country_dir = out / "pays"
+    if country_dir.exists():
+        shutil.rmtree(country_dir)
+    for code in data.country_codes():
+        write(f"pays/{code}.html", "country.html.j2", page="pays",
+              title=data.ref["countries"][code]["name"], view=data.country_view(code))
     write(MARKET_PAGE[1], "marche.html.j2", page="marche", title="Marché", subtitle=MARKET_PAGE[3],
           market=market.market_payload(data, settings, MONTHS),
           market_days=settings["market"]["default_days"])

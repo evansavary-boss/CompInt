@@ -254,6 +254,53 @@ h1, h2, h3, h4 { letter-spacing: -0.01em; }
 .tag-geospatial { color: var(--geo); background: var(--geo-soft); }
 .tag-newspace { color: var(--ns); background: var(--ns-soft); }
 
+/* Géopolitique: family chips, world map (sequential blue ramp, validated light/dark steps). */
+.chips .theme-chip {
+  font: inherit; font-size: 0.78rem; font-weight: 650; cursor: pointer; border-radius: 5px;
+  padding: 3px 9px; line-height: 1.4; border: 1px solid var(--border);
+  background: var(--surface-2); color: var(--text);
+}
+.chips .theme-chip .n { opacity: 0.7; font-weight: 500; margin-left: 2px; }
+.chips .theme-chip[aria-pressed="true"] { border-color: var(--accent); color: var(--accent); background: var(--accent-soft); }
+.chips .theme-chip.zero:not([aria-pressed="true"]) { opacity: 0.45; }
+
+.map-card {
+  position: relative; margin: 0 0 14px; padding: 12px 16px;
+  background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); box-shadow: var(--shadow);
+  --m1: #cde2fb; --m2: #9ec5f4; --m3: #6da7ec; --m4: #256abf; --m5: #104281; --m-empty: #e9ebef;
+}
+@media (prefers-color-scheme: dark) {
+  .map-card { --m1: #0d366b; --m2: #184f95; --m3: #256abf; --m4: #5598e7; --m5: #9ec5f4; --m-empty: #262a32; }
+}
+.map-card .viz-head { display: flex; justify-content: space-between; gap: 12px; margin-bottom: 6px; }
+.map-card .viz-head h2 { margin: 0; font-size: 0.95rem; font-weight: 700; }
+.map-card .viz-head p { margin: 2px 0 0; font-size: 0.76rem; color: var(--faint); }
+.worldmap { display: block; width: 100%; height: auto; overflow: hidden; }
+.worldmap .land { stroke: var(--surface); stroke-width: 0.6; cursor: pointer; transition: fill 0.15s; }
+.worldmap .land-other { fill: var(--m-empty); stroke: var(--surface); stroke-width: 0.6; }
+.worldmap .m0 { fill: var(--m-empty); }
+.worldmap .m1 { fill: var(--m1); } .worldmap .m2 { fill: var(--m2); } .worldmap .m3 { fill: var(--m3); }
+.worldmap .m4 { fill: var(--m4); } .worldmap .m5 { fill: var(--m5); }
+.worldmap .land:hover { stroke: var(--text); stroke-width: 1; }
+.worldmap .land.selected { stroke: var(--accent); stroke-width: 1.6; }
+.map-legend { display: flex; align-items: center; gap: 3px; margin-top: 6px; font-size: 0.72rem; color: var(--faint); }
+.map-legend > span:first-child { margin-right: 4px; }
+.map-legend > span:last-child { margin-left: 4px; }
+.map-legend .scale-step { width: 22px; height: 10px; border-radius: 2px; }
+.map-legend .m1 { background: var(--m1); } .map-legend .m2 { background: var(--m2); }
+.map-legend .m3 { background: var(--m3); } .map-legend .m4 { background: var(--m4); } .map-legend .m5 { background: var(--m5); }
+.map-tip {
+  position: absolute; z-index: 5; pointer-events: none; font-size: 0.78rem; font-weight: 600;
+  background: var(--surface); border: 1px solid var(--border); border-radius: 6px; padding: 4px 8px;
+  box-shadow: 0 6px 20px rgb(0 0 0 / 0.12);
+}
+.kpi-strip { display: flex; flex-wrap: wrap; gap: 8px 22px; margin: 14px 0 0; }
+.kpi-strip div { display: flex; flex-direction: column; }
+.kpi-strip strong { font-size: 1.4rem; font-weight: 700; line-height: 1.1; }
+.kpi-strip span { font-size: 0.74rem; color: var(--faint); }
+.geo a { color: inherit; text-decoration: none; }
+.geo a:hover { color: var(--accent); text-decoration: underline; }
+
 /* Story cards: impact is an importance scale (one hue, stronger = more important). */
 .impact-badge {
   font-size: 0.68rem; font-weight: 700; border-radius: 4px; padding: 0 6px; line-height: 1.6;
