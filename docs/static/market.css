@@ -1,7 +1,9 @@
 /* Marché tab: KPI tiles, charts, heatmap, latest lists.
    Series hues validated with the dataviz palette checker (light on #fff, dark on #171a20):
    adjacent CVD ΔE ≥ 17, normal-vision ΔE ≥ 21. Light aqua is under 3:1 contrast, hence a
-   legend on every chart and the table view. */
+   legend on every chart and the table view.
+   Tender winners (Airbus / tracked competitor, other winners in neutral grey): blue and orange,
+   CVD ΔE 24.7 light / 26.8 dark, normal-vision ΔE 33.6 / 31.8, both ≥ 3:1 (validated 2026-10-27). */
 
 .market {
   --s-contract_won: #008300;
@@ -10,6 +12,8 @@
   --s-launch: #2a78d6;
   --s-other: #c9ccd2;
   --s-total: #8a919d;
+  --s-own: #2a78d6;
+  --s-rival: #eb6834;
   --viz-axis: #c3c2b7;
   --h1: #cde2fb; --h2: #9ec5f4; --h3: #6da7ec; --h4: #256abf; --h5: #104281;
   --h-ink-1: #0b0b0b; --h-ink-2: #0b0b0b; --h-ink-3: #0b0b0b; --h-ink-4: #ffffff; --h-ink-5: #ffffff;
@@ -22,6 +26,8 @@
     --s-launch: #3987e5;
     --s-other: #3a3f48;
     --s-total: #737b88;
+    --s-own: #3987e5;
+    --s-rival: #d95926;
     --viz-axis: #383835;
     --h1: #0d366b; --h2: #184f95; --h3: #256abf; --h4: #5598e7; --h5: #9ec5f4;
     --h-ink-1: #e7e9ee; --h-ink-2: #e7e9ee; --h-ink-3: #ffffff; --h-ink-4: #0b0b0b; --h-ink-5: #0b0b0b;
@@ -53,6 +59,8 @@
 .s-launch { --s: var(--s-launch); }
 .s-other { --s: var(--s-other); }
 .s-total { --s: var(--s-total); }
+.s-own { --s: var(--s-own); }
+.s-rival { --s: var(--s-rival); }
 .mark { fill: var(--s); }
 .key { display: inline-block; flex: 0 0 auto; background: var(--s, var(--s-total)); }
 .key-rect { width: 10px; height: 10px; border-radius: 2px; }
@@ -147,8 +155,67 @@
 .list-chips { display: flex; flex-wrap: wrap; gap: 4px; }
 .more { display: inline-block; margin-top: 8px; font-size: 0.8rem; color: var(--accent); }
 
+/* View switch (tenders / press signals) */
+.view-switch { margin: 0 0 14px; }
+.view-switch button[aria-selected="true"] { background: var(--surface); color: var(--accent); box-shadow: var(--shadow); }
+.view-intro { margin: 0 0 10px; font-size: 0.85rem; color: var(--muted); }
+.segmented.small button { font-size: 0.74rem; padding: 3px 9px; }
+.tender-search { flex: 1 1 180px; min-width: 160px; }
+.viz-grid-even { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+
+.kpis-6 { grid-template-columns: repeat(6, minmax(0, 1fr)); }
+.kpis-6 .kpi-value { font-size: 1.65rem; }
+.kpi-static:hover { border-color: var(--border); }
+
+.hbar-button {
+  font: inherit; color: inherit; text-align: left; width: 100%; cursor: pointer;
+  background: none; border: 0;
+}
+.hbar-button[aria-pressed="true"] { background: var(--accent-soft); }
+.hbars.wide-values .hbar { grid-template-columns: minmax(90px, 34%) 1fr 64px; }
+.heat td button {
+  display: block; width: 100%; line-height: 30px; border: 0; background: none; color: inherit;
+  font: inherit; cursor: pointer; border-radius: 4px;
+}
+.heat td button:hover, .heat td button:focus-visible { outline: 2px solid var(--accent); outline-offset: -2px; }
+.heat tfoot th, .heat-total { color: var(--faint); font-weight: 600; font-size: 0.74rem; background: none; }
+
+/* Tender tables */
+.table-card { padding: 14px 16px; margin: 0 0 16px; }
+.table-wrap { overflow-x: auto; }
+.tender-table { width: 100%; border-collapse: collapse; font-size: 0.8rem; }
+.tender-table th, .tender-table td { padding: 7px 8px; border-bottom: 1px solid var(--border); text-align: left; vertical-align: top; }
+.tender-table thead th { color: var(--faint); font-weight: 600; font-size: 0.74rem; white-space: nowrap; }
+.tender-table .num { text-align: right; white-space: nowrap; font-variant-numeric: tabular-nums; }
+.tender-table td a { text-decoration: none; }
+.tender-table td a:hover { color: var(--accent); text-decoration: underline; }
+.t-date { white-space: nowrap; font-variant-numeric: tabular-nums; }
+.t-date .t-left { display: block; width: fit-content; margin-top: 3px; }
+.t-object { min-width: 260px; max-width: 520px; }
+.t-object > a { font-weight: 600; line-height: 1.35; }
+.t-summary { display: block; margin-top: 3px; color: var(--muted); line-height: 1.4; }
+.t-pending { display: block; margin-top: 3px; font-size: 0.7rem; color: var(--faint); font-style: italic; }
+.fit-badge {
+  display: inline-block; margin-top: 4px; padding: 0 7px; border-radius: 999px;
+  font-size: 0.7rem; font-weight: 650; background: var(--surface-2); color: var(--muted);
+}
+.fit-badge.fit-forte { background: var(--accent-soft); color: var(--accent); }
+.t-source { white-space: nowrap; color: var(--muted); }
+.t-kind { display: block; font-size: 0.7rem; color: var(--faint); }
+.t-winners { min-width: 160px; }
+.t-winner { display: flex; align-items: center; gap: 6px; line-height: 1.4; }
+.table-more { margin: 8px 0 0; }
+
+.press-card { margin: 0 0 16px; }
+.press-card > .small { margin: 0 0 6px; font-size: 0.78rem; }
+.press-summary { font-size: 0.8rem; color: var(--muted); line-height: 1.4; }
+.source-note { font-size: 0.74rem; color: var(--faint); line-height: 1.5; margin: 4px 0 24px; }
+
+@media (max-width: 1200px) {
+  .kpis-6 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
 @media (max-width: 1000px) {
-  .viz-grid, .lists { grid-template-columns: minmax(0, 1fr); }
+  .viz-grid, .viz-grid-even, .lists { grid-template-columns: minmax(0, 1fr); }
   .kpis { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 @media (max-width: 640px) {

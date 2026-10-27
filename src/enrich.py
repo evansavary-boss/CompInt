@@ -43,6 +43,7 @@ def truncate(text: str, max_chars: int) -> str:
 # ---------------------------------------------------------------- analysis contract
 
 ANALYSIS_FIELDS = ("relevant", "title_fr", "summary", "why", "tabs", "themes", "industries", "countries", "impact")
+STORY_INSTRUCTION = "Analyse les sujets fournis en entrée (JSON) selon tes instructions."
 
 
 def build_schema(acfg: dict[str, Any]) -> dict[str, Any]:
@@ -169,11 +170,12 @@ class ClaudeCliAnalyzer(StoryAnalyzer):
             return False, f"Claude Code introuvable (commande « {self.cfg['command']} »)"
         return True, ""
 
-    def command(self, prompt_file: str) -> list[str]:
+    def command(self, prompt_file: str, instruction: str = STORY_INSTRUCTION,
+                schema: str | None = None) -> list[str]:
         return [
-            self.binary, "-p", "Analyse les sujets fournis en entrée (JSON) selon tes instructions.",
+            self.binary, "-p", instruction,
             "--output-format", "json",
-            "--json-schema", self.schema,
+            "--json-schema", schema or self.schema,
             "--model", self.cfg["model"],
             "--tools", "",
             "--disallowedTools", "mcp__*",
@@ -181,22 +183,27 @@ class ClaudeCliAnalyzer(StoryAnalyzer):
             "--no-session-persistence",
         ]
 
-    def analyse(self, stories, recent):
-        payload = json.dumps({"sujets": stories, "sujets_recents": recent}, ensure_ascii=False)
+    def call(self, payload: str, system_prompt: str, schema: str, instruction: str, key: str,
+             timeout: int | None = None) -> BatchResult:
+        """One headless Claude Code run: JSON payload on stdin, list `key` of the structured answer."""
         # Run outside the project so no CLAUDE.md, hook or MCP config of the repo is loaded.
         with tempfile.TemporaryDirectory() as tmp:
             prompt_file = Path(tmp) / "system.md"
-            prompt_file.write_text(self.system_prompt, encoding="utf-8")
+            prompt_file.write_text(system_prompt, encoding="utf-8")
             try:
-                proc = subprocess.run(self.command(str(prompt_file)), input=payload, cwd=tmp,
+                proc = subprocess.run(self.command(str(prompt_file), instruction, schema), input=payload, cwd=tmp,
                                       capture_output=True, text=True, encoding="utf-8",
-                                      timeout=self.cfg["timeout_seconds"], env=os.environ.copy())
+                                      timeout=timeout or self.cfg["timeout_seconds"], env=os.environ.copy())
             except subprocess.TimeoutExpired:
                 raise AnalysisError("délai dépassé")
-        return parse_cli_output(proc.stdout, proc.returncode, proc.stderr)
+        return parse_cli_output(proc.stdout, proc.returncode, proc.stderr, key)
+
+    def analyse(self, stories, recent):
+        payload = json.dumps({"sujets": stories, "sujets_recents": recent}, ensure_ascii=False)
+        return self.call(payload, self.system_prompt, self.schema, STORY_INSTRUCTION, "stories")
 
 
-def parse_cli_output(stdout: str, returncode: int, stderr: str = "") -> BatchResult:
+def parse_cli_output(stdout: str, returncode: int, stderr: str = "", key: str = "stories") -> BatchResult:
     try:
         out = json.loads(stdout)
     except json.JSONDecodeError:
@@ -210,7 +217,7 @@ def parse_cli_output(stdout: str, returncode: int, stderr: str = "") -> BatchRes
             structured = json.loads(out.get("result") or "")
         except (TypeError, json.JSONDecodeError):
             raise AnalysisError("pas de sortie structurée")
-    return BatchResult(structured.get("stories", []), out.get("total_cost_usd"))
+    return BatchResult(structured.get(key, []), out.get("total_cost_usd"))
 
 
 ANALYZERS: dict[str, type[StoryAnalyzer]] = {

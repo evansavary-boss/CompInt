@@ -178,3 +178,36 @@
   {% endfor %}
 </details>
 {% endmacro %}
+
+{# Open tenders and latest awards of a country or entity (box from build.SiteData.tender_box). #}
+{% macro tender_box(box, root, heading, more_href=None) %}
+<section class="profile tender-box" aria-label="{{ heading }}">
+  <h2>{{ heading }} <span class="count">{{ box.total }}</span></h2>
+  {% if box.open %}
+  <h3>Ouverts ({{ box.open | length }})</h3>
+  <ul class="tender-list">
+    {% for t in box.open[:8] %}
+    <li>
+      <a href="{{ t.url }}" target="_blank" rel="noopener noreferrer">{{ t.title }}</a>
+      <span class="tender-meta">
+        {% if t.deadline %}Date limite {{ t.deadline_label }}{% if t.days_left is not none %} <span class="t-left{% if t.days_left <= box.closing_soon %} soon{% endif %}">{{ "aujourd'hui" if t.days_left == 0 else "J-" ~ t.days_left }}</span>{% endif %}{% else %}Date limite non précisée{% endif %}
+        · {{ t.buyer }}{% if t.value_label %} · {{ t.value_label }}{% endif %} · {{ t.source_label }}{% if t.fit == "forte" %} · <strong>adéquation forte</strong>{% endif %}
+      </span>
+    </li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+  {% if box.awards %}
+  <h3>Attributions récentes ({{ box.awards_count }})</h3>
+  <ul class="tender-list">
+    {% for t in box.awards %}
+    <li>
+      <a href="{{ t.url }}" target="_blank" rel="noopener noreferrer">{{ t.title }}</a>
+      <span class="tender-meta">{{ t.published_label }} · {{ t.buyer }}{% if t.winners %} · attribué à {{ t.winners[:4] | map(attribute="name") | join(", ") }}{% endif %}{% if t.value_label %} · {{ t.value_label }}{% endif %}</span>
+    </li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+  {% if more_href %}<a class="more" href="{{ more_href }}">Tout voir sur la page Marché →</a>{% endif %}
+</section>
+{% endmacro %}

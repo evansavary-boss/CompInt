@@ -1,7 +1,7 @@
 """Build the static site in docs/.
 
-Pages: index.html (Politique), economie.html, marche.html and one page per entity
-in entite/<id>.html.
+Pages: index.html (Géopolitique), economie.html, marche.html, one page per entity in
+entite/<id>.html and one per country in pays/<code>.html.
 
 Usage:
     python -m src.build                  # refresh entities, collect news, render docs/
@@ -29,7 +29,7 @@ from zoneinfo import ZoneInfo
 
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 
-from . import collect, entities as entities_mod, market, worldmap
+from . import collect, entities as entities_mod, market, tenders as tenders_mod, worldmap
 from .config import load_settings, load_yaml, resolve
 from .filter import normalize_text
 from .models import Item
@@ -53,7 +53,7 @@ TABS = [
      "Institutions, budgets, contrats, lancements, financements et entreprises", ("company", "institution")),
 ]
 MARKET_PAGE = ("marche", "marche.html", "Marché",
-               "Contrats, levées de fonds, rachats et lancements détectés dans l'actualité", None)
+               "Appels d'offres publics (TED, Find a Tender) et signaux du marché dans la presse", None)
 
 FACT_LABELS = [
     ("founded", "Création"),
@@ -140,6 +140,8 @@ class SiteData:
         self.theme_names = {k: v["label"] for k, v in self.analysis["themes"].items()}
         self.industry_names = self.analysis["industries"]
         self.stories = self._load_stories()
+        self.tenders, self.tender_meta = market.tender_rows(settings, self.ref, self.entities,
+                                                            self.updated_at.date(), MONTHS)
 
     # ------------------------------------------------------------ items (Marché page)
 
@@ -331,6 +333,10 @@ class SiteData:
             tags = [self.type_names.get(e.get("type"), "")]
         events = Counter(k for r in rows for k in r["event_keys"])
         co = Counter(o for r in rows for o in r["entity_ids"] if o != eid and o in self.entities)
+        if e["kind"] == "company":
+            tenders = [t for t in self.tenders if t["kind"] == "award" and any(w["id"] == eid for w in t["winners"])]
+        else:
+            tenders = [t for t in self.tenders if t["buyer_id"] == eid]
         windows = {d: sum(1 for r in rows if r["age"] < d) for d in (7, 30, 90)}
         return {
             "entity": e,
@@ -353,13 +359,24 @@ class SiteData:
             "groups": self.group_by_day(rows),
             "count": len(rows),
             "options": self.options(rows, None, None),
+            "tenders": self.tender_box(tenders),
         }
+
+    # ------------------------------------------------------------ tenders
+
+    def tender_box(self, rows: list[dict[str, Any]]) -> dict[str, Any]:
+        """Open tenders (closest deadline first) and latest awards, for a country or entity page."""
+        disp = self.tender_meta["config"]["display"]
+        opened = sorted((r for r in rows if r["open"]), key=lambda r: (r["deadline"] or "9999", r["published"]))
+        awards = [r for r in rows if r["kind"] == "award"]
+        return {"open": opened, "awards": awards[: disp["award_rows"] // 4], "awards_count": len(awards),
+                "total": len(rows), "closing_soon": self.tender_meta["config"]["closing_soon_days"]}
 
     # ------------------------------------------------------------ country pages
 
     def country_codes(self) -> list[str]:
         """Countries cited by at least one story (one page each)."""
-        cited = {c for r in self.stories for c in r["countries"]}
+        cited = {c for r in self.stories for c in r["countries"]} | {t["country"] for t in self.tenders}
         return sorted(c for c in cited if c in self.ref["countries"])
 
     def country_view(self, code: str) -> dict[str, Any]:
@@ -385,6 +402,7 @@ class SiteData:
             "groups": self.group_by_day(rows),
             "count": len(rows),
             "options": self.options(rows, None, None),
+            "tenders": self.tender_box([t for t in self.tenders if t["country"] == code or code in t["countries"]]),
         }
 
     def entity_index(self) -> list[dict[str, str]]:
@@ -463,9 +481,20 @@ def render(settings: dict[str, Any]) -> None:
     for code in data.country_codes():
         write(f"pays/{code}.html", "country.html.j2", page="pays",
               title=data.ref["countries"][code]["name"], view=data.country_view(code))
+    tcfg = data.tender_meta["config"]
+    sources = []
+    for s in data.tender_meta["sources"]:
+        when = data.tender_meta.get("updated_at")
+        sources.append({**s, "when": format_datetime(datetime.fromisoformat(when)) if when else ""})
     write(MARKET_PAGE[1], "marche.html.j2", page="marche", title="Marché", subtitle=MARKET_PAGE[3],
           market=market.market_payload(data, settings, MONTHS),
-          market_days=settings["market"]["default_days"])
+          market_days=settings["market"]["default_days"],
+          tenders=market.tender_payload(data.tenders, data.tender_meta, data.ref, data.analysis, data.entities,
+                                        data.updated_at.date(), MONTHS),
+          tender_days=tcfg["display"]["default_days"], tender_periods=tcfg["display"]["periods"],
+          tender_sources=sources, tender_pending=data.tender_meta["pending"],
+          fx_date=format_date(datetime.fromisoformat(data.tender_meta["fx_date"])) if data.tender_meta["fx_date"] else "",
+          press=market.press_rows(data.stories, tcfg), tenders_press_days=tcfg["display"]["press_days"])
 
     entity_dir = out / "entite"
     if entity_dir.exists():
@@ -509,6 +538,7 @@ def main(argv: list[str] | None = None) -> int:
         ref = entities_mod.load_reference(settings)
         entities_mod.refresh(settings, ref)        # weekly; keeps the cache on failure
         collect.print_report(collect.run(settings, analyse_max=args.analyse_max))
+        tenders_mod.print_report(tenders_mod.update(settings, ref))
     render(settings)
     if args.serve:
         serve(settings, args.port)

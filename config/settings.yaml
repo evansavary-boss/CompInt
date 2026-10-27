@@ -103,10 +103,13 @@ paths:
   events: config/events.yaml
   analysis: config/analysis.yaml
   geopolitics: config/geopolitics.yaml
+  tenders: config/tenders.yaml
+  competitors: config/competitors.yaml
   world_map: config/geodata/countries-110m.json
   items: data/items.json
   entities: data/entities.json
   stories: data/stories.json
+  tender_data: data/tenders.json
   templates: templates
   static: static
   output_dir: docs

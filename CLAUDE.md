@@ -13,6 +13,8 @@ rebuilds daily at 06:00 UTC (`.github/workflows/update.yml`).
 - `python -m src.entities` — validate reference YAML, refresh Wikidata cache (`--force`, `--offline`)
 - `python -m src.stories` — group items into stories, analyse new ones with Claude Code (`--no-analyse`,
   `--max N`); needs `claude` on PATH and a login or `CLAUDE_CODE_OAUTH_TOKEN`
+- `python -m src.tenders` — TED + Find a Tender notices, Claude analysis of new ones (`--backfill`,
+  `--no-analyse`, `--offline`, `--dry-run`, `--max N`)
 - `python -m pytest -q` — tests (offline, no network)
 - Windows venv: `.venv\Scripts\python.exe`; preview config in `.claude/launch.json` (port 8000)
 
@@ -32,11 +34,20 @@ rebuilds daily at 06:00 UTC (`.github/workflows/update.yml`).
 - Geopolitics: `config/geopolitics.yaml` (feeds, thematic Google News searches, GDELT, 4 families with
   patterns, exclusions) → `collect.geo_sources` / `collect_gdelt` / `geo_gate` (title must match a family;
   sets `Item.geo_themes`, section `geopolitique`). GDELT is rate-limited: keep requests spaced.
+- Tenders: `config/tenders.yaml` → `tenders.py`: TED search API (POST, CPV + full-text query, `scope: ALL`,
+  spaced pages), Find a Tender OCDS releases read day by day (12 requests/min limit: 5.5 s spacing, one
+  retry after 429; a failure keeps the days read and resumes from `fts_synced_until`), ECB rates →
+  `data/tenders.json` (one year). `Rules` = relevance (`strong` terms shown before analysis), segments,
+  winner/buyer matching against entities, `competitors.yaml` roles. `analyse_tenders` reuses
+  `ClaudeCliAnalyzer.call` with its own schema/prompt (`config/prompts/analyse_appels.md`).
+  `market.tender_rows` (dedupe of republished TED notices, open status, EUR) feeds the Marché page
+  (`static/tenders.js`), country and entity pages.
 - `build.py`: `SiteData` view models → `index.html` (Géopolitique, world map), `economie.html`,
   `marche.html`, `entite/<id>.html`, `pays/<code>.html`. `on_page` routes stories by Claude's tabs, else
   by rule sections. `worldmap.py` projects `config/geodata/countries-110m.json` (Equal Earth) to SVG. `market.py` builds the compact records the Marché page aggregates in the browser.
-- Front end: `static/app.js` (feed filters, URL hash, live counts), `static/market.js` + `market.css`
-  (charts, built with DOM APIs; untrusted text via `textContent` only).
+- Front end: `static/app.js` (feed filters, URL hash, live counts), `static/tenders.js` (Marché tenders
+  view and view switch), `static/market.js` (Marché press view) + `market.css` (charts built with DOM
+  APIs; untrusted text via `textContent` only).
 
 ## Rules
 

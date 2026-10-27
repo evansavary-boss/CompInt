@@ -1,5 +1,5 @@
 {% extends "base.html.j2" %}
-{% from "_macros.html.j2" import filters, feed with context %}
+{% from "_macros.html.j2" import filters, feed, tender_box with context %}
 {% set e = view.entity %}
 
 {% block main %}
@@ -54,6 +54,10 @@
         Description rédigée.
       </p>
     </article>
+
+    {% if view.tenders.total %}
+    {{ tender_box(view.tenders, root, "Appels d'offres remportés" if e.kind == "company" else "Appels d'offres publiés", root ~ "marche.html") }}
+    {% endif %}
 
     <header class="page-head">
       <h2 class="feed-title">Actualités <span class="count" data-count>{{ view.count }}</span></h2>

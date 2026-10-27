@@ -71,6 +71,28 @@ events:
     regex:
       - "\\b(cancel(s|led|ed)?|terminat(es|ed)|scrap(s|ped)) (the |its |a )?(contract|order|program)"
 
+  tender:
+    section: economie
+    label: Appel d'offres
+    patterns_cs: [RFP, RFI, RFQ, ITT, BAA]
+    patterns:
+      - tender
+      - call for tenders
+      - invitation to tender
+      - request for proposals
+      - request for information
+      - request for quotations
+      - solicitation
+      - draft solicitation
+      - appel d'offres
+      - appel à propositions
+      - appel à candidatures
+      - avis de marché
+      - consultation des entreprises
+      - Ausschreibung
+      - licitación
+      - gara d'appalto
+
   launch:
     section: economie
     label: Lancement
@@ -173,6 +195,7 @@ events:
       - merger
       - merges
       - takeover
+      - tender offer
       - buys
       - stake in
       - rachète

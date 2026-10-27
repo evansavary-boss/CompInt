@@ -6,15 +6,23 @@ Tableau de bord statique, mis à jour chaque matin par GitHub Actions, pour suiv
 - **Géopolitique** (page d'accueil) : conflits et défense, sanctions et tensions commerciales,
   ressources et maritime, crises et climat. Carte du monde colorée selon l'intensité des sujets (clic sur
   un pays : filtre ; double-clic : sa fiche), filtres par famille, pays, région, impact et industrie.
-- **Fiches pays** : une page par pays cité (sujets, thèmes, acteurs cités, acteurs suivis du pays).
+- **Fiches pays** : une page par pays cité (sujets, thèmes, acteurs cités, acteurs suivis du pays,
+  appels d'offres ouverts et attributions récentes).
 - **Économie** : institutions, budgets, réglementation, contrats gagnés ou perdus, lancements, nouveaux
   satellites et produits, levées de fonds, rachats, partenariats, résultats. Filtres par entreprise,
   segment, pays, région et type d'événement.
-- **Marché** : synthèse tirée des actualités classées (indicateurs, activité par semaine, régions,
-  segments × événements, entreprises les plus actives, principaux donneurs d'ordre, derniers contrats,
+- **Marché**, vue **Appels d'offres** : avis publics européens (TED) et britanniques (Find a Tender)
+  liés au géospatial. Indicateurs (appels ouverts, clôture sous 7 jours, valeur des appels ouverts,
+  attributions, montant attribué, part des concurrents suivis), tendance mensuelle par segment, acheteurs
+  par pays, gagnants (Airbus, concurrents suivis, autres), principaux acheteurs, tableau des appels
+  ouverts par date limite, attributions récentes, et appels d'offres ou contrats repérés dans la presse.
+  Filtres par source, période, région, pays, segment et recherche.
+- **Marché**, vue **Signaux presse** : synthèse tirée des actualités classées (activité par semaine,
+  régions, segments × événements, entreprises les plus actives, donneurs d'ordre, derniers contrats,
   levées et rachats).
 - **Fiches** : une page par entreprise ou institution (description, faits Wikidata, produits ou
-  programmes clés, activité, acteurs souvent cités avec elle, fil d'actualités).
+  programmes clés, activité, acteurs souvent cités avec elle, appels d'offres remportés ou publiés, fil
+  d'actualités).
 
 Filtres communs : domaine **Géospatial** / **New Space** / **Tout**, période (7 à 90 jours), recherche
 plein texte. Les filtres sont gardés dans l'adresse de la page (lien partageable). Thème clair / sombre
@@ -49,6 +57,8 @@ pip install -r requirements.txt
 | `python -m src.entities` | vérifie le référentiel et rafraîchit les fiches Wikidata (`--force`, `--offline`) |
 | `python -m src.stories` | regroupe les articles en sujets et fait analyser les nouveaux par Claude (`--no-analyse`, `--max 50`) |
 | `python -m src.collect --no-analyse` | collecte et regroupement sans appeler Claude |
+| `python -m src.tenders` | appels d'offres TED et Find a Tender, analyse des nouveaux avis par Claude, rapport |
+| `python -m src.tenders --backfill` | premier remplissage (TED 180 jours, Find a Tender 14 jours) ; `--no-analyse`, `--offline`, `--max 200` |
 | `python -m pytest` | tests (hors ligne) |
 
 Un flux, une recherche ou Wikidata en erreur ne fait jamais échouer le build : l'erreur est journalisée,
@@ -64,6 +74,7 @@ entité suivie                                              entités, pays, rég
                                                                                        │
                    sujets (articles qui racontent la même chose) ─> analyse Claude ─> data/stories.json ─> docs/
 Wikidata ─────────────────────────────────────────────> data/entities.json (fiches) ─┘
+TED, Find a Tender ─> filtre (CPV, mots-clés) ─> analyse Claude ─> data/tenders.json ──┘
 ```
 
 - **Sources** : 36 flux RSS d'éditeurs vérifiés, plus une recherche Google News par entité suivie (édition
@@ -81,6 +92,16 @@ Wikidata ───────────────────────�
 - **Analyse par Claude** (voir plus bas) : titre et résumé en français, « pourquoi c'est important »,
   impact fort / moyen / faible, thèmes, industries clientes, pays, et fusion des doublons dans une autre
   langue. Sans jeton ou quand le quota est atteint, le site se met à jour avec les règles seules.
+- **Appels d'offres** (`config/tenders.yaml`) : TED est interrogé par codes CPV (SIG, cartographie) et
+  expressions (« satellite imagery », « earth observation », « Copernicus »…) ; Find a Tender n'a pas de
+  recherche, tous les avis du jour sont lus puis filtrés. Claude juge chaque avis (pertinent ou non pour le
+  géospatial, segment, objet et résumé en français, adéquation à l'offre Airbus forte / moyenne / faible) ;
+  80 avis au plus par passage, les plus clairement géospatiaux et les appels encore ouverts d'abord. Avant
+  analyse, seuls les avis qui citent un terme propre à l'observation de la Terre sont affichés. Les
+  gagnants sont reconnus parmi les entreprises suivies ; `config/competitors.yaml` dit lesquelles sont des
+  concurrents. Montants hors taxes convertis en euros au taux de référence de la BCE. Historique : un an.
+- **Presse** : un article qui parle d'appel d'offres (« tender », « RFP », « appel d'offres »…) reçoit le
+  type d'événement « Appel d'offres » et apparaît dans « Repéré dans la presse » sur la page Marché.
 
 Limites connues : le classement par règles détecte bien les contrats, lancements, levées et rachats
 annoncés dans le titre, beaucoup moins les événements politiques ; les liens Google News passent par
@@ -96,20 +117,24 @@ config/
   events.yaml            types d'événements et expressions qui les signalent
   analysis.yaml          regroupement en sujets, analyse par Claude, onglets, thèmes, industries, impact
   geopolitics.yaml       sources géopolitiques, familles de thèmes et leurs expressions, exclusions
+  tenders.yaml           appels d'offres : requêtes TED, filtre Find a Tender, pertinence, segments, page Marché
+  competitors.yaml       Airbus et ses concurrents directs (groupes), parmi les entreprises suivies
   geodata/               fond de carte Natural Earth 1:110m (world-atlas, licence dans le dossier)
-  prompts/analyse_sujets.md   consigne envoyée à Claude (les listes d'analysis.yaml y sont ajoutées)
-  geo.yaml               198 pays (noms, gentilés, capitale, code numérique pour la carte) et régions
+  prompts/analyse_sujets.md   consigne envoyée à Claude pour les sujets (listes d'analysis.yaml ajoutées)
+  prompts/analyse_appels.md   consigne pour les appels d'offres (segments et adéquation ajoutés)
+  geo.yaml               198 pays (noms, gentilés, capitale, codes ISO numérique et à 3 lettres) et régions
   entities/companies.yaml, entities/institutions.yaml   entreprises et institutions suivies
 src/
   collect.py   collecte (RSS + Google News), filtre, dédoublonnage, stockage
   classify.py  entités, pays, régions, événements, onglets      textmatch.py  détection rapide de termes
   entities.py  référentiel + Wikidata                            filter.py     mots-clés, dédoublonnage
   market.py    données de l'onglet Marché                        enrich.py     extrait + analyse Claude
+  tenders.py   appels d'offres (TED, Find a Tender, taux BCE)
   stories.py   regroupement des articles en sujets                worldmap.py   projection de la carte
   build.py     génération des pages                              store.py, models.py, config.py
 templates/     base, onglets, fiche entité, fiche pays, marché (Jinja2)
-static/        style.css, app.js (filtres), market.css, market.js (graphiques)
-data/          items.json, stories.json, entities.json (générés)
+static/        style.css, app.js (filtres), market.css, market.js (signaux presse), tenders.js (appels d'offres)
+data/          items.json, stories.json, entities.json, tenders.json (générés)
 docs/          site généré, servi par GitHub Pages
 tests/
 ```

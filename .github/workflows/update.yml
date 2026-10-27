@@ -6,7 +6,7 @@ on:
   workflow_dispatch:       # bouton "Run workflow" dans l'onglet Actions
     inputs:
       backfill:
-        description: "Rattrapage Google News sur 30 jours (premier lancement)"
+        description: "Rattrapage Google News (30 jours) et appels d'offres (TED 180 jours, Find a Tender 14 jours)"
         type: boolean
         default: false
       analyse_max:
@@ -24,7 +24,7 @@ concurrency:
 jobs:
   update:
     runs-on: ubuntu-latest
-    timeout-minutes: 45    # collecte (~5 min) + analyse Claude (plafonnée à 15 min) + marge
+    timeout-minutes: 45    # collecte (~5 min) + analyse des sujets (15 min max) + appels d'offres (~8 min) + marge
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -51,11 +51,13 @@ jobs:
       - name: Tests
         run: python -m pytest -q
 
-      - name: Backfill Google News (optional)
+      - name: Backfill Google News and tenders (optional)
         if: ${{ inputs.backfill }}
-        run: python -m src.collect --backfill
+        run: |
+          python -m src.collect --backfill
+          python -m src.tenders --backfill --no-analyse
 
-      - name: Refresh entities, collect, classify, analyse and build
+      - name: Refresh entities, collect, classify, fetch tenders, analyse and build
         env:
           CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
           ANALYSE_MAX: ${{ inputs.analyse_max }}

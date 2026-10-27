@@ -7,94 +7,254 @@
   <section class="content">
     <header class="page-head">
       <h1>{{ title }}</h1>
-      <p>{{ subtitle }}. Comptages par article : un article peut porter plusieurs types.</p>
+      <p>{{ subtitle }}.</p>
     </header>
 
-    <div class="filters market-filters" data-market-filters>
-      <div class="filter-row">
-        <div class="segmented" role="group" aria-label="Domaine">
-          <button type="button" data-domain="geospatial" aria-pressed="false">Géospatial</button>
-          <button type="button" data-domain="newspace" aria-pressed="false">New Space</button>
-          <button type="button" data-domain="all" aria-pressed="true">Tout</button>
-        </div>
-        <label class="select">
-          <span class="sr-only">Période</span>
-          <select data-mfilter="days">
-            {% for d in periods %}<option value="{{ d }}"{% if d == market_days %} selected{% endif %}>{{ d }} derniers jours</option>{% endfor %}
-          </select>
-        </label>
-        <label class="select">
-          <span class="sr-only">Région</span>
-          <select data-mfilter="region">
-            <option value="">Toutes les régions</option>
-            {% for r in market.regions %}<option value="{{ r.key }}">{{ r.label }}</option>{% endfor %}
-          </select>
-        </label>
-        <p class="coverage" data-coverage></p>
-      </div>
+    <div class="segmented view-switch" role="tablist" aria-label="Vue de la page">
+      <button type="button" role="tab" id="tab-appels" data-view="appels" aria-controls="view-appels" aria-selected="true">Appels d'offres</button>
+      <button type="button" role="tab" id="tab-presse" data-view="presse" aria-controls="view-presse" aria-selected="false">Signaux presse</button>
     </div>
 
-    <noscript><p class="placeholder">Cette page a besoin de JavaScript pour calculer les graphiques.</p></noscript>
+    <noscript><p class="placeholder">Cette page a besoin de JavaScript pour calculer les indicateurs et les graphiques.</p></noscript>
 
-    <div class="kpis" data-kpis aria-live="polite"></div>
-
-    <div class="viz-grid">
-      <figure class="card viz-card viz-wide" data-weekly>
-        <figcaption class="viz-head">
-          <div>
-            <h2>Activité par semaine</h2>
-            <p>Articles par type d'événement, semaines glissantes de 7 jours</p>
+    {# ------------------------------------------------------------ tenders #}
+    <section id="view-appels" role="tabpanel" aria-labelledby="tab-appels" data-view-panel="appels">
+      <div class="filters market-filters" data-tender-filters>
+        <div class="filter-row">
+          <div class="segmented" role="group" aria-label="Source">
+            <button type="button" data-tsource="ted" aria-pressed="false">TED (UE)</button>
+            <button type="button" data-tsource="fts" aria-pressed="false">Find a Tender (R.-U.)</button>
+            <button type="button" data-tsource="" aria-pressed="true">Tout</button>
           </div>
-          <button type="button" class="table-toggle" data-table-toggle aria-pressed="false">Tableau</button>
-        </figcaption>
-        <div class="legend" data-legend></div>
-        <div class="viz-body" data-chart></div>
-        <div class="table-view" data-table hidden></div>
-        <div class="tip" role="status" hidden></div>
-      </figure>
+          <label class="select">
+            <span class="sr-only">Période des attributions</span>
+            <select data-tfilter="days">
+              {% for d in tender_periods %}<option value="{{ d }}"{% if d == tender_days %} selected{% endif %}>{{ d }} derniers jours</option>{% endfor %}
+            </select>
+          </label>
+          <label class="select">
+            <span class="sr-only">Région</span>
+            <select data-tfilter="region">
+              <option value="">Toutes les régions</option>
+              {% for r in tenders.regions %}<option value="{{ r.key }}">{{ r.label }}</option>{% endfor %}
+            </select>
+          </label>
+          <label class="select">
+            <span class="sr-only">Pays de l'acheteur</span>
+            <select data-tfilter="country">
+              <option value="">Tous les pays</option>
+              {% for c in tenders.countries %}<option value="{{ c.key }}">{{ c.label }}</option>{% endfor %}
+            </select>
+          </label>
+          <label class="select">
+            <span class="sr-only">Segment</span>
+            <select data-tfilter="segment">
+              <option value="">Tous les segments</option>
+              {% for s in tenders.segments %}<option value="{{ s.key }}">{{ s.label }}</option>{% endfor %}
+            </select>
+          </label>
+          <label class="search tender-search">
+            <span class="sr-only">Rechercher</span>
+            <input type="search" data-tfilter="q" placeholder="Objet, acheteur, gagnant…" autocomplete="off">
+          </label>
+        </div>
+      </div>
 
-      <figure class="card viz-card" data-regions>
+      <div class="kpis kpis-6" data-tkpis aria-live="polite"></div>
+
+      <div class="viz-grid">
+        <figure class="card viz-card" data-tmonths>
+          <figcaption class="viz-head">
+            <div>
+              <h2>Tendance mensuelle par segment</h2>
+              <p data-tmonths-sub>Avis publiés par mois (6 derniers mois, hors filtre de période)</p>
+            </div>
+            <div class="segmented small" role="group" aria-label="Avis comptés">
+              <button type="button" data-tmonth-kind="calls" aria-pressed="true">Appels</button>
+              <button type="button" data-tmonth-kind="award" aria-pressed="false">Attributions</button>
+            </div>
+          </figcaption>
+          <div class="heat-wrap" data-theat></div>
+          <div class="scale-legend" data-tscale></div>
+        </figure>
+
+        <figure class="card viz-card" data-tcountries>
+          <figcaption class="viz-head">
+            <div>
+              <h2>Acheteurs par pays</h2>
+              <p data-tcountries-sub>Avis de la période · clic : filtrer sur le pays</p>
+            </div>
+            <div class="segmented small" role="group" aria-label="Mesure">
+              <button type="button" data-tmeasure="n" aria-pressed="true">Nombre</button>
+              <button type="button" data-tmeasure="v" aria-pressed="false">Montant</button>
+            </div>
+          </figcaption>
+          <div class="hbars" data-bars></div>
+        </figure>
+      </div>
+
+      <div class="viz-grid viz-grid-even">
+        <figure class="card viz-card" data-twinners>
+          <figcaption class="viz-head"><div>
+            <h2>Gagnants des attributions</h2>
+            <p>Attributions de la période, par attributaire · clic : fiche</p>
+          </div></figcaption>
+          <div class="legend">
+            <span class="legend-item"><span class="key key-rect s-own" aria-hidden="true"></span>Airbus</span>
+            <span class="legend-item"><span class="key key-rect s-rival" aria-hidden="true"></span>Concurrent suivi</span>
+            <span class="legend-item"><span class="key key-rect s-other" aria-hidden="true"></span>Autre attributaire</span>
+          </div>
+          <div class="hbars" data-bars></div>
+        </figure>
+
+        <figure class="card viz-card" data-tbuyers>
+          <figcaption class="viz-head"><div>
+            <h2>Principaux acheteurs</h2>
+            <p>Avis de la période (appels et attributions) · clic : fiche quand l'acheteur est suivi</p>
+          </div></figcaption>
+          <div class="hbars" data-bars></div>
+        </figure>
+      </div>
+
+      <section class="card table-card" data-topen>
+        <div class="viz-head">
+          <div>
+            <h2>Appels d'offres ouverts</h2>
+            <p>Date limite de remise des offres la plus proche en premier · « J-5 » : clôture dans 5 jours</p>
+          </div>
+        </div>
+        <div class="table-wrap" data-table></div>
+      </section>
+
+      <section class="card table-card" data-tawards>
+        <div class="viz-head">
+          <div>
+            <h2>Attributions récentes</h2>
+            <p>Avis d'attribution de la période, du plus récent au plus ancien</p>
+          </div>
+        </div>
+        <div class="table-wrap" data-table></div>
+      </section>
+
+      <section class="card list-card press-card">
+        <h2>Repéré dans la presse</h2>
+        <p class="muted small">Appels d'offres et contrats cités dans l'actualité des {{ tenders_press_days }} derniers jours, y compris hors Europe.</p>
+        {% if press %}
+        <ul>
+          {% for r in press %}
+          <li>
+            <a href="{{ r.url }}" target="_blank" rel="noopener noreferrer">{{ r.title }}</a>
+            <span class="list-meta">{{ r.date }} · {{ r.source }}{% if r.n_sources > 1 %} · {{ r.n_sources }} sources{% endif %}{% if r.country_names %} · {{ r.country_names[:3] | join(", ") }}{% endif %}</span>
+            {% if r.summary and r.analysed %}<span class="press-summary">{{ r.summary }}</span>{% endif %}
+            <span class="list-chips">
+              {% for e in r.events if e.key in ("tender", "contract_won", "contract_lost") %}<span class="chip">{{ e.label }}</span>{% endfor %}
+              {% for e in r.entities[:3] %}<a class="chip chip-{{ e.kind }}" href="{{ root }}entite/{{ e.id }}.html">{{ e.name }}</a>{% endfor %}
+            </span>
+          </li>
+          {% endfor %}
+        </ul>
+        {% else %}
+        <p class="muted">Aucun appel d'offres ni contrat repéré dans la presse sur cette période.</p>
+        {% endif %}
+      </section>
+
+      <p class="source-note">
+        Sources :
+        {% for s in tender_sources %}{{ s.name }}{% if s.ok %}{% else %} (dernier passage en échec : {{ s.error }}){% endif %}{% if not loop.last %}, {% endif %}{% endfor %}{% if tender_sources %} · mis à jour le {{ tender_sources[0].when }}{% endif %}.
+        Montants hors taxes convertis en euros au taux de référence de la BCE{% if fx_date %} du {{ fx_date }}{% endif %}.
+        Pertinence, segment et résumé par Claude ; avant analyse, seuls les avis qui citent un terme propre à l'observation de la Terre sont affichés{% if tender_pending %} ({{ tender_pending }} avis en attente d'analyse){% endif %}.
+      </p>
+    </section>
+
+    {# ------------------------------------------------------------ press signals #}
+    <section id="view-presse" role="tabpanel" aria-labelledby="tab-presse" data-view-panel="presse" hidden>
+      <p class="view-intro">Contrats, levées de fonds, rachats et lancements détectés dans l'actualité. Comptages par article : un article peut porter plusieurs types.</p>
+      <div class="filters market-filters" data-market-filters>
+        <div class="filter-row">
+          <div class="segmented" role="group" aria-label="Domaine">
+            <button type="button" data-domain="geospatial" aria-pressed="false">Géospatial</button>
+            <button type="button" data-domain="newspace" aria-pressed="false">New Space</button>
+            <button type="button" data-domain="all" aria-pressed="true">Tout</button>
+          </div>
+          <label class="select">
+            <span class="sr-only">Période</span>
+            <select data-mfilter="days">
+              {% for d in periods %}<option value="{{ d }}"{% if d == market_days %} selected{% endif %}>{{ d }} derniers jours</option>{% endfor %}
+            </select>
+          </label>
+          <label class="select">
+            <span class="sr-only">Région</span>
+            <select data-mfilter="region">
+              <option value="">Toutes les régions</option>
+              {% for r in market.regions %}<option value="{{ r.key }}">{{ r.label }}</option>{% endfor %}
+            </select>
+          </label>
+          <p class="coverage" data-coverage></p>
+        </div>
+      </div>
+
+      <div class="kpis" data-kpis aria-live="polite"></div>
+
+      <div class="viz-grid">
+        <figure class="card viz-card viz-wide" data-weekly>
+          <figcaption class="viz-head">
+            <div>
+              <h2>Activité par semaine</h2>
+              <p>Articles par type d'événement, semaines glissantes de 7 jours</p>
+            </div>
+            <button type="button" class="table-toggle" data-table-toggle aria-pressed="false">Tableau</button>
+          </figcaption>
+          <div class="legend" data-legend></div>
+          <div class="viz-body" data-chart></div>
+          <div class="table-view" data-table hidden></div>
+          <div class="tip" role="status" hidden></div>
+        </figure>
+
+        <figure class="card viz-card" data-regions>
+          <figcaption class="viz-head"><div>
+            <h2>Par région</h2>
+            <p>Articles avec un événement économique · clic : voir les articles</p>
+          </div></figcaption>
+          <div class="hbars" data-bars></div>
+        </figure>
+      </div>
+
+      <figure class="card viz-card" data-heatmap>
         <figcaption class="viz-head"><div>
-          <h2>Par région</h2>
-          <p>Articles avec un événement économique · clic : voir les articles</p>
+          <h2>Segments et types d'événements</h2>
+          <p>Nombre d'articles par segment des entreprises citées · clic sur une case : voir les articles</p>
         </div></figcaption>
-        <div class="hbars" data-bars></div>
+        <div class="heat-wrap" data-heat></div>
+        <div class="scale-legend" data-scale></div>
       </figure>
-    </div>
 
-    <figure class="card viz-card" data-heatmap>
-      <figcaption class="viz-head"><div>
-        <h2>Segments et types d'événements</h2>
-        <p>Nombre d'articles par segment des entreprises citées · clic sur une case : voir les articles</p>
-      </div></figcaption>
-      <div class="heat-wrap" data-heat></div>
-      <div class="scale-legend" data-scale></div>
-    </figure>
+      <div class="viz-grid">
+        <figure class="card viz-card" data-companies>
+          <figcaption class="viz-head"><div>
+            <h2>Entreprises les plus actives</h2>
+            <p>Événements détectés, par type · clic : fiche</p>
+          </div></figcaption>
+          <div class="hbars" data-bars></div>
+          <div class="tip" role="status" hidden></div>
+        </figure>
+        <figure class="card viz-card" data-customers>
+          <figcaption class="viz-head"><div>
+            <h2>Principaux donneurs d'ordre</h2>
+            <p>Institutions citées dans les articles « contrat gagné » · clic : fiche</p>
+          </div></figcaption>
+          <div class="hbars" data-bars></div>
+        </figure>
+      </div>
 
-    <div class="viz-grid">
-      <figure class="card viz-card" data-companies>
-        <figcaption class="viz-head"><div>
-          <h2>Entreprises les plus actives</h2>
-          <p>Événements détectés, par type · clic : fiche</p>
-        </div></figcaption>
-        <div class="hbars" data-bars></div>
-        <div class="tip" role="status" hidden></div>
-      </figure>
-      <figure class="card viz-card" data-customers>
-        <figcaption class="viz-head"><div>
-          <h2>Principaux donneurs d'ordre</h2>
-          <p>Institutions citées dans les articles « contrat gagné » · clic : fiche</p>
-        </div></figcaption>
-        <div class="hbars" data-bars></div>
-      </figure>
-    </div>
-
-    <div class="lists" data-lists></div>
+      <div class="lists" data-lists></div>
+    </section>
   </section>
 </div>
 <script type="application/json" id="market-data">{{ market | tojson }}</script>
+<script type="application/json" id="tender-data">{{ tenders | tojson }}</script>
 {% endblock %}
 
 {% block scripts %}
+<script src="{{ root }}static/tenders.js?v={{ asset_version }}"></script>
 <script src="{{ root }}static/market.js?v={{ asset_version }}"></script>
 {% endblock %}

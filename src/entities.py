@@ -402,6 +402,14 @@ def main(argv: list[str] | None = None) -> int:
     except ValueError as exc:
         print(exc)
         return 1
+    from .tenders import validate_config   # local import: tenders loads the reference too
+
+    paths = settings["paths"]
+    errors = validate_config(load_yaml(paths["tenders"]), load_yaml(paths["competitors"]), ref,
+                             load_yaml(paths["analysis"]))
+    if errors:
+        print("Configuration invalide :\n  - " + "\n  - ".join(errors))
+        return 1
     print_report(ref, refresh(settings, ref, force=args.force, offline=args.offline))
     return 0
 

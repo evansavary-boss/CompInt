@@ -4,7 +4,7 @@ from zoneinfo import ZoneInfo
 
 import pytest
 
-from src import build
+from src import build, tenders
 from src.classify import Classifier
 from src.config import load_settings, load_yaml
 from src.entities import load_reference
@@ -19,7 +19,7 @@ def site(tmp_path_factory):
     tmp = tmp_path_factory.mktemp("site")
     settings = copy.deepcopy(load_settings())
     settings["paths"].update(items=str(tmp / "items.json"), entities=str(tmp / "entities.json"),
-                             output_dir=str(tmp / "docs"))
+                             tender_data=str(tmp / "tenders.json"), output_dir=str(tmp / "docs"))
     clf = Classifier(load_reference(settings), load_yaml(settings["paths"]["geopolitics"]))
 
     def item(n, title, section, days_ago, tags=("newspace",), via=""):
@@ -35,6 +35,16 @@ def site(tmp_path_factory):
         item(4, "Sudan war: RSF advance near Khartoum", "geopolitique", 1),
     ]
     save_items(tmp / "items.json", items, [SourceStatus("Feed", "u", True)], NOW)
+    book = tenders.TenderBook(meta={"updated_at": NOW.isoformat(), "fx": {"date": "2026-10-22", "rates": {}},
+                                    "sources": [SourceStatus("TED", "u", True, via="tender").to_dict()]})
+    common = dict(source="ted", notice="1", notice_type="cn-standard", buyer="Ministère des Armées",
+                  buyer_country="FR", url="https://ted.europa.eu/fr/notice/-/detail/1-2026", countries=["FR"])
+    book.upsert(tenders.Tender(id="ted:1", kind="open", title="Satellite imagery <b>services</b>",
+                               published="2026-10-20", deadline="2026-10-28", value=2_500_000, currency="EUR",
+                               **common), NOW)
+    book.upsert(tenders.Tender(id="ted:2", kind="award", title="Earth observation data for maritime surveillance",
+                               published="2026-10-10", winners=["ICEYE Oy"], **common), NOW)
+    book.save(tmp / "tenders.json")
     build.render(settings)
     return tmp / "docs"
 
@@ -96,3 +106,19 @@ def test_market_page_embeds_business_records(site):
     assert [s["key"] for s in data["series"]] == load_settings()["market"]["series"]
     assert data["complete_days"] >= 1 and data["coverage_days"] >= data["complete_days"]
     assert 'static/market.js' in page
+
+
+def test_marche_page_embeds_tenders_and_press_view(site):
+    page = (site / "marche.html").read_text(encoding="utf-8")
+    assert 'id="tender-data"' in page and 'data-view-panel="presse"' in page
+    assert r"Satellite imagery \u003cb\u003eservices" in page          # escaped inside the JSON block
+    assert "<b>services" not in page
+    assert '"o": true' in page
+
+
+def test_tenders_on_country_and_entity_pages(site):
+    fr = (site / "pays" / "FR.html").read_text(encoding="utf-8")
+    assert "Appels d&#39;offres publics" in fr and "Satellite imagery &lt;b&gt;services&lt;/b&gt;" in fr
+    assert "marche.html#pays=FR" in fr and "J-5" in fr and "2,5 M€" in fr
+    iceye = (site / "entite" / "iceye.html").read_text(encoding="utf-8")
+    assert "Appels d&#39;offres remportés" in iceye and "Earth observation data for maritime surveillance" in iceye

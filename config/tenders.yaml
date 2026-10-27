@@ -1,0 +1,242 @@
+# Appels d'offres publics : TED (Union européenne) et Find a Tender (Royaume-Uni).
+#
+# Chaque jour, les avis récents sont téléchargés, filtrés par mots-clés et codes CPV, puis
+# analysés par Claude (pertinence pour le géospatial, segment, résumé en français). Un avis non
+# encore analysé n'est affiché que s'il contient un terme propre à l'observation de la Terre
+# (liste `relevance.strong`). Les deux API sont gratuites et sans compte.
+
+retention_days: 365          # avis gardés un an (tendances mensuelles)
+closing_soon_days: 7         # « clôture sous 7 jours »
+
+# Nature d'un avis : open (appel ouvert), planned (avis de préinformation, consultation du
+# marché), award (attribution). Les autres avis (modifications, rectificatifs) sont ignorés.
+kinds:
+  open: Appel ouvert
+  planned: Préinformation
+  award: Attribution
+
+# ------------------------------------------------------------ TED (vérifié le 2026-10-27)
+ted:
+  enabled: true
+  url: https://api.ted.europa.eu/v3/notices/search
+  notice_url: "https://ted.europa.eu/fr/notice/-/detail/{id}"
+  lookback_days: 4           # passage quotidien : avis publiés depuis 4 jours (recouvrement)
+  backfill_days: 180         # premier remplissage (python -m src.tenders --backfill)
+  page_size: 250
+  max_pages: 10
+  delay_seconds: 3           # TED coupe la connexion si les requêtes s'enchaînent trop vite
+  # Un avis est retenu s'il porte l'un de ces codes CPV ou contient l'une de ces expressions.
+  cpv:
+    - "38221000"   # systèmes d'information géographique (SIG)
+    - "71354000"   # services de cartographie
+    - "71354100"   # cartographie numérique
+    - "71354200"   # cartographie aérienne
+    - "48326000"   # logiciels de cartographie
+  fulltext:
+    - satellite imagery
+    - satellite images
+    - satellite data
+    - earth observation
+    - remote sensing
+    - télédétection
+    - geospatial
+    - Copernicus
+    - synthetic aperture radar
+    - orthophoto
+    - orthophotos
+    - aerial imagery
+    - aerial photography
+    - digital elevation model
+    - space-based
+    - satellite-based
+  notice_types:              # type d'avis TED -> nature
+    cn-standard: open
+    cn-social: open
+    cn-desg: open
+    qu-sy: open
+    subco: open
+    pin-cfc-standard: open
+    pin-cfc-social: open
+    pin-only: planned
+    pin-buyer: planned
+    pin-rtl: planned
+    pin-tran: planned
+    pmc: planned
+    can-standard: award
+    can-social: award
+    can-desg: award
+    can-tran: award
+    veat: award
+
+# ------------------------------------------------------------ Find a Tender (vérifié le 2026-10-27)
+# L'API ne filtre pas par mot-clé : tous les avis du jour sont lus (environ 450, 5 pages) et
+# filtrés ici. Limite de l'API : 12 requêtes par minute, d'où l'espacement.
+fts:
+  enabled: true
+  url: https://www.find-tender.service.gov.uk/api/1.0/ocdsReleasePackages
+  lookback_days: 2
+  backfill_days: 14          # environ 70 requêtes, 7 minutes
+  page_size: 100
+  max_pages_per_day: 30
+  delay_seconds: 5.5
+  retry_after_seconds: 125   # attente après un refus (HTTP 429), un seul nouvel essai
+  country: GB
+  cpv_prefixes: ["38221", "71354", "48326", "71355200"]
+  # Expressions qui retiennent un avis britannique (titre ou description).
+  candidates:
+    - satellite
+    - earth observation
+    - remote sensing
+    - geospatial
+    - geographic information
+    - GIS
+    - aerial survey
+    - aerial imagery
+    - aerial photography
+    - orthophoto
+    - orthoimagery
+    - photogrammetry
+    - LiDAR
+    - imagery
+    - topographic
+    - hydrographic
+    - bathymetric
+    - digital mapping
+    - mapping data
+    - cartography
+    - Copernicus
+    - space surveillance
+    - space domain awareness
+  tags:                      # étiquette OCDS -> nature
+    tender: open
+    tenderUpdate: open
+    planning: planned
+    planningUpdate: planned
+    award: award
+    awardUpdate: award
+
+# ------------------------------------------------------------ pertinence (règles)
+relevance:
+  # Termes propres à l'observation de la Terre : un avis qui en contient un est affiché même
+  # avant l'analyse par Claude. Recherche dans l'objet de l'avis et sa description, pas dans
+  # l'intitulé du code CPV (« Digital mapping services » figure dans tous les titres TED).
+  strong:
+    - satellite
+    - satellites
+    - satellitaire
+    - earth observation
+    - observation de la terre
+    - remote sensing
+    - télédétection
+    - teledetección
+    - telerilevamento
+    - Fernerkundung
+    - Erdbeobachtung
+    - geospatial
+    - géospatial
+    - GEOINT
+    - orthophoto
+    - orthophotos
+    - orthophotographie
+    - ortofoto
+    - orthoimagery
+    - orthoimages
+    - Luftbild
+    - aerial imagery
+    - aerial photography
+    - photogrammetry
+    - photogrammétrie
+    - LiDAR
+    - airborne laser scanning
+    - digital elevation model
+    - modèle numérique de terrain
+    - InSAR
+    - synthetic aperture radar
+    - Copernicus Land
+    - Copernicus Marine
+    - Copernicus Emergency
+    - Copernicus Security
+    - Copernicus Climate
+    - space-based
+  strong_cs: [SAR, C3S, CAMS, CLMS, CEMS]
+  # Avis écartés d'office (homonymes) : expressions recherchées dans le titre et l'acheteur.
+  exclude:
+    - Copernicus PL
+    - Copernicus Podmiot Leczniczy
+    - szpital
+    - satellite TV
+    - satellite television
+    - telewizja satelitarna
+    - satellite office
+    - satellite clinic
+    - satellite pharmacy
+    - satellite kitchen
+
+# ------------------------------------------------------------ segments
+# Claude classe chaque avis dans un segment ; avant l'analyse, le premier segment dont une
+# expression apparaît est retenu (ordre ci-dessous), sinon `default_segment`.
+default_segment: cartographie
+segments:
+  defense_securite:
+    label: Défense, sécurité et renseignement
+    patterns: [defence, defense, défense, military, militaire, armed forces, armée, intelligence,
+               renseignement, GEOINT, border surveillance, surveillance des frontières, maritime surveillance,
+               Bundeswehr, ministry of defence, ministère des armées]
+  spatial:
+    label: Satellites, segment sol et services spatiaux
+    patterns: [satellite manufacturing, ground station, station sol, ground segment, segment sol,
+               launch service, constellation, spacecraft, space surveillance, space domain awareness]
+  imagerie_satellite:
+    label: Imagerie et données satellitaires
+    patterns: [satellite, satellites, satellitaire, earth observation, observation de la terre, remote sensing,
+               télédétection, InSAR, synthetic aperture radar, Fernerkundung, telerilevamento, teledetección]
+  aerien_lidar:
+    label: Prises de vues aériennes, LiDAR et drones
+    patterns: [orthophoto, orthophotos, orthophotographie, ortofoto, orthoimagery, Luftbild, aerial,
+               aérienne, photogrammetry, photogrammétrie, LiDAR, laser scanning, Laserscan, drone, drones,
+               UAV, Befliegung]
+  environnement_climat:
+    label: Environnement, climat et suivi du territoire
+    patterns: [Copernicus, climate, climat, land monitoring, land cover, occupation du sol, forest, forêt,
+               agriculture, flood, inondation, coastal, littoral, environmental monitoring]
+  cartographie:
+    label: Cartographie, SIG et données géographiques
+    patterns: [GIS, SIG, mapping, cartographie, cartography, topographic, topographique, geodata,
+               géodonnées, geographic information, digital twin, jumeau numérique]
+
+# ------------------------------------------------------------ analyse par Claude
+# Même moteur et même modèle que les sujets (config/analysis.yaml) ; plafond propre.
+analysis:
+  enabled: true
+  batch_size: 25
+  max_per_run: 80            # rattrapage du premier remplissage étalé sur plusieurs jours
+  max_age_days: 200          # avis plus anciens jamais analysés
+  time_budget_minutes: 6
+  timeout_seconds: 300       # par appel (un lot prend d'ordinaire une à deux minutes)
+  prompt_file: config/prompts/analyse_appels.md
+  description_chars: 600     # longueur de description envoyée à Claude (et conservée)
+  fit:                       # adéquation à l'offre géospatiale d'Airbus
+    forte: l'avis demande de l'imagerie ou des données satellitaires, du renseignement géospatial ou un service qu'Airbus fournit directement
+    moyenne: Airbus pourrait répondre avec un partenaire ou en sous-traitance (cartographie, SIG, suivi environnemental à partir d'images)
+    faible: signal de marché sans offre Airbus directe (prises de vues aériennes, logiciel SIG, relevés au sol)
+
+# ------------------------------------------------------------ montants
+fx:
+  url: https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml   # taux de référence BCE
+  currency: EUR
+
+# ------------------------------------------------------------ page Marché
+display:
+  months: 6                  # colonnes du tableau de tendances
+  periods: [30, 90, 180, 365]
+  default_days: 90
+  top_buyers: 10
+  top_winners: 12
+  top_countries: 12
+  open_rows: 150
+  open_without_deadline_days: 45   # appel sans date limite publiée : considéré ouvert 45 jours
+  award_rows: 60
+  press_days: 30
+  press_rows: 40
+  press_themes: [appels_offres]   # thèmes Claude des sujets « repérés dans la presse »
+  press_events: [tender]          # ou type d'événement détecté par les règles

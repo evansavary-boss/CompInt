@@ -436,3 +436,19 @@ h1, h2, h3, h4 { letter-spacing: -0.01em; }
   .profile-head h1 { font-size: 1.25rem; }
   .logo { width: 56px; height: 56px; }
 }
+
+/* Tenders on country and entity pages */
+.tender-box h2 { margin: 0 0 4px; font-size: 1.05rem; }
+.tender-box h3 { margin: 12px 0 2px; font-size: 0.82rem; color: var(--muted); font-weight: 650; }
+.tender-list { list-style: none; margin: 0; padding: 0; }
+.tender-list li { padding: 7px 0; border-top: 1px solid var(--border); display: flex; flex-direction: column; gap: 2px; }
+.tender-list li:first-child { border-top: 0; }
+.tender-list a { font-size: 0.88rem; font-weight: 600; text-decoration: none; line-height: 1.35; }
+.tender-list a:hover { color: var(--accent); text-decoration: underline; }
+.tender-meta { font-size: 0.76rem; color: var(--faint); }
+.tender-box .more { display: inline-block; margin-top: 8px; font-size: 0.8rem; color: var(--accent); }
+.t-left {
+  display: inline-block; padding: 0 6px; border-radius: 999px;
+  font-size: 0.7rem; font-weight: 650; color: var(--muted); background: var(--surface-2);
+}
+.t-left.soon { color: var(--accent); background: var(--accent-soft); }

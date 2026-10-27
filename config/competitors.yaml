@@ -1,0 +1,21 @@
+# Concurrents directs de l'activité géospatiale d'Airbus.
+#
+# Sert à repérer les attributions d'appels d'offres gagnées par Airbus ou par un concurrent
+# (page Marché) et, plus tard, à l'onglet Concurrents. Les identifiants sont ceux des entités de
+# config/entities/companies.yaml : une entreprise absente du référentiel doit d'abord y être ajoutée.
+
+own: [airbus-ds]
+
+groups:
+  optique_us:
+    label: Optique américaine
+    entities: [vantor, planet, blacksky, satellogic]
+  radar:
+    label: Radar (SAR)
+    entities: [iceye, capella, umbra, synspective, iqps]
+  services_europe:
+    label: Services européens
+    entities: [safran-ai, thales-alenia-space]
+  asie_moyen_orient:
+    label: Asie et Moyen-Orient
+    entities: []

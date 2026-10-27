@@ -1,5 +1,5 @@
 {% extends "base.html.j2" %}
-{% from "_macros.html.j2" import filters, feed with context %}
+{% from "_macros.html.j2" import filters, feed, tender_box with context %}
 {% set c = view.country %}
 
 {% block main %}
@@ -26,9 +26,13 @@
         <div><strong>{{ view.windows[90] }}</strong><span>sur 90 j</span></div>
         <div><strong>{{ view.strong }}</strong><span>à impact fort</span></div>
         <div><strong>{{ view.geo_count }}</strong><span>en géopolitique</span></div>
+        <div><strong>{{ view.tenders.open | length }}</strong><span>appels d'offres ouverts</span></div>
       </div>
-      <p class="source-note">Appels d'offres du pays : à venir avec l'onglet Marché.</p>
     </article>
+
+    {% if view.tenders.total %}
+    {{ tender_box(view.tenders, root, "Appels d'offres publics", root ~ "marche.html#pays=" ~ view.code) }}
+    {% endif %}
 
     <header class="page-head">
       <h2 class="feed-title">Actualités <span class="count" data-count>{{ view.count }}</span></h2>
