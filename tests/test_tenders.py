@@ -247,7 +247,9 @@ def test_config_is_valid(ref):
     assert tenders.validate_config(TCFG, COMPETITORS, ref, ACFG) == []
     bad = copy.deepcopy(COMPETITORS)
     bad["groups"]["radar"]["entities"].append("not-a-company")
-    assert any("not-a-company" in e for e in tenders.validate_config(TCFG, bad, ref, ACFG))
+    bad["moves"]["contrats"]["events"].append("not-an-event")
+    errors = tenders.validate_config(TCFG, bad, ref, ACFG)
+    assert any("not-a-company" in e for e in errors) and any("not-an-event" in e for e in errors)
 
 
 def test_tender_rows_dedupe_status_and_amounts(tmp_path, ref):

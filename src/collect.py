@@ -5,6 +5,7 @@ Usage:
     python -m src.collect               # update data/items.json and print a report
     python -m src.collect --dry-run     # same, without writing anything
     python -m src.collect --backfill    # wider Google News window (first fill)
+    python -m src.collect --backfill --entities e-geos,gaf   # Google News of new entities only
     python -m src.collect --no-gnews    # publisher feeds only
     python -m src.collect --no-analyse  # group stories without calling Claude
 """
@@ -372,8 +373,11 @@ def _merge_query_entities(kept: Item, dropped: Item) -> None:
 
 def run(settings: dict[str, Any] | None = None, dry_run: bool = False,
         backfill: bool = False, use_gnews: bool = True, analyse: bool = True,
-        analyse_max: int | None = None) -> dict[str, Any]:
-    """Full news update. Returns a summary used by the CLI report and build."""
+        analyse_max: int | None = None, only_entities: list[str] | None = None) -> dict[str, Any]:
+    """Full news update. Returns a summary used by the CLI report and build.
+
+    `only_entities` limits the download to the Google News searches of these entities (to fill
+    the history of newly added ones); the other sources keep their previous status."""
     settings = settings or load_settings()
     paths = settings["paths"]
     tz = ZoneInfo(settings["timezone"])
@@ -383,10 +387,16 @@ def run(settings: dict[str, Any] | None = None, dry_run: bool = False,
     gcfg = load_yaml(paths["geopolitics"])
     classifier = Classifier(ref, gcfg)
     geo_exclude = geo_exclusions(gcfg)
-    sources = load_yaml(paths["sources"])["sources"]
-    if use_gnews:
-        sources = sources + gnews_sources(ref, settings, backfill)
-    sources = sources + geo_sources(gcfg, settings, backfill, use_searches=use_gnews)
+    if only_entities:
+        unknown = set(only_entities) - set(ref["entities"])
+        if unknown:
+            raise ValueError(f"entités inconnues : {', '.join(sorted(unknown))}")
+        sources = [s for s in gnews_sources(ref, settings, backfill) if s["entity"] in only_entities]
+    else:
+        sources = load_yaml(paths["sources"])["sources"]
+        if use_gnews:
+            sources = sources + gnews_sources(ref, settings, backfill)
+        sources = sources + geo_sources(gcfg, settings, backfill, use_searches=use_gnews)
     matcher = KeywordMatcher(load_yaml(paths["keywords"]))
     strip_patterns = [
         re.compile(p, re.IGNORECASE) for p in settings["text"].get("summary_strip_patterns", [])
@@ -399,7 +409,7 @@ def run(settings: dict[str, Any] | None = None, dry_run: bool = False,
     threshold = settings["dedup"]["title_similarity"]
 
     items_path = resolve(paths["items"])
-    existing, _ = load_items(items_path)
+    existing, meta = load_items(items_path)
     existing = prune(existing, now, retention)
 
     statuses = []
@@ -435,9 +445,13 @@ def run(settings: dict[str, Any] | None = None, dry_run: bool = False,
     # Exclusions and classification are cheap and rule-based: redo them on the whole
     # history so that keyword, alias or pattern changes apply retroactively.
     all_items = sort_items(classifier.classify_all(drop_excluded(existing + new_items, matcher, settings, geo_exclude)))
+    saved_statuses = statuses
+    if only_entities:
+        fetched = {s.name for s in statuses}
+        saved_statuses = statuses + [SourceStatus(**s) for s in meta.get("sources", []) if s["name"] not in fetched]
     book = None
     if not dry_run:
-        save_items(items_path, all_items, statuses, now)
+        save_items(items_path, all_items, saved_statuses, now)
         book = stories_mod.update(all_items, settings, ref, analyse=analyse, max_stories=analyse_max)
 
     return {
@@ -535,6 +549,8 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--backfill", action="store_true", help="wider Google News window")
     parser.add_argument("--no-gnews", action="store_true", help="publisher feeds only")
     parser.add_argument("--no-analyse", action="store_true", help="group stories without calling Claude")
+    parser.add_argument("--entities", default="",
+                        help="comma-separated entity ids: their Google News searches only (new entities)")
     parser.add_argument("--reclassify", action="store_true",
                         help="no download: re-run classification on data/items.json")
     args = parser.parse_args(argv)
@@ -544,8 +560,9 @@ def main(argv: list[str] | None = None) -> int:
     if args.reclassify:
         print_report(reclassify(dry_run=args.dry_run))
     else:
+        only = [e.strip() for e in args.entities.split(",") if e.strip()] or None
         print_report(run(dry_run=args.dry_run, backfill=args.backfill, use_gnews=not args.no_gnews,
-                         analyse=not args.no_analyse))
+                         analyse=not args.no_analyse, only_entities=only))
     return 0
 
 

@@ -151,15 +151,13 @@
 .list-card li:first-child { border-top: 0; }
 .list-card li > a { font-size: 0.86rem; font-weight: 600; text-decoration: none; line-height: 1.35; }
 .list-card li > a:hover { color: var(--accent); text-decoration: underline; }
-.list-meta { font-size: 0.74rem; color: var(--faint); }
 .list-chips { display: flex; flex-wrap: wrap; gap: 4px; }
-.more { display: inline-block; margin-top: 8px; font-size: 0.8rem; color: var(--accent); }
 
 /* View switch (tenders / press signals) */
 .view-switch { margin: 0 0 14px; }
 .view-switch button[aria-selected="true"] { background: var(--surface); color: var(--accent); box-shadow: var(--shadow); }
 .view-intro { margin: 0 0 10px; font-size: 0.85rem; color: var(--muted); }
-.segmented.small button { font-size: 0.74rem; padding: 3px 9px; }
+.segmented.small button { font-size: 0.74rem; padding: 3px 9px; white-space: nowrap; }
 .tender-search { flex: 1 1 180px; min-width: 160px; }
 .viz-grid-even { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 

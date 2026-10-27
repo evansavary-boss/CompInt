@@ -224,6 +224,100 @@ companies:
       Éditeur américain leader des systèmes d'information géographique.
     highlights: [ArcGIS]
 
+  # Concurrents ajoutés le 2026-10-27 (identifiants Wikidata vérifiés ce jour).
+  - id: e-geos
+    name: e-GEOS
+    wikidata: Q6578689
+    countries: [IT]
+    segments: [eo_radar, geoint]
+    domains: [geospatial]
+    aliases: [e-GEOS, eGEOS]
+    description: >-
+      Société de l'Agence spatiale italienne et de Telespazio (Rome) : données radar COSMO-SkyMed,
+      services d'observation de la Terre et de géo-information.
+    highlights: [COSMO-SkyMed]
+    news_query: '"e-GEOS"'
+
+  - id: gaf
+    name: GAF
+    wikidata: Q30254673
+    countries: [DE]
+    segments: [geoint]
+    domains: [geospatial]
+    aliases: [GAF Geospatial, GAF AG]   # « GAF » seul désigne aussi un fabricant américain de toitures
+    description: >-
+      Filiale munichoise d'e-GEOS (groupe Telespazio) : géo-information, cartographie et services
+      d'observation de la Terre pour les institutions.
+    highlights: []
+    news_query: '"GAF AG" OR "GAF Geospatial"'
+
+  - id: european-space-imaging
+    name: European Space Imaging
+    wikidata: Q131439097
+    countries: [DE]
+    segments: [eo_optique]
+    domains: [geospatial]
+    aliases: [European Space Imaging]
+    aliases_cs: [EUSI]
+    description: >-
+      Distributeur munichois d'imagerie satellite optique à très haute résolution pour les clients
+      européens, partenaire de Vantor (ex-Maxar).
+    highlights: []
+
+  - id: chang-guang
+    name: Chang Guang Satellite
+    wikidata: Q135095629
+    countries: [CN]
+    segments: [eo_optique, manufacturing]
+    domains: [geospatial, newspace]
+    aliases: [Chang Guang, Changguang, Jilin-1]
+    aliases_cs: [CGSTL]
+    description: >-
+      Constructeur et opérateur chinois de Changchun, créé en 2014 : constellation optique Jilin-1,
+      la plus nombreuse de Chine.
+    highlights: [Jilin-1]
+    news_query: '"Chang Guang" OR "Jilin-1"'
+
+  - id: china-siwei
+    name: China Siwei
+    wikidata: Q135765238
+    countries: [CN]
+    segments: [eo_optique]
+    domains: [geospatial]
+    aliases: [China Siwei, SuperView Neo, SuperView-1]
+    description: >-
+      Filiale du groupe spatial chinois CASC : opérateur des constellations d'imagerie à haute
+      résolution SuperView (Gaojing) et SuperView Neo.
+    highlights: [SuperView, SuperView Neo]
+    news_query: '"China Siwei" OR "SuperView Neo"'
+
+  - id: si-imaging
+    name: SI Imaging Services
+    countries: [KR]
+    segments: [eo_optique, eo_radar]
+    domains: [geospatial]
+    aliases: [SI Imaging Services, SI Imaging Service]
+    aliases_cs: [SIIS]
+    description: >-
+      Filiale de Satrec Initiative créée en 2014 : distributeur exclusif des images optiques et radar
+      des satellites coréens KOMPSAT.
+    highlights: [KOMPSAT]
+    news_query: '"SI Imaging Services"'
+    facts: {founded: 2014, parent: Satrec Initiative}   # pas de fiche Wikidata (source : Wikipédia, Satrec Initiative)
+
+  - id: space42
+    name: Space42
+    wikidata: Q131612835
+    countries: [AE]
+    segments: [geoint, telecom]
+    domains: [geospatial, newspace]
+    aliases: [Space42, Bayanat, Yahsat]
+    description: >-
+      Groupe d'Abou Dhabi né en 2024 du rapprochement de Bayanat et Yahsat : géo-intelligence,
+      observation de la Terre et télécoms par satellite.
+    highlights: []
+    news_query: '"Space42"'
+
   - id: open-cosmos
     name: Open Cosmos
     wikidata: Q125456828

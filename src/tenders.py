@@ -223,6 +223,11 @@ def validate_config(tcfg: dict[str, Any], competitors: dict[str, Any], ref: dict
                                                       for e in g.get("entities") or []]:
         if eid not in known:
             errors.append(f"competitors.yaml : entreprise inconnue {eid!r}")
+    for key, move in (competitors.get("moves") or {}).items():
+        errors += [f"competitors.yaml moves.{key} : type d'événement inconnu {e!r}"
+                   for e in move.get("events") or [] if e not in ref["events"]]
+        errors += [f"competitors.yaml moves.{key} : thème inconnu {t!r}"
+                   for t in move.get("themes") or [] if t not in acfg["themes"]]
     if tcfg["default_segment"] not in tcfg["segments"]:
         errors.append(f"tenders.yaml : default_segment {tcfg['default_segment']!r} absent de segments")
     kinds = set(tcfg["kinds"])

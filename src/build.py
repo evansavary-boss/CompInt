@@ -1,7 +1,7 @@
 """Build the static site in docs/.
 
-Pages: index.html (Géopolitique), economie.html, marche.html, one page per entity in
-entite/<id>.html and one per country in pays/<code>.html.
+Pages: index.html (Géopolitique), economie.html, marche.html, concurrents.html, one page per
+entity in entite/<id>.html and one per country in pays/<code>.html.
 
 Usage:
     python -m src.build                  # refresh entities, collect news, render docs/
@@ -42,15 +42,17 @@ MONTHS = ["janv.", "févr.", "mars", "avr.", "mai", "juin",
           "juil.", "août", "sept.", "oct.", "nov.", "déc."]
 WEEKDAYS = ["lundi", "mardi", "mercredi", "jeudi", "vendredi", "samedi", "dimanche"]
 
-# Tabs: key, file, title, subtitle, entity kind listed in the sidebar.
-# Tabs: key, file, title, subtitle, sidebar kind ("country" or entity kinds).
+# Feed tabs: key, file, title, subtitle, sidebar kinds ("country", "competitor" or entity kinds).
 GEO = "geopolitique"
+COMP = "concurrents"
 TABS = [
     (GEO, "index.html", "Géopolitique",
      "Conflits, sanctions, ressources, crises : le contexte mondial du géospatial et de la défense",
      ("country",)),
     ("economie", "economie.html", "Économie",
      "Institutions, budgets, contrats, lancements, financements et entreprises", ("company", "institution")),
+    (COMP, "concurrents.html", "Concurrents",
+     "Les mouvements des concurrents directs de l'activité géospatiale d'Airbus", ("competitor",)),
 ]
 MARKET_PAGE = ("marche", "marche.html", "Marché",
                "Appels d'offres publics (TED, Find a Tender) et signaux du marché dans la presse", None)
@@ -133,6 +135,18 @@ class SiteData:
         self.type_names = self.ref["types"]
 
         self.rows = {i.id: self._row(i) for i in self.items}
+        # Daily collection starts on the first run; before it, the history is a capped backfill.
+        first_run = min((datetime.fromisoformat(i.first_seen) for i in self.items if i.first_seen),
+                        default=self.updated_at)
+        self.complete_days = (self.updated_at.date() - first_run.date()).days + 1
+        self.complete_since = format_date(first_run)
+
+        self.competitors = load_yaml(paths["competitors"])
+        self.moves = self.competitors["moves"]
+        self.groups = self.competitors["groups"]
+        self.own_ids = [e for e in self.competitors.get("own") or [] if e in self.entities]
+        self.rival_group = {eid: key for key, g in self.groups.items() for eid in g.get("entities") or []
+                            if eid in self.entities}
 
         self.analysis = load_yaml(paths["analysis"])
         impact_keys = list(self.analysis["impact"])
@@ -188,6 +202,8 @@ class SiteData:
                 regions.append(region)
         impact = a.get("impact", "")
         theme_keys = a.get("themes") or view["geo_themes"]
+        moves = [k for k, m in self.moves.items() if not m.get("tenders")
+                 and (set(m.get("events") or []) & set(view["events"]) or set(m.get("themes") or []) & set(theme_keys))]
         themes = [(k, self.theme_names[k]) for k in theme_keys if k in self.theme_names]
         industries = [(k, self.industry_names[k]) for k in a.get("industries", []) if k in self.industry_names]
         limit = self.analysis["stories"]["max_sources_listed"]
@@ -227,6 +243,7 @@ class SiteData:
             "sections": view["sections"],
             "analysis_tabs": a.get("tabs") or [],
             "theme_keys": [k for k, _ in themes],
+            "move_keys": moves,
             "n_items": len(view["items"]),
             "n_sources": len(view["sources"]),
             "sources": listed,
@@ -255,14 +272,15 @@ class SiteData:
         """Filter choices present in `rows`, most frequent first."""
         countries = Counter(c for r in rows for c in r["countries"])
         regions = Counter(g for r in rows for g in r["regions"])
-        ents = Counter(e for r in rows for e in r["entity_ids"]
-                       if e in self.entities and (kind is None or self.entities[e]["kind"] == kind))
+        ents = Counter(e for r in rows for e in r["entity_ids"] if e in self.entities and (
+            kind is None or (e in self.rival_group if kind == "competitor" else self.entities[e]["kind"] == kind)))
         events = Counter(e for r in rows for e in r["event_keys"])
         segments = Counter(s for r in rows for s in r["segments"])
         industries = Counter(k for r in rows for k, _ in r["industries"])
         themes = Counter(k for r in rows for k in r["theme_keys"])
-        # Business/policy event chips everywhere except Géopolitique, which filters by family.
-        event_keys = [k for k in self.ref["events"] if k in events and tab != GEO]
+        # Business/policy event chips everywhere except Géopolitique (families) and Concurrents (moves).
+        event_keys = [k for k in self.ref["events"] if k in events and tab not in (GEO, COMP)]
+        moves = Counter(k for r in rows for k in r["move_keys"])
         theme_tabs = {GEO} if tab == GEO else ({"economie", "marche", "concurrents"} if tab else None)
         return {
             "regions": [(k, self.region_names[k]) for k in self.region_names if k in regions],
@@ -272,6 +290,7 @@ class SiteData:
             "segments": [(k, v) for k, v in self.segment_names.items() if k in segments],
             "industries": [(k, v, industries[k]) for k, v in self.industry_names.items() if k in industries],
             "events": [(k, self.event_labels[k], events[k]) for k in event_keys],
+            "moves": [(k, m["label"], moves[k]) for k, m in self.moves.items() if moves[k]] if tab == COMP else [],
             "analysed": any(r["analysed"] for r in rows),
             "themes": [(k, v["label"], themes[k]) for k, v in self.analysis["themes"].items()
                        if (theme_tabs is None or v["tab"] in theme_tabs) and themes[k]],
@@ -280,6 +299,13 @@ class SiteData:
     def sidebar(self, kind: str, rows: list[dict[str, Any]]) -> dict[str, Any]:
         """One sidebar box: entities of a kind grouped by segment/type, or countries by region,
         each with its story count (updated live by the filters)."""
+        if kind == "competitor":
+            counts = Counter(e for r in rows for e in r["entity_ids"])
+            out = [{"label": g["label"], "entities": sorted(
+                ({"id": eid, "name": self.entities[eid]["name"], "count": counts[eid], "href": f"entite/{eid}.html"}
+                 for eid in g.get("entities") or [] if eid in self.entities),
+                key=lambda r: (-r["count"], r["name"].lower()))} for g in self.groups.values()]
+            return {"title": "Concurrents", "field": "entities", "groups": [g for g in out if g["entities"]]}
         if kind == "country":
             counts = Counter(c for r in rows for c in r["countries"])
             groups: dict[str, list] = {}
@@ -360,7 +386,79 @@ class SiteData:
             "count": len(rows),
             "options": self.options(rows, None, None),
             "tenders": self.tender_box(tenders),
+            "competitor": self.competitor_card(eid) if eid in self.rival_group or eid in self.own_ids else None,
         }
+
+    # ------------------------------------------------------------ competitors
+
+    def competitor_rows(self) -> list[dict[str, Any]]:
+        """Stories citing a tracked competitor (feed of the Concurrents tab)."""
+        days = self.competitors["page"]["feed_days"]
+        return [r for r in self.stories if r["age"] < days and set(r["entity_ids"]) & set(self.rival_group)]
+
+    def _moves(self, eid: str, lo: int, hi: int) -> dict[str, Any]:
+        """Moves of an entity between `lo` (included) and `hi` (excluded) days ago."""
+        stories = [r for r in self.stories if eid in r["entity_ids"] and lo <= r["age"] < hi and r["move_keys"]]
+        won = [t for t in self.tenders if t["kind"] == "award" and lo <= t["age"] < hi
+               and any(w["id"] == eid for w in t["winners"])]
+        counts = {k: (len(won) if m.get("tenders") else sum(1 for r in stories if k in r["move_keys"]))
+                  for k, m in self.moves.items()}
+        return {"counts": counts, "total": len(stories) + len(won), "stories": stories, "won": won}
+
+    def competitor_card(self, eid: str) -> dict[str, Any]:
+        """Battle card of a competitor (or of Airbus, the reference row)."""
+        page = self.competitors["page"]
+        e = self.entities[eid]
+        days = page["card_days"]
+        now, prev = self._moves(eid, 0, days), self._moves(eid, days, 2 * days)
+        latest = sorted(now["stories"], key=lambda r: r["last"], reverse=True)[: page["card_moves"]]
+        won_year = [t for t in self.tenders if t["kind"] == "award" and t["age"] < page["tender_days"]
+                    and any(w["id"] == eid for w in t["winners"])]
+        group = self.rival_group.get(eid)
+        by_period = {p: self._moves(eid, 0, p) for p in page["periods"]}
+        return {
+            "id": eid,
+            "name": e["name"],
+            "own": eid in self.own_ids,
+            "group": self.groups[group]["label"] if group else "Référence",
+            "countries": ", ".join(self.country_names.get(c, c) for c in e.get("countries") or []),
+            "segments": [self.segment_names[s] for s in e.get("segments") or [] if s in self.segment_names],
+            "days": days,
+            "total": now["total"],
+            "delta": now["total"] - prev["total"],
+            "comparable": self.complete_days >= 2 * days,
+            "counts": [(k, m["label"], now["counts"][k]) for k, m in self.moves.items()],
+            "periods": {p: m["counts"] for p, m in by_period.items()},
+            "period_totals": {p: m["total"] for p, m in by_period.items()},
+            "latest": [{"title": r["title"], "url": r["url"], "date": r["date"],
+                        "moves": [self.moves[k]["label"] for k in r["move_keys"]]} for r in latest],
+            "mentions": sum(1 for r in self.stories if eid in r["entity_ids"] and r["age"] < days),
+            "tenders_won": len(won_year),
+            "tender_days": page["tender_days"],
+            "last_tender": won_year[0] if won_year else None,
+        }
+
+    def competitor_view(self) -> dict[str, Any]:
+        """Matrix (competitors x move types, per period) and battle cards, grouped."""
+        page = self.competitors["page"]
+        periods = page["periods"]
+        moves = [(k, m["label"]) for k, m in self.moves.items()]
+        cards = {eid: self.competitor_card(eid) for eid in list(self.own_ids) + list(self.rival_group)}
+        groups = []
+        for key, g in self.groups.items():
+            ids = [eid for eid in g.get("entities") or [] if eid in cards]
+            groups.append({"key": key, "label": g["label"],
+                           "cards": sorted((cards[i] for i in ids), key=lambda c: (-c["total"], c["name"].lower()))})
+        matrix = {}
+        for p in periods:
+            values = [v for c in cards.values() if not c["own"] for v in c["periods"][p].values()]
+            top = max(values, default=0) or 1
+            matrix[p] = {"max": top, "bins": {eid: {k: (0 if not v else 1 + min(4, (5 * (v - 1)) // top))
+                                                     for k, v in c["periods"][p].items()}
+                                               for eid, c in cards.items()}}
+        return {"moves": moves, "periods": periods, "groups": groups, "own": [cards[eid] for eid in self.own_ids],
+                "matrix": matrix, "card_days": page["card_days"], "tender_days": page["tender_days"],
+                "complete_days": self.complete_days, "complete_since": self.complete_since}
 
     # ------------------------------------------------------------ tenders
 
@@ -437,7 +535,8 @@ def render(settings: dict[str, Any]) -> None:
     common = {
         "updated_at": data.updated_at,
         "updated_label": format_datetime(data.updated_at),
-        "tabs": [(k, f, t) for k, f, t, _, _ in TABS] + [MARKET_PAGE[:3]],
+        "tabs": [(k, f, t) for k, f, t, _, _ in TABS if k != COMP] + [MARKET_PAGE[:3]]
+                + [(k, f, t) for k, f, t, _, _ in TABS if k == COMP],
         "country_pages": set(data.country_codes()),
         "entity_index": data.entity_index(),
         "feeds_ok": sum(1 for s in feeds if s.get("ok")),
@@ -466,14 +565,17 @@ def render(settings: dict[str, Any]) -> None:
     world = worldmap.build_paths(resolve(paths["world_map"]), data.ref["countries"])
     world["names"] = {code: c["name"] for code, c in data.ref["countries"].items()}
     for key, filename, title, subtitle, kinds in TABS:
-        tab_rows = [r for r in data.stories if on_page(r, key) and r["age"] < tab_days]
-        write(filename, "tab.html.j2", page=key, title=title, subtitle=subtitle,
-              kind=kinds[0] if kinds[0] != "country" else None,
+        days = data.competitors["page"]["feed_days"] if key == COMP else tab_days
+        tab_rows = (data.competitor_rows() if key == COMP
+                    else [r for r in data.stories if on_page(r, key) and r["age"] < tab_days])
+        kind = kinds[0] if kinds[0] != "country" else None
+        write(filename, "tab.html.j2", page=key, title=title, subtitle=subtitle, kind=kind,
               groups=data.group_by_day(tab_rows), count=len(tab_rows),
-              options=data.options(tab_rows, kinds[0] if kinds[0] != "country" else None, key),
+              options=data.options(tab_rows, kind, key),
               sidebars=[data.sidebar(k, tab_rows) for k in kinds],
-              periods=[d for d in settings["history"]["periods"] if d <= tab_days],
-              world=world if key == GEO else None)
+              periods=[d for d in settings["history"]["periods"] if d <= days],
+              world=world if key == GEO else None,
+              competitors=data.competitor_view() if key == COMP else None)
 
     country_dir = out / "pays"
     if country_dir.exists():

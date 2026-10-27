@@ -20,9 +20,15 @@ Tableau de bord statique, mis à jour chaque matin par GitHub Actions, pour suiv
 - **Marché**, vue **Signaux presse** : synthèse tirée des actualités classées (activité par semaine,
   régions, segments × événements, entreprises les plus actives, donneurs d'ordre, derniers contrats,
   levées et rachats).
+- **Concurrents** : les concurrents directs de l'activité géospatiale d'Airbus, en 4 groupes (optique
+  américaine, radar, services européens, Asie et Moyen-Orient). Matrice concurrents × types de mouvement
+  (contrats, appels d'offres gagnés, partenariats, satellites et produits, financements et rachats) sur
+  30 ou 90 jours, avec Airbus en référence ; un clic sur une case filtre le fil. Une fiche de combat par
+  concurrent : mouvements des 30 derniers jours, tendance (dès 60 jours de collecte), derniers mouvements,
+  appels d'offres gagnés. Puis le fil des mouvements, filtrable par concurrent et type de mouvement.
 - **Fiches** : une page par entreprise ou institution (description, faits Wikidata, produits ou
   programmes clés, activité, acteurs souvent cités avec elle, appels d'offres remportés ou publiés, fil
-  d'actualités).
+  d'actualités). Les concurrents et Airbus y ont en plus un encadré « Fiche de combat ».
 
 Filtres communs : domaine **Géospatial** / **New Space** / **Tout**, période (7 à 90 jours), recherche
 plein texte. Les filtres sont gardés dans l'adresse de la page (lien partageable). Thème clair / sombre
@@ -52,6 +58,7 @@ pip install -r requirements.txt
 | `python -m src.build --skip-collect --serve` | régénère les pages à partir des données existantes, sans réseau |
 | `python -m src.collect` | collecte et classement seuls, avec un rapport détaillé dans le terminal |
 | `python -m src.collect --backfill` | recherches Google News sur 30 jours (premier remplissage) |
+| `python -m src.collect --backfill --entities e-geos,gaf` | historique Google News des seules entités indiquées (après en avoir ajouté) |
 | `python -m src.collect --reclassify` | reclasse tout l'historique sans rien télécharger (après un changement de mots-clés) |
 | `python -m src.collect --no-gnews` / `--dry-run` | flux éditeurs seuls / sans écrire `data/items.json` |
 | `python -m src.entities` | vérifie le référentiel et rafraîchit les fiches Wikidata (`--force`, `--offline`) |
@@ -118,7 +125,7 @@ config/
   analysis.yaml          regroupement en sujets, analyse par Claude, onglets, thèmes, industries, impact
   geopolitics.yaml       sources géopolitiques, familles de thèmes et leurs expressions, exclusions
   tenders.yaml           appels d'offres : requêtes TED, filtre Find a Tender, pertinence, segments, page Marché
-  competitors.yaml       Airbus et ses concurrents directs (groupes), parmi les entreprises suivies
+  competitors.yaml       Airbus, ses concurrents directs (4 groupes), types de mouvement, réglages de la page
   geodata/               fond de carte Natural Earth 1:110m (world-atlas, licence dans le dossier)
   prompts/analyse_sujets.md   consigne envoyée à Claude pour les sujets (listes d'analysis.yaml ajoutées)
   prompts/analyse_appels.md   consigne pour les appels d'offres (segments et adéquation ajoutés)
@@ -132,8 +139,9 @@ src/
   tenders.py   appels d'offres (TED, Find a Tender, taux BCE)
   stories.py   regroupement des articles en sujets                worldmap.py   projection de la carte
   build.py     génération des pages                              store.py, models.py, config.py
-templates/     base, onglets, fiche entité, fiche pays, marché (Jinja2)
-static/        style.css, app.js (filtres), market.css, market.js (signaux presse), tenders.js (appels d'offres)
+templates/     base, onglets (et matrice + fiches de combat des concurrents), fiche entité, fiche pays, marché (Jinja2)
+static/        style.css, app.js (filtres), market.css, market.js (signaux presse), tenders.js (appels d'offres),
+               competitors.js (matrice des concurrents)
 data/          items.json, stories.json, entities.json, tenders.json (générés)
 docs/          site généré, servi par GitHub Pages
 tests/
@@ -178,7 +186,13 @@ tests/
    ```
 
 3. `python -m src.entities` vérifie la configuration (message clair en cas d'erreur) et télécharge la
-   fiche Wikidata, puis `python -m src.collect --reclassify` rattache les anciens articles.
+   fiche Wikidata, puis `python -m src.collect --reclassify` rattache les anciens articles, et
+   `python -m src.collect --backfill --entities ma-societe` récupère son historique Google News.
+4. Pour en faire un concurrent suivi, ajouter son identifiant à l'un des groupes de
+   `config/competitors.yaml`.
+
+Sans élément Wikidata (cas de SI Imaging Services), omettre `wikidata` et indiquer les faits connus
+dans `facts` (par exemple `{founded: 2014, parent: Satrec Initiative}`).
 
 ### Corriger une fiche
 

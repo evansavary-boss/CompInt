@@ -1,0 +1,99 @@
+{# Concurrents tab, above the feed: matrix (competitors x move types) and battle cards. #}
+{% set C = competitors %}
+<figure class="card viz-card market comp-matrix" data-comp-matrix>
+  <figcaption class="viz-head">
+    <div>
+      <h2>Matrice des mouvements</h2>
+      <p>Sujets par concurrent et type de mouvement (un sujet peut compter dans plusieurs colonnes) ·
+        appels d'offres : attributions TED et Find a Tender · clic sur une case : le fil filtré</p>
+      {% if C.complete_days < C.periods[-1] %}
+      <p>Collecte quotidienne depuis le {{ C.complete_since }} : avant, l'historique vient d'un rattrapage limité,
+        les périodes longues sont donc sous-représentées.</p>
+      {% endif %}
+    </div>
+    <div class="segmented small" role="group" aria-label="Période de la matrice">
+      {% for p in C.periods %}<button type="button" data-comp-period="{{ p }}" aria-pressed="{{ 'true' if loop.first else 'false' }}">{{ p }} jours</button>{% endfor %}
+    </div>
+  </figcaption>
+  {% for p in C.periods %}
+  <div data-comp-panel="{{ p }}"{% if not loop.first %} hidden{% endif %}>
+    <div class="heat-wrap">
+      <table class="heat comp-heat">
+        <thead>
+          <tr>
+            <th scope="col">Concurrent</th>
+            {% for k, label in C.moves %}<th scope="col">{{ label }}</th>{% endfor %}
+            <th scope="col">Mouvements</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for g in [{"label": "", "cards": C.own}] + C.groups %}
+          {% if g.label %}<tr class="group-row"><th colspan="{{ C.moves | length + 2 }}" scope="colgroup">{{ g.label }}</th></tr>{% endif %}
+          {% for c in g.cards %}
+          <tr{% if c.own %} class="own-row"{% endif %}>
+            <th scope="row"><a href="{{ root }}entite/{{ c.id }}.html">{{ c.name }}</a>{% if c.own %} <span class="ref">référence</span>{% endif %}</th>
+            {% for k, label in C.moves %}
+            {% set v = c.periods[p][k] %}
+            <td class="h{{ C.matrix[p].bins[c.id][k] }}">
+              {% if v %}
+              {% if k == "appels_offres" %}
+              <a href="{{ root }}entite/{{ c.id }}.html#appels-offres" title="{{ c.name }} · {{ label }} : {{ v }} sur {{ p }} jours">{{ v }}</a>
+              {% elif c.own %}
+              <a href="{{ root }}entite/{{ c.id }}.html#moves={{ k }}&amp;days={{ p }}" title="{{ c.name }} · {{ label }} : {{ v }} sur {{ p }} jours">{{ v }}</a>
+              {% else %}
+              <a href="#entities={{ c.id }}&amp;moves={{ k }}&amp;days={{ p }}" data-comp-feed title="{{ c.name }} · {{ label }} : {{ v }} sur {{ p }} jours">{{ v }}</a>
+              {% endif %}
+              {% else %}<span aria-label="0">·</span>{% endif %}
+            </td>
+            {% endfor %}
+            <td class="heat-total">{{ c.period_totals[p] }}</td>
+          </tr>
+          {% endfor %}
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+    <div class="scale-legend" aria-hidden="true">
+      <span>Moins</span>{% for b in range(1, 6) %}<span class="scale-step h{{ b }}"></span>{% endfor %}<span>Plus (max {{ C.matrix[p].max }}, Airbus exclu)</span>
+    </div>
+  </div>
+  {% endfor %}
+</figure>
+
+<section class="comp-cards" aria-labelledby="cards-title">
+  <h2 class="section-title" id="cards-title">Fiches de combat <span class="muted">· {{ C.card_days }} derniers jours{% if C.complete_days >= 2 * C.card_days %}, comparés aux {{ C.card_days }} précédents{% else %} (tendance affichée dès {{ 2 * C.card_days }} jours de collecte){% endif %}</span></h2>
+  {% for g in C.groups if g.cards %}
+  <h3 class="group-title">{{ g.label }}</h3>
+  <div class="card-grid">
+    {% for c in g.cards %}
+    <article class="comp-card">
+      <header>
+        <h4><a href="{{ root }}entite/{{ c.id }}.html">{{ c.name }}</a></h4>
+        <p class="comp-meta">{{ c.countries }}{% if c.segments %} · {{ c.segments | join(", ") }}{% endif %}</p>
+      </header>
+      <p class="comp-trend">
+        <strong>{{ c.total }}</strong> mouvement{{ "s" if c.total > 1 }}
+        {% if c.comparable %}<span class="delta">{% if c.delta > 0 %}▲ +{{ c.delta }}{% elif c.delta < 0 %}▼ −{{ -c.delta }}{% else %}= stable{% endif %}</span>{% endif %}
+      </p>
+      <p class="comp-counts">
+        {% for k, label, n in c.counts if n %}<span>{{ label }} <strong>{{ n }}</strong></span>{% else %}<span class="muted">Aucun mouvement détecté</span>{% endfor %}
+      </p>
+      {% if c.latest %}
+      <ul class="comp-latest">
+        {% for m in c.latest %}
+        <li><a href="{{ m.url }}" target="_blank" rel="noopener noreferrer">{{ m.title }}</a>
+          <span class="list-meta">{{ m.date }} · {{ m.moves | join(", ") }}</span></li>
+        {% endfor %}
+      </ul>
+      {% elif c.mentions %}
+      <p class="muted">Cité dans {{ c.mentions }} sujet{{ "s" if c.mentions > 1 }}, sans mouvement détecté.</p>
+      {% endif %}
+      <p class="comp-tenders">Appels d'offres gagnés ({{ C.tender_days }} j) : <strong>{{ c.tenders_won }}</strong>
+        {% if c.last_tender %}<span class="list-meta">dernier : <a href="{{ c.last_tender.url }}" target="_blank" rel="noopener noreferrer">{{ c.last_tender.title | truncate(80) }}</a> ({{ c.last_tender.published_label }})</span>{% endif %}
+      </p>
+      <a class="more" href="{{ root }}entite/{{ c.id }}.html">Fiche détaillée →</a>
+    </article>
+    {% endfor %}
+  </div>
+  {% endfor %}
+</section>

@@ -8,6 +8,10 @@
       <h1 id="page-title">{{ title }} <span class="count" data-count>{{ count }}</span></h1>
       <p>{{ subtitle }}</p>
     </header>
+    {% if competitors %}
+    {% include "_competitors.html.j2" %}
+    <h2 class="feed-title section-title" id="fil">Fil des mouvements</h2>
+    {% endif %}
     {{ filters(options, periods, display_days, default_domain if page != 'geopolitique' else 'all', kind=kind,
                show_segments=(kind == 'company'), show_domain=(page != 'geopolitique'),
                show_themes=(page == 'geopolitique')) }}
@@ -40,3 +44,6 @@
   </aside>
 </div>
 {% endblock %}
+
+{% block styles %}{% if competitors %}<link rel="stylesheet" href="{{ root }}static/market.css?v={{ asset_version }}">{% endif %}{% endblock %}
+{% block scripts %}{% if competitors %}<script src="{{ root }}static/competitors.js?v={{ asset_version }}"></script>{% endif %}{% endblock %}

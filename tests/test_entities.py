@@ -21,7 +21,8 @@ def test_reference_config_is_valid(ref):
     assert kinds.count("company") >= 50
     assert kinds.count("institution") >= 20
     assert "NO" in ref["countries"]          # quoted key, not the YAML boolean
-    assert all(e.get("wikidata") for e in ref["entities"].values())
+    # An entity without a Wikidata item (SI Imaging Services) gives its facts in the YAML.
+    assert all(e.get("wikidata") or e.get("facts") for e in ref["entities"].values())
 
 
 def test_validation_catches_common_mistakes(ref):

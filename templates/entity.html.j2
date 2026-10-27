@@ -67,6 +67,22 @@
   </section>
 
   <aside class="side">
+    {% if view.competitor %}
+    {% set c = view.competitor %}
+    <div class="side-box comp-box">
+      <h2>Fiche de combat</h2>
+      <p class="badges"><span class="badge">{{ "Référence (Airbus)" if c.own else "Concurrent · " ~ c.group }}</span></p>
+      <p class="comp-trend">
+        <strong>{{ c.total }}</strong> mouvement{{ "s" if c.total > 1 }} sur {{ c.days }} j
+        {% if c.comparable %}<span class="delta">{% if c.delta > 0 %}▲ +{{ c.delta }}{% elif c.delta < 0 %}▼ −{{ -c.delta }}{% else %}= stable{% endif %}</span>{% endif %}
+      </p>
+      <p class="comp-counts">
+        {% for k, label, n in c.counts if n %}<span>{{ label }} <strong>{{ n }}</strong></span>{% else %}<span class="muted">Aucun mouvement détecté</span>{% endfor %}
+      </p>
+      <p class="comp-tenders">Appels d'offres gagnés ({{ c.tender_days }} j) : <strong>{{ c.tenders_won }}</strong></p>
+      <a class="more" href="{{ root }}concurrents.html">Comparer dans la matrice →</a>
+    </div>
+    {% endif %}
     <div class="side-box">
       <h2>Activité</h2>
       <p class="windows">

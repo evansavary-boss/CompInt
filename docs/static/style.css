@@ -423,6 +423,8 @@ h1, h2, h3, h4 { letter-spacing: -0.01em; }
 @media (max-width: 640px) {
   .top-inner { gap: 8px 12px; }
   .brand-sub { display: none; }
+  .tabs { width: 100%; overflow-x: auto; scrollbar-width: none; }
+  .tabs a { flex: 1 0 auto; text-align: center; padding: 5px 8px; font-size: 0.84rem; }
   .jump { margin-left: 0; flex: 1 1 140px; }
   .jump input { width: 100%; }
   .updated { width: 100%; }
@@ -452,3 +454,48 @@ h1, h2, h3, h4 { letter-spacing: -0.01em; }
   font-size: 0.7rem; font-weight: 650; color: var(--muted); background: var(--surface-2);
 }
 .t-left.soon { color: var(--accent); background: var(--accent-soft); }
+
+/* ---------------------------------------------------------------- Concurrents */
+
+.section-title { font-size: 1.1rem; margin: 22px 0 10px; }
+.section-title .muted { font-size: 0.8rem; font-weight: 500; }
+.comp-matrix { margin-bottom: 8px; }
+.comp-heat th[scope="row"] { white-space: nowrap; }
+.comp-heat th[scope="row"] a { color: var(--text); text-decoration: none; font-weight: 650; }
+.comp-heat th[scope="row"] a:hover { color: var(--accent); text-decoration: underline; }
+.comp-heat .ref { font-size: 0.68rem; font-weight: 500; color: var(--faint); }
+.comp-heat .group-row th {
+  padding: 10px 6px 2px; font-size: 0.7rem; font-weight: 700; color: var(--faint);
+  text-transform: uppercase; letter-spacing: 0.04em;
+}
+.comp-heat .own-row th, .comp-heat .own-row td { border-bottom: 1px dashed var(--border); }
+
+.group-title { margin: 16px 0 8px; font-size: 0.8rem; font-weight: 700; color: var(--muted); text-transform: uppercase; letter-spacing: 0.04em; }
+.card-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 12px; }
+.comp-card {
+  display: flex; flex-direction: column; gap: 6px; padding: 14px 16px;
+  background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); box-shadow: var(--shadow);
+}
+.comp-card h4 { margin: 0; font-size: 1rem; }
+.comp-card h4 a { color: var(--text); text-decoration: none; }
+.comp-card h4 a:hover { color: var(--accent); }
+.comp-meta { margin: 2px 0 0; font-size: 0.74rem; color: var(--faint); }
+.comp-trend { margin: 0; font-size: 0.85rem; color: var(--muted); }
+.comp-trend strong { font-size: 1.35rem; color: var(--text); margin-right: 2px; }
+.comp-trend .delta { margin-left: 6px; font-size: 0.78rem; font-weight: 650; color: var(--muted); }
+.comp-counts { display: flex; flex-wrap: wrap; gap: 4px 10px; margin: 0; font-size: 0.76rem; color: var(--muted); }
+.comp-latest { list-style: none; margin: 0; padding: 0; }
+.comp-latest li { display: flex; flex-direction: column; gap: 1px; padding: 5px 0; border-top: 1px solid var(--border); }
+.comp-latest a { font-size: 0.82rem; font-weight: 600; text-decoration: none; line-height: 1.35; }
+.comp-latest a:hover { color: var(--accent); text-decoration: underline; }
+.comp-tenders { margin: 0; font-size: 0.78rem; color: var(--muted); }
+.comp-tenders .list-meta { display: block; }
+.comp-card .more { margin-top: auto; font-size: 0.8rem; color: var(--accent); }
+
+/* Battle card box on a competitor's profile */
+.side-box .comp-counts { margin: 6px 0; }
+.side-box .comp-trend { margin-top: 4px; }
+
+/* Shared small print */
+.list-meta { font-size: 0.74rem; color: var(--faint); }
+.more { display: inline-block; margin-top: 8px; font-size: 0.8rem; color: var(--accent); }

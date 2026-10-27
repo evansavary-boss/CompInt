@@ -122,3 +122,23 @@ def test_tenders_on_country_and_entity_pages(site):
     assert "marche.html#pays=FR" in fr and "J-5" in fr and "2,5 M€" in fr
     iceye = (site / "entite" / "iceye.html").read_text(encoding="utf-8")
     assert "Appels d&#39;offres remportés" in iceye and "Earth observation data for maritime surveillance" in iceye
+
+
+def test_concurrents_page_matrix_cards_and_feed(site):
+    page = (site / "concurrents.html").read_text(encoding="utf-8")
+    assert 'href="concurrents.html" aria-current="page"' in page
+    assert "Matrice des mouvements" in page and "Fiches de combat" in page
+    # ICEYE: one contract story and one tender won (TED award to "ICEYE Oy")
+    assert 'href="#entities=iceye&amp;moves=contrats&amp;days=30"' in page
+    assert 'href="entite/iceye.html#appels-offres"' in page
+    assert "ICEYE wins contract" in page and 'data-moves="contrats"' in page
+    assert 'data-move="contrats"' in page                   # move chips in the feed filters
+    assert "ESA Council" not in page                         # not a competitor story
+    assert "Optique américaine" in page and "Asie et Moyen-Orient" in page
+
+
+def test_competitor_profile_has_battle_card(site):
+    page = (site / "entite" / "iceye.html").read_text(encoding="utf-8")
+    assert "Fiche de combat" in page and "Concurrent · Radar (SAR)" in page
+    assert 'id="appels-offres"' in page
+    assert "Fiche de combat" not in (site / "entite" / "esa.html").read_text(encoding="utf-8")

@@ -1,6 +1,69 @@
 {
- "updated_at": "2026-10-27T08:25:48+01:00",
+ "updated_at": "2026-10-27T13:54:14+01:00",
  "sources": [
+  {
+   "name": "Google News · e-GEOS (en)",
+   "url": "https://news.google.com/rss/search?q=%22e-GEOS%22+when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+   "ok": true,
+   "error": "",
+   "fetched": 3,
+   "kept": 1,
+   "via": "gnews"
+  },
+  {
+   "name": "Google News · GAF (en)",
+   "url": "https://news.google.com/rss/search?q=%22GAF+AG%22+OR+%22GAF+Geospatial%22+when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+   "ok": true,
+   "error": "",
+   "fetched": 0,
+   "kept": 0,
+   "via": "gnews"
+  },
+  {
+   "name": "Google News · European Space Imaging (en)",
+   "url": "https://news.google.com/rss/search?q=%22European+Space+Imaging%22+when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+   "ok": true,
+   "error": "",
+   "fetched": 2,
+   "kept": 0,
+   "via": "gnews"
+  },
+  {
+   "name": "Google News · Chang Guang Satellite (en)",
+   "url": "https://news.google.com/rss/search?q=%22Chang+Guang%22+OR+%22Jilin-1%22+when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+   "ok": true,
+   "error": "",
+   "fetched": 8,
+   "kept": 2,
+   "via": "gnews"
+  },
+  {
+   "name": "Google News · China Siwei (en)",
+   "url": "https://news.google.com/rss/search?q=%22China+Siwei%22+OR+%22SuperView+Neo%22+when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+   "ok": true,
+   "error": "",
+   "fetched": 0,
+   "kept": 0,
+   "via": "gnews"
+  },
+  {
+   "name": "Google News · SI Imaging Services (en)",
+   "url": "https://news.google.com/rss/search?q=%22SI+Imaging+Services%22+when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+   "ok": true,
+   "error": "",
+   "fetched": 0,
+   "kept": 0,
+   "via": "gnews"
+  },
+  {
+   "name": "Google News · Space42 (en)",
+   "url": "https://news.google.com/rss/search?q=%22Space42%22+when%3A30d&hl=en-US&gl=US&ceid=US%3Aen",
+   "ok": true,
+   "error": "",
+   "fetched": 11,
+   "kept": 5,
+   "via": "gnews"
+  },
   {
    "name": "Opex360 (Zone Militaire)",
    "url": "https://www.opex360.com/feed/",
@@ -20771,6 +20834,39 @@
    ]
   },
   {
+   "id": "efaa7d8b8ccee37c",
+   "title": "SPACE42 PLC Estimates – ADX:SPACE42",
+   "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBWZU5Cd2Y4V3pKbXRxWm9tODVsVG1LNVQ5OFZGZnBYNmxNWGhLUC1kVG5zaEQ5UnhMLUxncXFvX2QtYWltSi0yLVd5YUVwM19pYjhqbDBoeGZjNzkxaUJsOWNZV3BaVERCOUUtQjd4bGhkVW1wbWlLaQ?oc=5",
+   "source": "TradingView",
+   "section": "economie",
+   "published": "2026-10-26T04:08:19+01:00",
+   "summary": "",
+   "tags": [
+    "geospatial",
+    "newspace"
+   ],
+   "first_seen": "2026-10-27T13:54:14+01:00",
+   "date_estimated": false,
+   "via": "gnews",
+   "query_entities": [
+    "space42"
+   ],
+   "geo_themes": [],
+   "entities": [
+    "space42"
+   ],
+   "countries": [
+    "AE"
+   ],
+   "regions": [
+    "middle_east"
+   ],
+   "events": [],
+   "sections": [
+    "economie"
+   ]
+  },
+  {
    "id": "b18b608fc6c296c8",
    "title": "Musk says SpaceX landed a $40 billion debt deal — and forecasts doom for some AI rivals",
    "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPZDNxMmp1ajNLdXJnOGRDbVlpamxIUUNnU29YUEZaNnFoVmxRUzRqTFVZcVVUSDhuMGxnN08wcXhzNVg3ekFRbXZxMERjaHNlX1F2Z3RhSWVBclFadmt4a1FEc0dNZFBqZG5JQ2JHd0o4MExXN252VDdtdkdpYUw2ZVRwbk9pU3c1eWNKRk5UdThyeWlneEdiNU5OakxwXzB3Qlg3SWQzLUdJYVBsZkUtYXd0TW1mb1ZaMmljWXNYU0VyTDBzU3c?oc=5",
@@ -23441,6 +23537,39 @@
    ]
   },
   {
+   "id": "b5b36fa6d5160fc2",
+   "title": "Jilin-1 satellites unveil high-resolution images of Taiwan region",
+   "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQWkJCd0VhVVpUYU9ycXlyLXN6eWZ4YTJ4b2Ric29EUWQxWnZYSHU2T1dtdXFQVVlLaENjOVJsbWxzazlrLXA1TjYwSkFRb3k0b2duN3Q3b2NrcWtlYTlKQ09fZlhIVDYteEdCVDNGb0dhaGw2dXFrVGxpRmd5dk13S3BFNERtSGJVb3k2MTdpbC1ZVV9Ka21DaUVOcktxWXpHZ1hJTEt3Mlo1ZXlzNHcxT1ZlVXR6VEc4MEpYTDhjYw?oc=5",
+   "source": "CGTN",
+   "section": "economie",
+   "published": "2026-10-25T08:40:51+01:00",
+   "summary": "",
+   "tags": [
+    "newspace"
+   ],
+   "first_seen": "2026-10-27T13:54:14+01:00",
+   "date_estimated": false,
+   "via": "gnews",
+   "query_entities": [
+    "chang-guang"
+   ],
+   "geo_themes": [],
+   "entities": [
+    "chang-guang"
+   ],
+   "countries": [
+    "TW",
+    "CN"
+   ],
+   "regions": [
+    "asia_pacific"
+   ],
+   "events": [],
+   "sections": [
+    "economie"
+   ]
+  },
+  {
    "id": "b92f142df4c59525",
    "title": "India To Have Four Functional Space Launch Pads By 2029: ISRO Chief Narayanan",
    "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPcUxMbmtTcjdKMFRHZ0NTQzBrWEtwRzhOSG9JLXFFOEJ3UGJkbGpqX2JjSDdYU3JfbXFhMHZ1Q19IRE5lUUpWdU42WTFlZ3MydDBJaG53Tm01UWtDampDaUlJRXo0cWRoTzQxT0pJbER4Vndrb1dqMGtQRFdRb0ZKUDd2bTdkMVZmd2diMjh1OUJWVWZwMVB6MTQ0MXBFYldvdk9iYWQwME82a2F30gG8AUFVX3lxTE1BNFlJQXBqTjBSTU1VR3dGMG5QZkljSlREcVRxOEVuaUxGRVNYVWNvZXZOV0hjTTA3eWE5TWdlNVEwcVZlZHNRX2pNM2dMeWNkenBoWi1nN0pPQ2dZS01qLTlWcjlLR1lYZ1B1ckdldFByaFhGMm14cG1tazU3TXVBN2pfNTQ0ZE04WVM2NXZIcFZ6dWxmSFNIbmlNXzFBTjFXZkd3TENiOGNsZlR4NUVUdUNEMEhSQmRhVGRi?oc=5",
@@ -23890,6 +24019,39 @@
    ],
    "regions": [
     "north_america"
+   ],
+   "events": [],
+   "sections": [
+    "economie"
+   ]
+  },
+  {
+   "id": "e58133f075f9a7d1",
+   "title": "Jilin-1 satellite captures China’s Taiwan island from space on 81st anniversary of the island’s recovery",
+   "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE91bExWSG1BN0oxa2ZRM1J3ZXR3aEpHaXNfQnRzZHZudWRPenFwelNRb1Z6NzJ2MzZTckdpM3pFN1l1dlV3c0VnWGRidWVQR1F0M29UcF9GWWlLVkxiWTdPM2Zn?oc=5",
+   "source": "Global Times",
+   "section": "economie",
+   "published": "2026-10-25T04:43:00+01:00",
+   "summary": "",
+   "tags": [
+    "newspace"
+   ],
+   "first_seen": "2026-10-27T13:54:14+01:00",
+   "date_estimated": false,
+   "via": "gnews",
+   "query_entities": [
+    "chang-guang"
+   ],
+   "geo_themes": [],
+   "entities": [
+    "chang-guang"
+   ],
+   "countries": [
+    "CN",
+    "TW"
+   ],
+   "regions": [
+    "asia_pacific"
    ],
    "events": [],
    "sections": [
@@ -37683,16 +37845,20 @@
    "date_estimated": false,
    "via": "gnews",
    "query_entities": [
-    "iqps"
+    "iqps",
+    "e-geos"
    ],
    "geo_themes": [],
    "entities": [
+    "e-geos",
     "iqps"
    ],
    "countries": [
+    "IT",
     "JP"
    ],
    "regions": [
+    "europe",
     "asia_pacific"
    ],
    "events": [],
@@ -48064,6 +48230,39 @@
    ],
    "regions": [
     "europe"
+   ],
+   "events": [],
+   "sections": [
+    "economie"
+   ]
+  },
+  {
+   "id": "4dcad392c29d19ba",
+   "title": "Space42’s $1.7B Global Push: How the UAE Space Firm Plans to Conquer New Markets",
+   "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQcGpIczB3Y3JRNGhzZ0dFRTVNR1BEV281VWNVVVIxRVZyU3l5emNCbHB6SW1KUmtMRnZZZmpwV0F4MDIzdHZmdVFJS1BDazVOSVdMdVUzNVpOM2lnN0VRRU5hWjg2VDU1ZktpMUxKMjNBYUZqUktoZmZsYW9zZVpwVnVjVk90MHNJYXEtVA?oc=5",
+   "source": "Fortune",
+   "section": "economie",
+   "published": "2026-10-21T11:46:00+02:00",
+   "summary": "",
+   "tags": [
+    "geospatial",
+    "newspace"
+   ],
+   "first_seen": "2026-10-27T13:54:14+01:00",
+   "date_estimated": false,
+   "via": "gnews",
+   "query_entities": [
+    "space42"
+   ],
+   "geo_themes": [],
+   "entities": [
+    "space42"
+   ],
+   "countries": [
+    "AE"
+   ],
+   "regions": [
+    "middle_east"
    ],
    "events": [],
    "sections": [
@@ -60991,6 +61190,40 @@
    ]
   },
   {
+   "id": "be56f2c76285e7e9",
+   "title": "Space42 and Viasat commit up to $1B to launch satellite venture Equatys",
+   "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQQWxyWE1CU0tHZVZtTTRGWlRpQ3pILUNHOFlFaW9HeEQ1R1RiMDRNSU95eW9HZnRvMVl5UnhwMERCNmNfNEZ6S09IeTFQZHktZkdtM3JYRkdvYXRaU1d4UnR5LXpUclNHTG01ekV4MkhUSEZiSHM3OFNKekNzdTQ3SUlxMUR4dEh2aU5JelFFZjFXZ3N0VmF1OTFwNVpLTUF5dnlMRUp0dw?oc=5",
+   "source": "Dealroom",
+   "section": "economie",
+   "published": "2026-10-15T03:23:00+02:00",
+   "summary": "",
+   "tags": [
+    "newspace"
+   ],
+   "first_seen": "2026-10-27T13:54:14+01:00",
+   "date_estimated": false,
+   "via": "gnews",
+   "query_entities": [
+    "space42"
+   ],
+   "geo_themes": [],
+   "entities": [
+    "space42"
+   ],
+   "countries": [
+    "AE"
+   ],
+   "regions": [
+    "middle_east"
+   ],
+   "events": [
+    "launch"
+   ],
+   "sections": [
+    "economie"
+   ]
+  },
+  {
    "id": "85bd820946a12f41",
    "title": "Firefly Aerospace Schedules Third Quarter 2026 Financial Results for November 10",
    "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQVVgyT2NyX1JsYzRRRlFNX1pLdXRWQUNEZEt3aEFvc2NVQlVLZ2RNYzlhcUFYUDRoZ25kOGpSR3ZTZW1SZzRRU1B2MFIyY2s2ZW9HWVpEQ3d3N3NjVG0xY0UxeUlETFU3NU43VFhnQ0lZaFFUUzJncmxfaVd3RlVodEFJTmYzWWpOYklMcThjQUJCWWc2OU5zUS1MUm1Uc1E2Q2FERnRPMmhUeUl4Skk2NG1R?oc=5",
@@ -69103,6 +69336,41 @@
    ]
   },
   {
+   "id": "09d09d1822ae86f5",
+   "title": "Telecom news: TM Forum, Space42, Viasat, Angola Cables, Ciena",
+   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNQTl3YTY5SHUzX3VUOXFMZzRKdVdWQUpyam9weDZBOWVzOUNQV3FfZS1QMWxOQ3BfbnJ2TTAtUzFPLWJmU1VNR25ULXg1elhSNU4wWm9xVTJVdm43aGlsX240QTFpRF9MRkZMTmgySUNqNFRKM21RdmdPTnFYbGpLUmZRMm1QLU1iTVU2MEl5SXA1bndGWkdB0gGfAUFVX3lxTE9iTnhEbXd0cU9sYnMtRlJxdElqVGV1QmRHM0NKeDhMQ21jYzNIdkNJNURDS01LcGYtbkhnR3ZMUS1XY3MtRnlpOGlPY29sWk1FSGVBdGZBVWh1cGRVTW1Sd1ktSFVtVmVBVWtycWktNUVCdkZrN2c4bDhCeUJ2QnhGUDlfMDgxNzJuZFNCVzZuTHVRR21raGx2OVZ5VXlZWQ?oc=5",
+   "source": "TelecomLead",
+   "section": "economie",
+   "published": "2026-10-01T09:00:00+02:00",
+   "summary": "",
+   "tags": [
+    "geospatial",
+    "newspace"
+   ],
+   "first_seen": "2026-10-27T13:54:14+01:00",
+   "date_estimated": false,
+   "via": "gnews",
+   "query_entities": [
+    "space42"
+   ],
+   "geo_themes": [],
+   "entities": [
+    "space42"
+   ],
+   "countries": [
+    "AO",
+    "AE"
+   ],
+   "regions": [
+    "africa",
+    "middle_east"
+   ],
+   "events": [],
+   "sections": [
+    "economie"
+   ]
+  },
+  {
    "id": "4b1c869b43019237",
    "title": "LTG David Miller Nominated as Next Leader of U.S. Space Command",
    "url": "https://spacepolicyonline.com/news/ltg-david-miller-nominated-as-next-leader-of-u-s-space-command/",
@@ -69857,6 +70125,39 @@
    "events": [],
    "sections": [
     "politique"
+   ]
+  },
+  {
+   "id": "d3f386c01374bf54",
+   "title": "GSMA Member Viasat and Space42 to launch shared platform for global Direct-to-Device connectivity",
+   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOcjVjZ2ozcm5MZXlvc19hWmJrVDZtUUJvRVpORWdIMGV6NTlkSXFUV3F1c0xpN3ZJclFITTRBa1lHVVRMcmw0ZVpib2N1QWlQVjRqUmJlbVNyZnQ2N28teFVieFVjSUlmbC1xVExxZDB6ZEwzT19wY3lYRXZUcTVxOVdvUlQ1QjRSWFY3THBCSEE5NS1NNElJak4yYzl5U0o3M1Y5dnFB?oc=5",
+   "source": "GSMA",
+   "section": "economie",
+   "published": "2026-09-29T09:00:00+02:00",
+   "summary": "",
+   "tags": [
+    "geospatial",
+    "newspace"
+   ],
+   "first_seen": "2026-10-27T13:54:14+01:00",
+   "date_estimated": false,
+   "via": "gnews",
+   "query_entities": [
+    "space42"
+   ],
+   "geo_themes": [],
+   "entities": [
+    "space42"
+   ],
+   "countries": [
+    "AE"
+   ],
+   "regions": [
+    "middle_east"
+   ],
+   "events": [],
+   "sections": [
+    "economie"
    ]
   },
   {

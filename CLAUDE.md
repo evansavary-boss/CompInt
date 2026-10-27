@@ -9,7 +9,8 @@ rebuilds daily at 06:00 UTC (`.github/workflows/update.yml`).
 - `python -m src.build` — refresh Wikidata facts (weekly), collect, classify, render `docs/`
   (`--skip-collect` = no network, `--serve`, `--port`)
 - `python -m src.collect` — feeds + Google News, per-source report (`--dry-run`, `--backfill`,
-  `--no-gnews`, `--reclassify` = re-run classification on stored items, no network)
+  `--no-gnews`, `--reclassify` = re-run classification on stored items, no network, `--entities a,b` =
+  Google News of these entities only, other sources keep their status)
 - `python -m src.entities` — validate reference YAML, refresh Wikidata cache (`--force`, `--offline`)
 - `python -m src.stories` — group items into stories, analyse new ones with Claude Code (`--no-analyse`,
   `--max N`); needs `claude` on PATH and a login or `CLAUDE_CODE_OAUTH_TOKEN`
@@ -42,8 +43,14 @@ rebuilds daily at 06:00 UTC (`.github/workflows/update.yml`).
   `ClaudeCliAnalyzer.call` with its own schema/prompt (`config/prompts/analyse_appels.md`).
   `market.tender_rows` (dedupe of republished TED notices, open status, EUR) feeds the Marché page
   (`static/tenders.js`), country and entity pages.
+- Competitors: `config/competitors.yaml` (own = Airbus, 4 groups of company ids, `moves` = matrix
+  columns mapped to rule events and Claude themes, `tenders: true` = TED/FTS awards won, page settings).
+  `SiteData` adds `move_keys` to every story; `competitor_view` builds the matrix (per period, bins on a
+  max that excludes Airbus) and battle cards; trends only show once `complete_days` ≥ 2 × card window.
+  `concurrents.html` = `tab.html.j2` + `_competitors.html.j2` + `static/competitors.js`; matrix cells set
+  the feed filters through the URL hash (`moves` is a chip group of `app.js`).
 - `build.py`: `SiteData` view models → `index.html` (Géopolitique, world map), `economie.html`,
-  `marche.html`, `entite/<id>.html`, `pays/<code>.html`. `on_page` routes stories by Claude's tabs, else
+  `marche.html`, `concurrents.html`, `entite/<id>.html`, `pays/<code>.html`. `on_page` routes stories by Claude's tabs, else
   by rule sections. `worldmap.py` projects `config/geodata/countries-110m.json` (Equal Earth) to SVG. `market.py` builds the compact records the Marché page aggregates in the browser.
 - Front end: `static/app.js` (feed filters, URL hash, live counts), `static/tenders.js` (Marché tenders
   view and view switch), `static/market.js` (Marché press view) + `market.css` (charts built with DOM

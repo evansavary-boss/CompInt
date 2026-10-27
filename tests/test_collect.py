@@ -35,3 +35,10 @@ def test_garbage_feed_is_reported(monkeypatch):
     monkeypatch.setattr(collect.requests, "get", lambda *a, **k: Resp())
     items, status = collect.collect_source(SOURCE, SETTINGS, NOW.tzinfo, NOW, [])
     assert items == [] and not status.ok
+
+
+def test_entity_only_collection_rejects_unknown_ids():
+    import pytest
+    from src import collect
+    with pytest.raises(ValueError, match="nope"):
+        collect.run(only_entities=["nope"], dry_run=True)

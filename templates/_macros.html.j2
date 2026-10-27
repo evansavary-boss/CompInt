@@ -10,6 +10,7 @@
   data-segments="{{ row.segments | join(' ') }}"
   data-industries="{{ row.industries | map('first') | join(' ') }}"
   data-themes="{{ row.theme_keys | join(' ') }}"
+  data-moves="{{ row.move_keys | join(' ') }}"
   data-impact="{{ row.impact_rank }}"
   data-age="{{ row.age }}"
   data-search="{{ row.search }}">
@@ -142,6 +143,13 @@
     {% endfor %}
   </div>
   {% endif %}
+  {% if options.moves %}
+  <div class="chips" role="group" aria-label="Type de mouvement">
+    {% for k, label, n in options.moves %}
+    <button type="button" class="theme-chip" data-move="{{ k }}" aria-pressed="false">{{ label }} <span class="n" data-move-count="{{ k }}">{{ n }}</span></button>
+    {% endfor %}
+  </div>
+  {% endif %}
 </div>
 {% endmacro %}
 
@@ -181,7 +189,7 @@
 
 {# Open tenders and latest awards of a country or entity (box from build.SiteData.tender_box). #}
 {% macro tender_box(box, root, heading, more_href=None) %}
-<section class="profile tender-box" aria-label="{{ heading }}">
+<section class="profile tender-box" id="appels-offres" aria-label="{{ heading }}">
   <h2>{{ heading }} <span class="count">{{ box.total }}</span></h2>
   {% if box.open %}
   <h3>Ouverts ({{ box.open | length }})</h3>

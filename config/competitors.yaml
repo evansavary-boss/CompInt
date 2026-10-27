@@ -15,7 +15,39 @@ groups:
     entities: [iceye, capella, umbra, synspective, iqps]
   services_europe:
     label: Services européens
-    entities: [safran-ai, thales-alenia-space]
+    entities: [e-geos, gaf, european-space-imaging, safran-ai, thales-alenia-space]
   asie_moyen_orient:
     label: Asie et Moyen-Orient
-    entities: []
+    entities: [chang-guang, china-siwei, si-imaging, space42]
+
+# Types de mouvement (colonnes de la matrice, puces du fil). Un sujet compte dans un type si l'un de
+# ses types d'événements (règles, config/events.yaml) ou de ses thèmes (Claude, config/analysis.yaml)
+# y figure. `tenders: true` : attributions d'appels d'offres TED / Find a Tender remportées.
+moves:
+  contrats:
+    label: Contrats
+    events: [contract_won]
+    themes: [appels_offres]
+  appels_offres:
+    label: Appels d'offres gagnés
+    tenders: true
+  partenariats:
+    label: Partenariats
+    events: [partnership, cooperation]
+    themes: [programmes]
+  produits:
+    label: Satellites et produits
+    events: [product, launch]
+    themes: [produits, lancements]
+  financements:
+    label: Financements et rachats
+    events: [funding, mna]
+    themes: [financements]
+
+# Page Concurrents
+page:
+  periods: [30, 90]          # périodes de la matrice
+  card_days: 30              # fenêtre des fiches de combat (comparée aux 30 jours précédents)
+  card_moves: 3              # derniers mouvements listés par fiche
+  feed_days: 90              # profondeur du fil des mouvements
+  tender_days: 365           # appels d'offres gagnés comptés sur la fiche

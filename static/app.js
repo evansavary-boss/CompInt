@@ -37,15 +37,15 @@
   const feed = document.querySelector("[data-feed]");
   if (!bar || !feed) return;
 
-  const SET_FIELDS = ["tags", "entities", "countries", "regions", "events", "segments", "industries", "themes"];
+  const SET_FIELDS = ["tags", "entities", "countries", "regions", "events", "segments", "industries", "themes", "moves"];
   const SELECTS = ["regions", "countries", "entities", "segments", "industries"];
-  const CHIP_GROUPS = { events: "event", themes: "theme" };   // multi-select chips: field -> data attribute
+  const CHIP_GROUPS = { events: "event", themes: "theme", moves: "move" };   // multi-select chips: field -> data attribute
   const defaults = {
     domain: bar.dataset.defaultDomain || "all",
     days: Number(bar.dataset.defaultDays) || 14,
   };
   const EMPTY = { q: "", impact: 0, regions: "", countries: "", entities: "", segments: "", industries: "" };
-  const state = { ...defaults, ...EMPTY, events: new Set(), themes: new Set() };
+  const state = { ...defaults, ...EMPTY, events: new Set(), themes: new Set(), moves: new Set() };
 
   const items = Array.from(feed.querySelectorAll(".item")).map((el) => {
     const it = { el, age: Number(el.dataset.age), impact: Number(el.dataset.impact || 0), search: el.dataset.search };
