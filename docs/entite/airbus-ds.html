@@ -27,7 +27,7 @@
         <datalist id="entity-list">
 <option value="AED"></option><option value="Aerospacelab"></option><option value="Airbus Defence and Space"></option><option value="Amazon Leo (ex-Kuiper)"></option><option value="ArianeGroup"></option><option value="Arianespace"></option><option value="ASI"></option><option value="AST SpaceMobile"></option><option value="Avio"></option><option value="BlackSky"></option><option value="Blue Origin"></option><option value="Capella Space"></option><option value="Chang Guang Satellite"></option><option value="China Siwei"></option><option value="CNES"></option><option value="CNSA"></option><option value="Commandement de l&#39;Espace"></option><option value="Commission européenne (DG DEFIS)"></option><option value="constellr"></option><option value="D-Orbit"></option><option value="DGA"></option><option value="DLR"></option><option value="e-GEOS"></option><option value="EarthDaily"></option><option value="ESA"></option><option value="Esri"></option><option value="European Space Imaging"></option><option value="EUSPA"></option><option value="Eutelsat"></option><option value="Exotrail"></option><option value="FCC"></option><option value="Firefly Aerospace"></option><option value="GAF"></option><option value="HawkEye 360"></option><option value="Hemeria"></option><option value="Hensoldt"></option><option value="ICEYE"></option><option value="Intuitive Machines"></option><option value="iQPS"></option><option value="Isar Aerospace"></option><option value="ISRO"></option><option value="JAXA"></option><option value="L3Harris"></option><option value="Latitude"></option><option value="Leonardo"></option><option value="Lockheed Martin"></option><option value="Loft Orbital"></option><option value="MaiaSpace"></option><option value="Ministère des Armées"></option><option value="NASA"></option><option value="NGA"></option><option value="NOAA"></option><option value="Northrop Grumman"></option><option value="NRO"></option><option value="OHB"></option><option value="Open Cosmos"></option><option value="OTAN"></option><option value="Pixxel"></option><option value="Planet Labs"></option><option value="PLD Space"></option><option value="Redwire"></option><option value="Rheinmetall"></option><option value="Rocket Factory Augsburg"></option><option value="Rocket Lab"></option><option value="Safran"></option><option value="Safran.AI (ex-Preligens)"></option><option value="SatCen"></option><option value="Satellite Vu"></option><option value="Satellogic"></option><option value="SES"></option><option value="SI Imaging Services"></option><option value="Space Development Agency"></option><option value="Space42"></option><option value="SpaceX"></option><option value="Spire Global"></option><option value="Synspective"></option><option value="Thales"></option><option value="Thales Alenia Space"></option><option value="The Exploration Company"></option><option value="UIT"></option><option value="UK Space Agency"></option><option value="Umbra"></option><option value="Unseenlabs"></option><option value="US Space Force"></option><option value="Vantor (ex-Maxar Intelligence)"></option>        </datalist>
       </label>
-      <p class="updated">Mis à jour le <time datetime="2026-10-28T07:34:58+01:00">28 oct. 2026 à 07:34</time></p>
+      <p class="updated">Mis à jour le <time datetime="2026-10-29T07:38:05+01:00">29 oct. 2026 à 07:38</time></p>
     </div>
   </header>
 
@@ -83,7 +83,7 @@
 
 
     <header class="page-head">
-      <h2 class="feed-title">Actualités <span class="count" data-count>9</span></h2>
+      <h2 class="feed-title">Actualités <span class="count" data-count>10</span></h2>
     </header>
     <div class="filters" data-default-days="90" data-default-domain="all">
   <div class="filter-row">
@@ -109,6 +109,12 @@
       <button type="button" data-impact="2">Impact moyen et fort</button>
       <button type="button" data-impact="3">Impact fort</button>
     </div>
+    <label class="select">
+      <span class="sr-only">Industrie</span>
+      <select data-filter="industries">
+        <option value="">Toutes les industries</option>
+<option value="defense">Défense et systèmes spatiaux (1)</option><option value="connectivite">Connectivité sécurisée (1)</option>      </select>
+    </label>
   </div>
   <div class="filter-row">
     <label class="select">
@@ -121,51 +127,94 @@
       <span class="sr-only">Pays</span>
       <select data-filter="countries">
         <option value="">Tous les pays</option>
-<option value="FR">France (9)</option><option value="DK">Danemark (2)</option>      </select>
+<option value="FR">France (10)</option><option value="DK">Danemark (2)</option><option value="LU">Luxembourg (1)</option><option value="IT">Italie (1)</option>      </select>
     </label>
     <button type="button" class="reset" data-reset hidden>Effacer les filtres</button>
   </div>
   <div class="chips" role="group" aria-label="Type d'événement">
+    <button type="button" class="ev ev-contract_won" data-event="contract_won" aria-pressed="false">Contrat gagné <span class="n" data-event-count="contract_won">1</span></button>
     <button type="button" class="ev ev-mna" data-event="mna" aria-pressed="false">Rachat ou fusion <span class="n" data-event-count="mna">2</span></button>
     <button type="button" class="ev ev-partnership" data-event="partnership" aria-pressed="false">Partenariat <span class="n" data-event-count="partnership">1</span></button>
+    <button type="button" class="ev ev-financials" data-event="financials" aria-pressed="false">Résultats financiers <span class="n" data-event-count="financials">1</span></button>
   </div>
 </div>
 
     <div class="feed" data-feed>
-  <section class="day" data-age="0">
-    <h3 class="day-label">Aujourd&#39;hui</h3>
-<article class="item story impact-fort"
+  <section class="day" data-age="1">
+    <h3 class="day-label">Hier</h3>
+<article class="item story impact-moyen"
   data-tags="geospatial newspace"
-  data-entities="esa thales airbus-ds thales-alenia-space"
-  data-countries="FR"
+  data-entities="thales-alenia-space esa thales commission-europeenne airbus-ds ses leonardo"
+  data-countries="FR LU IT"
   data-regions="europe"
-  data-events=""
-  data-segments="defense eo_optique eo_radar manufacturing"
-  data-industries=""
-  data-themes="programmes appels_offres"
+  data-events="contract_won"
+  data-segments="defense eo_optique eo_radar manufacturing telecom"
+  data-industries="defense connectivite"
+  data-themes="appels_offres programmes"
   data-moves="contrats partenariats"
-  data-impact="3"
-  data-age="0"
-  data-search="l&#39;esa commande quatre satellites galileo seconde generation supplementaires l&#39;esa a etendu les contrats en cours pour construire quatre satellites galileo de seconde generation confies a airbus et thales, afin d&#39;assurer la continuite de la constellation. confirme la charge de travail d&#39;airbus defence and space sur galileo, un programme institutionnel majeur et recurrent. esa procures four new galileo second generation satellites esa orders four additional galileo second generation satellites from airbus and thales esa – space news satnews esa thales airbus defence and space thales alenia space france programmes et partenariats appels d&#39;offres et contrats">
-  <h4><a href="https://www.esa.int/Applications/Satellite_navigation/Galileo/ESA_procures_four_new_Galileo_Second_Generation_satellites" target="_blank" rel="noopener noreferrer">L&#39;ESA commande quatre satellites Galileo Seconde Génération supplémentaires</a></h4>
+  data-impact="2"
+  data-age="1"
+  data-search="galileo seconde generation : deux satellites supplementaires pour thales alenia space et airbus l&#39;esa, pour la commission europeenne, a attribue deux satellites galileo de seconde generation supplementaires a thales alenia space et deux a airbus, pour un lancement prevu en 2031. ce contrat institutionnel renforce airbus tout en confirmant tas comme concurrent direct sur la navigation satellite europeenne. two additional galileo second generation satellites awarded to thales alenia space thales alenia space : deux nouveaux satellites pour galileo esa procures four new galileo second generation satellites thales alenia space remporte un contrat avec l&#39;esa pour deux satellites galileo supplementaires thales : deux satellites galileo de seconde generation supplementaires attribues a thales alenia space thales alenia space : deux nouveaux satellites galileo pour l&#39;esa thales alenia space fournira deux satellites supplementaires a galileo galileo : thales alenia space obtient une commande de deux satellites de deuxieme generation thales alenia space, airbus each book two additional galileo second generation satellites, to launch 2031 galileo: thales alenia space wins order for two second-generation satellites europe adds galileo satellites with airbus, thales alenia space deals airbus achieves a new contract from the esa to build two additional galileo g2 satellites g2 satellite by thales alenia space thales alenia space decroche deux galileo seconde generation supplementaires galileo : airbus et thales alenia space recoivent une nouvelle commande esa orders four additional galileo second generation satellites from airbus and thales galileo g2: airbus and thales alenia awarded two satellites esa awards airbus contract for two additional galileo satellites esa adds four satellites to galileo g2 contracts esa orders four more galileo second generation satellites to expand europe&#39;s navigation fleet esa orders four more galileo second-gen satellites economie - galileo : thales alenia space porte a huit ses satellites de deuxieme generation esa orders four new galileo satellites galileo : thales alenia space et airbus se partagent quatre nouveaux satellites de seconde generation esa - esa extends galileo second generation contract with airbus defence and space what are leonardo&#39;s space and satellite systems? telespazio and thales alenia space thales alenia space presse agence esa – space news tradingview zonebourse le revenu abc bourse boursorama space intel report www.marketscreener.com aviation week democrata european space agency webtimemedias air&amp;cosmos satnews aeromorning.com satellitepro me neoteo spacewatch.global telecompaper petites affiches nordic defence sector revue economique de france envanter medya thales alenia space esa thales commission europeenne (dg defis) airbus defence and space ses leonardo france luxembourg italie appels d&#39;offres et contrats programmes et partenariats defense et systemes spatiaux connectivite securisee">
+  <h4><a href="https://www.esa.int/Applications/Satellite_navigation/Galileo/ESA_procures_four_new_Galileo_Second_Generation_satellites" target="_blank" rel="noopener noreferrer">Galileo Seconde Génération : deux satellites supplémentaires pour Thales Alenia Space et Airbus</a></h4>
   <p class="meta">
-<span class="impact-badge impact-badge-fort">Impact fort</span>    <span class="src">ESA – Space News</span><span class="n-sources">+ 1 source</span>    <span aria-hidden="true">·</span>
-    <time datetime="2026-10-28T00:44:46+01:00" title="28 oct. 2026">00:44</time>
-<span aria-hidden="true">·</span> <span class="geo"><a href="../pays/FR.html">France</a></span>  </p>
-<p class="excerpt">L&#39;ESA a étendu les contrats en cours pour construire quatre satellites Galileo de seconde génération confiés à Airbus et Thales, afin d&#39;assurer la continuité de la constellation.</p><p class="why"><span>Pourquoi c'est important</span> Confirme la charge de travail d&#39;Airbus Defence and Space sur Galileo, un programme institutionnel majeur et récurrent.</p>  <p class="labels">
-<span class="theme">Programmes et partenariats</span><span class="theme">Appels d&#39;offres et contrats</span><a class="chip chip-institution" href="../entite/esa.html">ESA</a><a class="chip chip-company" href="../entite/thales.html">Thales</a><a class="chip chip-company" href="../entite/thales-alenia-space.html">Thales Alenia Space</a>  </p>
+<span class="impact-badge impact-badge-moyen">Impact moyen</span>    <span class="src">ESA – Space News</span><span class="n-sources">+ 24 sources</span>    <span aria-hidden="true">·</span>
+    <time datetime="2026-10-28T22:46:00+01:00" title="28 oct. 2026">22:46</time>
+<span aria-hidden="true">·</span> <span class="geo"><a href="../pays/FR.html">France</a>, <a href="../pays/LU.html">Luxembourg</a>, <a href="../pays/IT.html">Italie</a></span>  </p>
+<p class="excerpt">L&#39;ESA, pour la Commission européenne, a attribué deux satellites Galileo de seconde génération supplémentaires à Thales Alenia Space et deux à Airbus, pour un lancement prévu en 2031.</p><p class="why"><span>Pourquoi c'est important</span> Ce contrat institutionnel renforce Airbus tout en confirmant TAS comme concurrent direct sur la navigation satellite européenne.</p>  <p class="labels">
+<span class="ev ev-contract_won">Contrat gagné</span><span class="theme">Appels d&#39;offres et contrats</span><span class="theme">Programmes et partenariats</span><span class="industry">Défense et systèmes spatiaux</span><span class="industry">Connectivité sécurisée</span><a class="chip chip-company" href="../entite/thales-alenia-space.html">Thales Alenia Space</a><a class="chip chip-institution" href="../entite/esa.html">ESA</a><a class="chip chip-company" href="../entite/thales.html">Thales</a><a class="chip chip-institution" href="../entite/commission-europeenne.html">Commission européenne (DG DEFIS)</a>  </p>
   <details class="sources">
-    <summary>2 articles de 2 sources</summary>
+    <summary>26 articles de 25 sources</summary>
     <ul>
+      <li><a href="https://news.google.com/rss/articles/CBMifEFVX3lxTE16THQzNEdPdU9WZW9TVVVUODhsYnoxRWt1VWVZVzdwTFBZblllbElNejZFeFR5VXAtZHBnaWd3RlpVOHNsazBCN3B4Vk44RG9SNXA2RHNWOEFCOHNTcV9rVzQwaDU2cDY4a2txUWZlNF9JbVVZM19qZC1XMWE?oc=5" target="_blank" rel="noopener noreferrer">What Are Leonardo’s Space and Satellite Systems? Telespazio and Thales Alenia Space</a>
+        <span class="list-meta">Envanter Medya · GN · 28 oct. · 22:46</span></li>
+      <li><a href="https://news.google.com/rss/articles/CBMixAFBVV95cUxPMHR0NGdzV0w4UExZbE1DUzVkNENzeGhqWm1tRzFHMkNtcFRXbU5KUW54VDIwdVI3b3NlZ1dzYTZwMGc2UlQzYlNLeHcwMllZSHh0SXpCa3hmaExtaGJIOW5EdEdkVEUxcnFpOENUdUJ5WU9sdkt2cTJpNGF4bndCWFVVNUJsUHlXYWF3aXFaN09YUmhWbWZ2LXJZTVY4dTh5MDNVUlVLLXZHbF81Q00yWEUyd09YS3BxRThrOGNlbkt5dGFr?oc=5" target="_blank" rel="noopener noreferrer">ESA - ESA extends Galileo Second Generation contract with Airbus Defence and Space</a>
+        <span class="list-meta">European Space Agency · GN · 28 oct. · 15:47</span></li>
+      <li><a href="https://news.google.com/rss/articles/CBMivAFBVV95cUxQZEFIYWlSYVlRM2ZrbzI2MWVlU0lpR282NnNDUVBVU2h6S0M4Q0ZVb2lyQm8wQ1lJVVpfeHZRanhJaFlzeUZSOUVYZHd6ZzM2cVdfZW1XeDBIUDU1Zlp3M1BpanF1cDN0ZmdtX3ZwSmJmWGl4UVhxTFVuVlVtZC1KOTE4YlBUNWk3Q1FuUmJQV1RGRmlraHMzeXY1em1KdU50WWQyelRKUVozazgyVFNVb3FQTHVEb3VuX2x0VQ?oc=5" target="_blank" rel="noopener noreferrer">Galileo : Thales Alenia Space et Airbus se partagent quatre nouveaux satellites de seconde génération</a>
+        <span class="list-meta">Revue économique de France · GN · 28 oct. · 13:06</span></li>
+      <li><a href="https://news.google.com/rss/articles/CBMiiAFBVV95cUxPSklRSUpTblVMLWJ5ZGhGdDNaMnRwMk5mdktpTTJzM0xnekJfNDU2aktHSmhETDMtUE9takxBUVFTLTVMS28wTHBpR2FfMzRrTFZWTEc5aWt6aGZpd042cnJkckhQWlJtTDFXcWNTdzlOS3Y2M0l5Vk13U1NQMlBGSndKRVpmTjIz?oc=5" target="_blank" rel="noopener noreferrer">ESA orders four new Galileo satellites</a>
+        <span class="list-meta">Nordic Defence Sector · GN · 28 oct. · 10:33</span></li>
+      <li><a href="https://news.google.com/rss/articles/CBMipgFBVV95cUxNTFJhdUcyMmtJbDI1NldGa0NaVE81Mi1JSGJINS1VbjRFQWRfbVlJY0diaU5US2lGRW9iWEJhRTVpT2MyNjJRaGRSekZpa1ltVmg3WmpnSlBuZUZhdnJYeHlEemNQREVjNGEtSnRWSzB6aFNYamxwdFRvQjNUVENLdE9LbE94V0ptREVHUERWM2FTOUx6LXU4QjBtc1ZNSFVBU01va2pn?oc=5" target="_blank" rel="noopener noreferrer">Economie - Galileo : Thales Alenia Space porte à huit ses satellites de deuxième génération</a>
+        <span class="list-meta">Petites Affiches · GN · 28 oct. · 09:33</span></li>
+      <li><a href="https://news.google.com/rss/articles/CBMimAFBVV95cUxQam5nUkE1V1V6OHdua3FOOENiVUl1c25Tb19ONklMNWxSU25pMkticFAyT21BcU9UQjdKWjU2R05taU8xT1dOVzRiMHFOSlBrOVRobHI5eU9EZ0ZzRm91MUxsNEJwcFpKaUcxVmtNajFNT1pqMzR6eGMtZENiVWNEc1pIMUhLX2RPUVBJd2lEVUx6ZzM1bGNzVg?oc=5" target="_blank" rel="noopener noreferrer">ESA orders four more Galileo second-gen satellites</a>
+        <span class="list-meta">Telecompaper · GN · 28 oct. · 09:05</span></li>
+      <li><a href="https://spacewatch.global/2026/10/esa-orders-four-more-galileo-second-generation-satellites-to-expand-europes-navigation-fleet/" target="_blank" rel="noopener noreferrer">ESA Orders Four More Galileo Second Generation Satellites to Expand Europe’s Navigation Fleet</a>
+        <span class="list-meta">SpaceWatch.Global · 28 oct. · 08:00</span></li>
+      <li><a href="https://news.google.com/rss/articles/CBMif0FVX3lxTE5LR19KQVFoSVZDazJ3MXlyaHNuSEtOOTFXWkx5bDU4OVRjTnQtVG05bmR2MGt1UlVRVGI4bGV2akZVWjlQRGhFWmJQWUlFWGFYcF9wQzEzM1lPUVFXdkVNUEdXZzFCcFhhajZ5ajRSZ3Q2OF9BejdZRUtPU0dvZEU?oc=5" target="_blank" rel="noopener noreferrer">ESA adds four satellites to Galileo G2 contracts</a>
+        <span class="list-meta">NeoTeo · GN · 28 oct. · 05:30</span></li>
+      <li><a href="https://news.google.com/rss/articles/CBMingFBVV95cUxQZ2I5RElTaGt1aGcxMnJLTllOZXdrVktIQzN2Z0NaeC1rd1B1MXN3cS1taFVrYUJhbFMwLXQ0MkpTcHpCX0pmSFp3R3pndUJXUFVieFlfQ19FeUhyQUpGRWtoNkVBc1pkenRBeU4tRG9vR3RESkhwSExsOXdCSnFETnV2V290TFA5N25JeHU1RnctUjUwWE4xQ0F3eERVdw?oc=5" target="_blank" rel="noopener noreferrer">ESA awards Airbus contract for two additional Galileo satellites</a>
+        <span class="list-meta">SatellitePro ME · GN · 28 oct. · 05:23</span></li>
+      <li><a href="https://news.google.com/rss/articles/CBMijwFBVV95cUxNNHBrYmhoV1RQemo5LUJnVDlGeUJBOW5sSjB2LXVYbE9DTk11Q1RNR1poYzlfSU9GWlFtbl9aVFExXzk2SUd5Y3U3cnM1TEFQZXJfVjFqM2d3dTZJRVpLYmRzOGZMUlNndFN5OGt1dVJqY3llWHhyVC04TmNHZ2w1SDNtYmxha2VEMGJLZGN4Yw?oc=5" target="_blank" rel="noopener noreferrer">Galileo G2: Airbus and Thales Alenia awarded two satellites</a>
+        <span class="list-meta">AeroMorning.com · GN · 28 oct. · 02:10</span></li>
       <li><a href="https://satnews.com/2026/10/27/esa-orders-four-additional-galileo-second-generation-satellites-from-airbus-and-thales/" target="_blank" rel="noopener noreferrer">ESA Orders Four Additional Galileo Second Generation Satellites From Airbus and Thales</a>
         <span class="list-meta">SatNews · 28 oct. · 00:44</span></li>
-      <li><a href="https://www.esa.int/Applications/Satellite_navigation/Galileo/ESA_procures_four_new_Galileo_Second_Generation_satellites" target="_blank" rel="noopener noreferrer">ESA procures four new Galileo Second Generation satellites</a>
-        <span class="list-meta">ESA – Space News · 27 oct. · 11:00</span></li>
-    </ul>
+      <li><a href="https://news.google.com/rss/articles/CBMiygFBVV95cUxPbk40T2dZNk5JU2hXT1BJVDB6Skd6MXJnWVhIdkpDeGNvSXpBNDZMcnRUSXpZZHBxcTdOWHhsaDgzTFJwblM0UWNpcXU1SW1lNkwyQmZsYUN1VXM4SnRqQ0hiUmVlLWxUYmhVTm55TXdMSHVkWEdLR1FrcW9iWkVfM3NQTlh0UW1DMXAyVHdBNE5VRks3bTJXTWRNYjhKVkJOVVNCNHk2NlcweF9rVDJBR0FvNGlGRlRBSlN4SVFNY0d2YUpHaUJVT05B?oc=5" target="_blank" rel="noopener noreferrer">Galileo : Airbus et Thales Alenia Space reçoivent une nouvelle commande</a>
+        <span class="list-meta">Air&amp;Cosmos · GN · 27 oct. · 17:30</span></li>
+<li class="list-meta">… et 14 autres</li>    </ul>
   </details>
 </article>
+<article class="item story"
+  data-tags="newspace"
+  data-entities="airbus-ds"
+  data-countries="FR"
+  data-regions="europe"
+  data-events="financials"
+  data-segments="defense eo_optique eo_radar manufacturing"
+  data-industries=""
+  data-themes=""
+  data-moves=""
+  data-impact="0"
+  data-age="1"
+  data-search="airbus space systems reports 5.3% increase in revenue, to $2.4 billion, for 9m to sept. 30 space intel report airbus defence and space france">
+  <h4><a href="https://www.spaceintelreport.com/airbus-space-systems-reports-5-3-increase-in-revenue-to-2-4-billion-for-9m-to-sept-30/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=airbus-space-systems-reports-5-3-increase-in-revenue-to-2-4-billion-for-9m-to-sept-30" target="_blank" rel="noopener noreferrer">Airbus Space Systems reports 5.3% increase in revenue, to $2.4 billion, for 9M to Sept. 30</a></h4>
+  <p class="meta">
+    <span class="src">Space Intel Report</span>    <span aria-hidden="true">·</span>
+    <time datetime="2026-10-28T22:20:50+01:00" title="28 oct. 2026">22:20</time>
+<span aria-hidden="true">·</span> <span class="geo"><a href="../pays/FR.html">France</a></span>  </p>
+<p class="excerpt">LA PLATA, Maryland — Airbus Space Systems reported a 5.3% increase in revenue for the nine…</p>  <p class="labels">
+<span class="ev ev-financials">Résultats financiers</span>  </p>
+</article>
   </section>
-  <section class="day" data-age="4">
+  <section class="day" data-age="5">
     <h3 class="day-label">Samedi 24 oct.</h3>
 <article class="item story"
   data-tags="geospatial newspace"
@@ -178,7 +227,7 @@
   data-themes=""
   data-moves=""
   data-impact="0"
-  data-age="4"
+  data-age="5"
   data-search="pleiades neo next: a new journey to begin - airbus defence and space aerocontact.com airbus defence and space france">
   <h4><a href="https://news.google.com/rss/articles/CBMiigFBVV95cUxNdzVoWkZqQXI1OUlRSFZjd2s0MGlmYWpNa0VLN2d1SklBVl9TNm10UXlqVmFra1VMbXhDV182UDBMTnV3dk5BSEd2cFdDWHNJOEpxc0gzT3YySjFwTGQ3eTRQUUk3OEVtLVB0WjcyU3o5bTI4eXA0MWUwRng5bHl0aTFEWWJUY2V1emc?oc=5" target="_blank" rel="noopener noreferrer">Pléiades Neo Next: A new journey to begin - Airbus Defence and Space</a></h4>
   <p class="meta">
@@ -189,7 +238,7 @@
   </p>
 </article>
   </section>
-  <section class="day" data-age="11">
+  <section class="day" data-age="12">
     <h3 class="day-label">Samedi 17 oct.</h3>
 <article class="item story"
   data-tags="newspace"
@@ -202,7 +251,7 @@
   data-themes=""
   data-moves=""
   data-impact="0"
-  data-age="11"
+  data-age="12"
   data-search="what does teaming have to do with bees? - airbus defence and space aerocontact.com airbus defence and space france">
   <h4><a href="https://news.google.com/rss/articles/CBMiiAFBVV95cUxOZFc2R0tGZlpnbU5DTWlTZjFxZW1zT1BhakppX0EtTjJiWF93aWxxU29KZEU4OVUwRzNOMko0WjlTX0JYdmFjdm95VnhfR1B2b1pyT1VtZ24wMl92Z3pJbGowREFMVEg0ZUpnQ3VfWU1vNDZESjlUclFPUHJULW5lRS1NLWU1Zzhu?oc=5" target="_blank" rel="noopener noreferrer">What does teaming have to do with bees? - Airbus Defence and Space</a></h4>
   <p class="meta">
@@ -213,7 +262,7 @@
   </p>
 </article>
   </section>
-  <section class="day" data-age="13">
+  <section class="day" data-age="14">
     <h3 class="day-label">Jeudi 15 oct.</h3>
 <article class="item story"
   data-tags="newspace"
@@ -226,7 +275,7 @@
   data-themes=""
   data-moves=""
   data-impact="0"
-  data-age="13"
+  data-age="14"
   data-search="orion esm built by airbus defence and space - trailer aerocontact.com airbus defence and space france">
   <h4><a href="https://news.google.com/rss/articles/CBMilwFBVV95cUxQYVA5dlVjVS1FcVUtZ3NlcllIaHF0NWtBQWZlZllCdDBBdlkxVS1WNENNQVZXaUVJblBDQ1ZZRldnMVBVNkROSElUc2FCNkltaGJUcm5sTTJfNThVbk9pcUw1Q1E4NDRwVWZ2NkNzWnNnN0hCbEZ0R3ZmNVBFQVdpamNBUmQ2TzB0amhiS0hiWDQxY19BbFpZ?oc=5" target="_blank" rel="noopener noreferrer">Orion ESM built by Airbus Defence and Space - Trailer</a></h4>
   <p class="meta">
@@ -237,7 +286,7 @@
   </p>
 </article>
   </section>
-  <section class="day" data-age="17">
+  <section class="day" data-age="18">
     <h3 class="day-label">Dimanche 11 oct.</h3>
 <article class="item story"
   data-tags="newspace"
@@ -250,7 +299,7 @@
   data-themes=""
   data-moves="financements"
   data-impact="0"
-  data-age="17"
+  data-age="18"
   data-search="cybersecurite : airbus defence and space finalise le rachat de quarkslab revue economique de france airbus defence and space france">
   <h4><a href="https://news.google.com/rss/articles/CBMilgFBVV95cUxQNnEzVTNKM21BZVRhQkdoTTlmWHBCWk1ORUI0YXctNW1sN0k0SkUzVWZWaXA3bFp3VUhJTndJaWZ5aTNRME5LTFo4N3FUNHBLU1FvcDViWGIwR2dNdFlCRTVoTll3YWVIS0FySjczamVDSG9HYzVCSkgydjJROFRJUGZBN1c5dWdta0h4OEdRdndvZGZ4alE?oc=5" target="_blank" rel="noopener noreferrer">Cybersécurité : Airbus Defence and Space finalise le rachat de Quarkslab</a></h4>
   <p class="meta">
@@ -261,7 +310,7 @@
 <span class="ev ev-mna">Rachat ou fusion</span>  </p>
 </article>
   </section>
-  <section class="day" data-age="21">
+  <section class="day" data-age="22">
     <h3 class="day-label">Mercredi 7 oct.</h3>
 <article class="item story"
   data-tags="newspace"
@@ -274,7 +323,7 @@
   data-themes=""
   data-moves="partenariats"
   data-impact="0"
-  data-age="21"
+  data-age="22"
   data-search="airbus defence and space partners with denmark&#39;s censec airbus defence and space partners with denmark&#39;s censec by investing.com airbus defence and space s&#39;associe a censec au danemark investing.com investing.com nigeria investing.com france airbus defence and space danemark france">
   <h4><a href="https://news.google.com/rss/articles/CBMitwFBVV95cUxNdU11aE45LTVYSGE3cFlXUmVhQkNfNTc2WnRFS2dIYmVZMUI2ekZJeFgwM2Jpd24zOVFvN0x2d2NoakhSbkhpaVluMVRRdFN4OVhvSXBNWkJaNjZaVnViemhwTEhNREF6UDFKVFpVZFQtVmw5SThDTTlDUXBwbGlpNnIzQWt5eHpZQnNDREt3YmtKQUNFS194dHZLbVo4aHpRdzFrMEtsVlBpSS0wTTdPcExvcThkZDA?oc=5" target="_blank" rel="noopener noreferrer">Airbus Defence and Space partners with Denmark’s CenSec</a></h4>
   <p class="meta">
@@ -306,7 +355,7 @@
   data-themes=""
   data-moves=""
   data-impact="0"
-  data-age="21"
+  data-age="22"
   data-search="hans is head of mission support products and solutions at airbus defence and space - aerocontact.com airbus defence and space france">
   <h4><a href="https://news.google.com/rss/articles/CBMixAFBVV95cUxNVkV4NUZOVTRZTWh0NXJRcUJvai1qa3hIN2ViSFJMYjBwQ0ZQX2ZoTHlIdVRsSE5rdWhXT3FtcDVLZm12S29ZNm5NbWpIQlcxMnlvb3FnTGtoT3FvamprcVBqVTY3LXB6M280SWVZZFVkLTY3UXpmZTRmNEdOZGVJVTdqVjhkNmoyQkxwdzJFRFlFLW5QRDVIMmxrNW1mNHQ2QTVGVFFJcUFWc1hfS0NMT3N4ZHdWdTFyREluYUdYbmM4UlBT?oc=5" target="_blank" rel="noopener noreferrer">Hans is Head of Mission Support Products and Solutions at Airbus Defence and Space -</a></h4>
   <p class="meta">
@@ -327,7 +376,7 @@
   data-themes=""
   data-moves=""
   data-impact="0"
-  data-age="21"
+  data-age="22"
   data-search="airbus defence and space renforce ses liens avec les organismes de recherche danois le revenu airbus defence and space danemark france">
   <h4><a href="https://news.google.com/rss/articles/CBMiqAFBVV95cUxNcDU2b0FXRXNDUFVNZ1hjTGJxRi1fbkNKMV9IbWdLTHVWdVNPTVB3c3ZlZWRxak4wU0RaZEsxWVE5UXVRSUZiVDlBQlBrZ0dxXzlJTllXeGFsSmVnWExib0ZpRjdHTHBvcURpVmgyODZKTGF3OWJDc3JFSnQtcUhlNmU2U2RLZGxwQy1Md0J0S2RRdWFfdG5LM25jTF9aX2szMm1qLUVFRjI?oc=5" target="_blank" rel="noopener noreferrer">Airbus Defence and Space renforce ses liens avec les organismes de recherche danois</a></h4>
   <p class="meta">
@@ -338,7 +387,7 @@
   </p>
 </article>
   </section>
-  <section class="day" data-age="27">
+  <section class="day" data-age="28">
     <h3 class="day-label">Jeudi 1 oct.</h3>
 <article class="item story"
   data-tags="newspace"
@@ -351,7 +400,7 @@
   data-themes=""
   data-moves="financements"
   data-impact="0"
-  data-age="27"
+  data-age="28"
   data-search="airbus defence and space finalise l&#39;acquisition de quarkslab dans la cybersecurite abc bourse airbus defence and space france">
   <h4><a href="https://news.google.com/rss/articles/CBMivAFBVV95cUxPQWFrY2JLYTVndkFYS0dGZE9EUlA0WFB6MzdpV1FicFZkeV9VOUxmZWNGeVFVbTNBekRVRVJreUJqaXlURmo3SnVJUUJJOEZta0lzMmhteDlFQ1RLVi0yNmhYZXJGYTVoYmtIcUNTTC01cWhIU1Q1TTdqczB1N1M3OVMtUGxBdkU2aVBUM1AwV0Zza081d05XRHNWU2VrQlhhR3FJdFRZWG8tTFBESm0tSTUtczdMSUtJbkh4Vw?oc=5" target="_blank" rel="noopener noreferrer">Airbus Defence and Space finalise l’acquisition de Quarkslab dans la cybersécurité</a></h4>
   <p class="meta">
@@ -382,26 +431,35 @@
     <div class="side-box">
       <h2>Activité</h2>
       <p class="windows">
-        <span><strong>2</strong> articles sur 7 j</span>
-        <span><strong>9</strong> sur 30 j</span>
-        <span><strong>9</strong> sur 90 j</span>
+        <span><strong>3</strong> articles sur 7 j</span>
+        <span><strong>10</strong> sur 30 j</span>
+        <span><strong>10</strong> sur 90 j</span>
       </p>
       <h3>Par type d'événement (90 j)</h3>
       <ul class="bars">
+        <li><span class="bar-label">Contrat gagné</span>
+          <span class="bar"><span class="bar-fill ev-contract_won" style="width: 50.0%"></span></span>
+          <span class="n">1</span></li>
         <li><span class="bar-label">Rachat ou fusion</span>
           <span class="bar"><span class="bar-fill ev-mna" style="width: 100.0%"></span></span>
           <span class="n">2</span></li>
         <li><span class="bar-label">Partenariat</span>
           <span class="bar"><span class="bar-fill ev-partnership" style="width: 50.0%"></span></span>
           <span class="n">1</span></li>
+        <li><span class="bar-label">Résultats financiers</span>
+          <span class="bar"><span class="bar-fill ev-financials" style="width: 50.0%"></span></span>
+          <span class="n">1</span></li>
       </ul>
     </div>
     <div class="side-box">
       <h2>Souvent cités avec</h2>
       <ul class="related">
+        <li><a class="chip chip-company" href="../entite/thales-alenia-space.html">Thales Alenia Space</a> <span class="n">1</span></li>
         <li><a class="chip chip-institution" href="../entite/esa.html">ESA</a> <span class="n">1</span></li>
         <li><a class="chip chip-company" href="../entite/thales.html">Thales</a> <span class="n">1</span></li>
-        <li><a class="chip chip-company" href="../entite/thales-alenia-space.html">Thales Alenia Space</a> <span class="n">1</span></li>
+        <li><a class="chip chip-institution" href="../entite/commission-europeenne.html">Commission européenne (DG DEFIS)</a> <span class="n">1</span></li>
+        <li><a class="chip chip-company" href="../entite/ses.html">SES</a> <span class="n">1</span></li>
+        <li><a class="chip chip-company" href="../entite/leonardo.html">Leonardo</a> <span class="n">1</span></li>
       </ul>
     </div>
   </aside>
@@ -410,7 +468,7 @@
 
   <footer class="foot">
     <p>
-      50/51 flux éditeurs et 129/132 recherches Google News
+      50/51 flux éditeurs et 130/132 recherches Google News
       lors de la dernière mise à jour. Titres et extraits fournis par les éditeurs ; cliquer pour lire l'article sur
       le site source. Faits des fiches : Wikidata, complétés à la main.
     </p>
