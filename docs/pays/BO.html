@@ -27,7 +27,7 @@
         <datalist id="entity-list">
 <option value="AED"></option><option value="Aerospacelab"></option><option value="Airbus Defence and Space"></option><option value="Amazon Leo (ex-Kuiper)"></option><option value="ArianeGroup"></option><option value="Arianespace"></option><option value="ASI"></option><option value="AST SpaceMobile"></option><option value="Avio"></option><option value="BlackSky"></option><option value="Blue Origin"></option><option value="Capella Space"></option><option value="Chang Guang Satellite"></option><option value="China Siwei"></option><option value="CNES"></option><option value="CNSA"></option><option value="Commandement de l&#39;Espace"></option><option value="Commission européenne (DG DEFIS)"></option><option value="constellr"></option><option value="D-Orbit"></option><option value="DGA"></option><option value="DLR"></option><option value="e-GEOS"></option><option value="EarthDaily"></option><option value="ESA"></option><option value="Esri"></option><option value="European Space Imaging"></option><option value="EUSPA"></option><option value="Eutelsat"></option><option value="Exotrail"></option><option value="FCC"></option><option value="Firefly Aerospace"></option><option value="GAF"></option><option value="HawkEye 360"></option><option value="Hemeria"></option><option value="Hensoldt"></option><option value="ICEYE"></option><option value="Intuitive Machines"></option><option value="iQPS"></option><option value="Isar Aerospace"></option><option value="ISRO"></option><option value="JAXA"></option><option value="L3Harris"></option><option value="Latitude"></option><option value="Leonardo"></option><option value="Lockheed Martin"></option><option value="Loft Orbital"></option><option value="MaiaSpace"></option><option value="Ministère des Armées"></option><option value="NASA"></option><option value="NGA"></option><option value="NOAA"></option><option value="Northrop Grumman"></option><option value="NRO"></option><option value="OHB"></option><option value="Open Cosmos"></option><option value="OTAN"></option><option value="Pixxel"></option><option value="Planet Labs"></option><option value="PLD Space"></option><option value="Redwire"></option><option value="Rheinmetall"></option><option value="Rocket Factory Augsburg"></option><option value="Rocket Lab"></option><option value="Safran"></option><option value="Safran.AI (ex-Preligens)"></option><option value="SatCen"></option><option value="Satellite Vu"></option><option value="Satellogic"></option><option value="SES"></option><option value="SI Imaging Services"></option><option value="Space Development Agency"></option><option value="Space42"></option><option value="SpaceX"></option><option value="Spire Global"></option><option value="Synspective"></option><option value="Thales"></option><option value="Thales Alenia Space"></option><option value="The Exploration Company"></option><option value="UIT"></option><option value="UK Space Agency"></option><option value="Umbra"></option><option value="Unseenlabs"></option><option value="US Space Force"></option><option value="Vantor (ex-Maxar Intelligence)"></option>        </datalist>
       </label>
-      <p class="updated">Mis à jour le <time datetime="2026-11-02T08:02:32+01:00">2 nov. 2026 à 08:02</time></p>
+      <p class="updated">Mis à jour le <time datetime="2026-11-03T07:51:54+01:00">3 nov. 2026 à 07:51</time></p>
     </div>
   </header>
 
@@ -76,6 +76,19 @@
     </label>
   </div>
   <div class="filter-row">
+    <div class="segmented" role="group" aria-label="Impact">
+      <button type="button" data-impact="0">Tous les sujets</button>
+      <button type="button" data-impact="2">Impact moyen et fort</button>
+      <button type="button" data-impact="3">Impact fort</button>
+    </div>
+    <label class="select">
+      <span class="sr-only">Industrie</span>
+      <select data-filter="industries">
+        <option value="">Toutes les industries</option>
+<option value="agriculture">Agriculture (1)</option><option value="foret_environnement">Forêt et environnement (1)</option>      </select>
+    </label>
+  </div>
+  <div class="filter-row">
     <label class="select">
       <span class="sr-only">Région</span>
       <select data-filter="regions">
@@ -96,28 +109,39 @@
 </div>
 
     <div class="feed" data-feed>
-  <section class="day" data-age="1">
-    <h3 class="day-label">Hier</h3>
-<article class="item story"
+  <section class="day" data-age="0">
+    <h3 class="day-label">Aujourd&#39;hui</h3>
+<article class="item story impact-moyen"
   data-tags=""
   data-entities=""
   data-countries="BO"
   data-regions="latin_america"
   data-events=""
   data-segments=""
-  data-industries=""
+  data-industries="agriculture foret_environnement"
   data-themes="crises"
   data-moves=""
-  data-impact="0"
-  data-age="1"
-  data-search="bolivia declares state of emergency as el nino brings severe drought and floods gulf news bolivie crises et climat">
-  <h4><a href="https://news.google.com/rss/articles/CBMizAFBVV95cUxPZFlseFhodDFDbFhna3FmOHViMFh1aFI0NDVjMnpmdHJvN2R3UDFwZjNYNnI1RGdPTUY2RWpsVW5JUGFSSHRGYVFCdW5DaXNWV2d4MTZMalRRdk81Z2l0cVRxSEhnWUdUS1lmVU10YzY4LTJnYU41Q3cwY0EzTXNPdjRUQnVocm4zdjZXLUFSQTFqbWQ5c0tmdmRFcVFWNHNhSmwzWGk1cEliTVVQc2pmM3hBVnRrOFdRV1F2WFBnaTQ2TTB6Nk5oMFZmckjSAd8BQVVfeXFMTWU2SGE5elhPSUxkVXl4aTdsV1pHeDRuNGxET3NLNjlOYVpoLUVKS0ZkclRmQmhTakhCVXA3R3dNWGJSR3hRd0lsSjFTT1RTaHpNcF96OEZLY1FVQk9WX2psVURUYnlnX0JIQjlJVVIzOFpLVWw3SURGbThEZzl4RzhsZUNDUGcwbk81OWRNb3RTZUxnbWp4aWdqczJYMGxNWkxTM1B6X0w0OFRGZmgxUnpZcGZzWlJHS1V2cVpZbk1qQXVaaGdscWp2cExVTnJ2Uko5OTdNMkk4ZHA5T096Yw?oc=5" target="_blank" rel="noopener noreferrer">Bolivia declares state of emergency as El Niño brings severe drought and floods</a></h4>
+  data-impact="2"
+  data-age="0"
+  data-search="la bolivie declare l&#39;etat d&#39;urgence face a la secheresse et aux inondations liees a el nino la bolivie a declare l&#39;etat d&#39;urgence national en raison de secheresses et d&#39;inondations severes provoquees par el nino. ces crises climatiques alimentent la demande en imagerie satellite pour le suivi agricole et environnemental. bolivia declares state of emergency as el nino brings severe drought and floods bolivia declares national emergency over el nino drought and flood risks bolivia declares state of emergency over el nino gulf news london daily news onlinekhabar english news bolivie crises et climat agriculture foret et environnement">
+  <h4><a href="https://news.google.com/rss/articles/CBMizAFBVV95cUxPZFlseFhodDFDbFhna3FmOHViMFh1aFI0NDVjMnpmdHJvN2R3UDFwZjNYNnI1RGdPTUY2RWpsVW5JUGFSSHRGYVFCdW5DaXNWV2d4MTZMalRRdk81Z2l0cVRxSEhnWUdUS1lmVU10YzY4LTJnYU41Q3cwY0EzTXNPdjRUQnVocm4zdjZXLUFSQTFqbWQ5c0tmdmRFcVFWNHNhSmwzWGk1cEliTVVQc2pmM3hBVnRrOFdRV1F2WFBnaTQ2TTB6Nk5oMFZmckjSAd8BQVVfeXFMTWU2SGE5elhPSUxkVXl4aTdsV1pHeDRuNGxET3NLNjlOYVpoLUVKS0ZkclRmQmhTakhCVXA3R3dNWGJSR3hRd0lsSjFTT1RTaHpNcF96OEZLY1FVQk9WX2psVURUYnlnX0JIQjlJVVIzOFpLVWw3SURGbThEZzl4RzhsZUNDUGcwbk81OWRNb3RTZUxnbWp4aWdqczJYMGxNWkxTM1B6X0w0OFRGZmgxUnpZcGZzWlJHS1V2cVpZbk1qQXVaaGdscWp2cExVTnJ2Uko5OTdNMkk4ZHA5T096Yw?oc=5" target="_blank" rel="noopener noreferrer">La Bolivie déclare l&#39;état d&#39;urgence face à la sécheresse et aux inondations liées à El Niño</a></h4>
   <p class="meta">
-    <span class="src">Gulf News</span><span class="via" title="Trouvé via Google News"> · GN</span>    <span aria-hidden="true">·</span>
-    <time datetime="2026-11-01T11:28:00+01:00" title="1 nov. 2026">11:28</time>
+<span class="impact-badge impact-badge-moyen">Impact moyen</span>    <span class="src">Gulf News</span><span class="via" title="Trouvé via Google News"> · GN</span><span class="n-sources">+ 2 sources</span>    <span aria-hidden="true">·</span>
+    <time datetime="2026-11-03T07:03:28+01:00" title="3 nov. 2026">07:03</time>
 <span aria-hidden="true">·</span> <span class="geo"><a href="../pays/BO.html">Bolivie</a></span>  </p>
-  <p class="labels">
-<span class="theme">Crises et climat</span>  </p>
+<p class="excerpt">La Bolivie a déclaré l&#39;état d&#39;urgence national en raison de sécheresses et d&#39;inondations sévères provoquées par El Niño.</p><p class="why"><span>Pourquoi c'est important</span> Ces crises climatiques alimentent la demande en imagerie satellite pour le suivi agricole et environnemental.</p>  <p class="labels">
+<span class="theme">Crises et climat</span><span class="industry">Agriculture</span><span class="industry">Forêt et environnement</span>  </p>
+  <details class="sources">
+    <summary>3 articles de 3 sources</summary>
+    <ul>
+      <li><a href="https://news.google.com/rss/articles/CBMijwFBVV95cUxNQjdGNlZfSzJyekUtT1JKamVRcHplcVBxYkRKR1dVYmt4RFY1YWF2dk9paUMzSHlDNzhlclNSUV8tVl8xdlRxNmZRcnFzSFdCZXotNjM3elpwSHZ6MV9CY3k5V0lzbjdWYnVVQnV1MU9wMjB6SGxYV1U3SjgtamJJMWFsTHhHX2M1MlVIMlVucw?oc=5" target="_blank" rel="noopener noreferrer">Bolivia declares state of emergency over El Niño</a>
+        <span class="list-meta">OnlineKhabar English News · GN · 3 nov. · 07:03</span></li>
+      <li><a href="https://news.google.com/rss/articles/CBMipAFBVV95cUxORXp2ajRseGt6WENyblVlTENCNC1JMG41ZW5YLVcxdUk1VWdRYmxnTlAyVkRDa3pwa1Y0ZXFGenJzN1ZqbFdtOUc4Q0dISXNqNjRqcXY4d05tVFFMUEIxbTkzSzR3OW0wZ0JtV2VfemRuakVmdzBldVkzTm9vQkpvVmtUZDJyQjFpRk1zcmZmZEhjZlc4aVZ0SlpUS0Z0ZUlDUEFUNw?oc=5" target="_blank" rel="noopener noreferrer">Bolivia declares national emergency over El Niño drought and flood risks</a>
+        <span class="list-meta">London Daily News · GN · 2 nov. · 20:08</span></li>
+      <li><a href="https://news.google.com/rss/articles/CBMizAFBVV95cUxPZFlseFhodDFDbFhna3FmOHViMFh1aFI0NDVjMnpmdHJvN2R3UDFwZjNYNnI1RGdPTUY2RWpsVW5JUGFSSHRGYVFCdW5DaXNWV2d4MTZMalRRdk81Z2l0cVRxSEhnWUdUS1lmVU10YzY4LTJnYU41Q3cwY0EzTXNPdjRUQnVocm4zdjZXLUFSQTFqbWQ5c0tmdmRFcVFWNHNhSmwzWGk1cEliTVVQc2pmM3hBVnRrOFdRV1F2WFBnaTQ2TTB6Nk5oMFZmckjSAd8BQVVfeXFMTWU2SGE5elhPSUxkVXl4aTdsV1pHeDRuNGxET3NLNjlOYVpoLUVKS0ZkclRmQmhTakhCVXA3R3dNWGJSR3hRd0lsSjFTT1RTaHpNcF96OEZLY1FVQk9WX2psVURUYnlnX0JIQjlJVVIzOFpLVWw3SURGbThEZzl4RzhsZUNDUGcwbk81OWRNb3RTZUxnbWp4aWdqczJYMGxNWkxTM1B6X0w0OFRGZmgxUnpZcGZzWlJHS1V2cVpZbk1qQXVaaGdscWp2cExVTnJ2Uko5OTdNMkk4ZHA5T096Yw?oc=5" target="_blank" rel="noopener noreferrer">Bolivia declares state of emergency as El Niño brings severe drought and floods</a>
+        <span class="list-meta">Gulf News · GN · 1 nov. · 11:28</span></li>
+    </ul>
+  </details>
 </article>
   </section>
   <p class="empty" hidden>Aucun sujet ne correspond à ces filtres. Élargir la période ou passer le domaine sur « Tout ».</p>
@@ -140,7 +164,7 @@
 
   <footer class="foot">
     <p>
-      50/51 flux éditeurs et 130/132 recherches Google News
+      50/51 flux éditeurs et 128/132 recherches Google News
       lors de la dernière mise à jour. Titres et extraits fournis par les éditeurs ; cliquer pour lire l'article sur
       le site source. Faits des fiches : Wikidata, complétés à la main.
     </p>
