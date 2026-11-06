@@ -1,47 +1,47 @@
 {
  "fx": {
-  "date": "2026-11-04",
+  "date": "2026-11-05",
   "rates": {
-   "USD": 1.1267,
-   "JPY": 178.3,
-   "CZK": 24.309,
-   "DKK": 7.4738,
-   "GBP": 0.8346,
-   "HUF": 363.03,
-   "PLN": 4.399,
-   "RON": 5.344,
-   "SEK": 10.9718,
-   "CHF": 0.9188,
+   "USD": 1.1224,
+   "JPY": 177.85,
+   "CZK": 24.289,
+   "DKK": 7.4747,
+   "GBP": 0.83393,
+   "HUF": 363.18,
+   "PLN": 4.389,
+   "RON": 5.3385,
+   "SEK": 10.9845,
+   "CHF": 0.918,
    "ISK": 136.8,
-   "NOK": 10.397,
-   "TRY": 56.3598,
-   "AUD": 1.6061,
-   "BRL": 6.1579,
-   "CAD": 1.5701,
-   "CNY": 7.5177,
-   "HKD": 8.8399,
-   "IDR": 20425.83,
-   "ILS": 3.5641,
-   "INR": 106.6318,
-   "KRW": 1508.18,
-   "MXN": 21.0086,
-   "MYR": 4.5789,
-   "NZD": 1.9988,
-   "PHP": 71.578,
-   "SGD": 1.4398,
-   "THB": 37.902,
-   "ZAR": 18.5404
+   "NOK": 10.4365,
+   "TRY": 56.1729,
+   "AUD": 1.6033,
+   "BRL": 6.1355,
+   "CAD": 1.5675,
+   "CNY": 7.4846,
+   "HKD": 8.8055,
+   "IDR": 20281.15,
+   "ILS": 3.5598,
+   "INR": 106.0395,
+   "KRW": 1509.28,
+   "MXN": 20.8655,
+   "MYR": 4.5412,
+   "NZD": 1.9966,
+   "PHP": 70.706,
+   "SGD": 1.4336,
+   "THB": 37.533,
+   "ZAR": 18.4268
   }
  },
- "updated_at": "2026-11-05T08:21:29+01:00",
+ "updated_at": "2026-11-06T08:21:31+01:00",
  "sources": [
   {
    "name": "TED",
    "url": "https://api.ted.europa.eu/v3/notices/search",
    "ok": true,
    "error": "",
-   "fetched": 47,
-   "kept": 36,
+   "fetched": 57,
+   "kept": 42,
    "via": "tender"
   },
   {
@@ -49,8 +49,8 @@
    "url": "https://www.find-tender.service.gov.uk/api/1.0/ocdsReleasePackages",
    "ok": true,
    "error": "",
-   "fetched": 953,
-   "kept": 11,
+   "fetched": 1013,
+   "kept": 12,
    "via": "tender"
   }
  ],
@@ -62,8 +62,8 @@
     "url": "https://api.ted.europa.eu/v3/notices/search",
     "ok": true,
     "error": "",
-    "fetched": 47,
-    "kept": 36,
+    "fetched": 57,
+    "kept": 42,
     "via": "tender"
    },
    {
@@ -71,21 +71,282 @@
     "url": "https://www.find-tender.service.gov.uk/api/1.0/ocdsReleasePackages",
     "ok": true,
     "error": "",
-    "fetched": 953,
-    "kept": 11,
+    "fetched": 1013,
+    "kept": 12,
     "via": "tender"
    }
   ],
   "analysis": {
-   "analysed": 75,
-   "relevant": 11,
-   "error": "budget de temps atteint (6 min) : 5 avis reportés au prochain passage",
-   "cost_usd": 1.1681
+   "analysed": 61,
+   "relevant": 16,
+   "error": "",
+   "cost_usd": 0.7604
   },
   "pruned": 0
  },
- "fts_synced_until": "2026-11-05T07:00:00",
+ "fts_synced_until": "2026-11-06T07:00:00",
  "tenders": [
+  {
+   "id": "ted:773980-2026",
+   "source": "ted",
+   "kind": "open",
+   "notice": "773980-2026",
+   "notice_type": "cn-standard",
+   "title": "Beheer BGT & Signalering 2027-2031",
+   "buyer": "Waterschap Hollandse Delta",
+   "buyer_country": "NL",
+   "published": "2026-11-06",
+   "url": "https://ted.europa.eu/fr/notice/-/detail/773980-2026",
+   "cpv_label": "Services topographiques",
+   "countries": [
+    "NL"
+   ],
+   "cpv": [
+    "71351810",
+    "71354100",
+    "71354200"
+   ],
+   "deadline": "2027-01-14",
+   "value": 800000.0,
+   "currency": "EUR",
+   "winners": [],
+   "description": "De afdeling Data management heeft de taak om de BGT te beheren conform de wet en doet dat samen met gemeenten binnen het beheersgebied. Team Data verzorgt het geografisch gegevensbeheer en de ontsluiting voor het waterschap. De eigen beheerregisters dienen afgestemd te zijn op de basisregistraties, zo ook op de BGT. Hiertoe heeft team Data zelf processen ingericht en applicaties aangeschaft. Het feitelijke signaleren van afwijkingen in de BGT waar het geografische mutaties uiteindelijk als gevolg van aanpassingen in de buitenruimte, wenst team Data over te laten aan een marktpartij, voor…",
+   "status": "",
+   "first_seen": "2026-11-06T08:21:31+01:00",
+   "analysis": {
+    "relevant": true,
+    "segment": "cartographie",
+    "title_fr": "Gestion et détection des évolutions de la base topographique BGT (2027-2031)",
+    "summary": "Le Waterschap Hollandse Delta externalise la détection des écarts et évolutions de la base topographique néerlandaise (BGT) pour la période 2027-2031.",
+    "why": "Besoin de détection de changements sur une base cartographique nationale, un service qu'Airbus peut fournir par imagerie satellite.",
+    "industries": [
+     "foncier",
+     "infrastructures"
+    ],
+    "fit": "moyenne"
+   },
+   "analysed_at": "2026-11-06T08:21:31+01:00",
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "ted:773744-2026",
+   "source": "ted",
+   "kind": "award",
+   "notice": "773744-2026",
+   "notice_type": "can-standard",
+   "title": "Geodetické služby",
+   "buyer": "Východoslovenská distribučná, a.s.",
+   "buyer_country": "SK",
+   "published": "2026-11-06",
+   "url": "https://ted.europa.eu/fr/notice/-/detail/773744-2026",
+   "cpv_label": "Services d'arpentage cadastral",
+   "countries": [
+    "SK"
+   ],
+   "cpv": [
+    "71355200",
+    "71354300",
+    "71355000",
+    "71354000",
+    "71336000"
+   ],
+   "deadline": "",
+   "value": 5135000.0,
+   "currency": "EUR",
+   "winners": [
+    "GEODETIC, spol. s r.o.",
+    "Progres CAD Engineering, s.r.o.",
+    "HRDLIČKA - SLOVAKIA s.r.o.",
+    "GEODETING s.r.o.",
+    "GEOS Košice, s.r.o."
+   ],
+   "description": "Predmetom je zameranie a vyhotovenie technicko – geodetickej dokumentácie v zmysle Technickej špecifikácie.",
+   "status": "",
+   "first_seen": "2026-11-06T08:21:31+01:00",
+   "analysis": {
+    "relevant": false,
+    "segment": "cartographie",
+    "title_fr": "Services géodésiques pour le réseau de distribution électrique",
+    "summary": "Východoslovenská distribučná attribue des services de levés géodésiques et de documentation technique pour son réseau électrique en Slovaquie.",
+    "why": "",
+    "industries": [
+     "infrastructures"
+    ],
+    "fit": "faible"
+   },
+   "analysed_at": "2026-11-06T08:21:31+01:00",
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "ted:773079-2026",
+   "source": "ted",
+   "kind": "award",
+   "notice": "773079-2026",
+   "notice_type": "can-standard",
+   "title": "Služby výzkumu pro zajištění exkavační a postexkavační části archeologických výzkumů a služby operativního průzkumu a dokumentace staveb pro NPÚ, územní odborné pracoviště v Praze – 2027+",
+   "buyer": "Národní památkový ústav",
+   "buyer_country": "CZ",
+   "published": "2026-11-06",
+   "url": "https://ted.europa.eu/fr/notice/-/detail/773079-2026",
+   "cpv_label": "Services archéologiques",
+   "countries": [
+    "CZ"
+   ],
+   "cpv": [
+    "71351914",
+    "71354100",
+    "71355100"
+   ],
+   "deadline": "",
+   "value": 34885000.0,
+   "currency": "CZK",
+   "winners": [
+    "ARCHAIA Praha z. ú."
+   ],
+   "description": "Předmětem veřejné zakázky je provádění služeb exkavační a postexkavační části archeologických vý-zkumů zadavatele a operativního průzkumu a dokumentace staveb na území hlavního města Prahy.",
+   "status": "",
+   "first_seen": "2026-11-06T08:21:31+01:00",
+   "analysis": {
+    "relevant": false,
+    "segment": "cartographie",
+    "title_fr": "Services de fouilles archéologiques et de documentation du bâti à Prague",
+    "summary": "L'institut national du patrimoine tchèque externalise les fouilles archéologiques et la documentation technique des constructions à Prague.",
+    "why": "",
+    "industries": [],
+    "fit": "faible"
+   },
+   "analysed_at": "2026-11-06T08:21:31+01:00",
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "ted:772823-2026",
+   "source": "ted",
+   "kind": "award",
+   "notice": "772823-2026",
+   "notice_type": "can-standard",
+   "title": "„Wykonanie dokumentacji projektowej obejmującej budowę urządzeń piętrząco-upustowych wraz z pełnieniem nadzoru autorskiego”",
+   "buyer": "Skarb Państwa PGL LP Nadleśnictwo Miękinia",
+   "buyer_country": "PL",
+   "published": "2026-11-06",
+   "url": "https://ted.europa.eu/fr/notice/-/detail/772823-2026",
+   "cpv_label": "Services de conception technique pour la construction d'ouvrages de génie civil",
+   "countries": [
+    "PL"
+   ],
+   "cpv": [
+    "71322000",
+    "71320000",
+    "71242000",
+    "71248000",
+    "71354000",
+    "71355000"
+   ],
+   "deadline": "",
+   "value": 70000.0,
+   "currency": "PLN",
+   "winners": [
+    "Ental Instalacje Sp. z o. o."
+   ],
+   "description": "Przedmiotem zamówienia są usługi z zakresu wykonania kompleksowej dokumentacji projektowej wraz z uzyskaniem wymaganych przepisami prawa opinii, uzgodnień i decyzji administracyjnych, oraz pełnieniem nadzoru autorskiego nad realizacją robót budowlanych wykonanych na podstawie dokumentacji będącej przedmiotem niniejszego zamówienia: Numer rozliczeniowy zadania: 13-17-1.2-01; 13-17-1.2-02; 13-17-1.2-03; 13-17-1.2-05; 13-17-1.2-08; 13-17-1.2-09; 13-17-1.2-10; 13-17-1.2-11 Nazwa zadania: Wykonanie dokumentacji projektowej obejmującej budowę urządzeń piętrząco-upustowych wraz z pełnieniem nadzoru…",
+   "status": "",
+   "first_seen": "2026-11-06T08:21:31+01:00",
+   "analysis": {
+    "relevant": false,
+    "segment": "cartographie",
+    "title_fr": "Conception d'ouvrages hydrauliques forestiers avec supervision de chantier",
+    "summary": "L'office forestier polonais de Miękinia fait réaliser la conception d'ouvrages de régulation des eaux (vannes et seuils) avec suivi des travaux associés.",
+    "why": "",
+    "industries": [
+     "foret_environnement",
+     "infrastructures"
+    ],
+    "fit": "faible"
+   },
+   "analysed_at": "2026-11-06T08:21:31+01:00",
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "ted:772794-2026",
+   "source": "ted",
+   "kind": "open",
+   "notice": "772794-2026",
+   "notice_type": "cn-standard",
+   "title": "Ilmakuvauspalvelut 2027 - kevätkuvaus",
+   "buyer": "Maanmittauslaitos",
+   "buyer_country": "FI",
+   "published": "2026-11-06",
+   "url": "https://ted.europa.eu/fr/notice/-/detail/772794-2026",
+   "cpv_label": "Services de cartographie aérienne",
+   "countries": [
+    "FI"
+   ],
+   "cpv": [
+    "71354200",
+    "60440000",
+    "71350000"
+   ],
+   "deadline": "2026-12-11",
+   "value": null,
+   "currency": "",
+   "winners": [],
+   "description": "HANKINNAN KOHDE Hankinnan kohteena ovat ilmakuvauspalvelu ja palvelun lopputuloksena syntyvien tuotteiden toimittaminen asiakkaalle tarjouspyynnössä ja sen liitteissä määritellyn mukaisesti. Hankinnan kohde on kuvattu tarkemmin tarjouspyynnössä ja sen liitteissä, erityisesti liitteissä: - A Hankinnan kohde - B Sopimus - Liite 2 Ilmakuvauspalvelun vaatimukset - Liite 3 Vastaanottotarkastus ja ilmakuvausblokin radiometrinen laatutarkistus - Liite 4 Arvio tuotantoalueista. Pakolliset ja harkinnanvaraiset poissulkemisperusteet sekä tarjoajan soveltuvuusvaatimukset on kuvattu sähköisen…",
+   "status": "",
+   "first_seen": "2026-11-06T08:21:31+01:00",
+   "analysis": {
+    "relevant": true,
+    "segment": "aerien_lidar",
+    "title_fr": "Service de prises de vues aériennes de printemps 2027",
+    "summary": "L'Institut national de cartographie finlandais commande un service de prises de vues aériennes au printemps 2027 et la livraison des produits associés.",
+    "why": "Marché national de prise de vue aérienne, signal de la demande en imagerie haute résolution face à des prestataires aériens concurrents.",
+    "industries": [
+     "foncier",
+     "infrastructures"
+    ],
+    "fit": "faible"
+   },
+   "analysed_at": "2026-11-06T08:21:31+01:00",
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "ted:772343-2026",
+   "source": "ted",
+   "kind": "open",
+   "notice": "772343-2026",
+   "notice_type": "cn-standard",
+   "title": "Modernizacja operatu ewidencji gruntów i budynków gm. Zabłudów z podziałem na 2 części zamówienia",
+   "buyer": "Powiat Białostocki - Starostwo Powiatowe w Białymstoku",
+   "buyer_country": "PL",
+   "published": "2026-11-06",
+   "url": "https://ted.europa.eu/fr/notice/-/detail/772343-2026",
+   "cpv_label": "Services d'arpentage",
+   "countries": [
+    "PL"
+   ],
+   "cpv": [
+    "71355000",
+    "71354000"
+   ],
+   "deadline": "2026-12-08",
+   "value": null,
+   "currency": "",
+   "winners": [],
+   "description": "1. Przedmiotem zamówienia jest modernizacja operatu ewidencji gruntów i budynków dla niżej wymienionych zadań w gminie Zabłudów, z podziałem na niżej określne 2 części zamówienia: Część A – modernizacja operatu ewidencji gruntów i budynków gm. Zabłudów, obręby: • Gnieciuki – 549 działek na ogólną powierzchnię 828 ha, do pomiaru 308 budynków; • Kołpaki – 136 działek na ogólną powierzchnię 322 ha, do pomiaru 79 budynków; • Małynka – 320 działek na ogólną powierzchnię 701 ha, do pomiaru 181 budynków; • Ochremowicze – 245 działek na ogólną powierzchnię 329 ha, do pomiaru 163 budynki; • Olszanka…",
+   "status": "",
+   "first_seen": "2026-11-06T08:21:31+01:00",
+   "analysis": {
+    "relevant": false,
+    "segment": "cartographie",
+    "title_fr": "Modernisation du cadastre des terrains et bâtiments de la commune de Zabłudów",
+    "summary": "La commune polonaise de Zabłudów fait moderniser son registre cadastral des terrains et bâtiments, divisé en deux lots de relevés sur le terrain.",
+    "why": "",
+    "industries": [
+     "foncier"
+    ],
+    "fit": "faible"
+   },
+   "analysed_at": "2026-11-06T08:21:31+01:00",
+   "analysis_model": "claude_cli:sonnet"
+  },
   {
    "id": "ted:771183-2026",
    "source": "ted",
@@ -442,6 +703,251 @@
     "fit": "faible"
    },
    "analysed_at": "2026-11-05T08:21:29+01:00",
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "fts:ocds-h6vhtk-07b5da:open",
+   "source": "fts",
+   "kind": "open",
+   "notice": "105451-2026",
+   "notice_type": "UK4",
+   "title": "PRO005166 - ORiW - Design and Integration Partner",
+   "buyer": "United Utilities Water Limited",
+   "buyer_country": "GB",
+   "published": "2026-11-05",
+   "url": "https://www.find-tender.service.gov.uk/Notice/105451-2026",
+   "cpv_label": "",
+   "countries": [
+    "GB"
+   ],
+   "cpv": [
+    "71320000",
+    "45111250",
+    "70332100",
+    "71242000",
+    "71246000",
+    "71310000",
+    "71311000",
+    "71313400",
+    "71313410",
+    "71313420",
+    "71313430",
+    "71313440",
+    "71313450",
+    "71321100",
+    "71322000",
+    "71322100",
+    "71322200",
+    "71324000",
+    "71333000",
+    "71334000",
+    "71351200",
+    "71351210",
+    "71351500",
+    "71351720",
+    "71351810",
+    "71351811",
+    "71351914",
+    "71354500",
+    "71420000",
+    "71500000",
+    "71530000",
+    "71540000",
+    "71541000",
+    "71800000",
+    "72224000",
+    "72242000",
+    "77100000",
+    "79415200",
+    "79420000",
+    "79930000",
+    "90700000",
+    "90711400",
+    "90712000"
+   ],
+   "deadline": "2026-11-30",
+   "value": 600000000.0,
+   "currency": "GBP",
+   "winners": [],
+   "description": "This notice relates to tender activity for the provision of certain design and integration services, as explained below. United Utilities Water Limited (UU) proposes to deliver a programme titled Only Rainwater into Windermere (ORiW), with the ambition to make Windermere the cleanest lake in England by removing discharges from both public and private sources, while also addressing highway runoff. This is a long-term, transformational programme designed to protect the lake's ecology, water quality and amenity value for future generations. The target end state is \"Only Rainwater into…",
+   "status": "",
+   "first_seen": "2026-11-06T08:21:31+01:00",
+   "analysis": {
+    "relevant": false,
+    "segment": "environnement_climat",
+    "title_fr": "Partenaire de conception et intégration pour le programme Windermere",
+    "summary": "United Utilities recherche un partenaire de conception et d'intégration pour son programme visant à réduire les rejets polluants dans le lac Windermere.",
+    "why": "",
+    "industries": [
+     "infrastructures"
+    ],
+    "fit": "faible"
+   },
+   "analysed_at": "2026-11-06T08:21:31+01:00",
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "fts:ocds-h6vhtk-07b3ed:planned",
+   "source": "fts",
+   "kind": "planned",
+   "notice": "105150-2026",
+   "notice_type": "UK2",
+   "title": "Procurement, installation and calibration of Photogrammetry Rig",
+   "buyer": "Bath Spa University",
+   "buyer_country": "GB",
+   "published": "2026-11-05",
+   "url": "https://www.find-tender.service.gov.uk/Notice/105150-2026",
+   "cpv_label": "",
+   "countries": [
+    "GB"
+   ],
+   "cpv": [
+    "71355100",
+    "79961300"
+   ],
+   "deadline": "",
+   "value": 110000.0,
+   "currency": "GBP",
+   "winners": [],
+   "description": "Bath Spa University is looking to procure 3D scanning equipment to support a large-scale photogrammetry project. The scope is to establish an operationally sustainable 3D scanning capability that will enable the digitisation of approximately 600 fashion objects by 2030, with scanning activities expected to begin in 2027.\nThe project will involve purchasing and installing a photogrammetry scanning rig, including lighting stands and anchoring, light boxes and trigger boxes, in addition to installation, calibration and training.\nThe procurement of photography equipment e.g. cameras and lenses…",
+   "status": "",
+   "first_seen": "2026-11-06T08:21:31+01:00",
+   "analysis": {
+    "relevant": false,
+    "segment": "aerien_lidar",
+    "title_fr": "Acquisition d'un dispositif de photogrammétrie pour numérisation d'objets",
+    "summary": "Bath Spa University souhaite acquérir un dispositif de prise de vue photogrammétrique pour numériser environ 600 objets de mode d'ici 2030.",
+    "why": "",
+    "industries": [],
+    "fit": "faible"
+   },
+   "analysed_at": "2026-11-06T08:21:31+01:00",
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "fts:ocds-h6vhtk-078555:award",
+   "source": "fts",
+   "kind": "award",
+   "notice": "105099-2026",
+   "notice_type": "",
+   "title": "CM79 - TELEMETRY SATELLITE COMMUNICATION",
+   "buyer": "Trinity House",
+   "buyer_country": "GB",
+   "published": "2026-11-05",
+   "url": "",
+   "cpv_label": "",
+   "countries": [
+    "GB"
+   ],
+   "cpv": [
+    "32531000",
+    "64200000"
+   ],
+   "deadline": "",
+   "value": null,
+   "currency": "",
+   "winners": [
+    "Ground Control Technologies UK Ltd"
+   ],
+   "description": "To supply direct solutions of existing equipment, designed and fitted within existing enclosures for TH Buoy, Lighthouse and Lightvessel Communications, including the continued service supply of Iridium communications.",
+   "status": "",
+   "first_seen": "2026-11-06T08:21:31+01:00",
+   "analysis": {
+    "relevant": true,
+    "segment": "spatial",
+    "title_fr": "Service de télémétrie satellite pour bouées et phares (Iridium)",
+    "summary": "Trinity House attribue la fourniture et le maintien d'équipements de télémétrie satellite Iridium pour les bouées, phares et bateaux-phares au Royaume-Uni.",
+    "why": "Signal de demande en connectivité satellite pour les aides à la navigation maritime, segment connexe à l'offre Airbus.",
+    "industries": [
+     "maritime",
+     "connectivite"
+    ],
+    "fit": "faible"
+   },
+   "analysed_at": "2026-11-06T08:21:31+01:00",
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "fts:ocds-h6vhtk-07813f:award",
+   "source": "fts",
+   "kind": "award",
+   "notice": "105221-2026",
+   "notice_type": "",
+   "title": "Decadal scale net sediment budget and geomorphic change analysis of SSSI dune systems in England",
+   "buyer": "Natural England",
+   "buyer_country": "GB",
+   "published": "2026-11-05",
+   "url": "",
+   "cpv_label": "",
+   "countries": [
+    "GB"
+   ],
+   "cpv": [
+    "71355000"
+   ],
+   "deadline": "",
+   "value": null,
+   "currency": "",
+   "winners": [
+    "ABP MARINE ENVIRONMENTAL RESEARCH LIMITED"
+   ],
+   "description": "Decadal scale net sediment budget and geomorphic change analysis of SSSI dune systems in England.It is intended that changes in dune field sediment volume and spatio-temporal variability in topography be assessed and quantified using LiDAR (Light Detection and Ranging) data.",
+   "status": "",
+   "first_seen": "2026-11-06T08:21:31+01:00",
+   "analysis": {
+    "relevant": true,
+    "segment": "aerien_lidar",
+    "title_fr": "Analyse décennale de l'évolution des dunes littorales par données LiDAR",
+    "summary": "Natural England fait réaliser une analyse de l'évolution sédimentaire des dunes littorales anglaises à partir de données LiDAR, à l'échelle décennale.",
+    "why": "Illustre l'usage de données LiDAR pour le suivi environnemental, un service proche de l'offre Airbus d'imagerie et de modèles d'élévation.",
+    "industries": [
+     "foret_environnement"
+    ],
+    "fit": "faible"
+   },
+   "analysed_at": "2026-11-06T08:21:31+01:00",
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "fts:ocds-h6vhtk-077500:award",
+   "source": "fts",
+   "kind": "award",
+   "notice": "105051-2026",
+   "notice_type": "",
+   "title": "Research Vessel Charter - Antarctic",
+   "buyer": "University of Plymouth",
+   "buyer_country": "GB",
+   "published": "2026-11-05",
+   "url": "",
+   "cpv_label": "",
+   "countries": [
+    "GB"
+   ],
+   "cpv": [
+    "60651000"
+   ],
+   "deadline": "",
+   "value": null,
+   "currency": "",
+   "winners": [
+    "Istituto Nazionale di Oceanografia e di Geofisica Sperimentale - OGS"
+   ],
+   "description": "The University of Plymouth requires the provision of specialist Antarctic research vessel charter services for the Antarctic Canyon Experiment (ACE), including vessel, crew, polar icebreaking capability, onboard scientific laboratories, hydrographic surveying, seabed mapping, deployment and recovery of oceanographic and geophysical equipment, sediment sampling, and associated technical support services in the Ross Sea, Antarctica. The contract supports two scientific expeditions for the deployment and subsequent recovery of long-term monitoring infrastructure.",
+   "status": "",
+   "first_seen": "2026-11-06T08:21:31+01:00",
+   "analysis": {
+    "relevant": false,
+    "segment": "environnement_climat",
+    "title_fr": "Affrètement d'un navire de recherche pour une expédition en Antarctique",
+    "summary": "L'Université de Plymouth affrète un navire polaire pour deux campagnes scientifiques incluant levés bathymétriques et cartographie des fonds marins en mer de Ross.",
+    "why": "",
+    "industries": [
+     "maritime",
+     "foret_environnement"
+    ],
+    "fit": "faible"
+   },
+   "analysed_at": "2026-11-06T08:21:31+01:00",
    "analysis_model": "claude_cli:sonnet"
   },
   {
@@ -49028,9 +49534,19 @@
    "description": "servicio de generación, a partir de ortoimagen espacial, de información vectorial geoespacial mediante extracción de zonas de interés para la defensa. Proyecto MGCP Urban Vector Data.",
    "status": "",
    "first_seen": "2026-10-27T09:30:17+01:00",
-   "analysis": {},
-   "analysed_at": "",
-   "analysis_model": ""
+   "analysis": {
+    "relevant": true,
+    "segment": "cartographie",
+    "title_fr": "Accord-cadre d'extraction de données vectorielles géospatiales à partir d'imagerie satellite",
+    "summary": "Le ministère espagnol de la Défense acquiert, par accord-cadre, la génération de données vectorielles géospatiales à partir d'ortho-imagerie satellite pour le projet MGCP Urban Vector Data.",
+    "why": "Correspond directement à l'offre Airbus de cartographie vectorielle issue d'imagerie satellite pour la défense (MGCP).",
+    "industries": [
+     "defense"
+    ],
+    "fit": "forte"
+   },
+   "analysed_at": "2026-11-06T08:21:31+01:00",
+   "analysis_model": "claude_cli:sonnet"
   },
   {
    "id": "ted:318743-2026",
@@ -49058,9 +49574,19 @@
    "description": "Przedmiotem zamówienia jest sukcesywne wykonywanie opracowań geodezyjnych. Przedmiot zamówienia jest podzielony na pięć niezależnych od siebie części: Część 1 – sukcesywne wykonywanie opracowań geodezyjnych dla nieruchomości położonych na terenie dzielnic m.st. Warszawy – Bielan, Śródmieścia, Woli, Żoliborza w częściach objętych działaniem dekretu z dnia 26.X.1945r. o własności i użytkowaniu gruntów na obszarze m.st. Warszawy (Dz. U. nr 50, poz. 279); Część 2 – sukcesywne wykonywanie opracowań geodezyjnych dla nieruchomości położonych na terenie dzielnic m.st. Warszawy – Białołęki, Pragi…",
    "status": "",
    "first_seen": "2026-10-27T09:30:17+01:00",
-   "analysis": {},
-   "analysed_at": "",
-   "analysis_model": ""
+   "analysis": {
+    "relevant": false,
+    "segment": "cartographie",
+    "title_fr": "Réalisation continue d'études géodésiques pour la ville de Varsovie",
+    "summary": "La ville de Varsovie commande, en continu et en cinq lots, des études géodésiques pour des biens immobiliers situés dans différents arrondissements.",
+    "why": "",
+    "industries": [
+     "foncier"
+    ],
+    "fit": "faible"
+   },
+   "analysed_at": "2026-11-06T08:21:31+01:00",
+   "analysis_model": "claude_cli:sonnet"
   },
   {
    "id": "ted:318096-2026",
@@ -49095,9 +49621,19 @@
    "description": "Gemäß Vermessungs- und Katastergesetz NRW (VermKatG NRW) umfasst das amtliche Vermessungswesen als öffentliche Aufgabe die Erhebung, Führung und Bereitstellung der Daten der Landesvermessung und des Liegenschaftskatasters. Die Bezirksregierung Köln mit der Abteilung 7 (Geobasis NRW) ist für die Erhebung und Führung von Geobasisdaten der Landesvermessung verantwortlich. Hierzu gehören die Einrichtung und Laufendhaltung der Festpunktfelder nach Lage, Höhe und Schwere. Diese Geobasisdaten sind in einem Geobasisinformationssystem entsprechend den Anforderungen der Bürger und der Nutzer aus…",
    "status": "",
    "first_seen": "2026-10-27T09:30:17+01:00",
-   "analysis": {},
-   "analysed_at": "",
-   "analysis_model": ""
+   "analysis": {
+    "relevant": false,
+    "segment": "cartographie",
+    "title_fr": "Travaux de nivellement dans la région du Bas-Rhin (Allemagne)",
+    "summary": "La Bezirksregierung Köln fait réaliser des travaux de nivellement pour la mise à jour des données géodésiques officielles de référence en Rhénanie du Nord-Westphalie.",
+    "why": "",
+    "industries": [
+     "foncier"
+    ],
+    "fit": "faible"
+   },
+   "analysed_at": "2026-11-06T08:21:31+01:00",
+   "analysis_model": "claude_cli:sonnet"
   },
   {
    "id": "ted:315578-2026",
@@ -49140,9 +49676,20 @@
    "description": "Αντικείμενο της μελέτης είναι η καταγραφή του υπάρχοντος οδικού δικτύου, βάσει των κριτηρίων, των προϋποθέσεων και των τεχνικών προδιαγραφών που καθορίζονται με τη σχετική Υ.Α. ΥΠΕΝ/ΔΠΟΛΣ/53355/1219 (ΦΕΚ 2671/Β/31.05.2022) υπό τον τίτλο «Τεχνικές προδιαγραφές, κριτήρια και προϋποθέσεις για τη σύνταξη των μελετών καταγραφής του υπάρχοντος οδικού δικτύου της χώρας, ανά Δημοτική Ενότητα (ΔΕ) στις περιοχές εκτός των ρυμοτομικών σχεδίων των πόλεων, εκτός των ορίων των οικισμών των νομίμως υφισταμένων προ του έτους 1923 και των οικισμών μέχρι 2000 κατοίκους.» κατ’ εξουσιοδότηση της παραγράφου 15…",
    "status": "",
    "first_seen": "2026-10-27T09:30:17+01:00",
-   "analysis": {},
-   "analysed_at": "",
-   "analysis_model": ""
+   "analysis": {
+    "relevant": true,
+    "segment": "cartographie",
+    "title_fr": "Étude de recensement du réseau routier hors plans d'urbanisme",
+    "summary": "La Chambre technique de Grèce fait réaliser le recensement cartographique du réseau routier existant hors zones urbaines planifiées, par unité municipale.",
+    "why": "Projet de cartographie nationale du réseau routier pouvant s'appuyer sur de l'imagerie satellite ou aérienne.",
+    "industries": [
+     "infrastructures",
+     "foncier"
+    ],
+    "fit": "moyenne"
+   },
+   "analysed_at": "2026-11-06T08:21:31+01:00",
+   "analysis_model": "claude_cli:sonnet"
   },
   {
    "id": "ted:314961-2026",
@@ -49172,9 +49719,19 @@
    "description": "Servicii de “Măsurători hidrografice” în porturile Galați, Brăila, Tulcea. Obiectul achiziției îl reprezintă serviciile de “Măsurători hidrografice” în porturile Galați, Brăila, Tulcea. Scopul achiziției este reprezentat de efectuarea de măsurători hidrografice periodic (la maxim 4 luni pe fiecare amplasament) pentru toate danele și bazinele din zona de activitate a companiei în vederea comunicării adâncimilor efective înregistrate la dane precum și înainte / după efectuarea lucrărilor de dragaj în vederea calculării volumului necesar de dragat și a celui dragat efectiv. Neexecutarea…",
    "status": "",
    "first_seen": "2026-10-27T09:30:17+01:00",
-   "analysis": {},
-   "analysed_at": "",
-   "analysis_model": ""
+   "analysis": {
+    "relevant": false,
+    "segment": "cartographie",
+    "title_fr": "Mesures hydrographiques dans les ports du Danube maritime",
+    "summary": "La compagnie portuaire roumaine commande des mesures hydrographiques périodiques dans les ports de Galați, Brăila et Tulcea pour le suivi du dragage.",
+    "why": "",
+    "industries": [
+     "maritime"
+    ],
+    "fit": "faible"
+   },
+   "analysed_at": "2026-11-06T08:21:31+01:00",
+   "analysis_model": "claude_cli:sonnet"
   },
   {
    "id": "ted:314951-2026",
@@ -49207,9 +49764,19 @@
    "description": "1. Przedmiotem zamówienia jest usługa polegająca na opracowaniu kompletnej dokumentacji projektowej wraz z uzyskaniem wszystkich niezbędnych opinii, uzgodnień, pozwoleń i decyzji administracyjnych umożliwiających realizację zadania pn. „Modernizacja wału Miedzeszyńskiego od km 4+888 do km 6+152” polegającego na modernizacji prawego wału przeciwpowodziowego rzeki Wisły o nazwie Wał Miedzeszyński w Warszawie, na odcinku o długości ok. 1,264 km. Zadanie realizowane będzie na podstawie ustawy z dnia 8 lipca 2010 r. o szczególnych zasadach przygotowania inwestycji w zakresie budowli…",
    "status": "",
    "first_seen": "2026-10-27T09:30:17+01:00",
-   "analysis": {},
-   "analysed_at": "",
-   "analysis_model": ""
+   "analysis": {
+    "relevant": false,
+    "segment": "cartographie",
+    "title_fr": "Conception de la modernisation d'une digue de la Vistule à Varsovie",
+    "summary": "La ville de Varsovie fait réaliser la documentation de conception pour la modernisation d'un tronçon de digue anti-crue de la Vistule.",
+    "why": "",
+    "industries": [
+     "infrastructures"
+    ],
+    "fit": "faible"
+   },
+   "analysed_at": "2026-11-06T08:21:31+01:00",
+   "analysis_model": "claude_cli:sonnet"
   },
   {
    "id": "ted:314855-2026",
@@ -49237,9 +49804,19 @@
    "description": "Les prestations foncières consistent à établir des procès-verbaux contradictoires de bornage (comprenant le document d'arpentage), la réalisation de plan avant-vente sur les zones d'activités intercommunales, la réalisation de bornages simples, des renseignements sur les propriétés, la production de documents techniques et/ou administratifs graphiques",
    "status": "",
    "first_seen": "2026-10-27T09:30:17+01:00",
-   "analysis": {},
-   "analysed_at": "",
-   "analysis_model": ""
+   "analysis": {
+    "relevant": false,
+    "segment": "cartographie",
+    "title_fr": "Prestations foncières de bornage pour la Communauté de communes du Grésivaudan",
+    "summary": "La Communauté de communes Le Grésivaudan commande des prestations de bornage, plans avant-vente et renseignements fonciers sur son territoire.",
+    "why": "",
+    "industries": [
+     "foncier"
+    ],
+    "fit": "faible"
+   },
+   "analysed_at": "2026-11-06T08:21:31+01:00",
+   "analysis_model": "claude_cli:sonnet"
   },
   {
    "id": "ted:314561-2026",
@@ -49272,9 +49849,19 @@
    "description": "Przedmiotem zamówienia jest opracowanie dokumentacji projektowej w stadium Studium Opracowanie Studium Techniczno-Ekonomiczno-Środowiskowego z elementami koncepcji programowej wraz kompletnymi materiałami do wydania Decyzji o Środowiskowych Uwarunkowania dla zadania Budowa obwodnicy Łukowa w ciągu dróg krajowych nr 63 i 76. Dokumentacja Projektowa będąca przedmiotem zamówienia składa się m. in. z następujących opracowań projektowych (lub zespołów opracowań projektowych) dla trzech wstępnie przygotowanych wariantów trasy: -opracowania z zakresu analizy i prognozy ruchu, -materiały promocyjne…",
    "status": "",
    "first_seen": "2026-10-27T09:30:17+01:00",
-   "analysis": {},
-   "analysed_at": "",
-   "analysis_model": ""
+   "analysis": {
+    "relevant": false,
+    "segment": "cartographie",
+    "title_fr": "Étude technico-économique et environnementale pour le contournement de Łuków",
+    "summary": "La direction polonaise des routes nationales fait réaliser l'étude préalable et environnementale du futur contournement routier de Łuków.",
+    "why": "",
+    "industries": [
+     "infrastructures"
+    ],
+    "fit": "faible"
+   },
+   "analysed_at": "2026-11-06T08:21:31+01:00",
+   "analysis_model": "claude_cli:sonnet"
   },
   {
    "id": "ted:314411-2026",
@@ -49316,9 +49903,19 @@
    "description": "Przedmiotem zamówienia jest zaprojektowanie i wybudowanie obwodnicy Międzyborza: drogi głównej ruchu przyspieszonego, o długości ok. 8,45 km. Początek projektowanej obwodnicy w ciągu drogi krajowej nr 25 znajduje się po północnej stronie miasta Międzybórz, natomiast koniec zlokalizowany jest na południowej granicy wsi Oska Piła, na połączeniu istniejącej drogi krajowej nr 25 z drogą powiatową nr 1490D. Powyższy odcinek stanowi fragment połączenia drogowego na relacji Antonin – Oleśnica oraz zlokalizowany jest na terenie województwa dolnośląskiego, w powiecie oleśnickim, na terenie gminy…",
    "status": "",
    "first_seen": "2026-10-27T09:30:17+01:00",
-   "analysis": {},
-   "analysed_at": "",
-   "analysis_model": ""
+   "analysis": {
+    "relevant": false,
+    "segment": "cartographie",
+    "title_fr": "Conception et construction du contournement de Międzybórz",
+    "summary": "La direction polonaise des routes nationales fait concevoir et construire un contournement routier de 8,45 km sur la route nationale 25.",
+    "why": "",
+    "industries": [
+     "infrastructures"
+    ],
+    "fit": "faible"
+   },
+   "analysed_at": "2026-11-06T08:21:31+01:00",
+   "analysis_model": "claude_cli:sonnet"
   },
   {
    "id": "ted:314236-2026",
@@ -49350,9 +49947,19 @@
    "description": "Upphandling av NIS system för elnät, bredband och fjärrvärme inklusive installation, test, driftsättning och efterföljande service och support",
    "status": "",
    "first_seen": "2026-10-27T09:30:17+01:00",
-   "analysis": {},
-   "analysed_at": "",
-   "analysis_model": ""
+   "analysis": {
+    "relevant": false,
+    "segment": "cartographie",
+    "title_fr": "Système d'information réseau pour électricité, fibre et chauffage urbain",
+    "summary": "L'énergéticien suédois PiteEnergi acquiert un système d'information de réseau (NIS) pour la gestion de ses réseaux électrique, haut débit et de chauffage urbain.",
+    "why": "",
+    "industries": [
+     "infrastructures"
+    ],
+    "fit": "faible"
+   },
+   "analysed_at": "2026-11-06T08:21:31+01:00",
+   "analysis_model": "claude_cli:sonnet"
   },
   {
    "id": "ted:314081-2026",
@@ -49395,9 +50002,20 @@
    "description": "Αντικείμενο της μελέτης είναι η καταγραφή του υπάρχοντος οδικού δικτύου, βάσει των κριτηρίων, των προϋποθέσεων και των τεχνικών προδιαγραφών που καθορίζονται με τη σχετική Υ.Α. ΥΠΕΝ/ΔΠΟΛΣ/53355/1219 (ΦΕΚ 2671/Β/31.05.2022) υπό τον τίτλο «Τεχνικές προδιαγραφές, κριτήρια και προϋποθέσεις για τη σύνταξη των μελετών καταγραφής του υπάρχοντος οδικού δικτύου της χώρας, ανά Δημοτική Ενότητα (ΔΕ) στις περιοχές εκτός των ρυμοτομικών σχεδίων των πόλεων, εκτός των ορίων των οικισμών των νομίμως υφισταμένων προ του έτους 1923 και των οικισμών μέχρι 2000 κατοίκους.» κατ’ εξουσιοδότηση της παραγράφου 15…",
    "status": "",
    "first_seen": "2026-10-27T09:30:17+01:00",
-   "analysis": {},
-   "analysed_at": "",
-   "analysis_model": ""
+   "analysis": {
+    "relevant": true,
+    "segment": "cartographie",
+    "title_fr": "Étude de recensement du réseau routier hors plans d'urbanisme (attribution)",
+    "summary": "La Chambre technique de Grèce attribue le recensement cartographique du réseau routier existant hors zones urbaines planifiées, par unité municipale.",
+    "why": "Projet de cartographie nationale du réseau routier pouvant s'appuyer sur de l'imagerie satellite ou aérienne.",
+    "industries": [
+     "infrastructures",
+     "foncier"
+    ],
+    "fit": "moyenne"
+   },
+   "analysed_at": "2026-11-06T08:21:31+01:00",
+   "analysis_model": "claude_cli:sonnet"
   },
   {
    "id": "ted:313706-2026",
@@ -49540,9 +50158,19 @@
    "description": "Further to the expiry of a previously published VEAT Notice, TII has signed a contract with ESRI Ireland for the provision of a MetroLink ArcGIS Operational Service for the period of three years, with the option to extend for a period or periods of up to a further seven years.",
    "status": "",
    "first_seen": "2026-10-27T09:30:17+01:00",
-   "analysis": {},
-   "analysed_at": "",
-   "analysis_model": ""
+   "analysis": {
+    "relevant": true,
+    "segment": "cartographie",
+    "title_fr": "Service ArcGIS d'exploitation pour le projet de métro MetroLink",
+    "summary": "Transport Infrastructure Ireland attribue à Esri Ireland un service ArcGIS opérationnel pour le projet de métro MetroLink, pour trois ans extensible à dix ans.",
+    "why": "Attribution à Esri, concurrent SIG, sur un projet d'infrastructure majeur ; signale la demande en plateformes géospatiales.",
+    "industries": [
+     "infrastructures"
+    ],
+    "fit": "faible"
+   },
+   "analysed_at": "2026-11-06T08:21:31+01:00",
+   "analysis_model": "claude_cli:sonnet"
   },
   {
    "id": "ted:312977-2026",
@@ -49573,9 +50201,19 @@
    "description": "Het afsluiten van een raamovereenkomst, per perceel, met een marktpartij voor uitvoering van bodem vervolgonderzoek ten behoeve van bepaling voorlopige veiligheidsklasse conform CROW400. De percelen zijn opgedeeld in drie verzorgingsgebieden, te weten: Perceel West: verzorgingsgebied regio Amsterdam. Perceel Oost: verzorgingsgebied regio Arnhem/Nijmegen + Almere. Perceel Zuid: verzorgingsgebied regio Rotterdam/Leiden . De raamovereenkomsten worden afgesloten voor de duur van 4 jaar. Vattenfall verkrijgt een optie om het contract 2 keer, voor een maximale periode van 1 jaar, te verlengen…",
    "status": "",
    "first_seen": "2026-10-27T09:30:17+01:00",
-   "analysis": {},
-   "analysed_at": "",
-   "analysis_model": ""
+   "analysis": {
+    "relevant": false,
+    "segment": "cartographie",
+    "title_fr": "Suivi de la qualité des sols selon la méthode CROW400 (Pays-Bas)",
+    "summary": "Vattenfall Warmte conclut un accord-cadre de quatre ans pour des études complémentaires de sol permettant de classer la sécurité des terrains dans trois régions néerlandaises.",
+    "why": "",
+    "industries": [
+     "infrastructures"
+    ],
+    "fit": "faible"
+   },
+   "analysed_at": "2026-11-06T08:21:31+01:00",
+   "analysis_model": "claude_cli:sonnet"
   },
   {
    "id": "ted:312009-2026",
@@ -49623,9 +50261,19 @@
    "description": "Przedmiot zamówienia dotyczy opracowania dokumentacji projektowej i budowy obwodnicy Limanowej w ciągu dk 28 - o wartości powyżej 20 000 000 EURO Przedmiot zamówienia obejmuje w szczególności: 1) zaprojektowanie obwodnicy Limanowej w ciągu drogi krajowej nr 28, nowego odcinka drogi o długości około 5,36 km wraz z obiektami inżynierskimi i towarzyszącą infrastrukturą, tj. opracowanie dokumentacji projektowej; 2) uzyskanie w imieniu i na rzecz Zamawiającego wymaganych prawem wszelkich opinii, uzgodnień, pozwoleń, zezwoleń, decyzji niezbędnych do zaprojektowania i zrealizowania inwestycji; 3)…",
    "status": "",
    "first_seen": "2026-10-27T09:30:17+01:00",
-   "analysis": {},
-   "analysed_at": "",
-   "analysis_model": ""
+   "analysis": {
+    "relevant": false,
+    "segment": "cartographie",
+    "title_fr": "Construction d'une rocade routière à Limanowa (Pologne)",
+    "summary": "Conception et construction d'une rocade de 5,36 km sur la route nationale 28 à Limanowa, avec ouvrages d'art et infrastructures associées.",
+    "why": "",
+    "industries": [
+     "infrastructures"
+    ],
+    "fit": "faible"
+   },
+   "analysed_at": "2026-11-06T08:21:31+01:00",
+   "analysis_model": "claude_cli:sonnet"
   },
   {
    "id": "ted:311789-2026",
@@ -49654,9 +50302,19 @@
    "description": "Kadastrinių matavimų paslaugos",
    "status": "",
    "first_seen": "2026-10-27T09:30:17+01:00",
-   "analysis": {},
-   "analysed_at": "",
-   "analysis_model": ""
+   "analysis": {
+    "relevant": false,
+    "segment": "cartographie",
+    "title_fr": "Mesures cadastrales de biens immobiliers à Vilnius (lot 16)",
+    "summary": "Services de mesures, comptabilisation et évaluation cadastrales de biens immobiliers à Vilnius, lot 16.",
+    "why": "",
+    "industries": [
+     "foncier"
+    ],
+    "fit": "faible"
+   },
+   "analysed_at": "2026-11-06T08:21:31+01:00",
+   "analysis_model": "claude_cli:sonnet"
   },
   {
    "id": "ted:310925-2026",
@@ -49685,9 +50343,19 @@
    "description": "Nekilnojamojo turto objektų kadastrinių matavimų, apskaitos ir įkainojimo paslaugos (22 kv.). DPS atliekamuose konkrečiuose pirkimuose ekonomiškai naudingiausias pasiūlymas bus išrenkamas pagal kainos ir kokybės santykį.",
    "status": "",
    "first_seen": "2026-10-27T09:30:17+01:00",
-   "analysis": {},
-   "analysed_at": "",
-   "analysis_model": ""
+   "analysis": {
+    "relevant": false,
+    "segment": "cartographie",
+    "title_fr": "Mesures cadastrales de biens immobiliers à Vilnius (lot 22)",
+    "summary": "Accord-cadre de services de mesures, comptabilisation et évaluation cadastrales de biens immobiliers à Vilnius, lot 22.",
+    "why": "",
+    "industries": [
+     "foncier"
+    ],
+    "fit": "faible"
+   },
+   "analysed_at": "2026-11-06T08:21:31+01:00",
+   "analysis_model": "claude_cli:sonnet"
   },
   {
    "id": "ted:310709-2026",
@@ -49716,9 +50384,19 @@
    "description": "Nekilnojamojo turto objektų kadastrinių matavimų, apskaitos ir įkainojimo paslaugos",
    "status": "",
    "first_seen": "2026-10-27T09:30:17+01:00",
-   "analysis": {},
-   "analysed_at": "",
-   "analysis_model": ""
+   "analysis": {
+    "relevant": false,
+    "segment": "cartographie",
+    "title_fr": "Mesures cadastrales de biens immobiliers à Vilnius (lot 14)",
+    "summary": "Services de mesures, comptabilisation et évaluation cadastrales de biens immobiliers à Vilnius, lot 14.",
+    "why": "",
+    "industries": [
+     "foncier"
+    ],
+    "fit": "faible"
+   },
+   "analysed_at": "2026-11-06T08:21:31+01:00",
+   "analysis_model": "claude_cli:sonnet"
   },
   {
    "id": "ted:310693-2026",
@@ -49803,9 +50481,19 @@
    "description": "1. Przedmiotem zamówienia jest zaprojektowanie, wykonanie robót i pełnienie nadzoru autorskiego polegających na przebudowie istniejącej linii tramwajowej wraz z przebudową układu drogowego oraz przebudową lub budową infrastruktury towarzyszącej wszystkich branż oraz zieleni. Zakres przedsięwzięcia obejmuje wykonanie modernizacji torowiska o długości ok. 2,79 km toru pojedynczego wraz z infrastrukturą zasilającą i przystankową oraz niezbędną przebudową układu drogowego w ul. Srebrzyńskiej od ul. Ogrodowej do al. Włókniarzy wraz z połączeniem sieci tramwajowej w al. Włókniarzy. 2. Przedmiot…",
    "status": "",
    "first_seen": "2026-10-27T09:30:17+01:00",
-   "analysis": {},
-   "analysed_at": "",
-   "analysis_model": ""
+   "analysis": {
+    "relevant": false,
+    "segment": "cartographie",
+    "title_fr": "Modernisation de la ligne de tramway rue Srebrzyńska à Łódź",
+    "summary": "Conception et travaux de reconstruction d'une ligne de tramway de 2,79 km à Łódź, avec infrastructure d'alimentation et voirie associée.",
+    "why": "",
+    "industries": [
+     "infrastructures"
+    ],
+    "fit": "faible"
+   },
+   "analysed_at": "2026-11-06T08:21:31+01:00",
+   "analysis_model": "claude_cli:sonnet"
   },
   {
    "id": "ted:310465-2026",
@@ -49837,9 +50525,20 @@
    "description": "Se solicită prestarea de ,, Servicii de suport tehnic asupra soluției existente la ora actuală în Geoportalul INSPIRE APIA-MADR, de dezvoltare de aplicații, de consultanță și asistență tehnică specializată privind Geoportalul INSPIRE-MADR-APIA 2025” Strategia INSPIRE are ca scop susținerea implementării unei Infrastructuri pentru date spațiale (SDI) a României, conformă cu Directiva INSPIRE și Normele de implementare ale acesteia, care acoperă componentele tehnologice, precum și cadrul instituțional, legal și de guvernanță, fiind toate necesare pentru îmbunătățirea partajării și…",
    "status": "",
    "first_seen": "2026-10-27T09:30:17+01:00",
-   "analysis": {},
-   "analysed_at": "",
-   "analysis_model": ""
+   "analysis": {
+    "relevant": true,
+    "segment": "cartographie",
+    "title_fr": "Support technique du Géoportail INSPIRE agricole roumain (APIA-MADR)",
+    "summary": "Support technique, développement d'applications et assistance pour le Géoportail INSPIRE de l'agence roumaine des paiements agricoles, infrastructure nationale de données spatiales.",
+    "why": "Marché de services SIG/SDI remporté par ESRI, révèle la concurrence sur les plateformes géodonnées publiques agricoles.",
+    "industries": [
+     "agriculture",
+     "foncier"
+    ],
+    "fit": "moyenne"
+   },
+   "analysed_at": "2026-11-06T08:21:31+01:00",
+   "analysis_model": "claude_cli:sonnet"
   },
   {
    "id": "ted:310433-2026",
@@ -49868,9 +50567,19 @@
    "description": "Siekiant atnaujinti seniūnijų kadastrines bylas, reikalingi atnaujinti kadastriniai patalpų matavimai",
    "status": "",
    "first_seen": "2026-10-27T09:30:17+01:00",
-   "analysis": {},
-   "analysed_at": "",
-   "analysis_model": ""
+   "analysis": {
+    "relevant": false,
+    "segment": "cartographie",
+    "title_fr": "Mesures cadastrales de biens immobiliers à Vilnius (lot 21)",
+    "summary": "Services de mesures, comptabilisation et évaluation cadastrales pour actualiser les dossiers des mairies de quartier de Vilnius, lot 21.",
+    "why": "",
+    "industries": [
+     "foncier"
+    ],
+    "fit": "faible"
+   },
+   "analysed_at": "2026-11-06T08:21:31+01:00",
+   "analysis_model": "claude_cli:sonnet"
   },
   {
    "id": "ted:310293-2026",
@@ -49899,9 +50608,19 @@
    "description": "Nekilnojamojo turto objektų kadastrinių matavimų, apskaitos ir įkainojimo paslaugos (23 kv.). DPS atliekamuose konkrečiuose pirkimuose ekonomiškai naudingiausias pasiūlymas bus išrenkamas pagal kainos ir kokybės santykį.",
    "status": "",
    "first_seen": "2026-10-27T09:30:17+01:00",
-   "analysis": {},
-   "analysed_at": "",
-   "analysis_model": ""
+   "analysis": {
+    "relevant": false,
+    "segment": "cartographie",
+    "title_fr": "Mesures cadastrales de biens immobiliers à Vilnius (lot 23)",
+    "summary": "Accord-cadre de services de mesures, comptabilisation et évaluation cadastrales de biens immobiliers à Vilnius, lot 23.",
+    "why": "",
+    "industries": [
+     "foncier"
+    ],
+    "fit": "faible"
+   },
+   "analysed_at": "2026-11-06T08:21:31+01:00",
+   "analysis_model": "claude_cli:sonnet"
   },
   {
    "id": "ted:310222-2026",
@@ -49930,9 +50649,19 @@
    "description": "Nekilnojamojo turto objektų kadastrinių matavimų, apskaitos ir įkainojimo paslaugos (17 kv.). DPS atliekamuose konkrečiuose pirkimuose ekonomiškai naudingiausias pasiūlymas bus išrenkamas pagal kainos ir kokybės santykį.",
    "status": "",
    "first_seen": "2026-10-27T09:30:17+01:00",
-   "analysis": {},
-   "analysed_at": "",
-   "analysis_model": ""
+   "analysis": {
+    "relevant": false,
+    "segment": "cartographie",
+    "title_fr": "Mesures cadastrales de biens immobiliers à Vilnius (lot 17)",
+    "summary": "Accord-cadre de services de mesures, comptabilisation et évaluation cadastrales de biens immobiliers à Vilnius, lot 17.",
+    "why": "",
+    "industries": [
+     "foncier"
+    ],
+    "fit": "faible"
+   },
+   "analysed_at": "2026-11-06T08:21:31+01:00",
+   "analysis_model": "claude_cli:sonnet"
   },
   {
    "id": "ted:309898-2026",
@@ -49961,9 +50690,19 @@
    "description": "Nekilnojamojo turto objektų kadastrinių matavimų, apskaitos ir įkainojimo paslaugos (15 kv.). DPS atliekamuose konkrečiuose pirkimuose ekonomiškai naudingiausias pasiūlymas bus išrenkamas pagal kainos ir kokybės santykį.",
    "status": "",
    "first_seen": "2026-10-27T09:30:17+01:00",
-   "analysis": {},
-   "analysed_at": "",
-   "analysis_model": ""
+   "analysis": {
+    "relevant": false,
+    "segment": "cartographie",
+    "title_fr": "Mesures cadastrales de biens immobiliers à Vilnius (lot 15)",
+    "summary": "Accord-cadre de services de mesures, comptabilisation et évaluation cadastrales de biens immobiliers à Vilnius, lot 15.",
+    "why": "",
+    "industries": [
+     "foncier"
+    ],
+    "fit": "faible"
+   },
+   "analysed_at": "2026-11-06T08:21:31+01:00",
+   "analysis_model": "claude_cli:sonnet"
   },
   {
    "id": "ted:309722-2026",
@@ -49993,9 +50732,19 @@
    "description": "Lot 1 : PRESTATIONS DE RELEVES DE BATIMENTS Lot 2 : PRESTATIONS DE DETECTION DE RESEAUX ENTERRES Lot 3 : PRESTATIONS DE TOPOGRAPHE Lot 4 : PRESTATIONS DE GEOMETRE-EXPERT",
    "status": "",
    "first_seen": "2026-10-27T09:30:17+01:00",
-   "analysis": {},
-   "analysed_at": "",
-   "analysis_model": ""
+   "analysis": {
+    "relevant": false,
+    "segment": "cartographie",
+    "title_fr": "Relevés de bâtiments et prestations de géomètre pour un groupement hospitalier (France)",
+    "summary": "Prestations de relevés de bâtiments, détection de réseaux enterrés, topographie et géomètre-expert pour le GHT Est Hérault Sud Aveyron.",
+    "why": "",
+    "industries": [
+     "infrastructures"
+    ],
+    "fit": "faible"
+   },
+   "analysed_at": "2026-11-06T08:21:31+01:00",
+   "analysis_model": "claude_cli:sonnet"
   },
   {
    "id": "ted:309356-2026",
@@ -50024,9 +50773,19 @@
    "description": "Nekilnojamojo turto objektų kadastrinių matavimų, apskaitos ir įkainojimo paslaugos (24 kv.). DPS atliekamuose konkrečiuose pirkimuose ekonomiškai naudingiausias pasiūlymas bus išrenkamas pagal kainos ir kokybės santykį.",
    "status": "",
    "first_seen": "2026-10-27T09:30:17+01:00",
-   "analysis": {},
-   "analysed_at": "",
-   "analysis_model": ""
+   "analysis": {
+    "relevant": false,
+    "segment": "cartographie",
+    "title_fr": "Mesures cadastrales de biens immobiliers à Vilnius (lot 24)",
+    "summary": "Accord-cadre de services de mesures, comptabilisation et évaluation cadastrales de biens immobiliers à Vilnius, lot 24.",
+    "why": "",
+    "industries": [
+     "foncier"
+    ],
+    "fit": "faible"
+   },
+   "analysed_at": "2026-11-06T08:21:31+01:00",
+   "analysis_model": "claude_cli:sonnet"
   },
   {
    "id": "ted:309339-2026",
@@ -50055,9 +50814,19 @@
    "description": "Nekilnojamojo turto objektų kadastrinių matavimų, apskaitos ir įkainojimo paslaugos (12 kv.)",
    "status": "",
    "first_seen": "2026-10-27T09:30:17+01:00",
-   "analysis": {},
-   "analysed_at": "",
-   "analysis_model": ""
+   "analysis": {
+    "relevant": false,
+    "segment": "cartographie",
+    "title_fr": "Mesures cadastrales de biens immobiliers à Vilnius (lot 13)",
+    "summary": "Services de mesures, comptabilisation et évaluation cadastrales de biens immobiliers à Vilnius, lot 13.",
+    "why": "",
+    "industries": [
+     "foncier"
+    ],
+    "fit": "faible"
+   },
+   "analysed_at": "2026-11-06T08:21:31+01:00",
+   "analysis_model": "claude_cli:sonnet"
   },
   {
    "id": "ted:309169-2026",
@@ -50086,9 +50855,20 @@
    "description": "Adquisición de Licencias de uso",
    "status": "",
    "first_seen": "2026-10-27T09:30:17+01:00",
-   "analysis": {},
-   "analysed_at": "",
-   "analysis_model": ""
+   "analysis": {
+    "relevant": true,
+    "segment": "cartographie",
+    "title_fr": "Licences logicielles Intergraph pour l'Institut cartographique de Catalogne",
+    "summary": "Acquisition de droits d'utilisation de licences Intergraph par l'institut cartographique et géologique de Catalogne.",
+    "why": "Achat de logiciel SIG par une agence cartographique nationale, concurrent Hexagon/Intergraph.",
+    "industries": [
+     "foncier",
+     "infrastructures"
+    ],
+    "fit": "faible"
+   },
+   "analysed_at": "2026-11-06T08:21:31+01:00",
+   "analysis_model": "claude_cli:sonnet"
   },
   {
    "id": "ted:308859-2026",
@@ -50117,9 +50897,19 @@
    "description": "Nekilnojamojo turto objektų kadastrinių matavimų, apskaitos ir įkainojimo paslaugos",
    "status": "",
    "first_seen": "2026-10-27T09:30:17+01:00",
-   "analysis": {},
-   "analysed_at": "",
-   "analysis_model": ""
+   "analysis": {
+    "relevant": false,
+    "segment": "cartographie",
+    "title_fr": "Mesures cadastrales de biens immobiliers à Vilnius (lot 20)",
+    "summary": "Services de mesures, comptabilisation et évaluation cadastrales de biens immobiliers à Vilnius, lot 20.",
+    "why": "",
+    "industries": [
+     "foncier"
+    ],
+    "fit": "faible"
+   },
+   "analysed_at": "2026-11-06T08:21:31+01:00",
+   "analysis_model": "claude_cli:sonnet"
   },
   {
    "id": "ted:308662-2026",
@@ -50148,9 +50938,19 @@
    "description": "Nekilnojamojo turto objektų kadastrinių matavimų, apskaitos ir įkainojimo paslaugos (25 kv.). DPS atliekamuose konkrečiuose pirkimuose ekonomiškai naudingiausias pasiūlymas bus išrenkamas pagal kainos ir kokybės santykį.",
    "status": "",
    "first_seen": "2026-10-27T09:30:17+01:00",
-   "analysis": {},
-   "analysed_at": "",
-   "analysis_model": ""
+   "analysis": {
+    "relevant": false,
+    "segment": "cartographie",
+    "title_fr": "Mesures cadastrales de biens immobiliers à Vilnius (lot 25)",
+    "summary": "Accord-cadre de services de mesures, comptabilisation et évaluation cadastrales de biens immobiliers à Vilnius, lot 25.",
+    "why": "",
+    "industries": [
+     "foncier"
+    ],
+    "fit": "faible"
+   },
+   "analysed_at": "2026-11-06T08:21:31+01:00",
+   "analysis_model": "claude_cli:sonnet"
   },
   {
    "id": "ted:308555-2026",
@@ -50179,9 +50979,20 @@
    "description": "Servicii de cadastru pentru intabulare coridor de expropriere si intocmirea documentatiilor cadastrale individuale pentru toate imobilele situate pe coridorul de expropriere aferent obiectivului “Amenajarea Hidroenergetica a raului Olt defileu, pe sectorul Cornetu-Avrig” conform cerintelor caietului de sarcini. Entitatea contractanta raspunde la solicitarile de clarificare si/sau informatii suplimentare in a 11-a zi inainte de termenul limita de depunere a ofertelor.",
    "status": "",
    "first_seen": "2026-10-27T09:30:17+01:00",
-   "analysis": {},
-   "analysed_at": "",
-   "analysis_model": ""
+   "analysis": {
+    "relevant": false,
+    "segment": "cartographie",
+    "title_fr": "Services cadastraux pour un couloir d'expropriation hydroélectrique en Roumanie",
+    "summary": "Services de cadastre et documentation cadastrale individuelle pour les parcelles du couloir d'expropriation de l'aménagement hydroélectrique de l'Olt (Roumanie).",
+    "why": "",
+    "industries": [
+     "ogme",
+     "foncier"
+    ],
+    "fit": "faible"
+   },
+   "analysed_at": "2026-11-06T08:21:31+01:00",
+   "analysis_model": "claude_cli:sonnet"
   },
   {
    "id": "ted:308455-2026",
@@ -50210,9 +51021,19 @@
    "description": "Zajištění technické asistence kraji při správě datového obsahu DTM VYS, a to zejména přípravou a přepracováním stávajících geodetických měření do standardizované podoby Geodetických aktualizačních dokumentací jako vstupů pro aktualizaci a doplnění datového obsahu DTM VYS v souladu s platnou legislativou a metodickými předpisy DTM.",
    "status": "",
    "first_seen": "2026-10-27T09:30:17+01:00",
-   "analysis": {},
-   "analysed_at": "",
-   "analysis_model": ""
+   "analysis": {
+    "relevant": false,
+    "segment": "cartographie",
+    "title_fr": "Mise à jour de la carte technique numérique régionale de Vysočina (Tchéquie)",
+    "summary": "Assistance technique pour intégrer des mesures géodésiques standardisées dans la carte technique numérique régionale de Vysočina.",
+    "why": "",
+    "industries": [
+     "foncier"
+    ],
+    "fit": "faible"
+   },
+   "analysed_at": "2026-11-06T08:21:31+01:00",
+   "analysis_model": "claude_cli:sonnet"
   },
   {
    "id": "ted:308398-2026",
@@ -50241,9 +51062,19 @@
    "description": "Nekilnojamojo turto objektų kadastrinių matavimų, apskaitos ir įkainojimo paslaugos (18 kv.). DPS atliekamuose konkrečiuose pirkimuose ekonomiškai naudingiausias pasiūlymas bus išrenkamas pagal kainos ir kokybės santykį.",
    "status": "",
    "first_seen": "2026-10-27T09:30:17+01:00",
-   "analysis": {},
-   "analysed_at": "",
-   "analysis_model": ""
+   "analysis": {
+    "relevant": false,
+    "segment": "cartographie",
+    "title_fr": "Mesures cadastrales de biens immobiliers à Vilnius (lot 18)",
+    "summary": "Accord-cadre de services de mesures, comptabilisation et évaluation cadastrales de biens immobiliers à Vilnius, lot 18.",
+    "why": "",
+    "industries": [
+     "foncier"
+    ],
+    "fit": "faible"
+   },
+   "analysed_at": "2026-11-06T08:21:31+01:00",
+   "analysis_model": "claude_cli:sonnet"
   },
   {
    "id": "ted:306916-2026",
@@ -50272,9 +51103,20 @@
    "description": "De opdracht bestaat uit: • Levering, implementatie en configuratie van software voor de registratie en beheer van BGT/Imgeo objecten (Inwinnen, muteren en beheren van topografische objecten); • Levering van diverse koppelingen, waaronder minimaal met BAG en BOR; • Training en opleiding van medewerkers ten behoeve van gebruik van de nieuwe BGT-applicatie; • Hosting, onderhoud, updates/doorontwikkeling en ondersteuning van de applicatie (SAAS) • Eventueel maatwerk, doorontwikkeling en innovatie. Zie aanbestedingsstukken",
    "status": "",
    "first_seen": "2026-10-27T09:30:17+01:00",
-   "analysis": {},
-   "analysed_at": "",
-   "analysis_model": ""
+   "analysis": {
+    "relevant": true,
+    "segment": "cartographie",
+    "title_fr": "Logiciel de gestion de la base topographique à grande échelle (BGT) aux Pays-Bas",
+    "summary": "Fourniture, mise en œuvre et hébergement SaaS d'un logiciel de gestion des objets topographiques BGT/Imgeo pour une collectivité néerlandaise.",
+    "why": "Marché de logiciel de base topographique nationale, signal sur la gestion de données géographiques publiques.",
+    "industries": [
+     "foncier",
+     "infrastructures"
+    ],
+    "fit": "faible"
+   },
+   "analysed_at": "2026-11-06T08:21:31+01:00",
+   "analysis_model": "claude_cli:sonnet"
   },
   {
    "id": "ted:306497-2026",
@@ -50302,9 +51144,19 @@
    "description": "Les prestations foncières consistent à établir des procès-verbaux contradictoires de bornage (comprenant le document d'arpentage), la réalisation de plan avant-vente sur les zones d'activités intercommunales, la réalisation de bornages simples, des renseignements sur les propriétés, la production de documents techniques et/ou administratifs graphiques",
    "status": "",
    "first_seen": "2026-10-27T09:30:17+01:00",
-   "analysis": {},
-   "analysed_at": "",
-   "analysis_model": ""
+   "analysis": {
+    "relevant": false,
+    "segment": "cartographie",
+    "title_fr": "Prestations foncières de bornage pour une communauté de communes (France)",
+    "summary": "Procès-verbaux de bornage, plans avant-vente et renseignements fonciers pour la Communauté de communes Le Grésivaudan.",
+    "why": "",
+    "industries": [
+     "foncier"
+    ],
+    "fit": "faible"
+   },
+   "analysed_at": "2026-11-06T08:21:31+01:00",
+   "analysis_model": "claude_cli:sonnet"
   },
   {
    "id": "ted:306357-2026",
@@ -50333,9 +51185,20 @@
    "description": "Actualización y mejora de la distribución e información asociada de los Hábitats de Interés Comunitario en 2.590.000 hectáreas de la Superficie Forestal de Andalucía, basada en Inventariación de la Vegetación en campo y Fotointerpretación, a escala de gestión.",
    "status": "",
    "first_seen": "2026-10-27T09:30:17+01:00",
-   "analysis": {},
-   "analysed_at": "",
-   "analysis_model": ""
+   "analysis": {
+    "relevant": true,
+    "segment": "environnement_climat",
+    "title_fr": "Actualisation de la cartographie des habitats forestiers en Andalousie",
+    "summary": "Mise à jour de la cartographie des habitats d'intérêt communautaire sur 2,59 millions d'hectares de forêt en Andalousie, par inventaire de terrain et photo-interprétation.",
+    "why": "Suivi environnemental à grande échelle par photo-interprétation, usage où l'imagerie satellite peut appuyer l'analyse.",
+    "industries": [
+     "foret_environnement",
+     "agriculture"
+    ],
+    "fit": "moyenne"
+   },
+   "analysed_at": "2026-11-06T08:21:31+01:00",
+   "analysis_model": "claude_cli:sonnet"
   },
   {
    "id": "ted:306144-2026",
@@ -50364,9 +51227,19 @@
    "description": "DataWISE staat voor 'Datagedreven Werken Is Samen Efficiënter' en heeft als doel steden en gemeenten te helpen om slimmer en efficiënter met data te werken door gegevens beter te bundelen en toegankelijk te maken. Doelstellingen: Het opzetten van een gedeelde infrastructuur die het mogelijk maakt om gegevens te verzamelen, controleren, hergebruiken en beschikbaar te stellen op basis van bewezen ETL-technologie (Extract, Transform, Load). Het project omvat het uitwerken en implementeren van tien generieke gebruikstoepassingen binnen deze gedeelde infrastructuur. Drie werden reeds bepaald…",
    "status": "",
    "first_seen": "2026-10-27T09:30:17+01:00",
-   "analysis": {},
-   "analysed_at": "",
-   "analysis_model": ""
+   "analysis": {
+    "relevant": true,
+    "segment": "cartographie",
+    "title_fr": "Licences FME et conseil pour une infrastructure de données partagée (Belgique)",
+    "summary": "Accord-cadre pour licences FME, formations et conseil afin de bâtir une infrastructure mutualisée de gestion de données géographiques pour les communes de Flandre orientale.",
+    "why": "Investissement dans une infrastructure de données géographiques mutualisée, signal de marché SIG.",
+    "industries": [
+     "infrastructures"
+    ],
+    "fit": "faible"
+   },
+   "analysed_at": "2026-11-06T08:21:31+01:00",
+   "analysis_model": "claude_cli:sonnet"
   },
   {
    "id": "ted:305557-2026",
@@ -50393,9 +51266,20 @@
    "description": "Aktualizacja geodezyjnej inwentaryzacji powykonawczej w zakresie map zasadniczych na terenie działania Operatora Gazociągów Przesyłowych GAZ-SYSTEM S.A. Oddział Świerklany - w standardzie V-Mapa",
    "status": "",
    "first_seen": "2026-10-27T09:30:17+01:00",
-   "analysis": {},
-   "analysed_at": "",
-   "analysis_model": ""
+   "analysis": {
+    "relevant": false,
+    "segment": "cartographie",
+    "title_fr": "Actualisation de l'inventaire géodésique des cartes de base pour un opérateur gazier polonais",
+    "summary": "Mise à jour de l'inventaire géodésique post-travaux des cartes de base au standard V-Mapa sur le réseau de GAZ-SYSTEM (Pologne).",
+    "why": "",
+    "industries": [
+     "ogme",
+     "infrastructures"
+    ],
+    "fit": "faible"
+   },
+   "analysed_at": "2026-11-06T08:21:31+01:00",
+   "analysis_model": "claude_cli:sonnet"
   },
   {
    "id": "ted:305008-2026",
@@ -50427,9 +51311,20 @@
    "description": "Accord-cadre mono-attributaire exécuté par bons de commandes",
    "status": "",
    "first_seen": "2026-10-27T09:30:17+01:00",
-   "analysis": {},
-   "analysed_at": "",
-   "analysis_model": ""
+   "analysis": {
+    "relevant": false,
+    "segment": "cartographie",
+    "title_fr": "Accord-cadre de travaux topographiques et fonciers à Saint-Étienne",
+    "summary": "Accord-cadre mono-attributaire de prestations topographiques et foncières exécuté par bons de commande pour l'établissement public d'aménagement de Saint-Étienne.",
+    "why": "",
+    "industries": [
+     "foncier",
+     "infrastructures"
+    ],
+    "fit": "faible"
+   },
+   "analysed_at": "2026-11-06T08:21:31+01:00",
+   "analysis_model": "claude_cli:sonnet"
   },
   {
    "id": "ted:303370-2026",
@@ -50459,9 +51354,19 @@
    "description": "Amtliche Vermessung (AV93): Vermarkungsrevision/Ersterhebung Los 6 (ca. 400 ha, detaillierte Beschreibung siehe Ausschreibungsunterlagen)",
    "status": "",
    "first_seen": "2026-10-27T09:30:17+01:00",
-   "analysis": {},
-   "analysed_at": "",
-   "analysis_model": ""
+   "analysis": {
+    "relevant": false,
+    "segment": "cartographie",
+    "title_fr": "Révision cadastrale officielle – Gerzensee, lot 6",
+    "summary": "Révision ou première levée de la mensuration officielle du lot 6 (environ 400 ha) à Gerzensee, Suisse.",
+    "why": "",
+    "industries": [
+     "foncier"
+    ],
+    "fit": "faible"
+   },
+   "analysed_at": "2026-11-06T08:21:31+01:00",
+   "analysis_model": "claude_cli:sonnet"
   },
   {
    "id": "ted:303001-2026",
@@ -50491,9 +51396,19 @@
    "description": "* Vermarkungsrevision/Ersterhebung Los 13A (ca. 384 ha, detaillierte Beschreibung siehe Ausschreibungsunterlagen) * Erneuerung Los 13B (ca. 41 ha, detaillierte Beschreibung siehe Ausschreibungsunterlagen)",
    "status": "",
    "first_seen": "2026-10-27T09:30:17+01:00",
-   "analysis": {},
-   "analysed_at": "",
-   "analysis_model": ""
+   "analysis": {
+    "relevant": false,
+    "segment": "cartographie",
+    "title_fr": "Mensuration officielle – Belp, lot 13",
+    "summary": "Révision/première levée (lot 13A, ~384 ha) et renouvellement (lot 13B, ~41 ha) de la mensuration officielle à Belp, Suisse.",
+    "why": "",
+    "industries": [
+     "foncier"
+    ],
+    "fit": "faible"
+   },
+   "analysed_at": "2026-11-06T08:21:31+01:00",
+   "analysis_model": "claude_cli:sonnet"
   },
   {
    "id": "ted:302620-2026",
@@ -50522,9 +51437,19 @@
    "description": "Předmětem VZ je pořízení technického zhodnocení programového vybavení geografického informačního systému MISYS MO.",
    "status": "",
    "first_seen": "2026-10-27T09:30:17+01:00",
-   "analysis": {},
-   "analysed_at": "",
-   "analysis_model": ""
+   "analysis": {
+    "relevant": true,
+    "segment": "cartographie",
+    "title_fr": "Modernisation du logiciel SIG militaire MISYS MO",
+    "summary": "Mise à niveau technique du système d'information géographique MISYS MO pour le ministère de la Défense tchèque.",
+    "why": "Signal d'investissement en SIG défense, marché remporté par un concurrent local, pas d'achat direct de données Airbus.",
+    "industries": [
+     "defense"
+    ],
+    "fit": "faible"
+   },
+   "analysed_at": "2026-11-06T08:21:31+01:00",
+   "analysis_model": "claude_cli:sonnet"
   },
   {
    "id": "ted:302380-2026",
@@ -50554,9 +51479,19 @@
    "description": "Vermarkungsrevision/Ersterhebung Los 6 (ca. 1352 ha, detaillierte Beschreibung siehe Ausschreibungsunterlagen)",
    "status": "",
    "first_seen": "2026-10-27T09:30:17+01:00",
-   "analysis": {},
-   "analysed_at": "",
-   "analysis_model": ""
+   "analysis": {
+    "relevant": false,
+    "segment": "cartographie",
+    "title_fr": "Mensuration officielle – Rüegsau, lot 6",
+    "summary": "Révision ou première levée de la mensuration officielle du lot 6 (environ 1 352 ha) à Rüegsau, Suisse.",
+    "why": "",
+    "industries": [
+     "foncier"
+    ],
+    "fit": "faible"
+   },
+   "analysed_at": "2026-11-06T08:21:31+01:00",
+   "analysis_model": "claude_cli:sonnet"
   },
   {
    "id": "ted:302115-2026",
@@ -50583,9 +51518,19 @@
    "description": "Marché cartographie Natura2000 des habitats naturels terrestres - ZSC Estuaire de la Seine",
    "status": "",
    "first_seen": "2026-10-27T09:30:17+01:00",
-   "analysis": {},
-   "analysed_at": "",
-   "analysis_model": ""
+   "analysis": {
+    "relevant": true,
+    "segment": "environnement_climat",
+    "title_fr": "Cartographie Natura 2000 des habitats naturels – estuaire de la Seine",
+    "summary": "Cartographie des habitats naturels terrestres de la zone Natura 2000 de l'estuaire de la Seine, pour la DREAL Normandie, France.",
+    "why": "Suivi des habitats naturels pouvant s'appuyer sur de l'imagerie satellite, accessible à Airbus via un partenaire.",
+    "industries": [
+     "foret_environnement"
+    ],
+    "fit": "moyenne"
+   },
+   "analysed_at": "2026-11-06T08:21:31+01:00",
+   "analysis_model": "claude_cli:sonnet"
   },
   {
    "id": "ted:301196-2026",
@@ -50618,9 +51563,19 @@
    "description": "Dynamisk indkøbssystem til indkøb af in house-konsulenter til at bistå Vejdirektoratet med at løse opgaver indenfor de fem kategorier: A: Arealerhvervelse, B: GIS, C: CAD, D: Kortlægning og E: Ledninger.",
    "status": "",
    "first_seen": "2026-10-27T09:30:17+01:00",
-   "analysis": {},
-   "analysed_at": "",
-   "analysis_model": ""
+   "analysis": {
+    "relevant": false,
+    "segment": "cartographie",
+    "title_fr": "Accord-cadre de consultants in-house (foncier, SIG, CAO, cartographie, réseaux)",
+    "summary": "Système d'achat dynamique de consultants internes pour l'acquisition foncière, le SIG, la CAO, la cartographie et les réseaux souterrains, pour l'administration routière danoise.",
+    "why": "Cadre de consultance générale incluant du SIG, sans achat direct de données géospatiales par Airbus.",
+    "industries": [
+     "infrastructures"
+    ],
+    "fit": "faible"
+   },
+   "analysed_at": "2026-11-06T08:21:31+01:00",
+   "analysis_model": "claude_cli:sonnet"
   },
   {
    "id": "ted:298707-2026",
@@ -50687,9 +51642,19 @@
    "description": "1. Przedmiotem zamówienia jest wykonanie dokumentacji projektowej budowlano-wykonawczej oraz robót budowlano-montażowych w formule zaprojektuj i wybuduj, na podstawie, której możliwa będzie realizacja budowy zarówno pod względem formalno-prawnym jak i technicznym oraz wykonanie robót zgodnie z tą dokumentacją projektową dla za-dania GPZ Młode Miasto – wymiana transformatorów WN/SN. 1.1. Zakres robót budowlano-montażowych obejmuje: 1.1.1. wymianę dwóch transformatorów WN/SN na jednostki o mocy 50 MVA, 1.1.2. wymianę mostów kablowych SN, 1.1.3. dostosowanie rozdzielnicy SN do zwiększenia…",
    "status": "",
    "first_seen": "2026-10-27T09:30:17+01:00",
-   "analysis": {},
-   "analysed_at": "",
-   "analysis_model": ""
+   "analysis": {
+    "relevant": false,
+    "segment": "cartographie",
+    "title_fr": "Conception et travaux - remplacement de transformateurs au poste GPZ Młode Miasto",
+    "summary": "Conception et réalisation de travaux de génie civil pour le remplacement de transformateurs haute/moyenne tension au poste électrique de Młode Miasto, Pologne.",
+    "why": "",
+    "industries": [
+     "infrastructures"
+    ],
+    "fit": "faible"
+   },
+   "analysed_at": "2026-11-06T08:21:31+01:00",
+   "analysis_model": "claude_cli:sonnet"
   },
   {
    "id": "ted:298537-2026",
@@ -50770,9 +51735,19 @@
    "description": "Przedmiotem zamówienia pod nazwą „Budowa pola liniowego 110 kV związanego z niezbędną rozbudową GPZ Świebodzin Sobieskiego” jest projekt i budowa w zakresie: - rozbiórka istniejącego budynku technicznego GPZ Sobieskiego wraz z wyposażeniem, - demontaż stanowisk transformatorów 110/15 kV, - demontaż napowietrznej rozdzielni 110 kV, - demontaż stanowisk napowietrznych ZU i BKR, - demontaż złącz kablowych ZKSN, - demontaż oświetlenia zewnętrznego, - demontaż masztów ochrony odgromowej, - przebudowa wyprowadzeń liniowych 110 kV, - przebudowa wyprowadzeń liniowych 15 kV, - przebudowa dróg…",
    "status": "",
    "first_seen": "2026-10-27T09:30:17+01:00",
-   "analysis": {},
-   "analysed_at": "",
-   "analysis_model": ""
+   "analysis": {
+    "relevant": false,
+    "segment": "cartographie",
+    "title_fr": "Construction d'une travée 110 kV au poste GPZ Sobieskiego",
+    "summary": "Conception et construction d'une travée électrique 110 kV liée à l'extension du poste de Świebodzin Sobieskiego, Pologne.",
+    "why": "",
+    "industries": [
+     "infrastructures"
+    ],
+    "fit": "faible"
+   },
+   "analysed_at": "2026-11-06T08:21:31+01:00",
+   "analysis_model": "claude_cli:sonnet"
   },
   {
    "id": "ted:297839-2026",
@@ -50839,9 +51814,19 @@
    "description": "1. Przedmiotem zamówienia jest wykonanie dokumentacji projektowej budowlano-wykonawczej oraz robót budowlano-montażowych w formule zaprojektuj i wybuduj, na podstawie której możliwa będzie realizacja budowy zarówno pod względem formalno-prawnym, jak i technicznym oraz wykonanie robót zgodnie z tą dokumentacją projektową dla przebudowy stacji wraz z wymianą transformatorów WN/SN w GPZ Lotnisko. Zakres prac budowlano-montażowych obejmuje: 1.1. wymianę dwóch transformatorów WN/SN na jednostki o mocy 31,5 MVA (w tym: zakup, dostawa, posadowienie i montaż), 1.2. wymianę mostów kablowych SN, 1.3…",
    "status": "",
    "first_seen": "2026-10-27T09:30:17+01:00",
-   "analysis": {},
-   "analysed_at": "",
-   "analysis_model": ""
+   "analysis": {
+    "relevant": false,
+    "segment": "cartographie",
+    "title_fr": "Reconstruction du poste GPZ Lotnisko avec remplacement de transformateurs",
+    "summary": "Conception et travaux de reconstruction du poste électrique Lotnisko avec remplacement de deux transformateurs haute/moyenne tension, Pologne.",
+    "why": "",
+    "industries": [
+     "infrastructures"
+    ],
+    "fit": "faible"
+   },
+   "analysed_at": "2026-11-06T08:21:31+01:00",
+   "analysis_model": "claude_cli:sonnet"
   },
   {
    "id": "ted:297729-2026",
@@ -50875,9 +51860,19 @@
    "description": "Zakres prac: 1. Wykonanie dla jednostki ewidencyjnej lub poszczególnych obrębów ewidencyjnych modernizacji ewidencji gruntów i budynków poprzez utworzenie cyfrowych baz danych EGiB lub poprawę jakości i aktualności baz danych EGiB, wraz z doprowadzeniem tych baz do zgodności z pojęciowym modelem danych EGiB, określonym w załączniku nr 6 do rozporządzeniu Ministra Rozwoju Pracy i Technologii z dnia 27 lipca 2021 r. w sprawie ewidencji gruntów i budynków (Dz. U. z 2024 r. poz. 219), zwanego dalej „rozporządzeniem w sprawie EGiB”, 2. Utworzenie dla jednostki ewidencyjnej lub poszczególnych…",
    "status": "",
    "first_seen": "2026-10-27T09:30:17+01:00",
-   "analysis": {},
-   "analysed_at": "",
-   "analysis_model": ""
+   "analysis": {
+    "relevant": false,
+    "segment": "cartographie",
+    "title_fr": "Modernisation des bases cadastrales EGiB, BDOT500, GESUT - voïvodie de Lublin",
+    "summary": "Création et mise à jour des bases de données cadastrales et topographiques (EGiB, BDOT500, GESUT) dans le cadre du projet e-Geodezja II, Pologne.",
+    "why": "",
+    "industries": [
+     "foncier"
+    ],
+    "fit": "faible"
+   },
+   "analysed_at": "2026-11-06T08:21:31+01:00",
+   "analysis_model": "claude_cli:sonnet"
   },
   {
    "id": "ted:297687-2026",
@@ -50904,9 +51899,19 @@
    "description": "Fourniture de Cartes Militaires & bases de données format ARINC 424 pour simulateurs de vols",
    "status": "",
    "first_seen": "2026-10-27T09:30:17+01:00",
-   "analysis": {},
-   "analysed_at": "",
-   "analysis_model": ""
+   "analysis": {
+    "relevant": true,
+    "segment": "cartographie",
+    "title_fr": "Fourniture de cartes militaires et bases de données ARINC 424 pour simulateurs de vol",
+    "summary": "Achat de cartes militaires et de bases de données de navigation au format ARINC 424 destinées aux simulateurs de vol, pour l'École nationale de l'aviation civile, France.",
+    "why": "Besoin de données aéronautiques/cartographiques hors cœur d'offre imagerie Airbus, marché de niche navigation.",
+    "industries": [
+     "defense"
+    ],
+    "fit": "faible"
+   },
+   "analysed_at": "2026-11-06T08:21:31+01:00",
+   "analysis_model": "claude_cli:sonnet"
   },
   {
    "id": "ted:296513-2026",
@@ -50942,9 +51947,19 @@
    "description": "Pełna nazwa zamówienia: Opracowanie dokumentacji projektowych i innych, uzyskanie uzgodnień, opinii i decyzji w tym decyzji o zezwoleniu na realizację inwestycji drogowej z rygorem natychmiastowej wykonalności dla zadania pn.: „Rozbudowa i budowa drogi wojewódzkiej nr 988 Babica-Strzyżów-Wiśniowa-Frysztak-Warzyce na odcinku od m. Dobrzechów do m. Twierdza wraz z rozbiórką, budową i przebudową niezbędnej infrastruktury technicznej, budowli i urządzeń budowlanych”. W/w nazwy należy używać na każdym etapie prowadzonego postępowania. Z uwagi na możliwość wpisania ograniczonej liczby znaków na…",
    "status": "",
    "first_seen": "2026-10-27T09:30:17+01:00",
-   "analysis": {},
-   "analysed_at": "",
-   "analysis_model": ""
+   "analysis": {
+    "relevant": false,
+    "segment": "cartographie",
+    "title_fr": "Études de conception pour l'aménagement de la route voïvodale 988",
+    "summary": "Élaboration de la documentation de conception, autorisations et études associées pour l'aménagement de la route voïvodale 988 en Pologne, incluant des prestations d'arpentage.",
+    "why": "",
+    "industries": [
+     "infrastructures"
+    ],
+    "fit": "faible"
+   },
+   "analysed_at": "2026-11-06T08:21:31+01:00",
+   "analysis_model": "claude_cli:sonnet"
   }
  ]
 }
