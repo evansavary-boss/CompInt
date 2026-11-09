@@ -33,14 +33,14 @@
    "ZAR": 18.4649
   }
  },
- "updated_at": "2026-11-08T08:07:55+01:00",
+ "updated_at": "2026-11-09T08:31:44+01:00",
  "sources": [
   {
    "name": "TED",
    "url": "https://api.ted.europa.eu/v3/notices/search",
    "ok": true,
    "error": "",
-   "fetched": 32,
+   "fetched": 31,
    "kept": 24,
    "via": "tender"
   },
@@ -49,20 +49,20 @@
    "url": "https://www.find-tender.service.gov.uk/api/1.0/ocdsReleasePackages",
    "ok": true,
    "error": "",
-   "fetched": 478,
-   "kept": 3,
+   "fetched": 7,
+   "kept": 0,
    "via": "tender"
   }
  ],
  "last_run": {
-  "new": 0,
+  "new": 10,
   "sources": [
    {
     "name": "TED",
     "url": "https://api.ted.europa.eu/v3/notices/search",
     "ok": true,
     "error": "",
-    "fetched": 32,
+    "fetched": 31,
     "kept": 24,
     "via": "tender"
    },
@@ -71,21 +71,463 @@
     "url": "https://www.find-tender.service.gov.uk/api/1.0/ocdsReleasePackages",
     "ok": true,
     "error": "",
-    "fetched": 478,
-    "kept": 3,
+    "fetched": 7,
+    "kept": 0,
     "via": "tender"
    }
   ],
   "analysis": {
-   "analysed": 0,
-   "relevant": 0,
+   "analysed": 10,
+   "relevant": 6,
    "error": "",
-   "cost_usd": null
+   "cost_usd": 0.1494
   },
   "pruned": 0
  },
- "fts_synced_until": "2026-11-08T07:00:00",
+ "fts_synced_until": "2026-11-09T07:00:00",
  "tenders": [
+  {
+   "id": "ted:779164-2026",
+   "source": "ted",
+   "kind": "award",
+   "notice": "779164-2026",
+   "notice_type": "veat",
+   "title": "Esri Enterprise Agreement 2027-2029",
+   "buyer": "Land Niederösterreich, p.A. Amt der NÖ-Landesregierung",
+   "buyer_country": "AT",
+   "published": "2026-11-09",
+   "url": "https://ted.europa.eu/fr/notice/-/detail/779164-2026",
+   "cpv_label": "Systèmes d'information géographique (GIS ou équivalent)",
+   "countries": [
+    "AT"
+   ],
+   "cpv": [
+    "38221000"
+   ],
+   "deadline": "",
+   "value": null,
+   "currency": "",
+   "winners": [],
+   "description": "Vergeben wird ein Rahmenvertrag an die Syner GIS Informationssysteme GmbH über ein Esri Enterprise Agreement für die Jahre 2027-2029 (Wartung und Lizenzen). Die Geodateninfrastruktur des Landes Niederösterreich wurde 1992 auf Basis von ESRI-Technologie aufgebaut. Es sollen in den nächsten drei Jahren Systembrüche und Datenverluste vermieden werden und eine EU-weite Ausschreibung für den Zeitraum ab 2030 vorbereitet werden.",
+   "status": "",
+   "first_seen": "2026-11-09T08:31:44+01:00",
+   "analysis": {
+    "relevant": true,
+    "segment": "cartographie",
+    "title_fr": "Contrat-cadre Esri 2027-2029 pour la Basse-Autriche",
+    "summary": "Attribution d'un accord Esri Enterprise (licences et maintenance) à Syner GIS pour l'infrastructure de données géospatiales du Land, pour la période 2027-2029.",
+    "why": "Attribution à un concurrent SIG (Esri/Syner GIS), signal de marché pour la cartographie régionale.",
+    "industries": [
+     "infrastructures"
+    ],
+    "fit": "faible"
+   },
+   "analysed_at": "2026-11-09T08:31:44+01:00",
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "ted:778889-2026",
+   "source": "ted",
+   "kind": "open",
+   "notice": "778889-2026",
+   "notice_type": "cn-standard",
+   "title": "Elaborarea Planurilor de management pentru ariile naturale protejate ROSCI0075 (incluzand rezervatiile naturale 2.721. Padurea Crujana si 2.726. Fagetul Dragomirna), ROSCI0184 (incluzand rezervatia naturala 2.727. Padurea Zamostea-Lunca), ROSCI0328 (incluzand rez. naturale B8. Padurea Rososa si B9. Codrul Secular Loben), ROSCI0371, ROSCI0379, ROSCI0380, ROSCI0392, ROSPA0157” - Cod SMIS 2021+321179",
+   "buyer": "AGENȚIA NAȚIONALĂ PENTRU MEDIU ȘI ARII PROTEJATE",
+   "buyer_country": "RO",
+   "published": "2026-11-09",
+   "url": "https://ted.europa.eu/fr/notice/-/detail/778889-2026",
+   "cpv_label": "Services de conception d'études",
+   "countries": [
+    "RO"
+   ],
+   "cpv": [
+    "79311100",
+    "22114300",
+    "30221000",
+    "39294100",
+    "55520000",
+    "71222200",
+    "71354100",
+    "71354300",
+    "72320000",
+    "72413000",
+    "72500000",
+    "79800000",
+    "79810000",
+    "79823000",
+    "79951000",
+    "79960000",
+    "90711400",
+    "90712400",
+    "92111250"
+   ],
+   "deadline": "2026-12-07",
+   "value": 18071520.0,
+   "currency": "RON",
+   "winners": [],
+   "description": "Obiectul contractului il constituie prestarea de servicii de elaborare planuri de management si de informare si publicitate in cadrul proiectului „Elaborarea Planurilor de management pentru ariile naturale protejate ROSCI0075 (incluzand rezervatiile naturale 2.721. Padurea Crujana si 2.726. Fagetul Dragomirna), ROSCI0184 (incluzand rezervatia naturala 2.727. Padurea Zamostea-Lunca), ROSCI0328 (incluzand rezervatiile naturale B8. Padurea Rososa si B9. Codrul Secular Loben), ROSCI0371, ROSCI0379, ROSCI0380, ROSCI0392, ROSPA0157” - Cod SMIS 2021+321179. In cadrul contractului se vor implementa…",
+   "status": "",
+   "first_seen": "2026-11-09T08:31:44+01:00",
+   "analysis": {
+    "relevant": true,
+    "segment": "environnement_climat",
+    "title_fr": "Plans de gestion de zones naturelles protégées (Natura 2000)",
+    "summary": "Élaboration de plans de gestion pour plusieurs sites Natura 2000 et réserves naturelles roumaines, avec actions d'information et de publicité associées.",
+    "why": "Plans de gestion environnementale pouvant intégrer cartographie et suivi par imagerie.",
+    "industries": [
+     "foret_environnement"
+    ],
+    "fit": "faible"
+   },
+   "analysed_at": "2026-11-09T08:31:44+01:00",
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "ted:778857-2026",
+   "source": "ted",
+   "kind": "open",
+   "notice": "778857-2026",
+   "notice_type": "cn-standard",
+   "title": "Nowoczesne zarządzanie krajobrazem i infrastrukturą drogową poprzez inwentaryzację zasobów i budowę baz danych przestrzennych oraz uruchomienie nowych e-usług w mieście Zduńska Wola",
+   "buyer": "Miasto Zduńska Wola",
+   "buyer_country": "PL",
+   "published": "2026-11-09",
+   "url": "https://ted.europa.eu/fr/notice/-/detail/778857-2026",
+   "cpv_label": "Services de technologies de l'information, conseil, développement de logiciels, internet et appui",
+   "countries": [
+    "PL"
+   ],
+   "cpv": [
+    "72000000",
+    "72300000",
+    "72400000",
+    "72200000",
+    "38221000",
+    "48000000"
+   ],
+   "deadline": "2026-11-23",
+   "value": null,
+   "currency": "",
+   "winners": [],
+   "description": "1. Przedmiotem zamówienia jest przeprowadzenie inwentaryzacji zasobów przestrzennych wraz z budową baz danych oraz uruchomienie e-usług publicznych w celu zwiększenie jakości zarządzania infrastrukturą drogową i krajobrazem miasta Zduńska Wola. 2. Szczegółowy opis przedmiotu zamówienia stanowi załącznik nr 5 do SWZ.",
+   "status": "",
+   "first_seen": "2026-11-09T08:31:44+01:00",
+   "analysis": {
+    "relevant": true,
+    "segment": "cartographie",
+    "title_fr": "Inventaire géospatial et e-services pour Zduńska Wola",
+    "summary": "Inventaire des ressources spatiales, création de bases de données géospatiales et lancement d'e-services pour la gestion du paysage et du réseau routier de la ville.",
+    "why": "Besoin de bases de données géospatiales municipales, marché accessible en cartographie/SIG.",
+    "industries": [
+     "infrastructures",
+     "foncier"
+    ],
+    "fit": "faible"
+   },
+   "analysed_at": "2026-11-09T08:31:44+01:00",
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "ted:778557-2026",
+   "source": "ted",
+   "kind": "planned",
+   "notice": "778557-2026",
+   "notice_type": "pin-only",
+   "title": "Ģeotelpisko datu apstrādes un kartogrāfijas pakalpojumi Rīgas vēsturiskā centra un tā aizsardzības zonas teritorijas plānojuma izstrādei",
+   "buyer": "Rīgas valstspilsētas pašvaldības Pilsētas attīstības departaments",
+   "buyer_country": "LV",
+   "published": "2026-11-09",
+   "url": "https://ted.europa.eu/fr/notice/-/detail/778557-2026",
+   "cpv_label": "Services d'urbanisme",
+   "countries": [
+    "LV"
+   ],
+   "cpv": [
+    "71410000",
+    "73300000",
+    "71354000"
+   ],
+   "deadline": "",
+   "value": null,
+   "currency": "",
+   "winners": [],
+   "description": "Ģeotelpisko datu apstrādes un kartogrāfijas pakalpojumi Rīgas vēsturiskā centra un tā aizsardzības zonas teritorijas plānojuma izstrādei",
+   "status": "",
+   "first_seen": "2026-11-09T08:31:44+01:00",
+   "analysis": {
+    "relevant": true,
+    "segment": "cartographie",
+    "title_fr": "Traitement de données géospatiales pour le plan du centre historique de Riga",
+    "summary": "Préinformation sur des services de traitement de données géospatiales et de cartographie pour l'élaboration du plan d'aménagement du centre historique de Riga et de sa zone de protection.",
+    "why": "Marché de cartographie/géodonnées pour l'urbanisme, accessible en partenariat.",
+    "industries": [
+     "infrastructures",
+     "foncier"
+    ],
+    "fit": "moyenne"
+   },
+   "analysed_at": "2026-11-09T08:31:44+01:00",
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "ted:778387-2026",
+   "source": "ted",
+   "kind": "open",
+   "notice": "778387-2026",
+   "notice_type": "cn-standard",
+   "title": "Geofysisch onderzoek Maasbodem",
+   "buyer": "Rijkswaterstaat Centrale Informatievoorziening",
+   "buyer_country": "NL",
+   "published": "2026-11-09",
+   "url": "https://ted.europa.eu/fr/notice/-/detail/778387-2026",
+   "cpv_label": "Services de géologie",
+   "countries": [
+    "NL"
+   ],
+   "cpv": [
+    "71351910",
+    "71351500",
+    "71351730",
+    "71353000",
+    "71354100",
+    "71621000"
+   ],
+   "deadline": "2027-01-15",
+   "value": null,
+   "currency": "",
+   "winners": [],
+   "description": "Zie aanbestedingsdocumenten 1",
+   "status": "",
+   "first_seen": "2026-11-09T08:31:44+01:00",
+   "analysis": {
+    "relevant": false,
+    "segment": "environnement_climat",
+    "title_fr": "Étude géophysique du fond de la Meuse",
+    "summary": "Levé géophysique du lit de la Meuse destiné à caractériser la géologie du fond du fleuve.",
+    "why": "",
+    "industries": [
+     "infrastructures"
+    ],
+    "fit": "faible"
+   },
+   "analysed_at": "2026-11-09T08:31:44+01:00",
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "ted:777609-2026",
+   "source": "ted",
+   "kind": "open",
+   "notice": "777609-2026",
+   "notice_type": "cn-standard",
+   "title": "Consultancy Services for Machaire Rabhartaigh Harbour Tidal Access Restriction Study",
+   "buyer": "Donegal County Council_1193",
+   "buyer_country": "IE",
+   "published": "2026-11-09",
+   "url": "https://ted.europa.eu/fr/notice/-/detail/777609-2026",
+   "cpv_label": "Services d'appui de base maritimes",
+   "countries": [
+    "IE"
+   ],
+   "cpv": [
+    "98362100",
+    "98360000",
+    "98361000",
+    "73112000",
+    "71354500",
+    "71351920",
+    "71353100",
+    "71354400",
+    "71351900"
+   ],
+   "deadline": "2026-12-11",
+   "value": null,
+   "currency": "",
+   "winners": [],
+   "description": "Donegal County Council invites tenders for the appointment of a suitably qualified environmental and marine engineering consultant with a strong background in coastal morphology to review the tidal access restriction on the approach to Machaire Rabhartaigh harbour and assess whether or not this restriction can be removed without adversely impacting the coastal morphology to create a channel with a water depth of between 3m and 4m below Chart Datum",
+   "status": "",
+   "first_seen": "2026-11-09T08:31:44+01:00",
+   "analysis": {
+    "relevant": false,
+    "segment": "environnement_climat",
+    "title_fr": "Étude d'accès par marée au port de Machaire Rabhartaigh",
+    "summary": "Étude environnementale et d'ingénierie maritime visant à évaluer la suppression d'une restriction d'accès par marée pour créer un chenal de 3 à 4 m.",
+    "why": "",
+    "industries": [
+     "maritime"
+    ],
+    "fit": "faible"
+   },
+   "analysed_at": "2026-11-09T08:31:44+01:00",
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "ted:776632-2026",
+   "source": "ted",
+   "kind": "open",
+   "notice": "776632-2026",
+   "notice_type": "cn-standard",
+   "title": "Servicii de amenajare a padurilor-OS.Traian 2026 DSBC",
+   "buyer": "REGIA NATIONALA A PADURILOR - ROMSILVA RA Directia Silvica Bacau",
+   "buyer_country": "RO",
+   "published": "2026-11-09",
+   "url": "https://ted.europa.eu/fr/notice/-/detail/776632-2026",
+   "cpv_label": "Services de conception d'études",
+   "countries": [
+    "RO"
+   ],
+   "cpv": [
+    "79311100",
+    "71354100",
+    "77230000",
+    "77231400",
+    "90711000"
+   ],
+   "deadline": "2026-12-14",
+   "value": 1564687.08,
+   "currency": "RON",
+   "winners": [],
+   "description": "Serviciile de amenajare a pădurilor se vor atribui în anul 2026 (faza teren 2027) prin încheierea unui contract de achiziție publică pentru Ocolul Silvic Traian. Suprafața totala a Ocolului Silvic Traian este de 9823.50 ha. Serviciile presupun elaborarea amenajamentului silvic, un produs al activităţii de amenajare cu conţinut tehnico-organizatoric, fundamentat ecologic, prin care se stabilesc, pentru o perioadă de timp, lucrările necesare a fi executate într-o unitate de producţie, în scopul aducerii şi, ulterior, al menţinerii caracteristicilor structurale ale arboretelor şi ale pădurii în…",
+   "status": "",
+   "first_seen": "2026-11-09T08:31:44+01:00",
+   "analysis": {
+    "relevant": true,
+    "segment": "environnement_climat",
+    "title_fr": "Aménagement forestier de l'Ocolul Silvic Traian",
+    "summary": "Élaboration du plan d'aménagement forestier pour 9 823,5 ha de forêt publique, phase terrain prévue en 2027.",
+    "why": "Cartographie et inventaire forestier pouvant mobiliser des données de télédétection.",
+    "industries": [
+     "foret_environnement"
+    ],
+    "fit": "faible"
+   },
+   "analysed_at": "2026-11-09T08:31:44+01:00",
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "ted:776149-2026",
+   "source": "ted",
+   "kind": "open",
+   "notice": "776149-2026",
+   "notice_type": "cn-standard",
+   "title": "Servicii de amenajarea padurilor DS-VN",
+   "buyer": "REGIA NATIONALA A PADURILOR - ROMSILVA RA prin DIRECTIA SILVICA VRANCEA",
+   "buyer_country": "RO",
+   "published": "2026-11-09",
+   "url": "https://ted.europa.eu/fr/notice/-/detail/776149-2026",
+   "cpv_label": "Services de conception d'études",
+   "countries": [
+    "RO"
+   ],
+   "cpv": [
+    "79311100",
+    "79311000",
+    "71354100",
+    "77230000",
+    "77231400",
+    "90711000"
+   ],
+   "deadline": "2026-11-18",
+   "value": 2363088.0,
+   "currency": "RON",
+   "winners": [],
+   "description": "Serviciile de realizare a amenajamentelor silvice pentru fondul forestier proprietate publică a statului administrat de Regia Națională a Pădurilor - Romsilva prin Direcția Silvică Vrancea, în anul 2027,pentru suprafața totală de 10168,12 ha, dupa cum urmeaza Ocolul Silvic Panciu-Valea Caregnei - 9040,22 ha si Ocolul silvic Soveja - 1127,90 ha. Se pot solicita clarificari privind documentatia de atribuire inainte de data limita de depunere a ofertelor, astfel: cel tarziu in a 15 - a zi înainte de termenul limită stabilit pentru depunerea ofertelor in anuntul de participare. Autoritatea…",
+   "status": "",
+   "first_seen": "2026-11-09T08:31:44+01:00",
+   "analysis": {
+    "relevant": true,
+    "segment": "environnement_climat",
+    "title_fr": "Aménagement forestier de la Direction Silvique Vrancea",
+    "summary": "Élaboration de plans d'aménagement forestier pour 10 168 ha de forêts publiques (Panciu-Valea Caregnei et Soveja) pour l'année 2027.",
+    "why": "Inventaire forestier pouvant s'appuyer sur de l'imagerie satellite ou de la télédétection.",
+    "industries": [
+     "foret_environnement"
+    ],
+    "fit": "faible"
+   },
+   "analysed_at": "2026-11-09T08:31:44+01:00",
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "ted:776044-2026",
+   "source": "ted",
+   "kind": "open",
+   "notice": "776044-2026",
+   "notice_type": "cn-standard",
+   "title": "MO-PR : 255 Agiez 1 - 256 Arnex-sur-Orbe 2",
+   "buyer": "DGTL-Direction du cadastre et de la géoinformation (DCG)",
+   "buyer_country": "CH",
+   "published": "2026-11-09",
+   "url": "https://ted.europa.eu/fr/notice/-/detail/776044-2026",
+   "cpv_label": "Services cadastraux",
+   "countries": [
+    "CH"
+   ],
+   "cpv": [
+    "71354300",
+    "71355200"
+   ],
+   "deadline": "2026-12-16",
+   "value": null,
+   "currency": "",
+   "winners": [],
+   "description": "Mensuration officielle - Premier relevé Entreprise 255 Agiez 1 / 256 Arnex-sur-Orbe 2",
+   "status": "",
+   "first_seen": "2026-11-09T08:31:44+01:00",
+   "analysis": {
+    "relevant": false,
+    "segment": "cartographie",
+    "title_fr": "Premier relevé cadastral dans le canton de Vaud",
+    "summary": "Mensuration officielle (premier relevé) pour les secteurs d'Agiez et d'Arnex-sur-Orbe.",
+    "why": "",
+    "industries": [
+     "foncier"
+    ],
+    "fit": "faible"
+   },
+   "analysed_at": "2026-11-09T08:31:44+01:00",
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "ted:775377-2026",
+   "source": "ted",
+   "kind": "open",
+   "notice": "775377-2026",
+   "notice_type": "cn-standard",
+   "title": "31215562 Certificeren vaartuigen Rijksrederij",
+   "buyer": "Rijkswaterstaat Programma's, Projecten en Onderhoud",
+   "buyer_country": "NL",
+   "published": "2026-11-09",
+   "url": "https://ted.europa.eu/fr/notice/-/detail/775377-2026",
+   "cpv_label": "Services d'inspection dans le domaine de la sécurité maritime",
+   "countries": [
+    "NL"
+   ],
+   "cpv": [
+    "71631420",
+    "71354500",
+    "79132000"
+   ],
+   "deadline": "2026-11-24",
+   "value": null,
+   "currency": "",
+   "winners": [],
+   "description": "Rijkswaterstaat Rijksrederij besteedt de certificering van 15 vaartuigen aan, verdeeld over twee percelen: 6 binnenvaartschepen en 9 zeevaartschepen. De opdracht omvat het uitvoeren van wettelijke inspecties, surveys en certificeringen gedurende de resterende levensduur van de vaartuigen. De werkzaamheden worden uitgevoerd conform nationale en internationale wet- en regelgeving en vinden hoofdzakelijk plaats op Nederlandse ligplaatsen en scheepswerven. Zie aanbestedingsleidraad",
+   "status": "",
+   "first_seen": "2026-11-09T08:31:44+01:00",
+   "analysis": {
+    "relevant": false,
+    "segment": "defense_securite",
+    "title_fr": "Certification de 15 navires de la Rijksrederij",
+    "summary": "Inspections et certifications réglementaires de 15 navires (6 fluviaux, 9 maritimes) néerlandais pour la durée de vie restante de ces navires.",
+    "why": "",
+    "industries": [
+     "maritime"
+    ],
+    "fit": "faible"
+   },
+   "analysed_at": "2026-11-09T08:31:44+01:00",
+   "analysis_model": "claude_cli:sonnet"
+  },
   {
    "id": "ted:773980-2026",
    "source": "ted",
