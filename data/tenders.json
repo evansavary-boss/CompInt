@@ -1,47 +1,47 @@
 {
  "fx": {
-  "date": "2026-11-09",
+  "date": "2026-11-10",
   "rates": {
-   "USD": 1.1193,
-   "JPY": 176.79,
-   "CZK": 24.365,
-   "DKK": 7.4753,
-   "GBP": 0.8343,
-   "HUF": 362.99,
-   "PLN": 4.3843,
-   "RON": 5.343,
-   "SEK": 10.996,
-   "CHF": 0.9164,
-   "ISK": 136.8,
-   "NOK": 10.5325,
-   "TRY": 56.1199,
-   "AUD": 1.6236,
-   "BRL": 6.1748,
-   "CAD": 1.5785,
-   "CNY": 7.4689,
-   "HKD": 8.7772,
-   "IDR": 20234.31,
-   "ILS": 3.549,
-   "INR": 105.1435,
-   "KRW": 1507.46,
-   "MXN": 20.8343,
-   "MYR": 4.5432,
-   "NZD": 1.9941,
-   "PHP": 70.712,
-   "SGD": 1.4328,
-   "THB": 37.485,
-   "ZAR": 18.4105
+   "USD": 1.1214,
+   "JPY": 177.38,
+   "CZK": 24.337,
+   "DKK": 7.4754,
+   "GBP": 0.83545,
+   "HUF": 362.98,
+   "PLN": 4.387,
+   "RON": 5.3442,
+   "SEK": 10.991,
+   "CHF": 0.9203,
+   "ISK": 137.2,
+   "NOK": 10.6155,
+   "TRY": 56.3207,
+   "AUD": 1.6244,
+   "BRL": 6.2257,
+   "CAD": 1.5852,
+   "CNY": 7.4801,
+   "HKD": 8.7973,
+   "IDR": 20255.34,
+   "ILS": 3.5507,
+   "INR": 105.3315,
+   "KRW": 1501.56,
+   "MXN": 20.8063,
+   "MYR": 4.5484,
+   "NZD": 1.9925,
+   "PHP": 70.54,
+   "SGD": 1.4335,
+   "THB": 37.522,
+   "ZAR": 18.3861
   }
  },
- "updated_at": "2026-11-10T08:14:02+01:00",
+ "updated_at": "2026-11-11T08:20:09+01:00",
  "sources": [
   {
    "name": "TED",
    "url": "https://api.ted.europa.eu/v3/notices/search",
    "ok": true,
    "error": "",
-   "fetched": 41,
-   "kept": 31,
+   "fetched": 44,
+   "kept": 35,
    "via": "tender"
   },
   {
@@ -49,21 +49,21 @@
    "url": "https://www.find-tender.service.gov.uk/api/1.0/ocdsReleasePackages",
    "ok": true,
    "error": "",
-   "fetched": 481,
-   "kept": 2,
+   "fetched": 924,
+   "kept": 3,
    "via": "tender"
   }
  ],
  "last_run": {
-  "new": 17,
+  "new": 11,
   "sources": [
    {
     "name": "TED",
     "url": "https://api.ted.europa.eu/v3/notices/search",
     "ok": true,
     "error": "",
-    "fetched": 41,
-    "kept": 31,
+    "fetched": 44,
+    "kept": 35,
     "via": "tender"
    },
    {
@@ -71,21 +71,445 @@
     "url": "https://www.find-tender.service.gov.uk/api/1.0/ocdsReleasePackages",
     "ok": true,
     "error": "",
-    "fetched": 481,
-    "kept": 2,
+    "fetched": 924,
+    "kept": 3,
     "via": "tender"
    }
   ],
   "analysis": {
-   "analysed": 17,
-   "relevant": 4,
+   "analysed": 11,
+   "relevant": 8,
    "error": "",
-   "cost_usd": 0.2703
+   "cost_usd": 0.1197
   },
   "pruned": 0
  },
- "fts_synced_until": "2026-11-10T07:00:00",
+ "fts_synced_until": "2026-11-11T07:00:00",
  "tenders": [
+  {
+   "id": "ted:785977-2026",
+   "source": "ted",
+   "kind": "open",
+   "notice": "785977-2026",
+   "notice_type": "cn-standard",
+   "title": "planungsbegleitende Vermessungsleistung SOW Km 14,5-33,2",
+   "buyer": "Senatsverwaltung für Stadtentwicklung, Bauen und Wohnen, III B - Geodätische Referenzsysteme, Ingenieurgeodäsie - Gruppe III B 2",
+   "buyer_country": "DE",
+   "published": "2026-11-11",
+   "url": "https://ted.europa.eu/fr/notice/-/detail/785977-2026",
+   "cpv_label": "Services d'architecture, d'ingénierie et de métrage",
+   "countries": [
+    "DE"
+   ],
+   "cpv": [
+    "71250000",
+    "71355000",
+    "71332000",
+    "71351810",
+    "71354100",
+    "71353200"
+   ],
+   "deadline": "2026-11-24",
+   "value": null,
+   "currency": "",
+   "winners": [],
+   "description": "Das Land Berlin beabsichtigt, die Uferbefestigungen der Spree-Oder-Wasserstraße (SOW) km 14,45 -33,2 in Berlin-Mitte, Friedrichshain-Kreuzberg, Lichtenberg und Treptow-Köpenick in einen verkehrssicheren Zustand zu versetzen. Dazu werden Lage- und Höhenpläne, DGMs und eine Baumkartierung im Bereich der Uferbefestigung und des anliegenden landseitigen Bereichs benötigt. Die Vermessung der Sohle wurde durch eine Gewässervermessung erfasst. Im Ergebnis sind Lage- und Höhenpläne entstanden, die in die zu erstellenden Lage- und Höhenpläne einzuarbeiten sind.",
+   "status": "",
+   "first_seen": "2026-11-11T08:20:09+01:00",
+   "analysis": {
+    "relevant": false,
+    "segment": "cartographie",
+    "title_fr": "Levés topographiques pour l'aménagement des berges de la Spree-Oder à Berlin",
+    "summary": "Prestations de géomètre pour produire plans, modèles numériques de terrain et cartographie des arbres le long de 18,7 km de berges à Berlin.",
+    "why": "",
+    "industries": [
+     "infrastructures"
+    ],
+    "fit": "faible"
+   },
+   "analysed_at": "2026-11-11T08:20:09+01:00",
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "ted:785736-2026",
+   "source": "ted",
+   "kind": "open",
+   "notice": "785736-2026",
+   "notice_type": "cn-standard",
+   "title": "Realizacja projektu pn. Rozwój cyfrowych baz danych, w tym danych o terenach poprzemysłowych w Gminie Wieluń",
+   "buyer": "Gmina Wieluń",
+   "buyer_country": "PL",
+   "published": "2026-11-11",
+   "url": "https://ted.europa.eu/fr/notice/-/detail/785736-2026",
+   "cpv_label": "Services de technologies de l'information, conseil, développement de logiciels, internet et appui",
+   "countries": [
+    "PL"
+   ],
+   "cpv": [
+    "72000000",
+    "38221000",
+    "72263000",
+    "72265000",
+    "72222200",
+    "48610000",
+    "71354000",
+    "48821000",
+    "30200000"
+   ],
+   "deadline": "2026-11-26",
+   "value": null,
+   "currency": "",
+   "winners": [],
+   "description": "Przedmiotem zamówienia jest „Realizacja projektu pn. Rozwój cyfrowych baz danych, w tym danych o terenach poprzemysłowych w Gminie Wieluń”: Część 1 – Modernizacja systemu GIS Część 2 – Modernizacja systemu dziedzinowego Część 3 – Dostawa urządzeń cyfrowych Część 4 – Dostawa sprzętu komputerowego Szczegółowy opis przedmiotu zamówienia zawiera Załącznik nr 13 do SWZ",
+   "status": "",
+   "first_seen": "2026-11-11T08:20:09+01:00",
+   "analysis": {
+    "relevant": true,
+    "segment": "cartographie",
+    "title_fr": "Modernisation des bases de données SIG de la commune de Wieluń",
+    "summary": "Modernisation du système SIG communal et des bases de données sur les friches industrielles, avec fourniture de matériel informatique dans la commune polonaise de Wieluń.",
+    "why": "Projet de modernisation SIG municipal relevant plus de l'intégration logicielle que de l'offre satellite d'Airbus.",
+    "industries": [
+     "infrastructures",
+     "foncier"
+    ],
+    "fit": "faible"
+   },
+   "analysed_at": "2026-11-11T08:20:09+01:00",
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "ted:785634-2026",
+   "source": "ted",
+   "kind": "open",
+   "notice": "785634-2026",
+   "notice_type": "cn-standard",
+   "title": "CALIDAD Y DIFUSIÓN DEL DATO CARTOGRÁFICO URBANO A ESCALA 1:1.000.",
+   "buyer": "INSTITUTO DE ESTADÍSTICA Y CARTOGRAFÍA DE ANDALUCÍA - IECA",
+   "buyer_country": "ES",
+   "published": "2026-11-11",
+   "url": "https://ted.europa.eu/fr/notice/-/detail/785634-2026",
+   "cpv_label": "Services d'établissement de cartes",
+   "countries": [
+    "ES"
+   ],
+   "cpv": [
+    "71354000",
+    "71354100"
+   ],
+   "deadline": "2026-12-15",
+   "value": 247107.44,
+   "currency": "EUR",
+   "winners": [],
+   "description": "El objeto de este contrato es asegurar la calidad y difusión del DATO CARTOGRÁFICO URBANO A ESCALA 1:1.000, es decir, garantizar la finalidad, eficiencia y calidad del mismo.",
+   "status": "",
+   "first_seen": "2026-11-11T08:20:09+01:00",
+   "analysis": {
+    "relevant": true,
+    "segment": "cartographie",
+    "title_fr": "Qualité et diffusion des données cartographiques urbaines au 1:1000",
+    "summary": "Contrat visant à garantir la qualité, la finalité et la diffusion des données cartographiques urbaines au 1:1000 en Andalousie.",
+    "why": "Service de gestion de données cartographiques urbaines, segment proche des offres de cartographie d'Airbus.",
+    "industries": [
+     "foncier",
+     "infrastructures"
+    ],
+    "fit": "faible"
+   },
+   "analysed_at": "2026-11-11T08:20:09+01:00",
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "ted:785498-2026",
+   "source": "ted",
+   "kind": "award",
+   "notice": "785498-2026",
+   "notice_type": "can-standard",
+   "title": "Доставка на дигитална ГИС платформа и оборудване по проект „Пътуване без граници – от богата история към технологично бъдеще“ по обособени позиции: Обособена позиция № 1 „Доставка на дигитална ГИС платформа“ Обособена позиция № 2 „Доставка на оборудване“ Обособена позиция № 3 „Доставка на LiDAR сензор, GPS и данни“",
+   "buyer": "АРХЕОЛОГИЧЕСКИ МУЗЕЙ - ГР. САНДАНСКИ",
+   "buyer_country": "BG",
+   "published": "2026-11-11",
+   "url": "https://ted.europa.eu/fr/notice/-/detail/785498-2026",
+   "cpv_label": "Systèmes d'information géographique (GIS ou équivalent)",
+   "countries": [
+    "BG"
+   ],
+   "cpv": [
+    "38221000"
+   ],
+   "deadline": "",
+   "value": 229300.0,
+   "currency": "EUR",
+   "winners": [
+    "МАПЕКС АД"
+   ],
+   "description": "Доставка на дигитална ГИС платформа и оборудване по проект „Пътуване без граници – от богата история към технологично бъдеще“ по обособени позиции: Обособена позиция № 1 „Доставка на дигитална ГИС платформа“ Обособена позиция № 2 „Доставка на оборудване“ Обособена позиция № 3 „Доставка на LiDAR сензор, GPS и данни“",
+   "status": "",
+   "first_seen": "2026-11-11T08:20:09+01:00",
+   "analysis": {
+    "relevant": true,
+    "segment": "aerien_lidar",
+    "title_fr": "Livraison d'une plateforme SIG et d'équipements incluant un capteur LiDAR",
+    "summary": "Projet culturel bulgare fournissant une plateforme GIS, des équipements et un capteur LiDAR avec données GPS pour numériser le patrimoine archéologique de Sandanski.",
+    "why": "Marché d'équipement LiDAR/GIS attribué à un acteur local, en dehors de l'offre satellite d'Airbus.",
+    "industries": [],
+    "fit": "faible"
+   },
+   "analysed_at": "2026-11-11T08:20:09+01:00",
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "ted:785273-2026",
+   "source": "ted",
+   "kind": "award",
+   "notice": "785273-2026",
+   "notice_type": "can-standard",
+   "title": "Доставка на дигитална ГИС платформа и оборудване по проект „Пътуване без граници – от богата история към технологично бъдеще“ по обособени позиции: Обособена позиция № 1 „Доставка на дигитална ГИС платформа“ Обособена позиция № 2 „Доставка на оборудване“ Обособена позиция № 3 „Доставка на LiDAR сензор, GPS и данни“",
+   "buyer": "АРХЕОЛОГИЧЕСКИ МУЗЕЙ - ГР. САНДАНСКИ",
+   "buyer_country": "BG",
+   "published": "2026-11-11",
+   "url": "https://ted.europa.eu/fr/notice/-/detail/785273-2026",
+   "cpv_label": "Systèmes d'information géographique (GIS ou équivalent)",
+   "countries": [
+    "BG"
+   ],
+   "cpv": [
+    "38221000",
+    "38295000"
+   ],
+   "deadline": "",
+   "value": 44730.0,
+   "currency": "EUR",
+   "winners": [
+    "МАПЕКС АД"
+   ],
+   "description": "Доставка на дигитална ГИС платформа и оборудване по проект „Пътуване без граници – от богата история към технологично бъдеще“ по обособени позиции: Обособена позиция № 1 „Доставка на дигитална ГИС платформа“ Обособена позиция № 2 „Доставка на оборудване“ Обособена позиция № 3 „Доставка на LiDAR сензор, GPS и данни“",
+   "status": "",
+   "first_seen": "2026-11-11T08:20:09+01:00",
+   "analysis": {
+    "relevant": true,
+    "segment": "aerien_lidar",
+    "title_fr": "Livraison d'une plateforme SIG et d'équipements incluant un capteur LiDAR",
+    "summary": "Projet culturel bulgare fournissant une plateforme GIS, des équipements et un capteur LiDAR avec données GPS pour numériser le patrimoine archéologique de Sandanski.",
+    "why": "Marché d'équipement LiDAR/GIS attribué à un acteur local, en dehors de l'offre satellite d'Airbus.",
+    "industries": [],
+    "fit": "faible"
+   },
+   "analysed_at": "2026-11-11T08:20:09+01:00",
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "ted:785131-2026",
+   "source": "ted",
+   "kind": "open",
+   "notice": "785131-2026",
+   "notice_type": "cn-standard",
+   "title": "REALIZACIÓN DEL VUELO FOTOGRAMÉTRICO, ORTOFOTOGRAFÍA Y BASE CARTOGRÁFICA URBANA DE DETERMINADOS ÁMBITOS A ESCALA 1:1.000.",
+   "buyer": "INSTITUTO DE ESTADÍSTICA Y CARTOGRAFÍA DE ANDALUCÍA - IECA",
+   "buyer_country": "ES",
+   "published": "2026-11-11",
+   "url": "https://ted.europa.eu/fr/notice/-/detail/785131-2026",
+   "cpv_label": "Services d'établissement de cartes",
+   "countries": [
+    "ES"
+   ],
+   "cpv": [
+    "71354000",
+    "71354100"
+   ],
+   "deadline": "2026-12-15",
+   "value": 1900826.44,
+   "currency": "EUR",
+   "winners": [],
+   "description": "El objeto de este contrato es la obtención de una cartografía base de referencia de precisión, actualizada y de calidad que constará de un vuelo fotogramétrico a 8 cm, una ortofotografía a 10 cm y una cartografía urbana a 1:1.000.",
+   "status": "",
+   "first_seen": "2026-11-11T08:20:09+01:00",
+   "analysis": {
+    "relevant": true,
+    "segment": "aerien_lidar",
+    "title_fr": "Vol photogrammétrique, orthophoto et cartographie urbaine au 1:1000",
+    "summary": "Acquisition d'un vol photogrammétrique à 8 cm, d'une orthophotographie à 10 cm et d'une cartographie urbaine au 1:1000 pour certaines zones d'Andalousie.",
+    "why": "Marché de prise de vue aérienne et cartographie urbaine, en dehors de l'offre satellite directe d'Airbus.",
+    "industries": [
+     "infrastructures",
+     "foncier"
+    ],
+    "fit": "faible"
+   },
+   "analysed_at": "2026-11-11T08:20:09+01:00",
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "ted:785105-2026",
+   "source": "ted",
+   "kind": "open",
+   "notice": "785105-2026",
+   "notice_type": "cn-standard",
+   "title": "Renouvellement de la mensuration officielle, Gruyères, lot 4",
+   "buyer": "Service de la géoinformation",
+   "buyer_country": "CH",
+   "published": "2026-11-11",
+   "url": "https://ted.europa.eu/fr/notice/-/detail/785105-2026",
+   "cpv_label": "Services d'arpentage cadastral",
+   "countries": [
+    "CH"
+   ],
+   "cpv": [
+    "71355200",
+    "22114310",
+    "30221000",
+    "71354300"
+   ],
+   "deadline": "2027-01-11",
+   "value": null,
+   "currency": "",
+   "winners": [],
+   "description": "Renouvellement de la mensuration officielle de la commune de Gruyères sur une surface de 2'844 ha sans révision d'abornement. Au terme des travaux, les géodonnées répondront au standard de qualité MO93. Les travaux englobent les mises à jour de la BDMO, de DESCA et du RF.",
+   "status": "",
+   "first_seen": "2026-11-11T08:20:09+01:00",
+   "analysis": {
+    "relevant": false,
+    "segment": "cartographie",
+    "title_fr": "Renouvellement de la mensuration officielle à Gruyères, lot 4",
+    "summary": "Travaux de mensuration officielle cadastrale sur 2 844 ha de la commune suisse de Gruyères, sans révision d'abornement, selon le standard MO93.",
+    "why": "",
+    "industries": [
+     "foncier"
+    ],
+    "fit": "faible"
+   },
+   "analysed_at": "2026-11-11T08:20:09+01:00",
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "ted:785005-2026",
+   "source": "ted",
+   "kind": "open",
+   "notice": "785005-2026",
+   "notice_type": "cn-standard",
+   "title": "De bijhouding van het Grootschalig Referentie Bestand via managed service (productie)",
+   "buyer": "Eigen Vermogen Digitaal Vlaanderen",
+   "buyer_country": "BE",
+   "published": "2026-11-11",
+   "url": "https://ted.europa.eu/fr/notice/-/detail/785005-2026",
+   "cpv_label": "Services de cartographie numérique",
+   "countries": [
+    "BE"
+   ],
+   "cpv": [
+    "71354100"
+   ],
+   "deadline": "2026-11-19",
+   "value": null,
+   "currency": "",
+   "winners": [],
+   "description": "De bijhouding van het Grootschalig Referentie Bestand via managed service (productie)",
+   "status": "",
+   "first_seen": "2026-11-11T08:20:09+01:00",
+   "analysis": {
+    "relevant": true,
+    "segment": "cartographie",
+    "title_fr": "Maintenance du référentiel cartographique grande échelle de Flandre",
+    "summary": "Service géré assurant la mise à jour continue en production du référentiel cartographique grande échelle de la Région flamande, en Belgique.",
+    "why": "Service de maintenance de données géographiques de référence, proche des offres cartographiques d'Airbus.",
+    "industries": [
+     "infrastructures",
+     "foncier"
+    ],
+    "fit": "moyenne"
+   },
+   "analysed_at": "2026-11-11T08:20:09+01:00",
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "ted:784630-2026",
+   "source": "ted",
+   "kind": "award",
+   "notice": "784630-2026",
+   "notice_type": "can-standard",
+   "title": "Portál územního plánování",
+   "buyer": "Olomoucký kraj",
+   "buyer_country": "CZ",
+   "published": "2026-11-11",
+   "url": "https://ted.europa.eu/fr/notice/-/detail/784630-2026",
+   "cpv_label": "Services de programmation et de conseil en logiciels",
+   "countries": [
+    "CZ"
+   ],
+   "cpv": [
+    "72200000",
+    "72262000",
+    "72261000",
+    "72263000",
+    "72267000",
+    "72260000",
+    "48810000",
+    "38221000",
+    "48800000",
+    "48820000",
+    "32420000"
+   ],
+   "deadline": "",
+   "value": 38500000.0,
+   "currency": "CZK",
+   "winners": [],
+   "description": "Předmětem plnění veřejné zakázky je vytvoření, implementace a provoz informačního systému Portálu územního plánování Olomouckého kraje (dále také jen „Informační systém“ nebo „IS“) včetně podpory a rozvoje IS, a dodávka souvisejícího hardwaru a softwaru.",
+   "status": "",
+   "first_seen": "2026-11-11T08:20:09+01:00",
+   "analysis": {
+    "relevant": false,
+    "segment": "cartographie",
+    "title_fr": "Portail d'aménagement du territoire de la région d'Olomouc",
+    "summary": "Création, mise en œuvre et exploitation d'un système d'information de portail d'aménagement du territoire pour la région d'Olomouc, matériel et logiciel associés inclus.",
+    "why": "",
+    "industries": [
+     "infrastructures"
+    ],
+    "fit": "faible"
+   },
+   "analysed_at": "2026-11-11T08:20:09+01:00",
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "ted:783659-2026",
+   "source": "ted",
+   "kind": "award",
+   "notice": "783659-2026",
+   "notice_type": "can-standard",
+   "title": "Доставка на дигитална ГИС платформа и оборудване по проект „Пътуване без граници – от богата история към технологично бъдеще“ по обособени позиции: Обособена позиция № 1 „Доставка на дигитална ГИС платформа“ Обособена позиция № 2 „Доставка на оборудване“ Обособена позиция № 3 „Доставка на LiDAR сензор, GPS и данни“",
+   "buyer": "АРХЕОЛОГИЧЕСКИ МУЗЕЙ - ГР. САНДАНСКИ",
+   "buyer_country": "BG",
+   "published": "2026-11-11",
+   "url": "https://ted.europa.eu/fr/notice/-/detail/783659-2026",
+   "cpv_label": "Systèmes d'information géographique (GIS ou équivalent)",
+   "countries": [
+    "BG"
+   ],
+   "cpv": [
+    "38221000",
+    "48822000"
+   ],
+   "deadline": "",
+   "value": 5660.0,
+   "currency": "EUR",
+   "winners": [
+    "МАПЕКС АД"
+   ],
+   "description": "Доставка на дигитална ГИС платформа и оборудване по проект „Пътуване без граници – от богата история към технологично бъдеще“ по обособени позиции: Обособена позиция № 1 „Доставка на дигитална ГИС платформа“ Обособена позиция № 2 „Доставка на оборудване“ Обособена позиция № 3 „Доставка на LiDAR сензор, GPS и данни“",
+   "status": "",
+   "first_seen": "2026-11-11T08:20:09+01:00",
+   "analysis": {
+    "relevant": true,
+    "segment": "aerien_lidar",
+    "title_fr": "Livraison d'une plateforme SIG et d'équipements incluant un capteur LiDAR",
+    "summary": "Projet culturel bulgare fournissant une plateforme GIS, des équipements et un capteur LiDAR avec données GPS pour numériser le patrimoine archéologique de Sandanski.",
+    "why": "Marché d'équipement LiDAR/GIS attribué à un acteur local, en dehors de l'offre satellite d'Airbus.",
+    "industries": [],
+    "fit": "faible"
+   },
+   "analysed_at": "2026-11-11T08:20:09+01:00",
+   "analysis_model": "claude_cli:sonnet"
+  },
   {
    "id": "ted:782624-2026",
    "source": "ted",
@@ -742,6 +1166,47 @@
     "fit": "faible"
    },
    "analysed_at": "2026-11-10T08:14:02+01:00",
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "fts:ocds-h6vhtk-07b841:award",
+   "source": "fts",
+   "kind": "award",
+   "notice": "106527-2026",
+   "notice_type": "",
+   "title": "Remote Sensing for Soil Organic Carbon",
+   "buyer": "Agriculture and Horticulture Development Board",
+   "buyer_country": "GB",
+   "published": "2026-11-10",
+   "url": "",
+   "cpv_label": "",
+   "countries": [
+    "GB"
+   ],
+   "cpv": [
+    "77100000"
+   ],
+   "deadline": "",
+   "value": null,
+   "currency": "",
+   "winners": [
+    "AGRICARBON UK LIMITED"
+   ],
+   "description": "Assess the feasibility of Remote Sensing to make wide-spread sampling more affordable, e.g. National Baselining. The purpose is to understand the level of accuracy achievable by remote sensing using a number of different techniques across different soil types and depths, regions and different land uses.",
+   "status": "",
+   "first_seen": "2026-11-11T08:20:09+01:00",
+   "analysis": {
+    "relevant": true,
+    "segment": "environnement_climat",
+    "title_fr": "Télédétection pour mesurer le carbone organique des sols",
+    "summary": "Étude de faisabilité britannique testant plusieurs techniques de télédétection pour estimer le carbone organique des sols agricoles selon les régions, sols et profondeurs.",
+    "why": "Illustre la demande de télédétection pour le suivi agricole des sols, marché gagné par un spécialiste capteurs sol plutôt qu'un fournisseur satellite.",
+    "industries": [
+     "agriculture"
+    ],
+    "fit": "moyenne"
+   },
+   "analysed_at": "2026-11-11T08:20:09+01:00",
    "analysis_model": "claude_cli:sonnet"
   },
   {

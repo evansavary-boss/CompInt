@@ -1,23 +1,13 @@
 {
- "updated_at": "2026-11-10T07:59:54+01:00",
+ "updated_at": "2026-11-11T08:04:52+01:00",
  "last_run": {
-  "created": 421,
-  "analysed": 112,
-  "merged": 38,
-  "error": "",
-  "cost_usd": 1.9431
+  "created": 442,
+  "analysed": 84,
+  "merged": 36,
+  "error": "budget de temps atteint (15 min) : 30 sujets reportés au prochain passage",
+  "cost_usd": 2.4035
  },
  "stories": [
-  {
-   "id": "se7d446d9ec6546d4",
-   "item_ids": [
-    "e7d446d9ec6546d4"
-   ],
-   "analysis": {},
-   "analysed_at": "",
-   "analysed_size": 0,
-   "analysis_model": ""
-  },
   {
    "id": "sf19c34f8f9c4aadb",
    "item_ids": [
@@ -65524,7 +65514,12 @@
     "95cca5355c48f296",
     "ff0ccb0d1beb5a08",
     "0d5cd781526fedb5",
-    "1ce51f8d9292c1e9"
+    "1ce51f8d9292c1e9",
+    "2aa8a859a4981f32",
+    "bfe823fe7d1fd44d",
+    "dd14a8670ef79a88",
+    "e186054c6e91c568",
+    "824b06294ee3a93b"
    ],
    "analysis": {
     "relevant": true,
@@ -75546,7 +75541,9 @@
     "8529db8957317799",
     "12da0ab941086737",
     "fc4f08149c63fc80",
-    "5f0b482b63b3a426"
+    "5f0b482b63b3a426",
+    "6ca15fdd3475d2f1",
+    "7eb143a07feb7287"
    ],
    "analysis": {
     "relevant": true,
@@ -77455,7 +77452,9 @@
     "1da42cc94fb04fcc",
     "1a7edde30207820d",
     "cb0f7565c55ae6dd",
-    "3933f42ab77cfcd0"
+    "3933f42ab77cfcd0",
+    "e2724f21cd884cb8",
+    "c6c4375ba5f4f7f4"
    ],
    "analysis": {
     "relevant": true,
@@ -78457,7 +78456,32 @@
     "6f805e95dba8ceca",
     "38b9358beb7dd4a4",
     "e32d41d55d61b309",
-    "9aa9a98a38539876"
+    "9aa9a98a38539876",
+    "fc804e9eeb8c6490",
+    "c8e07e524e13ebef",
+    "addf425c49e71827",
+    "0a374f7b55519823",
+    "4eed931c809ed2c3",
+    "778d77005448b0c0",
+    "bc524a494958e6aa",
+    "e8f961c0cd91c247",
+    "7b024f413812a4c9",
+    "2d12b5cee4030a4c",
+    "b08392ab8e471627",
+    "31a9c0e109cd541a",
+    "18757b51debbb84b",
+    "e6046aff4c0f4647",
+    "6486196034063c4a",
+    "3d50a5335e393666",
+    "28dba386e3dde510",
+    "c0a066b540ef4913",
+    "0184bac5ee62d345",
+    "8a4bef27e507335c",
+    "13bfda67af4052cc",
+    "2b2ed5da5591a268",
+    "359166bacd994d04",
+    "0cd93ff1ecf83222",
+    "6700935f0d9ea620"
    ],
    "analysis": {
     "relevant": true,
@@ -79408,7 +79432,9 @@
     "28d768d0011d1a89",
     "732f0283b48f7247",
     "15eea8a7fc093045",
-    "d8b8d7b65f0fb02c"
+    "d8b8d7b65f0fb02c",
+    "290829ea22851605",
+    "1191d7398123fbf2"
    ],
    "analysis": {
     "relevant": true,
@@ -80878,7 +80904,15 @@
     "5d3ad4143885a78f",
     "0366e9f82cf0c96d",
     "bb5580383f4590db",
-    "0ec611590d23046c"
+    "0ec611590d23046c",
+    "1d492058455a5ad0",
+    "f6d6183aa41d3693",
+    "50e16880db8f0959",
+    "6090673c3bb40309",
+    "628352b8149e085f",
+    "75e1463549ca0a64",
+    "6d3472e11d833484",
+    "17abb2b2f3ae5968"
    ],
    "analysis": {
     "relevant": true,
@@ -82153,60 +82187,6 @@
    "analysis_model": ""
   },
   {
-   "id": "sfc804e9eeb8c6490",
-   "item_ids": [
-    "fc804e9eeb8c6490",
-    "c8e07e524e13ebef",
-    "addf425c49e71827",
-    "0a374f7b55519823",
-    "4eed931c809ed2c3",
-    "778d77005448b0c0",
-    "bc524a494958e6aa",
-    "e8f961c0cd91c247",
-    "7b024f413812a4c9",
-    "2d12b5cee4030a4c",
-    "b08392ab8e471627",
-    "31a9c0e109cd541a",
-    "18757b51debbb84b",
-    "e6046aff4c0f4647",
-    "6486196034063c4a",
-    "3d50a5335e393666",
-    "28dba386e3dde510",
-    "c0a066b540ef4913",
-    "0184bac5ee62d345",
-    "8a4bef27e507335c",
-    "13bfda67af4052cc",
-    "2b2ed5da5591a268",
-    "359166bacd994d04",
-    "0cd93ff1ecf83222",
-    "6700935f0d9ea620"
-   ],
-   "analysis": {
-    "relevant": true,
-    "title_fr": "La NASA attribue 10 Md$ de contrats pour sa future base lunaire",
-    "summary": "La NASA a sélectionné huit sociétés, dont Blue Origin, SpaceX et Intuitive Machines, pour le transport lunaire, un rover nucléaire PROMISE et des capacités de communication en vue d'une base au pôle sud.",
-    "why": "Ces contrats structurent durablement le marché commercial des services lunaires et renforcent la position des acteurs américains du spatial.",
-    "tabs": [
-     "economie",
-     "concurrents"
-    ],
-    "themes": [
-     "programmes",
-     "budgets"
-    ],
-    "industries": [
-     "connectivite"
-    ],
-    "countries": [
-     "US"
-    ],
-    "impact": "moyen"
-   },
-   "analysed_at": "2026-11-10T07:59:54+01:00",
-   "analysed_size": 12,
-   "analysis_model": "claude_cli:sonnet"
-  },
-  {
    "id": "s1675593b7d107975",
    "item_ids": [
     "1675593b7d107975"
@@ -83110,7 +83090,8 @@
    "item_ids": [
     "fd43cb5e08bf322b",
     "b0425cedeca66386",
-    "3e58f4a19acf1f9b"
+    "3e58f4a19acf1f9b",
+    "b5c0ca63d6cecd52"
    ],
    "analysis": {
     "relevant": true,
@@ -83266,9 +83247,9 @@
    ],
    "analysis": {
     "relevant": true,
-    "title_fr": "COP31 : analyse des enjeux du sommet climat de l'ONU",
-    "summary": "Un article d'analyse revient sur les enjeux de la COP31, le sommet climatique de l'ONU qui débute en Turquie.",
-    "why": "Les enjeux climatiques mondiaux influencent la demande en observation satellite pour le suivi environnemental.",
+    "title_fr": "La COP31 s'ouvre à Antalya avec 196 États sous tension climatique et géopolitique",
+    "summary": "La 31e conférence des Nations unies sur le climat (COP31) réunit 196 États jusqu'au 20 novembre à Antalya, en Turquie, avec l'électrification mondiale comme priorité.",
+    "why": "Les engagements climatiques internationaux influencent la demande en imagerie satellite pour le suivi environnemental et les ressources.",
     "tabs": [
      "geopolitique"
     ],
@@ -83283,8 +83264,8 @@
     ],
     "impact": "faible"
    },
-   "analysed_at": "2026-11-09T08:17:13+01:00",
-   "analysed_size": 1,
+   "analysed_at": "2026-11-11T08:04:52+01:00",
+   "analysed_size": 7,
    "analysis_model": "claude_cli:sonnet"
   },
   {
@@ -83736,11 +83717,12 @@
    ],
    "analysis": {
     "relevant": true,
-    "title_fr": "AST SpaceMobile présente une avancée satellite-mobile et un plan fusée à 1,3 Md$",
-    "summary": "AST SpaceMobile a dévoilé une avancée en connectivité directe par satellite, couplée à un projet de fusée évalué à 1,3 milliard de dollars.",
-    "why": "AST SpaceMobile est un concurrent clé sur la connectivité directe par satellite, segment stratégique pour Airbus.",
+    "title_fr": "AST SpaceMobile prépare la fusée « Blacklift » avec Firefly Aerospace (1,3 Md$)",
+    "summary": "AST SpaceMobile va développer une nouvelle fusée baptisée Blacklift et confie à Firefly Aerospace la fourniture des moteurs, dans un contrat de 1,3 milliard de dollars, face à la pénurie de capacité de lancement.",
+    "why": "Un nouvel accès propre au lancement renforcerait la constellation de connectivité directe d'AST SpaceMobile, acteur à surveiller dans la connectivité sécurisée.",
     "tabs": [
-     "concurrents"
+     "concurrents",
+     "economie"
     ],
     "themes": [
      "produits",
@@ -83754,8 +83736,8 @@
     ],
     "impact": "moyen"
    },
-   "analysed_at": "2026-11-09T08:17:13+01:00",
-   "analysed_size": 1,
+   "analysed_at": "2026-11-11T08:04:52+01:00",
+   "analysed_size": 28,
    "analysis_model": "claude_cli:sonnet"
   },
   {
@@ -84188,7 +84170,9 @@
     "baad603d83a7716d",
     "a987bce3040d04e9",
     "3d2554b37aa55106",
-    "ac0221f2d4f53c9b"
+    "ac0221f2d4f53c9b",
+    "b9ee698de4d0da68",
+    "42c5c60481f6e1c2"
    ],
    "analysis": {
     "relevant": true,
@@ -84611,32 +84595,29 @@
     "ec6b99d0e3cd3d13",
     "b7d72bdb9c511421",
     "c7c9ca5e59a26ddc",
-    "c2f58d32e2c6e3a3"
+    "c2f58d32e2c6e3a3",
+    "72cbe04951f9ba1a",
+    "d824995d3d0b202d",
+    "4153236a4c3b065f",
+    "de2b27acbcc61303"
    ],
    "analysis": {
     "relevant": true,
-    "title_fr": "SpaceX d'Elon Musk prévoirait un supercalculateur à 24 Md$",
-    "summary": "SpaceX, qui détient des bitcoins, prévoirait d'investir 24 milliards de dollars dans un supercalculateur selon des informations de presse.",
-    "why": "Un tel investissement renforcerait la capacité de traitement de données de SpaceX, concurrent majeur dans l'espace et la connectivité.",
+    "title_fr": "SpaceX prévoit un supercalculateur et une centrale électrique de 24 Md$ au Texas",
+    "summary": "SpaceX envisage d'investir 24 milliards de dollars dans un centre de données IA et une centrale au gaz au Texas pour soutenir ses besoins en calcul et en énergie.",
+    "why": "Montre la diversification de SpaceX vers l'IA et l'énergie, au-delà de ses activités spatiales, à suivre pour la concurrence.",
     "tabs": [
-     "concurrents",
-     "economie"
+     "concurrents"
     ],
-    "themes": [
-     "financements",
-     "produits"
-    ],
-    "industries": [
-     "connectivite",
-     "defense"
-    ],
+    "themes": [],
+    "industries": [],
     "countries": [
      "US"
     ],
-    "impact": "moyen"
+    "impact": "faible"
    },
-   "analysed_at": "2026-11-09T08:17:13+01:00",
-   "analysed_size": 1,
+   "analysed_at": "2026-11-11T08:04:52+01:00",
+   "analysed_size": 11,
    "analysis_model": "claude_cli:sonnet"
   },
   {
@@ -85263,16 +85244,6 @@
    "analysis_model": ""
   },
   {
-   "id": "s5e616ebdcbfb10bd",
-   "item_ids": [
-    "5e616ebdcbfb10bd"
-   ],
-   "analysis": {},
-   "analysed_at": "",
-   "analysed_size": 0,
-   "analysis_model": ""
-  },
-  {
    "id": "sc43f61a158da9b10",
    "item_ids": [
     "c43f61a158da9b10"
@@ -85355,12 +85326,33 @@
   {
    "id": "s5f46b3f5d712bfb4",
    "item_ids": [
-    "5f46b3f5d712bfb4"
+    "5f46b3f5d712bfb4",
+    "b331681fa551bbdf"
    ],
-   "analysis": {},
-   "analysed_at": "",
-   "analysed_size": 0,
-   "analysis_model": ""
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Kongsberg présente le drone de surface Arctic Hunter à la Royal Navy",
+    "summary": "Kongsberg Maritime a lancé le véhicule de surface sans équipage Arctic Hunter, destiné à une marine hybride et proposé à la Royal Navy.",
+    "why": "Ce drone maritime illustre la montée des systèmes autonomes de surveillance navale, complémentaires à l'imagerie satellite maritime.",
+    "tabs": [
+     "concurrents"
+    ],
+    "themes": [
+     "produits"
+    ],
+    "industries": [
+     "defense",
+     "maritime"
+    ],
+    "countries": [
+     "GB",
+     "NO"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-11T08:04:52+01:00",
+   "analysed_size": 2,
+   "analysis_model": "claude_cli:sonnet"
   },
   {
    "id": "s8d511528e0851ff4",
@@ -85506,7 +85498,9 @@
    "id": "s20acd8ea054254b7",
    "item_ids": [
     "20acd8ea054254b7",
-    "0bbbc65a62ff5cd5"
+    "0bbbc65a62ff5cd5",
+    "f4c9b78bba1095d8",
+    "a24b79dcfd02e7ea"
    ],
    "analysis": {},
    "analysed_at": "",
@@ -85620,21 +85614,27 @@
    "id": "sfcf0838e1b770871",
    "item_ids": [
     "fcf0838e1b770871",
-    "379a965f0004a416"
+    "379a965f0004a416",
+    "7c33d4518bfc5813",
+    "e98a8ca229b4e821"
    ],
    "analysis": {
-    "relevant": false,
-    "title_fr": "Un cubesat de l'ESA exécute des commandes vocales pour jouer à Doom",
-    "summary": "Un satellite cubesat de l'ESA a répondu à des commandes vocales pour faire tourner le jeu Doom, une démonstration technique ludique.",
+    "relevant": true,
+    "title_fr": "Un CubeSat de l'ESA exécute le jeu Doom via des commandes vocales",
+    "summary": "Des radioamateurs ont fait jouer Doom sur un petit satellite de l'ESA en lui envoyant des commandes vocales, grâce à un modèle d'IA vocale embarqué de 27 Mo.",
     "why": "",
-    "tabs": [],
-    "themes": [],
+    "tabs": [
+     "concurrents"
+    ],
+    "themes": [
+     "produits"
+    ],
     "industries": [],
     "countries": [],
     "impact": "faible"
    },
-   "analysed_at": "2026-11-10T07:59:54+01:00",
-   "analysed_size": 2,
+   "analysed_at": "2026-11-11T08:04:52+01:00",
+   "analysed_size": 4,
    "analysis_model": "claude_cli:sonnet"
   },
   {
@@ -85690,12 +85690,39 @@
   {
    "id": "s2c55ea8834701d41",
    "item_ids": [
-    "2c55ea8834701d41"
+    "2c55ea8834701d41",
+    "4863ed229c93c89a",
+    "0b429b78d11604f3",
+    "deef7021ea380f62",
+    "0e40a5f113f0358a",
+    "80f4dcdcb5338ac1",
+    "588412f73b35da45",
+    "bf073b62dc1965e6"
    ],
-   "analysis": {},
-   "analysed_at": "",
-   "analysed_size": 0,
-   "analysis_model": ""
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Intuitive Machines et Redwire remportent des contrats NASA pour la Lune",
+    "summary": "Intuitive Machines obtient un créneau de services lunaires NASA, tandis que Redwire reçoit 40 millions de dollars pour une démonstration d'alimentation solaire lunaire.",
+    "why": "Ces contrats renforcent la présence de concurrents américains dans l'écosystème lunaire financé par la NASA.",
+    "tabs": [
+     "marche",
+     "concurrents"
+    ],
+    "themes": [
+     "appels_offres",
+     "programmes"
+    ],
+    "industries": [
+     "defense"
+    ],
+    "countries": [
+     "US"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-11T08:04:52+01:00",
+   "analysed_size": 8,
+   "analysis_model": "claude_cli:sonnet"
   },
   {
    "id": "sbe7b23a0952a787a",
@@ -85720,12 +85747,27 @@
   {
    "id": "sc91f93427ef1c2ad",
    "item_ids": [
-    "c91f93427ef1c2ad"
+    "c91f93427ef1c2ad",
+    "84d0b20dff5f5396"
    ],
-   "analysis": {},
-   "analysed_at": "",
-   "analysed_size": 0,
-   "analysis_model": ""
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Intuitive Machines : les attentes du marché avant les résultats du T3",
+    "summary": "Analystes et traders d'options anticipent les résultats du troisième trimestre d'Intuitive Machines, acteur américain des missions lunaires.",
+    "why": "La santé financière d'Intuitive Machines, partenaire clé des programmes lunaires NASA, influence la dynamique concurrentielle du secteur spatial.",
+    "tabs": [
+     "concurrents"
+    ],
+    "themes": [],
+    "industries": [],
+    "countries": [
+     "US"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-11T08:04:52+01:00",
+   "analysed_size": 2,
+   "analysis_model": "claude_cli:sonnet"
   },
   {
    "id": "sb5439364d056b5e6",
@@ -85800,12 +85842,25 @@
   {
    "id": "s8ffd18dc0174d365",
    "item_ids": [
-    "8ffd18dc0174d365"
+    "8ffd18dc0174d365",
+    "b72d868417d1189b"
    ],
-   "analysis": {},
-   "analysed_at": "",
-   "analysed_size": 0,
-   "analysis_model": ""
+   "analysis": {
+    "relevant": false,
+    "title_fr": "Un ex-dirigeant de l'agence spatiale britannique nommé président d'une association caritative",
+    "summary": "L'ancien responsable de la UK Space Agency prend la présidence de la charité YHA basée à Matlock, en Angleterre.",
+    "why": "",
+    "tabs": [],
+    "themes": [],
+    "industries": [],
+    "countries": [
+     "GB"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-11T08:04:52+01:00",
+   "analysed_size": 2,
+   "analysis_model": "claude_cli:sonnet"
   },
   {
    "id": "s39e142b1bd0a243a",
@@ -85874,7 +85929,8 @@
   {
    "id": "sdb211dad2bc35384",
    "item_ids": [
-    "db211dad2bc35384"
+    "db211dad2bc35384",
+    "3e5356a64ad949bd"
    ],
    "analysis": {},
    "analysed_at": "",
@@ -85885,7 +85941,8 @@
    "id": "s1ef41a56ebea176d",
    "item_ids": [
     "1ef41a56ebea176d",
-    "e811c67cceb4b3da"
+    "e811c67cceb4b3da",
+    "fefac9c91eaf8c08"
    ],
    "analysis": {
     "relevant": true,
@@ -86217,20 +86274,34 @@
     "61f3aca0e73e08ba",
     "1587011b062b44eb",
     "c8ed62bcce9b617d",
-    "6ad257d1838bfe73"
+    "6ad257d1838bfe73",
+    "8110c6e7ddabe5d6",
+    "3f7f22d28c2f6cc2",
+    "9baa4b4b70e6e357",
+    "7f9b5d9338dc9711",
+    "3bf526b97bcb3126",
+    "4558cce8aafaae73",
+    "7622a84d685388dc",
+    "86371ec641aa0fb6",
+    "533a9942199ad1e2",
+    "e24481e70dea9e93",
+    "de5455ccfc1c510d",
+    "ed616bf376e73106",
+    "232c232a2d32c36a",
+    "7ae8d9e00fa080bf"
    ],
    "analysis": {
     "relevant": true,
-    "title_fr": "La DGA attribue à Airbus et Thales Alenia Space le contrat du programme IRIS",
-    "summary": "La Direction générale de l'armement française a confié à Airbus Defence and Space et Thales Alenia Space le développement du système militaire d'observation optique IRIS, pour environ 1,5 milliard d'euros.",
-    "why": "Contrat majeur qui renforce directement la position d'Airbus Defence and Space sur le renseignement spatial militaire français.",
+    "title_fr": "Airbus et Thales remportent le contrat IRIS de la DGA pour l'observation militaire optique",
+    "summary": "La DGA a attribué à Thales Alenia Space et Airbus Defence and Space un contrat pour développer IRIS, le futur système militaire français d'observation optique qui remplacera les satellites CSO d'ici 2035.",
+    "why": "Contrat majeur pour Airbus Defence and Space en observation militaire optique, qui consolide sa position face à ses concurrents européens.",
     "tabs": [
      "marche",
-     "economie"
+     "concurrents"
     ],
     "themes": [
      "appels_offres",
-     "budgets"
+     "programmes"
     ],
     "industries": [
      "defense",
@@ -86241,8 +86312,8 @@
     ],
     "impact": "fort"
    },
-   "analysed_at": "2026-11-10T07:59:54+01:00",
-   "analysed_size": 4,
+   "analysed_at": "2026-11-11T08:04:52+01:00",
+   "analysed_size": 23,
    "analysis_model": "claude_cli:sonnet"
   },
   {
@@ -86398,12 +86469,32 @@
   {
    "id": "s3cacd3290d9071a0",
    "item_ids": [
-    "3cacd3290d9071a0"
+    "3cacd3290d9071a0",
+    "2bd2e02f76823cda"
    ],
-   "analysis": {},
-   "analysed_at": "",
-   "analysed_size": 0,
-   "analysis_model": ""
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Amazon Leo lancera 40 satellites sur sa première mission dédiée Vulcan",
+    "summary": "La constellation Amazon Leo (ex-Kuiper) prévoit de placer 40 satellites en orbite basse lors de son premier vol dédié sur une fusée Vulcan.",
+    "why": "Le déploiement d'Amazon Leo renforce la concurrence sur la connectivité satellitaire, un marché clé pour Airbus.",
+    "tabs": [
+     "concurrents"
+    ],
+    "themes": [
+     "lancements",
+     "produits"
+    ],
+    "industries": [
+     "connectivite"
+    ],
+    "countries": [
+     "US"
+    ],
+    "impact": "moyen"
+   },
+   "analysed_at": "2026-11-11T08:04:52+01:00",
+   "analysed_size": 2,
+   "analysis_model": "claude_cli:sonnet"
   },
   {
    "id": "s1838607969be6025",
@@ -86788,12 +86879,35 @@
   {
    "id": "s8317fea3147b934e",
    "item_ids": [
-    "8317fea3147b934e"
+    "8317fea3147b934e",
+    "9ae2925b7701f57a",
+    "3e9714780543b4b3",
+    "021ca929d01ccf07"
    ],
-   "analysis": {},
-   "analysed_at": "",
-   "analysed_size": 0,
-   "analysis_model": ""
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Nouvelle attaque contre l'oléoduc saoudien Est-Ouest près de Médine",
+    "summary": "Un oléoduc pétrolier vital reliant l'Est à l'Ouest de l'Arabie saoudite a été visé par une nouvelle attaque dans la région de Médine, selon deux sources.",
+    "why": "Les attaques contre les infrastructures pétrolières saoudiennes accroissent le risque géopolitique régional, un facteur suivi par la surveillance satellitaire.",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [
+     "conflits",
+     "ressources"
+    ],
+    "industries": [
+     "ogme",
+     "securite"
+    ],
+    "countries": [
+     "SA"
+    ],
+    "impact": "moyen"
+   },
+   "analysed_at": "2026-11-11T08:04:52+01:00",
+   "analysed_size": 2,
+   "analysis_model": "claude_cli:sonnet"
   },
   {
    "id": "s7554881a373f3476",
@@ -87136,16 +87250,6 @@
    "analysis_model": ""
   },
   {
-   "id": "s533a9942199ad1e2",
-   "item_ids": [
-    "533a9942199ad1e2"
-   ],
-   "analysis": {},
-   "analysed_at": "",
-   "analysed_size": 0,
-   "analysis_model": ""
-  },
-  {
    "id": "s04d568b43196bedb",
    "item_ids": [
     "04d568b43196bedb"
@@ -87179,13 +87283,16 @@
    "id": "sa17e89a534cab47e",
    "item_ids": [
     "a17e89a534cab47e",
-    "76c7c887332bb79a"
+    "76c7c887332bb79a",
+    "a45f8ee50c84ef26",
+    "d997e9270dc92246",
+    "a86a744c7913220f"
    ],
    "analysis": {
     "relevant": true,
-    "title_fr": "Le Japon et le Vietnam renforcent leur coopération sur les minéraux critiques",
-    "summary": "Tokyo et Hanoï ont convenu de renforcer leur coopération sur les minéraux critiques, dans un contexte de diversification des chaînes d'approvisionnement face à la Chine.",
-    "why": "Les tensions sur les minéraux critiques accroissent la demande de surveillance géospatiale des sites miniers et des chaînes logistiques.",
+    "title_fr": "Le Japon et le Vietnam renforcent leur coopération sur les minéraux critiques face à la Chine",
+    "summary": "Tokyo et Hanoï ont convenu d'approfondir leur coopération sur les minéraux critiques et l'énergie, dans un contexte de tensions d'approvisionnement avec la Chine.",
+    "why": "Les tensions sur les minéraux critiques accroissent la demande de surveillance satellitaire des sites et chaînes d'approvisionnement.",
     "tabs": [
      "geopolitique"
     ],
@@ -87197,12 +87304,13 @@
     ],
     "countries": [
      "JP",
-     "VN"
+     "VN",
+     "CN"
     ],
     "impact": "faible"
    },
-   "analysed_at": "2026-11-10T07:59:54+01:00",
-   "analysed_size": 2,
+   "analysed_at": "2026-11-11T08:04:52+01:00",
+   "analysed_size": 4,
    "analysis_model": "claude_cli:sonnet"
   },
   {
@@ -87351,7 +87459,10 @@
     "aabbe0734f2a8c30",
     "68662951b03bed2b",
     "72654d6227c66700",
-    "a4f4a39a6b457c9c"
+    "a4f4a39a6b457c9c",
+    "0890d3439b1144bd",
+    "f70ec85b3dc564dd",
+    "9f288482be70d2bd"
    ],
    "analysis": {
     "relevant": true,
@@ -87488,7 +87599,8 @@
    "id": "s2b02ed5951b3b78e",
    "item_ids": [
     "2b02ed5951b3b78e",
-    "a58b5002aa27cdf6"
+    "a58b5002aa27cdf6",
+    "f2484296f7edb403"
    ],
    "analysis": {
     "relevant": true,
@@ -87614,36 +87726,6 @@
    "analysis_model": ""
   },
   {
-   "id": "s1d492058455a5ad0",
-   "item_ids": [
-    "1d492058455a5ad0",
-    "f6d6183aa41d3693",
-    "50e16880db8f0959"
-   ],
-   "analysis": {
-    "relevant": true,
-    "title_fr": "Rocket Lab décroche plus de 515 M$ de contrats de lancement Neutron",
-    "summary": "Rocket Lab a sécurisé plus de 515 millions de dollars de contrats de lancement pour sa future fusée Neutron.",
-    "why": "Ces contrats renforcent le positionnement de Rocket Lab comme concurrent sur le marché des lancements moyens.",
-    "tabs": [
-     "concurrents",
-     "marche"
-    ],
-    "themes": [
-     "appels_offres",
-     "lancements"
-    ],
-    "industries": [],
-    "countries": [
-     "US"
-    ],
-    "impact": "moyen"
-   },
-   "analysed_at": "2026-11-10T07:59:54+01:00",
-   "analysed_size": 2,
-   "analysis_model": "claude_cli:sonnet"
-  },
-  {
    "id": "s9026484805e97128",
    "item_ids": [
     "9026484805e97128"
@@ -87676,12 +87758,35 @@
   {
    "id": "se309bc3ba50d1852",
    "item_ids": [
-    "e309bc3ba50d1852"
+    "e309bc3ba50d1852",
+    "38590f6059e7c803",
+    "bc6de3e1ea242cd1",
+    "d7ffd318bf57e242"
    ],
-   "analysis": {},
-   "analysed_at": "",
-   "analysed_size": 0,
-   "analysis_model": ""
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Le Pentagone accorde un prêt conditionnel de 150 M$ à Rocket Lab pour Neutron",
+    "summary": "Le bureau des capacités stratégiques du Pentagone offre à Rocket Lab un prêt conditionnel de 150 millions de dollars pour accélérer la production de sa fusée Neutron, alors que SpaceX réduit Falcon 9.",
+    "why": "Soutien public américain à un concurrent du lancement, renforçant la diversification de l'accès à l'orbite pour le géospatial militaire.",
+    "tabs": [
+     "concurrents",
+     "economie"
+    ],
+    "themes": [
+     "financements",
+     "budgets"
+    ],
+    "industries": [
+     "defense"
+    ],
+    "countries": [
+     "US"
+    ],
+    "impact": "moyen"
+   },
+   "analysed_at": "2026-11-11T08:04:52+01:00",
+   "analysed_size": 4,
+   "analysis_model": "claude_cli:sonnet"
   },
   {
    "id": "sb6ad0b11eba0cd88",
@@ -87876,7 +87981,8 @@
   {
    "id": "s29f6e20eafd88169",
    "item_ids": [
-    "29f6e20eafd88169"
+    "29f6e20eafd88169",
+    "18c942ae21c1a00d"
    ],
    "analysis": {},
    "analysed_at": "",
@@ -87944,9 +88050,9 @@
    ],
    "analysis": {
     "relevant": true,
-    "title_fr": "Trump juge la guerre avec l'Iran 'militairement terminée'",
-    "summary": "Après une rencontre avec le Premier ministre qatari, Donald Trump a déclaré que le conflit militaire avec l'Iran était 'effectivement terminé'.",
-    "why": "Une désescalade réduirait la demande de renseignement géospatial sur la zone, mais la situation reste à confirmer.",
+    "title_fr": "Trump juge le conflit militaire avec l'Iran « effectivement terminé »",
+    "summary": "Après une rencontre avec le Premier ministre du Qatar, Donald Trump a déclaré que le conflit militaire avec l'Iran était désormais effectivement terminé, suggérant un virage diplomatique.",
+    "why": "Une désescalade avec l'Iran réduirait les tensions au Moyen-Orient suivies pour l'imagerie de défense et maritime.",
     "tabs": [
      "geopolitique"
     ],
@@ -87958,23 +88064,14 @@
     ],
     "countries": [
      "QA",
-     "IR"
+     "IR",
+     "US"
     ],
     "impact": "moyen"
    },
-   "analysed_at": "2026-11-10T07:59:54+01:00",
-   "analysed_size": 2,
+   "analysed_at": "2026-11-11T08:04:52+01:00",
+   "analysed_size": 5,
    "analysis_model": "claude_cli:sonnet"
-  },
-  {
-   "id": "s3e9714780543b4b3",
-   "item_ids": [
-    "3e9714780543b4b3"
-   ],
-   "analysis": {},
-   "analysed_at": "",
-   "analysed_size": 0,
-   "analysis_model": ""
   },
   {
    "id": "s19917d0f99585577",
@@ -88059,12 +88156,30 @@
   {
    "id": "s16509456b9bfe6a5",
    "item_ids": [
-    "16509456b9bfe6a5"
+    "16509456b9bfe6a5",
+    "5e20b143a3479b3e"
    ],
-   "analysis": {},
-   "analysed_at": "",
-   "analysed_size": 0,
-   "analysis_model": ""
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Rocket Lab augmente les prix de son lanceur Neutron avant son premier vol en 2027",
+    "summary": "Rocket Lab relève les tarifs de lancement de sa fusée Neutron, dont le premier vol est prévu en 2027, face à une demande en forte hausse.",
+    "why": "La hausse des prix de Neutron, concurrent direct des lanceurs moyens, signale une tension sur l'offre du marché des lancements.",
+    "tabs": [
+     "concurrents"
+    ],
+    "themes": [
+     "produits",
+     "lancements"
+    ],
+    "industries": [],
+    "countries": [
+     "US"
+    ],
+    "impact": "moyen"
+   },
+   "analysed_at": "2026-11-11T08:04:52+01:00",
+   "analysed_size": 2,
+   "analysis_model": "claude_cli:sonnet"
   },
   {
    "id": "sfd9edc6ddb9151e5",
@@ -88147,16 +88262,6 @@
    "analysis_model": ""
   },
   {
-   "id": "sb9e33b387c7b57ac",
-   "item_ids": [
-    "b9e33b387c7b57ac"
-   ],
-   "analysis": {},
-   "analysed_at": "",
-   "analysed_size": 0,
-   "analysis_model": ""
-  },
-  {
    "id": "s66d5a83012550d53",
    "item_ids": [
     "66d5a83012550d53"
@@ -88219,12 +88324,34 @@
   {
    "id": "s5cb9fa3103aaba10",
    "item_ids": [
-    "5cb9fa3103aaba10"
+    "5cb9fa3103aaba10",
+    "10fa4f4d01b0470e",
+    "ac67d307b279c9e0",
+    "5ca3b5d079b0493f"
    ],
-   "analysis": {},
-   "analysed_at": "",
-   "analysed_size": 0,
-   "analysis_model": ""
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Inondations et glissements de terrain coupent des routes à Hué et Quang Ngai au Vietnam",
+    "summary": "De fortes pluies ont provoqué des glissements de terrain et des inondations localisées sur plusieurs routes des provinces de Hué et Quang Ngai, au Vietnam.",
+    "why": "Ces inondations récurrentes au Vietnam alimentent la demande de cartographie satellite pour la gestion des catastrophes.",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [
+     "crises"
+    ],
+    "industries": [
+     "infrastructures",
+     "foret_environnement"
+    ],
+    "countries": [
+     "VN"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-11T08:04:52+01:00",
+   "analysed_size": 2,
+   "analysis_model": "claude_cli:sonnet"
   },
   {
    "id": "s538ab72433dce0c0",
@@ -88285,40 +88412,6 @@
    "analysed_at": "",
    "analysed_size": 0,
    "analysis_model": ""
-  },
-  {
-   "id": "sb7f925c29fbc8650",
-   "item_ids": [
-    "b7f925c29fbc8650",
-    "a792eaa32606e34f",
-    "d8a7b6b3025568e9",
-    "864f80937bf73d8b"
-   ],
-   "analysis": {
-    "relevant": true,
-    "title_fr": "L'Arabie saoudite intercepte des missiles visant Riyad après une attaque houthie sur un pipeline",
-    "summary": "Les forces saoudiennes ont intercepté deux missiles visant Riyad, après des dégâts signalés sur un pipeline est-ouest clé suite à une attaque houthie.",
-    "why": "Les attaques contre les infrastructures pétrolières saoudiennes renforcent la demande de surveillance satellite des sites énergétiques sensibles.",
-    "tabs": [
-     "geopolitique"
-    ],
-    "themes": [
-     "conflits",
-     "ressources"
-    ],
-    "industries": [
-     "ogme",
-     "defense"
-    ],
-    "countries": [
-     "SA",
-     "YE"
-    ],
-    "impact": "moyen"
-   },
-   "analysed_at": "2026-11-10T07:59:54+01:00",
-   "analysed_size": 2,
-   "analysis_model": "claude_cli:sonnet"
   },
   {
    "id": "s4f1a8ceb370ca19b",
@@ -88619,9 +88712,9 @@
    ],
    "analysis": {
     "relevant": true,
-    "title_fr": "COP31: le Népal réclame justice après six catastrophes en six ans",
-    "summary": "Lors de la COP31, des représentants du Népal dénoncent avoir subi six catastrophes naturelles en six ans, dont un effondrement de montagne meurtrier.",
-    "why": "Les catastrophes répétées au Népal illustrent le besoin croissant de surveillance satellite des risques climatiques en montagne.",
+    "title_fr": "À la COP31, le Népal réclame justice climatique après six catastrophes en six ans",
+    "summary": "Des représentants du Népal demandent justice climatique à la COP31, deux mois et demi après un effondrement meurtrier de montagne et une méga-avalanche.",
+    "why": "Les catastrophes climatiques répétées renforcent la demande de surveillance environnementale par satellite en zone himalayenne.",
     "tabs": [
      "geopolitique"
     ],
@@ -88636,8 +88729,8 @@
     ],
     "impact": "faible"
    },
-   "analysed_at": "2026-11-10T07:59:54+01:00",
-   "analysed_size": 1,
+   "analysed_at": "2026-11-11T08:04:52+01:00",
+   "analysed_size": 2,
    "analysis_model": "claude_cli:sonnet"
   },
   {
@@ -88844,7 +88937,11 @@
   {
    "id": "sc465fab8d974b888",
    "item_ids": [
-    "c465fab8d974b888"
+    "c465fab8d974b888",
+    "b7f925c29fbc8650",
+    "a792eaa32606e34f",
+    "d8a7b6b3025568e9",
+    "864f80937bf73d8b"
    ],
    "analysis": {
     "relevant": true,
@@ -89543,7 +89640,14 @@
   {
    "id": "s421dadc55642ceb9",
    "item_ids": [
-    "421dadc55642ceb9"
+    "421dadc55642ceb9",
+    "9f894ee713de859f",
+    "0449938151685a53",
+    "47c23e85fa7daa91",
+    "0ded77bf3d637114",
+    "7a38c72c2a919d41",
+    "e94e0cc88cb366cd",
+    "1295176e6201048f"
    ],
    "analysis": {
     "relevant": true,
@@ -89777,40 +89881,6 @@
    "analysis_model": "claude_cli:sonnet"
   },
   {
-   "id": "s41854d5ddd0dc0dc",
-   "item_ids": [
-    "41854d5ddd0dc0dc",
-    "6332e575a58ececc",
-    "bbf73e2109705e57",
-    "0219a7b92db4f2be",
-    "ca60c142437ae2f1"
-   ],
-   "analysis": {
-    "relevant": true,
-    "title_fr": "Pourparlers Ukraine-Russie-États-Unis à Abou Dabi, 1720e jour de guerre",
-    "summary": "Kyiv, Moscou et Washington ont repris des discussions à Abou Dabi alors que la guerre en Ukraine entre dans son 1720e jour.",
-    "why": "L'évolution des négociations influence directement la demande de surveillance satellite du conflit ukrainien.",
-    "tabs": [
-     "geopolitique"
-    ],
-    "themes": [
-     "conflits"
-    ],
-    "industries": [
-     "defense"
-    ],
-    "countries": [
-     "UA",
-     "RU",
-     "AE"
-    ],
-    "impact": "moyen"
-   },
-   "analysed_at": "2026-11-10T07:59:54+01:00",
-   "analysed_size": 2,
-   "analysis_model": "claude_cli:sonnet"
-  },
-  {
    "id": "s7e340ac76d4762f3",
    "item_ids": [
     "7e340ac76d4762f3"
@@ -89844,7 +89914,16 @@
   {
    "id": "sbf0689f0aad46558",
    "item_ids": [
-    "bf0689f0aad46558"
+    "bf0689f0aad46558",
+    "41854d5ddd0dc0dc",
+    "6332e575a58ececc",
+    "bbf73e2109705e57",
+    "0219a7b92db4f2be",
+    "ca60c142437ae2f1",
+    "b80ea96c09b2363a",
+    "2c163e3f4e448ad2",
+    "c15960da3aff3373",
+    "f806bd2d1ae02bd8"
    ],
    "analysis": {
     "relevant": true,
@@ -89878,9 +89957,9 @@
    ],
    "analysis": {
     "relevant": true,
-    "title_fr": "Une attaque de drone sur Khor Mor ravive les craintes sur la sécurité énergétique irakienne",
-    "summary": "Une frappe de drone a perturbé l'approvisionnement électrique dans la région kurde semi-autonome d'Irak, relançant les inquiétudes sur la sécurité des infrastructures face aux groupes armés.",
-    "why": "Les attaques contre les infrastructures énergétiques accroissent la demande de surveillance satellite des sites critiques.",
+    "title_fr": "Une attaque de drone sur le champ gazier de Khor Mor inquiète pour la sécurité énergétique irakienne",
+    "summary": "Une 12e attaque de drone a frappé le champ gazier de Khor Mor au Kurdistan irakien, perturbant l'approvisionnement électrique malgré les défenses promises.",
+    "why": "Les attaques répétées sur les infrastructures énergétiques irakiennes illustrent le besoin de surveillance satellitaire des sites critiques.",
     "tabs": [
      "geopolitique"
     ],
@@ -89897,8 +89976,8 @@
     ],
     "impact": "moyen"
    },
-   "analysed_at": "2026-11-10T07:59:54+01:00",
-   "analysed_size": 1,
+   "analysed_at": "2026-11-11T08:04:52+01:00",
+   "analysed_size": 2,
    "analysis_model": "claude_cli:sonnet"
   },
   {
@@ -90053,18 +90132,20 @@
    "id": "s688e49655b54f429",
    "item_ids": [
     "688e49655b54f429",
-    "c47a6ab6cfcd885a"
+    "c47a6ab6cfcd885a",
+    "abccadadd3d8d3ce"
    ],
    "analysis": {
     "relevant": true,
-    "title_fr": "La Birmanie presse Washington d'investir dans les terres rares pour contrer la Chine",
-    "summary": "Le Myanmar appelle les États-Unis à accroître leurs investissements dans le secteur des terres rares afin de réduire la dépendance à la Chine.",
-    "why": "Les tensions sur les terres rares influencent l'accès aux composants stratégiques pour l'industrie spatiale et de défense.",
+    "title_fr": "Le Myanmar sollicite des investissements américains dans les terres rares",
+    "summary": "Le Myanmar demande aux États-Unis d'investir davantage dans son secteur des terres rares, actuellement dominé par la Chine.",
+    "why": "Les tensions sur les terres rares affectent les chaînes d'approvisionnement stratégiques pour la défense et la technologie spatiale.",
     "tabs": [
-     "economie"
+     "geopolitique"
     ],
     "themes": [
-     "ressources"
+     "ressources",
+     "sanctions"
     ],
     "industries": [
      "ogme"
@@ -90076,14 +90157,18 @@
     ],
     "impact": "faible"
    },
-   "analysed_at": "2026-11-10T07:59:54+01:00",
-   "analysed_size": 1,
+   "analysed_at": "2026-11-11T08:04:52+01:00",
+   "analysed_size": 3,
    "analysis_model": "claude_cli:sonnet"
   },
   {
    "id": "sd2a7ad56c83a495f",
    "item_ids": [
-    "d2a7ad56c83a495f"
+    "d2a7ad56c83a495f",
+    "b9e33b387c7b57ac",
+    "cdb090c54850f716",
+    "5e616ebdcbfb10bd",
+    "06e4a0175d1698e8"
    ],
    "analysis": {
     "relevant": true,
@@ -90146,24 +90231,26 @@
    ],
    "analysis": {
     "relevant": true,
-    "title_fr": "L'ONU juge insuffisante la réponse d'Israël aux inondations à Gaza",
-    "summary": "L'ONU critique la réponse d'Israël face aux inondations qui aggravent la crise humanitaire pour les populations déplacées de Gaza.",
-    "why": "Les crises humanitaires de ce type accroissent la demande de cartographie satellite d'urgence.",
+    "title_fr": "Le Board of Peace juge insuffisante l'aide israélienne après les inondations à Gaza",
+    "summary": "Une instance internationale critique la réponse jugée insuffisante d'Israël face aux inondations qui ont frappé Gaza, aggravant la crise humanitaire.",
+    "why": "Les crises humanitaires à Gaza accroissent la demande de cartographie et de suivi par imagerie satellite pour l'aide d'urgence.",
     "tabs": [
      "geopolitique"
     ],
     "themes": [
      "crises"
     ],
-    "industries": [],
+    "industries": [
+     "securite"
+    ],
     "countries": [
      "IL",
      "PS"
     ],
     "impact": "faible"
    },
-   "analysed_at": "2026-11-10T07:59:54+01:00",
-   "analysed_size": 1,
+   "analysed_at": "2026-11-11T08:04:52+01:00",
+   "analysed_size": 2,
    "analysis_model": "claude_cli:sonnet"
   },
   {
@@ -90250,9 +90337,9 @@
    ],
    "analysis": {
     "relevant": true,
-    "title_fr": "Trafic de GNL au plus haut dans le détroit d'Ormuz depuis la guerre en Iran",
-    "summary": "Les exportations de GNL via le détroit d'Ormuz ont atteint 31 pétroliers en octobre, leur plus haut niveau depuis février, selon les données de Kpler.",
-    "why": "Indicateur clé de la stabilité du trafic maritime dans le Golfe, zone sensible pour la sécurité énergétique et maritime.",
+    "title_fr": "Le trafic de GNL dans le détroit d'Ormuz atteint son plus haut niveau depuis la guerre en Iran",
+    "summary": "Les exportations de GNL via le détroit d'Ormuz ont atteint 31 tankers en octobre, leur plus haut niveau depuis février, selon Kpler.",
+    "why": "La reprise du trafic énergétique à Ormuz est un indicateur suivi par la surveillance maritime et l'imagerie satellite.",
     "tabs": [
      "geopolitique"
     ],
@@ -90266,9 +90353,5292 @@
     "countries": [
      "IR"
     ],
+    "impact": "moyen"
+   },
+   "analysed_at": "2026-11-11T08:04:52+01:00",
+   "analysed_size": 2,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "sa7b2d965d008c491",
+   "item_ids": [
+    "a7b2d965d008c491"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s8095fb9bbd011999",
+   "item_ids": [
+    "8095fb9bbd011999"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sc14f0c929c6878c5",
+   "item_ids": [
+    "c14f0c929c6878c5"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s68ae946d473d6b9b",
+   "item_ids": [
+    "68ae946d473d6b9b"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s2cb2d46ebfdeec08",
+   "item_ids": [
+    "2cb2d46ebfdeec08"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sc03415451bf9271d",
+   "item_ids": [
+    "c03415451bf9271d"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "se789c4dfbd61b759",
+   "item_ids": [
+    "e789c4dfbd61b759"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s4d9911917734cc44",
+   "item_ids": [
+    "4d9911917734cc44"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s338173a173fee973",
+   "item_ids": [
+    "338173a173fee973"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s034696005998c677",
+   "item_ids": [
+    "034696005998c677",
+    "44b32305e0d0b7cc",
+    "e70d9e0674bd8229"
+   ],
+   "analysis": {
+    "relevant": false,
+    "title_fr": "Discussion boursière autour de l'action Planet Labs sur Yahoo Finance",
+    "summary": "Forum de discussion sur le cours de l'action Planet Labs sans information nouvelle sur l'activité de l'entreprise.",
+    "why": "",
+    "tabs": [],
+    "themes": [],
+    "industries": [],
+    "countries": [
+     "US"
+    ],
     "impact": "faible"
    },
-   "analysed_at": "2026-11-10T07:59:54+01:00",
+   "analysed_at": "2026-11-11T08:04:52+01:00",
+   "analysed_size": 3,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s6cf31074eb768d70",
+   "item_ids": [
+    "6cf31074eb768d70"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "saba8602565632e8d",
+   "item_ids": [
+    "aba8602565632e8d"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s05345de5f4917fd5",
+   "item_ids": [
+    "05345de5f4917fd5"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s305950ee89ccdf06",
+   "item_ids": [
+    "305950ee89ccdf06"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sc598a347b6ecd396",
+   "item_ids": [
+    "c598a347b6ecd396"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s3ab9da2410b2e96f",
+   "item_ids": [
+    "3ab9da2410b2e96f"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sfa0db01b55264fc0",
+   "item_ids": [
+    "fa0db01b55264fc0"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s25687875c7e4d2d9",
+   "item_ids": [
+    "25687875c7e4d2d9"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s1f73e16acd2b0aa0",
+   "item_ids": [
+    "1f73e16acd2b0aa0"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s9075cb2e4d74e125",
+   "item_ids": [
+    "9075cb2e4d74e125",
+    "d4393fc557217c69"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Isar Aerospace pourrait lancer son 3e vol Spectrum le 26 novembre",
+    "summary": "Le lanceur allemand Isar Aerospace pourrait tenter le troisième vol de sa fusée Spectrum depuis Andøya en Norvège dès le 26 novembre.",
+    "why": "Progression d'un lanceur européen concurrent qui pourrait réduire la dépendance européenne aux lanceurs non européens.",
+    "tabs": [
+     "concurrents"
+    ],
+    "themes": [
+     "lancements"
+    ],
+    "industries": [],
+    "countries": [
+     "DE",
+     "NO"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-11T08:04:52+01:00",
+   "analysed_size": 2,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "se56ab4b33ee200ef",
+   "item_ids": [
+    "e56ab4b33ee200ef"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "scf155b6d28b4778a",
+   "item_ids": [
+    "cf155b6d28b4778a"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s65dffded5288b652",
+   "item_ids": [
+    "65dffded5288b652"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sddd34a13ab49515d",
+   "item_ids": [
+    "ddd34a13ab49515d"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s0ecebd5c57c8f7e3",
+   "item_ids": [
+    "0ecebd5c57c8f7e3"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s0180693479d49ffe",
+   "item_ids": [
+    "0180693479d49ffe"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s6a948361d1e8e2b9",
+   "item_ids": [
+    "6a948361d1e8e2b9"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s54a261bfd72679c7",
+   "item_ids": [
+    "54a261bfd72679c7"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sc1a3ab4571d16794",
+   "item_ids": [
+    "c1a3ab4571d16794"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sd0b05de74ec6b018",
+   "item_ids": [
+    "d0b05de74ec6b018"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sb0af6633da067ba8",
+   "item_ids": [
+    "b0af6633da067ba8"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s32abd09d0e9fbf09",
+   "item_ids": [
+    "32abd09d0e9fbf09"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s3eb9387bd161e00f",
+   "item_ids": [
+    "3eb9387bd161e00f"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "see2605a43b5548d7",
+   "item_ids": [
+    "ee2605a43b5548d7"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sb907fbcd270fb47f",
+   "item_ids": [
+    "b907fbcd270fb47f"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sb8b2b0dec3aa7fd1",
+   "item_ids": [
+    "b8b2b0dec3aa7fd1"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sdb9bb858f78119e7",
+   "item_ids": [
+    "db9bb858f78119e7"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sa34f79d18adf64c4",
+   "item_ids": [
+    "a34f79d18adf64c4"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s7bf9f7eca721a723",
+   "item_ids": [
+    "7bf9f7eca721a723"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s4a25147e94713a79",
+   "item_ids": [
+    "4a25147e94713a79"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s958a385e507d9188",
+   "item_ids": [
+    "958a385e507d9188"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s8dc3f0fb9636809d",
+   "item_ids": [
+    "8dc3f0fb9636809d"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s43410e10a8a4d756",
+   "item_ids": [
+    "43410e10a8a4d756"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s0b621057da5c3984",
+   "item_ids": [
+    "0b621057da5c3984"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sf53ddb570aac612b",
+   "item_ids": [
+    "f53ddb570aac612b"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s4405f0e81983e777",
+   "item_ids": [
+    "4405f0e81983e777"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sac0e3e293a19f3a6",
+   "item_ids": [
+    "ac0e3e293a19f3a6"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sbd790d77f832e24a",
+   "item_ids": [
+    "bd790d77f832e24a"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s60c35166f0e549b5",
+   "item_ids": [
+    "60c35166f0e549b5"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s576c86c292b926f3",
+   "item_ids": [
+    "576c86c292b926f3"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s2ff40dec24b9564b",
+   "item_ids": [
+    "2ff40dec24b9564b"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sfb782f9301a7fe19",
+   "item_ids": [
+    "fb782f9301a7fe19"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s0b24f81cba226fc3",
+   "item_ids": [
+    "0b24f81cba226fc3"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s412aec7b3304e01c",
+   "item_ids": [
+    "412aec7b3304e01c"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "se551c2f99966f30f",
+   "item_ids": [
+    "e551c2f99966f30f"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s4ed599b13f363e97",
+   "item_ids": [
+    "4ed599b13f363e97"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "se3a9afe049b22a9f",
+   "item_ids": [
+    "e3a9afe049b22a9f"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s5eb79073e9c76d06",
+   "item_ids": [
+    "5eb79073e9c76d06",
+    "13210fc11b0f43df"
+   ],
+   "analysis": {
+    "relevant": false,
+    "title_fr": "Les sondes ESCAPADE de la NASA utilisent la gravité terrestre pour accélérer vers Mars",
+    "summary": "Les deux sondes martiennes ESCAPADE de la NASA réalisent une double assistance gravitationnelle autour de la Terre pour poursuivre leur voyage vers Mars.",
+    "why": "",
+    "tabs": [],
+    "themes": [],
+    "industries": [],
+    "countries": [
+     "US"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-11T08:04:52+01:00",
+   "analysed_size": 2,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s1183a7ce44d3cf6e",
+   "item_ids": [
+    "1183a7ce44d3cf6e"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s94269247eec8cb43",
+   "item_ids": [
+    "94269247eec8cb43"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sbfea294ef6b265d0",
+   "item_ids": [
+    "bfea294ef6b265d0"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s9b65a9b71a7c98e4",
+   "item_ids": [
+    "9b65a9b71a7c98e4"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "se6baacf098df0101",
+   "item_ids": [
+    "e6baacf098df0101"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sb6fd0a8ba73f743f",
+   "item_ids": [
+    "b6fd0a8ba73f743f"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "se999d7bcf961bb08",
+   "item_ids": [
+    "e999d7bcf961bb08"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s954866a894451815",
+   "item_ids": [
+    "954866a894451815"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s63b4dea24c7f0dfd",
+   "item_ids": [
+    "63b4dea24c7f0dfd"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sd259c13a3ad9d56f",
+   "item_ids": [
+    "d259c13a3ad9d56f"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s1567d57c2277b52f",
+   "item_ids": [
+    "1567d57c2277b52f"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sa9932cf4a195f556",
+   "item_ids": [
+    "a9932cf4a195f556"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s59492705d52aa512",
+   "item_ids": [
+    "59492705d52aa512"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s6aa9e00524221d68",
+   "item_ids": [
+    "6aa9e00524221d68"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s3685e51f60ac3934",
+   "item_ids": [
+    "3685e51f60ac3934",
+    "2c3d46808aca6270"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "L'ISRO teste le moteur cryogénique pour sa prochaine mission GSLV",
+    "summary": "L'Inde a réalisé un essai d'acceptation en vol du moteur cryogénique destiné à la prochaine mission GSLV, qui doit lancer un quatrième satellite de navigation.",
+    "why": "Ce test conforte l'autonomie de lancement et de navigation satellite indienne, un enjeu pour la concurrence spatiale régionale.",
+    "tabs": [
+     "concurrents"
+    ],
+    "themes": [
+     "lancements",
+     "produits"
+    ],
+    "industries": [
+     "defense"
+    ],
+    "countries": [
+     "IN"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-11T08:04:52+01:00",
+   "analysed_size": 2,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "sbeef33a56c161c7e",
+   "item_ids": [
+    "beef33a56c161c7e"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sf6e5ed75c944394b",
+   "item_ids": [
+    "f6e5ed75c944394b"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sf46a146237550bc0",
+   "item_ids": [
+    "f46a146237550bc0"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sa238cd8e1521c1f3",
+   "item_ids": [
+    "a238cd8e1521c1f3"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s75a47fd785debb8e",
+   "item_ids": [
+    "75a47fd785debb8e"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s0df668e5dc4b2e3a",
+   "item_ids": [
+    "0df668e5dc4b2e3a"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "se84468f62c23d79c",
+   "item_ids": [
+    "e84468f62c23d79c"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s40810c51c9997fb3",
+   "item_ids": [
+    "40810c51c9997fb3"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s818b5949ab60d6e6",
+   "item_ids": [
+    "818b5949ab60d6e6"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s934d387bd054f74d",
+   "item_ids": [
+    "934d387bd054f74d"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s1ca02605cff3e53f",
+   "item_ids": [
+    "1ca02605cff3e53f"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s3ce2da9bd3bce0a1",
+   "item_ids": [
+    "3ce2da9bd3bce0a1"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s9ad1857d3b09f358",
+   "item_ids": [
+    "9ad1857d3b09f358"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s4cb5a920f60f69d7",
+   "item_ids": [
+    "4cb5a920f60f69d7"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s0bf5894e38214694",
+   "item_ids": [
+    "0bf5894e38214694"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s1770269afb0f1a8d",
+   "item_ids": [
+    "1770269afb0f1a8d"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s33aa25334b870204",
+   "item_ids": [
+    "33aa25334b870204",
+    "44959d3aa1a01f3d"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "SES publie ses résultats des neuf mois et du T3 2026",
+    "summary": "L'opérateur satellite SES publie ses résultats financiers pour le troisième trimestre et les neuf premiers mois de 2026.",
+    "why": "SES est un acteur majeur des communications satellitaires, pertinent pour la connectivité sécurisée.",
+    "tabs": [
+     "economie"
+    ],
+    "themes": [
+     "financements"
+    ],
+    "industries": [
+     "connectivite"
+    ],
+    "countries": [
+     "LU"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-11T08:04:52+01:00",
+   "analysed_size": 2,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "sc7624346276c8a5d",
+   "item_ids": [
+    "c7624346276c8a5d"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s957c6eedf1320954",
+   "item_ids": [
+    "957c6eedf1320954"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s83fa20e2bfc81fa0",
+   "item_ids": [
+    "83fa20e2bfc81fa0"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s93672c2356cb8fc0",
+   "item_ids": [
+    "93672c2356cb8fc0"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s3bbdf48d66e99cfa",
+   "item_ids": [
+    "3bbdf48d66e99cfa"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sbee365a0c55ea159",
+   "item_ids": [
+    "bee365a0c55ea159"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sfb44772b1fef69e5",
+   "item_ids": [
+    "fb44772b1fef69e5"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sab5e2462665fe29e",
+   "item_ids": [
+    "ab5e2462665fe29e"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sbb8d34f06b37631b",
+   "item_ids": [
+    "bb8d34f06b37631b"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s09b4ba191b26bc1d",
+   "item_ids": [
+    "09b4ba191b26bc1d"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "saf444b4344c0fc4a",
+   "item_ids": [
+    "af444b4344c0fc4a"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sa7b2d70b70c41dc1",
+   "item_ids": [
+    "a7b2d70b70c41dc1"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s88c3c2784f298a87",
+   "item_ids": [
+    "88c3c2784f298a87"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s0102aafc6ebdd459",
+   "item_ids": [
+    "0102aafc6ebdd459",
+    "af0a1f3ce8e91692",
+    "3176f27849f7aab0",
+    "939a9a9e50a2449b",
+    "96c971e8fe02f59e",
+    "84ef54bf0f2071e7",
+    "32fc051b05474616"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Synspective commande jusqu'à 10 lancements sur la fusée Alpha de Firefly",
+    "summary": "L'opérateur japonais de satellites radar Synspective a commandé jusqu'à 10 lancements sur la fusée Alpha de Firefly Aerospace, prévus jusqu'en 2030, en complément de ses contrats avec Rocket Lab.",
+    "why": "Renforce l'accès au lancement d'un concurrent SAR et illustre la diversification des fournisseurs de lancement pour le géospatial.",
+    "tabs": [
+     "concurrents"
+    ],
+    "themes": [
+     "lancements",
+     "produits"
+    ],
+    "industries": [
+     "defense",
+     "securite"
+    ],
+    "countries": [
+     "JP",
+     "US"
+    ],
+    "impact": "moyen"
+   },
+   "analysed_at": "2026-11-11T08:04:52+01:00",
+   "analysed_size": 4,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "scd2cf9bf7f135074",
+   "item_ids": [
+    "cd2cf9bf7f135074",
+    "73f91338514e6e79"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "BlackSky décroche un contrat de défense international à six chiffres",
+    "summary": "BlackSky annonce avoir remporté un contrat majeur de renseignement de défense international, d'un montant à six chiffres.",
+    "why": "Nouveau contrat qui renforce BlackSky, concurrent direct d'Airbus en imagerie de défense.",
+    "tabs": [
+     "concurrents",
+     "marche"
+    ],
+    "themes": [
+     "appels_offres"
+    ],
+    "industries": [
+     "defense"
+    ],
+    "countries": [
+     "US"
+    ],
+    "impact": "moyen"
+   },
+   "analysed_at": "2026-11-11T08:04:52+01:00",
+   "analysed_size": 2,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s51a16f57d5d1e5e3",
+   "item_ids": [
+    "51a16f57d5d1e5e3"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s427fafdc3b16e3f2",
+   "item_ids": [
+    "427fafdc3b16e3f2"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s6c963502ceaac5c9",
+   "item_ids": [
+    "6c963502ceaac5c9"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s9d94f018f6ef574b",
+   "item_ids": [
+    "9d94f018f6ef574b"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s0f5596bef6f39f71",
+   "item_ids": [
+    "0f5596bef6f39f71"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sd320bc14e27fe656",
+   "item_ids": [
+    "d320bc14e27fe656"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s5b5c0566b2e0d19c",
+   "item_ids": [
+    "5b5c0566b2e0d19c"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s7fbb39ee2948678f",
+   "item_ids": [
+    "7fbb39ee2948678f"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s600ec9c694e22c50",
+   "item_ids": [
+    "600ec9c694e22c50"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s2466fb1e81f3e907",
+   "item_ids": [
+    "2466fb1e81f3e907"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "scb42f881b81f65ab",
+   "item_ids": [
+    "cb42f881b81f65ab"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s33fb50aeedecd1ad",
+   "item_ids": [
+    "33fb50aeedecd1ad"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s3b4435cf7957ad24",
+   "item_ids": [
+    "3b4435cf7957ad24"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sec34948d4ec9136b",
+   "item_ids": [
+    "ec34948d4ec9136b"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "se01547882c328e3f",
+   "item_ids": [
+    "e01547882c328e3f"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s53bb314f33fc6416",
+   "item_ids": [
+    "53bb314f33fc6416"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s3a553231fd2e4308",
+   "item_ids": [
+    "3a553231fd2e4308"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sbb02c893a15ae20d",
+   "item_ids": [
+    "bb02c893a15ae20d"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s8c1e45be146f545e",
+   "item_ids": [
+    "8c1e45be146f545e"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "secceb02fd46a6ca2",
+   "item_ids": [
+    "ecceb02fd46a6ca2"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sfe0c55363f611705",
+   "item_ids": [
+    "fe0c55363f611705"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sd066a3427893d235",
+   "item_ids": [
+    "d066a3427893d235"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s2d7e466920f178fe",
+   "item_ids": [
+    "2d7e466920f178fe"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s665b46e4b5832ba7",
+   "item_ids": [
+    "665b46e4b5832ba7"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "se97c0536b10a556a",
+   "item_ids": [
+    "e97c0536b10a556a"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sc28d5b69f962558f",
+   "item_ids": [
+    "c28d5b69f962558f"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s8a0b7c5553af7bf6",
+   "item_ids": [
+    "8a0b7c5553af7bf6"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s96d821c1b807bc73",
+   "item_ids": [
+    "96d821c1b807bc73"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "scae8c24f5791230d",
+   "item_ids": [
+    "cae8c24f5791230d"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s087d6971662beab2",
+   "item_ids": [
+    "087d6971662beab2"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s797b7488e51bbb27",
+   "item_ids": [
+    "797b7488e51bbb27"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sba66c301bdf11e7c",
+   "item_ids": [
+    "ba66c301bdf11e7c"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s274a8d3895a77147",
+   "item_ids": [
+    "274a8d3895a77147"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sa9589fd3f07fb14a",
+   "item_ids": [
+    "a9589fd3f07fb14a"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sd58ab372b3e90e07",
+   "item_ids": [
+    "d58ab372b3e90e07"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s69ad86e592628c90",
+   "item_ids": [
+    "69ad86e592628c90"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s2762d4402c89cd89",
+   "item_ids": [
+    "2762d4402c89cd89"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s6ea06be437eb1b4f",
+   "item_ids": [
+    "6ea06be437eb1b4f"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s00854ba2563f4f04",
+   "item_ids": [
+    "00854ba2563f4f04"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sb7d3775810038d1c",
+   "item_ids": [
+    "b7d3775810038d1c"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sae2e13ee7fc5b91e",
+   "item_ids": [
+    "ae2e13ee7fc5b91e"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s7704b363c13ca64c",
+   "item_ids": [
+    "7704b363c13ca64c"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sc3ca9f8f7ea855e8",
+   "item_ids": [
+    "c3ca9f8f7ea855e8"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s63e220bd57504064",
+   "item_ids": [
+    "63e220bd57504064"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s5467eeeca3e772b8",
+   "item_ids": [
+    "5467eeeca3e772b8"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s20158923c68376d2",
+   "item_ids": [
+    "20158923c68376d2"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sce00603515bdda79",
+   "item_ids": [
+    "ce00603515bdda79"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s8c788a592af8a986",
+   "item_ids": [
+    "8c788a592af8a986"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s3855401aa14de1be",
+   "item_ids": [
+    "3855401aa14de1be"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s426039dec1f204af",
+   "item_ids": [
+    "426039dec1f204af"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s5a82b0d8572888cc",
+   "item_ids": [
+    "5a82b0d8572888cc"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s9e74c39f1610eb1c",
+   "item_ids": [
+    "9e74c39f1610eb1c"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s0a76846728a20983",
+   "item_ids": [
+    "0a76846728a20983"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s60d0fa4c2ff2d2e2",
+   "item_ids": [
+    "60d0fa4c2ff2d2e2"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s83daf12cb9182ae3",
+   "item_ids": [
+    "83daf12cb9182ae3"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s77077b5e0a3be8f7",
+   "item_ids": [
+    "77077b5e0a3be8f7"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s3826bfe7f2ca1ee1",
+   "item_ids": [
+    "3826bfe7f2ca1ee1"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s8e7e49ebd9c52be2",
+   "item_ids": [
+    "8e7e49ebd9c52be2"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s8a7e682d268af53b",
+   "item_ids": [
+    "8a7e682d268af53b"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sdadbf87cb5f6299c",
+   "item_ids": [
+    "dadbf87cb5f6299c"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sce2b0fdf5b2b4dc9",
+   "item_ids": [
+    "ce2b0fdf5b2b4dc9"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s18cd94d100a72d8f",
+   "item_ids": [
+    "18cd94d100a72d8f"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sf4fe42e8b6588eef",
+   "item_ids": [
+    "f4fe42e8b6588eef"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s9c2ff3c08405a741",
+   "item_ids": [
+    "9c2ff3c08405a741"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sf2de5265a45c673a",
+   "item_ids": [
+    "f2de5265a45c673a"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sed95f1148522f3e3",
+   "item_ids": [
+    "ed95f1148522f3e3"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sa7790487e22a050b",
+   "item_ids": [
+    "a7790487e22a050b"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "scde954a22cbf885d",
+   "item_ids": [
+    "cde954a22cbf885d"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sd0d30f15f8626b0d",
+   "item_ids": [
+    "d0d30f15f8626b0d"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s3b3062e63b8ed38c",
+   "item_ids": [
+    "3b3062e63b8ed38c"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s386e4b45be074e55",
+   "item_ids": [
+    "386e4b45be074e55"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s33525a4e00b49290",
+   "item_ids": [
+    "33525a4e00b49290"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sa5e95c4f3878a713",
+   "item_ids": [
+    "a5e95c4f3878a713"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s4f756e192c91a7b6",
+   "item_ids": [
+    "4f756e192c91a7b6"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s601e826b1dbea285",
+   "item_ids": [
+    "601e826b1dbea285"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sdcf63db471b0c117",
+   "item_ids": [
+    "dcf63db471b0c117"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "scdfdef05d66650a2",
+   "item_ids": [
+    "cdfdef05d66650a2"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s2e7e7d5af2df6b5b",
+   "item_ids": [
+    "2e7e7d5af2df6b5b"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s8853f1bc4cd6114c",
+   "item_ids": [
+    "8853f1bc4cd6114c"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s21450d78fe2f5ea5",
+   "item_ids": [
+    "21450d78fe2f5ea5"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s3396146e99fb972e",
+   "item_ids": [
+    "3396146e99fb972e"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s8330ab2197cc2998",
+   "item_ids": [
+    "8330ab2197cc2998"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sd683f29532ea2b9b",
+   "item_ids": [
+    "d683f29532ea2b9b"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s71160254ca0e6e4a",
+   "item_ids": [
+    "71160254ca0e6e4a"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s726295ed03cc0700",
+   "item_ids": [
+    "726295ed03cc0700"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sd17a6e44251c0440",
+   "item_ids": [
+    "d17a6e44251c0440"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s53d4a02030709960",
+   "item_ids": [
+    "53d4a02030709960"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s2ce7433893f45b2f",
+   "item_ids": [
+    "2ce7433893f45b2f"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s244df57f64eadea8",
+   "item_ids": [
+    "244df57f64eadea8"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s61f33cd09c80d3f6",
+   "item_ids": [
+    "61f33cd09c80d3f6"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sfaf4107b09b866cb",
+   "item_ids": [
+    "faf4107b09b866cb"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s76b8251da4e4d7c5",
+   "item_ids": [
+    "76b8251da4e4d7c5"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sad04b74bcafb23f0",
+   "item_ids": [
+    "ad04b74bcafb23f0"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s7921517f58803bba",
+   "item_ids": [
+    "7921517f58803bba"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sf1672754e998cb74",
+   "item_ids": [
+    "f1672754e998cb74"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s5fd9db78ec656eb7",
+   "item_ids": [
+    "5fd9db78ec656eb7"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "se597d43c05d6594f",
+   "item_ids": [
+    "e597d43c05d6594f"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sd458173346207c35",
+   "item_ids": [
+    "d458173346207c35"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sa23c28d97dabcec5",
+   "item_ids": [
+    "a23c28d97dabcec5"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s0b879c57aa59371e",
+   "item_ids": [
+    "0b879c57aa59371e"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sdcb61e7a191069de",
+   "item_ids": [
+    "dcb61e7a191069de"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s943485111e4210e9",
+   "item_ids": [
+    "943485111e4210e9"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s46604dfe6a596fa5",
+   "item_ids": [
+    "46604dfe6a596fa5"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sa34b8b924b50505a",
+   "item_ids": [
+    "a34b8b924b50505a"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s248a5113c656849c",
+   "item_ids": [
+    "248a5113c656849c"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sac7380fe7c2406ce",
+   "item_ids": [
+    "ac7380fe7c2406ce"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s5b099932e1e80139",
+   "item_ids": [
+    "5b099932e1e80139"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s6ad28f3e0b07a590",
+   "item_ids": [
+    "6ad28f3e0b07a590"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sdeccbea79c89f61a",
+   "item_ids": [
+    "deccbea79c89f61a"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sd33459a64585e506",
+   "item_ids": [
+    "d33459a64585e506"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "see039b4e71acc29a",
+   "item_ids": [
+    "ee039b4e71acc29a"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s633006bf7ed9e18b",
+   "item_ids": [
+    "633006bf7ed9e18b"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s83b629ca523a52a4",
+   "item_ids": [
+    "83b629ca523a52a4"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sb8a35920887e3d13",
+   "item_ids": [
+    "b8a35920887e3d13"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s15d7f24c4556cfda",
+   "item_ids": [
+    "15d7f24c4556cfda"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s7a1a2b6058f94354",
+   "item_ids": [
+    "7a1a2b6058f94354"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s542349d9cdc0df34",
+   "item_ids": [
+    "542349d9cdc0df34"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "secd4e15f37b9b193",
+   "item_ids": [
+    "ecd4e15f37b9b193"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sa413e0f39f4091ed",
+   "item_ids": [
+    "a413e0f39f4091ed"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s22a2214a5726ec7b",
+   "item_ids": [
+    "22a2214a5726ec7b",
+    "95ab4d1e4a578f54",
+    "c57dc3da3b26a88b"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Un militaire américain arrêté au Royaume-Uni pour espionnage au profit de la Russie",
+    "summary": "Un militaire américain de 41 ans a été arrêté le 10 novembre dans le sud-ouest de l'Angleterre, soupçonné d'espionnage pour la Russie.",
+    "why": "Illustre les tensions d'espionnage persistantes entre la Russie et les pays occidentaux, un enjeu pour la défense et la sécurité.",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [
+     "conflits",
+     "sanctions"
+    ],
+    "industries": [
+     "defense",
+     "securite"
+    ],
+    "countries": [
+     "US",
+     "GB",
+     "RU"
+    ],
+    "impact": "moyen"
+   },
+   "analysed_at": "2026-11-11T08:04:52+01:00",
+   "analysed_size": 3,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s5fea3613d2bd7956",
+   "item_ids": [
+    "5fea3613d2bd7956"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s671613a93ec05237",
+   "item_ids": [
+    "671613a93ec05237"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s0cf171d6621c5c1e",
+   "item_ids": [
+    "0cf171d6621c5c1e"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sf6623f5a7dda4b7f",
+   "item_ids": [
+    "f6623f5a7dda4b7f"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sd00a40710a3367c6",
+   "item_ids": [
+    "d00a40710a3367c6"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sa29e2b2bc83cff64",
+   "item_ids": [
+    "a29e2b2bc83cff64",
+    "49bcf771fce74d94",
+    "2e8bb4faa988deba",
+    "20f207256967b118"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "HawkEye 360 nomme l'ex-directeur de la CIA William Burns à son conseil d'administration",
+    "summary": "HawkEye 360, spécialiste du renseignement radiofréquence par satellite, a nommé l'ancien directeur de la CIA William J. Burns à son conseil d'administration pour renforcer ses capacités de renseignement.",
+    "why": "Renforce la crédibilité d'un concurrent du renseignement géospatial auprès des clients de défense et de sécurité.",
+    "tabs": [
+     "concurrents"
+    ],
+    "themes": [],
+    "industries": [
+     "defense",
+     "securite"
+    ],
+    "countries": [
+     "US"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-11T08:04:52+01:00",
+   "analysed_size": 4,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s5f7a22dd525a8a79",
+   "item_ids": [
+    "5f7a22dd525a8a79"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s0945fbf95d81560a",
+   "item_ids": [
+    "0945fbf95d81560a"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s4a246b1b671b420a",
+   "item_ids": [
+    "4a246b1b671b420a"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "saad153b274a707d7",
+   "item_ids": [
+    "aad153b274a707d7"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s611a656a3847a9d8",
+   "item_ids": [
+    "611a656a3847a9d8"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s29ea9cd31b795d9d",
+   "item_ids": [
+    "29ea9cd31b795d9d"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "see8c01ec20b069ae",
+   "item_ids": [
+    "ee8c01ec20b069ae"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s854370015f7daa00",
+   "item_ids": [
+    "854370015f7daa00",
+    "7872129ece65b140"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Dépôts réglementaires (formulaires 8-K) de HawkEye 360 et Firefly Aerospace",
+    "summary": "HawkEye 360 et Firefly Aerospace déposent chacun un formulaire 8-K auprès de la SEC daté du 10 novembre.",
+    "why": "Documents réglementaires de routine, impact direct limité pour le secteur.",
+    "tabs": [
+     "economie"
+    ],
+    "themes": [],
+    "industries": [],
+    "countries": [
+     "US"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-11T08:04:52+01:00",
+   "analysed_size": 2,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "sf3978e00b4d4a71f",
+   "item_ids": [
+    "f3978e00b4d4a71f"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sb27e0e1bcf4f7c16",
+   "item_ids": [
+    "b27e0e1bcf4f7c16"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s4223535c1c106fbf",
+   "item_ids": [
+    "4223535c1c106fbf"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s7fe75cf22a272b22",
+   "item_ids": [
+    "7fe75cf22a272b22"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s1e61eeebd854f185",
+   "item_ids": [
+    "1e61eeebd854f185"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "se0d8e3dcf5096023",
+   "item_ids": [
+    "e0d8e3dcf5096023"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s748d911215c18332",
+   "item_ids": [
+    "748d911215c18332"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s10bac2970331dfc3",
+   "item_ids": [
+    "10bac2970331dfc3"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sc291efcf3eb04d7f",
+   "item_ids": [
+    "c291efcf3eb04d7f"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sb7e4b30a4a1a9fd6",
+   "item_ids": [
+    "b7e4b30a4a1a9fd6"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sfc000e2d9da30e10",
+   "item_ids": [
+    "fc000e2d9da30e10"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s932e2485aa8b208b",
+   "item_ids": [
+    "932e2485aa8b208b",
+    "323af5a6bde1d800",
+    "dd1f44095881cdb5",
+    "8e216c884878e384",
+    "1b3f2d5297674615",
+    "c8052f1a91a7cad4",
+    "b77d8ba0df4d9c12",
+    "3802e36a261d2758",
+    "4d9f5caa1b193b8c",
+    "ded3d6eb31454a48"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Spire Global : pertes élargies à 0,52 $/action au T3 2026, revenus en deçà des attentes",
+    "summary": "Spire Global a publié une perte de 0,52 dollar par action et un chiffre d'affaires de 18 millions de dollars au troisième trimestre 2026, manquant les attentes des analystes.",
+    "why": "Signale les difficultés financières persistantes d'un concurrent dans les données satellitaires.",
+    "tabs": [
+     "concurrents"
+    ],
+    "themes": [],
+    "industries": [],
+    "countries": [
+     "US"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-11T08:04:52+01:00",
+   "analysed_size": 4,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s192f21348d9834d7",
+   "item_ids": [
+    "192f21348d9834d7"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s48e80229a989432b",
+   "item_ids": [
+    "48e80229a989432b",
+    "e0f1609525581e2d",
+    "488579b5fcea0dd6",
+    "622353d65463b08f",
+    "a5c82c6f74f7a64f",
+    "6104bc34402b4c52",
+    "cae2383e26750961",
+    "2cad32318a730ff4",
+    "870a18d97e7c63e6",
+    "cf5bdf04d7ee6b05",
+    "bcc62d76defb85d6",
+    "b87a16c30dba8cd3",
+    "5c1a2cab009bfee8",
+    "a2cdc3fb295e929f",
+    "cc2c343ae065f618",
+    "7e3723c4649ea962",
+    "42984305021336fa",
+    "92e56b2ad1f1c7c1"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Satellogic publie ses résultats du T3 2026, revenus en deçà des attentes",
+    "summary": "Satellogic a annoncé un bénéfice par action de 0,14 $ supérieur aux attentes mais un chiffre d'affaires de 16,04 millions de dollars inférieur aux prévisions pour le troisième trimestre 2026.",
+    "why": "Indicateur de la santé financière d'un concurrent de l'imagerie satellite low-cost.",
+    "tabs": [
+     "concurrents"
+    ],
+    "themes": [],
+    "industries": [],
+    "countries": [
+     "US"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-11T08:04:52+01:00",
+   "analysed_size": 16,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s9896643fc4b9d6c8",
+   "item_ids": [
+    "9896643fc4b9d6c8"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sf0e9836d1fb57fc4",
+   "item_ids": [
+    "f0e9836d1fb57fc4"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s212183bcb712d3d8",
+   "item_ids": [
+    "212183bcb712d3d8"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s5919ccea3fcde282",
+   "item_ids": [
+    "5919ccea3fcde282"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "seafec12c863497fd",
+   "item_ids": [
+    "eafec12c863497fd"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s189fbf47845aebff",
+   "item_ids": [
+    "189fbf47845aebff"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sb4d06d2b4d3a2af0",
+   "item_ids": [
+    "b4d06d2b4d3a2af0"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s24c2ddb99dd6030d",
+   "item_ids": [
+    "24c2ddb99dd6030d"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s98617e7a1152365b",
+   "item_ids": [
+    "98617e7a1152365b"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s6374d17ef8107fe9",
+   "item_ids": [
+    "6374d17ef8107fe9"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s48dd5cc41393b98f",
+   "item_ids": [
+    "48dd5cc41393b98f"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s49b939edfef05972",
+   "item_ids": [
+    "49b939edfef05972",
+    "574fac6efca78008"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Isar Aerospace ambitionne de dépasser SpaceX",
+    "summary": "La société allemande Isar Aerospace affiche son ambition de concurrencer et dépasser SpaceX sur le marché des lanceurs.",
+    "why": "Signale la montée d'un concurrent européen susceptible de redessiner le marché des lancements pour satellites d'observation.",
+    "tabs": [
+     "concurrents"
+    ],
+    "themes": [
+     "produits"
+    ],
+    "industries": [],
+    "countries": [
+     "DE",
+     "US"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-11T08:04:52+01:00",
+   "analysed_size": 2,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s5a192779fcd7a5d1",
+   "item_ids": [
+    "5a192779fcd7a5d1"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s4081dbd8bcbca6c4",
+   "item_ids": [
+    "4081dbd8bcbca6c4"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "se896bb859471172a",
+   "item_ids": [
+    "e896bb859471172a"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s8b87c33829d9d446",
+   "item_ids": [
+    "8b87c33829d9d446"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s36e8aa73f2fcfe3f",
+   "item_ids": [
+    "36e8aa73f2fcfe3f"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s8b7f5ffcffbb80bd",
+   "item_ids": [
+    "8b7f5ffcffbb80bd"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s0578c36fcc715f1d",
+   "item_ids": [
+    "0578c36fcc715f1d"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sd45f520f51b89f2f",
+   "item_ids": [
+    "d45f520f51b89f2f"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sab86780c712a65c4",
+   "item_ids": [
+    "ab86780c712a65c4"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s0e63ed56aedd38e3",
+   "item_ids": [
+    "0e63ed56aedd38e3"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sf79fc8229303b6ca",
+   "item_ids": [
+    "f79fc8229303b6ca"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sfced77db2cf2dd56",
+   "item_ids": [
+    "fced77db2cf2dd56"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s2ebf93b415954bfa",
+   "item_ids": [
+    "2ebf93b415954bfa"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s3187523990b8ac0d",
+   "item_ids": [
+    "3187523990b8ac0d"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "see43f3066c5f1656",
+   "item_ids": [
+    "ee43f3066c5f1656"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s16edea5e178dde22",
+   "item_ids": [
+    "16edea5e178dde22"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s256efab1aa23f864",
+   "item_ids": [
+    "256efab1aa23f864",
+    "95cc7439abd28b16",
+    "c2548cb7f3c2762d",
+    "2f268b4c906321b3",
+    "a05749e9f08d27d9",
+    "f497735c2402e3b7",
+    "cf09bba28fd9a80d"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Firefly Aerospace: carnet de commandes record de 1,7 Md$ au T3 2026",
+    "summary": "Firefly Aerospace affiche un chiffre d'affaires en hausse de 259% à 110,7 M$ au T3 2026, porté par un contrat de 1,3 Md$ avec AST SpaceMobile, portant son carnet à un record de 1,7 Md$.",
+    "why": "Firefly se renforce comme concurrent lanceur/satellite, un acteur à surveiller dans l'écosystème spatial commercial.",
+    "tabs": [
+     "concurrents",
+     "economie"
+    ],
+    "themes": [
+     "financements",
+     "programmes"
+    ],
+    "industries": [],
+    "countries": [
+     "US"
+    ],
+    "impact": "moyen"
+   },
+   "analysed_at": "2026-11-11T08:04:52+01:00",
+   "analysed_size": 3,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "sed9633ade6ec82fa",
+   "item_ids": [
+    "ed9633ade6ec82fa"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "se51176b601284ba1",
+   "item_ids": [
+    "e51176b601284ba1"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sa5a2057e04a92370",
+   "item_ids": [
+    "a5a2057e04a92370"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sfa31c1a104a73c32",
+   "item_ids": [
+    "fa31c1a104a73c32"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sc76f82f5bf5849f6",
+   "item_ids": [
+    "c76f82f5bf5849f6"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s4757d310e17eafbc",
+   "item_ids": [
+    "4757d310e17eafbc"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s3e6a36076308aae4",
+   "item_ids": [
+    "3e6a36076308aae4"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s93893c1beea612ff",
+   "item_ids": [
+    "93893c1beea612ff"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "scd58782fb8ca548e",
+   "item_ids": [
+    "cd58782fb8ca548e"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s82266410961840a6",
+   "item_ids": [
+    "82266410961840a6"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sd8ed1974d5481c3c",
+   "item_ids": [
+    "d8ed1974d5481c3c"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s775f5834ffb4409c",
+   "item_ids": [
+    "775f5834ffb4409c"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sd9411fc14fe1f594",
+   "item_ids": [
+    "d9411fc14fe1f594"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sf51475b48f10a2ed",
+   "item_ids": [
+    "f51475b48f10a2ed"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sfdc0cd8631cfd600",
+   "item_ids": [
+    "fdc0cd8631cfd600"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s36c1cf5557d85c8b",
+   "item_ids": [
+    "36c1cf5557d85c8b"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s940e0d9040680c52",
+   "item_ids": [
+    "940e0d9040680c52"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s6d9cfb368a616277",
+   "item_ids": [
+    "6d9cfb368a616277"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sb0d63c1fc0ca411d",
+   "item_ids": [
+    "b0d63c1fc0ca411d"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s1e97013a288bddf8",
+   "item_ids": [
+    "1e97013a288bddf8"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s98660021d0da0965",
+   "item_ids": [
+    "98660021d0da0965"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s45a1fc06ce06f59b",
+   "item_ids": [
+    "45a1fc06ce06f59b"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s84b1482fbdbbcc7a",
+   "item_ids": [
+    "84b1482fbdbbcc7a"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s0b2b56380b2b6df9",
+   "item_ids": [
+    "0b2b56380b2b6df9"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sef3c186991cd0ea7",
+   "item_ids": [
+    "ef3c186991cd0ea7"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s7969117a70b386ef",
+   "item_ids": [
+    "7969117a70b386ef"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s51bde8d837d0a989",
+   "item_ids": [
+    "51bde8d837d0a989"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sec5046f1ae53ee4f",
+   "item_ids": [
+    "ec5046f1ae53ee4f"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s8083a1c7f9711bd4",
+   "item_ids": [
+    "8083a1c7f9711bd4"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s59ff31af28b435fb",
+   "item_ids": [
+    "59ff31af28b435fb"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s8d6e1bd3ac35464b",
+   "item_ids": [
+    "8d6e1bd3ac35464b"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sfedd54b8296b7de5",
+   "item_ids": [
+    "fedd54b8296b7de5"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sa30ab2738bab5601",
+   "item_ids": [
+    "a30ab2738bab5601",
+    "130be4bd97bec9a2"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "se619b6e3e0291460",
+   "item_ids": [
+    "e619b6e3e0291460"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sd913b215d757b5a2",
+   "item_ids": [
+    "d913b215d757b5a2",
+    "fe24be2dec5601f7",
+    "2f996740f96d0cca",
+    "083f6eb1d2b20961"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Le secrétaire au Trésor américain Bessent déplacé sur une base militaire après des menaces iraniennes",
+    "summary": "Scott Bessent, secrétaire au Trésor des États-Unis, aurait été transféré vers une base militaire par mesure de sécurité après des menaces attribuées à l'Iran.",
+    "why": "Illustre la persistance des tensions entre les États-Unis et l'Iran malgré les annonces de désescalade.",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [
+     "conflits"
+    ],
+    "industries": [
+     "securite"
+    ],
+    "countries": [
+     "US",
+     "IR"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-11T08:04:52+01:00",
+   "analysed_size": 4,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s3f96168c351963bc",
+   "item_ids": [
+    "3f96168c351963bc"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s64aa17b24897b814",
+   "item_ids": [
+    "64aa17b24897b814"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sf4d44e919303b932",
+   "item_ids": [
+    "f4d44e919303b932"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sfd62d67926ebf6e4",
+   "item_ids": [
+    "fd62d67926ebf6e4"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s9ccf088ec436df31",
+   "item_ids": [
+    "9ccf088ec436df31"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s7c50332de61ab40d",
+   "item_ids": [
+    "7c50332de61ab40d"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s0e35f331f3ddedf2",
+   "item_ids": [
+    "0e35f331f3ddedf2"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s278fecc1c7d2d23a",
+   "item_ids": [
+    "278fecc1c7d2d23a"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sa93e86def15ffb9d",
+   "item_ids": [
+    "a93e86def15ffb9d"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s0346f0717ef7b08b",
+   "item_ids": [
+    "0346f0717ef7b08b"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s2df791523c6369e4",
+   "item_ids": [
+    "2df791523c6369e4"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s73e07ad1e20c8230",
+   "item_ids": [
+    "73e07ad1e20c8230"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s73d4fa7c411afa44",
+   "item_ids": [
+    "73d4fa7c411afa44"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s0620847f0b229729",
+   "item_ids": [
+    "0620847f0b229729"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s835488efe55b2a58",
+   "item_ids": [
+    "835488efe55b2a58"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sc6bed09fe4163e2f",
+   "item_ids": [
+    "c6bed09fe4163e2f"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sf1c6b20f58c9348d",
+   "item_ids": [
+    "f1c6b20f58c9348d"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s63795cb1ae6b8f0e",
+   "item_ids": [
+    "63795cb1ae6b8f0e"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s7e3b9005a179b0d4",
+   "item_ids": [
+    "7e3b9005a179b0d4"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s57ffc788b332832e",
+   "item_ids": [
+    "57ffc788b332832e"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sed4d6b8bc510b4c7",
+   "item_ids": [
+    "ed4d6b8bc510b4c7"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s2d270c55da9bb6bf",
+   "item_ids": [
+    "2d270c55da9bb6bf"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s4fa69118014996b1",
+   "item_ids": [
+    "4fa69118014996b1"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s263b93ee4a22fe85",
+   "item_ids": [
+    "263b93ee4a22fe85"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s4d49b67a5d56f755",
+   "item_ids": [
+    "4d49b67a5d56f755"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sf1aded13913dbecb",
+   "item_ids": [
+    "f1aded13913dbecb"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sf8553272dea8d002",
+   "item_ids": [
+    "f8553272dea8d002"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sed6ae38606daf181",
+   "item_ids": [
+    "ed6ae38606daf181"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s716c4dbd420a57be",
+   "item_ids": [
+    "716c4dbd420a57be"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s2a424ac4ea816c63",
+   "item_ids": [
+    "2a424ac4ea816c63"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s1e290689568d6d6d",
+   "item_ids": [
+    "1e290689568d6d6d"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sb09f2e5c21f1307a",
+   "item_ids": [
+    "b09f2e5c21f1307a"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s9d59cb03ea9c54bb",
+   "item_ids": [
+    "9d59cb03ea9c54bb"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sf93e1aa89de8c542",
+   "item_ids": [
+    "f93e1aa89de8c542"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s27089c017a19a52f",
+   "item_ids": [
+    "27089c017a19a52f"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sa08375e00f5fd7ee",
+   "item_ids": [
+    "a08375e00f5fd7ee"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s7e804ed119cdf1af",
+   "item_ids": [
+    "7e804ed119cdf1af"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s3b2067cd62a4c4e1",
+   "item_ids": [
+    "3b2067cd62a4c4e1"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s41c5045b0eb09594",
+   "item_ids": [
+    "41c5045b0eb09594"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s5cd33f41d2d7860d",
+   "item_ids": [
+    "5cd33f41d2d7860d"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s4c9e6759404e97b7",
+   "item_ids": [
+    "4c9e6759404e97b7"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s8a0ed44ff08b1fc7",
+   "item_ids": [
+    "8a0ed44ff08b1fc7"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sc8663fe8b9c391dc",
+   "item_ids": [
+    "c8663fe8b9c391dc"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s2b817656fa16a401",
+   "item_ids": [
+    "2b817656fa16a401"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sb8c48df6721ef1ec",
+   "item_ids": [
+    "b8c48df6721ef1ec"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s17da916df8f40cc2",
+   "item_ids": [
+    "17da916df8f40cc2"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sef7f7c1bfa263bcd",
+   "item_ids": [
+    "ef7f7c1bfa263bcd"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sb5af9b31859f8415",
+   "item_ids": [
+    "b5af9b31859f8415",
+    "b40d3e34d0557568"
+   ],
+   "analysis": {
+    "relevant": false,
+    "title_fr": "La NASA organise l'événement MAX POWER au Kennedy Space Center",
+    "summary": "La NASA accueille son premier événement MAX POWER au Kennedy Space Center, incluant un concours doté d'un prix de 1 M$ sur l'énergie lunaire.",
+    "why": "",
+    "tabs": [],
+    "themes": [],
+    "industries": [],
+    "countries": [
+     "US"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-11T08:04:52+01:00",
+   "analysed_size": 2,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "sedc646ae9e663ad7",
+   "item_ids": [
+    "edc646ae9e663ad7"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s72d5c149973edc59",
+   "item_ids": [
+    "72d5c149973edc59"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s811de73c42b9a917",
+   "item_ids": [
+    "811de73c42b9a917"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Section 219 : l'avenir du partenariat de défense entre les États-Unis et Israël",
+    "summary": "Donald Trump a annoncé son intention de mettre fin aux milliards de dollars d'aide militaire annuelle américaine à Israël.",
+    "why": "Un changement dans l'aide militaire américaine à Israël pourrait modifier les budgets de défense et les achats d'équipements.",
+    "tabs": [
+     "geopolitique",
+     "economie"
+    ],
+    "themes": [
+     "budgets",
+     "conflits"
+    ],
+    "industries": [
+     "defense"
+    ],
+    "countries": [
+     "US",
+     "IL"
+    ],
+    "impact": "moyen"
+   },
+   "analysed_at": "2026-11-11T08:04:52+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s0b213273cbf06083",
+   "item_ids": [
+    "0b213273cbf06083"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Isaacman détaille la trajectoire du SLS de la NASA jusqu'aux années 2030",
+    "summary": "L'administrateur de la NASA Jared Isaacman explique la décision de standardiser le lanceur SLS pour les missions jusqu'aux années 2030.",
+    "why": "Concerne la stratégie spatiale américaine et les choix de lanceurs, contexte pour les programmes spatiaux concurrents.",
+    "tabs": [
+     "economie"
+    ],
+    "themes": [
+     "programmes"
+    ],
+    "industries": [],
+    "countries": [
+     "US"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-11T08:04:52+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "sfbf5ad4f51c0988d",
+   "item_ids": [
+    "fbf5ad4f51c0988d"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Un projet d'aménagement contre les inondations annoncé",
+    "summary": "Un projet d'aménagement visant à prévenir les inondations est présenté, sans précision du lieu exact dans les éléments fournis.",
+    "why": "Les projets d'aménagement anti-inondation peuvent s'appuyer sur la cartographie et l'imagerie satellite pour leur conception.",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [
+     "crises"
+    ],
+    "industries": [
+     "infrastructures",
+     "foret_environnement"
+    ],
+    "countries": [],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-11T08:04:52+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s1f4e14aaca030add",
+   "item_ids": [
+    "1f4e14aaca030add"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Comment le piratage informatique est devenu une arme clé pour la Corée du Nord sanctionnée",
+    "summary": "Frappée par les sanctions, la Corée du Nord s'appuie de plus en plus sur le piratage informatique pour financer son régime.",
+    "why": "Illustre les stratégies de contournement des sanctions, un enjeu pour la sécurité et le renseignement.",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [
+     "sanctions"
+    ],
+    "industries": [
+     "securite",
+     "finance_assurance"
+    ],
+    "countries": [
+     "KP"
+    ],
+    "impact": "moyen"
+   },
+   "analysed_at": "2026-11-11T08:04:52+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "sc37785415f15add1",
+   "item_ids": [
+    "c37785415f15add1"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "2022 : une tempête solaire mineure avait fait chuter 38 satellites Starlink",
+    "summary": "En février 2022, SpaceX a lancé 49 satellites Starlink dans une tempête solaire jugée mineure ; 38 sont retombés et ont brûlé en quelques jours en raison du gonflement de l'atmosphère.",
+    "why": "Rappelle la vulnérabilité des constellations en orbite basse aux conditions spatiales, un risque pour les opérateurs géospatiaux.",
+    "tabs": [
+     "concurrents"
+    ],
+    "themes": [
+     "lancements"
+    ],
+    "industries": [],
+    "countries": [
+     "US"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-11T08:04:52+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "sa0f89b92a51cfc93",
+   "item_ids": [
+    "a0f89b92a51cfc93"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Russie : interception de 146 drones dans la région de Leningrad",
+    "summary": "La Russie affirme avoir intercepté 146 drones près de Leningrad tandis que des frappes se poursuivent dans le Donbas, en parallèle des pourparlers à Abou Dhabi.",
+    "why": "Confirme l'intensité des attaques de drones, moteur de la demande en surveillance et détection aérienne.",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [
+     "conflits"
+    ],
+    "industries": [
+     "defense"
+    ],
+    "countries": [
+     "RU",
+     "UA",
+     "US",
+     "AE"
+    ],
+    "impact": "moyen"
+   },
+   "analysed_at": "2026-11-11T08:04:52+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s8bbf739fccdfec82",
+   "item_ids": [
+    "8bbf739fccdfec82"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Rocket Lab vs SpaceX : l'accord Iridium relance la bataille du spectre",
+    "summary": "Un accord entre Rocket Lab et Iridium approfondit le conflit sur l'usage du spectre face à SpaceX, alimentant la comparaison entre les deux valeurs spatiales.",
+    "why": "La bataille du spectre satellite influence l'accès aux fréquences pour les futures constellations concurrentes.",
+    "tabs": [
+     "concurrents"
+    ],
+    "themes": [
+     "produits"
+    ],
+    "industries": [
+     "connectivite"
+    ],
+    "countries": [
+     "US"
+    ],
+    "impact": "moyen"
+   },
+   "analysed_at": "2026-11-11T08:04:52+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s81abd1f9601de39d",
+   "item_ids": [
+    "81abd1f9601de39d",
+    "709a5e037aa57983"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "AST SpaceMobile et Redwire: trois enseignements clés pour les investisseurs",
+    "summary": "Des analyses soulignent les tendances financières d'AST SpaceMobile et de Redwire à destination des investisseurs de long terme.",
+    "why": "Ces acteurs de la connectivité satellite et des services spatiaux sont des concurrents à suivre pour Airbus.",
+    "tabs": [
+     "concurrents"
+    ],
+    "themes": [
+     "financements",
+     "produits"
+    ],
+    "industries": [
+     "connectivite"
+    ],
+    "countries": [
+     "US"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-11T08:04:52+01:00",
+   "analysed_size": 2,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "sb47e927c4b12d7cd",
+   "item_ids": [
+    "b47e927c4b12d7cd"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Rocket Lab (RKLB) : prévisions de cours après les résultats",
+    "summary": "Analyse technique du cours de l'action Rocket Lab après la publication de ses résultats, avec une résistance technique majeure.",
+    "why": "Indicateur de la confiance des marchés envers Rocket Lab, concurrent sur le lancement et les constellations.",
+    "tabs": [
+     "concurrents"
+    ],
+    "themes": [
+     "financements"
+    ],
+    "industries": [],
+    "countries": [
+     "US"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-11T08:04:52+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s91215f6fd638bd8a",
+   "item_ids": [
+    "91215f6fd638bd8a"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "G7 : Rubio discute du renforcement de la défense aérienne ukrainienne et de sanctions russes",
+    "summary": "Lors d'une réunion du G7, Marco Rubio a abordé le renforcement des défenses aériennes de l'Ukraine et de nouvelles sanctions contre la flotte fantôme russe.",
+    "why": "Un renforcement de la défense antiaérienne et des sanctions maritimes impacte les besoins de surveillance et de défense.",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [
+     "sanctions",
+     "conflits"
+    ],
+    "industries": [
+     "defense",
+     "maritime"
+    ],
+    "countries": [
+     "US",
+     "UA",
+     "RU"
+    ],
+    "impact": "moyen"
+   },
+   "analysed_at": "2026-11-11T08:04:52+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "sab530d5a96ad3982",
+   "item_ids": [
+    "ab530d5a96ad3982"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Ukraine : la Russie affirme avoir détruit des missiles AGM-188 américains",
+    "summary": "Pour la première fois, les forces russes auraient détruit des missiles air-sol AGM-188 fournis par les États-Unis à l'Ukraine.",
+    "why": "Teste l'efficacité des nouvelles armes occidentales face à la défense russe, enjeu pour l'industrie de défense.",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [
+     "conflits"
+    ],
+    "industries": [
+     "defense"
+    ],
+    "countries": [
+     "UA",
+     "RU",
+     "US"
+    ],
+    "impact": "moyen"
+   },
+   "analysed_at": "2026-11-11T08:04:52+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s7cbcc3035e35d77d",
+   "item_ids": [
+    "7cbcc3035e35d77d"
+   ],
+   "analysis": {
+    "relevant": false,
+    "title_fr": "Newsletter Airborne-Innovation : Wisk, NASA X-70, Eve/FlyBIS",
+    "summary": "Bulletin d'actualités sur la mobilité aérienne : vertiport Wisk, drone expérimental NASA X-70 et partenariat Eve-FlyBIS.",
+    "why": "",
+    "tabs": [],
+    "themes": [],
+    "industries": [],
+    "countries": [
+     "US"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-11T08:04:52+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s55036ee4ed55f001",
+   "item_ids": [
+    "55036ee4ed55f001",
+    "4592fbd413533303"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "L'affaire Jensen Huang relance le débat sur les contrôles à l'export des puces",
+    "summary": "La controverse autour de Jensen Huang, patron de Nvidia, ravive les discussions sur les restrictions américaines à l'exportation de semi-conducteurs.",
+    "why": "Les contrôles à l'export de puces influencent l'accès aux technologies de calcul nécessaires aux systèmes spatiaux et de défense.",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [
+     "sanctions",
+     "reglementation"
+    ],
+    "industries": [
+     "defense"
+    ],
+    "countries": [
+     "US"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-11T08:04:52+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "sdcae5ee7889e6329",
+   "item_ids": [
+    "dcae5ee7889e6329"
+   ],
+   "analysis": {
+    "relevant": false,
+    "title_fr": "Colombie: le Nobel de la paix Santos critique le président sur l'exhibition de cadavres",
+    "summary": "Juan Manuel Santos reproche au président colombien d'exhiber des cadavres de criminels avec fierté.",
+    "why": "",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [],
+    "industries": [],
+    "countries": [
+     "CO"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-11T08:04:52+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s1db34e08a1953480",
+   "item_ids": [
+    "1db34e08a1953480"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Les obstacles à la création d'un SpaceX européen",
+    "summary": "L'article analyse les freins réglementaires, financiers et industriels qui empêchent l'émergence d'un acteur européen comparable à SpaceX.",
+    "why": "Le débat sur l'autonomie spatiale européenne concerne directement la position d'Airbus Defence and Space face à la concurrence américaine.",
+    "tabs": [
+     "concurrents",
+     "economie"
+    ],
+    "themes": [
+     "programmes",
+     "financements"
+    ],
+    "industries": [
+     "defense",
+     "connectivite"
+    ],
+    "countries": [
+     "US"
+    ],
+    "impact": "moyen"
+   },
+   "analysed_at": "2026-11-11T08:04:52+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "sb7d691bd0cad4106",
+   "item_ids": [
+    "b7d691bd0cad4106"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Une université chinoise liée à l'APL aurait acheté des puces Nvidia H200 malgré l'embargo américain",
+    "summary": "Des documents révèlent qu'une université chinoise liée à l'Armée populaire de libération a acquis des puces Nvidia H200 en contournant les restrictions américaines à l'exportation.",
+    "why": "Le contournement des sanctions technologiques par la Chine affecte l'équilibre stratégique des capacités de calcul militaires.",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [
+     "sanctions"
+    ],
+    "industries": [
+     "defense"
+    ],
+    "countries": [
+     "CN",
+     "US"
+    ],
+    "impact": "moyen"
+   },
+   "analysed_at": "2026-11-11T08:04:52+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s4a8d98f2731ce22a",
+   "item_ids": [
+    "4a8d98f2731ce22a"
+   ],
+   "analysis": {
+    "relevant": false,
+    "title_fr": "Qui a déclenché la guerre en Ukraine?",
+    "summary": "Article d'analyse historique revenant sur les origines du conflit russo-ukrainien.",
+    "why": "",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [
+     "conflits"
+    ],
+    "industries": [],
+    "countries": [
+     "UA"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-11T08:04:52+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s1175fd22832d51ad",
+   "item_ids": [
+    "1175fd22832d51ad"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Soudan: une frappe de drone des FSR tue neuf civils dans la région du Nil Bleu",
+    "summary": "Les Forces de soutien rapide ont mené une frappe de drone tuant neuf civils dans la région du Nil Bleu au Soudan.",
+    "why": "Les frappes de drones au Soudan illustrent la prolifération des capacités aériennes non étatiques, un enjeu pour la surveillance de sécurité.",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [
+     "conflits"
+    ],
+    "industries": [
+     "defense",
+     "securite"
+    ],
+    "countries": [
+     "SD"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-11T08:04:52+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s3c765e2f9e8eabde",
+   "item_ids": [
+    "3c765e2f9e8eabde"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Le commerce UE-Russie chute de plus de 75% mais les sanctions restent mal appliquées",
+    "summary": "Un rapport d'audit européen révèle une baisse de plus de 75% des échanges commerciaux avec la Russie, tout en critiquant une application incohérente des sanctions.",
+    "why": "L'efficacité des sanctions influence les flux économiques russes surveillés par les services de renseignement géospatial.",
+    "tabs": [
+     "geopolitique",
+     "economie"
+    ],
+    "themes": [
+     "sanctions"
+    ],
+    "industries": [
+     "finance_assurance"
+    ],
+    "countries": [
+     "RU"
+    ],
+    "impact": "moyen"
+   },
+   "analysed_at": "2026-11-11T08:04:52+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "se81c0464fa25e418",
+   "item_ids": [
+    "e81c0464fa25e418"
+   ],
+   "analysis": {
+    "relevant": false,
+    "title_fr": "Revue de presse: liberté de la presse en Égypte et grève générale en Espagne",
+    "summary": "Panorama de presse abordant les atteintes à la liberté de la presse en Égypte et la grève générale en Espagne.",
+    "why": "",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [],
+    "industries": [],
+    "countries": [
+     "EG",
+     "ES"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-11T08:04:52+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s534ed4ffef4bb56c",
+   "item_ids": [
+    "534ed4ffef4bb56c"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "L'Ukraine capture son premier prisonnier de guerre indonésien",
+    "summary": "Kiev annonce avoir capturé un soldat indonésien combattant pour la Russie, signe du recrutement international croissant de Moscou.",
+    "why": "Illustre l'internationalisation du conflit ukrainien, un facteur suivi par les acteurs du renseignement géospatial.",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [
+     "conflits"
+    ],
+    "industries": [
+     "defense"
+    ],
+    "countries": [
+     "UA",
+     "ID",
+     "RU"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-11T08:04:52+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "sad620e0e3247e777",
+   "item_ids": [
+    "ad620e0e3247e777"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Les prix du pétrole remontent alors que l'optimisme sur un accord avec l'Iran s'estompe",
+    "summary": "Les cours du pétrole ont rebondi après la chute de la semaine, les marchés doutant d'un accord de paix entre les États-Unis et l'Iran, dans un contexte d'attaques continues de pétroliers dans le détroit d'Ormuz.",
+    "why": "La volatilité pétrolière et les attaques maritimes accroissent le besoin de surveillance satellite du trafic énergétique.",
+    "tabs": [
+     "geopolitique",
+     "marche"
+    ],
+    "themes": [
+     "ressources",
+     "sanctions"
+    ],
+    "industries": [
+     "ogme",
+     "maritime"
+    ],
+    "countries": [
+     "IR",
+     "US"
+    ],
+    "impact": "moyen"
+   },
+   "analysed_at": "2026-11-11T08:04:52+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s61034757ed667f98",
+   "item_ids": [
+    "61034757ed667f98"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "L'Iran compte sur la Chine pour reconstruire son économie affaiblie par la guerre",
+    "summary": "Téhéran mise sur un partenariat renforcé avec Pékin pour relancer son économie après les destructions liées au conflit.",
+    "why": "Un rapprochement Iran-Chine pourrait influencer les équilibres énergétiques et sécuritaires surveillés par imagerie satellite.",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [
+     "sanctions",
+     "ressources"
+    ],
+    "industries": [
+     "ogme"
+    ],
+    "countries": [
+     "IR",
+     "CN"
+    ],
+    "impact": "moyen"
+   },
+   "analysed_at": "2026-11-11T08:04:52+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s18c299d54ca1d2c9",
+   "item_ids": [
+    "18c299d54ca1d2c9"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Qui succédera à Zelensky? Les vétérans ukrainiens se préparent à la vie politique",
+    "summary": "En Ukraine, des vétérans de guerre se positionnent pour une future carrière politique alors que la question de la succession de Volodymyr Zelensky se pose.",
+    "why": "Les évolutions politiques en Ukraine pourraient influencer l'avenir du conflit et la demande en renseignement géospatial.",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [
+     "conflits"
+    ],
+    "industries": [],
+    "countries": [
+     "UA"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-11T08:04:52+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "sf64ea52816b1e597",
+   "item_ids": [
+    "f64ea52816b1e597"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Vietnam: les inondations à Dak Lak ferment de nombreuses écoles",
+    "summary": "La montée des eaux a provoqué de graves inondations dans la province vietnamienne de Dak Lak, entraînant la fermeture de nombreuses écoles.",
+    "why": "Les inondations récurrentes au Vietnam alimentent la demande en imagerie satellite pour la surveillance des catastrophes naturelles.",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [
+     "crises"
+    ],
+    "industries": [
+     "foret_environnement",
+     "infrastructures"
+    ],
+    "countries": [
+     "VN"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-11T08:04:52+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s32396c90acbc1868",
+   "item_ids": [
+    "32396c90acbc1868"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Vigilance jaune pluies-inondations dans les Hautes-Pyrénées",
+    "summary": "Une vigilance jaune pluies-inondations a été émise pour les Hautes-Pyrénées en France le 11 novembre 2026, signalant un risque de fortes pluies localisées.",
+    "why": "Illustre le besoin récurrent de surveillance satellite des risques climatiques locaux pour l'aménagement du territoire.",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [
+     "crises"
+    ],
+    "industries": [
+     "foret_environnement",
+     "infrastructures"
+    ],
+    "countries": [
+     "FR"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-11T08:04:52+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s17ec00414002d48d",
+   "item_ids": [
+    "17ec00414002d48d"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Rubio: les États-Unis et l'Europe partagent l'objectif de mettre fin à la guerre en Ukraine",
+    "summary": "Le secrétaire d'État américain Marco Rubio affirme que les États-Unis et l'Europe partagent l'objectif de mettre fin à la guerre en Ukraine.",
+    "why": "Une issue négociée du conflit ukrainien modifierait la demande de surveillance satellite et de défense en Europe de l'Est.",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [
+     "conflits"
+    ],
+    "industries": [
+     "defense"
+    ],
+    "countries": [
+     "US",
+     "UA"
+    ],
+    "impact": "moyen"
+   },
+   "analysed_at": "2026-11-11T08:04:52+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s7be21574e89916d6",
+   "item_ids": [
+    "7be21574e89916d6"
+   ],
+   "analysis": {
+    "relevant": false,
+    "title_fr": "Grève générale en Espagne pour défendre l'accès au logement",
+    "summary": "Une grève générale de 24 heures a eu lieu en Espagne, appelée par les syndicats pour défendre l'accès au logement avant les élections législatives.",
+    "why": "",
+    "tabs": [],
+    "themes": [],
+    "industries": [],
+    "countries": [
+     "ES"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-11T08:04:52+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s8a7c82e1e8caa843",
+   "item_ids": [
+    "8a7c82e1e8caa843"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Le président iranien accuse les États-Unis et Israël de crimes de guerre électoralement contre-productifs",
+    "summary": "Le président iranien Pezeshkian affirme que les « crimes de guerre » des États-Unis et d'Israël se sont retournés contre eux électoralement.",
+    "why": "Les tensions persistantes entre l'Iran, les États-Unis et Israël maintiennent la demande de surveillance géopolitique régionale.",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [
+     "conflits"
+    ],
+    "industries": [
+     "defense"
+    ],
+    "countries": [
+     "US",
+     "IL",
+     "IR"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-11T08:04:52+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s05a8eefb05eb3850",
+   "item_ids": [
+    "05a8eefb05eb3850"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "La NASA prévoit d'envoyer un rover nucléaire de pièces détachées au pôle sud lunaire",
+    "summary": "Dans le cadre de son projet de base lunaire, la NASA prévoit d'envoyer un rover nucléaire de pièces détachées vers le pôle sud de la Lune.",
+    "why": "Les programmes lunaires de la NASA stimulent la demande en services spatiaux et en imagerie pour l'exploration.",
+    "tabs": [
+     "economie"
+    ],
+    "themes": [
+     "programmes"
+    ],
+    "industries": [],
+    "countries": [
+     "US"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-11T08:04:52+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s87be763474d391b8",
+   "item_ids": [
+    "87be763474d391b8"
+   ],
+   "analysis": {
+    "relevant": false,
+    "title_fr": "Des avis sur GTA 6 apparaissent en ligne avant la levée de l'embargo",
+    "summary": "Des avis sur le jeu vidéo GTA 6 ont été publiés par erreur sur le PlayStation Store avant la date de sortie officielle.",
+    "why": "",
+    "tabs": [],
+    "themes": [],
+    "industries": [],
+    "countries": [],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-11T08:04:52+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "sfd14e191cb1236ee",
+   "item_ids": [
+    "fd14e191cb1236ee"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Minéraux critiques: l'UE soutient 46 projets pour réduire sa dépendance à la Chine",
+    "summary": "L'Union européenne mobilise 46 projets stratégiques afin de réduire sa dépendance aux minéraux critiques chinois.",
+    "why": "La diversification des approvisionnements en minéraux critiques est suivie via l'imagerie satellite minière et logistique.",
+    "tabs": [
+     "economie"
+    ],
+    "themes": [
+     "ressources"
+    ],
+    "industries": [
+     "ogme"
+    ],
+    "countries": [
+     "CN"
+    ],
+    "impact": "moyen"
+   },
+   "analysed_at": "2026-11-11T08:04:52+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "sb530c145ba5b4b44",
+   "item_ids": [
+    "b530c145ba5b4b44"
+   ],
+   "analysis": {
+    "relevant": false,
+    "title_fr": "Digital Realty développerait des capacités IA au Brésil",
+    "summary": "Un article financier examine si Digital Realty construit des infrastructures de centres de données pour l'IA au Brésil.",
+    "why": "",
+    "tabs": [],
+    "themes": [],
+    "industries": [],
+    "countries": [
+     "BR"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-11T08:04:52+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "sb3fb13ad571d091e",
+   "item_ids": [
+    "b3fb13ad571d091e"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "RDC-Rwanda: une élection sous tension à l'OIF en pleine contestation",
+    "summary": "Le conflit entre la RDC et le Rwanda alimente des tensions internes à l'Organisation internationale de la Francophonie avant l'élection de son secrétaire général au Cambodge.",
+    "why": "La persistance du conflit RDC-Rwanda maintient la demande de surveillance satellite dans la région des Grands Lacs.",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [
+     "conflits"
+    ],
+    "industries": [
+     "defense"
+    ],
+    "countries": [
+     "CD",
+     "RW",
+     "KH"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-11T08:04:52+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "sca5027d820928c86",
+   "item_ids": [
+    "ca5027d820928c86",
+    "92bc68bacd907474"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "SpaceX envisagerait de contourner les cartes de calcul Nvidia avec son 'Kessel Rack'",
+    "summary": "SpaceX développerait un système baptisé 'Kessel Rack' permettant de contourner les cartes de calcul Nvidia pour ses besoins en IA.",
+    "why": "Cette initiative renforcerait l'autonomie technologique de SpaceX dans le calcul intensif lié à ses activités satellitaires et IA.",
+    "tabs": [
+     "concurrents"
+    ],
+    "themes": [
+     "produits"
+    ],
+    "industries": [
+     "connectivite"
+    ],
+    "countries": [
+     "US"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-11T08:04:52+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s563571dda4022a42",
+   "item_ids": [
+    "563571dda4022a42"
+   ],
+   "analysis": {
+    "relevant": false,
+    "title_fr": "Polémique autour de propos offensants d'un candidat australien",
+    "summary": "Un candidat du parti One Nation en Australie s'excuse pour des propos jugés offensants tenus il y a plus de dix ans.",
+    "why": "",
+    "tabs": [],
+    "themes": [],
+    "industries": [],
+    "countries": [],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-11T08:04:52+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s88d885ed3f8a0b87",
+   "item_ids": [
+    "88d885ed3f8a0b87"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Interdiction d'exportation des déchets de batteries et de la 'black mass' contenant des minéraux critiques",
+    "summary": "Un gouvernement interdit désormais l'exportation de déchets de batteries et de 'black mass' contenant des minéraux critiques.",
+    "why": "Le contrôle des minéraux critiques influence les chaînes d'approvisionnement stratégiques suivies par l'imagerie satellite minière.",
+    "tabs": [
+     "economie"
+    ],
+    "themes": [
+     "reglementation"
+    ],
+    "industries": [
+     "ogme"
+    ],
+    "countries": [],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-11T08:04:52+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s9802b560ff7830a7",
+   "item_ids": [
+    "9802b560ff7830a7"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Des frappes de drones russes tuent deux agents municipaux à Kramatorsk, en Ukraine",
+    "summary": "Des attaques de drones russes ont tué deux employés municipaux à Kramatorsk, dans l'est de l'Ukraine.",
+    "why": "Les frappes de drones continuent d'alimenter la demande de surveillance et de renseignement géospatial sur le front ukrainien.",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [
+     "conflits"
+    ],
+    "industries": [
+     "defense"
+    ],
+    "countries": [
+     "RU",
+     "UA"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-11T08:04:52+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "sfd16ec9f7f2df3c8",
+   "item_ids": [
+    "fd16ec9f7f2df3c8"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "SpaceX envisagerait un moteur Raptor 4 à 500 tonnes de poussée pour Super Heavy",
+    "summary": "SpaceX pourrait doubler la puissance de ses moteurs avec un Raptor 4 visant 500 tonnes de poussée, contre 250 tonnes actuellement, pour l'anneau externe de Super Heavy.",
+    "why": "Une augmentation de la puissance de lancement renforcerait la capacité concurrentielle de SpaceX sur le marché des lanceurs lourds.",
+    "tabs": [
+     "concurrents"
+    ],
+    "themes": [
+     "produits"
+    ],
+    "industries": [],
+    "countries": [
+     "US"
+    ],
+    "impact": "moyen"
+   },
+   "analysed_at": "2026-11-11T08:04:52+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s401771826ce5aaf2",
+   "item_ids": [
+    "401771826ce5aaf2"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Un capitaine de la marine marchande détenu au Royaume-Uni pour pétrole russe sanctionné",
+    "summary": "Ajay Pant, capitaine de la marine marchande, a été détenu au Royaume-Uni, accusé d'avoir transporté du pétrole russe sous sanctions.",
+    "why": "Le contournement des sanctions pétrolières maritimes accroît la demande de surveillance satellite du trafic maritime.",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [
+     "sanctions"
+    ],
+    "industries": [
+     "maritime"
+    ],
+    "countries": [
+     "GB",
+     "RU"
+    ],
+    "impact": "moyen"
+   },
+   "analysed_at": "2026-11-11T08:04:52+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s2acccf8ed6c2cccc",
+   "item_ids": [
+    "2acccf8ed6c2cccc"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Inondations récurrentes: les riverains s'inquiètent après chaque pluie",
+    "summary": "Des habitants témoignent de parkings inondés à chaque épisode pluvieux, signe de vulnérabilité locale face aux inondations.",
+    "why": "Les inondations récurrentes illustrent un besoin croissant de cartographie des risques pour les infrastructures locales.",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [
+     "crises"
+    ],
+    "industries": [
+     "infrastructures"
+    ],
+    "countries": [],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-11T08:04:52+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "sf5e7df76f99c4d96",
+   "item_ids": [
+    "f5e7df76f99c4d96"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Indonésie: les inondations à Pidie Jaya touchent 43 villages et 32 000 habitants",
+    "summary": "Les inondations à Pidie Jaya, en Indonésie, se sont étendues à 43 villages, affectant environ 32 272 personnes.",
+    "why": "Les inondations répétées en Asie du Sud-Est alimentent la demande d'imagerie satellite pour la cartographie des risques et l'aide d'urgence.",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [
+     "crises"
+    ],
+    "industries": [
+     "foret_environnement"
+    ],
+    "countries": [
+     "ID"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-11T08:04:52+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "sfaf260c764fc13a1",
+   "item_ids": [
+    "faf260c764fc13a1"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Les frappes de drones russes et ukrainiens rapprochent les pays baltes de la guerre",
+    "summary": "Une analyse souligne que les frappes de drones entre la Russie et l'Ukraine accroissent les tensions et le risque d'implication des pays baltes dans le conflit.",
+    "why": "Une escalade régionale renforcerait la demande de surveillance satellite pour la défense et la sécurité en Europe de l'Est.",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [
+     "conflits"
+    ],
+    "industries": [
+     "defense"
+    ],
+    "countries": [
+     "RU",
+     "UA"
+    ],
+    "impact": "moyen"
+   },
+   "analysed_at": "2026-11-11T08:04:52+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s581ad10876660066",
+   "item_ids": [
+    "581ad10876660066"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Soudan: l'armée affirme avoir abattu un drone hostile au Kordofan occidental",
+    "summary": "L'armée soudanaise déclare avoir intercepté un drone hostile dans la région du Kordofan occidental, dans le cadre du conflit en cours.",
+    "why": "L'usage croissant de drones dans le conflit soudanais illustre la demande d'imagerie et de surveillance pour le suivi des combats.",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [
+     "conflits"
+    ],
+    "industries": [
+     "defense"
+    ],
+    "countries": [
+     "SD"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-11T08:04:52+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s3b4ab1f9765607c3",
+   "item_ids": [
+    "3b4ab1f9765607c3"
+   ],
+   "analysis": {
+    "relevant": false,
+    "title_fr": "Spéculation boursière sur SpaceX et une possible fusion avec Tesla",
+    "summary": "Un analyste évoque un rabais « politique » de 25% sur l'action SpaceX et la possibilité d'une fusion avec Tesla portée par Elon Musk.",
+    "why": "",
+    "tabs": [],
+    "themes": [],
+    "industries": [],
+    "countries": [
+     "US"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-11T08:04:52+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "sa7482c633c7340b1",
+   "item_ids": [
+    "a7482c633c7340b1"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "L'Ukraine teste un premier satellite pour réduire sa dépendance à Starlink",
+    "summary": "Le fabricant ukrainien Himera et la société danoise GomSpace ont placé en orbite basse un premier satellite expérimental de communication, début octobre.",
+    "why": "Cette initiative illustre la volonté de l'Ukraine de diversifier ses capacités satellitaires face à la dépendance à Starlink, un enjeu pour la connectivité sécurisée.",
+    "tabs": [
+     "concurrents",
+     "geopolitique"
+    ],
+    "themes": [
+     "produits",
+     "conflits"
+    ],
+    "industries": [
+     "connectivite",
+     "defense"
+    ],
+    "countries": [
+     "UA",
+     "DK",
+     "US"
+    ],
+    "impact": "moyen"
+   },
+   "analysed_at": "2026-11-11T08:04:52+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "sef5aa72546f90b99",
+   "item_ids": [
+    "ef5aa72546f90b99"
+   ],
+   "analysis": {
+    "relevant": false,
+    "title_fr": "Le Teil se reconstruit sept ans après le séisme de 2019",
+    "summary": "La commune française du Teil poursuit sa reconstruction sept ans après le séisme du 11 novembre 2019.",
+    "why": "",
+    "tabs": [],
+    "themes": [],
+    "industries": [],
+    "countries": [
+     "FR"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-11T08:04:52+01:00",
    "analysed_size": 1,
    "analysis_model": "claude_cli:sonnet"
   }
