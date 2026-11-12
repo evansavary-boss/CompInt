@@ -1,91 +1,441 @@
 {
  "fx": {
-  "date": "2026-11-10",
+  "date": "2026-11-11",
   "rates": {
-   "USD": 1.1214,
-   "JPY": 177.38,
-   "CZK": 24.337,
-   "DKK": 7.4754,
-   "GBP": 0.83545,
-   "HUF": 362.98,
-   "PLN": 4.387,
-   "RON": 5.3442,
-   "SEK": 10.991,
-   "CHF": 0.9203,
-   "ISK": 137.2,
-   "NOK": 10.6155,
-   "TRY": 56.3207,
-   "AUD": 1.6244,
-   "BRL": 6.2257,
-   "CAD": 1.5852,
-   "CNY": 7.4801,
-   "HKD": 8.7973,
-   "IDR": 20255.34,
-   "ILS": 3.5507,
-   "INR": 105.3315,
-   "KRW": 1501.56,
-   "MXN": 20.8063,
-   "MYR": 4.5484,
-   "NZD": 1.9925,
-   "PHP": 70.54,
-   "SGD": 1.4335,
-   "THB": 37.522,
-   "ZAR": 18.3861
+   "USD": 1.1127,
+   "JPY": 177.18,
+   "CZK": 24.378,
+   "DKK": 7.4755,
+   "GBP": 0.83618,
+   "HUF": 365.08,
+   "PLN": 4.4038,
+   "RON": 5.3451,
+   "SEK": 11.051,
+   "CHF": 0.9234,
+   "ISK": 136.8,
+   "NOK": 10.6145,
+   "TRY": 55.8897,
+   "AUD": 1.6222,
+   "BRL": 6.1827,
+   "CAD": 1.5839,
+   "CNY": 7.4225,
+   "HKD": 8.7298,
+   "IDR": 20223.32,
+   "ILS": 3.529,
+   "INR": 104.254,
+   "KRW": 1487.57,
+   "MXN": 20.7623,
+   "MYR": 4.5326,
+   "NZD": 1.9928,
+   "PHP": 70.379,
+   "SGD": 1.4271,
+   "THB": 37.487,
+   "ZAR": 18.4307
   }
  },
- "updated_at": "2026-11-11T08:20:09+01:00",
+ "updated_at": "2026-11-12T08:22:05+01:00",
  "sources": [
   {
    "name": "TED",
    "url": "https://api.ted.europa.eu/v3/notices/search",
    "ok": true,
    "error": "",
-   "fetched": 44,
-   "kept": 35,
+   "fetched": 53,
+   "kept": 43,
    "via": "tender"
   },
   {
    "name": "Find a Tender",
    "url": "https://www.find-tender.service.gov.uk/api/1.0/ocdsReleasePackages",
-   "ok": true,
-   "error": "",
-   "fetched": 924,
-   "kept": 3,
+   "ok": false,
+   "error": "HTTPSConnectionPool(host='www.find-tender.service.gov.uk', port=443): Read timed out. (read timeout=60)",
+   "fetched": 0,
+   "kept": 0,
    "via": "tender"
   }
  ],
  "last_run": {
-  "new": 11,
+  "new": 8,
   "sources": [
    {
     "name": "TED",
     "url": "https://api.ted.europa.eu/v3/notices/search",
     "ok": true,
     "error": "",
-    "fetched": 44,
-    "kept": 35,
+    "fetched": 53,
+    "kept": 43,
     "via": "tender"
    },
    {
     "name": "Find a Tender",
     "url": "https://www.find-tender.service.gov.uk/api/1.0/ocdsReleasePackages",
-    "ok": true,
-    "error": "",
-    "fetched": 924,
-    "kept": 3,
+    "ok": false,
+    "error": "HTTPSConnectionPool(host='www.find-tender.service.gov.uk', port=443): Read timed out. (read timeout=60)",
+    "fetched": 0,
+    "kept": 0,
     "via": "tender"
    }
   ],
   "analysis": {
-   "analysed": 11,
-   "relevant": 8,
+   "analysed": 8,
+   "relevant": 3,
    "error": "",
-   "cost_usd": 0.1197
+   "cost_usd": 0.0671
   },
   "pruned": 0
  },
- "fts_synced_until": "2026-11-11T07:00:00",
+ "fts_synced_until": "2026-11-10T07:00:00",
  "tenders": [
+  {
+   "id": "ted:789059-2026",
+   "source": "ted",
+   "kind": "open",
+   "notice": "789059-2026",
+   "notice_type": "cn-standard",
+   "title": "VP-3487 STATINIŲ KADASTRINIŲ MATAVIMŲ PASLAUGOS PIRKIMAS (AK)",
+   "buyer": "Akcinė bendrovė Turto bankas (PV)",
+   "buyer_country": "LT",
+   "published": "2026-11-12",
+   "url": "https://ted.europa.eu/fr/notice/-/detail/789059-2026",
+   "cpv_label": "Services cadastraux",
+   "countries": [
+    "LT"
+   ],
+   "cpv": [
+    "71354300"
+   ],
+   "deadline": "2026-12-11",
+   "value": null,
+   "currency": "",
+   "winners": [],
+   "description": "Perkamos statinių kadastrinių matavimų paslaugos.",
+   "status": "",
+   "first_seen": "2026-11-12T08:22:05+01:00",
+   "analysis": {
+    "relevant": false,
+    "segment": "cartographie",
+    "title_fr": "Services de relevés cadastraux de bâtiments",
+    "summary": "Achat de services de mesures cadastrales de bâtiments pour une banque de biens publics en Lituanie.",
+    "why": "",
+    "industries": [
+     "foncier"
+    ],
+    "fit": "faible"
+   },
+   "analysed_at": "2026-11-12T08:22:05+01:00",
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "ted:788616-2026",
+   "source": "ted",
+   "kind": "award",
+   "notice": "788616-2026",
+   "notice_type": "can-standard",
+   "title": "Rahmenvereinbarung „Digitale Bearbeitung markscheiderischer Risswerksbelange“ 2027 - 2030",
+   "buyer": "Lausitzer und Mitteldeutsche Bergbau-Verwaltungsgesellschaft mbH (LMBV) - Einkauf Lausitz",
+   "buyer_country": "DE",
+   "published": "2026-11-12",
+   "url": "https://ted.europa.eu/fr/notice/-/detail/788616-2026",
+   "cpv_label": "Services de cartographie numérique",
+   "countries": [
+    "DE"
+   ],
+   "cpv": [
+    "71354100"
+   ],
+   "deadline": "",
+   "value": 1860060.0,
+   "currency": "EUR",
+   "winners": [
+    "GMB GmbH"
+   ],
+   "description": "Die LMBV mbH führt auf Grundlage des § 63 BBergG für ihre Sanierungsbetriebe Risswerke nach den Vorgaben der Markscheider-Bergverordnung und DIN 21901 ff. Gegenstand der Rahmenvereinbarung sind vorrangig CAD-Bearbeitungen der digitalen Risswerksdatenbasis, insbesondere der Gewinnungsrisse. Diese werden überwiegend im Maßstab 1 : 2 000 im CAD-Format MicroStation 3D-DGN geführt und umfassen im Sanierungsbereich Lausitz eine Fläche von ca. 850 km². Die Haupttätigkeitsfelder sind definiert durch: -Einarbeitung von Vermessungsergebnissen (Regelnachtrag) -Bearbeitung thematischer Sachverhalte…",
+   "status": "",
+   "first_seen": "2026-11-12T08:22:05+01:00",
+   "analysis": {
+    "relevant": false,
+    "segment": "cartographie",
+    "title_fr": "Traitement numérique des plans miniers (accord-cadre 2027-2030)",
+    "summary": "Accord-cadre de traitement CAO des plans de mines (risswerk) pour les sites de réhabilitation minière de Lusace, sur environ 850 km², en Allemagne.",
+    "why": "",
+    "industries": [
+     "ogme",
+     "infrastructures"
+    ],
+    "fit": "faible"
+   },
+   "analysed_at": "2026-11-12T08:22:05+01:00",
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "ted:788583-2026",
+   "source": "ted",
+   "kind": "open",
+   "notice": "788583-2026",
+   "notice_type": "cn-standard",
+   "title": "Cyfryzacja zbiorów danych baz PZGiK",
+   "buyer": "Powiat Bielski",
+   "buyer_country": "PL",
+   "published": "2026-11-12",
+   "url": "https://ted.europa.eu/fr/notice/-/detail/788583-2026",
+   "cpv_label": "Services d'établissement de cartes",
+   "countries": [
+    "PL"
+   ],
+   "cpv": [
+    "71354000",
+    "72314000",
+    "71354300",
+    "79999100"
+   ],
+   "deadline": "2026-11-20",
+   "value": null,
+   "currency": "",
+   "winners": [],
+   "description": "Przedmiotem zamówienia jest cyfryzacja zbiorów danych baz PZGiK w ramach projektu pn. „Podniesienie jakości, dostępności oraz zwiększenie wykorzystania administracyjnych zasobów mapowych – etap II”. Zamówienie współfinansowane jest ze środków Europejskiego Funduszu Rozwoju Regionalnego w ramach programu Fundusze Europejskie dla Śląskiego na lata 2021-2027, Działanie 1.4. Cyfryzacja Przedmiot zamówienia został podzielony na 6 części.",
+   "status": "",
+   "first_seen": "2026-11-12T08:22:05+01:00",
+   "analysis": {
+    "relevant": true,
+    "segment": "cartographie",
+    "title_fr": "Numérisation des bases de données cartographiques et géodésiques (PZGiK)",
+    "summary": "Numérisation des bases de données du système géodésique et cartographique polonais (PZGiK) pour un district, financée par des fonds européens.",
+    "why": "Projet de modernisation de données géographiques publiques, signal de marché cartographie/SIG à l'échelle régionale.",
+    "industries": [
+     "foncier",
+     "infrastructures"
+    ],
+    "fit": "moyenne"
+   },
+   "analysed_at": "2026-11-12T08:22:05+01:00",
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "ted:788580-2026",
+   "source": "ted",
+   "kind": "award",
+   "notice": "788580-2026",
+   "notice_type": "can-standard",
+   "title": "DPS pirkimo Nr. 55705, Žemės sklypų paženklinimo vietovėje ir kadastro duomenų bylų parengimo paslaugos (seno CVP IS Nr. 699405), Žemės sklypų ribų paženklinimo vietovėje ir kadastro duomenų bylų parengimo paslaugos, pirkimo Nr. 9405690",
+   "buyer": "Valstybės įmonė Valstybinių miškų urėdija (PV)",
+   "buyer_country": "LT",
+   "published": "2026-11-12",
+   "url": "https://ted.europa.eu/fr/notice/-/detail/788580-2026",
+   "cpv_label": "Services cadastraux",
+   "countries": [
+    "LT"
+   ],
+   "cpv": [
+    "71354300"
+   ],
+   "deadline": "",
+   "value": 392000.0,
+   "currency": "EUR",
+   "winners": [
+    "UAB Inreal Geo",
+    "VĮ Žemės ūkio duomenų centras",
+    "UAB Žemaitijos projektai",
+    "UAB Narma"
+   ],
+   "description": "Šiuo pirkimu įsigyjama regioninių padalinių žemės sklypų paženklinimo vietovių ir kadastro duomenų bylų parengimo paslaugos",
+   "status": "",
+   "first_seen": "2026-11-12T08:22:05+01:00",
+   "analysis": {
+    "relevant": false,
+    "segment": "cartographie",
+    "title_fr": "Services de bornage et de constitution de dossiers cadastraux forestiers",
+    "summary": "Attribution d'un accord-cadre pour le marquage sur le terrain et la constitution de dossiers cadastraux de parcelles forestières en Lituanie.",
+    "why": "",
+    "industries": [
+     "foncier",
+     "foret_environnement"
+    ],
+    "fit": "faible"
+   },
+   "analysed_at": "2026-11-12T08:22:05+01:00",
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "ted:788426-2026",
+   "source": "ted",
+   "kind": "open",
+   "notice": "788426-2026",
+   "notice_type": "cn-standard",
+   "title": "Geographical information systems - VOIS",
+   "buyer": "VOIS",
+   "buyer_country": "NO",
+   "published": "2026-11-12",
+   "url": "https://ted.europa.eu/fr/notice/-/detail/788426-2026",
+   "cpv_label": "Services relatifs aux logiciels",
+   "countries": [
+    "NO"
+   ],
+   "cpv": [
+    "72260000",
+    "72300000",
+    "72000000",
+    "72212327",
+    "72212326",
+    "72212000",
+    "72250000",
+    "72222200",
+    "72321000",
+    "72222000",
+    "72200000",
+    "72210000",
+    "38221000"
+   ],
+   "deadline": "2026-12-17",
+   "value": null,
+   "currency": "",
+   "winners": [],
+   "description": "About the Contracting Authority Vestfold public procurement cooperation (VOIS) was established 1 January 1996 and it has all the municipalities in Vestfold county as members (Færder, Holmestrand, Horten, Larvik, Sandefjord and Tønsberg), as well as Vestfold county and the University of Southeast Norway. VOIS is organised as a host municipality cooperation, in accordance with the Municipal Act chapter 20. Sandefjord kommune is the host municipality for the cooperation and contracts will be signed by the municipal director in Sandefjord. Description of the procurement VOIS intends to enter…",
+   "status": "",
+   "first_seen": "2026-11-12T08:22:05+01:00",
+   "analysis": {
+    "relevant": true,
+    "segment": "cartographie",
+    "title_fr": "Système d'information géographique pour la coopération VOIS",
+    "summary": "Mise en place de services et logiciels de système d'information géographique pour les communes et le comté de Vestfold en Norvège.",
+    "why": "Besoin logiciel SIG générique, pas d'achat de données satellitaires ou d'imagerie.",
+    "industries": [
+     "infrastructures"
+    ],
+    "fit": "faible"
+   },
+   "analysed_at": "2026-11-12T08:22:05+01:00",
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "ted:787567-2026",
+   "source": "ted",
+   "kind": "award",
+   "notice": "787567-2026",
+   "notice_type": "can-standard",
+   "title": "Hydrographische Vermessungen zur Baugrundvorerkundung für Offshore-Windparks innerhalb der Zonen 3 und 4 der deutschen AWZ der Nordsee gemäß FEP in den Jahren 2027 und 2028",
+   "buyer": "Bundesamt für Seeschifffahrt und Hydrographie",
+   "buyer_country": "DE",
+   "published": "2026-11-12",
+   "url": "https://ted.europa.eu/fr/notice/-/detail/787567-2026",
+   "cpv_label": "Services de levés hydrographiques",
+   "countries": [
+    "DE"
+   ],
+   "cpv": [
+    "71353100",
+    "71351923",
+    "71354500",
+    "71351200",
+    "71351710"
+   ],
+   "deadline": "",
+   "value": 1.0,
+   "currency": "EUR",
+   "winners": [
+    "VBW Weigt GmbH"
+   ],
+   "description": "Gegenstand dieses Vertrages ist die Durchführung und Dokumentation hydrographischer Untersuchungen mit verschiedenen Messsystemen/-verfahren: • flächendeckende Fächerecholotvermessung inklusive Backscatter-Datenaufzeichnung • flächendeckende Seitensichtsonaraufnahme inklusive „ground truthing“ mittels Greiferproben und Videountersuchungen sowie anschließender Klassifizierung • linienhafte Magnetometeruntersuchung • linienhafte Sedimentecholotaufnahme • lokale Videountersuchungen zur Verifizierung von Objekten und Verdachtspunkten mittels ferngesteuerter Unterwasserfahrzeuge (ROV) Die…",
+   "status": "",
+   "first_seen": "2026-11-12T08:22:05+01:00",
+   "analysis": {
+    "relevant": false,
+    "segment": "cartographie",
+    "title_fr": "Levés hydrographiques pour parcs éoliens offshore en mer du Nord",
+    "summary": "Attribution de levés hydrographiques et géophysiques (sondeur multifaisceau, sonar, magnétomètre, ROV) pour la reconnaissance de fonds marins avant construction de parcs éoliens offshore allemands en 2027-2028.",
+    "why": "Levés marins physiques réalisés en mer, hors offre satellitaire ou aérienne d'Airbus.",
+    "industries": [
+     "maritime",
+     "ogme",
+     "infrastructures"
+    ],
+    "fit": "faible"
+   },
+   "analysed_at": "2026-11-12T08:22:05+01:00",
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "ted:786948-2026",
+   "source": "ted",
+   "kind": "open",
+   "notice": "786948-2026",
+   "notice_type": "cn-standard",
+   "title": "Echipamente pentru Laboratorul cadastru/topografie – corp H privind realizarea obiectivului de investiții denumit „Îmbunătățirea infrastructurii educaționale din cadrul corpului D si a corpului H a Universității 1 Decembrie 1918 din Alba Iulia” cod SMIS 326633 - Echipamente Cadastru /Topografie si active necorporale – soft-uri cadastru/topografie cod SMIS 326633",
+   "buyer": "Universitatea 1 Decembrie 1918 Alba Iulia",
+   "buyer_country": "RO",
+   "published": "2026-11-12",
+   "url": "https://ted.europa.eu/fr/notice/-/detail/786948-2026",
+   "cpv_label": "Instruments de géodésie",
+   "countries": [
+    "RO"
+   ],
+   "cpv": [
+    "38296000",
+    "39300000",
+    "48326000",
+    "48000000",
+    "48318000",
+    "48320000"
+   ],
+   "deadline": "2026-12-18",
+   "value": 1792246.55,
+   "currency": "RON",
+   "winners": [],
+   "description": "Achiziția echipamentelor este necesara pentru buna desfasurare a activitatilor din laboratorul de cadastru topografie - corp H . Descrierea echipamentelor se regaseste in caietul de sarcini",
+   "status": "",
+   "first_seen": "2026-11-12T08:22:05+01:00",
+   "analysis": {
+    "relevant": false,
+    "segment": "cartographie",
+    "title_fr": "Équipements pour laboratoire de cadastre/topographie universitaire",
+    "summary": "Fourniture d'instruments de géodésie et de logiciels pour un laboratoire d'enseignement en cadastre et topographie en Roumanie.",
+    "why": "",
+    "industries": [],
+    "fit": "faible"
+   },
+   "analysed_at": "2026-11-12T08:22:05+01:00",
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "ted:786316-2026",
+   "source": "ted",
+   "kind": "open",
+   "notice": "786316-2026",
+   "notice_type": "cn-standard",
+   "title": "GIS-system Flens Kommun - Ansökningsinbjudan",
+   "buyer": "Telge Inköp AB",
+   "buyer_country": "SE",
+   "published": "2026-11-12",
+   "url": "https://ted.europa.eu/fr/notice/-/detail/786316-2026",
+   "cpv_label": "Services de technologies de l'information, conseil, développement de logiciels, internet et appui",
+   "countries": [
+    "SE"
+   ],
+   "cpv": [
+    "72000000",
+    "48326000",
+    "48517000"
+   ],
+   "deadline": "2026-12-14",
+   "value": 5000000.0,
+   "currency": "SEK",
+   "winners": [],
+   "description": "Systemlösning för Geodatasystem (GIS) inkl. drift",
+   "status": "",
+   "first_seen": "2026-11-12T08:22:05+01:00",
+   "analysis": {
+    "relevant": true,
+    "segment": "cartographie",
+    "title_fr": "Système d'information géographique (GIS) pour la commune de Flen",
+    "summary": "Achat d'une solution logicielle de système d'information géographique (GIS) incluant son exploitation pour une commune suédoise.",
+    "why": "Marché de logiciel SIG générique, hors offre directe d'imagerie ou données spatiales d'Airbus.",
+    "industries": [
+     "infrastructures"
+    ],
+    "fit": "faible"
+   },
+   "analysed_at": "2026-11-12T08:22:05+01:00",
+   "analysis_model": "claude_cli:sonnet"
+  },
   {
    "id": "ted:785977-2026",
    "source": "ted",
