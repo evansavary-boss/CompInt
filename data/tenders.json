@@ -1,91 +1,473 @@
 {
  "fx": {
-  "date": "2026-11-11",
+  "date": "2026-11-12",
   "rates": {
-   "USD": 1.1127,
-   "JPY": 177.18,
-   "CZK": 24.378,
-   "DKK": 7.4755,
-   "GBP": 0.83618,
-   "HUF": 365.08,
-   "PLN": 4.4038,
-   "RON": 5.3451,
-   "SEK": 11.051,
-   "CHF": 0.9234,
-   "ISK": 136.8,
-   "NOK": 10.6145,
-   "TRY": 55.8897,
-   "AUD": 1.6222,
-   "BRL": 6.1827,
-   "CAD": 1.5839,
-   "CNY": 7.4225,
-   "HKD": 8.7298,
-   "IDR": 20223.32,
-   "ILS": 3.529,
-   "INR": 104.254,
-   "KRW": 1487.57,
-   "MXN": 20.7623,
-   "MYR": 4.5326,
-   "NZD": 1.9928,
-   "PHP": 70.379,
-   "SGD": 1.4271,
-   "THB": 37.487,
-   "ZAR": 18.4307
+   "USD": 1.1081,
+   "JPY": 176.96,
+   "CZK": 24.379,
+   "DKK": 7.4754,
+   "GBP": 0.83595,
+   "HUF": 364.98,
+   "PLN": 4.4088,
+   "RON": 5.3473,
+   "SEK": 11.0628,
+   "CHF": 0.9232,
+   "ISK": 136.6,
+   "NOK": 10.563,
+   "TRY": 55.6906,
+   "AUD": 1.6246,
+   "BRL": 6.2241,
+   "CAD": 1.5789,
+   "CNY": 7.3891,
+   "HKD": 8.6928,
+   "IDR": 20225.76,
+   "ILS": 3.5495,
+   "INR": 104.2118,
+   "KRW": 1478.32,
+   "MXN": 20.7113,
+   "MYR": 4.5194,
+   "NZD": 1.9942,
+   "PHP": 70.616,
+   "SGD": 1.4249,
+   "THB": 37.47,
+   "ZAR": 18.5219
   }
  },
- "updated_at": "2026-11-12T08:22:05+01:00",
+ "updated_at": "2026-11-13T08:21:26+01:00",
  "sources": [
   {
    "name": "TED",
    "url": "https://api.ted.europa.eu/v3/notices/search",
    "ok": true,
    "error": "",
-   "fetched": 53,
-   "kept": 43,
+   "fetched": 66,
+   "kept": 52,
    "via": "tender"
   },
   {
    "name": "Find a Tender",
    "url": "https://www.find-tender.service.gov.uk/api/1.0/ocdsReleasePackages",
-   "ok": false,
-   "error": "HTTPSConnectionPool(host='www.find-tender.service.gov.uk', port=443): Read timed out. (read timeout=60)",
-   "fetched": 0,
-   "kept": 0,
+   "ok": true,
+   "error": "",
+   "fetched": 1321,
+   "kept": 6,
    "via": "tender"
   }
  ],
  "last_run": {
-  "new": 8,
+  "new": 13,
   "sources": [
    {
     "name": "TED",
     "url": "https://api.ted.europa.eu/v3/notices/search",
     "ok": true,
     "error": "",
-    "fetched": 53,
-    "kept": 43,
+    "fetched": 66,
+    "kept": 52,
     "via": "tender"
    },
    {
     "name": "Find a Tender",
     "url": "https://www.find-tender.service.gov.uk/api/1.0/ocdsReleasePackages",
-    "ok": false,
-    "error": "HTTPSConnectionPool(host='www.find-tender.service.gov.uk', port=443): Read timed out. (read timeout=60)",
-    "fetched": 0,
-    "kept": 0,
+    "ok": true,
+    "error": "",
+    "fetched": 1321,
+    "kept": 6,
     "via": "tender"
    }
   ],
   "analysis": {
-   "analysed": 8,
-   "relevant": 3,
+   "analysed": 13,
+   "relevant": 6,
    "error": "",
-   "cost_usd": 0.0671
+   "cost_usd": 0.1092
   },
   "pruned": 0
  },
- "fts_synced_until": "2026-11-10T07:00:00",
+ "fts_synced_until": "2026-11-13T07:00:00",
  "tenders": [
+  {
+   "id": "ted:792755-2026",
+   "source": "ted",
+   "kind": "award",
+   "notice": "792755-2026",
+   "notice_type": "can-standard",
+   "title": "Aktualizacja planów ochrony parków krajobrazowych: Mazowieckiego i Nadbużańskiego",
+   "buyer": "MZPK Mazowiecki Zespół Parków Krajobrazowych",
+   "buyer_country": "PL",
+   "published": "2026-11-13",
+   "url": "https://ted.europa.eu/fr/notice/-/detail/792755-2026",
+   "cpv_label": "Services relatifs à l'environnement",
+   "countries": [
+    "PL"
+   ],
+   "cpv": [
+    "90700000",
+    "90710000",
+    "90720000",
+    "73110000",
+    "71410000",
+    "38221000"
+   ],
+   "deadline": "",
+   "value": 2120000.0,
+   "currency": "PLN",
+   "winners": [
+    "TAXUS UL Spółka z ograniczoną odpowiedzialnością"
+   ],
+   "description": "Przedmiotem zamówienia jest usługa opracowania aktualizacji planów ochrony parków krajobrazowych: Mazowieckiego i Nadbużańskiego, realizowana jako projekt współfinansowany ze środków Europejskiego Funduszu Rozwoju Regionalnego w ramach programu Fundusze Europejskie dla Mazowsza 2021–2027; Priorytet II „Fundusze Europejskie na zielony rozwój Mazowsza”, Działanie 2.7 „Bioróżnorodność”. Szczegółowy opis przedmiotu zamówienia stanowi Załącznik nr 2 do SWZ. Wykonawca zobowiązany jest zrealizować zamówienie na zasadach i warunkach opisanych w Załączniku nr 5 do SWZ - Projektowanych Postanowieniach…",
+   "status": "",
+   "first_seen": "2026-11-13T08:21:26+01:00",
+   "analysis": {
+    "relevant": false,
+    "segment": "environnement_climat",
+    "title_fr": "Actualisation des plans de protection de parcs paysagers en Mazovie",
+    "summary": "Élaboration de l'actualisation des plans de protection des parcs paysagers de Mazovie et de Nadbużański en Pologne, financée par des fonds européens régionaux, attribuée à TAXUS UL.",
+    "why": "",
+    "industries": [
+     "foret_environnement"
+    ],
+    "fit": "faible"
+   },
+   "analysed_at": "2026-11-13T08:21:26+01:00",
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "ted:792143-2026",
+   "source": "ted",
+   "kind": "open",
+   "notice": "792143-2026",
+   "notice_type": "cn-standard",
+   "title": "Modernizacja operatu ewidencji gruntów i budynków gm. Suraż z podziałem na 4 części zamówienia",
+   "buyer": "Powiat Białostocki - Starostwo Powiatowe w Białymstoku",
+   "buyer_country": "PL",
+   "published": "2026-11-13",
+   "url": "https://ted.europa.eu/fr/notice/-/detail/792143-2026",
+   "cpv_label": "Services d'arpentage",
+   "countries": [
+    "PL"
+   ],
+   "cpv": [
+    "71355000",
+    "71354000"
+   ],
+   "deadline": "2026-12-15",
+   "value": null,
+   "currency": "",
+   "winners": [],
+   "description": "1. Przedmiotem zamówienia jest modernizacja operatu ewidencji gruntów i budynków dla niżej wymienionych zadań w gminie Suraż, z podziałem na niżej określone 4 części zamówienia: I część zamówienia: część A – modernizacja operatu ewidencji gruntów i budynków gm. Suraż, obręby: 1) Doktorce – 903 działki na ogólną powierzchnię 625 ha, do pomiaru 533 budynki; 2) Lesznia – 475 działek na ogólną powierzchnię 495 ha, do pomiaru 284 budynki; II część zamówienia: część B – modernizacja operatu ewidencji gruntów i budynków gm. Suraż, obręby: 1) Końcowizna – 177 działek na ogólną powierzchnię 173 ha…",
+   "status": "",
+   "first_seen": "2026-11-13T08:21:26+01:00",
+   "analysis": {
+    "relevant": false,
+    "segment": "cartographie",
+    "title_fr": "Modernisation du cadastre de la commune de Suraż (4 lots)",
+    "summary": "Modernisation de l'opérat du cadastre des terres et bâtiments dans plusieurs villages de la commune de Suraż en Pologne, répartie en quatre lots.",
+    "why": "",
+    "industries": [
+     "foncier"
+    ],
+    "fit": "faible"
+   },
+   "analysed_at": "2026-11-13T08:21:26+01:00",
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "ted:792125-2026",
+   "source": "ted",
+   "kind": "award",
+   "notice": "792125-2026",
+   "notice_type": "can-standard",
+   "title": "Fourniture de Cartes Militaires & bases de données format ARINC 424 pour simulateurs de vols",
+   "buyer": "Ecole Nationale de l'Aviation Civile",
+   "buyer_country": "FR",
+   "published": "2026-11-13",
+   "url": "https://ted.europa.eu/fr/notice/-/detail/792125-2026",
+   "cpv_label": "Services de cartographie aérienne",
+   "countries": [
+    "FR"
+   ],
+   "cpv": [
+    "71354200"
+   ],
+   "deadline": "",
+   "value": 320000.0,
+   "currency": "EUR",
+   "winners": [
+    "KEYVAN HAVACILIK ANONIM SIRKETI"
+   ],
+   "description": "Fourniture de Cartes Militaires & bases de données format ARINC 424 pour simulateurs de vols",
+   "status": "",
+   "first_seen": "2026-11-13T08:21:26+01:00",
+   "analysis": {
+    "relevant": true,
+    "segment": "cartographie",
+    "title_fr": "Fourniture de cartes militaires et bases ARINC 424 pour simulateurs de vol",
+    "summary": "Fourniture de cartes militaires et de bases de données au format ARINC 424 destinées aux simulateurs de vol de l'École Nationale de l'Aviation Civile en France.",
+    "why": "Marché de cartographie aéronautique remporté par un concurrent, signal sur la demande de données géospatiales défense.",
+    "industries": [
+     "defense"
+    ],
+    "fit": "moyenne"
+   },
+   "analysed_at": "2026-11-13T08:21:26+01:00",
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "ted:792100-2026",
+   "source": "ted",
+   "kind": "open",
+   "notice": "792100-2026",
+   "notice_type": "cn-standard",
+   "title": "De bijhouding van het Grootschalig Referentie Bestand via managed service (productie)",
+   "buyer": "Eigen Vermogen Digitaal Vlaanderen",
+   "buyer_country": "BE",
+   "published": "2026-11-13",
+   "url": "https://ted.europa.eu/fr/notice/-/detail/792100-2026",
+   "cpv_label": "Services de cartographie numérique",
+   "countries": [
+    "BE"
+   ],
+   "cpv": [
+    "71354100"
+   ],
+   "deadline": "2026-11-24",
+   "value": null,
+   "currency": "",
+   "winners": [],
+   "description": "De bijhouding van het Grootschalig Referentie Bestand via managed service (productie)",
+   "status": "",
+   "first_seen": "2026-11-13T08:21:26+01:00",
+   "analysis": {
+    "relevant": true,
+    "segment": "cartographie",
+    "title_fr": "Maintenance en service géré du référentiel grande échelle flamand",
+    "summary": "Service géré de mise à jour continue (bijhouding) du Grootschalig Referentie Bestand, base de données cartographique de référence de la Flandre.",
+    "why": "Gestion de base de données géographique de référence, segment où Airbus peut intervenir via partenaire.",
+    "industries": [
+     "foncier",
+     "infrastructures"
+    ],
+    "fit": "moyenne"
+   },
+   "analysed_at": "2026-11-13T08:21:26+01:00",
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "ted:791594-2026",
+   "source": "ted",
+   "kind": "open",
+   "notice": "791594-2026",
+   "notice_type": "cn-standard",
+   "title": "ARC-26-0039 Raamovereenkomst laseraltimetrische opmetingen (LiDAR) van de bevaarbare waterlopen en aanhorigheden in beheer bij afdeling Regio Centraal van De Vlaamse Waterweg nv",
+   "buyer": "De Vlaamse Waterweg nv",
+   "buyer_country": "BE",
+   "published": "2026-11-13",
+   "url": "https://ted.europa.eu/fr/notice/-/detail/791594-2026",
+   "cpv_label": "Services de cartographie aérienne",
+   "countries": [
+    "BE"
+   ],
+   "cpv": [
+    "71354200",
+    "60440000"
+   ],
+   "deadline": "2026-12-14",
+   "value": null,
+   "currency": "",
+   "winners": [],
+   "description": "In kader van deze raamovereenkomst kunnen de volgende types van diensten besteld worden: - De periodieke uitvoering van topografische opmetingen van de betrokken waterlopen, slikken en schorren in het kader van de geïntegreerde monitoring van het Schelde-estuarium door middel van laseraltimetrische meetvluchten met een minimale puntendichtheid van 8 punten/m². Tijdens deze opmetingen worden eveneens de in werking zijnde en toekomstige overstromingsgebieden volgens het meest wenselijke alternatief van het geactualiseerde Sigmaplan en het projectgebied van de Demervallei opgemeten. - Een…",
+   "status": "",
+   "first_seen": "2026-11-13T08:21:26+01:00",
+   "analysis": {
+    "relevant": true,
+    "segment": "aerien_lidar",
+    "title_fr": "Accord-cadre pour levés LiDAR aéroportés des voies navigables",
+    "summary": "Accord-cadre pour des campagnes de levés laser aéroportés (LiDAR, densité min. 8 points/m²) des cours d'eau navigables et zones d'inondation gérées par De Vlaamse Waterweg en Belgique.",
+    "why": "Marché de LiDAR aéroporté pour le suivi fluvial, hors cœur d'offre satellite d'Airbus.",
+    "industries": [
+     "infrastructures",
+     "foret_environnement"
+    ],
+    "fit": "faible"
+   },
+   "analysed_at": "2026-11-13T08:21:26+01:00",
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "ted:791040-2026",
+   "source": "ted",
+   "kind": "open",
+   "notice": "791040-2026",
+   "notice_type": "cn-standard",
+   "title": "Uzavření rámcové dohody na poskytování služeb v souvislosti s pořízením leteckých měřických snímků ČR v letech 2027 a 2028",
+   "buyer": "ČR – Český úřad zeměměřický a katastrální",
+   "buyer_country": "CZ",
+   "published": "2026-11-13",
+   "url": "https://ted.europa.eu/fr/notice/-/detail/791040-2026",
+   "cpv_label": "Services de cartographie aérienne",
+   "countries": [
+    "CZ"
+   ],
+   "cpv": [
+    "71354200"
+   ],
+   "deadline": "2026-12-14",
+   "value": 19834000.0,
+   "currency": "CZK",
+   "winners": [],
+   "description": "Předmětem veřejné zakázky je uzavření rámcové dohody na poskytování služeb při pořízení digitálních barevných leteckých měřických snímků a digitálních leteckých měřických snímků v blízkém infračerveném pásmu pro celé území České republiky v letech 2027 a 2028.",
+   "status": "",
+   "first_seen": "2026-11-13T08:21:26+01:00",
+   "analysis": {
+    "relevant": true,
+    "segment": "aerien_lidar",
+    "title_fr": "Accord-cadre de prises de vues aériennes pour la cartographie nationale 2027-2028",
+    "summary": "Accord-cadre pour l'acquisition de clichés aériens numériques couleur et proche infrarouge couvrant l'ensemble du territoire tchèque pour les campagnes 2027 et 2028.",
+    "why": "Couverture aérienne nationale récurrente, segment concurrent aux offres de prises de vues aériennes d'Airbus.",
+    "industries": [
+     "foncier",
+     "infrastructures"
+    ],
+    "fit": "faible"
+   },
+   "analysed_at": "2026-11-13T08:21:26+01:00",
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "ted:790509-2026",
+   "source": "ted",
+   "kind": "open",
+   "notice": "790509-2026",
+   "notice_type": "cn-standard",
+   "title": "AQUA MONTIS” Διευθέτηση χειμάρρων στις ορεινές λεκάνες εντός περιοχών ευθύνης των Δασαρχείων Λάρισας, Λαμίας, Τρικάλων, Μουζακίου και Αγιάς και εντός των ορίων του Υ.Δ. Θεσσαλίας (EL08)",
+   "buyer": "Υπουργείο Περιβάλλοντος και Ενέργειας",
+   "buyer_country": "GR",
+   "published": "2026-11-13",
+   "url": "https://ted.europa.eu/fr/notice/-/detail/790509-2026",
+   "cpv_label": "Travaux de construction de barrages et d'ouvrages fixes similaires",
+   "countries": [
+    "GR"
+   ],
+   "cpv": [
+    "45247200",
+    "45240000",
+    "45112500",
+    "45112400",
+    "45233120",
+    "45223500",
+    "45231110",
+    "44175000",
+    "45262510",
+    "71320000",
+    "71354100",
+    "45453100",
+    "77310000",
+    "45342000"
+   ],
+   "deadline": "2027-01-14",
+   "value": 78232538.97,
+   "currency": "EUR",
+   "winners": [],
+   "description": "Στο αντικείμενο του υπό ανάθεση Έργου περιλαμβάνεται: i. η εκπόνηση από τον ανάδοχο και η υποβολή, προς το αρμόδιο αποφαινόμενο όργανο της Αναθέτουσας Αρχής, για έγκριση, της οριστικής δασοτεχνικής μελέτης διευθέτησης χειμάρρων και ορεινών λεκανών απορροής (στο εξής η «Μελέτη»), η οποία θα αφορά τις εργασίες που περιγράφονται στο κατωτέρω σημείο (ii). Κατά την εκπόνηση της Μελέτης στο πλαίσιο εκτέλεσης της Σύμβασης και σύμφωνα με τις υποδείξεις της αρμόδιας Διευθύνουσας Υπηρεσίας, οι τελικές υπό έγκριση θέσεις και επεμβάσεις δύνανται να διαφοροποιηθούν σε σχέση με την Εγκεκριμένη…",
+   "status": "",
+   "first_seen": "2026-11-13T08:21:26+01:00",
+   "analysis": {
+    "relevant": false,
+    "segment": "environnement_climat",
+    "title_fr": "Travaux d'aménagement de torrents en bassins montagneux en Thessalie",
+    "summary": "Études et travaux de construction de barrages et ouvrages de correction torrentielle dans plusieurs bassins forestiers montagneux de Thessalie, en Grèce.",
+    "why": "",
+    "industries": [
+     "foret_environnement",
+     "infrastructures"
+    ],
+    "fit": "faible"
+   },
+   "analysed_at": "2026-11-13T08:21:26+01:00",
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "ted:790499-2026",
+   "source": "ted",
+   "kind": "open",
+   "notice": "790499-2026",
+   "notice_type": "cn-standard",
+   "title": "Provision of ArcGIS Licences and Maintenance",
+   "buyer": "Department of Education and Youth",
+   "buyer_country": "IE",
+   "published": "2026-11-13",
+   "url": "https://ted.europa.eu/fr/notice/-/detail/790499-2026",
+   "cpv_label": "Services d'assistance relative aux logiciels",
+   "countries": [
+    "IE"
+   ],
+   "cpv": [
+    "72261000",
+    "48000000",
+    "38221000"
+   ],
+   "deadline": "2026-12-16",
+   "value": 345000.0,
+   "currency": "EUR",
+   "winners": [],
+   "description": "The Department of Education and Youth invites tenders from authorised ArcGIS suppliers for the provision of ArcGIS Online Desktop and Mobile licences and associated maintenance. The successful supplier will ensure the uninterrupted operation of the Department's ArcGIS Online Desktop and Mobile environment and the continued availability of all associated licences and entitlements throughout the contract period.",
+   "status": "",
+   "first_seen": "2026-11-13T08:21:26+01:00",
+   "analysis": {
+    "relevant": true,
+    "segment": "cartographie",
+    "title_fr": "Fourniture de licences ArcGIS et maintenance associée",
+    "summary": "Fourniture de licences ArcGIS Online, Desktop et Mobile ainsi que leur maintenance pour le ministère irlandais de l'Éducation et de la Jeunesse.",
+    "why": "Marché de licences SIG générique, sans lien direct avec les offres de données Airbus.",
+    "industries": [
+     "infrastructures"
+    ],
+    "fit": "faible"
+   },
+   "analysed_at": "2026-11-13T08:21:26+01:00",
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "ted:789586-2026",
+   "source": "ted",
+   "kind": "open",
+   "notice": "789586-2026",
+   "notice_type": "cn-standard",
+   "title": "Voertuignavigatie",
+   "buyer": "Veiligheidsregio Drenthe",
+   "buyer_country": "NL",
+   "published": "2026-11-13",
+   "url": "https://ted.europa.eu/fr/notice/-/detail/789586-2026",
+   "cpv_label": "Services relatifs aux logiciels",
+   "countries": [
+    "NL"
+   ],
+   "cpv": [
+    "72260000",
+    "48326100"
+   ],
+   "deadline": "2026-12-29",
+   "value": null,
+   "currency": "",
+   "winners": [],
+   "description": "Het doel is om een Overeenkomst te sluiten met één Opdrachtnemer voor het leveren, implementeren, onderhouden en ondersteunen van een voertuignavigatiesysteem ten behoeve van de voertuigen die worden ingezet bij de Veiligheidsregio Drenthe € 440.000,00 over de looptijd van 8 jaar (exclusief indexeringen).",
+   "status": "",
+   "first_seen": "2026-11-13T08:21:26+01:00",
+   "analysis": {
+    "relevant": false,
+    "segment": "cartographie",
+    "title_fr": "Système de navigation embarqué pour véhicules de secours",
+    "summary": "Fourniture, mise en œuvre et maintenance d'un système de navigation véhicule pour les véhicules d'intervention de la Veiligheidsregio Drenthe sur 8 ans, aux Pays-Bas.",
+    "why": "",
+    "industries": [
+     "securite"
+    ],
+    "fit": "faible"
+   },
+   "analysed_at": "2026-11-13T08:21:26+01:00",
+   "analysis_model": "claude_cli:sonnet"
+  },
   {
    "id": "ted:789059-2026",
    "source": "ted",
@@ -434,6 +816,87 @@
     "fit": "faible"
    },
    "analysed_at": "2026-11-12T08:22:05+01:00",
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "fts:ocds-h6vhtk-07b9ac:planned",
+   "source": "fts",
+   "kind": "planned",
+   "notice": "107427-2026",
+   "notice_type": "UK2",
+   "title": "Request For Information: Resilient Timing and Positioning System for Operation in Degraded GNSS Environments",
+   "buyer": "Defence Science and Technology Laboratory",
+   "buyer_country": "GB",
+   "published": "2026-11-12",
+   "url": "https://www.find-tender.service.gov.uk/Notice/107427-2026",
+   "cpv_label": "",
+   "countries": [
+    "GB"
+   ],
+   "cpv": [
+    "38112100"
+   ],
+   "deadline": "",
+   "value": 100000.0,
+   "currency": "GBP",
+   "winners": [],
+   "description": "Request For Information: Resilient Timing and Positioning System for Operation in Degraded GNSS Environments\n1. Background\nThe UK Defence Science and Technology Laboratory (Dstl) is seeking information from suppliers regarding commercially available and proven Positioning, Navigation and Timing (PNT) systems capable of providing accurate timing and position information in environments where Global Navigation Satellite System (GNSS) services may be degraded, denied, disrupted or manipulated.\nThe intended application is the provision of:\n1. a highly accurate UTC-referenced timing signal…",
+   "status": "",
+   "first_seen": "2026-11-13T08:21:26+01:00",
+   "analysis": {
+    "relevant": true,
+    "segment": "defense_securite",
+    "title_fr": "RFI système de positionnement et synchronisation résilient en environnement GNSS dégradé",
+    "summary": "Appel à information du Dstl britannique pour des systèmes de positionnement, navigation et temps résistants aux brouillages ou pertes GNSS, pour applications de défense.",
+    "why": "Besoin de PNT résilient lié à la sécurité des signaux satellites, périphérique à l'offre imagerie d'Airbus.",
+    "industries": [
+     "defense",
+     "securite"
+    ],
+    "fit": "faible"
+   },
+   "analysed_at": "2026-11-13T08:21:26+01:00",
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "fts:ocds-h6vhtk-06a3d9:award",
+   "source": "fts",
+   "kind": "award",
+   "notice": "107552-2026",
+   "notice_type": "",
+   "title": "Prj_7117 - ITT - Purchase of carbon credits as part of the construction of a new HQ for the European Centre of Medium Range Weather Forecasts",
+   "buyer": "Department for Science, Innovation & Technology",
+   "buyer_country": "GB",
+   "published": "2026-11-12",
+   "url": "",
+   "cpv_label": "",
+   "countries": [
+    "GB"
+   ],
+   "cpv": [
+    "71314300",
+    "71300000",
+    "71315200"
+   ],
+   "deadline": "",
+   "value": null,
+   "currency": "",
+   "winners": [
+    "Climeworks AG"
+   ],
+   "description": "The final date and time for the submission of bids is Tuesday 23rdJune 2026 @ 11:00am\nDO NOT apply directly to the buyer.\nAll tender information MUST be submitted through the Jaggaer eSourcing Portal.\nOverview\nThe European Centre for Medium-Range Weather Forecasts (ECMWF) is an intergovernmental research institute with its headquarters in Shinfield (UK), and sites in Bonn (Germany) and Bologna (Italy), and contributes to major European programmes including Copernicus (the Earth observation component of the European Union's Space Programme) and Horizon Europe (EU's flagship research and…",
+   "status": "",
+   "first_seen": "2026-11-13T08:21:26+01:00",
+   "analysis": {
+    "relevant": false,
+    "segment": "environnement_climat",
+    "title_fr": "Achat de crédits carbone pour le nouveau siège de l'ECMWF",
+    "summary": "Attribution d'un marché de crédits carbone liés à la construction du nouveau siège de l'ECMWF au Royaume-Uni, remporté par Climeworks AG.",
+    "why": "",
+    "industries": [],
+    "fit": "faible"
+   },
+   "analysed_at": "2026-11-13T08:21:26+01:00",
    "analysis_model": "claude_cli:sonnet"
   },
   {
@@ -858,6 +1321,84 @@
     "fit": "faible"
    },
    "analysed_at": "2026-11-11T08:20:09+01:00",
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "fts:ocds-h6vhtk-07b9f1:planned",
+   "source": "fts",
+   "kind": "planned",
+   "notice": "107259-2026",
+   "notice_type": "UK2",
+   "title": "Satellite Haemodialysis Managed Service – Thamesmead Dialysis Unit",
+   "buyer": "King's College Hospital NHS Foundation Trust",
+   "buyer_country": "GB",
+   "published": "2026-11-11",
+   "url": "https://www.find-tender.service.gov.uk/Notice/107259-2026",
+   "cpv_label": "",
+   "countries": [
+    "GB"
+   ],
+   "cpv": [
+    "85111900"
+   ],
+   "deadline": "",
+   "value": 15000000.0,
+   "currency": "GBP",
+   "winners": [],
+   "description": "King’s College Hospital NHS Foundation Trust is re-procuring outpatient satellite haemodialysis services at its Thamesmead Dialysis Unit. The services will be delivered by an independent dialysis provider and include nursing care, dialysis equipment, water treatment and facilities management of the unit, covering cleaning, security and waste management.",
+   "status": "",
+   "first_seen": "2026-11-13T08:21:26+01:00",
+   "analysis": {
+    "relevant": false,
+    "segment": "environnement_climat",
+    "title_fr": "Service de dialyse satellite à l'unité de Thamesmead",
+    "summary": "Re-procuration d'un service géré d'hémodialyse ambulatoire (soins, équipement, maintenance) pour l'unité de dialyse satellite de Thamesmead au Royaume-Uni.",
+    "why": "",
+    "industries": [],
+    "fit": "faible"
+   },
+   "analysed_at": "2026-11-13T08:21:26+01:00",
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "fts:ocds-h6vhtk-0688af:award",
+   "source": "fts",
+   "kind": "award",
+   "notice": "107002-2026",
+   "notice_type": "",
+   "title": "Design Lead for Linwood School Satellite Expansion",
+   "buyer": "Bournemouth, Christchurch and Poole Council",
+   "buyer_country": "GB",
+   "published": "2026-11-11",
+   "url": "",
+   "cpv_label": "",
+   "countries": [
+    "GB"
+   ],
+   "cpv": [
+    "71220000",
+    "71310000",
+    "71530000"
+   ],
+   "deadline": "",
+   "value": null,
+   "currency": "",
+   "winners": [
+    "Kendall Kingscott Limited"
+   ],
+   "description": "Linwood School is a Special School with the main campus (Linwood Campus) located on Alma Road in the Winton East Ward. Due to rising need for specialist places, the school\nhas expanded into a number of satellite sites in Poole and Bournemouth and has also significantly increased the number of pupils on the main campus.\nThe purpose of the project is to adapt the former Parkfield School site into a campus of Linwood Special School. The primary changes required are to adapt a building intended as an all-through school for mainstream pupils into a school for KS2 (aged 7-11) through to KS5 (aged…",
+   "status": "",
+   "first_seen": "2026-11-13T08:21:26+01:00",
+   "analysis": {
+    "relevant": false,
+    "segment": "cartographie",
+    "title_fr": "Maîtrise d'œuvre pour l'extension satellite de l'école Linwood",
+    "summary": "Attribution d'une mission de conception pour adapter un ancien site scolaire en campus satellite de l'école spécialisée Linwood à Bournemouth, remportée par Kendall Kingscott.",
+    "why": "",
+    "industries": [],
+    "fit": "faible"
+   },
+   "analysed_at": "2026-11-13T08:21:26+01:00",
    "analysis_model": "claude_cli:sonnet"
   },
   {
