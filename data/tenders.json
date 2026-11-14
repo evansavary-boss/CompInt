@@ -1,47 +1,47 @@
 {
  "fx": {
-  "date": "2026-11-12",
+  "date": "2026-11-13",
   "rates": {
-   "USD": 1.1081,
-   "JPY": 176.96,
-   "CZK": 24.379,
-   "DKK": 7.4754,
-   "GBP": 0.83595,
-   "HUF": 364.98,
-   "PLN": 4.4088,
-   "RON": 5.3473,
-   "SEK": 11.0628,
-   "CHF": 0.9232,
+   "USD": 1.1052,
+   "JPY": 176.83,
+   "CZK": 24.424,
+   "DKK": 7.4756,
+   "GBP": 0.83559,
+   "HUF": 365.6,
+   "PLN": 4.4113,
+   "RON": 5.3494,
+   "SEK": 11.1075,
+   "CHF": 0.9266,
    "ISK": 136.6,
-   "NOK": 10.563,
-   "TRY": 55.6906,
-   "AUD": 1.6246,
-   "BRL": 6.2241,
-   "CAD": 1.5789,
-   "CNY": 7.3891,
-   "HKD": 8.6928,
-   "IDR": 20225.76,
-   "ILS": 3.5495,
-   "INR": 104.2118,
-   "KRW": 1478.32,
-   "MXN": 20.7113,
-   "MYR": 4.5194,
-   "NZD": 1.9942,
-   "PHP": 70.616,
-   "SGD": 1.4249,
-   "THB": 37.47,
-   "ZAR": 18.5219
+   "NOK": 10.5695,
+   "TRY": 55.6667,
+   "AUD": 1.6288,
+   "BRL": 6.2595,
+   "CAD": 1.5758,
+   "CNY": 7.3738,
+   "HKD": 8.6714,
+   "IDR": 20163.71,
+   "ILS": 3.5485,
+   "INR": 104.1575,
+   "KRW": 1477.8,
+   "MXN": 20.5491,
+   "MYR": 4.5175,
+   "NZD": 1.9978,
+   "PHP": 70.526,
+   "SGD": 1.4236,
+   "THB": 37.483,
+   "ZAR": 18.7481
   }
  },
- "updated_at": "2026-11-13T08:21:26+01:00",
+ "updated_at": "2026-11-14T08:09:16+01:00",
  "sources": [
   {
    "name": "TED",
    "url": "https://api.ted.europa.eu/v3/notices/search",
    "ok": true,
    "error": "",
-   "fetched": 66,
-   "kept": 52,
+   "fetched": 53,
+   "kept": 42,
    "via": "tender"
   },
   {
@@ -49,21 +49,21 @@
    "url": "https://www.find-tender.service.gov.uk/api/1.0/ocdsReleasePackages",
    "ok": true,
    "error": "",
-   "fetched": 1321,
-   "kept": 6,
+   "fetched": 881,
+   "kept": 3,
    "via": "tender"
   }
  ],
  "last_run": {
-  "new": 13,
+  "new": 1,
   "sources": [
    {
     "name": "TED",
     "url": "https://api.ted.europa.eu/v3/notices/search",
     "ok": true,
     "error": "",
-    "fetched": 66,
-    "kept": 52,
+    "fetched": 53,
+    "kept": 42,
     "via": "tender"
    },
    {
@@ -71,20 +71,20 @@
     "url": "https://www.find-tender.service.gov.uk/api/1.0/ocdsReleasePackages",
     "ok": true,
     "error": "",
-    "fetched": 1321,
-    "kept": 6,
+    "fetched": 881,
+    "kept": 3,
     "via": "tender"
    }
   ],
   "analysis": {
-   "analysed": 13,
-   "relevant": 6,
+   "analysed": 1,
+   "relevant": 0,
    "error": "",
-   "cost_usd": 0.1092
+   "cost_usd": 0.0212
   },
   "pruned": 0
  },
- "fts_synced_until": "2026-11-13T07:00:00",
+ "fts_synced_until": "2026-11-14T07:00:00",
  "tenders": [
   {
    "id": "ted:792755-2026",
@@ -466,6 +466,45 @@
     "fit": "faible"
    },
    "analysed_at": "2026-11-13T08:21:26+01:00",
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "fts:ocds-h6vhtk-06c53f:award",
+   "source": "fts",
+   "kind": "award",
+   "notice": "108102-2026",
+   "notice_type": "UK6",
+   "title": "Design Agency Services",
+   "buyer": "Pension Protection Fund",
+   "buyer_country": "GB",
+   "published": "2026-11-13",
+   "url": "https://www.find-tender.service.gov.uk/Notice/108102-2026",
+   "cpv_label": "",
+   "countries": [
+    "GB"
+   ],
+   "cpv": [
+    "79415200"
+   ],
+   "deadline": "",
+   "value": 1200000.0,
+   "currency": "GBP",
+   "winners": [
+    "Bray Leino Limited"
+   ],
+   "description": "We will be appointing a single service provider to deliver Design Agency Services.\nThe contract will be for an initial term of 3 (three) years with optional extensions to take the maximum possible term to 5 (five) years. The PPF is seeking to strengthen the impact of its communications through the appointment of a specialist external design agency. The agency will work in line with our communications strategy and in partnership with our in-house teams.  \nThe successful agency will provide design, production and project management services across print and digital communications, including…",
+   "status": "",
+   "first_seen": "2026-11-14T08:09:16+01:00",
+   "analysis": {
+    "relevant": false,
+    "segment": "cartographie",
+    "title_fr": "Services d'agence de design et communication",
+    "summary": "Attribution d'un contrat de services d'agence de design (print et digital) au Royaume-Uni pour une durée initiale de 3 ans, extensible à 5 ans.",
+    "why": "",
+    "industries": [],
+    "fit": "faible"
+   },
+   "analysed_at": "2026-11-14T08:09:16+01:00",
    "analysis_model": "claude_cli:sonnet"
   },
   {
