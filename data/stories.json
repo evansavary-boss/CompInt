@@ -1,11 +1,11 @@
 {
- "updated_at": "2026-11-15T07:56:53+01:00",
+ "updated_at": "2026-11-16T09:18:32+01:00",
  "last_run": {
-  "created": 236,
-  "analysed": 80,
-  "merged": 40,
-  "error": "budget de temps atteint (15 min) : 30 sujets reportés au prochain passage",
-  "cost_usd": 2.472
+  "created": 316,
+  "analysed": 117,
+  "merged": 33,
+  "error": "",
+  "cost_usd": 2.1017
  },
  "stories": [
   {
@@ -101301,7 +101301,8 @@
     "a2ea829e96ffc49c",
     "ff5c09f021bba67e",
     "80ccd47d7ef29c95",
-    "966d91258c08a7db"
+    "966d91258c08a7db",
+    "bc9c7b801b30d962"
    ],
    "analysis": {
     "relevant": true,
@@ -102998,7 +102999,8 @@
     "d6d4853f329a4a79",
     "be66a3433863c224",
     "649f345968595ed5",
-    "18f825d7149a8006"
+    "18f825d7149a8006",
+    "91b04222686a6679"
    ],
    "analysis": {
     "relevant": true,
@@ -108279,7 +108281,10 @@
    "item_ids": [
     "10619a29a84bfeba",
     "e35bf02e470642b6",
-    "379b0211a082434d"
+    "379b0211a082434d",
+    "621b63df88fd408e",
+    "0ee0bd33492153d5",
+    "f3f3eced1b7b782a"
    ],
    "analysis": {
     "relevant": true,
@@ -109631,12 +109636,29 @@
   {
    "id": "s745cb74cf4310973",
    "item_ids": [
-    "745cb74cf4310973"
+    "745cb74cf4310973",
+    "176039bdbd87c473"
    ],
-   "analysis": {},
-   "analysed_at": "",
-   "analysed_size": 0,
-   "analysis_model": ""
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Un ingénieur néo-zélandais pilote la future mission Mars de Rocket Lab",
+    "summary": "Rocket Lab prépare une mission vers Mars dirigée par un ingénieur néo-zélandais, une étape saluée par les investisseurs de l'entreprise.",
+    "why": "Cette mission illustre l'expansion de Rocket Lab au-delà de l'orbite terrestre, renforçant sa position concurrentielle dans le spatial.",
+    "tabs": [
+     "concurrents"
+    ],
+    "themes": [
+     "programmes"
+    ],
+    "industries": [],
+    "countries": [
+     "US"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-16T09:18:32+01:00",
+   "analysed_size": 2,
+   "analysis_model": "claude_cli:sonnet"
   },
   {
    "id": "scc4b50b700e37031",
@@ -110189,30 +110211,6 @@
    "analysis_model": "claude_cli:sonnet"
   },
   {
-   "id": "s621b63df88fd408e",
-   "item_ids": [
-    "621b63df88fd408e"
-   ],
-   "analysis": {
-    "relevant": true,
-    "title_fr": "Qu'est-ce qui fait bouger l'action Intuitive Machines ?",
-    "summary": "Un article analyse les facteurs récents expliquant les mouvements du cours de l'action Intuitive Machines.",
-    "why": "Intuitive Machines est un acteur des services lunaires suivi par les investisseurs du secteur spatial.",
-    "tabs": [
-     "concurrents"
-    ],
-    "themes": [],
-    "industries": [],
-    "countries": [
-     "US"
-    ],
-    "impact": "faible"
-   },
-   "analysed_at": "2026-11-14T07:53:30+01:00",
-   "analysed_size": 1,
-   "analysis_model": "claude_cli:sonnet"
-  },
-  {
    "id": "s7d941e8bb82ab54d",
    "item_ids": [
     "7d941e8bb82ab54d",
@@ -110224,9 +110222,9 @@
    ],
    "analysis": {
     "relevant": true,
-    "title_fr": "Firefly Aerospace et Satellogic publient leurs résultats du T3 2026",
-    "summary": "Les deux sociétés spatiales cotées au Nasdaq ont présenté leurs résultats trimestriels, donnant un aperçu de leur santé financière et de leurs perspectives.",
-    "why": "Satellogic est un concurrent direct en imagerie satellite ; ses résultats renseignent sur sa capacité d'investissement future.",
+    "title_fr": "Satellogic bat les attentes de bénéfices au T3, Firefly Aerospace grimpe en bourse",
+    "summary": "Satellogic a publié un bénéfice par action supérieur aux attentes pour le troisième trimestre, tandis que l'action Firefly Aerospace progresse après ses résultats.",
+    "why": "Signale la dynamique financière de deux concurrents d'Airbus dans l'imagerie satellite et les lanceurs.",
     "tabs": [
      "concurrents"
     ],
@@ -110239,8 +110237,8 @@
     ],
     "impact": "faible"
    },
-   "analysed_at": "2026-11-14T07:53:30+01:00",
-   "analysed_size": 2,
+   "analysed_at": "2026-11-16T09:18:32+01:00",
+   "analysed_size": 6,
    "analysis_model": "claude_cli:sonnet"
   },
   {
@@ -110521,26 +110519,26 @@
    ],
    "analysis": {
     "relevant": true,
-    "title_fr": "Le Congrès américain intensifie la pression sur Nvidia concernant les exportations vers la Chine",
-    "summary": "Des membres du Congrès américain cherchent à renforcer les contrôles d'exportation des puces Nvidia vers la Chine.",
-    "why": "Les restrictions sur les semi-conducteurs influencent la chaîne d'approvisionnement technologique du secteur spatial et de la défense.",
+    "title_fr": "Washington renforce la pression pour durcir les contrôles d'exportation de puces vers la Chine",
+    "summary": "Des élus américains poussent pour durcir les contrôles d'exportation de semi-conducteurs vers la Chine, dans un contexte de controverse autour de la démission de Jensen Huang chez Nvidia.",
+    "why": "Les restrictions technologiques influencent les chaînes d'approvisionnement des systèmes de défense et spatiaux.",
     "tabs": [
-     "geopolitique",
      "economie"
     ],
     "themes": [
-     "sanctions",
-     "reglementation"
+     "sanctions"
     ],
-    "industries": [],
+    "industries": [
+     "defense"
+    ],
     "countries": [
      "US",
      "CN"
     ],
-    "impact": "moyen"
+    "impact": "faible"
    },
-   "analysed_at": "2026-11-14T07:53:30+01:00",
-   "analysed_size": 1,
+   "analysed_at": "2026-11-16T09:18:32+01:00",
+   "analysed_size": 3,
    "analysis_model": "claude_cli:sonnet"
   },
   {
@@ -110744,38 +110742,6 @@
    "analysis_model": "claude_cli:sonnet"
   },
   {
-   "id": "s510bb379717eaca9",
-   "item_ids": [
-    "510bb379717eaca9",
-    "b5bc194190748aee"
-   ],
-   "analysis": {
-    "relevant": true,
-    "title_fr": "Zelensky dénonce les restrictions persistantes de Starlink sur tout le front",
-    "summary": "Le président ukrainien affirme que les limitations imposées sur le service Starshield/Starlink de SpaceX continuent d'affecter l'ensemble de la ligne de front en Ukraine.",
-    "why": "Illustre la dépendance critique de l'armée ukrainienne aux services satellite de SpaceX et les risques liés à cette dépendance unique.",
-    "tabs": [
-     "geopolitique",
-     "concurrents"
-    ],
-    "themes": [
-     "conflits"
-    ],
-    "industries": [
-     "defense",
-     "connectivite"
-    ],
-    "countries": [
-     "UA",
-     "US"
-    ],
-    "impact": "moyen"
-   },
-   "analysed_at": "2026-11-14T07:53:30+01:00",
-   "analysed_size": 1,
-   "analysis_model": "claude_cli:sonnet"
-  },
-  {
    "id": "se4886b43b650e1a9",
    "item_ids": [
     "e4886b43b650e1a9",
@@ -110785,25 +110751,28 @@
    ],
    "analysis": {
     "relevant": true,
-    "title_fr": "Trump évoquera la guerre en Iran, mais pas l'Ukraine, lors du sommet en Chine",
-    "summary": "Le président américain prévoit d'aborder la crise iranienne lors d'un sommet en Chine, sans traiter la question ukrainienne.",
-    "why": "Signale les priorités diplomatiques américaines entre dossiers Iran, Chine et Ukraine, pertinent pour le contexte géopolitique du secteur.",
+    "title_fr": "Trump, Poutine et Xi prévoient un sommet trilatéral en Chine, sans l'Ukraine à l'ordre du jour",
+    "summary": "La Maison Blanche a annoncé une rencontre inédite entre Trump, Poutine et Xi en marge du sommet de l'APEC à Shenzhen, centrée sur le désarmement nucléaire plutôt que sur l'Ukraine.",
+    "why": "Ce sommet pourrait redessiner des équilibres géopolitiques influençant les budgets de défense et de renseignement.",
     "tabs": [
      "geopolitique"
     ],
     "themes": [
      "conflits"
     ],
-    "industries": [],
-    "countries": [
-     "US",
-     "CN",
-     "IR"
+    "industries": [
+     "defense"
     ],
-    "impact": "faible"
+    "countries": [
+     "IR",
+     "UA",
+     "CN",
+     "US"
+    ],
+    "impact": "moyen"
    },
-   "analysed_at": "2026-11-14T07:53:30+01:00",
-   "analysed_size": 1,
+   "analysed_at": "2026-11-16T09:18:32+01:00",
+   "analysed_size": 4,
    "analysis_model": "claude_cli:sonnet"
   },
   {
@@ -111444,9 +111413,9 @@
    ],
    "analysis": {
     "relevant": true,
-    "title_fr": "Redwire : un manque à gagner trimestriel relance le débat sur la valorisation",
-    "summary": "Le concurrent spatial américain Redwire voit son résultat trimestriel en deçà des attentes, ce qui ravive les interrogations des investisseurs sur sa trajectoire.",
-    "why": "Suivi financier d'un acteur spatial américain concurrent sur les segments satellites et infrastructures orbitales.",
+    "title_fr": "Redwire : un manque à gagner trimestriel relance le débat sur l'action",
+    "summary": "Le titre Redwire a chuté après un manque à gagner sur ses revenus trimestriels, relançant les discussions sur sa trajectoire boursière.",
+    "why": "Redwire est un acteur des infrastructures spatiales dont la performance financière intéresse les observateurs du secteur.",
     "tabs": [
      "concurrents"
     ],
@@ -111459,8 +111428,8 @@
     ],
     "impact": "faible"
    },
-   "analysed_at": "2026-11-14T07:53:30+01:00",
-   "analysed_size": 1,
+   "analysed_at": "2026-11-16T09:18:32+01:00",
+   "analysed_size": 2,
    "analysis_model": "claude_cli:sonnet"
   },
   {
@@ -111683,29 +111652,31 @@
    ],
    "analysis": {
     "relevant": true,
-    "title_fr": "L'Iran revendique des frappes sur une station radar US à Bahreïn et un méthanier à Ormuz",
-    "summary": "L'Iran affirme avoir frappé une station radar américaine au Bahreïn ainsi qu'un pétrolier méthanier dans le détroit d'Ormuz.",
-    "why": "Une attaque directe contre une installation américaine marque une escalade régionale majeure affectant la sécurité et le renseignement.",
+    "title_fr": "Guerre en mer Rouge : frappes de drones contre une base américaine et un tanker",
+    "summary": "La coalition saoudienne a abattu trois drones Houthis, tandis que l'Iran revendique une attaque de drones contre une base américaine à Bahreïn et un pétrolier dans le détroit d'Ormuz.",
+    "why": "L'escalade au Moyen-Orient accroît la demande de surveillance satellite maritime et militaire dans la région.",
     "tabs": [
      "geopolitique"
     ],
     "themes": [
-     "conflits"
+     "conflits",
+     "ressources"
     ],
     "industries": [
      "defense",
-     "maritime",
-     "ogme"
+     "maritime"
     ],
     "countries": [
      "IR",
      "US",
-     "BH"
+     "BH",
+     "SA",
+     "YE"
     ],
-    "impact": "fort"
+    "impact": "moyen"
    },
-   "analysed_at": "2026-11-14T07:53:30+01:00",
-   "analysed_size": 1,
+   "analysed_at": "2026-11-16T09:18:32+01:00",
+   "analysed_size": 3,
    "analysis_model": "claude_cli:sonnet"
   },
   {
@@ -111716,9 +111687,9 @@
    ],
    "analysis": {
     "relevant": true,
-    "title_fr": "Les drones redéfinissent la guerre au Soudan et ravagent les civils",
-    "summary": "Les attaques de drones transforment le conflit au Soudan, provoquant de lourdes pertes civiles.",
-    "why": "Illustre la diffusion des drones dans les conflits africains, un contexte pertinent pour le renseignement géospatial et la défense.",
+    "title_fr": "Les drones redéfinissent la guerre au Soudan et aggravent les pertes civiles",
+    "summary": "L'utilisation massive de drones transforme le conflit au Soudan, causant de lourdes pertes parmi les civils selon des analyses récentes.",
+    "why": "L'intensification de la guerre des drones au Soudan illustre la demande croissante de renseignement géospatial pour suivre les conflits africains.",
     "tabs": [
      "geopolitique"
     ],
@@ -111734,8 +111705,8 @@
     ],
     "impact": "moyen"
    },
-   "analysed_at": "2026-11-14T07:53:30+01:00",
-   "analysed_size": 1,
+   "analysed_at": "2026-11-16T09:18:32+01:00",
+   "analysed_size": 2,
    "analysis_model": "claude_cli:sonnet"
   },
   {
@@ -112339,22 +112310,25 @@
     "55a3536c824965e1",
     "6e7aab309692250c",
     "4ecfd56c9e33f66b",
-    "832b8c1d23663e1b"
+    "832b8c1d23663e1b",
+    "65651cfd8ec9e62c",
+    "23b0f6091d04c997",
+    "1405e5d820ffd3b8",
+    "c814649e00d051ae",
+    "bc773d9f11c0ecf2"
    ],
    "analysis": {
     "relevant": true,
-    "title_fr": "Rocket Lab atteint son 100e lancement Electron avec un satellite iQPS",
-    "summary": "Rocket Lab a célébré le 100e lancement de sa fusée Electron en mettant en orbite un satellite radar japonais d'iQPS, tandis que du matériel pour sa mission Mars franchit un test clé.",
-    "why": "Ce jalon illustre la montée en cadence d'un concurrent clé sur les petits lancements, utilisés pour déployer des constellations d'observation.",
+    "title_fr": "Rocket Lab atteint 100 lancements Electron, record de rapidité",
+    "summary": "Rocket Lab a réalisé le 100e lancement de son lanceur Electron, devenant le lanceur commercial le plus rapide à atteindre ce jalon, avec un satellite japonais iQPS à bord.",
+    "why": "Confirme Rocket Lab comme concurrent crédible et fiable sur le marché des petits lanceurs utilisés pour l'observation de la Terre.",
     "tabs": [
      "concurrents"
     ],
     "themes": [
-     "lancements",
-     "produits"
+     "lancements"
     ],
     "industries": [
-     "defense",
      "securite"
     ],
     "countries": [
@@ -112363,8 +112337,8 @@
     ],
     "impact": "moyen"
    },
-   "analysed_at": "2026-11-15T07:56:53+01:00",
-   "analysed_size": 3,
+   "analysed_at": "2026-11-16T09:18:32+01:00",
+   "analysed_size": 10,
    "analysis_model": "claude_cli:sonnet"
   },
   {
@@ -112498,16 +112472,6 @@
    "analysis_model": ""
   },
   {
-   "id": "s91c901ca2ac5b829",
-   "item_ids": [
-    "91c901ca2ac5b829"
-   ],
-   "analysis": {},
-   "analysed_at": "",
-   "analysed_size": 0,
-   "analysis_model": ""
-  },
-  {
    "id": "s49a313893a40b46c",
    "item_ids": [
     "49a313893a40b46c"
@@ -112546,13 +112510,16 @@
     "d7096b811b75f23f",
     "c4d58ed925362399",
     "fdf7f4cc475af757",
-    "6a66838cd3af384d"
+    "6a66838cd3af384d",
+    "676b517bd3a66f6c",
+    "06c534e0ef840dec",
+    "f5841c791a430a42"
    ],
    "analysis": {
     "relevant": true,
-    "title_fr": "Zelensky évoque une proposition américaine d'adhésion à l'OTAN contre le Donbass",
-    "summary": "Volodymyr Zelensky a évoqué une proposition américaine offrant l'adhésion de l'Ukraine à l'OTAN en échange de la cession du Donbass, un scénario que Kiev ne prend pas au sérieux.",
-    "why": "Un tel accord redessinerait la carte du conflit ukrainien et les besoins de surveillance satellite des zones cédées et des frontières de l'OTAN.",
+    "title_fr": "Zelensky évoque une proposition américaine : Donbass contre adhésion à l'OTAN",
+    "summary": "Selon Volodymyr Zelensky, Washington aurait évoqué l'idée que l'Ukraine cède le Donbass en échange d'une adhésion à l'OTAN pour mettre fin à la guerre.",
+    "why": "Toute évolution du conflit ukrainien influence les budgets de défense et la demande en imagerie satellite de surveillance militaire.",
     "tabs": [
      "geopolitique"
     ],
@@ -112564,12 +112531,13 @@
     ],
     "countries": [
      "US",
-     "UA"
+     "UA",
+     "RU"
     ],
-    "impact": "fort"
+    "impact": "moyen"
    },
-   "analysed_at": "2026-11-15T07:56:53+01:00",
-   "analysed_size": 2,
+   "analysed_at": "2026-11-16T09:18:32+01:00",
+   "analysed_size": 9,
    "analysis_model": "claude_cli:sonnet"
   },
   {
@@ -112645,22 +112613,23 @@
   {
    "id": "sa7183b944612b9f6",
    "item_ids": [
-    "a7183b944612b9f6"
+    "a7183b944612b9f6",
+    "ff02dd158ea6e800"
    ],
-   "analysis": {},
-   "analysed_at": "",
-   "analysed_size": 0,
-   "analysis_model": ""
-  },
-  {
-   "id": "sc814649e00d051ae",
-   "item_ids": [
-    "c814649e00d051ae"
-   ],
-   "analysis": {},
-   "analysed_at": "",
-   "analysed_size": 0,
-   "analysis_model": ""
+   "analysis": {
+    "relevant": false,
+    "title_fr": "Un Premier ministre exige des sanctions immédiates contre la corruption",
+    "summary": "Un Premier ministre, dans un pays non précisé par les sources, réclame des sanctions immédiates dans le cadre de la lutte contre la corruption.",
+    "why": "",
+    "tabs": [],
+    "themes": [],
+    "industries": [],
+    "countries": [],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-16T09:18:32+01:00",
+   "analysed_size": 2,
+   "analysis_model": "claude_cli:sonnet"
   },
   {
    "id": "sfdc4c3229f7dd149",
@@ -112727,7 +112696,8 @@
    "item_ids": [
     "9f7cce669a3678df",
     "e29e4d7ec1170d01",
-    "d535474c6cfe59ae"
+    "d535474c6cfe59ae",
+    "6a329a69ef1331fc"
    ],
    "analysis": {
     "relevant": true,
@@ -113801,29 +113771,37 @@
     "64f75c746f3e9427",
     "d8ff4d741b367cc9",
     "e20d076bb26b27a7",
-    "0d957749cb758b5e"
+    "0d957749cb758b5e",
+    "8814892b409cb5a0",
+    "c103359cc42667c7",
+    "91c901ca2ac5b829",
+    "66c73f8254675312",
+    "8b39ff79f5c9c19d",
+    "5f30a73c448e5a02",
+    "2ef0f30460196397",
+    "b75f6f9400b62593",
+    "786bb395cb46ff3c"
    ],
    "analysis": {
     "relevant": true,
-    "title_fr": "Le vaisseau Starship de SpaceX rattrapé par la tour après 22 heures en orbite",
-    "summary": "Après un vol orbital de 22 heures, le vaisseau Starship de SpaceX a été capturé par les bras de la tour de lancement, une première malgré l'échec antérieur de la capture du booster.",
-    "why": "Cette capture confirme la progression de SpaceX vers une réutilisation rapide et totale, renforçant son avance dans les lancements lourds.",
+    "title_fr": "SpaceX réussit pour la première fois la récupération de l'étage supérieur de Starship",
+    "summary": "SpaceX a capturé pour la première fois l'étage supérieur de sa mégafusée Starship après 14 orbites, à l'aide des bras de lancement au Texas.",
+    "why": "Cette avancée vers la pleine réutilisabilité pourrait réduire fortement les coûts de lancement, renforçant l'avance de SpaceX sur l'accès à l'espace.",
     "tabs": [
      "concurrents"
     ],
     "themes": [
-     "lancements"
+     "lancements",
+     "produits"
     ],
-    "industries": [
-     "defense"
-    ],
+    "industries": [],
     "countries": [
      "US"
     ],
     "impact": "moyen"
    },
-   "analysed_at": "2026-11-15T07:56:53+01:00",
-   "analysed_size": 3,
+   "analysed_at": "2026-11-16T09:18:32+01:00",
+   "analysed_size": 15,
    "analysis_model": "claude_cli:sonnet"
   },
   {
@@ -114129,7 +114107,9 @@
   {
    "id": "seca3533d46a58061",
    "item_ids": [
-    "eca3533d46a58061"
+    "eca3533d46a58061",
+    "510bb379717eaca9",
+    "b5bc194190748aee"
    ],
    "analysis": {
     "relevant": true,
@@ -114423,9 +114403,9 @@
    ],
    "analysis": {
     "relevant": true,
-    "title_fr": "La coalition saoudienne intercepte des missiles, Bahreïn en alerte",
-    "summary": "La coalition menée par l'Arabie saoudite a intercepté des missiles tandis que Bahreïn a émis une alerte à la menace.",
-    "why": "Signale une escalade régionale qui accroît le besoin de surveillance satellitaire pour la sécurité du Golfe.",
+    "title_fr": "La coalition menée par l'Arabie saoudite intercepte des missiles et drones houthis",
+    "summary": "La coalition dirigée par Riyad a intercepté des missiles et drones houthis tandis que les combats s'intensifient à Marib et al-Jawf au Yémen.",
+    "why": "L'escalade au Yémen accroît la demande de surveillance satellite pour le suivi des conflits et des déplacements de population.",
     "tabs": [
      "geopolitique"
     ],
@@ -114438,12 +114418,13 @@
     ],
     "countries": [
      "SA",
+     "YE",
      "BH"
     ],
     "impact": "moyen"
    },
-   "analysed_at": "2026-11-15T07:56:53+01:00",
-   "analysed_size": 1,
+   "analysed_at": "2026-11-16T09:18:32+01:00",
+   "analysed_size": 2,
    "analysis_model": "claude_cli:sonnet"
   },
   {
@@ -114456,9 +114437,9 @@
    ],
    "analysis": {
     "relevant": true,
-    "title_fr": "Le renseignement américain estime que l'Iran dispose encore de 2 500 missiles",
-    "summary": "Selon le Wall Street Journal, les services de renseignement américains estiment que l'Iran conserve jusqu'à 2 500 missiles malgré les frappes passées.",
-    "why": "Cette estimation alimente les besoins de surveillance satellite et de renseignement géospatial sur les capacités militaires iraniennes.",
+    "title_fr": "Les renseignements américains estiment que l'Iran conserve jusqu'à 2 500 missiles",
+    "summary": "Selon un rapport, les services de renseignement américains estiment que l'Iran dispose encore d'environ 2 500 missiles malgré les dommages de la récente guerre.",
+    "why": "Un arsenal balistique iranien important maintient la demande de surveillance satellite militaire au Moyen-Orient.",
     "tabs": [
      "geopolitique"
     ],
@@ -114466,8 +114447,7 @@
      "conflits"
     ],
     "industries": [
-     "defense",
-     "securite"
+     "defense"
     ],
     "countries": [
      "US",
@@ -114475,8 +114455,8 @@
     ],
     "impact": "moyen"
    },
-   "analysed_at": "2026-11-15T07:56:53+01:00",
-   "analysed_size": 2,
+   "analysed_at": "2026-11-16T09:18:32+01:00",
+   "analysed_size": 4,
    "analysis_model": "claude_cli:sonnet"
   },
   {
@@ -114827,7 +114807,9 @@
    "id": "s31b0b6b20b1ba735",
    "item_ids": [
     "31b0b6b20b1ba735",
-    "f078228841b983eb"
+    "f078228841b983eb",
+    "2657ad4fd68aafd7",
+    "72b04b897c25596d"
    ],
    "analysis": {
     "relevant": true,
@@ -114860,9 +114842,9 @@
    ],
    "analysis": {
     "relevant": true,
-    "title_fr": "AST SpaceMobile poursuit sa dynamique de croissance en bourse",
-    "summary": "Le titre AST SpaceMobile continue de progresser, porté par l'intérêt des investisseurs pour la connectivité satellite directe aux mobiles.",
-    "why": "AST SpaceMobile est un acteur clé de la connectivité satellite directe, un segment stratégique pour Airbus.",
+    "title_fr": "AST SpaceMobile affiche une dynamique commerciale croissante lors de son bilan trimestriel",
+    "summary": "AST SpaceMobile a présenté des résultats trimestriels soulignant l'accélération de son lancement commercial de connectivité satellite directe aux mobiles.",
+    "why": "AST SpaceMobile est un concurrent clé sur la connectivité satellite directe, un marché stratégique pour Airbus.",
     "tabs": [
      "concurrents"
     ],
@@ -114875,10 +114857,10 @@
     "countries": [
      "US"
     ],
-    "impact": "faible"
+    "impact": "moyen"
    },
-   "analysed_at": "2026-11-15T07:56:53+01:00",
-   "analysed_size": 1,
+   "analysed_at": "2026-11-16T09:18:32+01:00",
+   "analysed_size": 2,
    "analysis_model": "claude_cli:sonnet"
   },
   {
@@ -114968,16 +114950,19 @@
    "item_ids": [
     "dc9f92f52bd7cc55",
     "0f551d0a59e2e89e",
-    "1dc28c4d3fa1b845"
+    "1dc28c4d3fa1b845",
+    "1f70734dc2fe612d",
+    "f6c7a932c55a5149",
+    "b25f52768c2e8683",
+    "b1c1ee0faf9e0755"
    ],
    "analysis": {
     "relevant": true,
-    "title_fr": "L'OTAN annule son sommet des dirigeants en Albanie prévu en 2027",
-    "summary": "L'OTAN renonce à organiser un sommet des chefs d'État en Albanie, citant des préoccupations liées aux dépenses de défense et à la guerre en Ukraine.",
-    "why": "Ce report reflète les tensions internes de l'Alliance sur le financement de la défense face à la guerre en Ukraine.",
+    "title_fr": "L'OTAN renonce à son sommet des dirigeants en Albanie en 2027",
+    "summary": "L'OTAN a décidé de ne pas tenir son sommet des chefs d'État prévu en Albanie en 2027, dans un contexte de divisions internes sur les dépenses de défense et la guerre en Ukraine.",
+    "why": "Révèle des tensions internes à l'alliance qui pourraient peser sur les futures décisions de budgets de défense et de programmes spatiaux militaires.",
     "tabs": [
-     "geopolitique",
-     "economie"
+     "geopolitique"
     ],
     "themes": [
      "conflits",
@@ -114990,10 +114975,10 @@
      "AL",
      "UA"
     ],
-    "impact": "moyen"
+    "impact": "faible"
    },
-   "analysed_at": "2026-11-15T07:56:53+01:00",
-   "analysed_size": 1,
+   "analysed_at": "2026-11-16T09:18:32+01:00",
+   "analysed_size": 7,
    "analysis_model": "claude_cli:sonnet"
   },
   {
@@ -115021,6 +115006,4680 @@
     "impact": "faible"
    },
    "analysed_at": "2026-11-15T07:56:53+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "scad7145f3e917568",
+   "item_ids": [
+    "cad7145f3e917568"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sb5be864d5f3a3093",
+   "item_ids": [
+    "b5be864d5f3a3093"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s5426358298145de8",
+   "item_ids": [
+    "5426358298145de8"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s6f80dfb2b2df634c",
+   "item_ids": [
+    "6f80dfb2b2df634c"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sca17d7f2a8746ee3",
+   "item_ids": [
+    "ca17d7f2a8746ee3"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s5a3f1b25ac629b48",
+   "item_ids": [
+    "5a3f1b25ac629b48"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sbfc1b68e76daf394",
+   "item_ids": [
+    "bfc1b68e76daf394"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sb12ce5519e26ffe4",
+   "item_ids": [
+    "b12ce5519e26ffe4"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s472aeea442e8d3cc",
+   "item_ids": [
+    "472aeea442e8d3cc"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s8dc2397a39af7fc8",
+   "item_ids": [
+    "8dc2397a39af7fc8"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s4a1788aec776e648",
+   "item_ids": [
+    "4a1788aec776e648"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s7167c9f5b41dab40",
+   "item_ids": [
+    "7167c9f5b41dab40"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s30a752089bbbd2c1",
+   "item_ids": [
+    "30a752089bbbd2c1"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sd3c2ebc442773630",
+   "item_ids": [
+    "d3c2ebc442773630"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s474f485e90a3ddcc",
+   "item_ids": [
+    "474f485e90a3ddcc"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s0b76a47e775f0fb2",
+   "item_ids": [
+    "0b76a47e775f0fb2"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s5447a8b5e87e37a9",
+   "item_ids": [
+    "5447a8b5e87e37a9"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s2386d1e7204aefb3",
+   "item_ids": [
+    "2386d1e7204aefb3"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "se10572417cc86820",
+   "item_ids": [
+    "e10572417cc86820"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s216d53ef0ffe1120",
+   "item_ids": [
+    "216d53ef0ffe1120"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s45991ce852cb6ee9",
+   "item_ids": [
+    "45991ce852cb6ee9"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s7b56a02b2c0db2c5",
+   "item_ids": [
+    "7b56a02b2c0db2c5"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s85574be79a240074",
+   "item_ids": [
+    "85574be79a240074"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sb6afbc9abd78fc6a",
+   "item_ids": [
+    "b6afbc9abd78fc6a"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sb15d0a8f84b5f344",
+   "item_ids": [
+    "b15d0a8f84b5f344"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s871ed27b3f46aec9",
+   "item_ids": [
+    "871ed27b3f46aec9"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s5567ccd5cef03e02",
+   "item_ids": [
+    "5567ccd5cef03e02"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s0a760a5d849d78ea",
+   "item_ids": [
+    "0a760a5d849d78ea"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s515695ad8fea9713",
+   "item_ids": [
+    "515695ad8fea9713"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s39f8d19686065955",
+   "item_ids": [
+    "39f8d19686065955"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s475bd8be8e0dd8ed",
+   "item_ids": [
+    "475bd8be8e0dd8ed"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s644865f0c54b4a51",
+   "item_ids": [
+    "644865f0c54b4a51"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s6517077da89998de",
+   "item_ids": [
+    "6517077da89998de",
+    "0ca7cbe71184efcc"
+   ],
+   "analysis": {
+    "relevant": false,
+    "title_fr": "Le Guatemala déclare l'état d'urgence dans l'est face à la violence liée au narcotrafic",
+    "summary": "Le Guatemala a instauré un état d'urgence de 30 jours dans l'est du pays pour lutter contre la violence liée au trafic de drogue.",
+    "why": "",
+    "tabs": [],
+    "themes": [],
+    "industries": [],
+    "countries": [
+     "GT"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-16T09:18:32+01:00",
+   "analysed_size": 2,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "sb153cbcb075dda37",
+   "item_ids": [
+    "b153cbcb075dda37"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s131aef6aad454293",
+   "item_ids": [
+    "131aef6aad454293"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s8e520a200a849913",
+   "item_ids": [
+    "8e520a200a849913"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s2478a6322048b026",
+   "item_ids": [
+    "2478a6322048b026"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s260971b7d9d79ba9",
+   "item_ids": [
+    "260971b7d9d79ba9"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s53b1a88ac9a047fd",
+   "item_ids": [
+    "53b1a88ac9a047fd"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sdd6420ea14d38945",
+   "item_ids": [
+    "dd6420ea14d38945"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sfdcdcc3d08119711",
+   "item_ids": [
+    "fdcdcc3d08119711"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s9c1b857560eaf416",
+   "item_ids": [
+    "9c1b857560eaf416"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s95dcd85465c8d711",
+   "item_ids": [
+    "95dcd85465c8d711"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sbde278a83db96f65",
+   "item_ids": [
+    "bde278a83db96f65"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s214409b09fe0c0dc",
+   "item_ids": [
+    "214409b09fe0c0dc"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s45c16c00c9ce944e",
+   "item_ids": [
+    "45c16c00c9ce944e"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sd26e6c997599b65e",
+   "item_ids": [
+    "d26e6c997599b65e"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s48d12c8e1c6c4a3c",
+   "item_ids": [
+    "48d12c8e1c6c4a3c"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "se2aa003b0b50d681",
+   "item_ids": [
+    "e2aa003b0b50d681"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s7f2771f309790a56",
+   "item_ids": [
+    "7f2771f309790a56"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s13ed319bd28782a5",
+   "item_ids": [
+    "13ed319bd28782a5"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sa2efa11e4361ce26",
+   "item_ids": [
+    "a2efa11e4361ce26"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sb58478d21a5686c2",
+   "item_ids": [
+    "b58478d21a5686c2"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s6954cd9b7b0cde77",
+   "item_ids": [
+    "6954cd9b7b0cde77"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "se70427516a96f0dd",
+   "item_ids": [
+    "e70427516a96f0dd"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s7d9157cb2b9c4dad",
+   "item_ids": [
+    "7d9157cb2b9c4dad"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s51c7940f30ff7edf",
+   "item_ids": [
+    "51c7940f30ff7edf"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "se036464f0711f6b1",
+   "item_ids": [
+    "e036464f0711f6b1"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s96a96893ef70be87",
+   "item_ids": [
+    "96a96893ef70be87"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s13cbb9c6e41ea3d8",
+   "item_ids": [
+    "13cbb9c6e41ea3d8"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s585e81772a3742e1",
+   "item_ids": [
+    "585e81772a3742e1",
+    "7b1568bec803c365",
+    "2d4fa82750b1776e",
+    "6cfb45b17db455a9",
+    "978a82acbc9b172c",
+    "677bb6513c06e1ef",
+    "2ce7d6e5b3c9da48"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Des forces navales de l'UE arraisonnent un pétrolier russe sous faux pavillon en Méditerranée",
+    "summary": "Des forces navales européennes ont arraisonné un pétrolier soupçonné d'appartenir à la flotte fantôme russe, naviguant sous un faux pavillon en Méditerranée.",
+    "why": "Renforce la demande de surveillance maritime et de renseignement géospatial pour détecter la flotte fantôme russe contournant les sanctions.",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [
+     "sanctions",
+     "ressources"
+    ],
+    "industries": [
+     "maritime",
+     "securite"
+    ],
+    "countries": [
+     "RU"
+    ],
+    "impact": "moyen"
+   },
+   "analysed_at": "2026-11-16T09:18:32+01:00",
+   "analysed_size": 5,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s2d3ac57d3a231888",
+   "item_ids": [
+    "2d3ac57d3a231888"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s1ee7a620794e8b08",
+   "item_ids": [
+    "1ee7a620794e8b08"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s97a33547a80b8d0d",
+   "item_ids": [
+    "97a33547a80b8d0d"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sea1444dbd8e6386c",
+   "item_ids": [
+    "ea1444dbd8e6386c"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s2ac01798748e8d47",
+   "item_ids": [
+    "2ac01798748e8d47"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s8aedd7b8858c8786",
+   "item_ids": [
+    "8aedd7b8858c8786"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s6ce2a62591048c6b",
+   "item_ids": [
+    "6ce2a62591048c6b"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s09865af9013612c4",
+   "item_ids": [
+    "09865af9013612c4"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s0d518d54635a46ea",
+   "item_ids": [
+    "0d518d54635a46ea"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s70d584bca0152791",
+   "item_ids": [
+    "70d584bca0152791"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sff0df99e23e48b85",
+   "item_ids": [
+    "ff0df99e23e48b85"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sf314d80c50a7462d",
+   "item_ids": [
+    "f314d80c50a7462d"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s48753232ce9a296b",
+   "item_ids": [
+    "48753232ce9a296b"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sa73ccdd0ae93e984",
+   "item_ids": [
+    "a73ccdd0ae93e984"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s4890d8e13284ffd8",
+   "item_ids": [
+    "4890d8e13284ffd8"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sef6f8a7d283812b2",
+   "item_ids": [
+    "ef6f8a7d283812b2"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sfd255bde145b3931",
+   "item_ids": [
+    "fd255bde145b3931"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sa3bd38ae3cd26400",
+   "item_ids": [
+    "a3bd38ae3cd26400"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s4819b08cecb70ed1",
+   "item_ids": [
+    "4819b08cecb70ed1"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s774d8a396c942eeb",
+   "item_ids": [
+    "774d8a396c942eeb"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sc855e89828c625b3",
+   "item_ids": [
+    "c855e89828c625b3",
+    "358be4e644594808"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "La stratégie minière de Trump laisse les États-Unis vulnérables face aux terres rares chinoises",
+    "summary": "La politique américaine sur les minéraux critiques ne réduit pas suffisamment la dépendance des États-Unis envers la Chine pour les terres rares, à l'approche des discussions Trump-Xi.",
+    "why": "La dépendance aux terres rares chinoises est un enjeu stratégique pour les industries de défense et technologiques occidentales.",
+    "tabs": [
+     "geopolitique",
+     "economie"
+    ],
+    "themes": [
+     "ressources",
+     "sanctions"
+    ],
+    "industries": [
+     "defense"
+    ],
+    "countries": [
+     "US",
+     "CN"
+    ],
+    "impact": "moyen"
+   },
+   "analysed_at": "2026-11-16T09:18:32+01:00",
+   "analysed_size": 2,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "sec5bfbfb51d4908c",
+   "item_ids": [
+    "ec5bfbfb51d4908c"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s2092c788de519cd8",
+   "item_ids": [
+    "2092c788de519cd8"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sf010eec595907583",
+   "item_ids": [
+    "f010eec595907583"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sba1c48a5f54e5024",
+   "item_ids": [
+    "ba1c48a5f54e5024"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sa946e134fa6f973a",
+   "item_ids": [
+    "a946e134fa6f973a"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s75a337e0e47c7ded",
+   "item_ids": [
+    "75a337e0e47c7ded"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sc1e87109079ccd1d",
+   "item_ids": [
+    "c1e87109079ccd1d"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s76ee4f5616c743d1",
+   "item_ids": [
+    "76ee4f5616c743d1"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s5a5b6a05ff9e603b",
+   "item_ids": [
+    "5a5b6a05ff9e603b"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s3bbb52a545f064d0",
+   "item_ids": [
+    "3bbb52a545f064d0"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s39570c811c14c021",
+   "item_ids": [
+    "39570c811c14c021"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s9c833f02b5808907",
+   "item_ids": [
+    "9c833f02b5808907"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sd08de03285990e59",
+   "item_ids": [
+    "d08de03285990e59"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "scd8d046d8f3b1e57",
+   "item_ids": [
+    "cd8d046d8f3b1e57"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sc7dc25633addad1a",
+   "item_ids": [
+    "c7dc25633addad1a"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s88deaf7577dcd6e4",
+   "item_ids": [
+    "88deaf7577dcd6e4"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sdb4986559d32a9bb",
+   "item_ids": [
+    "db4986559d32a9bb"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s1c7e61f7ca5ddfea",
+   "item_ids": [
+    "1c7e61f7ca5ddfea"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sb42a98567103afee",
+   "item_ids": [
+    "b42a98567103afee"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s72f7f8f45c262549",
+   "item_ids": [
+    "72f7f8f45c262549"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s7e65859fe69e39b7",
+   "item_ids": [
+    "7e65859fe69e39b7"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s22ef96b76772878a",
+   "item_ids": [
+    "22ef96b76772878a",
+    "3b4fb8d25a8a3bd3",
+    "8260d791eec501dd",
+    "2cf0db236eee8734",
+    "83fa9cfe68401e47",
+    "a4f573e1b0ffc9c1",
+    "75368a578dfc244e",
+    "07c8da2f212a7aa2",
+    "007d0af8dcd92ef4",
+    "0fdfda9523e25c86",
+    "b69c7459b630c556",
+    "9c88911a749c71dd",
+    "9ae3bdfd26b1005b",
+    "be399478a2f137d0",
+    "ae0102879e5d758f",
+    "8d2a5399b44191b9",
+    "6f045037a572adea",
+    "7a4ee99e51427dde",
+    "a53f0c65383983a7"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Échec du lanceur Vulcan d'ULA : perte des 40 satellites Amazon Leo",
+    "summary": "Le lanceur Vulcan Centaur d'ULA a subi une anomalie en vol lors de son retour en service depuis Cape Canaveral, entraînant la perte totale des 40 satellites broadband Amazon Leo (ex-Kuiper).",
+    "why": "Ce premier échec total d'ULA retarde la constellation concurrente d'Amazon et renforce la position dominante de SpaceX sur le marché des lancements.",
+    "tabs": [
+     "concurrents",
+     "marche"
+    ],
+    "themes": [
+     "lancements",
+     "produits"
+    ],
+    "industries": [
+     "connectivite"
+    ],
+    "countries": [
+     "US"
+    ],
+    "impact": "fort"
+   },
+   "analysed_at": "2026-11-16T09:18:32+01:00",
+   "analysed_size": 16,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "sce4ed8293962883b",
+   "item_ids": [
+    "ce4ed8293962883b"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sdcc11703dd8c52c4",
+   "item_ids": [
+    "dcc11703dd8c52c4"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s6067599a649abb36",
+   "item_ids": [
+    "6067599a649abb36"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sc2e95894f8ed6c8b",
+   "item_ids": [
+    "c2e95894f8ed6c8b",
+    "57c94e78bbc0ec52",
+    "fe06886535d7dfce"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Yémen : les Houthis à 60 km d'Aden, renforts gouvernementaux déployés",
+    "summary": "Les forces Houthis se trouvent à environ 60 km d'Aden, siège du gouvernement yéménite, qui masse des renforts militaires pour défendre la ville.",
+    "why": "L'instabilité au Yémen accroît les besoins de renseignement et de surveillance satellite dans une zone maritime stratégique.",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [
+     "conflits"
+    ],
+    "industries": [
+     "defense",
+     "maritime"
+    ],
+    "countries": [
+     "YE",
+     "IR"
+    ],
+    "impact": "moyen"
+   },
+   "analysed_at": "2026-11-16T09:18:32+01:00",
+   "analysed_size": 2,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s27b7b9394033c354",
+   "item_ids": [
+    "27b7b9394033c354"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s2dc6979854837941",
+   "item_ids": [
+    "2dc6979854837941",
+    "ce24be538d265a33"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Inondations à Gaza : des pays occidentaux réclament un accès humanitaire immédiat",
+    "summary": "Des pays occidentaux appellent à un accès humanitaire immédiat à Gaza après des inondations qui aggravent la crise humanitaire sur place.",
+    "why": "Une crise humanitaire aggravée à Gaza accroît la demande d'imagerie satellite pour évaluer les dégâts et orienter l'aide.",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [
+     "crises"
+    ],
+    "industries": [],
+    "countries": [
+     "PS"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-16T09:18:32+01:00",
+   "analysed_size": 2,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s1455d1f34e8752c6",
+   "item_ids": [
+    "1455d1f34e8752c6"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s4766ed80af67c61a",
+   "item_ids": [
+    "4766ed80af67c61a"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s887ff6a0c02412a3",
+   "item_ids": [
+    "887ff6a0c02412a3"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s6ad65fc85c6bc996",
+   "item_ids": [
+    "6ad65fc85c6bc996"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s2710f3a3e393a89b",
+   "item_ids": [
+    "2710f3a3e393a89b"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s43bb50a0a15664e3",
+   "item_ids": [
+    "43bb50a0a15664e3"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sda0ad0e734067727",
+   "item_ids": [
+    "da0ad0e734067727"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s5eaff41639e35051",
+   "item_ids": [
+    "5eaff41639e35051"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s926cb849349606d1",
+   "item_ids": [
+    "926cb849349606d1"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s19799634c76a4173",
+   "item_ids": [
+    "19799634c76a4173"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s629f322e411206c2",
+   "item_ids": [
+    "629f322e411206c2"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s87a7f2f5e9531e9d",
+   "item_ids": [
+    "87a7f2f5e9531e9d"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "se9eff02be95363d1",
+   "item_ids": [
+    "e9eff02be95363d1"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s9ef680b3f8fd8cc2",
+   "item_ids": [
+    "9ef680b3f8fd8cc2"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s4495b0af81a64284",
+   "item_ids": [
+    "4495b0af81a64284"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sa562cf5c9cc975b5",
+   "item_ids": [
+    "a562cf5c9cc975b5"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sbfc7c291306ed503",
+   "item_ids": [
+    "bfc7c291306ed503"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sf7c2739cfa2b2b5b",
+   "item_ids": [
+    "f7c2739cfa2b2b5b"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s1eb88478c46e4b9f",
+   "item_ids": [
+    "1eb88478c46e4b9f"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s9aa6f35539722cc7",
+   "item_ids": [
+    "9aa6f35539722cc7"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s19196099fea5e256",
+   "item_ids": [
+    "19196099fea5e256"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "saf0b65d5267e02d8",
+   "item_ids": [
+    "af0b65d5267e02d8",
+    "7daf6282ba119dc7"
+   ],
+   "analysis": {
+    "relevant": false,
+    "title_fr": "Le prince Harry salue des vétérans lors d'une visite surprise en Ukraine",
+    "summary": "Le prince Harry a rendu visite à des vétérans blessés en Ukraine et salué la résilience du pays.",
+    "why": "",
+    "tabs": [],
+    "themes": [],
+    "industries": [],
+    "countries": [
+     "UA"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-16T09:18:32+01:00",
+   "analysed_size": 2,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "sd98cfaeb32683ae4",
+   "item_ids": [
+    "d98cfaeb32683ae4"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sd72fc5ca342982e0",
+   "item_ids": [
+    "d72fc5ca342982e0"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sf5def7ba2b740c4a",
+   "item_ids": [
+    "f5def7ba2b740c4a"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s4e9b2b19fc008000",
+   "item_ids": [
+    "4e9b2b19fc008000"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sffe9e828ee27dcca",
+   "item_ids": [
+    "ffe9e828ee27dcca"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s3e448761fe6265df",
+   "item_ids": [
+    "3e448761fe6265df"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s73c23ee833f05293",
+   "item_ids": [
+    "73c23ee833f05293"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sbd7d2066fe53be58",
+   "item_ids": [
+    "bd7d2066fe53be58"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sa5b9b95a79262a37",
+   "item_ids": [
+    "a5b9b95a79262a37"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "se24623a88abd2cde",
+   "item_ids": [
+    "e24623a88abd2cde"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s2eb5383aa625f265",
+   "item_ids": [
+    "2eb5383aa625f265"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s7b6f1eb750180da1",
+   "item_ids": [
+    "7b6f1eb750180da1"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sd46854e8a8634320",
+   "item_ids": [
+    "d46854e8a8634320"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "se0090e7990671b1d",
+   "item_ids": [
+    "e0090e7990671b1d"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sfbb63b348405014f",
+   "item_ids": [
+    "fbb63b348405014f"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s555bbc43653d9632",
+   "item_ids": [
+    "555bbc43653d9632"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s793ac45c7c08889a",
+   "item_ids": [
+    "793ac45c7c08889a"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s7af893ff8ca77614",
+   "item_ids": [
+    "7af893ff8ca77614"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s0c2c90ac967d79be",
+   "item_ids": [
+    "0c2c90ac967d79be"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s4ba51fd9aceb3428",
+   "item_ids": [
+    "4ba51fd9aceb3428"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sb416b52ab75b3627",
+   "item_ids": [
+    "b416b52ab75b3627"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s97c055d433741ce4",
+   "item_ids": [
+    "97c055d433741ce4"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s1831c25d3289ef63",
+   "item_ids": [
+    "1831c25d3289ef63"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s8b91555d6237580b",
+   "item_ids": [
+    "8b91555d6237580b"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s2274f06f59f4765c",
+   "item_ids": [
+    "2274f06f59f4765c"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s2c756fa857bf526f",
+   "item_ids": [
+    "2c756fa857bf526f"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s383c6ace9a90ae76",
+   "item_ids": [
+    "383c6ace9a90ae76"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s8233df1cd76a48c4",
+   "item_ids": [
+    "8233df1cd76a48c4"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s2e1e4e2d17224c17",
+   "item_ids": [
+    "2e1e4e2d17224c17"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sfff470581f4fbf96",
+   "item_ids": [
+    "fff470581f4fbf96"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sc70270e377698563",
+   "item_ids": [
+    "c70270e377698563"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sce6d919b6431a563",
+   "item_ids": [
+    "ce6d919b6431a563"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s95f1764659cdb93e",
+   "item_ids": [
+    "95f1764659cdb93e",
+    "5ab501441291bb0b",
+    "65d1a1e24411921d",
+    "fd2310e67124928c",
+    "254cb6c706f0ed05",
+    "3ecb965c40ead494",
+    "773aed0a9a63d3b9",
+    "d008806d735d0f85"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Jio explore l'internet satellite avec l'ISRO et Skyroot, SpaceX en option",
+    "summary": "L'opérateur indien Jio Platforms discute avec l'ISRO et Skyroot Aerospace pour des lancements domestiques de satellites internet, avec SpaceX comme solution de secours.",
+    "why": "Illustre la montée de nouveaux acteurs indiens dans la connectivité satellite, un marché où Airbus est également présent.",
+    "tabs": [
+     "marche",
+     "concurrents"
+    ],
+    "themes": [
+     "programmes"
+    ],
+    "industries": [
+     "connectivite"
+    ],
+    "countries": [
+     "IN",
+     "US"
+    ],
+    "impact": "moyen"
+   },
+   "analysed_at": "2026-11-16T09:18:32+01:00",
+   "analysed_size": 7,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s381f447bfa1332a4",
+   "item_ids": [
+    "381f447bfa1332a4"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s81677c638944a32c",
+   "item_ids": [
+    "81677c638944a32c"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sda59cdc1dcc29ba7",
+   "item_ids": [
+    "da59cdc1dcc29ba7"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s49a629863bbe4576",
+   "item_ids": [
+    "49a629863bbe4576"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s25d3bb08d452d9ca",
+   "item_ids": [
+    "25d3bb08d452d9ca"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s4a20fc79ee1f7eae",
+   "item_ids": [
+    "4a20fc79ee1f7eae"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sde706de08a0e7d68",
+   "item_ids": [
+    "de706de08a0e7d68"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "seef0dd6904f7ed0f",
+   "item_ids": [
+    "eef0dd6904f7ed0f"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s17ae958b868506dd",
+   "item_ids": [
+    "17ae958b868506dd"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s6d60a89b40e9a765",
+   "item_ids": [
+    "6d60a89b40e9a765"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s2618b0819267df6b",
+   "item_ids": [
+    "2618b0819267df6b"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s1092f0aa89e4dd8c",
+   "item_ids": [
+    "1092f0aa89e4dd8c"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s33cae931777985f1",
+   "item_ids": [
+    "33cae931777985f1"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "se0cc5f7a4f0b9a7e",
+   "item_ids": [
+    "e0cc5f7a4f0b9a7e"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s95fff6d293af94b6",
+   "item_ids": [
+    "95fff6d293af94b6"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sc455dcf6737071b7",
+   "item_ids": [
+    "c455dcf6737071b7"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s3c1949662835f26c",
+   "item_ids": [
+    "3c1949662835f26c"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "seabe84377a637826",
+   "item_ids": [
+    "eabe84377a637826"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "scf71520f5f50fcf4",
+   "item_ids": [
+    "cf71520f5f50fcf4"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s1c627f2a92aed05d",
+   "item_ids": [
+    "1c627f2a92aed05d"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s746d2de3e2e5381a",
+   "item_ids": [
+    "746d2de3e2e5381a"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sa2e0c7660dd58f37",
+   "item_ids": [
+    "a2e0c7660dd58f37"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sbd40f80abc51fd10",
+   "item_ids": [
+    "bd40f80abc51fd10"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sf8a3d0ba85a8776a",
+   "item_ids": [
+    "f8a3d0ba85a8776a"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s5ec5855b26a02f85",
+   "item_ids": [
+    "5ec5855b26a02f85"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sb46067c89d7de2c2",
+   "item_ids": [
+    "b46067c89d7de2c2"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s7bf07428760755d2",
+   "item_ids": [
+    "7bf07428760755d2"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sf9f5047b614f7eb1",
+   "item_ids": [
+    "f9f5047b614f7eb1"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s5cbcfbeaded22c10",
+   "item_ids": [
+    "5cbcfbeaded22c10"
+   ],
+   "analysis": {
+    "relevant": false,
+    "title_fr": "Bitcoin espère que l'IPO d'Anthropic suivra le modèle SpaceX",
+    "summary": "Un article évoque les espoirs liés à l'IPO d'Anthropic en comparaison avec le parcours de SpaceX, dans un contexte Bitcoin.",
+    "why": "",
+    "tabs": [],
+    "themes": [],
+    "industries": [],
+    "countries": [
+     "US"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-16T09:18:32+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s102c9230a118f2f9",
+   "item_ids": [
+    "102c9230a118f2f9"
+   ],
+   "analysis": {
+    "relevant": false,
+    "title_fr": "Flux d'options institutionnels sur AST SpaceMobile majoritairement baissiers",
+    "summary": "61% des flux d'options institutionnels sur l'action AST SpaceMobile sont des positions vendeuses (puts) au 13 novembre.",
+    "why": "",
+    "tabs": [],
+    "themes": [],
+    "industries": [],
+    "countries": [
+     "US"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-16T09:18:32+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s637ff96b36fa3ec2",
+   "item_ids": [
+    "637ff96b36fa3ec2"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Le nouveau bouclier antimissile chinois modifie l'équilibre en Indo-Pacifique",
+    "summary": "La Chine déploie un nouveau système de défense antimissile qui change les calculs stratégiques dans la région Indo-Pacifique.",
+    "why": "Renforce la demande de surveillance spatiale et de renseignement militaire dans la région face à la Chine.",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [
+     "conflits"
+    ],
+    "industries": [
+     "defense",
+     "securite"
+    ],
+    "countries": [
+     "CN"
+    ],
+    "impact": "moyen"
+   },
+   "analysed_at": "2026-11-16T09:18:32+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s473fc4ccc2afd772",
+   "item_ids": [
+    "473fc4ccc2afd772"
+   ],
+   "analysis": {
+    "relevant": false,
+    "title_fr": "Inondations destructrices dans le comté de Yavapai, plus de 300 maisons touchées",
+    "summary": "Des inondations ont endommagé plus de 300 habitations dans le comté de Yavapai, aux États-Unis, notamment à Camp Verde.",
+    "why": "",
+    "tabs": [],
+    "themes": [],
+    "industries": [],
+    "countries": [
+     "US"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-16T09:18:32+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s452bbf34a66973e1",
+   "item_ids": [
+    "452bbf34a66973e1"
+   ],
+   "analysis": {
+    "relevant": false,
+    "title_fr": "Jeu en ligne Tsunamis.io disponible sur MSN",
+    "summary": "Présentation d'un jeu vidéo en ligne nommé Tsunamis.io sur la plateforme MSN.",
+    "why": "",
+    "tabs": [],
+    "themes": [],
+    "industries": [],
+    "countries": [],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-16T09:18:32+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "sab484f8b2f9fd82e",
+   "item_ids": [
+    "ab484f8b2f9fd82e"
+   ],
+   "analysis": {
+    "relevant": false,
+    "title_fr": "Témoignage d'un ancien astronaute de la NASA bloqué dans l'espace",
+    "summary": "Un ancien astronaute de la NASA raconte son expérience d'être resté coincé en orbite.",
+    "why": "",
+    "tabs": [],
+    "themes": [],
+    "industries": [],
+    "countries": [
+     "US"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-16T09:18:32+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s3925d67bd3749d6c",
+   "item_ids": [
+    "3925d67bd3749d6c"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "SpaceX récupère Starship, ULA perd les satellites Amazon Leo sur Vulcan",
+    "summary": "SpaceX a réussi la capture de l'étage supérieur de Starship, tandis qu'un dysfonctionnement du lanceur Vulcan d'ULA a détruit des satellites destinés à la constellation Amazon Leo.",
+    "why": "Illustre l'écart technologique entre SpaceX et ses concurrents, et un revers pour une constellation rivale de connectivité.",
+    "tabs": [
+     "concurrents"
+    ],
+    "themes": [
+     "lancements",
+     "produits"
+    ],
+    "industries": [
+     "connectivite"
+    ],
+    "countries": [
+     "US"
+    ],
+    "impact": "moyen"
+   },
+   "analysed_at": "2026-11-16T09:18:32+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s4f1ec26dd9b10f70",
+   "item_ids": [
+    "4f1ec26dd9b10f70"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Trois obstacles freinent une nouvelle guerre de Netanyahou contre l'Iran",
+    "summary": "Une analyse identifie trois facteurs qui limitent pour l'instant une reprise des hostilités entre Israël et l'Iran.",
+    "why": "Toute escalade Israël-Iran augmenterait la demande de renseignement géospatial et de surveillance régionale.",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [
+     "conflits"
+    ],
+    "industries": [
+     "defense"
+    ],
+    "countries": [
+     "IR",
+     "IL"
+    ],
+    "impact": "moyen"
+   },
+   "analysed_at": "2026-11-16T09:18:32+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "sdefcc8db3e9c7b44",
+   "item_ids": [
+    "defcc8db3e9c7b44"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "L'Ukraine s'interroge sur l'usage de l'IA militaire, dilemme moral et politique",
+    "summary": "Alors que s'ouvre à Genève la conférence d'examen de la Convention sur certaines armes classiques, soldats et experts ukrainiens débattent de l'usage de l'IA sur le champ de bataille.",
+    "why": "Le débat sur l'IA militaire en Ukraine influence les futures réglementations touchant les systèmes de défense et de renseignement.",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [
+     "conflits",
+     "reglementation"
+    ],
+    "industries": [
+     "defense"
+    ],
+    "countries": [
+     "UA"
+    ],
+    "impact": "moyen"
+   },
+   "analysed_at": "2026-11-16T09:18:32+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "se9bbd8d4d6bdc233",
+   "item_ids": [
+    "e9bbd8d4d6bdc233"
+   ],
+   "analysis": {
+    "relevant": false,
+    "title_fr": "Un refuge d'urgence prend en charge des chiens déplacés par les inondations à Farmington",
+    "summary": "Un refuge d'urgence à Farmington accueille des chiens déplacés par des inondations.",
+    "why": "",
+    "tabs": [],
+    "themes": [],
+    "industries": [],
+    "countries": [],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-16T09:18:32+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s4418dcc60677526b",
+   "item_ids": [
+    "4418dcc60677526b"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "La NASA alerte sur un possible El Niño 2026 exceptionnellement puissant",
+    "summary": "La NASA avertit que le phénomène El Niño de 2026 pourrait être l'un des plus puissants jamais enregistrés, faisant craindre des phénomènes météo extrêmes.",
+    "why": "Un El Niño extrême augmenterait la demande de données satellitaires pour l'agriculture, la gestion des risques climatiques et les infrastructures.",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [
+     "crises"
+    ],
+    "industries": [
+     "agriculture",
+     "foret_environnement",
+     "infrastructures"
+    ],
+    "countries": [
+     "US"
+    ],
+    "impact": "moyen"
+   },
+   "analysed_at": "2026-11-16T09:18:32+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "sc59fbabe4fed4b5e",
+   "item_ids": [
+    "c59fbabe4fed4b5e"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Balaena et Kongsberg Maritime s'associent pour le véhicule naval arctique Arctic Hunter",
+    "summary": "Les entreprises Balaena et Kongsberg Maritime ont signé un accord pour développer la capacité navale arctique britannique Arctic Hunter.",
+    "why": "Ce partenariat renforce les capacités de surveillance maritime arctique, un domaine où l'imagerie satellite est stratégique.",
+    "tabs": [
+     "concurrents",
+     "economie"
+    ],
+    "themes": [
+     "programmes"
+    ],
+    "industries": [
+     "maritime",
+     "defense"
+    ],
+    "countries": [
+     "GB"
+    ],
+    "impact": "moyen"
+   },
+   "analysed_at": "2026-11-16T09:18:32+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "sbc3fb848ee94a5a6",
+   "item_ids": [
+    "bc3fb848ee94a5a6",
+    "8f2f5a3a0e714bc0"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Israël : Eisenkot juge que Netanyahu ne peut plus diriger le gouvernement",
+    "summary": "L'ancien chef d'état-major Gadi Eisenkot estime que Benjamin Netanyahu doit quitter le pouvoir, après des révélations sur une plainte visant des militants avant les législatives.",
+    "why": "L'instabilité politique en Israël pourrait affecter les priorités de défense et de sécurité dans une région sensible pour le renseignement géospatial.",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [
+     "conflits"
+    ],
+    "industries": [
+     "defense"
+    ],
+    "countries": [
+     "IL"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-16T09:18:32+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s7521b7616d875a6a",
+   "item_ids": [
+    "7521b7616d875a6a"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Le président indonésien s'excuse auprès de Singapour et la Malaisie pour les feux de forêt",
+    "summary": "Prabowo Subianto présente ses excuses pour la brume provoquée par des feux de forêt en Indonésie et promet une tolérance zéro envers les entreprises responsables.",
+    "why": "Les feux de forêt transfrontaliers accroissent la demande de surveillance satellitaire environnementale en Asie du Sud-Est.",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [
+     "crises"
+    ],
+    "industries": [
+     "foret_environnement"
+    ],
+    "countries": [
+     "ID",
+     "SG",
+     "MY"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-16T09:18:32+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "sa8c9c1c8289eae4d",
+   "item_ids": [
+    "a8c9c1c8289eae4d"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "COP31 : débat sur le financement international de la lutte climatique",
+    "summary": "À la COP31 en Turquie, la France pousse pour élargir le cercle des États devant financer l'aide climatique aux pays en développement.",
+    "why": "Les enjeux de financement climatique influencent la demande en données satellitaires pour le suivi environnemental et les risques climatiques.",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [
+     "crises",
+     "budgets"
+    ],
+    "industries": [
+     "foret_environnement"
+    ],
+    "countries": [
+     "FR",
+     "TR"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-16T09:18:32+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s03f024e6a7104780",
+   "item_ids": [
+    "03f024e6a7104780"
+   ],
+   "analysis": {
+    "relevant": false,
+    "title_fr": "La guerre tarifaire de Trump assombrit le sommet de l'APEC",
+    "summary": "Les tensions commerciales lancées par Donald Trump pèsent sur le sommet de l'APEC.",
+    "why": "",
+    "tabs": [],
+    "themes": [],
+    "industries": [],
+    "countries": [],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-16T09:18:32+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "sbcf1bacb381e8c64",
+   "item_ids": [
+    "bcf1bacb381e8c64"
+   ],
+   "analysis": {
+    "relevant": false,
+    "title_fr": "Eutelsat : indicateur boursier en zone de surachat",
+    "summary": "Analyse technique boursière signalant que l'action Eutelsat se situe en zone de surachat selon les indicateurs stochastiques.",
+    "why": "",
+    "tabs": [],
+    "themes": [],
+    "industries": [],
+    "countries": [],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-16T09:18:32+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s62a3657b8172c5aa",
+   "item_ids": [
+    "62a3657b8172c5aa"
+   ],
+   "analysis": {
+    "relevant": false,
+    "title_fr": "Le Canada envisage de travailler avec les constructeurs automobiles chinois",
+    "summary": "Le premier ministre canadien Mark Carney évoque une possible collaboration avec la Chine si les négociations commerciales avec les États-Unis échouent.",
+    "why": "",
+    "tabs": [],
+    "themes": [],
+    "industries": [],
+    "countries": [],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-16T09:18:32+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s745431f43e80242c",
+   "item_ids": [
+    "745431f43e80242c"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "SpaceX commande du matériel à l'allemand Singulus pour un projet solaire spatial",
+    "summary": "SpaceX aurait commandé des équipements de production de cellules solaires à l'allemand Singulus pour un réseau d'énergie solaire en orbite visant 100 GW.",
+    "why": "Ce projet illustre l'expansion de SpaceX vers de nouvelles infrastructures spatiales, renforçant sa domination face aux acteurs établis.",
+    "tabs": [
+     "concurrents"
+    ],
+    "themes": [
+     "produits",
+     "programmes"
+    ],
+    "industries": [
+     "ogme"
+    ],
+    "countries": [
+     "DE",
+     "US"
+    ],
+    "impact": "moyen"
+   },
+   "analysed_at": "2026-11-16T09:18:32+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "sfe29d51966250322",
+   "item_ids": [
+    "fe29d51966250322"
+   ],
+   "analysis": {
+    "relevant": false,
+    "title_fr": "Médailles nationales d'urgence pour les inondations de 2022",
+    "summary": "Des médailles nationales récompensent des services exceptionnels lors des inondations de 2022.",
+    "why": "",
+    "tabs": [],
+    "themes": [],
+    "industries": [],
+    "countries": [],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-16T09:18:32+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s5852368758e02a60",
+   "item_ids": [
+    "5852368758e02a60"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Zelensky critique SpaceX alors que l'Ukraine évalue un compromis avec l'OTAN",
+    "summary": "Le président ukrainien s'en prend à SpaceX dans le contexte de discussions sur un possible compromis territorial en échange d'une adhésion à l'OTAN.",
+    "why": "La dépendance de l'Ukraine à Starlink illustre le poids stratégique des constellations privées dans les conflits, un enjeu pour la connectivité sécurisée.",
+    "tabs": [
+     "geopolitique",
+     "concurrents"
+    ],
+    "themes": [
+     "conflits"
+    ],
+    "industries": [
+     "connectivite",
+     "defense"
+    ],
+    "countries": [
+     "UA",
+     "US"
+    ],
+    "impact": "moyen"
+   },
+   "analysed_at": "2026-11-16T09:18:32+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s4fbca31db224842d",
+   "item_ids": [
+    "4fbca31db224842d"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Kataib Hezbollah dément toute implication dans la contrebande de pétrole en Irak",
+    "summary": "Le groupe irakien pro-iranien Kataib Hezbollah rejette les accusations de contrebande pétrolière, dénonçant un chantage visant à le désarmer sous pression américaine.",
+    "why": "Les tensions autour des milices pro-iraniennes et du désarmement en Irak affectent la stabilité régionale et la sécurité des flux pétroliers.",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [
+     "conflits",
+     "sanctions"
+    ],
+    "industries": [
+     "defense",
+     "securite"
+    ],
+    "countries": [
+     "IQ",
+     "IR",
+     "US"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-16T09:18:32+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s3df660ca78d5d937",
+   "item_ids": [
+    "3df660ca78d5d937"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Mission «Volia» : comment l'armée française opère discrètement en Ukraine",
+    "summary": "Selon RFI, un soutien militaire français actif existe en Ukraine via la mission «Volia», bien que Paris n'ait jamais confirmé la présence de militaires sur place.",
+    "why": "L'implication militaire française en Ukraine illustre la demande croissante de renseignement et de soutien capacitaire dans le conflit.",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [
+     "conflits"
+    ],
+    "industries": [
+     "defense"
+    ],
+    "countries": [
+     "FR",
+     "UA"
+    ],
+    "impact": "moyen"
+   },
+   "analysed_at": "2026-11-16T09:18:32+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s36659ae692f41915",
+   "item_ids": [
+    "36659ae692f41915"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Les communications optiques transforment les opérations spatiales en temps réel",
+    "summary": "Les relais de données optiques, comme celui de Kepler, changent l'architecture des missions spatiales en permettant des opérations en temps réel.",
+    "why": "Les relais optiques concurrents améliorent la rapidité de transmission des données satellite, un enjeu clé pour l'imagerie géospatiale.",
+    "tabs": [
+     "concurrents"
+    ],
+    "themes": [
+     "produits"
+    ],
+    "industries": [
+     "connectivite"
+    ],
+    "countries": [],
+    "impact": "moyen"
+   },
+   "analysed_at": "2026-11-16T09:18:32+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s41aa97c750d9372f",
+   "item_ids": [
+    "41aa97c750d9372f"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Anthropic et SpaceX pourraient-ils perdre leurs fondateurs, après Nvidia et Jensen Huang ?",
+    "summary": "Un article spéculatif s'interroge sur le risque que SpaceX et Anthropic perdent leurs fondateurs, en écho au cas de Jensen Huang chez Nvidia.",
+    "why": "Une instabilité à la tête de SpaceX, acteur majeur du lancement et de la connectivité, pourrait affecter la concurrence spatiale.",
+    "tabs": [
+     "concurrents"
+    ],
+    "themes": [],
+    "industries": [
+     "connectivite"
+    ],
+    "countries": [
+     "US"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-16T09:18:32+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s3119be74873ef1d3",
+   "item_ids": [
+    "3119be74873ef1d3"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "OHB : une amélioration de marge qui laisse le marché sceptique",
+    "summary": "Le fabricant spatial allemand OHB affiche une hausse de marge, mais la divergence entre trésorerie et bénéfice inquiète les marchés financiers.",
+    "why": "OHB est un concurrent clé d'Airbus en systèmes spatiaux ; sa santé financière influence la compétition sur les programmes institutionnels.",
+    "tabs": [
+     "concurrents"
+    ],
+    "themes": [
+     "financements"
+    ],
+    "industries": [
+     "defense"
+    ],
+    "countries": [
+     "DE"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-16T09:18:32+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "sac36d3f1a3bd3da4",
+   "item_ids": [
+    "ac36d3f1a3bd3da4"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Les armées ont besoin de terres rares",
+    "summary": "Un article souligne la dépendance croissante de deux armées aux terres rares, ressources critiques pour les systèmes de défense.",
+    "why": "La compétition sur les terres rares influence les capacités industrielles de défense et spatiales des pays concernés.",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [
+     "ressources"
+    ],
+    "industries": [
+     "defense"
+    ],
+    "countries": [],
+    "impact": "moyen"
+   },
+   "analysed_at": "2026-11-16T09:18:32+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s5bf7ea48ed3e5e38",
+   "item_ids": [
+    "5bf7ea48ed3e5e38"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Les prix du pétrole baissent malgré la poursuite des attaques dans le détroit d'Ormuz",
+    "summary": "Les prix du pétrole reculent sur fond de crainte de surproduction mondiale, alors que les attaques de tankers se poursuivent et que l'Irak est affecté.",
+    "why": "L'instabilité du marché pétrolier et des routes maritimes crée un contexte favorable à la surveillance satellite des infrastructures énergétiques.",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [
+     "ressources"
+    ],
+    "industries": [
+     "ogme",
+     "maritime"
+    ],
+    "countries": [
+     "IQ",
+     "IR"
+    ],
+    "impact": "moyen"
+   },
+   "analysed_at": "2026-11-16T09:18:32+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s64c0ee4fccfa6636",
+   "item_ids": [
+    "64c0ee4fccfa6636"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Analyse : pourquoi les attaques de pétroliers dans le détroit d'Ormuz changent la donne",
+    "summary": "Un article d'analyse examine comment la multiplication des attaques contre les tankers dans le détroit d'Ormuz transforme la situation régionale.",
+    "why": "Ces analyses alimentent la perception du risque géopolitique qui stimule la demande de renseignement satellite maritime.",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [
+     "conflits",
+     "ressources"
+    ],
+    "industries": [
+     "maritime",
+     "ogme"
+    ],
+    "countries": [
+     "IR"
+    ],
+    "impact": "moyen"
+   },
+   "analysed_at": "2026-11-16T09:18:32+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "sd417b52e3cdcfef6",
+   "item_ids": [
+    "d417b52e3cdcfef6"
+   ],
+   "analysis": {
+    "relevant": false,
+    "title_fr": "Inde : réouverture des candidatures pour 97 postes à l'ISRO",
+    "summary": "L'ISRO rouvre ses candidatures pour 97 postes, accessibles du niveau collège à bac+5, jusqu'à ce soir.",
+    "why": "",
+    "tabs": [
+     "economie"
+    ],
+    "themes": [],
+    "industries": [],
+    "countries": [
+     "IN"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-16T09:18:32+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s7ff1303ec4c32db1",
+   "item_ids": [
+    "7ff1303ec4c32db1",
+    "4a4c84cf7e4301a6"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Soudan, mer Rouge et sécurité de l'eau au menu des discussions Égypte-États-Unis-Émirats",
+    "summary": "Des discussions entre l'Égypte, les États-Unis et les Émirats arabes unis ont porté le week-end dernier sur la guerre au Soudan, les tensions en mer Rouge et la sécurité hydrique.",
+    "why": "Les tensions régionales en mer Rouge et au Soudan accroissent la demande de surveillance satellite pour la sécurité maritime et les ressources en eau.",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [
+     "conflits",
+     "ressources"
+    ],
+    "industries": [
+     "securite",
+     "maritime"
+    ],
+    "countries": [
+     "SD",
+     "EG",
+     "US",
+     "AE"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-16T09:18:32+01:00",
+   "analysed_size": 2,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s6c51bfdeadbfa3ab",
+   "item_ids": [
+    "6c51bfdeadbfa3ab"
+   ],
+   "analysis": {
+    "relevant": false,
+    "title_fr": "Inde : résultats du concours ISRO pour ingénieurs en électronique",
+    "summary": "L'ISRO publie les résultats de sélection pour le poste d'ingénieur scientifique en électronique, avec liste d'attente disponible.",
+    "why": "",
+    "tabs": [
+     "economie"
+    ],
+    "themes": [],
+    "industries": [],
+    "countries": [
+     "IN"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-16T09:18:32+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s5b114e602cf6560d",
+   "item_ids": [
+    "5b114e602cf6560d"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Brésil : état d'urgence sécheresse dans 65 municipalités du Ceará",
+    "summary": "L'État du Ceará, au Brésil, déclare l'état d'urgence en raison de la sécheresse touchant 65 municipalités.",
+    "why": "Les crises climatiques comme la sécheresse renforcent la demande de suivi satellite pour l'agriculture et la gestion de l'eau.",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [
+     "crises"
+    ],
+    "industries": [
+     "agriculture",
+     "foret_environnement"
+    ],
+    "countries": [
+     "BR"
+    ],
+    "impact": "moyen"
+   },
+   "analysed_at": "2026-11-16T09:18:32+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s17339ab673345b48",
+   "item_ids": [
+    "17339ab673345b48"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Deux pétroliers touchés par de puissantes explosions dans le détroit d'Ormuz",
+    "summary": "De nouvelles explosions ont frappé deux pétroliers dans le détroit d'Ormuz, dans un contexte d'escalade des attaques contre le trafic maritime.",
+    "why": "La multiplication des attaques sur les tankers menace la sécurité maritime et accroît la demande de surveillance satellite du Golfe.",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [
+     "conflits",
+     "ressources"
+    ],
+    "industries": [
+     "maritime",
+     "ogme"
+    ],
+    "countries": [
+     "IR"
+    ],
+    "impact": "fort"
+   },
+   "analysed_at": "2026-11-16T09:18:32+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s996ccd758f965003",
+   "item_ids": [
+    "996ccd758f965003"
+   ],
+   "analysis": {
+    "relevant": false,
+    "title_fr": "Bangladesh : tensions à Gopalganj autour de l'Awami League",
+    "summary": "Le gouvernement bangladais menace de mesures fermes en cas de troubles provoqués par l'Awami League à Gopalganj.",
+    "why": "",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [],
+    "industries": [],
+    "countries": [
+     "BD"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-16T09:18:32+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "seb1cf64692aad973",
+   "item_ids": [
+    "eb1cf64692aad973"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Guerre Israël-Iran : ce que les résidents des Émirats doivent savoir",
+    "summary": "Point d'information quotidien pour les résidents des Émirats arabes unis sur l'évolution du conflit entre les États-Unis, Israël et l'Iran.",
+    "why": "L'escalade régionale accroît la demande de surveillance satellite pour le renseignement militaire et la sécurité maritime dans le Golfe.",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [
+     "conflits"
+    ],
+    "industries": [
+     "defense",
+     "securite"
+    ],
+    "countries": [
+     "US",
+     "IL",
+     "IR",
+     "AE"
+    ],
+    "impact": "moyen"
+   },
+   "analysed_at": "2026-11-16T09:18:32+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "sc8d6833e9bee8301",
+   "item_ids": [
+    "c8d6833e9bee8301"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Trump aurait envisagé une frappe contre l'Iran avant l'élection, Israël s'y serait opposé",
+    "summary": "Selon un rapport, Donald Trump aurait envisagé une frappe contre l'Iran avant l'élection, mais le chef d'état-major israélien s'y serait opposé.",
+    "why": "Cette révélation éclaire les tensions persistantes autour d'une possible escalade militaire avec l'Iran.",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [
+     "conflits"
+    ],
+    "industries": [
+     "defense"
+    ],
+    "countries": [
+     "IR",
+     "IL"
+    ],
+    "impact": "moyen"
+   },
+   "analysed_at": "2026-11-16T09:18:32+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "sd0dd82eb31aecb6d",
+   "item_ids": [
+    "d0dd82eb31aecb6d"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Liberia et UE forment les médias à la lutte contre la pêche illégale à Harper",
+    "summary": "La NaFAA et l'UE organisent une formation spécialisée des médias à Harper (Liberia) pour mieux couvrir et combattre la pêche illégale.",
+    "why": "La surveillance maritime par satellite soutient la lutte contre la pêche illégale, un marché pour l'imagerie et les services géospatiaux.",
+    "tabs": [
+     "economie"
+    ],
+    "themes": [
+     "programmes"
+    ],
+    "industries": [
+     "maritime"
+    ],
+    "countries": [
+     "LR"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-16T09:18:32+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s4b27bc97a419f601",
+   "item_ids": [
+    "4b27bc97a419f601"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Guinée : la menace jihadiste progresse face à un maillage sécuritaire insuffisant",
+    "summary": "Une étude de la Fondation Konrad-Adenauer alerte sur la progression du jihadisme lié au JNIM aux portes de la Guinée, faute de maillage sécuritaire suffisant.",
+    "why": "La montée de la menace jihadiste en Afrique de l'Ouest accroît les besoins en surveillance et renseignement sécuritaire.",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [
+     "conflits"
+    ],
+    "industries": [
+     "securite",
+     "defense"
+    ],
+    "countries": [
+     "GN",
+     "ML"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-16T09:18:32+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s2d38b6f1be037b15",
+   "item_ids": [
+    "2d38b6f1be037b15"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Échec du lanceur Vulcan : le moteur de Blue Origin pointé du doigt",
+    "summary": "Alors que la cause de l'échec du lanceur Vulcan reste inconnue, un article détaille les fabricants de chaque composant, dont le moteur fourni par Blue Origin.",
+    "why": "Cet échec touche un lanceur concurrent clé et la chaîne d'approvisionnement spatiale américaine, avec des répercussions pour les constellations dépendantes.",
+    "tabs": [
+     "concurrents"
+    ],
+    "themes": [
+     "lancements"
+    ],
+    "industries": [
+     "defense"
+    ],
+    "countries": [
+     "US"
+    ],
+    "impact": "moyen"
+   },
+   "analysed_at": "2026-11-16T09:18:32+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s6f8c214344ed09c5",
+   "item_ids": [
+    "6f8c214344ed09c5"
+   ],
+   "analysis": {
+    "relevant": false,
+    "title_fr": "Voyager 1 de la NASA sur le point d'atteindre un jour-lumière de la Terre",
+    "summary": "La sonde Voyager 1 de la NASA va bientôt franchir la distance d'un jour-lumière depuis la Terre, une première historique.",
+    "why": "",
+    "tabs": [],
+    "themes": [],
+    "industries": [],
+    "countries": [
+     "US"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-16T09:18:32+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s5733becc182127b4",
+   "item_ids": [
+    "5733becc182127b4"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Inde : le CDS cite l'ISRO en exemple pour tirer les leçons des échecs",
+    "summary": "Le chef d'état-major indien évoque l'exemple de l'ISRO pour expliquer comment l'Inde peut apprendre de ses revers, notant la dépendance des armes longue portée à la précision.",
+    "why": "L'exemple souligne l'importance stratégique des capacités spatiales indiennes pour les systèmes de défense.",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [
+     "programmes"
+    ],
+    "industries": [
+     "defense"
+    ],
+    "countries": [
+     "IN"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-16T09:18:32+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s8341e9df394f73eb",
+   "item_ids": [
+    "8341e9df394f73eb"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Cisjordanie : un adolescent de 14 ans tué par l'armée israélienne",
+    "summary": "Moataz Iyad Daghlas, 14 ans, a été abattu par l'armée israélienne le 9 novembre alors qu'il marchait dans une oliveraie en Cisjordanie occupée.",
+    "why": "Cet incident s'inscrit dans l'escalade persistante des tensions israélo-palestiniennes en Cisjordanie.",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [
+     "conflits"
+    ],
+    "industries": [
+     "defense"
+    ],
+    "countries": [
+     "PS",
+     "IL"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-16T09:18:32+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "scba24e3c579a7e7c",
+   "item_ids": [
+    "cba24e3c579a7e7c"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Washington sanctionne un réseau pharmaceutique du Hezbollah à Beyrouth",
+    "summary": "Les États-Unis ont imposé des sanctions visant un réseau pharmaceutique lié au Hezbollah basé à Beyrouth.",
+    "why": "Ces sanctions ciblées illustrent la pression américaine continue sur les réseaux financiers du Hezbollah au Liban.",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [
+     "sanctions"
+    ],
+    "industries": [
+     "defense"
+    ],
+    "countries": [
+     "US",
+     "LB"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-16T09:18:32+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "sb1d65bdfb2fbef27",
+   "item_ids": [
+    "b1d65bdfb2fbef27"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Cette semaine : nouvelles sanctions UE contre la Russie et sommet UK-UE",
+    "summary": "L'UE prépare de nouvelles sanctions contre la Russie, un sommet décisif UK-UE et des négociations budgétaires sont à l'agenda de la semaine.",
+    "why": "Le durcissement des sanctions européennes contre la Russie affecte le contexte géopolitique et économique du secteur de la défense.",
+    "tabs": [
+     "geopolitique",
+     "economie"
+    ],
+    "themes": [
+     "sanctions",
+     "budgets"
+    ],
+    "industries": [
+     "defense"
+    ],
+    "countries": [
+     "RU",
+     "GB"
+    ],
+    "impact": "moyen"
+   },
+   "analysed_at": "2026-11-16T09:18:32+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "se5a7830558436630",
+   "item_ids": [
+    "e5a7830558436630"
+   ],
+   "analysis": {
+    "relevant": false,
+    "title_fr": "Le Home Office accusé de vouloir annuler une conférence d'Andreas Malm",
+    "summary": "La maire de Hackney dénonce une atteinte à la liberté d'expression après l'annulation présumée d'un événement avec l'universitaire Andreas Malm, interdit au Royaume-Uni.",
+    "why": "",
+    "tabs": [],
+    "themes": [],
+    "industries": [],
+    "countries": [
+     "GB"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-16T09:18:32+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "sd988000c4b48c3d6",
+   "item_ids": [
+    "d988000c4b48c3d6"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Guterres réaffirme son soutien à la liberté de navigation à Ormuz et en mer Rouge",
+    "summary": "Le secrétaire général de l'ONU a réitéré devant l'ASEAN son soutien inconditionnel à la liberté de navigation dans le détroit d'Ormuz et la mer Rouge.",
+    "why": "La sécurisation de ces routes maritimes stratégiques est un enjeu majeur pour la surveillance maritime par satellite.",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [
+     "ressources"
+    ],
+    "industries": [
+     "maritime"
+    ],
+    "countries": [],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-16T09:18:32+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s6c343354fadf1840",
+   "item_ids": [
+    "6c343354fadf1840"
+   ],
+   "analysis": {
+    "relevant": false,
+    "title_fr": "La valorisation à 100 000 milliards de dollars de SpaceX évoquée par Musk jugée exagérée",
+    "summary": "Un article utilise ChatGPT pour évaluer le caractère irréaliste de la revendication de Musk sur une valorisation de SpaceX à 100 000 milliards de dollars.",
+    "why": "",
+    "tabs": [],
+    "themes": [],
+    "industries": [],
+    "countries": [
+     "US"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-16T09:18:32+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s85b6799696d6f545",
+   "item_ids": [
+    "85b6799696d6f545"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Iran : la coopération avec l'AIEA conditionnée à la fin de la guerre",
+    "summary": "Le vice-ministre iranien des Affaires étrangères affirme que la coopération avec l'AIEA dépend d'un arrêt définitif de la guerre et d'un accord diplomatique.",
+    "why": "Les tensions autour du programme nucléaire iranien maintiennent un contexte de surveillance stratégique élevé dans la région.",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [
+     "conflits",
+     "sanctions"
+    ],
+    "industries": [
+     "defense"
+    ],
+    "countries": [
+     "IR"
+    ],
+    "impact": "moyen"
+   },
+   "analysed_at": "2026-11-16T09:18:32+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s2e530d24b98a8b04",
+   "item_ids": [
+    "2e530d24b98a8b04",
+    "dc956d8114e528e2"
+   ],
+   "analysis": {
+    "relevant": false,
+    "title_fr": "ISRO ouvre 400 postes d'apprentis à SDSC SHAR",
+    "summary": "L'ISRO relance les candidatures pour 400 postes d'apprentissage à son centre de lancement SDSC SHAR, date limite le 26 novembre 2026.",
+    "why": "",
+    "tabs": [],
+    "themes": [],
+    "industries": [],
+    "countries": [
+     "IN"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-16T09:18:32+01:00",
+   "analysed_size": 2,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s220b61ce497a9f27",
+   "item_ids": [
+    "220b61ce497a9f27",
+    "228e65e378833c6f"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "DeepMind publie des données pluviométriques IA gratuites, plus rapides que la NASA",
+    "summary": "Google DeepMind propose en accès libre des données de précipitations avec une latence de 5 heures, contre environ 3,5 mois pour le produit IMERG-Final de la NASA.",
+    "why": "Un concurrent technologique pourrait bousculer le marché des données d'observation de la Terre utilisées en agriculture et gestion climatique.",
+    "tabs": [
+     "concurrents"
+    ],
+    "themes": [
+     "produits"
+    ],
+    "industries": [
+     "agriculture",
+     "foret_environnement"
+    ],
+    "countries": [
+     "US"
+    ],
+    "impact": "moyen"
+   },
+   "analysed_at": "2026-11-16T09:18:32+01:00",
+   "analysed_size": 2,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s2dff09fc83e578bc",
+   "item_ids": [
+    "2dff09fc83e578bc"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Inde : le CDS invoque les coupures de Starlink en Ukraine pour plaider l'autonomie",
+    "summary": "Le chef d'état-major indien cite les perturbations de Starlink pendant la guerre en Ukraine pour appeler à l'autonomie satellitaire, après une polémique avec Musk.",
+    "why": "Le débat souligne les risques de dépendance aux constellations privées comme Starlink, un enjeu clé pour la connectivité sécurisée.",
+    "tabs": [
+     "geopolitique",
+     "economie"
+    ],
+    "themes": [
+     "programmes"
+    ],
+    "industries": [
+     "defense",
+     "connectivite"
+    ],
+    "countries": [
+     "IN",
+     "UA",
+     "US"
+    ],
+    "impact": "moyen"
+   },
+   "analysed_at": "2026-11-16T09:18:32+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s6496e1b80098c53f",
+   "item_ids": [
+    "6496e1b80098c53f"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "ISW : évaluation de la campagne offensive russe du 15 novembre",
+    "summary": "Le think tank ISW publie son évaluation quotidienne de la campagne militaire russe en Ukraine.",
+    "why": "Ce suivi régulier du conflit ukrainien éclaire les besoins en renseignement géospatial sur le théâtre.",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [
+     "conflits"
+    ],
+    "industries": [
+     "defense"
+    ],
+    "countries": [
+     "RU",
+     "UA"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-16T09:18:32+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s3cd83f73f9bf6a1c",
+   "item_ids": [
+    "3cd83f73f9bf6a1c"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "La Russie exploite la lassitude liée à la guerre pour obtenir des postes à l'ONU",
+    "summary": "La Russie chercherait à tirer parti de la fatigue internationale liée à la guerre en Ukraine pour obtenir des postes à l'ONU lors d'une réunion à Doha.",
+    "why": "Ce positionnement diplomatique russe influence le contexte géopolitique dans lequel évoluent les acteurs de la défense.",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [
+     "conflits"
+    ],
+    "industries": [
+     "defense"
+    ],
+    "countries": [
+     "RU",
+     "UA"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-16T09:18:32+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s6d7e49effbfde31d",
+   "item_ids": [
+    "6d7e49effbfde31d"
+   ],
+   "analysis": {
+    "relevant": false,
+    "title_fr": "Exposition Prada à Milan : combinaisons spatiales de la NASA parmi les pièces rares",
+    "summary": "L'exposition Pradasphere à Milan présente des pièces d'archives rares, dont des combinaisons spatiales de la NASA.",
+    "why": "",
+    "tabs": [],
+    "themes": [],
+    "industries": [],
+    "countries": [
+     "US"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-16T09:18:32+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s6c16d3738e497b61",
+   "item_ids": [
+    "6c16d3738e497b61"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Un sixième pétrolier heurte une mine navale dans le détroit d'Ormuz en deux jours",
+    "summary": "Selon les Gardiens de la révolution iraniens, un sixième pétrolier a heurté une mine navale dans le détroit d'Ormuz en deux jours, aggravant la crise maritime régionale.",
+    "why": "La multiplication des incidents dans le détroit d'Ormuz accroît la demande de surveillance satellite pour la sécurité maritime et énergétique.",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [
+     "ressources",
+     "conflits"
+    ],
+    "industries": [
+     "maritime",
+     "ogme"
+    ],
+    "countries": [
+     "IR"
+    ],
+    "impact": "moyen"
+   },
+   "analysed_at": "2026-11-16T09:18:32+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s706bf0b1c2d8fc71",
+   "item_ids": [
+    "706bf0b1c2d8fc71"
+   ],
+   "analysis": {
+    "relevant": false,
+    "title_fr": "Des guides de rafting sauvent 45 chiens piégés par des inondations",
+    "summary": "Des guides de rafting ont secouru 45 chiens pris au piège par des inondations, un accès jugé périlleux.",
+    "why": "",
+    "tabs": [],
+    "themes": [],
+    "industries": [],
+    "countries": [],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-16T09:18:32+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s511b5498c931f9e2",
+   "item_ids": [
+    "511b5498c931f9e2"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Quatre installations industrielles en feu après une attaque de drones à Rostov, en Russie",
+    "summary": "Le gouverneur de la région de Rostov rapporte que quatre installations industrielles sont en feu après une attaque de drones ukrainiens.",
+    "why": "Les frappes répétées sur les infrastructures industrielles russes illustrent l'intensification des opérations de drones dans le conflit ukrainien.",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [
+     "conflits"
+    ],
+    "industries": [
+     "defense"
+    ],
+    "countries": [
+     "RU"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-16T09:18:32+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "sa058441300aa6669",
+   "item_ids": [
+    "a058441300aa6669"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Le Royaume-Uni sanctionne Slavneft et des navires dans de nouvelles mesures anti-russes",
+    "summary": "Le Royaume-Uni impose de nouvelles sanctions visant la compagnie Slavneft et plusieurs navires liés à la Russie.",
+    "why": "Le durcissement des sanctions britanniques contre la Russie accentue la pression sur le secteur énergétique russe et la flotte fantôme.",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [
+     "sanctions"
+    ],
+    "industries": [
+     "ogme",
+     "maritime"
+    ],
+    "countries": [
+     "GB",
+     "RU"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-16T09:18:32+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s610366eb1a52d752",
+   "item_ids": [
+    "610366eb1a52d752"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "IA militaire : la France tente d'ouvrir la voie à une régulation",
+    "summary": "À l'occasion de la conférence d'examen de la Convention sur certaines armes classiques à Genève, la France et d'autres capitales européennes cherchent à encadrer l'IA militaire.",
+    "why": "L'évolution de la réglementation sur l'IA militaire pourrait influencer les futurs systèmes de défense et de renseignement, dont le géospatial.",
+    "tabs": [
+     "geopolitique",
+     "economie"
+    ],
+    "themes": [
+     "reglementation"
+    ],
+    "industries": [
+     "defense"
+    ],
+    "countries": [
+     "FR"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-16T09:18:32+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "sc2f6f67460ae3989",
+   "item_ids": [
+    "c2f6f67460ae3989"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Le Royaume-Uni exposé à une polycrise de menaces malgré la 'complaisance' du gouvernement",
+    "summary": "Un rapport des Lords britanniques appelle à une nouvelle approche de la résilience face aux cyberattaques, au sabotage et à la crise climatique, jugeant le gouvernement trop complaisant.",
+    "why": "Le besoin accru de résilience nationale face aux menaces multiples peut stimuler la demande en surveillance géospatiale et en sécurité.",
+    "tabs": [
+     "geopolitique",
+     "economie"
+    ],
+    "themes": [
+     "crises",
+     "reglementation"
+    ],
+    "industries": [
+     "securite",
+     "infrastructures"
+    ],
+    "countries": [
+     "GB"
+    ],
+    "impact": "moyen"
+   },
+   "analysed_at": "2026-11-16T09:18:32+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "sf507a4dd3b8e58f3",
+   "item_ids": [
+    "f507a4dd3b8e58f3"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Une jeep militaire israélienne blesse deux Palestiniens en Cisjordanie",
+    "summary": "Un véhicule militaire israélien a percuté et blessé deux Palestiniens dans les territoires occupés de Cisjordanie.",
+    "why": "Cet incident illustre la persistance des tensions en Cisjordanie, un facteur de risque suivi dans le contexte sécuritaire régional.",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [
+     "conflits"
+    ],
+    "industries": [
+     "securite"
+    ],
+    "countries": [
+     "IL",
+     "PS"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-16T09:18:32+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s610cad0b8cd0fcf9",
+   "item_ids": [
+    "610cad0b8cd0fcf9"
+   ],
+   "analysis": {
+    "relevant": false,
+    "title_fr": "Météo en Bretagne : rafales jusqu'à 90 km/h et risques d'inondations",
+    "summary": "Un temps perturbé est attendu en Bretagne lundi soir avec des rafales de vent jusqu'à 90 km/h et des risques d'inondations locales.",
+    "why": "",
+    "tabs": [],
+    "themes": [],
+    "industries": [],
+    "countries": [],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-16T09:18:32+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s3f0dae6adbfdc08f",
+   "item_ids": [
+    "3f0dae6adbfdc08f"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Les sanctions continues renforcent la détermination de l'Iran à résister",
+    "summary": "Selon des analystes, la poursuite des sanctions occidentales n'affaiblit pas l'Iran mais renforce sa résolution à résister.",
+    "why": "La résilience iranienne face aux sanctions prolonge les tensions régionales affectant la sécurité du Golfe et du trafic maritime.",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [
+     "sanctions"
+    ],
+    "industries": [
+     "defense"
+    ],
+    "countries": [
+     "IR"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-16T09:18:32+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "sb10da90788d6d70c",
+   "item_ids": [
+    "b10da90788d6d70c",
+    "b5b94d31fcf9d38f",
+    "46a084678ca21ff8",
+    "e8408c4591507c67",
+    "5ef2a6b487607f9d"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Un pétrolier isolé heurte une mine navale à l'est du détroit d'Ormuz",
+    "summary": "Un pétrolier opérant de façon isolée a heurté une mine navale à l'est du détroit d'Ormuz, provoquant un incendie.",
+    "why": "Les incidents répétés dans le détroit d'Ormuz menacent la sécurité du trafic maritime pétrolier, un enjeu pour la surveillance géospatiale maritime.",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [
+     "ressources",
+     "conflits"
+    ],
+    "industries": [
+     "ogme",
+     "maritime"
+    ],
+    "countries": [
+     "IR"
+    ],
+    "impact": "moyen"
+   },
+   "analysed_at": "2026-11-16T09:18:32+01:00",
+   "analysed_size": 2,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "sb231819746846b90",
+   "item_ids": [
+    "b231819746846b90",
+    "44e0b16cae951623",
+    "964f7c964436671d"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "600 drones lancés sur Moscou, le pont de Crimée touché par une frappe ukrainienne",
+    "summary": "Environ 600 drones ont visé la région de Moscou dans la nuit, tandis que le pont de Crimée a été frappé, la plupart des drones ayant été interceptés selon les autorités russes.",
+    "why": "L'escalade des frappes de drones et les attaques sur des infrastructures stratégiques russes illustrent l'intensification du conflit ukrainien.",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [
+     "conflits"
+    ],
+    "industries": [
+     "defense"
+    ],
+    "countries": [
+     "RU",
+     "UA"
+    ],
+    "impact": "moyen"
+   },
+   "analysed_at": "2026-11-16T09:18:32+01:00",
+   "analysed_size": 2,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "sc7da8b53813c7f63",
+   "item_ids": [
+    "c7da8b53813c7f63"
+   ],
+   "analysis": {
+    "relevant": false,
+    "title_fr": "Des Jetson One volent et courent près de New Glenn au centre spatial Kennedy",
+    "summary": "Des engins volants personnels Jetson One ont effectué une démonstration près de la fusée New Glenn de Blue Origin au centre Kennedy de la NASA.",
+    "why": "",
+    "tabs": [],
+    "themes": [],
+    "industries": [],
+    "countries": [
+     "US"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-16T09:18:32+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s09d93a5d625fde10",
+   "item_ids": [
+    "09d93a5d625fde10"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "La stratégie communautaire de PINL et l'avenir de la sécurité des oléoducs",
+    "summary": "Un article examine la stratégie d'engagement communautaire de PINL et ses implications pour la sécurité future des pipelines pétroliers.",
+    "why": "La sécurisation des infrastructures pétrolières crée une demande potentielle de surveillance géospatiale pour les opérateurs énergétiques.",
+    "tabs": [
+     "marche"
+    ],
+    "themes": [
+     "ressources"
+    ],
+    "industries": [
+     "ogme",
+     "infrastructures",
+     "securite"
+    ],
+    "countries": [],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-16T09:18:32+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s931dbe3e8c684e18",
+   "item_ids": [
+    "931dbe3e8c684e18"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "L'UE durcit ses sanctions contre la Russie alors que Trump et Poutine évoquent l'Ukraine en Chine",
+    "summary": "L'Union européenne renforce ses sanctions contre la Russie, tandis que Trump et Poutine discutent de l'avenir de l'Ukraine lors d'une rencontre en Chine.",
+    "why": "Ces évolutions diplomatiques et les sanctions influencent directement le contexte géopolitique dans lequel opèrent les clients défense d'Airbus.",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [
+     "sanctions",
+     "conflits"
+    ],
+    "industries": [
+     "defense"
+    ],
+    "countries": [
+     "RU",
+     "UA",
+     "CN"
+    ],
+    "impact": "moyen"
+   },
+   "analysed_at": "2026-11-16T09:18:32+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "sa42baeac93abd46a",
+   "item_ids": [
+    "a42baeac93abd46a"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "L'ESA améliore sa station d'Izaña pour le suivi automatisé des débris spatiaux",
+    "summary": "L'ESA a achevé la mise à niveau de sa station laser d'Izaña à Tenerife, renforçant ses capacités de suivi des débris spatiaux et d'objets orbitaux.",
+    "why": "Le suivi des débris spatiaux est essentiel pour la sécurité des satellites d'observation et de connectivité, un enjeu croissant pour Airbus.",
+    "tabs": [
+     "economie"
+    ],
+    "themes": [
+     "programmes"
+    ],
+    "industries": [
+     "defense"
+    ],
+    "countries": [
+     "ES"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-16T09:18:32+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "sacf129f90d6793b0",
+   "item_ids": [
+    "acf129f90d6793b0"
+   ],
+   "analysis": {
+    "relevant": false,
+    "title_fr": "Un incident mineur au décollage a condamné un équipage de la NASA, mort 16 jours plus tard",
+    "summary": "Un article revient sur un incident mineur survenu au décollage qui aurait fatalement condamné un équipage de la NASA, décédé 16 jours plus tard.",
+    "why": "",
+    "tabs": [],
+    "themes": [],
+    "industries": [],
+    "countries": [
+     "US"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-16T09:18:32+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s0aa596da347fe3e8",
+   "item_ids": [
+    "0aa596da347fe3e8"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "L'armée britannique lance un plan de 67 millions de livres après la guerre en Ukraine",
+    "summary": "L'armée britannique dévoile un plan de 67 millions de livres, qualifié de 'renaissance tactique', tirant les leçons de la guerre en Ukraine.",
+    "why": "Ce réarmement tactique britannique illustre la hausse des budgets de défense liés aux enseignements du conflit ukrainien.",
+    "tabs": [
+     "economie",
+     "geopolitique"
+    ],
+    "themes": [
+     "budgets",
+     "conflits"
+    ],
+    "industries": [
+     "defense"
+    ],
+    "countries": [
+     "GB",
+     "UA"
+    ],
+    "impact": "moyen"
+   },
+   "analysed_at": "2026-11-16T09:18:32+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s6f8f49d860bf39c2",
+   "item_ids": [
+    "6f8f49d860bf39c2"
+   ],
+   "analysis": {
+    "relevant": false,
+    "title_fr": "Le Book of Miracles pourrait atteindre 1 million de livres aux enchères",
+    "summary": "Un rare livre illustré du XVIe siècle, le Book of Miracles, est mis aux enchères avec une estimation à 1 million de livres.",
+    "why": "",
+    "tabs": [],
+    "themes": [],
+    "industries": [],
+    "countries": [],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-16T09:18:32+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "se576871dfb29d4d7",
+   "item_ids": [
+    "e576871dfb29d4d7"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Ukraine et l'UE préparent un plan d'aide d'urgence pour l'hiver",
+    "summary": "L'Ukraine et l'Union européenne élaborent un plan d'aide d'urgence pour faire face à l'hiver, dans un contexte de guerre prolongée.",
+    "why": "Les besoins humanitaires et énergétiques ukrainiens pèsent sur les budgets de défense et de résilience européens.",
+    "tabs": [
+     "geopolitique",
+     "economie"
+    ],
+    "themes": [
+     "conflits",
+     "budgets"
+    ],
+    "industries": [
+     "defense"
+    ],
+    "countries": [
+     "UA"
+    ],
+    "impact": "moyen"
+   },
+   "analysed_at": "2026-11-16T09:18:32+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s253ecbb9f6bd29e3",
+   "item_ids": [
+    "253ecbb9f6bd29e3"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "La sécurité de la mer Rouge passe par la restauration de l'État yéménite, selon une analyse",
+    "summary": "Une tribune estime que le déploiement de forces navales ne suffit pas à sécuriser la mer Rouge et appelle à restaurer l'autorité du gouvernement yéménite.",
+    "why": "La sécurisation durable de la mer Rouge, route maritime majeure, dépend de solutions politiques et du suivi satellite des menaces persistantes.",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [
+     "conflits",
+     "ressources"
+    ],
+    "industries": [
+     "maritime",
+     "defense"
+    ],
+    "countries": [
+     "YE"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-16T09:18:32+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s1dca5115382e5c06",
+   "item_ids": [
+    "1dca5115382e5c06"
+   ],
+   "analysis": {
+    "relevant": false,
+    "title_fr": "Gouvernance des dépenses d'espaces verts d'une autorité locale allemande",
+    "summary": "Un article pointe des lacunes de gouvernance dans les dépenses liées aux parcs et espaces verts d'une collectivité locale.",
+    "why": "",
+    "tabs": [],
+    "themes": [],
+    "industries": [],
+    "countries": [
+     "DE"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-16T09:18:32+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s9f4bf3b86f4774c5",
+   "item_ids": [
+    "9f4bf3b86f4774c5"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Les minerais critiques d'Afrique centrale, enjeu géopolitique croissant",
+    "summary": "Un rapport du GITOC examine qui profite réellement de l'exploitation des minerais critiques en Afrique centrale, entre convoitises internationales et enjeux de gouvernance.",
+    "why": "La compétition pour les minerais critiques alimente la demande de surveillance satellite des sites miniers et des chaînes d'approvisionnement.",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [
+     "ressources"
+    ],
+    "industries": [
+     "ogme",
+     "foret_environnement"
+    ],
+    "countries": [],
+    "impact": "moyen"
+   },
+   "analysed_at": "2026-11-16T09:18:32+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "sa371b135b8555f67",
+   "item_ids": [
+    "a371b135b8555f67"
+   ],
+   "analysis": {
+    "relevant": false,
+    "title_fr": "Des militants Codepink interpellent le secrétaire au Trésor américain sur les sanctions",
+    "summary": "Des activistes de Codepink ont interpellé Scott Bessent, secrétaire au Trésor américain, sur les effets des sanctions américaines.",
+    "why": "",
+    "tabs": [],
+    "themes": [],
+    "industries": [],
+    "countries": [],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-16T09:18:32+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "sab0b6567eabe26e3",
+   "item_ids": [
+    "ab0b6567eabe26e3"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Philippines : 44 arrestations lors d'opérations contre la pêche et l'exploitation forestière illégales",
+    "summary": "La police régionale des Visayas occidentales a arrêté 44 personnes et saisi pour plus de 3,78 millions de pesos de biens lors d'opérations contre la pêche et le bois illégaux.",
+    "why": "Ces opérations illustrent la demande locale de surveillance maritime et forestière pour lutter contre les activités illégales.",
+    "tabs": [
+     "marche"
+    ],
+    "themes": [
+     "ressources"
+    ],
+    "industries": [
+     "maritime",
+     "foret_environnement"
+    ],
+    "countries": [
+     "PH"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-16T09:18:32+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "sdabf7a19ba3095c1",
+   "item_ids": [
+    "dabf7a19ba3095c1"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Les connaissances arctiques présentées comme infrastructure partagée",
+    "summary": "Un article plaide pour considérer les données et connaissances sur l'Arctique comme une infrastructure commune à partager entre acteurs.",
+    "why": "La gestion partagée des données arctiques concerne les besoins en observation satellite pour le suivi environnemental et maritime polaire.",
+    "tabs": [
+     "economie"
+    ],
+    "themes": [
+     "programmes"
+    ],
+    "industries": [
+     "foret_environnement",
+     "maritime"
+    ],
+    "countries": [],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-16T09:18:32+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s1ce86d70e505298d",
+   "item_ids": [
+    "1ce86d70e505298d",
+    "15e92f9a3318d44f",
+    "ea1d077b2d9b5d67"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Retrait des forces yéménites : les Houthis prennent une zone clé de la mer Rouge",
+    "summary": "Les forces soutenues par l'Arabie saoudite se retirent du détroit de Bab al-Mandab vers Aden, laissant les Houthis contrôler une zone côtière stratégique.",
+    "why": "Le contrôle houthi d'une zone clé de la mer Rouge accroît les risques pour le trafic maritime et la demande de surveillance de cette route.",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [
+     "conflits",
+     "ressources"
+    ],
+    "industries": [
+     "maritime",
+     "defense"
+    ],
+    "countries": [
+     "YE",
+     "SA"
+    ],
+    "impact": "moyen"
+   },
+   "analysed_at": "2026-11-16T09:18:32+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "sbf68fb131e482d24",
+   "item_ids": [
+    "bf68fb131e482d24"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Guerre en Ukraine : Zelensky affirme avoir neutralisé 55% des raffineries russes",
+    "summary": "Au 1726e jour de la guerre, Zelensky déclare que 55% des capacités de raffinage russes ont été neutralisées par les frappes ukrainiennes.",
+    "why": "Les frappes contre les infrastructures énergétiques russes renforcent le besoin de surveillance satellite pour évaluer les dommages et les flux.",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [
+     "conflits"
+    ],
+    "industries": [
+     "defense",
+     "ogme"
+    ],
+    "countries": [
+     "UA",
+     "RU"
+    ],
+    "impact": "moyen"
+   },
+   "analysed_at": "2026-11-16T09:18:32+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "saf100835ca289906",
+   "item_ids": [
+    "af100835ca289906"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Le centre spatial Johnson de la NASA fête ses 65 ans",
+    "summary": "La NASA célèbre les 65 ans de son centre spatial Johnson, revenant sur son histoire et son évolution.",
+    "why": "",
+    "tabs": [
+     "concurrents"
+    ],
+    "themes": [],
+    "industries": [],
+    "countries": [
+     "US"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-16T09:18:32+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "sa4be06872024ee3b",
+   "item_ids": [
+    "a4be06872024ee3b"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "La Chine se tourne vers le pétrole irakien face au blocus américain sur l'Iran",
+    "summary": "Des raffineurs chinois indépendants achètent du pétrole irakien via des négociants internationaux, en raison des restrictions américaines sur les exportations iraniennes.",
+    "why": "Les reconfigurations des flux pétroliers sous sanctions accroissent la demande de suivi satellite des cargaisons et des routes maritimes.",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [
+     "sanctions",
+     "ressources"
+    ],
+    "industries": [
+     "ogme",
+     "maritime"
+    ],
+    "countries": [
+     "CN",
+     "IQ",
+     "US",
+     "IR"
+    ],
+    "impact": "moyen"
+   },
+   "analysed_at": "2026-11-16T09:18:32+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "sbf534e570ec3790f",
+   "item_ids": [
+    "bf534e570ec3790f"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Les pétroliers continuent de circuler dans un port russe de la Baltique malgré les attaques",
+    "summary": "Les navires pétroliers continuent d'opérer depuis un port russe de la Baltique touché par des attaques récentes.",
+    "why": "Le maintien du trafic malgré les tensions illustre l'intérêt du suivi satellite des flux maritimes sous sanctions.",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [
+     "sanctions",
+     "ressources"
+    ],
+    "industries": [
+     "maritime",
+     "ogme"
+    ],
+    "countries": [
+     "RU"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-16T09:18:32+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s0f3e600d9c5a456a",
+   "item_ids": [
+    "0f3e600d9c5a456a"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Space42 lance la production du smartphone satellite ThurayaTwo avec la Corée du Sud",
+    "summary": "Space42 débute la production du smartphone satellite ThurayaTwo en partenariat avec le sud-coréen Asia Pacific Satellite Inc.",
+    "why": "Un concurrent en connectivité satellite lance un produit grand public, renforçant la concurrence sur les services de communication directe par satellite.",
+    "tabs": [
+     "concurrents"
+    ],
+    "themes": [
+     "produits"
+    ],
+    "industries": [
+     "connectivite"
+    ],
+    "countries": [
+     "AE",
+     "KR"
+    ],
+    "impact": "moyen"
+   },
+   "analysed_at": "2026-11-16T09:18:32+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "sf77da085deec9a9d",
+   "item_ids": [
+    "f77da085deec9a9d",
+    "52f1312bf0e59e31"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Incendie près de deux dépôts pétroliers russes dans la région d'Azov après une attaque de drones",
+    "summary": "Des médias rapportent un incendie provoqué par une attaque de drones près de deux dépôts pétroliers dans la région russe d'Azov.",
+    "why": "Les attaques de drones sur les infrastructures énergétiques russes alimentent la demande de surveillance satellite des sites critiques.",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [
+     "conflits"
+    ],
+    "industries": [
+     "defense",
+     "ogme"
+    ],
+    "countries": [
+     "RU"
+    ],
+    "impact": "moyen"
+   },
+   "analysed_at": "2026-11-16T09:18:32+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "se3d2a1e28d69116f",
+   "item_ids": [
+    "e3d2a1e28d69116f",
+    "0e9e8a3ed8829a18"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "L'Ukraine frappe à nouveau le pont de Crimée, circulation restreinte",
+    "summary": "L'Ukraine a frappé le pont reliant la Russie à la Crimée annexée, limitant la circulation sur cet axe stratégique.",
+    "why": "Les frappes répétées sur des infrastructures critiques illustrent l'usage du renseignement géospatial pour cibler et surveiller ces ouvrages.",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [
+     "conflits"
+    ],
+    "industries": [
+     "defense",
+     "securite"
+    ],
+    "countries": [
+     "UA",
+     "RU"
+    ],
+    "impact": "moyen"
+   },
+   "analysed_at": "2026-11-16T09:18:32+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "sfeab44b92d5fa81f",
+   "item_ids": [
+    "feab44b92d5fa81f",
+    "a843b16929515adf"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Le fondateur de Wildberries pourrait être visé par des sanctions de l'UE",
+    "summary": "L'UE envisagerait de cibler le fondateur de la plateforme russe Wildberries dans un prochain paquet de sanctions.",
+    "why": "L'élargissement des sanctions européennes vise des figures économiques russes, un indicateur du durcissement du cadre géopolitique.",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [
+     "sanctions"
+    ],
+    "industries": [],
+    "countries": [
+     "RU"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-16T09:18:32+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s0019770102176fe4",
+   "item_ids": [
+    "0019770102176fe4",
+    "0c5691f6341fb20b",
+    "840fecca8c3bedc4",
+    "6a7c63992e25cab1"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Eutelsat lève 400 millions d'euros par obligations senior à échéance 2032",
+    "summary": "L'opérateur satellite Eutelsat Communications a lancé une émission obligataire senior de 400 millions d'euros arrivant à échéance en 2032.",
+    "why": "Renforce la capacité financière d'un concurrent européen clé dans la connectivité satellite face à Airbus et SpaceX.",
+    "tabs": [
+     "concurrents",
+     "economie"
+    ],
+    "themes": [
+     "financements"
+    ],
+    "industries": [
+     "connectivite"
+    ],
+    "countries": [
+     "FR"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-16T09:18:32+01:00",
+   "analysed_size": 2,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "sa6fc86f97e923cc3",
+   "item_ids": [
+    "a6fc86f97e923cc3"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Iceye dévoile un nouveau satellite pour des images gouvernementales plus précises",
+    "summary": "Iceye a présenté un nouveau satellite radar destiné à fournir aux gouvernements des images satellite de plus haute résolution.",
+    "why": "Iceye est un concurrent direct d'Airbus en imagerie radar ; ce nouveau satellite renforce son offre face aux clients gouvernementaux.",
+    "tabs": [
+     "concurrents"
+    ],
+    "themes": [
+     "produits"
+    ],
+    "industries": [
+     "defense",
+     "securite"
+    ],
+    "countries": [
+     "FI"
+    ],
+    "impact": "moyen"
+   },
+   "analysed_at": "2026-11-16T09:18:32+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s261d987021a39967",
+   "item_ids": [
+    "261d987021a39967"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Des experts expliquent pourquoi les sanctions occidentales n'affectent pas la Biélorussie et la Russie",
+    "summary": "Des experts analysent les raisons de l'inefficacité des sanctions occidentales contre la Biélorussie et la Russie.",
+    "why": "L'inefficacité des sanctions souligne les limites des outils économiques face à la Russie, un contexte pertinent pour l'analyse géopolitique.",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [
+     "sanctions"
+    ],
+    "industries": [],
+    "countries": [
+     "BY",
+     "RU"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-16T09:18:32+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "se047802658cd4017",
+   "item_ids": [
+    "e047802658cd4017"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "L'ONU juge difficile d'être optimiste sur la fin de la guerre en Ukraine",
+    "summary": "Le secrétaire général de l'ONU a déclaré qu'il était difficile d'être optimiste quant à une issue proche du conflit en Ukraine.",
+    "why": "La persistance du conflit ukrainien maintient une forte demande de renseignement géospatial et d'imagerie satellite pour le suivi militaire.",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [
+     "conflits"
+    ],
+    "industries": [
+     "defense"
+    ],
+    "countries": [
+     "UA"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-16T09:18:32+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "sa27b0ece24188752",
+   "item_ids": [
+    "a27b0ece24188752",
+    "a630db0817e4ffbf",
+    "848c8de6d4fc66fe"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Un pétrolier touché par un projectile inconnu dans le détroit d'Ormuz, incendie en salle des machines",
+    "summary": "Un pétrolier a été frappé par un projectile non identifié dans le détroit d'Ormuz, provoquant un incendie dans la salle des machines.",
+    "why": "Les incidents répétés dans le détroit d'Ormuz accroissent la demande de surveillance maritime par satellite pour sécuriser le trafic pétrolier.",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [
+     "conflits",
+     "ressources"
+    ],
+    "industries": [
+     "maritime",
+     "ogme"
+    ],
+    "countries": [],
+    "impact": "moyen"
+   },
+   "analysed_at": "2026-11-16T09:18:32+01:00",
    "analysed_size": 1,
    "analysis_model": "claude_cli:sonnet"
   }

@@ -33,15 +33,15 @@
    "ZAR": 18.7481
   }
  },
- "updated_at": "2026-11-15T08:13:11+01:00",
+ "updated_at": "2026-11-16T09:32:32+01:00",
  "sources": [
   {
    "name": "TED",
    "url": "https://api.ted.europa.eu/v3/notices/search",
    "ok": true,
    "error": "",
-   "fetched": 35,
-   "kept": 27,
+   "fetched": 36,
+   "kept": 31,
    "via": "tender"
   },
   {
@@ -49,21 +49,21 @@
    "url": "https://www.find-tender.service.gov.uk/api/1.0/ocdsReleasePackages",
    "ok": true,
    "error": "",
-   "fetched": 454,
-   "kept": 1,
+   "fetched": 13,
+   "kept": 0,
    "via": "tender"
   }
  ],
  "last_run": {
-  "new": 0,
+  "new": 14,
   "sources": [
    {
     "name": "TED",
     "url": "https://api.ted.europa.eu/v3/notices/search",
     "ok": true,
     "error": "",
-    "fetched": 35,
-    "kept": 27,
+    "fetched": 36,
+    "kept": 31,
     "via": "tender"
    },
    {
@@ -71,21 +71,654 @@
     "url": "https://www.find-tender.service.gov.uk/api/1.0/ocdsReleasePackages",
     "ok": true,
     "error": "",
-    "fetched": 454,
-    "kept": 1,
+    "fetched": 13,
+    "kept": 0,
     "via": "tender"
    }
   ],
   "analysis": {
-   "analysed": 0,
-   "relevant": 0,
+   "analysed": 14,
+   "relevant": 1,
    "error": "",
-   "cost_usd": null
+   "cost_usd": 0.1234
   },
   "pruned": 0
  },
- "fts_synced_until": "2026-11-15T07:00:00",
+ "fts_synced_until": "2026-11-16T08:00:00",
  "tenders": [
+  {
+   "id": "ted:795849-2026",
+   "source": "ted",
+   "kind": "open",
+   "notice": "795849-2026",
+   "notice_type": "cn-standard",
+   "title": "Marine Archeology for the Bornholm Energy Island project - 26/12562",
+   "buyer": "Energinet Eltransmission A/S",
+   "buyer_country": "DK",
+   "published": "2026-11-16",
+   "url": "https://ted.europa.eu/fr/notice/-/detail/795849-2026",
+   "cpv_label": "Services archéologiques",
+   "countries": [
+    "DK"
+   ],
+   "cpv": [
+    "71351914",
+    "71354500",
+    "71351700"
+   ],
+   "deadline": "2026-12-14",
+   "value": 12000000.0,
+   "currency": "EUR",
+   "winners": [],
+   "description": "The Contracting Authority wants to purchase a service for marine archaeological site investigations for a ca. 200 km cable route between Bornholm and Zealand in the Baltic Sea. The services include ROV inspections, diver inspections, Vibrocore sampling, probe sampling and marine archaeological test pits. For further details regarding the purchase, reference is made to the tender documents. The tendered contract has a duration of 2 years. The value of the contract is expected to amount to 12,000,000 EUR.",
+   "status": "",
+   "first_seen": "2026-11-16T09:32:32+01:00",
+   "analysis": {
+    "relevant": false,
+    "segment": "environnement_climat",
+    "title_fr": "Prestations d'archéologie marine pour le projet d'île énergétique de Bornholm",
+    "summary": "Services d'inspections archéologiques marines (ROV, plongeurs, carottages) sur un tracé de câble de 200 km entre Bornholm et la Zélande, sur 2 ans, pour Energinet.",
+    "why": "",
+    "industries": [
+     "maritime",
+     "ogme"
+    ],
+    "fit": "faible"
+   },
+   "analysed_at": "2026-11-16T09:32:32+01:00",
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "ted:795438-2026",
+   "source": "ted",
+   "kind": "open",
+   "notice": "795438-2026",
+   "notice_type": "cn-standard",
+   "title": "Wykonanie Studium Techniczno-Ekonomiczno-Środowiskowego (STEŚ) oraz Materiałów do wniosku o wydanie Decyzji o Środowiskowych Uwarunkowaniach (DŚU) wraz z jej uzyskaniem dla inwestycji pn. „Budowa północno-wschodniej obwodnicy Rzeszowa w ciągu DK97”",
+   "buyer": "Skarb Państwa Generalny Dyrektor Dróg Krajowych i Autostrad, ul. Wronia 53, 00-874 Warszawa i Gmina Miasto Rzeszów Miejski Zarząd Dróg w Rzeszowie ul. Targowa 1, 35-064 Rzeszów, Prowadzący postępowanie: Generalna Dyrekcja Dróg Krajowych i Autostrad Oddział w Rzeszowie",
+   "buyer_country": "PL",
+   "published": "2026-11-16",
+   "url": "https://ted.europa.eu/fr/notice/-/detail/795438-2026",
+   "cpv_label": "Services de conception technique",
+   "countries": [
+    "PL"
+   ],
+   "cpv": [
+    "71320000",
+    "71322000",
+    "71332000",
+    "71354000",
+    "71351000",
+    "71352000"
+   ],
+   "deadline": "2026-12-15",
+   "value": null,
+   "currency": "",
+   "winners": [],
+   "description": "Przedmiotem zamówienia jest: Wykonanie Studium Techniczno-Ekonomiczno-Środowiskowego, Wykonanie materiałów do wniosku o wydanie Decyzji o środowiskowych uwarunkowaniach wraz z jej uzyskaniem. Zamawiający zastrzega obowiązek osobistego wykonywania przez Wykonawcę kluczowych zadań tj. czynności wykonywanych przez Głównego Projektanta Drogowego, którymi są obowiązki wynikające z ustawy prawo budowlane i zapisów zawartych w pkt. 1.7 OPZ Obowiązki Wykonawcy. Wartość zamówienia między 140 000 EUR a 10 000 000 EUR.",
+   "status": "",
+   "first_seen": "2026-11-16T09:32:32+01:00",
+   "analysis": {
+    "relevant": false,
+    "segment": "cartographie",
+    "title_fr": "Étude technico-économique et environnementale pour la rocade nord-est de Rzeszów",
+    "summary": "Réalisation d'une étude technico-économique et environnementale et obtention de la décision environnementale pour la construction d'une rocade sur la route nationale DK97 à Rzeszów, Pologne.",
+    "why": "",
+    "industries": [
+     "infrastructures"
+    ],
+    "fit": "faible"
+   },
+   "analysed_at": "2026-11-16T09:32:32+01:00",
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "ted:795294-2026",
+   "source": "ted",
+   "kind": "award",
+   "notice": "795294-2026",
+   "notice_type": "can-standard",
+   "title": "Wyprowadzenie mocy dla OCGT Gryfino",
+   "buyer": "PGE Inwest 27 sp. z o.o.",
+   "buyer_country": "PL",
+   "published": "2026-11-16",
+   "url": "https://ted.europa.eu/fr/notice/-/detail/795294-2026",
+   "cpv_label": "Travaux de construction de lignes électriques",
+   "countries": [
+    "PL"
+   ],
+   "cpv": [
+    "45231400",
+    "45232210",
+    "31311000",
+    "71320000",
+    "45310000",
+    "45315400",
+    "71354000",
+    "31200000",
+    "71332000",
+    "65310000"
+   ],
+   "deadline": "",
+   "value": 29790000.0,
+   "currency": "PLN",
+   "winners": [
+    "ENPROM sp. z o.o."
+   ],
+   "description": "Przedmiotem zamówienia jest wykonanie dla PGE Inwest 27 sp. z o.o. robót budowlano-montażowych oraz innych prac szczegółowo opisanych w Programie Funkcjonalno-Użytkowym (PFU) oraz Projektowanych postanowieniach umowy, w celu wybudowania układu wyprowadzenia mocy do sieci elektroenergetycznej wraz z systemem monitorowania parametrów linii kablowych dla Bloku Gazowego w Gryfinie.",
+   "status": "",
+   "first_seen": "2026-11-16T09:32:32+01:00",
+   "analysis": {
+    "relevant": false,
+    "segment": "cartographie",
+    "title_fr": "Raccordement électrique de la centrale OCGT de Gryfino",
+    "summary": "Travaux de construction d'une liaison électrique et d'un système de surveillance pour le raccordement au réseau de la centrale à gaz de Gryfino, Pologne.",
+    "why": "",
+    "industries": [
+     "ogme",
+     "infrastructures"
+    ],
+    "fit": "faible"
+   },
+   "analysed_at": "2026-11-16T09:32:32+01:00",
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "ted:795222-2026",
+   "source": "ted",
+   "kind": "award",
+   "notice": "795222-2026",
+   "notice_type": "can-standard",
+   "title": "Wyprowadzenie mocy dla OCGT Rybnik",
+   "buyer": "PGE Inwest 23 sp. z o.o.",
+   "buyer_country": "PL",
+   "published": "2026-11-16",
+   "url": "https://ted.europa.eu/fr/notice/-/detail/795222-2026",
+   "cpv_label": "Travaux de construction de lignes électriques",
+   "countries": [
+    "PL"
+   ],
+   "cpv": [
+    "45231400",
+    "45232210",
+    "31311000",
+    "71320000",
+    "45310000",
+    "45315400",
+    "71354000",
+    "31200000",
+    "71332000",
+    "65310000"
+   ],
+   "deadline": "",
+   "value": 34500000.0,
+   "currency": "PLN",
+   "winners": [
+    "SPIE Energy Poland S.A."
+   ],
+   "description": "Przedmiotem zamówienia jest wykonanie dla PGE Inwest 23 sp. z o.o. robót budowlano-montażowych oraz innych prac szczegółowo opisanych w Programie Funkcjonalno-Użytkowym (PFU) oraz Projektowanych postanowieniach umowy, w celu wybudowania układu wyprowadzenia mocy do sieci elektroenergetycznej wraz z systemem monitorowania parametrów linii kablowych dla Bloku Gazowego w Rybniku.",
+   "status": "",
+   "first_seen": "2026-11-16T09:32:32+01:00",
+   "analysis": {
+    "relevant": false,
+    "segment": "cartographie",
+    "title_fr": "Raccordement électrique de la centrale OCGT de Rybnik",
+    "summary": "Travaux de construction d'une liaison électrique et d'un système de surveillance pour le raccordement au réseau de la centrale à gaz de Rybnik, Pologne.",
+    "why": "",
+    "industries": [
+     "ogme",
+     "infrastructures"
+    ],
+    "fit": "faible"
+   },
+   "analysed_at": "2026-11-16T09:32:32+01:00",
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "ted:795011-2026",
+   "source": "ted",
+   "kind": "award",
+   "notice": "795011-2026",
+   "notice_type": "can-standard",
+   "title": "Modernizacja ewidencji gruntów, budynków i lokali oraz pomiar wszystkich budynków i części granic działek ewidencyjnych obręb ewidencyjny Przyłęk, gmina Szczekociny.",
+   "buyer": "Powiat Zawierciański - Starostwo Powiatowe w Zawierciu",
+   "buyer_country": "PL",
+   "published": "2026-11-16",
+   "url": "https://ted.europa.eu/fr/notice/-/detail/795011-2026",
+   "cpv_label": "Services cadastraux",
+   "countries": [
+    "PL"
+   ],
+   "cpv": [
+    "71354300",
+    "71355000"
+   ],
+   "deadline": "",
+   "value": 448000.0,
+   "currency": "PLN",
+   "winners": [
+    "Zakład Usług Geodezyjnych i Kartograficznych PRYZMAT Sp. z o.o.",
+    "Zakład Usług Geodezyjnych i Kartograficznych PRYZMAT inż. Zenon Kulesza",
+    "ECO-BART Sp. z o.o."
+   ],
+   "description": "1. Przedmiotem zamówienia jest usługa modernizacji ewidencji gruntów, budynków i lokali oraz pomiar wszystkich budynków i części granic działek ewidencyjnych w obrębie ewidencyjnym Przyłęk, gmina Szczekociny w powiecie zawierciańskim w województwie śląskim. 2. Zakres zadania obejmuje w szczególności: 1) założenie trzech punktów osnowy pomiarowej z dokładnością osnowy III klasy, wraz ze stabilizacją trwałą nadziemną i podziemną oraz na potrzeby pomiaru jeżeli nie zostaną odnalezione w terenie, 2) po przeprowadzeniu analizy dokumentacji zasobu określającej przebieg granic działek…",
+   "status": "",
+   "first_seen": "2026-11-16T09:32:32+01:00",
+   "analysis": {
+    "relevant": false,
+    "segment": "cartographie",
+    "title_fr": "Modernisation du cadastre à Przyłęk, commune de Szczekociny",
+    "summary": "Modernisation de l'évidence foncière des terrains, bâtiments et lots, et mesure des limites parcellaires dans le village de Przyłęk, Pologne.",
+    "why": "",
+    "industries": [
+     "foncier"
+    ],
+    "fit": "faible"
+   },
+   "analysed_at": "2026-11-16T09:32:32+01:00",
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "ted:794934-2026",
+   "source": "ted",
+   "kind": "open",
+   "notice": "794934-2026",
+   "notice_type": "cn-standard",
+   "title": "Rådgiverydelser vedr. projekter i regi af Grøn Trepart til Vejle Kommune",
+   "buyer": "Vejle Kommune",
+   "buyer_country": "DK",
+   "published": "2026-11-16",
+   "url": "https://ted.europa.eu/fr/notice/-/detail/794934-2026",
+   "cpv_label": "Services de conseil en ingénierie de l'environnement",
+   "countries": [
+    "DK"
+   ],
+   "cpv": [
+    "71313000",
+    "77000000",
+    "71335000",
+    "71320000",
+    "71900000",
+    "71355000",
+    "71354100",
+    "90713000",
+    "71241000",
+    "71600000",
+    "77100000"
+   ],
+   "deadline": "2026-12-15",
+   "value": 100000000.0,
+   "currency": "DKK",
+   "winners": [],
+   "description": "Udbuddet vedrører etablering af et dynamisk indkøbssystem indeholdende rådgiverydelser vedrørende projekter i regi af Grøn Trepart til Vejle Kommune. Indkøbssystemet omfatter følgende kategorier: Kategori 1: Lavbunds- og vådområdeprojekter (>10 ha) Kategori 2: Små vådområdeprojekter (1-10 ha) Kategori 3: Store naturprojekter (>200 ha) Kategori 4: Mindre naturprojekter (1-200 ha) Kategori 5: Jordbundsprøver Kategori 6: Landmåling/Vandløbsopmåling Kategori 7: Biodiversitet/naturbesigtigelser Kategori 8: Digital screening/GIS-arbejde Kategori 9: Lodsejerdialog (f.eks. udtagningskonsulent…",
+   "status": "",
+   "first_seen": "2026-11-16T09:32:32+01:00",
+   "analysis": {
+    "relevant": false,
+    "segment": "environnement_climat",
+    "title_fr": "Système d'achat dynamique pour services de conseil environnemental à Vejle",
+    "summary": "Mise en place d'un système d'achat dynamique pour des prestations de conseil environnemental (zones humides, biodiversité, mesures, GIS) pour la commune de Vejle au Danemark.",
+    "why": "",
+    "industries": [
+     "foret_environnement",
+     "agriculture"
+    ],
+    "fit": "faible"
+   },
+   "analysed_at": "2026-11-16T09:32:32+01:00",
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "ted:794507-2026",
+   "source": "ted",
+   "kind": "open",
+   "notice": "794507-2026",
+   "notice_type": "cn-standard",
+   "title": "Servicii de documentare digitală a monumentelor istorice în cadrul proiectului eMonumente",
+   "buyer": "MINISTERUL CULTURII",
+   "buyer_country": "RO",
+   "published": "2026-11-16",
+   "url": "https://ted.europa.eu/fr/notice/-/detail/794507-2026",
+   "cpv_label": "Services de documentation",
+   "countries": [
+    "RO"
+   ],
+   "cpv": [
+    "79131000",
+    "71354000",
+    "72312000"
+   ],
+   "deadline": "2027-01-11",
+   "value": 16453884.3,
+   "currency": "RON",
+   "winners": [],
+   "description": "Ministerul Culturii, prin Unitatea de Management a Proiectului, a semnat contractul de finantare G 2025 – 142295 / 29.11.2025 pentru implementarea proiectului ”eMonumente”, Cod MySMIS 338862. Proiectul este cofinanțat de Uniunea Europeană prin Programul Creștere Inteligentă, Digitalizare și Instrumente Financiare 2021 – 2027, Acțiunea 3.1, Creșterea rolului culturii în societate prin valorizarea avantajelor digitalizării, Măsura 1: Dezvoltarea de conținut digital despre patrimoniu pentru valorizarea culturii în scopul dezvoltării sustenabile locale și incluziunii sociale. Contractul de…",
+   "status": "",
+   "first_seen": "2026-11-16T09:32:32+01:00",
+   "analysis": {
+    "relevant": false,
+    "segment": "cartographie",
+    "title_fr": "Documentation numérique des monuments historiques (projet eMonumente)",
+    "summary": "Prestations de documentation numérique de monuments historiques roumains dans le cadre du projet eMonumente, cofinancé par l'UE.",
+    "why": "",
+    "industries": [
+     "infrastructures"
+    ],
+    "fit": "faible"
+   },
+   "analysed_at": "2026-11-16T09:32:32+01:00",
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "ted:794310-2026",
+   "source": "ted",
+   "kind": "open",
+   "notice": "794310-2026",
+   "notice_type": "cn-standard",
+   "title": "Satellite Orthoimages in Finland 2027",
+   "buyer": "National Land Survey of Finland",
+   "buyer_country": "FI",
+   "published": "2026-11-16",
+   "url": "https://ted.europa.eu/fr/notice/-/detail/794310-2026",
+   "cpv_label": "Photographies",
+   "countries": [
+    "FI"
+   ],
+   "cpv": [
+    "22315000",
+    "71250000",
+    "71350000",
+    "71354100",
+    "71354200",
+    "71355100"
+   ],
+   "deadline": "2026-12-15",
+   "value": null,
+   "currency": "",
+   "winners": [],
+   "description": "The object of this procurement is the delivery of satellite orthomosaic images to the National Land Survey of Finland (\"NLS\") . The production areas to be ordered are based on the national laser scanning and aerial imaging programme. The procurement includes the delivery of 10 production areas (3 priority 1 production areas and 7 priority 2 production areas) which are defined in more detail in Appendix 1 Technical requirements and Appendix 1.1 Production areas. This procurement forms part of the NLS' preparedness for the situation where aerial images cannot be obtained from all production…",
+   "status": "",
+   "first_seen": "2026-11-16T09:32:32+01:00",
+   "analysis": {
+    "relevant": true,
+    "segment": "imagerie_satellite",
+    "title_fr": "Fourniture d'orthoimages satellite pour la Finlande 2027",
+    "summary": "L'institut national foncier finlandais achète des orthomosaïques satellite pour 10 zones de production, en secours au programme national de lasergrammétrie et prises de vues aériennes.",
+    "why": "Besoin direct d'imagerie satellite à l'échelle nationale, cœur d'offre Airbus (Pléiades Neo, etc.).",
+    "industries": [
+     "foncier",
+     "infrastructures"
+    ],
+    "fit": "forte"
+   },
+   "analysed_at": "2026-11-16T09:32:32+01:00",
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "ted:794299-2026",
+   "source": "ted",
+   "kind": "open",
+   "notice": "794299-2026",
+   "notice_type": "cn-standard",
+   "title": "Servicii de elaborare a documentaţiei tehnico-economice, faza SF cu elemente de DALI, DTAC/DTAD, DTOE, PT+DE și documentații cadastrale pentru „Coridor de mobilitate urbană durabilă: str. Plevnei, str. Garofiței, legătura cu str. Depozitelor, str. Depozitelor și str. Industriei din Municipiul Zalău”",
+   "buyer": "PRIMARIA MUNICIPIULUI ZALAU",
+   "buyer_country": "RO",
+   "published": "2026-11-16",
+   "url": "https://ted.europa.eu/fr/notice/-/detail/794299-2026",
+   "cpv_label": "Services de conception technique pour installations de transport",
+   "countries": [
+    "RO"
+   ],
+   "cpv": [
+    "71322500",
+    "71241000",
+    "71322000",
+    "71354300",
+    "71410000",
+    "71530000"
+   ],
+   "deadline": "2026-11-24",
+   "value": 1600000.0,
+   "currency": "RON",
+   "winners": [],
+   "description": "Servicii de elaborare a documentaţiei tehnico-economice, faza SF cu elemente de DALI, DTAC/DTAD, DTOE, PT+DE și documentații cadastrale pentru „Coridor de mobilitate urbană durabilă: str. Plevnei, str. Garofiței, legătura cu str. Depozitelor, str. Depozitelor și str. Industriei din Municipiul Zalău” Contractul de servicii cuprinde prestarea serviciilor de elaborare a documentațiilor tehnico-economice (fazele SF cu elemente de DALI, DTAC/DTAD, DTOE, PT+DE, inclusiv documentații cadastrale privind identificarea terenurilor afectate, stabilirea culoarului de expropriere, raport de evaluare…",
+   "status": "",
+   "first_seen": "2026-11-16T09:32:32+01:00",
+   "analysis": {
+    "relevant": false,
+    "segment": "cartographie",
+    "title_fr": "Études techniques et documentation cadastrale pour un corridor urbain à Zalău",
+    "summary": "Élaboration de la documentation technico-économique et cadastrale (SF, DALI, PT) pour un corridor de mobilité urbaine à Zalău, Roumanie.",
+    "why": "",
+    "industries": [
+     "infrastructures",
+     "foncier"
+    ],
+    "fit": "faible"
+   },
+   "analysed_at": "2026-11-16T09:32:32+01:00",
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "ted:794227-2026",
+   "source": "ted",
+   "kind": "open",
+   "notice": "794227-2026",
+   "notice_type": "cn-standard",
+   "title": "Framework agreement - area and development plan laying - Rødøy municipality",
+   "buyer": "Rødøy Kommune",
+   "buyer_country": "NO",
+   "published": "2026-11-16",
+   "url": "https://ted.europa.eu/fr/notice/-/detail/794227-2026",
+   "cpv_label": "Services d'urbanisme",
+   "countries": [
+    "NO"
+   ],
+   "cpv": [
+    "71410000",
+    "71240000",
+    "71354100",
+    "71356400",
+    "71400000"
+   ],
+   "deadline": "2026-12-15",
+   "value": null,
+   "currency": "",
+   "winners": [],
+   "description": "Innkjøpsservice Advokatfirma AS is carrying out the procurement on assignments for Rødøy municipality. See the tender documentation and annexes for further information.",
+   "status": "",
+   "first_seen": "2026-11-16T09:32:32+01:00",
+   "analysis": {
+    "relevant": false,
+    "segment": "cartographie",
+    "title_fr": "Accord-cadre d'élaboration de plans d'urbanisme et de zonage",
+    "summary": "Accord-cadre pour des services de conseil en planification urbaine et de zonage pour la commune norvégienne de Rødøy.",
+    "why": "",
+    "industries": [
+     "infrastructures"
+    ],
+    "fit": "faible"
+   },
+   "analysed_at": "2026-11-16T09:32:32+01:00",
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "ted:793909-2026",
+   "source": "ted",
+   "kind": "award",
+   "notice": "793909-2026",
+   "notice_type": "can-standard",
+   "title": "PRESTATIONS DE GEOMETRE SUR LE PERIMETRE DE L'OIN - PRESTATIONS FONCIERES",
+   "buyer": "EPA ECOVALLEE PLAINE DU VAR",
+   "buyer_country": "FR",
+   "published": "2026-11-16",
+   "url": "https://ted.europa.eu/fr/notice/-/detail/793909-2026",
+   "cpv_label": "Services de levés en surface",
+   "countries": [
+    "FR"
+   ],
+   "cpv": [
+    "71353000",
+    "71355000",
+    "71355200",
+    "71354100"
+   ],
+   "deadline": "",
+   "value": 200000.0,
+   "currency": "EUR",
+   "winners": [
+    "GEOSAT Selas",
+    "SAS SE2T ENGINEERING"
+   ],
+   "description": "La consultation a pour objet la réalisation de prestations de géomètre sur l'ensemble du périmètre de l'opération d'intérêt national (OIN) - Prestations foncières. Il s'agit d'un accord-cadre mono-attributaire à bons de commande, traité à prix unitaires. L'accord-cadre est sans montant minimum et avec un montant maximum de 200 000 euros HT toutes reconductions comprises. La mission du présent accord-cadre porte sur les prestations foncières afférentes au domaine exclusif des géomètres-experts. A ce titre, pour pouvoir assurer lesdites prestations, le Titulaire devra être inscrit à l'ordre…",
+   "status": "",
+   "first_seen": "2026-11-16T09:32:32+01:00",
+   "analysis": {
+    "relevant": false,
+    "segment": "cartographie",
+    "title_fr": "Prestations de géomètre foncières sur le périmètre de l'OIN Plaine du Var",
+    "summary": "Accord-cadre de prestations de géomètre-expert pour des missions foncières sur l'opération d'intérêt national de la Plaine du Var, France, plafonné à 200 000 euros HT.",
+    "why": "",
+    "industries": [
+     "foncier"
+    ],
+    "fit": "faible"
+   },
+   "analysed_at": "2026-11-16T09:32:32+01:00",
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "ted:793783-2026",
+   "source": "ted",
+   "kind": "award",
+   "notice": "793783-2026",
+   "notice_type": "can-standard",
+   "title": "Marijampolės savivaldybės teritorijoje esančių, nuosavybės teise priklausančių statinių - kelių (gatvių), įvairios paskirties aikštelių kadastrinių matavimų (bylų parengimo ar tikslinimo) paslaugos",
+   "buyer": "Marijampolės savivaldybės administracija",
+   "buyer_country": "LT",
+   "published": "2026-11-16",
+   "url": "https://ted.europa.eu/fr/notice/-/detail/793783-2026",
+   "cpv_label": "Services cadastraux",
+   "countries": [
+    "LT"
+   ],
+   "cpv": [
+    "71354300"
+   ],
+   "deadline": "",
+   "value": 41322.31,
+   "currency": "EUR",
+   "winners": [
+    "Valstybės įmonė Žemės ūkio duomenų centras"
+   ],
+   "description": "Pirkimo objektas – Marijampolės savivaldybės teritorijoje esančių, nuosavybės teise priklausančių statinių – kelių (gatvių), įvairios paskirties aikštelių kadastrinių matavimų (bylų parengimo ar tikslinimo) paslaugos (toliau – Paslaugos). Pirkimo objekto BVPŽ kodas: 71354300-7 Kadastrinio tyrinėjimo paslaugos. Perkamų Paslaugų aprašymas, reikalavimai, sąlygos, terminai ir kt. nustatyti 5 pirkimo sąlygų priede pateiktoje techninėje specifikacijoje (toliau – Techninė specifikacija), 4 pirkimo sąlygų priede pateiktame sutarties projekte ir 1 pirkimo sąlygų priede pateiktoje pasiūlymo formoje.",
+   "status": "",
+   "first_seen": "2026-11-16T09:32:32+01:00",
+   "analysis": {
+    "relevant": false,
+    "segment": "cartographie",
+    "title_fr": "Mesures cadastrales de voiries et places à Marijampolė",
+    "summary": "Prestations de mesures cadastrales (établissement ou mise à jour de dossiers) pour des routes et places appartenant à la municipalité de Marijampolė, Lituanie.",
+    "why": "",
+    "industries": [
+     "foncier"
+    ],
+    "fit": "faible"
+   },
+   "analysed_at": "2026-11-16T09:32:32+01:00",
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "ted:793392-2026",
+   "source": "ted",
+   "kind": "open",
+   "notice": "793392-2026",
+   "notice_type": "cn-standard",
+   "title": "Dostawa i wdrożenie zaawansowanej platformy do kompleksowego zarządzania siecią wodociągową w Łowiczu",
+   "buyer": "ZAKŁAD USŁUG KOMUNALNYCH W ŁOWICZU",
+   "buyer_country": "PL",
+   "published": "2026-11-16",
+   "url": "https://ted.europa.eu/fr/notice/-/detail/793392-2026",
+   "cpv_label": "Logiciels et systèmes d'information",
+   "countries": [
+    "PL"
+   ],
+   "cpv": [
+    "48000000",
+    "72263000",
+    "72227000",
+    "38221000"
+   ],
+   "deadline": "2026-12-18",
+   "value": null,
+   "currency": "",
+   "winners": [],
+   "description": "Przedmiotem zamówienia jest dostawa i wdrożenie zintegrowanej Platformy do monitorowania, analizy i zarządzania siecią wodociągową miasta Łowicz, która zapewni bardziej wydajne gospodarowanie wodą, ograniczenie strat wody oraz usprawnienie eksploatacji, planowania rozwoju i obsługi odbiorców. zgodnie z wymaganiami opisanymi w Opisie Przedmiotu Zamówienia",
+   "status": "",
+   "first_seen": "2026-11-16T09:32:32+01:00",
+   "analysis": {
+    "relevant": false,
+    "segment": "cartographie",
+    "title_fr": "Plateforme de gestion du réseau d'eau potable de Łowicz",
+    "summary": "Fourniture et déploiement d'une plateforme logicielle de surveillance et gestion du réseau d'eau potable de la ville de Łowicz en Pologne.",
+    "why": "",
+    "industries": [
+     "infrastructures"
+    ],
+    "fit": "faible"
+   },
+   "analysed_at": "2026-11-16T09:32:32+01:00",
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "ted:792880-2026",
+   "source": "ted",
+   "kind": "open",
+   "notice": "792880-2026",
+   "notice_type": "cn-standard",
+   "title": "Tekniska konsulttjänster GIS och MBK",
+   "buyer": "TRANÅS KOMMUN",
+   "buyer_country": "SE",
+   "published": "2026-11-16",
+   "url": "https://ted.europa.eu/fr/notice/-/detail/792880-2026",
+   "cpv_label": "Services d'architecture, services de construction, services d'ingénierie et services d'inspection",
+   "countries": [
+    "SE"
+   ],
+   "cpv": [
+    "71000000",
+    "71250000",
+    "71354000",
+    "71354100",
+    "71353000",
+    "71350000",
+    "71355000",
+    "72220000",
+    "71222100",
+    "71222200",
+    "60445000"
+   ],
+   "deadline": "2026-12-18",
+   "value": 10000000.0,
+   "currency": "SEK",
+   "winners": [],
+   "description": "Upphandlingen avser tekniska konsulttjänster avseende GIS och MBK.",
+   "status": "",
+   "first_seen": "2026-11-16T09:32:32+01:00",
+   "analysis": {
+    "relevant": false,
+    "segment": "cartographie",
+    "title_fr": "Services de conseil technique en SIG et mesures topographiques",
+    "summary": "La commune suédoise de Tranås recherche des prestations de conseil technique en SIG et en mesures, calculs et cartographie (MBK) à l'échelle locale.",
+    "why": "",
+    "industries": [
+     "foncier"
+    ],
+    "fit": "faible"
+   },
+   "analysed_at": "2026-11-16T09:32:32+01:00",
+   "analysis_model": "claude_cli:sonnet"
+  },
   {
    "id": "ted:792755-2026",
    "source": "ted",
