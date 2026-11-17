@@ -1,91 +1,620 @@
 {
  "fx": {
-  "date": "2026-11-13",
+  "date": "2026-11-16",
   "rates": {
-   "USD": 1.1052,
-   "JPY": 176.83,
-   "CZK": 24.424,
-   "DKK": 7.4756,
-   "GBP": 0.83559,
-   "HUF": 365.6,
-   "PLN": 4.4113,
-   "RON": 5.3494,
-   "SEK": 11.1075,
-   "CHF": 0.9266,
-   "ISK": 136.6,
-   "NOK": 10.5695,
-   "TRY": 55.6667,
-   "AUD": 1.6288,
-   "BRL": 6.2595,
-   "CAD": 1.5758,
-   "CNY": 7.3738,
-   "HKD": 8.6714,
-   "IDR": 20163.71,
-   "ILS": 3.5485,
-   "INR": 104.1575,
-   "KRW": 1477.8,
-   "MXN": 20.5491,
-   "MYR": 4.5175,
-   "NZD": 1.9978,
-   "PHP": 70.526,
-   "SGD": 1.4236,
-   "THB": 37.483,
-   "ZAR": 18.7481
+   "USD": 1.1014,
+   "JPY": 175.78,
+   "CZK": 24.428,
+   "DKK": 7.4752,
+   "GBP": 0.8345,
+   "HUF": 364.35,
+   "PLN": 4.403,
+   "RON": 5.3493,
+   "SEK": 11.095,
+   "CHF": 0.9244,
+   "ISK": 136.8,
+   "NOK": 10.574,
+   "TRY": 55.502,
+   "AUD": 1.6301,
+   "BRL": 6.2838,
+   "CAD": 1.5734,
+   "CNY": 7.3425,
+   "HKD": 8.6427,
+   "IDR": 20110.0,
+   "ILS": 3.5509,
+   "INR": 103.452,
+   "KRW": 1470.23,
+   "MXN": 20.4429,
+   "MYR": 4.5102,
+   "NZD": 1.9971,
+   "PHP": 70.439,
+   "SGD": 1.4195,
+   "THB": 37.326,
+   "ZAR": 18.661
   }
  },
- "updated_at": "2026-11-16T09:32:32+01:00",
+ "updated_at": "2026-11-17T08:25:10+01:00",
  "sources": [
   {
    "name": "TED",
    "url": "https://api.ted.europa.eu/v3/notices/search",
    "ok": true,
    "error": "",
-   "fetched": 36,
-   "kept": 31,
+   "fetched": 43,
+   "kept": 34,
    "via": "tender"
   },
   {
    "name": "Find a Tender",
    "url": "https://www.find-tender.service.gov.uk/api/1.0/ocdsReleasePackages",
-   "ok": true,
-   "error": "",
-   "fetched": 13,
+   "ok": false,
+   "error": "HTTP 502 : <html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n</body>\r\n</html>\r\n",
+   "fetched": 7,
    "kept": 0,
    "via": "tender"
   }
  ],
  "last_run": {
-  "new": 14,
+  "new": 11,
   "sources": [
    {
     "name": "TED",
     "url": "https://api.ted.europa.eu/v3/notices/search",
     "ok": true,
     "error": "",
-    "fetched": 36,
-    "kept": 31,
+    "fetched": 43,
+    "kept": 34,
     "via": "tender"
    },
    {
     "name": "Find a Tender",
     "url": "https://www.find-tender.service.gov.uk/api/1.0/ocdsReleasePackages",
-    "ok": true,
-    "error": "",
-    "fetched": 13,
+    "ok": false,
+    "error": "HTTP 502 : <html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n</body>\r\n</html>\r\n",
+    "fetched": 7,
     "kept": 0,
     "via": "tender"
    }
   ],
   "analysis": {
-   "analysed": 14,
-   "relevant": 1,
+   "analysed": 11,
+   "relevant": 6,
    "error": "",
-   "cost_usd": 0.1234
+   "cost_usd": 0.2217
   },
   "pruned": 0
  },
- "fts_synced_until": "2026-11-16T08:00:00",
+ "fts_synced_until": "2026-11-16T07:00:00",
  "tenders": [
+  {
+   "id": "ted:800008-2026",
+   "source": "ted",
+   "kind": "open",
+   "notice": "800008-2026",
+   "notice_type": "cn-standard",
+   "title": "Dobava naprav za obdobje štirih let",
+   "buyer": "PLINOVODI, Družba za upravljanje s prenosnim sistemom, d.o.o.",
+   "buyer_country": "SI",
+   "published": "2026-11-17",
+   "url": "https://ted.europa.eu/fr/notice/-/detail/800008-2026",
+   "cpv_label": "Équipements de laboratoire, d'optique et de précision (excepté les lunettes)",
+   "countries": [
+    "SI"
+   ],
+   "cpv": [
+    "38000000",
+    "38431100",
+    "38432100",
+    "38433200",
+    "35113000",
+    "38300000",
+    "38424000",
+    "38430000",
+    "38570000",
+    "38636000",
+    "42941000",
+    "38341300",
+    "38540000",
+    "38500000",
+    "38650000",
+    "38651600",
+    "38412000",
+    "35125100",
+    "35613000",
+    "38520000",
+    "38112100",
+    "48320000",
+    "48328000",
+    "48321000",
+    "48326000",
+    "44510000",
+    "42652000",
+    "43830000",
+    "43328100",
+    "31521300",
+    "31521330",
+    "43800000",
+    "39151200",
+    "42122000",
+    "42962500",
+    "30174000",
+    "30232100",
+    "30170000",
+    "30192800",
+    "30199760",
+    "35121500",
+    "16311000",
+    "16160000",
+    "42122180",
+    "30190000",
+    "30191000",
+    "44423300",
+    "34911100",
+    "39151100",
+    "44619500",
+    "44612100",
+    "42410000",
+    "42414100",
+    "42418500",
+    "39173000",
+    "42415200",
+    "42415210",
+    "38296000"
+   ],
+   "deadline": "2026-12-17",
+   "value": 550000.0,
+   "currency": "EUR",
+   "winners": [],
+   "description": "Predmet javnega naročila je vzpostavitev dinamičnega nabavnega sistema na podlagi 49. člena ZJN-3 za dobavo naprav za obdobje štirih let. V okviru naročila bomo naročali predvsem naslednje kategorije blaga: Kategorija 1 – Merilna, detekcijska in elektronska oprema za zmanjševanje emisij metana, Kategorija 2 – Orodje, delavniška, vzdrževalna in druga oprema, Kategorija 3 – Dvižna, manipulativna in skladiščna oprema.",
+   "status": "",
+   "first_seen": "2026-11-17T08:25:10+01:00",
+   "analysis": {
+    "relevant": false,
+    "segment": "environnement_climat",
+    "title_fr": "Fourniture d'équipements de mesure pour réseau de gaz",
+    "summary": "Mise en place d'un système d'acquisition dynamique pour la fourniture d'équipements de mesure, détection et manutention liés à la réduction des émissions de méthane, en Slovénie, sur quatre ans.",
+    "why": "",
+    "industries": [
+     "ogme"
+    ],
+    "fit": "faible"
+   },
+   "analysed_at": "2026-11-17T08:25:10+01:00",
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "ted:799690-2026",
+   "source": "ted",
+   "kind": "open",
+   "notice": "799690-2026",
+   "notice_type": "cn-standard",
+   "title": "Analysverktyg och datatjänster för ombudsetablering och säljplanering",
+   "buyer": "AB Svenska Spel",
+   "buyer_country": "SE",
+   "published": "2026-11-17",
+   "url": "https://ted.europa.eu/fr/notice/-/detail/799690-2026",
+   "cpv_label": "Services d'analyse de données",
+   "countries": [
+    "SE"
+   ],
+   "cpv": [
+    "72316000",
+    "38221000",
+    "72319000"
+   ],
+   "deadline": "2026-12-16",
+   "value": 3200000.0,
+   "currency": "SEK",
+   "winners": [],
+   "description": "Upphandlingen avser en samlad tjänst med analysverktyg och datatjänster för Svenska Spels ombudsetablering och säljplanering i Sverige. Syftet är att ge Svenska Spel ett aktuellt och tillförlitligt beslutsunderlag för att utveckla ombudsnätet, bedöma befintliga och potentiella ombudslägen samt planera säljdistrikt och återkommande ombudsbesök.",
+   "status": "",
+   "first_seen": "2026-11-17T08:25:10+01:00",
+   "analysis": {
+    "relevant": false,
+    "segment": "cartographie",
+    "title_fr": "Outils d'analyse de données pour l'implantation de points de vente",
+    "summary": "Service d'analyse de données et d'outils pour planifier l'implantation des agents et l'organisation des ventes de Svenska Spel en Suède.",
+    "why": "",
+    "industries": [],
+    "fit": "faible"
+   },
+   "analysed_at": "2026-11-17T08:25:10+01:00",
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "ted:799436-2026",
+   "source": "ted",
+   "kind": "award",
+   "notice": "799436-2026",
+   "notice_type": "veat",
+   "title": "Beauftragung einer GIS-Schnittstelle zur Anbindung-Weiterentwicklung des bestehenden Geoportals",
+   "buyer": "Landratsamt Ostalbkreis",
+   "buyer_country": "DE",
+   "published": "2026-11-17",
+   "url": "https://ted.europa.eu/fr/notice/-/detail/799436-2026",
+   "cpv_label": "Systèmes d'information géographique (GIS ou équivalent)",
+   "countries": [
+    "DE"
+   ],
+   "cpv": [
+    "38221000"
+   ],
+   "deadline": "",
+   "value": 408200.0,
+   "currency": "EUR",
+   "winners": [],
+   "description": "Gegenstand der Beschaffung ist die Beauftragung einer GIS-Schnittstelle zur Anbindung bzw. Weiterentwicklung des bestehenden Geoportals.",
+   "status": "",
+   "first_seen": "2026-11-17T08:25:10+01:00",
+   "analysis": {
+    "relevant": true,
+    "segment": "cartographie",
+    "title_fr": "Interface SIG pour le géoportail du Landratsamt Ostalbkreis",
+    "summary": "Mise en place d'une interface SIG pour relier et développer le géoportail existant du Landratsamt Ostalbkreis, Allemagne.",
+    "why": "Marché d'intégration SIG, sans achat de données satellitaires Airbus.",
+    "industries": [
+     "infrastructures"
+    ],
+    "fit": "faible"
+   },
+   "analysed_at": "2026-11-17T08:25:10+01:00",
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "ted:798847-2026",
+   "source": "ted",
+   "kind": "open",
+   "notice": "798847-2026",
+   "notice_type": "cn-standard",
+   "title": "Achiziție de Servicii de înregistrare sistematică în Sistemul Integrat de Cadastru și Carte Funciară a imobilelor din cadrul UAT Crevedia.",
+   "buyer": "COMUNA CREVEDIA",
+   "buyer_country": "RO",
+   "published": "2026-11-17",
+   "url": "https://ted.europa.eu/fr/notice/-/detail/798847-2026",
+   "cpv_label": "Services cadastraux",
+   "countries": [
+    "RO"
+   ],
+   "cpv": [
+    "71354300",
+    "38221000",
+    "48000000"
+   ],
+   "deadline": "2026-12-22",
+   "value": 9150000.0,
+   "currency": "RON",
+   "winners": [],
+   "description": "Achiziție de Servicii de înregistrare sistematică în Sistemul Integrat de Cadastru și Carte Funciară a imobilelor din cadrul UAT Crevedia, în conformitate cu Caietul de sarcini. Etapele principale de prestare a serviciilor de înregistrare sistematică constau în: organizarea lucrărilor sistematice de cadastru, recunoașterea terenului, identificarea limitelor imobilelor, stabilirea limitelor imobilelor situate în extravilan, pregătirea fișei de date a imobilului, identificarea deținătorilor și colectarea actelor, întocmirea documentelor tehnice ale cadastrului, publicarea documentelor tehnice…",
+   "status": "",
+   "first_seen": "2026-11-17T08:25:10+01:00",
+   "analysis": {
+    "relevant": false,
+    "segment": "cartographie",
+    "title_fr": "Enregistrement systématique au cadastre - commune de Crevedia",
+    "summary": "Services d'enregistrement systématique des immeubles dans le système intégré de cadastre et de livre foncier de la commune de Crevedia, Roumanie.",
+    "why": "",
+    "industries": [
+     "foncier"
+    ],
+    "fit": "faible"
+   },
+   "analysed_at": "2026-11-17T08:25:10+01:00",
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "ted:798247-2026",
+   "source": "ted",
+   "kind": "open",
+   "notice": "798247-2026",
+   "notice_type": "cn-standard",
+   "title": "la réalisation d’une étude scientifique multidisciplinaire visant à modéliser temporellement et dans l’espace la probabilité de départ de feux de végétation en Belgique et à formuler des recommandations liées à ces risques",
+   "buyer": "SPF Santé Publique Sécurité de la Chaîne Alimentaire et Environnement",
+   "buyer_country": "BE",
+   "published": "2026-11-17",
+   "url": "https://ted.europa.eu/fr/notice/-/detail/798247-2026",
+   "cpv_label": "Services de recherche",
+   "countries": [
+    "BE"
+   ],
+   "cpv": [
+    "73110000",
+    "71354100",
+    "72316000",
+    "90712400",
+    "90713000"
+   ],
+   "deadline": "2026-11-23",
+   "value": null,
+   "currency": "",
+   "winners": [],
+   "description": "Au travers de modèles aussi robustes que possible et des cartes correspondantes, le présent marché vise à renforcer la compréhension de l’aléa constitué par les feux de végétation et à appréhender son évolution tant temporelle que spatiale.",
+   "status": "",
+   "first_seen": "2026-11-17T08:25:10+01:00",
+   "analysis": {
+    "relevant": true,
+    "segment": "environnement_climat",
+    "title_fr": "Étude de modélisation du risque de feux de végétation en Belgique",
+    "summary": "Étude scientifique multidisciplinaire visant à modéliser dans le temps et l'espace la probabilité de départ de feux de végétation en Belgique et à formuler des recommandations.",
+    "why": "Modélisation spatiale d'un risque environnemental, usage possible de données satellitaires Airbus.",
+    "industries": [
+     "foret_environnement"
+    ],
+    "fit": "moyenne"
+   },
+   "analysed_at": "2026-11-17T08:25:10+01:00",
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "ted:798066-2026",
+   "source": "ted",
+   "kind": "open",
+   "notice": "798066-2026",
+   "notice_type": "cn-standard",
+   "title": "Tekniska konsulttjänster GIS och MBK",
+   "buyer": "TRANÅS KOMMUN",
+   "buyer_country": "SE",
+   "published": "2026-11-17",
+   "url": "https://ted.europa.eu/fr/notice/-/detail/798066-2026",
+   "cpv_label": "Services d'architecture, services de construction, services d'ingénierie et services d'inspection",
+   "countries": [
+    "SE"
+   ],
+   "cpv": [
+    "71000000",
+    "71250000",
+    "71354000",
+    "71354100",
+    "71353000",
+    "71350000",
+    "71355000",
+    "72220000",
+    "71222100",
+    "71222200",
+    "60445000"
+   ],
+   "deadline": "2026-12-18",
+   "value": 10000000.0,
+   "currency": "SEK",
+   "winners": [],
+   "description": "Upphandlingen avser tekniska konsulttjänster avseende GIS och MBK.",
+   "status": "",
+   "first_seen": "2026-11-17T08:25:10+01:00",
+   "analysis": {
+    "relevant": true,
+    "segment": "cartographie",
+    "title_fr": "Services de conseil techniques en SIG et topographie",
+    "summary": "Prestations de conseil technique en système d'information géographique et mesure-cartographie (MBK) pour la commune de Tranås, Suède.",
+    "why": "Marché de conseil SIG municipal, sans achat direct de données satellitaires Airbus.",
+    "industries": [
+     "infrastructures",
+     "foncier"
+    ],
+    "fit": "faible"
+   },
+   "analysed_at": "2026-11-17T08:25:10+01:00",
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "ted:797980-2026",
+   "source": "ted",
+   "kind": "open",
+   "notice": "797980-2026",
+   "notice_type": "cn-standard",
+   "title": "Copernicus Land Monitoring Service - Operation of global bio-geophysical terrestrial variables",
+   "buyer": "European Commission, DG JRC - Joint Research Centre",
+   "buyer_country": "IT",
+   "published": "2026-11-17",
+   "url": "https://ted.europa.eu/fr/notice/-/detail/797980-2026",
+   "cpv_label": "Services de fourniture de données",
+   "countries": [
+    "IT"
+   ],
+   "cpv": [
+    "72319000",
+    "71354100",
+    "72310000",
+    "72316000"
+   ],
+   "deadline": "2026-12-21",
+   "value": 7000000.0,
+   "currency": "EUR",
+   "winners": [],
+   "description": "Procurement under the Copernicus Programme Reg. (EU)2021/696 and the Delegation Agreement DEFIS-JRC on the implementation of the Copernicus Land Service Global component for the routine generation of Sentinel and EO (earth observation) based biophysical variables in the field of vegetation and soil.",
+   "status": "",
+   "first_seen": "2026-11-17T08:25:10+01:00",
+   "analysis": {
+    "relevant": true,
+    "segment": "environnement_climat",
+    "title_fr": "Service Copernicus de surveillance des terres - variables bio-géophysiques",
+    "summary": "Génération routinière de variables biophysiques (végétation, sols) à partir des satellites Sentinel et données d'observation de la Terre, pour le service Copernicus Land Monitoring de la Commission européenne.",
+    "why": "Besoin directement couvert par l'offre de données et services Copernicus/observation de la Terre d'Airbus.",
+    "industries": [
+     "foret_environnement",
+     "agriculture"
+    ],
+    "fit": "forte"
+   },
+   "analysed_at": "2026-11-17T08:25:10+01:00",
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "ted:797506-2026",
+   "source": "ted",
+   "kind": "open",
+   "notice": "797506-2026",
+   "notice_type": "cn-standard",
+   "title": "Budowa drogi dojazdowej z osiedla Kliny do stacji SKA w Opatkowicach - zamówienie w formule zaprojektuj i wybuduj",
+   "buyer": "Zarząd Inwestycji Miejskich w Krakowie",
+   "buyer_country": "PL",
+   "published": "2026-11-17",
+   "url": "https://ted.europa.eu/fr/notice/-/detail/797506-2026",
+   "cpv_label": "Travaux de construction de routes",
+   "countries": [
+    "PL"
+   ],
+   "cpv": [
+    "45233120",
+    "45233140",
+    "45233130",
+    "45233220",
+    "45233252",
+    "71320000",
+    "71322000",
+    "45100000",
+    "45111200",
+    "45233260",
+    "71500000",
+    "71354000",
+    "45233290",
+    "45232150",
+    "45230000",
+    "45233000"
+   ],
+   "deadline": "2026-12-22",
+   "value": null,
+   "currency": "",
+   "winners": [],
+   "description": "1. Przedmiotem zamówienia jest opracowanie dokumentacji projektowej oraz wykonanie robót budowlanych obejmujących budowę drogi dojazdowej z osiedla Kliny do stacji SKA w Opatkowicach (zwany dalej „Przedmiotem zamówienia”),w podziale na zadania: 1) Zadanie 1 (realizowane przez Zamawiającego 1):budowa drogi dojazdowej z osiedla Kliny do stacji SKA w Opatkowicach wraz z niezbędną infrastrukturą techniczną, miejscami postojowymi i pętlą autobusową. 2) Zadanie 2 (realizowane przez Zamawiającego 2): budowa magistrali oraz sieci wodociągowej w ramach zadania pn. „Budowa drogi dojazdowej z osiedla…",
+   "status": "",
+   "first_seen": "2026-11-17T08:25:10+01:00",
+   "analysis": {
+    "relevant": false,
+    "segment": "cartographie",
+    "title_fr": "Construction d'une route d'accès et réseau d'eau à Cracovie",
+    "summary": "Conception et réalisation d'une route de desserte vers une gare SKA à Opatkowice, incluant infrastructures, places de parking et réseau d'eau, en Pologne.",
+    "why": "",
+    "industries": [
+     "infrastructures"
+    ],
+    "fit": "faible"
+   },
+   "analysed_at": "2026-11-17T08:25:10+01:00",
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "ted:797188-2026",
+   "source": "ted",
+   "kind": "open",
+   "notice": "797188-2026",
+   "notice_type": "cn-standard",
+   "title": "Fiabilisation de la cartographie des ouvrages enterrés existants - Groupement de commandes",
+   "buyer": "Territoire d'énergie Mayenne",
+   "buyer_country": "FR",
+   "published": "2026-11-17",
+   "url": "https://ted.europa.eu/fr/notice/-/detail/797188-2026",
+   "cpv_label": "Services topographiques",
+   "countries": [
+    "FR"
+   ],
+   "cpv": [
+    "71351810",
+    "71354100"
+   ],
+   "deadline": "2026-12-28",
+   "value": 400000.0,
+   "currency": "EUR",
+   "winners": [],
+   "description": "Il s'agit d'un groupement de commandes composé des acheteurs suivants : - Le syndicat Territoire d'énergie Mayenne (TEM) - Pouvoir adjudicateur - Coordonnateur - Le syndicat Territoire d'énergie Loire-Atlantique (TE44) - Le syndicat départemental d'énergie et d'équipement de la Vendée (SYDEV) Le marché concerne la fiabilisation de la cartographie des ouvrages enterrés existants pour les collectivités déjà présentes dans les systèmes d'information géographique (SIG) des 3 syndicats. Les prestations incluent : le contrôle par échantillonnage de la qualité des données existantes, la…",
+   "status": "",
+   "first_seen": "2026-11-17T08:25:10+01:00",
+   "analysis": {
+    "relevant": false,
+    "segment": "cartographie",
+    "title_fr": "Fiabilisation de la cartographie des réseaux enterrés",
+    "summary": "Contrôle qualité et fiabilisation des données cartographiques des ouvrages enterrés existants pour trois syndicats d'énergie français (SIG).",
+    "why": "Relevé et contrôle terrain de réseaux enterrés, hors offre satellitaire d'Airbus.",
+    "industries": [
+     "infrastructures"
+    ],
+    "fit": "faible"
+   },
+   "analysed_at": "2026-11-17T08:25:10+01:00",
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "ted:796991-2026",
+   "source": "ted",
+   "kind": "open",
+   "notice": "796991-2026",
+   "notice_type": "cn-standard",
+   "title": "Nabava usluge razvoja i implementacije geografskog informacijskog sustava (GIS platforme)",
+   "buyer": "HCPI — IS",
+   "buyer_country": "HR",
+   "published": "2026-11-17",
+   "url": "https://ted.europa.eu/fr/notice/-/detail/796991-2026",
+   "cpv_label": "Services de programmation de systèmes et de logiciels utilitaires",
+   "countries": [
+    "HR"
+   ],
+   "cpv": [
+    "72211000",
+    "38221000"
+   ],
+   "deadline": "2026-12-01",
+   "value": 313500.0,
+   "currency": "EUR",
+   "winners": [],
+   "description": "Predmet nabave je razvoj, implementacija, konfiguracija, integracija, testiranje i stavljanje u rad geografskog informacijskog sustava (GIS platforme) za potrebe HCPI-IS-a. Nabava obuhvaća web i mobilno rješenje s mogućnošću izvanmrežnog rada, upravljanje i obradu prostornih podataka, obrasce, izvještaje i nadzorne ploče, integracije s vanjskim sustavima, migraciju podataka, edukaciju korisnika, dokumentaciju te otklanjanje nedostataka tijekom jamstvenog roka.",
+   "status": "",
+   "first_seen": "2026-11-17T08:25:10+01:00",
+   "analysis": {
+    "relevant": true,
+    "segment": "cartographie",
+    "title_fr": "Développement d'une plateforme SIG (GIS) pour HCPI-IS",
+    "summary": "Développement, implémentation, intégration et maintenance d'une plateforme de système d'information géographique (web et mobile) pour les besoins de HCPI-IS, Croatie.",
+    "why": "Marché de plateforme SIG, signal d'activité géospatiale publique mais sans achat de données satellitaires.",
+    "industries": [
+     "infrastructures"
+    ],
+    "fit": "faible"
+   },
+   "analysed_at": "2026-11-17T08:25:10+01:00",
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "ted:796684-2026",
+   "source": "ted",
+   "kind": "award",
+   "notice": "796684-2026",
+   "notice_type": "can-standard",
+   "title": "Raamovereenkomst voor FME-licenties, geven van opleidingen voor FME, het aanbieden van consultancy voor de infrastructuur met FME en het aanbieden van consultancy voor het schrijven van scripts in een FME-infrastructuur",
+   "buyer": "Provincie Oost-Vlaanderen",
+   "buyer_country": "BE",
+   "published": "2026-11-17",
+   "url": "https://ted.europa.eu/fr/notice/-/detail/796684-2026",
+   "cpv_label": "Logiciels et systèmes d'information",
+   "countries": [
+    "BE"
+   ],
+   "cpv": [
+    "48000000",
+    "38221000",
+    "72260000"
+   ],
+   "deadline": "",
+   "value": 20000000.0,
+   "currency": "EUR",
+   "winners": [
+    "Nordend",
+    "G.I.M. - GEOGRAPHIC INFORMATION MANAGEMENT"
+   ],
+   "description": "DataWISE staat voor 'Datagedreven Werken Is Samen Efficiënter' en heeft als doel steden en gemeenten te helpen om slimmer en efficiënter met data te werken door gegevens beter te bundelen en toegankelijk te maken. Doelstellingen: Het opzetten van een gedeelde infrastructuur die het mogelijk maakt om gegevens te verzamelen, controleren, hergebruiken en beschikbaar te stellen op basis van bewezen ETL-technologie (Extract, Transform, Load). Het project omvat het uitwerken en implementeren van tien generieke gebruikstoepassingen binnen deze gedeelde infrastructuur. Drie werden reeds bepaald…",
+   "status": "",
+   "first_seen": "2026-11-17T08:25:10+01:00",
+   "analysis": {
+    "relevant": true,
+    "segment": "cartographie",
+    "title_fr": "Accord-cadre licences FME et conseil SIG pour les communes",
+    "summary": "Licences FME, formations et consultance pour une infrastructure de données partagée (ETL) destinée aux villes et communes de Flandre orientale, Belgique.",
+    "why": "Attributaire G.I.M., acteur SIG concurrent ; signal de marché data/SIG municipal sans données satellitaires.",
+    "industries": [
+     "infrastructures"
+    ],
+    "fit": "faible"
+   },
+   "analysed_at": "2026-11-17T08:25:10+01:00",
+   "analysis_model": "claude_cli:sonnet"
+  },
   {
    "id": "ted:795849-2026",
    "source": "ted",
