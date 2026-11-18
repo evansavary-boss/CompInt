@@ -1,91 +1,512 @@
 {
  "fx": {
-  "date": "2026-11-16",
+  "date": "2026-11-17",
   "rates": {
-   "USD": 1.1014,
-   "JPY": 175.78,
-   "CZK": 24.428,
-   "DKK": 7.4752,
-   "GBP": 0.8345,
-   "HUF": 364.35,
-   "PLN": 4.403,
-   "RON": 5.3493,
-   "SEK": 11.095,
-   "CHF": 0.9244,
-   "ISK": 136.8,
-   "NOK": 10.574,
-   "TRY": 55.502,
-   "AUD": 1.6301,
-   "BRL": 6.2838,
-   "CAD": 1.5734,
-   "CNY": 7.3425,
-   "HKD": 8.6427,
-   "IDR": 20110.0,
-   "ILS": 3.5509,
-   "INR": 103.452,
-   "KRW": 1470.23,
-   "MXN": 20.4429,
-   "MYR": 4.5102,
-   "NZD": 1.9971,
-   "PHP": 70.439,
-   "SGD": 1.4195,
-   "THB": 37.326,
-   "ZAR": 18.661
+   "USD": 1.0989,
+   "JPY": 175.05,
+   "CZK": 24.387,
+   "DKK": 7.4749,
+   "GBP": 0.83305,
+   "HUF": 364.93,
+   "PLN": 4.4038,
+   "RON": 5.3482,
+   "SEK": 11.11,
+   "CHF": 0.9233,
+   "ISK": 137.0,
+   "NOK": 10.5755,
+   "TRY": 55.3987,
+   "AUD": 1.6316,
+   "BRL": 6.3539,
+   "CAD": 1.5704,
+   "CNY": 7.3254,
+   "HKD": 8.6221,
+   "IDR": 20077.73,
+   "ILS": 3.5674,
+   "INR": 102.72,
+   "KRW": 1468.36,
+   "MXN": 20.2895,
+   "MYR": 4.4983,
+   "NZD": 1.9985,
+   "PHP": 69.974,
+   "SGD": 1.4163,
+   "THB": 37.187,
+   "ZAR": 18.6073
   }
  },
- "updated_at": "2026-11-17T08:25:10+01:00",
+ "updated_at": "2026-11-18T08:23:31+01:00",
  "sources": [
   {
    "name": "TED",
    "url": "https://api.ted.europa.eu/v3/notices/search",
    "ok": true,
    "error": "",
-   "fetched": 43,
-   "kept": 34,
+   "fetched": 38,
+   "kept": 32,
    "via": "tender"
   },
   {
    "name": "Find a Tender",
    "url": "https://www.find-tender.service.gov.uk/api/1.0/ocdsReleasePackages",
-   "ok": false,
-   "error": "HTTP 502 : <html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n</body>\r\n</html>\r\n",
-   "fetched": 7,
-   "kept": 0,
+   "ok": true,
+   "error": "",
+   "fetched": 814,
+   "kept": 8,
    "via": "tender"
   }
  ],
  "last_run": {
-  "new": 11,
+  "new": 14,
   "sources": [
    {
     "name": "TED",
     "url": "https://api.ted.europa.eu/v3/notices/search",
     "ok": true,
     "error": "",
-    "fetched": 43,
-    "kept": 34,
+    "fetched": 38,
+    "kept": 32,
     "via": "tender"
    },
    {
     "name": "Find a Tender",
     "url": "https://www.find-tender.service.gov.uk/api/1.0/ocdsReleasePackages",
-    "ok": false,
-    "error": "HTTP 502 : <html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n</body>\r\n</html>\r\n",
-    "fetched": 7,
-    "kept": 0,
+    "ok": true,
+    "error": "",
+    "fetched": 814,
+    "kept": 8,
     "via": "tender"
    }
   ],
   "analysis": {
-   "analysed": 11,
-   "relevant": 6,
+   "analysed": 14,
+   "relevant": 8,
    "error": "",
-   "cost_usd": 0.2217
+   "cost_usd": 0.2221
   },
   "pruned": 0
  },
- "fts_synced_until": "2026-11-16T07:00:00",
+ "fts_synced_until": "2026-11-18T07:00:00",
  "tenders": [
+  {
+   "id": "ted:803739-2026",
+   "source": "ted",
+   "kind": "open",
+   "notice": "803739-2026",
+   "notice_type": "cn-standard",
+   "title": "Vergabe der bestehenden Geo-Informationsinfrastruktur (GIS) des Landkreises Hildesheim",
+   "buyer": "Landkreis Hildesheim",
+   "buyer_country": "DE",
+   "published": "2026-11-18",
+   "url": "https://ted.europa.eu/fr/notice/-/detail/803739-2026",
+   "cpv_label": "Systèmes d'information géographique (GIS ou équivalent)",
+   "countries": [
+    "DE"
+   ],
+   "cpv": [
+    "38221000",
+    "72263000",
+    "72317000"
+   ],
+   "deadline": "2026-11-27",
+   "value": null,
+   "currency": "",
+   "winners": [],
+   "description": "Vergabe der Migration und Cloud-Betrieb der GIS-Umgebung einschl. Esri-Softwarelizenzierung des Landkreises Hildesheim",
+   "status": "",
+   "first_seen": "2026-11-18T08:23:31+01:00",
+   "analysis": {
+    "relevant": true,
+    "segment": "cartographie",
+    "title_fr": "Migration et exploitation cloud du SIG du Landkreis Hildesheim",
+    "summary": "Le Landkreis Hildesheim externalise la migration et l'exploitation cloud de son environnement SIG, incluant les licences logicielles Esri.",
+    "why": "Marché de plateforme SIG, périphérique à l'offre Airbus mais révèle le besoin en infrastructure géomatique.",
+    "industries": [
+     "foncier",
+     "infrastructures"
+    ],
+    "fit": "faible"
+   },
+   "analysed_at": "2026-11-18T08:23:31+01:00",
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "ted:803516-2026",
+   "source": "ted",
+   "kind": "open",
+   "notice": "803516-2026",
+   "notice_type": "cn-standard",
+   "title": "Turvallisuustekniikka 2026–2030",
+   "buyer": "Liikenteenohjausyhtiö Fintraffic Oy",
+   "buyer_country": "FI",
+   "published": "2026-11-18",
+   "url": "https://ted.europa.eu/fr/notice/-/detail/803516-2026",
+   "cpv_label": "Systèmes et appareils de surveillance et de sécurité",
+   "countries": [
+    "FI"
+   ],
+   "cpv": [
+    "35120000",
+    "98395000",
+    "71354200",
+    "31682500",
+    "34928200",
+    "79417000",
+    "63100000",
+    "31351000",
+    "31625000",
+    "31625300",
+    "35125000",
+    "35125300",
+    "42961100",
+    "45312200",
+    "50800000",
+    "51611100",
+    "51900000",
+    "63120000",
+    "63121000",
+    "71356000",
+    "72253000",
+    "44521100",
+    "44521120",
+    "44521130",
+    "44522000",
+    "50000000",
+    "35121000",
+    "35123500",
+    "42961000",
+    "44421720",
+    "44520000",
+    "44521110",
+    "45310000",
+    "45312000",
+    "72253100",
+    "72253200",
+    "44421000",
+    "44421300",
+    "44421790",
+    "45259000",
+    "50610000",
+    "63121100",
+    "34711200",
+    "34711400",
+    "34741000",
+    "35613000",
+    "50211100",
+    "50211200",
+    "60444000",
+    "60445000",
+    "79961200",
+    "31100000",
+    "31127000",
+    "31130000",
+    "31160000",
+    "31400000",
+    "31440000",
+    "31682510",
+    "31682530",
+    "50532100",
+    "50532200",
+    "50532300",
+    "51111000",
+    "34928220",
+    "34928230",
+    "34928310",
+    "44212383",
+    "44221300",
+    "44221310",
+    "44310000",
+    "44312000",
+    "45000000",
+    "45233280",
+    "45421148",
+    "71318000",
+    "71321000",
+    "71325000",
+    "71327000",
+    "71356400",
+    "71621000",
+    "72130000",
+    "72224100",
+    "72224200",
+    "72241000",
+    "79700000",
+    "42965100",
+    "42965110",
+    "44619300",
+    "60161000",
+    "63520000"
+   ],
+   "deadline": "2026-12-18",
+   "value": null,
+   "currency": "",
+   "winners": [],
+   "description": "Hankinnan kohteena on turvatekniikka palveluineen koko Fintrafficin konsernille, kattaen kaikki yhtiöt ja liiketoiminnot. Hankinnan kohde muodostuu seuraavista osa-alueista: 1. Järjestelmät ja laitteet palveluineen, johon sisältyy mm. kameravalvonta, kulunvalvonta, rikosilmoitin ja varaosavarastointi 2. Lukitusratkaisut palveluineen, johon sisältyy mm. sähköinen lukitusjärjestelmä, mekaaninen lukitusjärjestelmä, hybridijärjestelmä ja varaosavarastointi 3. Kokonaispalvelu, johon sisältyy mm. järjestelmät ja laitteet palveluineen, lukitusratkaisut palveluineen ja varaosavarastointi 4…",
+   "status": "",
+   "first_seen": "2026-11-18T08:23:31+01:00",
+   "analysis": {
+    "relevant": false,
+    "segment": "defense_securite",
+    "title_fr": "Systèmes de sécurité technique pour Fintraffic",
+    "summary": "Fintraffic recherche des systèmes de sécurité (vidéosurveillance, contrôle d'accès, détection d'intrusion, serrures) pour l'ensemble de ses sociétés en Finlande, 2026-2030.",
+    "why": "Systèmes de sécurité physique sans lien avec l'imagerie ou les données géospatiales Airbus.",
+    "industries": [
+     "securite"
+    ],
+    "fit": "faible"
+   },
+   "analysed_at": "2026-11-18T08:23:31+01:00",
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "ted:803350-2026",
+   "source": "ted",
+   "kind": "open",
+   "notice": "803350-2026",
+   "notice_type": "cn-standard",
+   "title": "KM fasorfenntartási, kaszálási feladatok ellát.",
+   "buyer": "Budapest Főváros II. Kerületi Önkormányzat",
+   "buyer_country": "HU",
+   "published": "2026-11-18",
+   "url": "https://ted.europa.eu/fr/notice/-/detail/803350-2026",
+   "cpv_label": "Réalisation et entretien d'espaces verts",
+   "countries": [
+    "HU"
+   ],
+   "cpv": [
+    "77310000",
+    "71354300",
+    "43325000",
+    "45112711",
+    "45236250",
+    "77300000",
+    "77313000",
+    "77314100",
+    "77315000",
+    "90610000"
+   ],
+   "deadline": "2026-11-23",
+   "value": 1500000000.0,
+   "currency": "HUF",
+   "winners": [],
+   "description": "Keretmegállapodás keretében Ajánlatkérő részére Budapest Főváros II. kerület közigazgatási területén belül fasorfenntartási, kaszálási feladatok ellátása. Karakterkorlátra tekintettel a VI.3) pont (BT-300) folytatása: 11) Ajánlatkérő - a 321/2015. (X.30.) Korm. rendelet 30. § (4) bekezdése alapján - felhívja ajánlattevők figyelmét, hogy a felhívásban rögzített valamennyi gazdasági és pénzügyi (a P/1. mennyiségében, a P/2. alkalmassági követelmény tárgyában tekintendő eltérőnek), műszaki (az M/1.1. a), b), c), d), e), f), g), h) és i) pontok, M/1.2., valamint M/2.1., M/2.2., M/2.3…",
+   "status": "",
+   "first_seen": "2026-11-18T08:23:31+01:00",
+   "analysis": {
+    "relevant": false,
+    "segment": "environnement_climat",
+    "title_fr": "Entretien des alignements d'arbres et fauchage à Budapest",
+    "summary": "Accord-cadre pour l'entretien des alignements d'arbres et le fauchage sur le territoire du 2e arrondissement de Budapest.",
+    "why": "",
+    "industries": [],
+    "fit": "faible"
+   },
+   "analysed_at": "2026-11-18T08:23:31+01:00",
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "ted:802560-2026",
+   "source": "ted",
+   "kind": "open",
+   "notice": "802560-2026",
+   "notice_type": "cn-standard",
+   "title": "Intégration de données géographiques, développement de solutions applicatives et Maintien en Condition Opérationnelle du SIG métropolitain",
+   "buyer": "Métropole Aix Marseille Provence",
+   "buyer_country": "FR",
+   "published": "2026-11-18",
+   "url": "https://ted.europa.eu/fr/notice/-/detail/802560-2026",
+   "cpv_label": "Services de maintenance des systèmes et services d'assistance",
+   "countries": [
+    "FR"
+   ],
+   "cpv": [
+    "72250000",
+    "38221000"
+   ],
+   "deadline": "2027-01-08",
+   "value": 233600.0,
+   "currency": "EUR",
+   "winners": [],
+   "description": "Intégration de données géographiques, développement de solutions applicatives et Maintien en Condition Opérationnelle du SIG métropolitain",
+   "status": "",
+   "first_seen": "2026-11-18T08:23:31+01:00",
+   "analysis": {
+    "relevant": true,
+    "segment": "cartographie",
+    "title_fr": "Intégration de données géographiques et maintien du SIG métropolitain",
+    "summary": "La Métropole Aix-Marseille-Provence recherche un prestataire pour intégrer des données géographiques, développer des applications et maintenir en condition opérationnelle son SIG métropolitain.",
+    "why": "Marché de SIG et données géographiques où Airbus peut intervenir via ses données et partenaires cartographiques.",
+    "industries": [
+     "infrastructures",
+     "foncier"
+    ],
+    "fit": "moyenne"
+   },
+   "analysed_at": "2026-11-18T08:23:31+01:00",
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "ted:801512-2026",
+   "source": "ted",
+   "kind": "open",
+   "notice": "801512-2026",
+   "notice_type": "cn-standard",
+   "title": "Nadzór Inwestorski Inżyniera Projektu nad realizacją inwestycji pn.: „Przebudowa i modernizacja skarp i urządzeń zbiornika wodnego Dzierżno Duże, stanowiącego ochronę przeciwpowodziową doliny Kłodnicy”",
+   "buyer": "Państwowe Gospodarstwo Wodne Wody Polskie",
+   "buyer_country": "PL",
+   "published": "2026-11-18",
+   "url": "https://ted.europa.eu/fr/notice/-/detail/801512-2026",
+   "cpv_label": "Supervision des travaux de construction",
+   "countries": [
+    "PL"
+   ],
+   "cpv": [
+    "71247000",
+    "71310000",
+    "71313450",
+    "71324000",
+    "71332000",
+    "71354000",
+    "71355000",
+    "71356100",
+    "71520000",
+    "71540000"
+   ],
+   "deadline": "2026-12-22",
+   "value": null,
+   "currency": "",
+   "winners": [],
+   "description": "1. Przedmiot zamówienia obejmuje Nadzór Inwestorski Inżyniera Projektu nad realizacją Projektu pn. „Przebudowa i modernizacja skarp i urządzeń zbiornika wodnego Dzierżno Duże, stanowiącego ochronę przeciwpowodziową doliny Kłodnicy” w okresie prowadzenia robót budowlanych, dostaw i usług wraz z rozliczeniem rzeczowo-finansowym wykonanych robót, dostaw i usług, usługami geologiczno-geodezyjnymi i raportowaniem wykonanych przez Inżyniera usług. Nadzór Inwestorski ma być prowadzony przy uwzględnieniu umowy z wykonawcą robót budowlanych, jego oferty cenowej oraz Dokumentacji Projektowej (DP)…",
+   "status": "",
+   "first_seen": "2026-11-18T08:23:31+01:00",
+   "analysis": {
+    "relevant": false,
+    "segment": "cartographie",
+    "title_fr": "Supervision de travaux de modernisation d'un réservoir d'eau",
+    "summary": "Supervision d'ingénierie des travaux de reconstruction et modernisation des berges et ouvrages du réservoir Dzierżno Duże en Pologne pour la protection contre les inondations.",
+    "why": "",
+    "industries": [],
+    "fit": "faible"
+   },
+   "analysed_at": "2026-11-18T08:23:31+01:00",
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "ted:800835-2026",
+   "source": "ted",
+   "kind": "award",
+   "notice": "800835-2026",
+   "notice_type": "veat",
+   "title": "Intention notice - Licence agreements for ESRI products from Geodata AS",
+   "buyer": "Fredrikstad kommune",
+   "buyer_country": "NO",
+   "published": "2026-11-18",
+   "url": "https://ted.europa.eu/fr/notice/-/detail/800835-2026",
+   "cpv_label": "Services de technologies de l'information, conseil, développement de logiciels, internet et appui",
+   "countries": [
+    "NO"
+   ],
+   "cpv": [
+    "72000000",
+    "38221000",
+    "48100000"
+   ],
+   "deadline": "",
+   "value": null,
+   "currency": "",
+   "winners": [],
+   "description": "The procurement will be carried out as a direct procurement without a prior notice pursuant to the procurement regulations § 13-4 letter b, number 3 (technical reasons and protection of exclusive rights). Reason: Fredrikstad municipality intends to enter into a three year contract with Geodata AS for the continuation of existing licences, maintenance and support of the Esri platform. The total value of the procurement is estimated to be approx. NOK 8.2 million excluding VAT. The municipality ́s assessment is that only Geodata AS can deliver the relevant licences and accompanying maintenance…",
+   "status": "",
+   "first_seen": "2026-11-18T08:23:31+01:00",
+   "analysis": {
+    "relevant": true,
+    "segment": "cartographie",
+    "title_fr": "Renouvellement des licences Esri via Geodata AS",
+    "summary": "La commune de Fredrikstad conclut un contrat direct de trois ans avec Geodata AS pour la poursuite des licences, de la maintenance et du support de sa plateforme Esri.",
+    "why": "Attribution directe à un concurrent (Geodata AS) sur un marché de plateforme SIG municipale.",
+    "industries": [
+     "foncier",
+     "infrastructures"
+    ],
+    "fit": "faible"
+   },
+   "analysed_at": "2026-11-18T08:23:31+01:00",
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "ted:800152-2026",
+   "source": "ted",
+   "kind": "open",
+   "notice": "800152-2026",
+   "notice_type": "cn-standard",
+   "title": "Wykonanie projektu budowlano-wykonawczego oraz robót budowlano-montażowych według tego projektu dla zadania pn. „Budowa kabli SN 15 kV na potrzeby przyłączenia stacji ładowania pojazdów na dz. 389 obr. Fabianów gm. Nowe Skalmierzyce”",
+   "buyer": "ENERGA-OPERATOR S.A.",
+   "buyer_country": "PL",
+   "published": "2026-11-18",
+   "url": "https://ted.europa.eu/fr/notice/-/detail/800152-2026",
+   "cpv_label": "Travaux de construction",
+   "countries": [
+    "PL"
+   ],
+   "cpv": [
+    "45000000",
+    "45100000",
+    "45300000",
+    "45400000",
+    "51000000",
+    "71000000",
+    "45110000",
+    "45220000",
+    "45310000",
+    "45440000",
+    "45450000",
+    "45510000",
+    "45520000",
+    "51100000",
+    "51900000",
+    "71300000",
+    "71340000",
+    "71500000",
+    "71350000",
+    "45111000",
+    "45112000",
+    "45113000",
+    "45222000",
+    "45223000",
+    "45232000",
+    "45236000",
+    "45311000",
+    "45314000",
+    "45317000",
+    "51110000",
+    "71220000",
+    "71320000",
+    "71330000",
+    "71354000",
+    "71355000",
+    "71356000",
+    "71520000",
+    "71510000",
+    "71540000",
+    "71352000"
+   ],
+   "deadline": "2026-12-22",
+   "value": null,
+   "currency": "",
+   "winners": [],
+   "description": "1. Przedmiotem zamówienia jest wykonanie dokumentacji projektowej budowlano-wykonawczej oraz robót budowlano-montażowych dla zadania: „Budowa kabli SN 15 kV na potrzeby przyłączenia stacji ładowania pojazdów na dz. 389 obr. Fabianów gm. Nowe Skalmierzyce”, składającego się w szczególności z: 1.1. Etapu I – wykonanie dokumentacji projektowej budowlano-wykonawczej, z wszelkimi wymaganymi prawem opiniami, uzgodnieniami i decyzjami wraz z pozyskaniem tytułów prawnych do nieruchomości niezbędnych do realizacji zadania, na podstawie Programu Funkcjonalno-Użytkowego (zwanego dalej „PFU”) i…",
+   "status": "",
+   "first_seen": "2026-11-18T08:23:31+01:00",
+   "analysis": {
+    "relevant": false,
+    "segment": "cartographie",
+    "title_fr": "Travaux de raccordement électrique pour une borne de recharge",
+    "summary": "Travaux de conception et de construction de câbles moyenne tension pour raccorder une station de recharge de véhicules en Pologne.",
+    "why": "",
+    "industries": [],
+    "fit": "faible"
+   },
+   "analysed_at": "2026-11-18T08:23:31+01:00",
+   "analysis_model": "claude_cli:sonnet"
+  },
   {
    "id": "ted:800008-2026",
    "source": "ted",
@@ -613,6 +1034,136 @@
     "fit": "faible"
    },
    "analysed_at": "2026-11-17T08:25:10+01:00",
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "fts:ocds-h6vhtk-07bdfa:open",
+   "source": "fts",
+   "kind": "open",
+   "notice": "109029-2026",
+   "notice_type": "UK4",
+   "title": "Global Vessel Data",
+   "buyer": "UK Hydrographic Office",
+   "buyer_country": "GB",
+   "published": "2026-11-17",
+   "url": "https://www.find-tender.service.gov.uk/Notice/109029-2026",
+   "cpv_label": "",
+   "countries": [
+    "GB"
+   ],
+   "cpv": [
+    "72316000",
+    "72319000"
+   ],
+   "deadline": "2026-11-30",
+   "value": 50000.0,
+   "currency": "GBP",
+   "winners": [],
+   "description": "The objective of this procurement is to acquire a comprehensive, authoritative, and regularly maintained maritime reference dataset that provides global vessel, ownership, management, company, and fleet information to support the Authority's maritime intelligence, operational, analytical, and geospatial requirement. \nThe service shall provide authoritative vessel particulars, ownership and management information, that can be linked to AIS and other maritime datasets using recognised industry identifiers.\nFor more information about this opportunity, please visit the eSourcing portal at…",
+   "status": "",
+   "first_seen": "2026-11-18T08:23:31+01:00",
+   "analysis": {
+    "relevant": false,
+    "segment": "cartographie",
+    "title_fr": "Base de données mondiale sur les navires",
+    "summary": "Le UK Hydrographic Office cherche une base de données mondiale de navires, propriétaires et flottes, reliable aux données AIS, pour ses besoins maritimes.",
+    "why": "Base de données de registre maritime, hors offre imagerie ou données spatiales Airbus.",
+    "industries": [
+     "maritime"
+    ],
+    "fit": "faible"
+   },
+   "analysed_at": "2026-11-18T08:23:31+01:00",
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "fts:ocds-h6vhtk-07bd85:open",
+   "source": "fts",
+   "kind": "open",
+   "notice": "108843-2026",
+   "notice_type": "UK4",
+   "title": "UK Space Agency- Strategic Support to the International Charter: Space and Major Disasters",
+   "buyer": "Department for Science, Innovation & Technology",
+   "buyer_country": "GB",
+   "published": "2026-11-17",
+   "url": "https://www.find-tender.service.gov.uk/Notice/108843-2026",
+   "cpv_label": "",
+   "countries": [
+    "GB"
+   ],
+   "cpv": [
+    "98110000"
+   ],
+   "deadline": "2027-01-07",
+   "value": 471490.0,
+   "currency": "GBP",
+   "winners": [],
+   "description": "The International Charter: Space and Major Disasters (“the Charter”) is a global agreement which aims to provide a unified system of space data acquisition and delivery to those affected by natural or man-made disasters. It provides and enables transmission of earth observation satellite data and pre-authorised resilience/emergency response bodies in response to “activations”. Further details on the Charter can be found at https://disasterscharter.org/.\nCharter members are national government bodies/ agencies or recognised space system organisations, who are the owners/ operators of earth…",
+   "status": "",
+   "first_seen": "2026-11-18T08:23:31+01:00",
+   "analysis": {
+    "relevant": true,
+    "segment": "imagerie_satellite",
+    "title_fr": "Soutien stratégique à la Charte internationale Espace et catastrophes majeures",
+    "summary": "L'agence spatiale britannique cherche un prestataire pour soutenir sa participation à la Charte internationale permettant l'acquisition et la diffusion de données satellitaires d'observation lors de catastrophes.",
+    "why": "Airbus est membre fournisseur de données d'observation de la Terre pour la Charte internationale Espace et catastrophes.",
+    "industries": [
+     "securite",
+     "foret_environnement",
+     "infrastructures"
+    ],
+    "fit": "forte"
+   },
+   "analysed_at": "2026-11-18T08:23:31+01:00",
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "fts:ocds-h6vhtk-0671c4:open",
+   "source": "fts",
+   "kind": "open",
+   "notice": "108906-2026",
+   "notice_type": "UK4",
+   "title": "London Cable Car Customer Enhancements",
+   "buyer": "Transport for London",
+   "buyer_country": "GB",
+   "published": "2026-11-17",
+   "url": "https://www.find-tender.service.gov.uk/Notice/108906-2026",
+   "cpv_label": "",
+   "countries": [
+    "GB"
+   ],
+   "cpv": [
+    "31500000",
+    "32321200",
+    "34928470",
+    "45210000",
+    "45220000",
+    "45300000",
+    "50700000",
+    "55900000",
+    "63500000",
+    "71200000",
+    "71300000",
+    "71500000",
+    "92000000"
+   ],
+   "deadline": "2027-06-04",
+   "value": 3400000.0,
+   "currency": "GBP",
+   "winners": [],
+   "description": "This is a competitive procurement for the award of a single contract for the London Cable Car Customer Enhancements project. Transport for London is seeking to appoint a suitably qualified and experienced supplier to provide the Concept Design, Detailed Design and Delivery/Implementation of customer experience enhancements at the London Cable Car, with a primary focus on the South Terminal at Greenwich Peninsula. \nThe programme forms part of TfL's strategy to enhance the London Cable Car customer experience and support its continued development as a leading leisure attraction while…",
+   "status": "",
+   "first_seen": "2026-11-18T08:23:31+01:00",
+   "analysis": {
+    "relevant": false,
+    "segment": "cartographie",
+    "title_fr": "Amélioration de l'expérience client du téléphérique de Londres",
+    "summary": "Transport for London cherche un prestataire pour la conception et la réalisation d'aménagements améliorant l'expérience client du téléphérique urbain, notamment au terminal sud.",
+    "why": "",
+    "industries": [],
+    "fit": "faible"
+   },
+   "analysed_at": "2026-11-18T08:23:31+01:00",
    "analysis_model": "claude_cli:sonnet"
   },
   {
@@ -1246,6 +1797,209 @@
     "fit": "faible"
    },
    "analysed_at": "2026-11-16T09:32:32+01:00",
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "fts:ocds-h6vhtk-07bcf8:open",
+   "source": "fts",
+   "kind": "open",
+   "notice": "108584-2026",
+   "notice_type": "UK4",
+   "title": "ITT 70/2026 - Mourne Gullion Landscape Connections Baseline Environmental Surveys Reporting",
+   "buyer": "Newry Mourne and Down District Council",
+   "buyer_country": "GB",
+   "published": "2026-11-16",
+   "url": "https://www.find-tender.service.gov.uk/Notice/108584-2026",
+   "cpv_label": "",
+   "countries": [
+    "GB"
+   ],
+   "cpv": [
+    "90700000"
+   ],
+   "deadline": "2026-12-14",
+   "value": 330000.0,
+   "currency": "GBP",
+   "winners": [],
+   "description": "Newry, Mourne and Down District Council (The Council) is inviting tenders from suitably experienced suppliers to undertake the Mourne Gullion Landscape Connections Baseline Environmental Surveys and Reporting. This requires a suitably qualified and experienced environmental consultancy to undertake baseline environmental surveys across the Mourne and Ring of Gullion Areas of Outstanding Natural Beauty (AONBs). The commission shall comprise a combination of desktop data analysis, habitat mapping, field-based habitat survey and condition assessment, LiDAR and vegetation analysis, and drone…",
+   "status": "",
+   "first_seen": "2026-11-18T08:23:31+01:00",
+   "analysis": {
+    "relevant": true,
+    "segment": "aerien_lidar",
+    "title_fr": "Relevés environnementaux de référence avec LiDAR et drone, Mourne Gullion",
+    "summary": "Le conseil de Newry, Mourne and Down demande des relevés environnementaux de référence (habitats, LiDAR, végétation, drone) sur les AONB de Mourne et Ring of Gullion.",
+    "why": "Besoin de données LiDAR/drone local, hors cœur d'offre satellite Airbus mais signal de marché environnemental.",
+    "industries": [
+     "foret_environnement",
+     "infrastructures"
+    ],
+    "fit": "faible"
+   },
+   "analysed_at": "2026-11-18T08:23:31+01:00",
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "fts:ocds-h6vhtk-07bcef:open",
+   "source": "fts",
+   "kind": "open",
+   "notice": "108572-2026",
+   "notice_type": "UK4",
+   "title": "Secondary Maritime Broadband Solution",
+   "buyer": "Trinity House",
+   "buyer_country": "GB",
+   "published": "2026-11-16",
+   "url": "https://www.find-tender.service.gov.uk/Notice/108572-2026",
+   "cpv_label": "",
+   "countries": [
+    "GB"
+   ],
+   "cpv": [
+    "72400000"
+   ],
+   "deadline": "2026-11-26",
+   "value": 47000.0,
+   "currency": "GBP",
+   "winners": [],
+   "description": "The Authority is seeking a secondary maritime satellite connectivity solution to provide resilient backup to its primary satellite service.",
+   "status": "",
+   "first_seen": "2026-11-18T08:23:31+01:00",
+   "analysis": {
+    "relevant": true,
+    "segment": "spatial",
+    "title_fr": "Solution de connectivité satellite maritime de secours",
+    "summary": "Trinity House recherche une solution de connectivité satellite maritime secondaire servant de secours à son service principal.",
+    "why": "Besoin de connectivité satellite maritime, segment adjacent à l'offre de connectivité sécurisée Airbus.",
+    "industries": [
+     "maritime",
+     "connectivite"
+    ],
+    "fit": "faible"
+   },
+   "analysed_at": "2026-11-18T08:23:31+01:00",
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "fts:ocds-h6vhtk-07bc91:open",
+   "source": "fts",
+   "kind": "open",
+   "notice": "108409-2026",
+   "notice_type": "UK4",
+   "title": "Remote Sensing soil organic carbon (SOC)",
+   "buyer": "Agriculture and Horticulture Development Board",
+   "buyer_country": "GB",
+   "published": "2026-11-16",
+   "url": "https://www.find-tender.service.gov.uk/Notice/108409-2026",
+   "cpv_label": "",
+   "countries": [
+    "GB"
+   ],
+   "cpv": [
+    "73000000",
+    "77000000"
+   ],
+   "deadline": "2026-12-11",
+   "value": null,
+   "currency": "",
+   "winners": [],
+   "description": "AHDB is seeking up to 3 remote sensing (RS) providers to take part in a structured prediction exercise. Participants will be asked to predict soil organic carbon (SOC) stocks on a number of fields and farms that were part of the Environment Baselining Pilot (EBP). The project will then evaluate the accuracy and the precision of the predictions by comparing them with direct measurements collected in the EBP project.\nThe exercise explores the joint use of direct measurement and RS models. The work itself is not a competition (no winner or ranking), but a study to understand the current…",
+   "status": "",
+   "first_seen": "2026-11-18T08:23:31+01:00",
+   "analysis": {
+    "relevant": true,
+    "segment": "environnement_climat",
+    "title_fr": "Étude de télédétection du carbone organique des sols",
+    "summary": "L'AHDB sélectionne jusqu'à trois prestataires de télédétection pour prédire les stocks de carbone organique des sols sur des parcelles agricoles britanniques et comparer avec des mesures directes.",
+    "why": "Besoin de modèles de télédétection agricole, segment où Airbus peut proposer des solutions d'observation de la Terre.",
+    "industries": [
+     "agriculture",
+     "foret_environnement"
+    ],
+    "fit": "moyenne"
+   },
+   "analysed_at": "2026-11-18T08:23:31+01:00",
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "fts:ocds-h6vhtk-0794f9:award",
+   "source": "fts",
+   "kind": "award",
+   "notice": "108566-2026",
+   "notice_type": "",
+   "title": "Bus Network Management Software",
+   "buyer": "York and North Yorkshire Combined Authority",
+   "buyer_country": "GB",
+   "published": "2026-11-16",
+   "url": "",
+   "cpv_label": "",
+   "countries": [
+    "GB"
+   ],
+   "cpv": [
+    "71311200"
+   ],
+   "deadline": "",
+   "value": null,
+   "currency": "",
+   "winners": [
+    "PODARIS LIMITED"
+   ],
+   "description": "Provides the ability for the officers to visualise the bus network across the York and North Yorkshire Combined Authority area. The baseline data should draw upon established BODS data, as well as ingest geospatial data held by the Combined Authority and its consultant partners, in order to view the bus network comprehensively alongside other data sources.\n• Provides the ability to combined multiple existing data sources into a single platform, to produce cross-analysis of the bus network with other geospatial sources.\n• Provides options to assimilate operational data such as patronage…",
+   "status": "",
+   "first_seen": "2026-10-31T07:58:20+01:00",
+   "analysis": {
+    "relevant": false,
+    "segment": "cartographie",
+    "title_fr": "Logiciel de gestion du réseau de bus",
+    "summary": "Plateforme logicielle pour visualiser et analyser le réseau de bus de l'autorité combinée York et North Yorkshire, en intégrant des données géospatiales existantes.",
+    "why": "Plateforme SIG dédiée au transport, hors cœur de métier d'Airbus.",
+    "industries": [
+     "infrastructures"
+    ],
+    "fit": "faible"
+   },
+   "analysed_at": "2026-10-31T07:58:20+01:00",
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "fts:ocds-h6vhtk-051cf1:open",
+   "source": "fts",
+   "kind": "open",
+   "notice": "108455-2026",
+   "notice_type": "UK4",
+   "title": "Aerial Services including asset inspection and surveys",
+   "buyer": "NETWORK RAIL INFRASTRUCTURE LIMITED",
+   "buyer_country": "GB",
+   "published": "2026-11-16",
+   "url": "https://www.find-tender.service.gov.uk/Notice/108455-2026",
+   "cpv_label": "",
+   "countries": [
+    "GB"
+   ],
+   "cpv": [
+    "60440000",
+    "60445000",
+    "71355000"
+   ],
+   "deadline": "2026-12-17",
+   "value": 34400000.0,
+   "currency": "GBP",
+   "winners": [],
+   "description": "Network Rail is procuring aerial services including asset inspection and surveys across Scotland, Northwest & Central, Eastern, Network Rail High Speed 1, Wales and other permitted areas. The service will provide a managed solution including suitably equipped aircraft, pilots, flight planning, aviation safety management, operational resilience, aerial imagery and camera, sensor and Multi Angle Camera System (MACS) payload operations. \nServices shall be available 365 days per year and include planned, ad hoc and reactive tasking to support infrastructure inspection, condition monitoring…",
+   "status": "",
+   "first_seen": "2026-11-18T08:23:31+01:00",
+   "analysis": {
+    "relevant": true,
+    "segment": "aerien_lidar",
+    "title_fr": "Services aériens d'inspection et de surveillance d'infrastructures ferroviaires",
+    "summary": "Network Rail cherche un service géré d'imagerie aérienne (avions, capteurs, caméras MACS) pour l'inspection et le suivi de ses infrastructures ferroviaires au Royaume-Uni, disponible toute l'année.",
+    "why": "Prestation aérienne d'inspection d'infrastructures, hors cœur d'offre satellite mais marché géospatial adjacent.",
+    "industries": [
+     "infrastructures"
+    ],
+    "fit": "faible"
+   },
+   "analysed_at": "2026-11-18T08:23:31+01:00",
    "analysis_model": "claude_cli:sonnet"
   },
   {
@@ -6887,47 +7641,6 @@
     "fit": "faible"
    },
    "analysed_at": "2026-10-30T08:02:09+01:00",
-   "analysis_model": "claude_cli:sonnet"
-  },
-  {
-   "id": "fts:ocds-h6vhtk-0794f9:award",
-   "source": "fts",
-   "kind": "award",
-   "notice": "103394-2026",
-   "notice_type": "UK6",
-   "title": "Bus Network Management Software",
-   "buyer": "York and North Yorkshire Combined Authority",
-   "buyer_country": "GB",
-   "published": "2026-10-30",
-   "url": "https://www.find-tender.service.gov.uk/Notice/103394-2026",
-   "cpv_label": "",
-   "countries": [
-    "GB"
-   ],
-   "cpv": [
-    "71311200"
-   ],
-   "deadline": "",
-   "value": 200000.0,
-   "currency": "GBP",
-   "winners": [
-    "PODARIS LIMITED"
-   ],
-   "description": "•\tProvides the ability for the officers to visualise the bus network across the York and North Yorkshire Combined Authority area. The baseline data should draw upon established BODS data, as well as ingest geospatial data held by the Combined Authority and its consultant partners, in order to view the bus network comprehensively alongside other data sources.\n•\tProvides the ability to combined multiple existing data sources into a single platform, to produce cross-analysis of the bus network with other geospatial sources.\n•\tProvides options to assimilate operational data such as patronage…",
-   "status": "",
-   "first_seen": "2026-10-31T07:58:20+01:00",
-   "analysis": {
-    "relevant": false,
-    "segment": "cartographie",
-    "title_fr": "Logiciel de gestion du réseau de bus",
-    "summary": "Plateforme logicielle pour visualiser et analyser le réseau de bus de l'autorité combinée York et North Yorkshire, en intégrant des données géospatiales existantes.",
-    "why": "Plateforme SIG dédiée au transport, hors cœur de métier d'Airbus.",
-    "industries": [
-     "infrastructures"
-    ],
-    "fit": "faible"
-   },
-   "analysed_at": "2026-10-31T07:58:20+01:00",
    "analysis_model": "claude_cli:sonnet"
   },
   {
