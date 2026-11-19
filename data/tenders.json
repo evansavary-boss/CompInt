@@ -1,47 +1,47 @@
 {
  "fx": {
-  "date": "2026-11-17",
+  "date": "2026-11-18",
   "rates": {
-   "USD": 1.0989,
-   "JPY": 175.05,
-   "CZK": 24.387,
-   "DKK": 7.4749,
-   "GBP": 0.83305,
-   "HUF": 364.93,
-   "PLN": 4.4038,
-   "RON": 5.3482,
-   "SEK": 11.11,
-   "CHF": 0.9233,
+   "USD": 1.0968,
+   "JPY": 174.85,
+   "CZK": 24.386,
+   "DKK": 7.4744,
+   "GBP": 0.8329,
+   "HUF": 368.4,
+   "PLN": 4.4118,
+   "RON": 5.3467,
+   "SEK": 11.143,
+   "CHF": 0.9243,
    "ISK": 137.0,
-   "NOK": 10.5755,
-   "TRY": 55.3987,
-   "AUD": 1.6316,
-   "BRL": 6.3539,
-   "CAD": 1.5704,
-   "CNY": 7.3254,
-   "HKD": 8.6221,
-   "IDR": 20077.73,
-   "ILS": 3.5674,
-   "INR": 102.72,
-   "KRW": 1468.36,
-   "MXN": 20.2895,
-   "MYR": 4.4983,
-   "NZD": 1.9985,
-   "PHP": 69.974,
-   "SGD": 1.4163,
-   "THB": 37.187,
-   "ZAR": 18.6073
+   "NOK": 10.6045,
+   "TRY": 55.3197,
+   "AUD": 1.6294,
+   "BRL": 6.3818,
+   "CAD": 1.569,
+   "CNY": 7.3126,
+   "HKD": 8.6063,
+   "IDR": 20020.71,
+   "ILS": 3.5798,
+   "INR": 102.4905,
+   "KRW": 1461.3,
+   "MXN": 20.3738,
+   "MYR": 4.5144,
+   "NZD": 1.9951,
+   "PHP": 69.832,
+   "SGD": 1.4144,
+   "THB": 37.264,
+   "ZAR": 18.8897
   }
  },
- "updated_at": "2026-11-18T08:23:31+01:00",
+ "updated_at": "2026-11-19T08:23:17+01:00",
  "sources": [
   {
    "name": "TED",
    "url": "https://api.ted.europa.eu/v3/notices/search",
    "ok": true,
    "error": "",
-   "fetched": 38,
-   "kept": 32,
+   "fetched": 40,
+   "kept": 33,
    "via": "tender"
   },
   {
@@ -49,21 +49,21 @@
    "url": "https://www.find-tender.service.gov.uk/api/1.0/ocdsReleasePackages",
    "ok": true,
    "error": "",
-   "fetched": 814,
-   "kept": 8,
+   "fetched": 777,
+   "kept": 6,
    "via": "tender"
   }
  ],
  "last_run": {
-  "new": 14,
+  "new": 3,
   "sources": [
    {
     "name": "TED",
     "url": "https://api.ted.europa.eu/v3/notices/search",
     "ok": true,
     "error": "",
-    "fetched": 38,
-    "kept": 32,
+    "fetched": 40,
+    "kept": 33,
     "via": "tender"
    },
    {
@@ -71,21 +71,74 @@
     "url": "https://www.find-tender.service.gov.uk/api/1.0/ocdsReleasePackages",
     "ok": true,
     "error": "",
-    "fetched": 814,
-    "kept": 8,
+    "fetched": 777,
+    "kept": 6,
     "via": "tender"
    }
   ],
   "analysis": {
-   "analysed": 14,
-   "relevant": 8,
+   "analysed": 3,
+   "relevant": 2,
    "error": "",
-   "cost_usd": 0.2221
+   "cost_usd": 0.0645
   },
   "pruned": 0
  },
- "fts_synced_until": "2026-11-18T07:00:00",
+ "fts_synced_until": "2026-11-19T07:00:00",
  "tenders": [
+  {
+   "id": "ted:806722-2026",
+   "source": "ted",
+   "kind": "open",
+   "notice": "806722-2026",
+   "notice_type": "cn-standard",
+   "title": "ROZBUDOWA DROGI EKSPRESOWEJ S1 ODC. MYSŁOWICE – LĘDZINY (JEZDNIA LEWA I PRAWA)",
+   "buyer": "Generalna Dyrekcja Dróg Krajowych i Autostrad",
+   "buyer_country": "PL",
+   "published": "2026-11-19",
+   "url": "https://ted.europa.eu/fr/notice/-/detail/806722-2026",
+   "cpv_label": "Travaux de construction",
+   "countries": [
+    "PL"
+   ],
+   "cpv": [
+    "45000000",
+    "45100000",
+    "45110000",
+    "45200000",
+    "45220000",
+    "45221000",
+    "45230000",
+    "45232000",
+    "45233000",
+    "71000000",
+    "71250000",
+    "71351910",
+    "71352000",
+    "71320000",
+    "71322000",
+    "71354000",
+    "71248000"
+   ],
+   "deadline": "2026-12-03",
+   "value": null,
+   "currency": "",
+   "winners": [],
+   "description": "1.Przedmiotem zamówienia jest zaprojektowanie i wykonanie rozbudowy drogi ekspresowej S1 na odcinku od km 549+830,00 do km 554+570,00. Powyższy odcinek stanowi fragment drogi ekspresowej S1 łączący istniejący przebieg drogi S1 od węzła Pyrzowice do węzła Brzęczkowice z budowanym odcinkiem tej drogi od węzła Kosztowy II do Bielska Białej. Zamówienie jest realizowane w formule projektu i buduj. 2. Szczegółowo przedmiot zamówienia opisany został w Tomie III -V SWZ. 3. Zamawiający zastrzega obowiązek osobistego wykonania przez Wykonawcę kluczowych zadań, tj. nawierzchnia trasy głównej łącznie z…",
+   "status": "",
+   "first_seen": "2026-11-19T08:23:17+01:00",
+   "analysis": {
+    "relevant": false,
+    "segment": "cartographie",
+    "title_fr": "Travaux d'extension de la voie express S1 Mysłowice-Lędziny en Pologne",
+    "summary": "Conception et réalisation de l'extension d'un tronçon de la voie express S1 en Pologne, sans mention de besoins géospatiaux.",
+    "why": "",
+    "industries": [],
+    "fit": "faible"
+   },
+   "analysed_at": "2026-11-19T08:23:17+01:00",
+   "analysis_model": "claude_cli:sonnet"
+  },
   {
    "id": "ted:803739-2026",
    "source": "ted",
@@ -505,6 +558,180 @@
     "fit": "faible"
    },
    "analysed_at": "2026-11-18T08:23:31+01:00",
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "fts:ocds-h6vhtk-07bedc:open",
+   "source": "fts",
+   "kind": "open",
+   "notice": "109402-2026",
+   "notice_type": "UK4",
+   "title": "Commercial Satellite-Derived Earth Observation Data for the UK Public Sector",
+   "buyer": "Department for Science, Innovation & Technology",
+   "buyer_country": "GB",
+   "published": "2026-11-18",
+   "url": "https://www.find-tender.service.gov.uk/Notice/109402-2026",
+   "cpv_label": "",
+   "countries": [
+    "GB"
+   ],
+   "cpv": [
+    "72319000",
+    "72300000",
+    "35631200"
+   ],
+   "deadline": "",
+   "value": 44400000.0,
+   "currency": "GBP",
+   "winners": [],
+   "description": "The Department for Digital, Culture, Media and Sport (DCMS) intends to procure commercial satellite-derived Earth Observation (EO) data and associated Earth Observation services for use across the UK public sector. The procurement will support improved access to commercial EO capabilities, reduce duplicated procurement activity, enable greater sharing and reuse of data across government, and support evidence-based decision making across a range of public sector activities. The procurement has been designed following extensive engagement with public sector users and suppliers and reflects the…",
+   "status": "",
+   "first_seen": "2026-11-19T08:23:17+01:00",
+   "analysis": {
+    "relevant": true,
+    "segment": "imagerie_satellite",
+    "title_fr": "Achat de données d'observation de la Terre par satellite pour le secteur public britannique",
+    "summary": "Le Royaume-Uni veut acheter des données et services d'observation de la Terre par satellite commerciaux, accessibles et partagés par l'ensemble du secteur public.",
+    "why": "Appel d'offres cadre pour de l'imagerie satellite EO, cœur de l'offre Airbus en observation de la Terre.",
+    "industries": [
+     "securite",
+     "infrastructures",
+     "agriculture",
+     "foret_environnement"
+    ],
+    "fit": "forte"
+   },
+   "analysed_at": "2026-11-19T08:23:17+01:00",
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "fts:ocds-h6vhtk-07bdfa:open",
+   "source": "fts",
+   "kind": "open",
+   "notice": "109261-2026",
+   "notice_type": "UK4",
+   "title": "Global Vessel Data",
+   "buyer": "UK Hydrographic Office",
+   "buyer_country": "GB",
+   "published": "2026-11-18",
+   "url": "https://www.find-tender.service.gov.uk/Notice/109261-2026",
+   "cpv_label": "",
+   "countries": [
+    "GB"
+   ],
+   "cpv": [
+    "72316000",
+    "72319000"
+   ],
+   "deadline": "2026-11-30",
+   "value": 50000.0,
+   "currency": "GBP",
+   "winners": [],
+   "description": "The objective of this procurement is to acquire a comprehensive, authoritative, and regularly maintained maritime reference dataset that provides global vessel, ownership, management, company, and fleet information to support the Authority's maritime intelligence, operational, analytical, and geospatial requirement. \nThe service shall provide authoritative vessel particulars, ownership and management information, that can be linked to AIS and other maritime datasets using recognised industry identifiers.",
+   "status": "",
+   "first_seen": "2026-11-18T08:23:31+01:00",
+   "analysis": {
+    "relevant": false,
+    "segment": "cartographie",
+    "title_fr": "Base de données mondiale sur les navires",
+    "summary": "Le UK Hydrographic Office cherche une base de données mondiale de navires, propriétaires et flottes, reliable aux données AIS, pour ses besoins maritimes.",
+    "why": "Base de données de registre maritime, hors offre imagerie ou données spatiales Airbus.",
+    "industries": [
+     "maritime"
+    ],
+    "fit": "faible"
+   },
+   "analysed_at": "2026-11-18T08:23:31+01:00",
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "fts:ocds-h6vhtk-030d43:award",
+   "source": "fts",
+   "kind": "award",
+   "notice": "109109-2026",
+   "notice_type": "",
+   "title": "DoF LPS Valuation Delivery Partner Project",
+   "buyer": "Department of Finance, Land and Property Services",
+   "buyer_country": "GB",
+   "published": "2026-11-18",
+   "url": "",
+   "cpv_label": "",
+   "countries": [
+    "GB"
+   ],
+   "cpv": [
+    "72000000",
+    "72320000",
+    "72268000",
+    "72230000",
+    "72227000",
+    "71354000",
+    "71354100",
+    "71354200",
+    "71355000",
+    "71355200",
+    "72100000",
+    "72200000",
+    "72210000",
+    "72212326",
+    "72228000",
+    "72250000",
+    "72260000",
+    "72300000",
+    "72500000",
+    "72700000",
+    "72900000",
+    "75100000",
+    "72222300",
+    "79800000",
+    "72316000",
+    "79940000",
+    "79500000",
+    "79571000",
+    "79410000",
+    "64210000",
+    "79990000",
+    "66170000",
+    "66112000",
+    "72220000",
+    "72322000",
+    "72317000",
+    "72224100",
+    "72400000",
+    "72212200",
+    "72212211",
+    "72212220",
+    "72212400",
+    "72212482",
+    "72212517",
+    "72212600",
+    "72212610",
+    "72212732",
+    "72212900",
+    "79999000",
+    "79999100"
+   ],
+   "deadline": "",
+   "value": null,
+   "currency": "",
+   "winners": [
+    "BEARINGPOINT IRELAND"
+   ],
+   "description": "Land and Property Services (LPS) is the statutory authority responsible for assessing and collecting property taxation in Northern Ireland. LPS is gearing up for a significant digital transformation aimed at enhancing its property valuation processes. In NI there are in the region of 825,500 Domestic properties, 72,000 Non-Domestic properties and 2,700 properties that contain an element of both domestic and non-domestic. The Directorate also provides a full range of non-rating valuation services to the public sector in Northern Ireland. LPS advises authorities on disposal and acquisition of…",
+   "status": "",
+   "first_seen": "2026-11-19T08:23:17+01:00",
+   "analysis": {
+    "relevant": true,
+    "segment": "cartographie",
+    "title_fr": "Partenaire de transformation numérique pour la valorisation foncière en Irlande du Nord",
+    "summary": "Attribution d'un contrat pour accompagner la transformation digitale des processus de valorisation des propriétés foncières en Irlande du Nord, avec un volet cartographique.",
+    "why": "Marché de services fonciers incluant de la cartographie, remporté par un concurrent non spatial (BearingPoint).",
+    "industries": [
+     "foncier"
+    ],
+    "fit": "faible"
+   },
+   "analysed_at": "2026-11-19T08:23:17+01:00",
    "analysis_model": "claude_cli:sonnet"
   },
   {
@@ -1034,46 +1261,6 @@
     "fit": "faible"
    },
    "analysed_at": "2026-11-17T08:25:10+01:00",
-   "analysis_model": "claude_cli:sonnet"
-  },
-  {
-   "id": "fts:ocds-h6vhtk-07bdfa:open",
-   "source": "fts",
-   "kind": "open",
-   "notice": "109029-2026",
-   "notice_type": "UK4",
-   "title": "Global Vessel Data",
-   "buyer": "UK Hydrographic Office",
-   "buyer_country": "GB",
-   "published": "2026-11-17",
-   "url": "https://www.find-tender.service.gov.uk/Notice/109029-2026",
-   "cpv_label": "",
-   "countries": [
-    "GB"
-   ],
-   "cpv": [
-    "72316000",
-    "72319000"
-   ],
-   "deadline": "2026-11-30",
-   "value": 50000.0,
-   "currency": "GBP",
-   "winners": [],
-   "description": "The objective of this procurement is to acquire a comprehensive, authoritative, and regularly maintained maritime reference dataset that provides global vessel, ownership, management, company, and fleet information to support the Authority's maritime intelligence, operational, analytical, and geospatial requirement. \nThe service shall provide authoritative vessel particulars, ownership and management information, that can be linked to AIS and other maritime datasets using recognised industry identifiers.\nFor more information about this opportunity, please visit the eSourcing portal at…",
-   "status": "",
-   "first_seen": "2026-11-18T08:23:31+01:00",
-   "analysis": {
-    "relevant": false,
-    "segment": "cartographie",
-    "title_fr": "Base de données mondiale sur les navires",
-    "summary": "Le UK Hydrographic Office cherche une base de données mondiale de navires, propriétaires et flottes, reliable aux données AIS, pour ses besoins maritimes.",
-    "why": "Base de données de registre maritime, hors offre imagerie ou données spatiales Airbus.",
-    "industries": [
-     "maritime"
-    ],
-    "fit": "faible"
-   },
-   "analysed_at": "2026-11-18T08:23:31+01:00",
    "analysis_model": "claude_cli:sonnet"
   },
   {
