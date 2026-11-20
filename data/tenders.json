@@ -1,91 +1,476 @@
 {
  "fx": {
-  "date": "2026-11-18",
+  "date": "2026-11-19",
   "rates": {
-   "USD": 1.0968,
-   "JPY": 174.85,
-   "CZK": 24.386,
-   "DKK": 7.4744,
-   "GBP": 0.8329,
-   "HUF": 368.4,
-   "PLN": 4.4118,
-   "RON": 5.3467,
-   "SEK": 11.143,
-   "CHF": 0.9243,
-   "ISK": 137.0,
-   "NOK": 10.6045,
-   "TRY": 55.3197,
-   "AUD": 1.6294,
-   "BRL": 6.3818,
-   "CAD": 1.569,
-   "CNY": 7.3126,
-   "HKD": 8.6063,
-   "IDR": 20020.71,
-   "ILS": 3.5798,
-   "INR": 102.4905,
-   "KRW": 1461.3,
-   "MXN": 20.3738,
-   "MYR": 4.5144,
-   "NZD": 1.9951,
-   "PHP": 69.832,
-   "SGD": 1.4144,
-   "THB": 37.264,
-   "ZAR": 18.8897
+   "USD": 1.0992,
+   "JPY": 175.84,
+   "CZK": 24.427,
+   "DKK": 7.4742,
+   "GBP": 0.83581,
+   "HUF": 369.43,
+   "PLN": 4.417,
+   "RON": 5.3473,
+   "SEK": 11.147,
+   "CHF": 0.9262,
+   "ISK": 137.2,
+   "NOK": 10.6475,
+   "TRY": 55.4737,
+   "AUD": 1.6378,
+   "BRL": 6.4765,
+   "CAD": 1.5719,
+   "CNY": 7.328,
+   "HKD": 8.6239,
+   "IDR": 20073.1,
+   "ILS": 3.6149,
+   "INR": 102.55,
+   "KRW": 1460.23,
+   "MXN": 20.7946,
+   "MYR": 4.5205,
+   "NZD": 1.989,
+   "PHP": 70.014,
+   "SGD": 1.4176,
+   "THB": 37.268,
+   "ZAR": 18.9948
   }
  },
- "updated_at": "2026-11-19T08:23:17+01:00",
+ "updated_at": "2026-11-20T08:23:30+01:00",
  "sources": [
   {
    "name": "TED",
    "url": "https://api.ted.europa.eu/v3/notices/search",
    "ok": true,
    "error": "",
-   "fetched": 40,
-   "kept": 33,
+   "fetched": 50,
+   "kept": 42,
    "via": "tender"
   },
   {
    "name": "Find a Tender",
    "url": "https://www.find-tender.service.gov.uk/api/1.0/ocdsReleasePackages",
-   "ok": true,
-   "error": "",
-   "fetched": 777,
-   "kept": 6,
+   "ok": false,
+   "error": "HTTPSConnectionPool(host='www.find-tender.service.gov.uk', port=443): Read timed out. (read timeout=60)",
+   "fetched": 0,
+   "kept": 0,
    "via": "tender"
   }
  ],
  "last_run": {
-  "new": 3,
+  "new": 9,
   "sources": [
    {
     "name": "TED",
     "url": "https://api.ted.europa.eu/v3/notices/search",
     "ok": true,
     "error": "",
-    "fetched": 40,
-    "kept": 33,
+    "fetched": 50,
+    "kept": 42,
     "via": "tender"
    },
    {
     "name": "Find a Tender",
     "url": "https://www.find-tender.service.gov.uk/api/1.0/ocdsReleasePackages",
-    "ok": true,
-    "error": "",
-    "fetched": 777,
-    "kept": 6,
+    "ok": false,
+    "error": "HTTPSConnectionPool(host='www.find-tender.service.gov.uk', port=443): Read timed out. (read timeout=60)",
+    "fetched": 0,
+    "kept": 0,
     "via": "tender"
    }
   ],
   "analysis": {
-   "analysed": 3,
-   "relevant": 2,
+   "analysed": 9,
+   "relevant": 4,
    "error": "",
-   "cost_usd": 0.0645
+   "cost_usd": 0.1528
   },
   "pruned": 0
  },
- "fts_synced_until": "2026-11-19T07:00:00",
+ "fts_synced_until": "2026-11-18T07:00:00",
  "tenders": [
+  {
+   "id": "ted:810276-2026",
+   "source": "ted",
+   "kind": "award",
+   "notice": "810276-2026",
+   "notice_type": "can-standard",
+   "title": "2026 54 Single part FWA for the Supply, Delivery, Installation and Commissioning of ​High-Accuracy Geospatial Data Acquisition Equipment for Environmental Management for AMTCE Dundalk",
+   "buyer": "Louth and Meath Education and Training Board 1384",
+   "buyer_country": "IE",
+   "published": "2026-11-20",
+   "url": "https://ted.europa.eu/fr/notice/-/detail/810276-2026",
+   "cpv_label": "Matériels électriques",
+   "countries": [
+    "IE"
+   ],
+   "cpv": [
+    "31681410",
+    "31681000",
+    "35613000",
+    "79961200",
+    "71354200",
+    "60441000",
+    "72222300"
+   ],
+   "deadline": "",
+   "value": 216000.0,
+   "currency": "EUR",
+   "winners": [
+    "Easy Track"
+   ],
+   "description": "The Contracting Authority proposes to engage in a competitive process for the establishment of a single party framework agreement to Supply, Deliver, Install and Commission ​​High-Accuracy Geospatial Data Acquisition Equipment for Environmental Management for the Advanced Manufacturing Training Centre of Excellence (AMTCE), Dundalk.​ The initial solution is required to be fully delivered and accepted by the Contracting Authority by 30th November 2026 or as agreed by both parties.",
+   "status": "",
+   "first_seen": "2026-11-20T08:23:30+01:00",
+   "analysis": {
+    "relevant": false,
+    "segment": "cartographie",
+    "title_fr": "Fourniture d'équipements de géolocalisation pour un centre de formation",
+    "summary": "Accord-cadre pour la fourniture, l'installation et la mise en service d'équipements de collecte de données géospatiales haute précision pour un centre de formation en Irlande.",
+    "why": "",
+    "industries": [],
+    "fit": "faible"
+   },
+   "analysed_at": "2026-11-20T08:23:30+01:00",
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "ted:809483-2026",
+   "source": "ted",
+   "kind": "award",
+   "notice": "809483-2026",
+   "notice_type": "can-standard",
+   "title": "Acord-cadru de servicii cadastrale privind întocmirea documentației cadastrale în vederea înscrierii în evidențele de carte funciară a imobilelor aparținând patrimoniului public și privat al Municipiului Arad/Statului Român - UAT Arad",
+   "buyer": "MUNICIPIUL ARAD",
+   "buyer_country": "RO",
+   "published": "2026-11-20",
+   "url": "https://ted.europa.eu/fr/notice/-/detail/809483-2026",
+   "cpv_label": "Services cadastraux",
+   "countries": [
+    "RO"
+   ],
+   "cpv": [
+    "71354300"
+   ],
+   "deadline": "",
+   "value": 940818.67,
+   "currency": "RON",
+   "winners": [
+    "DATCAD"
+   ],
+   "description": "Acord-cadru de servicii cadastrale privind întocmirea documentației cadastrale în vederea înscrierii în evidențele de carte funciară a imobilelor aparținând patrimoniului public și privat al Municipiului Arad/Statului Român - UAT Arad, conform cerinţelor caietului de sarcini şi anexei la acesta. Cantitățile minime și maxime aferente acordului cadru și contractului subsecvent se regăsesc în Anexa la Caietul de sarcini. Valoarea estimata a acordului cadru este între 2.468.000 lei şi între 8.000.000 fără TVA. Autoritatea contractanta va raspunde solicitarilor de clarificare adresate in termenul…",
+   "status": "",
+   "first_seen": "2026-11-20T08:23:30+01:00",
+   "analysis": {
+    "relevant": false,
+    "segment": "cartographie",
+    "title_fr": "Accord-cadre de services cadastraux pour la ville d'Arad (Roumanie)",
+    "summary": "Accord-cadre pour l'établissement de documentation cadastrale permettant l'inscription au livre foncier des biens publics et privés de la municipalité d'Arad.",
+    "why": "",
+    "industries": [
+     "foncier"
+    ],
+    "fit": "faible"
+   },
+   "analysed_at": "2026-11-20T08:23:30+01:00",
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "ted:808801-2026",
+   "source": "ted",
+   "kind": "open",
+   "notice": "808801-2026",
+   "notice_type": "cn-standard",
+   "title": "Coastal Monitoring Aerial Imagery and LiDAR Survey Spring 2027",
+   "buyer": "Office of Public Works (OPW)",
+   "buyer_country": "IE",
+   "published": "2026-11-20",
+   "url": "https://ted.europa.eu/fr/notice/-/detail/808801-2026",
+   "cpv_label": "Services d'études",
+   "countries": [
+    "IE"
+   ],
+   "cpv": [
+    "79311000",
+    "71354100",
+    "71354200",
+    "60440000"
+   ],
+   "deadline": "2026-12-18",
+   "value": 117000.0,
+   "currency": "EUR",
+   "winners": [],
+   "description": "The provision of Aerial Imagery and LiDAR surveying services including: - the capture of red, green, blue and near infrared spectral bands - the provision of full orthorectified aerial images - the provision of LiDAR point cloud data - the provision of digital surface and terrain models - the provision of tile indices - the provision of quality control outputs - the provision of a survey report",
+   "status": "",
+   "first_seen": "2026-11-20T08:23:30+01:00",
+   "analysis": {
+    "relevant": true,
+    "segment": "aerien_lidar",
+    "title_fr": "Survol aérien et LiDAR pour le suivi côtier, printemps 2027",
+    "summary": "Prestation de prises de vues aériennes multispectrales et de levés LiDAR (nuage de points, MNT/MNS, orthophotos) pour le suivi du littoral irlandais.",
+    "why": "Besoin de données 3D et imagerie aérienne pour le suivi environnemental, marché plutôt occupé par des prestataires aériens spécialisés.",
+    "industries": [
+     "foret_environnement",
+     "infrastructures"
+    ],
+    "fit": "faible"
+   },
+   "analysed_at": "2026-11-20T08:23:30+01:00",
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "ted:808531-2026",
+   "source": "ted",
+   "kind": "open",
+   "notice": "808531-2026",
+   "notice_type": "cn-standard",
+   "title": "Acquisitions aériennes pour le renouvellement d’un PCRS - Plan de Corps de Rue Simplifié – Image et actualisation du référentiel de données 3D du jumeau numérique sur le département de la Vendée",
+   "buyer": "Géo Vendée (85)",
+   "buyer_country": "FR",
+   "published": "2026-11-20",
+   "url": "https://ted.europa.eu/fr/notice/-/detail/808531-2026",
+   "cpv_label": "Services de cartographie aérienne",
+   "countries": [
+    "FR"
+   ],
+   "cpv": [
+    "71354200",
+    "71354100",
+    "72310000"
+   ],
+   "deadline": "2027-01-04",
+   "value": null,
+   "currency": "",
+   "winners": [],
+   "description": "Acquisitions aériennes pour le renouvellement d'un PCRS - Plan de Corps de Rue Simplifié - Image et actualisation du référentiel de données 3D du jumeau numérique sur le département de la Vendée",
+   "status": "",
+   "first_seen": "2026-11-20T08:23:30+01:00",
+   "analysis": {
+    "relevant": true,
+    "segment": "aerien_lidar",
+    "title_fr": "Acquisitions aériennes pour le PCRS et le jumeau numérique 3D de la Vendée",
+    "summary": "Prises de vues aériennes pour renouveler le Plan de Corps de Rue Simplifié et actualiser le référentiel 3D du jumeau numérique du département de la Vendée (France).",
+    "why": "Marché de cartographie aérienne/3D pour un jumeau numérique territorial, segment proche mais périphérique à l'offre satellite d'Airbus.",
+    "industries": [
+     "infrastructures",
+     "foncier"
+    ],
+    "fit": "faible"
+   },
+   "analysed_at": "2026-11-20T08:23:30+01:00",
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "ted:808515-2026",
+   "source": "ted",
+   "kind": "open",
+   "notice": "808515-2026",
+   "notice_type": "cn-standard",
+   "title": "Rådgiverydelser vedr. projekter i regi af Grøn Trepart til Vejle Kommune",
+   "buyer": "Vejle Kommune",
+   "buyer_country": "DK",
+   "published": "2026-11-20",
+   "url": "https://ted.europa.eu/fr/notice/-/detail/808515-2026",
+   "cpv_label": "Services de conseil en ingénierie de l'environnement",
+   "countries": [
+    "DK"
+   ],
+   "cpv": [
+    "71313000",
+    "77000000",
+    "71335000",
+    "71320000",
+    "71900000",
+    "71355000",
+    "71354100",
+    "90713000",
+    "71241000",
+    "71600000",
+    "77100000"
+   ],
+   "deadline": "2026-12-15",
+   "value": 100000000.0,
+   "currency": "DKK",
+   "winners": [],
+   "description": "Udbuddet vedrører etablering af et dynamisk indkøbssystem indeholdende rådgiverydelser vedrørende projekter i regi af Grøn Trepart til Vejle Kommune. Indkøbssystemet omfatter følgende kategorier: Kategori 1: Lavbunds- og vådområdeprojekter (>10 ha) Kategori 2: Små vådområdeprojekter (1-10 ha) Kategori 3: Store naturprojekter (>200 ha) Kategori 4: Mindre naturprojekter (1-200 ha) Kategori 5: Jordbundsprøver Kategori 6: Landmåling/Vandløbsopmåling Kategori 7: Biodiversitet/naturbesigtigelser Kategori 8: Digital screening/GIS-arbejde Kategori 9: Lodsejerdialog (f.eks. udtagningskonsulent…",
+   "status": "",
+   "first_seen": "2026-11-20T08:23:30+01:00",
+   "analysis": {
+    "relevant": false,
+    "segment": "environnement_climat",
+    "title_fr": "Système d'achat dynamique de prestations de conseil environnemental (Vejle, Danemark)",
+    "summary": "Mise en place d'un système d'achat dynamique pour des prestations de conseil sur des projets environnementaux (zones humides, nature, biodiversité, SIG) pour la commune de Vejle.",
+    "why": "",
+    "industries": [
+     "foret_environnement"
+    ],
+    "fit": "faible"
+   },
+   "analysed_at": "2026-11-20T08:23:30+01:00",
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "ted:808431-2026",
+   "source": "ted",
+   "kind": "open",
+   "notice": "808431-2026",
+   "notice_type": "cn-standard",
+   "title": "Vergabe der bestehenden Geo-Informationsinfrastruktur (GIS) des Landkreises Hildesheim",
+   "buyer": "Landkreis Hildesheim",
+   "buyer_country": "DE",
+   "published": "2026-11-20",
+   "url": "https://ted.europa.eu/fr/notice/-/detail/808431-2026",
+   "cpv_label": "Systèmes d'information géographique (GIS ou équivalent)",
+   "countries": [
+    "DE"
+   ],
+   "cpv": [
+    "38221000",
+    "72263000",
+    "72317000"
+   ],
+   "deadline": "2026-11-27",
+   "value": null,
+   "currency": "",
+   "winners": [],
+   "description": "Vergabe der Migration und Cloud-Betrieb der GIS-Umgebung einschl. Esri-Softwarelizenzierung des Landkreises Hildesheim",
+   "status": "",
+   "first_seen": "2026-11-20T08:23:30+01:00",
+   "analysis": {
+    "relevant": false,
+    "segment": "cartographie",
+    "title_fr": "Migration et hébergement cloud du système d'information géographique du Landkreis Hildesheim",
+    "summary": "Migration et exploitation en mode cloud de l'environnement SIG existant, incluant les licences logicielles Esri, pour l'administration de Hildesheim (Allemagne).",
+    "why": "Marché IT/SIG remporté potentiellement par un intégrateur Esri, sans lien direct avec l'offre données d'Airbus.",
+    "industries": [],
+    "fit": "faible"
+   },
+   "analysed_at": "2026-11-20T08:23:30+01:00",
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "ted:808396-2026",
+   "source": "ted",
+   "kind": "award",
+   "notice": "808396-2026",
+   "notice_type": "can-standard",
+   "title": "Modulárny systém pre svahové deformácie Slovenska na báze DPZ",
+   "buyer": "Štátny geologický ústav Dionýza Štúra",
+   "buyer_country": "SK",
+   "published": "2026-11-20",
+   "url": "https://ted.europa.eu/fr/notice/-/detail/808396-2026",
+   "cpv_label": "Services de cartographie numérique",
+   "countries": [
+    "SK"
+   ],
+   "cpv": [
+    "71354100"
+   ],
+   "deadline": "",
+   "value": null,
+   "currency": "",
+   "winners": [],
+   "description": "Modulárny systém pre svahové deformácie Slovenska na báze diaľkového prieskumu Zeme v zmysle požiadaviek uvedených v Súťažných podkladoch.",
+   "status": "",
+   "first_seen": "2026-11-20T08:23:30+01:00",
+   "analysis": {
+    "relevant": true,
+    "segment": "environnement_climat",
+    "title_fr": "Système modulaire de suivi des déformations de pente en Slovaquie par télédétection",
+    "summary": "Développement d'un système modulaire de surveillance des déformations de versants en Slovaquie basé sur la télédétection, pour l'institut géologique national.",
+    "why": "Besoin de télédétection (potentiellement SAR/InSAR satellitaire) pour le suivi des glissements de terrain, domaine où Airbus propose des solutions.",
+    "industries": [
+     "infrastructures",
+     "foret_environnement"
+    ],
+    "fit": "moyenne"
+   },
+   "analysed_at": "2026-11-20T08:23:30+01:00",
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "ted:808137-2026",
+   "source": "ted",
+   "kind": "open",
+   "notice": "808137-2026",
+   "notice_type": "cn-standard",
+   "title": "Opracowanie dokumentacji projektowej dla zadania pn.: „Budowa drogi dla pieszych i rowerów w ciągu DK 83 na odc. Charłupia Mała - Sieradz wraz z rozbiórką i budową nowego obiektu mostowego na rz. Myja”.",
+   "buyer": "Generalna Dyrekcja Dróg Krajowych i Autostrad",
+   "buyer_country": "PL",
+   "published": "2026-11-20",
+   "url": "https://ted.europa.eu/fr/notice/-/detail/808137-2026",
+   "cpv_label": "Services d'architecture, services de construction, services d'ingénierie et services d'inspection",
+   "countries": [
+    "PL"
+   ],
+   "cpv": [
+    "71000000",
+    "71242000",
+    "71250000",
+    "71320000",
+    "71332000",
+    "71354000",
+    "71248000"
+   ],
+   "deadline": "2026-12-29",
+   "value": null,
+   "currency": "",
+   "winners": [],
+   "description": "Zamówienie obejmuje wykonanie: mapy do celów projektowych, projektu budowlanego i wykonawczego, badań i opracowań geologicznych oraz geotechnicznych, materiałów do wniosku o zezwolenie na realizacji inwestycji drogowej (ZRID) oraz dokumentacji przetargowej (STWiORB, przedmiarów robót, kosztorysów ofertowych i kosztorysu inwestorskiego). Zamówienie ponadto obejmuje opracowanie i przygotowanie odpowiedzi na pytania oferentów i dokonywanie ewentualnych modyfikacji opracowanych dokumentów w okresie trwania postępowania przetargowego na realizację robót budowlanych i w okresie rękojmi za wady dla…",
+   "status": "",
+   "first_seen": "2026-11-20T08:23:30+01:00",
+   "analysis": {
+    "relevant": false,
+    "segment": "cartographie",
+    "title_fr": "Étude de conception pour une voie piétonne/cyclable et un pont sur la DK83 (Pologne)",
+    "summary": "Marché d'études techniques (plans, géotechnique, dossier administratif) pour l'aménagement d'une voie piétonne et cyclable et la reconstruction d'un pont routier en Pologne.",
+    "why": "",
+    "industries": [],
+    "fit": "faible"
+   },
+   "analysed_at": "2026-11-20T08:23:30+01:00",
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "ted:807857-2026",
+   "source": "ted",
+   "kind": "open",
+   "notice": "807857-2026",
+   "notice_type": "cn-standard",
+   "title": "Servicii de amenajare a padurilor-OS.Traian 2026 DSBC",
+   "buyer": "REGIA NATIONALA A PADURILOR - ROMSILVA RA Directia Silvica Bacau",
+   "buyer_country": "RO",
+   "published": "2026-11-20",
+   "url": "https://ted.europa.eu/fr/notice/-/detail/807857-2026",
+   "cpv_label": "Services de conception d'études",
+   "countries": [
+    "RO"
+   ],
+   "cpv": [
+    "79311100",
+    "71354100",
+    "77230000",
+    "77231400",
+    "90711000"
+   ],
+   "deadline": "2026-12-14",
+   "value": 1564687.08,
+   "currency": "RON",
+   "winners": [],
+   "description": "Serviciile de amenajare a pădurilor se vor atribui în anul 2026 (faza teren 2027) prin încheierea unui contract de achiziție publică pentru Ocolul Silvic Traian. Suprafața totala a Ocolului Silvic Traian este de 9823.50 ha. Serviciile presupun elaborarea amenajamentului silvic, un produs al activităţii de amenajare cu conţinut tehnico-organizatoric, fundamentat ecologic, prin care se stabilesc, pentru o perioadă de timp, lucrările necesare a fi executate într-o unitate de producţie, în scopul aducerii şi, ulterior, al menţinerii caracteristicilor structurale ale arboretelor şi ale pădurii în…",
+   "status": "",
+   "first_seen": "2026-11-20T08:23:30+01:00",
+   "analysis": {
+    "relevant": true,
+    "segment": "environnement_climat",
+    "title_fr": "Services d'aménagement forestier pour l'Office silvicole Traian (Roumanie)",
+    "summary": "Élaboration du plan d'aménagement forestier pour l'Office silvicole Traian, portant sur près de 9 824 ha de forêt, phase de terrain prévue en 2027.",
+    "why": "Les plans d'aménagement forestier reposent souvent sur de l'imagerie/cartographie aérienne, signal de besoin en données forestières.",
+    "industries": [
+     "foret_environnement"
+    ],
+    "fit": "faible"
+   },
+   "analysed_at": "2026-11-20T08:23:30+01:00",
+   "analysis_model": "claude_cli:sonnet"
+  },
   {
    "id": "ted:806722-2026",
    "source": "ted",
