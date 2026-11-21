@@ -1,90 +1,90 @@
 {
  "fx": {
-  "date": "2026-11-19",
+  "date": "2026-11-20",
   "rates": {
-   "USD": 1.0992,
-   "JPY": 175.84,
-   "CZK": 24.427,
-   "DKK": 7.4742,
-   "GBP": 0.83581,
-   "HUF": 369.43,
-   "PLN": 4.417,
-   "RON": 5.3473,
-   "SEK": 11.147,
-   "CHF": 0.9262,
+   "USD": 1.099,
+   "JPY": 174.35,
+   "CZK": 24.469,
+   "DKK": 7.4746,
+   "GBP": 0.83735,
+   "HUF": 373.55,
+   "PLN": 4.4583,
+   "RON": 5.3493,
+   "SEK": 11.2125,
+   "CHF": 0.9223,
    "ISK": 137.2,
-   "NOK": 10.6475,
-   "TRY": 55.4737,
-   "AUD": 1.6378,
-   "BRL": 6.4765,
-   "CAD": 1.5719,
-   "CNY": 7.328,
-   "HKD": 8.6239,
-   "IDR": 20073.1,
-   "ILS": 3.6149,
-   "INR": 102.55,
-   "KRW": 1460.23,
-   "MXN": 20.7946,
-   "MYR": 4.5205,
-   "NZD": 1.989,
-   "PHP": 70.014,
-   "SGD": 1.4176,
-   "THB": 37.268,
-   "ZAR": 18.9948
+   "NOK": 10.718,
+   "TRY": 55.5788,
+   "AUD": 1.6487,
+   "BRL": 6.5259,
+   "CAD": 1.5723,
+   "CNY": 7.3388,
+   "HKD": 8.615,
+   "IDR": 20071.37,
+   "ILS": 3.6737,
+   "INR": 101.85,
+   "KRW": 1472.04,
+   "MXN": 20.9547,
+   "MYR": 4.5196,
+   "NZD": 1.9968,
+   "PHP": 70.091,
+   "SGD": 1.416,
+   "THB": 37.262,
+   "ZAR": 19.1987
   }
  },
- "updated_at": "2026-11-20T08:23:30+01:00",
+ "updated_at": "2026-11-21T08:18:59+01:00",
  "sources": [
   {
    "name": "TED",
    "url": "https://api.ted.europa.eu/v3/notices/search",
    "ok": true,
    "error": "",
-   "fetched": 50,
-   "kept": 42,
+   "fetched": 36,
+   "kept": 28,
    "via": "tender"
   },
   {
    "name": "Find a Tender",
    "url": "https://www.find-tender.service.gov.uk/api/1.0/ocdsReleasePackages",
-   "ok": false,
-   "error": "HTTPSConnectionPool(host='www.find-tender.service.gov.uk', port=443): Read timed out. (read timeout=60)",
-   "fetched": 0,
-   "kept": 0,
+   "ok": true,
+   "error": "",
+   "fetched": 1273,
+   "kept": 7,
    "via": "tender"
   }
  ],
  "last_run": {
-  "new": 9,
+  "new": 4,
   "sources": [
    {
     "name": "TED",
     "url": "https://api.ted.europa.eu/v3/notices/search",
     "ok": true,
     "error": "",
-    "fetched": 50,
-    "kept": 42,
+    "fetched": 36,
+    "kept": 28,
     "via": "tender"
    },
    {
     "name": "Find a Tender",
     "url": "https://www.find-tender.service.gov.uk/api/1.0/ocdsReleasePackages",
-    "ok": false,
-    "error": "HTTPSConnectionPool(host='www.find-tender.service.gov.uk', port=443): Read timed out. (read timeout=60)",
-    "fetched": 0,
-    "kept": 0,
+    "ok": true,
+    "error": "",
+    "fetched": 1273,
+    "kept": 7,
     "via": "tender"
    }
   ],
   "analysis": {
-   "analysed": 9,
-   "relevant": 4,
+   "analysed": 4,
+   "relevant": 0,
    "error": "",
-   "cost_usd": 0.1528
+   "cost_usd": 0.0448
   },
   "pruned": 0
  },
- "fts_synced_until": "2026-11-18T07:00:00",
+ "fts_synced_until": "2026-11-21T07:00:00",
  "tenders": [
   {
    "id": "ted:810276-2026",
@@ -469,6 +469,217 @@
     "fit": "faible"
    },
    "analysed_at": "2026-11-20T08:23:30+01:00",
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "fts:ocds-h6vhtk-07c0ba:award",
+   "source": "fts",
+   "kind": "award",
+   "notice": "110314-2026",
+   "notice_type": "",
+   "title": "Enterprise ESRI Licence Agreement",
+   "buyer": "City of Bradford Metropolitan District Council",
+   "buyer_country": "GB",
+   "published": "2026-11-20",
+   "url": "",
+   "cpv_label": "",
+   "countries": [
+    "GB"
+   ],
+   "cpv": [
+    "72000000"
+   ],
+   "deadline": "",
+   "value": null,
+   "currency": "",
+   "winners": [
+    "ESRI UK Ltd"
+   ],
+   "description": "Renewal of contract for Council's mapping software for all things geospatial",
+   "status": "",
+   "first_seen": "2026-11-21T08:18:59+01:00",
+   "analysis": {
+    "relevant": false,
+    "segment": "cartographie",
+    "title_fr": "Renouvellement d'une licence logicielle ESRI pour le conseil",
+    "summary": "Le conseil municipal de Bradford renouvelle son contrat de logiciel de cartographie et SIG auprès d'ESRI UK.",
+    "why": "Marché logiciel SIG, non pertinent pour l'offre de données satellitaires d'Airbus.",
+    "industries": [
+     "infrastructures"
+    ],
+    "fit": "faible"
+   },
+   "analysed_at": "2026-11-21T08:18:59+01:00",
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "fts:ocds-h6vhtk-07c08d:open",
+   "source": "fts",
+   "kind": "open",
+   "notice": "110237-2026",
+   "notice_type": "UK4",
+   "title": "Managing Assets Management – Coastal  Northern Ireland tender",
+   "buyer": "The Crown Estate",
+   "buyer_country": "GB",
+   "published": "2026-11-20",
+   "url": "https://www.find-tender.service.gov.uk/Notice/110237-2026",
+   "cpv_label": "",
+   "countries": [
+    "GB"
+   ],
+   "cpv": [
+    "71351220",
+    "71354500",
+    "71621000",
+    "72221000",
+    "73112000",
+    "73210000",
+    "98360000"
+   ],
+   "deadline": "2026-12-15",
+   "value": 330000.0,
+   "currency": "GBP",
+   "winners": [],
+   "description": "The Crown Estate is procuring Managing Agent services to provide asset management and commercial support across the Project for Northern Ireland. The appointed Managing Agent will deliver defined asset management and commercial services, including lease and licence administration, routine commercial activities, compliance and performance monitoring, reporting, customer management, and data and records management, in accordance with the portfolio-specific scopes of work set out in this ITT.",
+   "status": "",
+   "first_seen": "2026-11-21T08:18:59+01:00",
+   "analysis": {
+    "relevant": false,
+    "segment": "cartographie",
+    "title_fr": "Services de gestion d'actifs côtiers en Irlande du Nord",
+    "summary": "The Crown Estate recherche un prestataire pour la gestion d'actifs et le support commercial d'un portefeuille côtier en Irlande du Nord.",
+    "why": "",
+    "industries": [
+     "infrastructures",
+     "foncier"
+    ],
+    "fit": "faible"
+   },
+   "analysed_at": "2026-11-21T08:18:59+01:00",
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "fts:ocds-h6vhtk-07c03d:planned",
+   "source": "fts",
+   "kind": "planned",
+   "notice": "110106-2026",
+   "notice_type": "UK2",
+   "title": "Route Optimisation System",
+   "buyer": "The North Yorkshire Council",
+   "buyer_country": "GB",
+   "published": "2026-11-20",
+   "url": "https://www.find-tender.service.gov.uk/Notice/110106-2026",
+   "cpv_label": "",
+   "countries": [
+    "GB"
+   ],
+   "cpv": [
+    "72268000",
+    "48000000",
+    "48100000",
+    "48326000"
+   ],
+   "deadline": "",
+   "value": 384000.0,
+   "currency": "GBP",
+   "winners": [],
+   "description": "North Yorkshire Council is seeking supplier information on route planning and optimisation solutions for domestic and commercial waste and recycling collections. The requirement includes reviewing collection rounds, improving vehicle and staff deployment, modelling future service changes and housing growth, and providing outputs compatible with current and future waste management systems.",
+   "status": "",
+   "first_seen": "2026-11-21T08:18:59+01:00",
+   "analysis": {
+    "relevant": false,
+    "segment": "cartographie",
+    "title_fr": "Système d'optimisation des tournées de collecte des déchets",
+    "summary": "Le conseil du North Yorkshire explore des solutions logicielles d'optimisation des tournées de collecte des déchets et recyclables.",
+    "why": "",
+    "industries": [
+     "infrastructures"
+    ],
+    "fit": "faible"
+   },
+   "analysed_at": "2026-11-21T08:18:59+01:00",
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "fts:ocds-h6vhtk-07c028:planned",
+   "source": "fts",
+   "kind": "planned",
+   "notice": "110057-2026",
+   "notice_type": "UK2",
+   "title": "Highways Frameworks for Barnet London Borough Council",
+   "buyer": "London Borough of Barnet",
+   "buyer_country": "GB",
+   "published": "2026-11-20",
+   "url": "https://www.find-tender.service.gov.uk/Notice/110057-2026",
+   "cpv_label": "",
+   "countries": [
+    "GB"
+   ],
+   "cpv": [
+    "45000000",
+    "45222100",
+    "45233100",
+    "45233120",
+    "45233139",
+    "45233140",
+    "45233141",
+    "45233161",
+    "45233210",
+    "45233222",
+    "45233223",
+    "45233290",
+    "45233294",
+    "50220000",
+    "71220000",
+    "71242000",
+    "71311210",
+    "71311220",
+    "71311300",
+    "71312000",
+    "71313400",
+    "71313450",
+    "71320000",
+    "71322000",
+    "71322500",
+    "71332000",
+    "71351500",
+    "71351810",
+    "71351914",
+    "71353000",
+    "71354100",
+    "71355000",
+    "71356400",
+    "71530000",
+    "71541000",
+    "71631480",
+    "72224000",
+    "79311100",
+    "79400000",
+    "79415200",
+    "79416000",
+    "79416200",
+    "79933000",
+    "90480000"
+   ],
+   "deadline": "",
+   "value": 35000000.0,
+   "currency": "GBP",
+   "winners": [],
+   "description": "The London Borough of Barnet is undertaking preliminary market engagement to support the proposed procurement of new frameworks for the delivery of highways works and professional services.\nThe proposed arrangements comprise a Highways Works Framework and a Highways Professional Services Framework, which are intended to support the Council's ongoing maintenance, improvement and management of its highway infrastructure.\nThe Council wishes to engage with interested suppliers to understand market interest, capacity and capability across a range of activities, including highway surveys…",
+   "status": "",
+   "first_seen": "2026-11-21T08:18:59+01:00",
+   "analysis": {
+    "relevant": false,
+    "segment": "cartographie",
+    "title_fr": "Cadres de marché pour travaux et services de voirie à Barnet",
+    "summary": "Le London Borough of Barnet prépare des accords-cadres pour les travaux et services professionnels liés à la voirie, incluant des relevés routiers.",
+    "why": "",
+    "industries": [
+     "infrastructures"
+    ],
+    "fit": "faible"
+   },
+   "analysed_at": "2026-11-21T08:18:59+01:00",
    "analysis_model": "claude_cli:sonnet"
   },
   {
