@@ -1,11 +1,11 @@
 {
- "updated_at": "2026-11-21T08:03:31+01:00",
+ "updated_at": "2026-11-22T15:11:28+01:00",
  "last_run": {
-  "created": 402,
-  "analysed": 120,
-  "merged": 30,
-  "error": "",
-  "cost_usd": 2.2701
+  "created": 513,
+  "analysed": 100,
+  "merged": 41,
+  "error": "budget de temps atteint (15 min) : 10 sujets reportés au prochain passage",
+  "cost_usd": 2.352
  },
  "stories": [
   {
@@ -31,7 +31,8 @@
   {
    "id": "s3b0c94875a881930",
    "item_ids": [
-    "3b0c94875a881930"
+    "3b0c94875a881930",
+    "58b66a9b81a712a4"
    ],
    "analysis": {},
    "analysed_at": "",
@@ -1431,7 +1432,8 @@
   {
    "id": "s85857edce8d1cb6a",
    "item_ids": [
-    "85857edce8d1cb6a"
+    "85857edce8d1cb6a",
+    "25b5ca0ded4dd3ef"
    ],
    "analysis": {},
    "analysed_at": "",
@@ -55061,7 +55063,8 @@
   {
    "id": "sb42d9970f5e91955",
    "item_ids": [
-    "b42d9970f5e91955"
+    "b42d9970f5e91955",
+    "d884c4c13333e5bc"
    ],
    "analysis": {},
    "analysed_at": "",
@@ -130130,7 +130133,8 @@
     "309ae734a58a11d3",
     "880dd83efa6be1ae",
     "58e0e24df836d7e6",
-    "e03cece10cdbca97"
+    "e03cece10cdbca97",
+    "2dbd6da6cbba3673"
    ],
    "analysis": {
     "relevant": true,
@@ -138136,7 +138140,9 @@
     "cb6be4593b274541",
     "a9db2c45d895da98",
     "6c7dea9295619368",
-    "c3bb96edc52cd28c"
+    "c3bb96edc52cd28c",
+    "f445fe7fc1d5958a",
+    "e2dcf6a48b48903a"
    ],
    "analysis": {
     "relevant": true,
@@ -138531,13 +138537,17 @@
     "a6ee1fc799ec067f",
     "0606a299f44e9092",
     "3fb087e717bcfa79",
-    "efa83c3ffbf892c2"
+    "efa83c3ffbf892c2",
+    "7b5a17fe2a2f12ec",
+    "ddce75c82050a609",
+    "dcdb5cb399d3069b",
+    "81702892a0a71082"
    ],
    "analysis": {
     "relevant": true,
     "title_fr": "Un projectile non identifié frappe un pétrolier dans le détroit d'Ormuz",
-    "summary": "Un pétrolier a été touché par un projectile ou une mine dans le détroit d'Ormuz ; les Gardiens de la révolution iraniens évoquent une mine.",
-    "why": "Nouvel incident dans une zone maritime critique, confirmant le besoin de surveillance satellite du trafic pétrolier.",
+    "summary": "Un pétrolier a été touché par une mine ou un projectile près du détroit d'Ormuz, les Gardiens de la révolution évoquant une explosion ; l'équipage indien est indemne.",
+    "why": "Les tensions dans le détroit d'Ormuz menacent la sécurité maritime et les flux pétroliers, enjeu majeur pour le renseignement géospatial maritime.",
     "tabs": [
      "geopolitique"
     ],
@@ -138550,12 +138560,14 @@
      "ogme"
     ],
     "countries": [
-     "IR"
+     "IR",
+     "US",
+     "IN"
     ],
     "impact": "moyen"
    },
-   "analysed_at": "2026-11-21T08:03:31+01:00",
-   "analysed_size": 2,
+   "analysed_at": "2026-11-22T15:11:28+01:00",
+   "analysed_size": 4,
    "analysis_model": "claude_cli:sonnet"
   },
   {
@@ -139465,16 +139477,6 @@
    "analysis_model": ""
   },
   {
-   "id": "s4e99a5d5a4ce3b05",
-   "item_ids": [
-    "4e99a5d5a4ce3b05"
-   ],
-   "analysis": {},
-   "analysed_at": "",
-   "analysed_size": 0,
-   "analysis_model": ""
-  },
-  {
    "id": "s2eced15cf1c7eba0",
    "item_ids": [
     "2eced15cf1c7eba0"
@@ -140213,14 +140215,16 @@
    ],
    "analysis": {
     "relevant": true,
-    "title_fr": "Un comité de la Chambre américaine réclame un renforcement des contrôles aérospatiaux face à la Chine",
-    "summary": "Un panel de la Chambre des représentants américaine demande un durcissement des restrictions sur l'aérospatiale en raison des liens militaires chinois.",
-    "why": "Durcissement potentiel des contrôles à l'export affectant les technologies spatiales et les acteurs liés à la Chine.",
+    "title_fr": "Un comité du Congrès américain demande un renforcement des contrôles aérospatiaux face à la Chine",
+    "summary": "Une commission de la Chambre des représentants avertit que des accords aérospatiaux occidentaux pourraient avoir profité à l'armée chinoise et appelle à des restrictions plus strictes.",
+    "why": "Un durcissement des contrôles à l'export pourrait affecter les partenariats technologiques internationaux dans le spatial et la défense.",
     "tabs": [
-     "geopolitique"
+     "geopolitique",
+     "economie"
     ],
     "themes": [
-     "sanctions"
+     "sanctions",
+     "reglementation"
     ],
     "industries": [
      "defense"
@@ -140231,8 +140235,8 @@
     ],
     "impact": "moyen"
    },
-   "analysed_at": "2026-11-20T08:07:22+01:00",
-   "analysed_size": 1,
+   "analysed_at": "2026-11-22T15:11:28+01:00",
+   "analysed_size": 3,
    "analysis_model": "claude_cli:sonnet"
   },
   {
@@ -141228,29 +141232,29 @@
     "3c65aea3268875af",
     "6dd077ee27ef2aa7",
     "baebf89d9080db27",
-    "f6607b40ac1a9bf2"
+    "f6607b40ac1a9bf2",
+    "761c4b4b03a9571b",
+    "7516ca9ad675bee3"
    ],
    "analysis": {
     "relevant": true,
-    "title_fr": "La procureure générale de l'Arizona demande un délai sur un projet SpaceX",
-    "summary": "L'Attorney General Mayes appelle à retarder un projet de SpaceX, sans précision du motif détaillé ni du lieu exact.",
-    "why": "Un obstacle réglementaire local pourrait freiner l'expansion des infrastructures de SpaceX, concurrent dans le spatial.",
+    "title_fr": "L'AG de l'Arizona demande un report du vote sur le data center de SpaceX",
+    "summary": "La procureure générale Kris Mayes demande au comté de Cochise de retarder le vote sur le projet de data center de 50 milliards de dollars de SpaceX, questionnant les promesses économiques avancées.",
+    "why": "Montre les frictions réglementaires locales autour des investissements massifs de SpaceX dans les infrastructures de calcul liées à l'espace.",
     "tabs": [
-     "concurrents"
+     "economie"
     ],
     "themes": [
      "reglementation"
     ],
-    "industries": [
-     "connectivite"
-    ],
+    "industries": [],
     "countries": [
      "US"
     ],
     "impact": "faible"
    },
-   "analysed_at": "2026-11-20T08:07:22+01:00",
-   "analysed_size": 1,
+   "analysed_at": "2026-11-22T15:11:28+01:00",
+   "analysed_size": 4,
    "analysis_model": "claude_cli:sonnet"
   },
   {
@@ -141788,9 +141792,9 @@
    ],
    "analysis": {
     "relevant": true,
-    "title_fr": "Onze pays européens s'entraînent en Pologne pour une mission d'après-guerre en Ukraine",
-    "summary": "Des troupes de onze pays européens participent à un exercice militaire en Pologne en vue d'une possible mission de stabilisation en Ukraine après un cessez-le-feu.",
-    "why": "Prépare une présence militaire européenne en Ukraine, un contexte porteur pour le renseignement géospatial de défense.",
+    "title_fr": "Des troupes de 11 pays européens s'entraînent en Pologne pour une future mission en Ukraine",
+    "summary": "Des militaires de 11 pays européens participent à des exercices en Pologne en vue d'une éventuelle mission de maintien de la paix après-guerre en Ukraine.",
+    "why": "Anticipe une présence militaire européenne prolongée en Ukraine, utile pour évaluer la demande future en renseignement géospatial.",
     "tabs": [
      "geopolitique"
     ],
@@ -141806,8 +141810,8 @@
     ],
     "impact": "moyen"
    },
-   "analysed_at": "2026-11-20T08:07:22+01:00",
-   "analysed_size": 1,
+   "analysed_at": "2026-11-22T15:11:28+01:00",
+   "analysed_size": 2,
    "analysis_model": "claude_cli:sonnet"
   },
   {
@@ -142416,12 +142420,32 @@
   {
    "id": "s0efd7b71e7cbfc54",
    "item_ids": [
-    "0efd7b71e7cbfc54"
+    "0efd7b71e7cbfc54",
+    "398c209e462e1a7b"
    ],
-   "analysis": {},
-   "analysed_at": "",
-   "analysed_size": 0,
-   "analysis_model": ""
+   "analysis": {
+    "relevant": true,
+    "title_fr": "L'Inde autorise le Japon à utiliser ses champs de tir pour des essais de missiles",
+    "summary": "L'Inde va permettre au Japon d'utiliser ses installations militaires de tir pour tester des missiles, renforçant leur coopération de défense bilatérale.",
+    "why": "Signale un rapprochement stratégique en Asie qui pourrait accroître la demande régionale en surveillance et renseignement.",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [
+     "conflits"
+    ],
+    "industries": [
+     "defense"
+    ],
+    "countries": [
+     "IN",
+     "JP"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-22T15:11:28+01:00",
+   "analysed_size": 2,
+   "analysis_model": "claude_cli:sonnet"
   },
   {
    "id": "sb7f9579c74de5c14",
@@ -142981,7 +143005,8 @@
   {
    "id": "s0ea618e65c9972ee",
    "item_ids": [
-    "0ea618e65c9972ee"
+    "0ea618e65c9972ee",
+    "586105d4914288f6"
    ],
    "analysis": {},
    "analysed_at": "",
@@ -143966,22 +143991,63 @@
   {
    "id": "s468e0b42640c98b4",
    "item_ids": [
-    "468e0b42640c98b4"
+    "468e0b42640c98b4",
+    "31b135660463fb54"
    ],
-   "analysis": {},
-   "analysed_at": "",
-   "analysed_size": 0,
-   "analysis_model": ""
+   "analysis": {
+    "relevant": true,
+    "title_fr": "L'ESA attribue à OHB un contrat de 102 M€ pour la mission ClearSpace-1",
+    "summary": "L'Agence spatiale européenne confie à l'allemand OHB un contrat de 102 millions d'euros pour la mission de désorbitation de débris ClearSpace-1.",
+    "why": "Renforce OHB comme acteur des services en orbite, un segment émergent où Airbus est également positionné.",
+    "tabs": [
+     "concurrents",
+     "economie"
+    ],
+    "themes": [
+     "programmes",
+     "appels_offres"
+    ],
+    "industries": [],
+    "countries": [
+     "DE"
+    ],
+    "impact": "moyen"
+   },
+   "analysed_at": "2026-11-22T15:11:28+01:00",
+   "analysed_size": 2,
+   "analysis_model": "claude_cli:sonnet"
   },
   {
    "id": "sf658bf578b096d65",
    "item_ids": [
-    "f658bf578b096d65"
+    "f658bf578b096d65",
+    "dc5aa7843ed4f02b"
    ],
-   "analysis": {},
-   "analysed_at": "",
-   "analysed_size": 0,
-   "analysis_model": ""
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Le Canada veut réduire sa dépendance à Starlink pour ses communications militaires arctiques",
+    "summary": "Le Canada cherche des alternatives à Starlink pour sécuriser ses communications militaires dans l'Arctique, dans un contexte de tensions avec les États-Unis.",
+    "why": "Ouvre une opportunité de marché pour des solutions de connectivité sécurisée alternatives à Starlink, concurrent direct dans ce segment.",
+    "tabs": [
+     "marche",
+     "concurrents"
+    ],
+    "themes": [
+     "programmes"
+    ],
+    "industries": [
+     "connectivite",
+     "defense"
+    ],
+    "countries": [
+     "CA",
+     "US"
+    ],
+    "impact": "moyen"
+   },
+   "analysed_at": "2026-11-22T15:11:28+01:00",
+   "analysed_size": 2,
+   "analysis_model": "claude_cli:sonnet"
   },
   {
    "id": "s99e783bd51f132ee",
@@ -144167,7 +144233,8 @@
    "id": "sf286287a2b7d2e0d",
    "item_ids": [
     "f286287a2b7d2e0d",
-    "c8f8b477844074db"
+    "c8f8b477844074db",
+    "197c3605cf8edcd1"
    ],
    "analysis": {
     "relevant": false,
@@ -144501,7 +144568,8 @@
   {
    "id": "sf833c2a5a71616a6",
    "item_ids": [
-    "f833c2a5a71616a6"
+    "f833c2a5a71616a6",
+    "2b4c758216a28c7b"
    ],
    "analysis": {},
    "analysed_at": "",
@@ -144732,7 +144800,8 @@
    "id": "s8bfb3f65af628e3b",
    "item_ids": [
     "8bfb3f65af628e3b",
-    "96b3458662fc51fb"
+    "96b3458662fc51fb",
+    "b23ac9e744e4d4e2"
    ],
    "analysis": {
     "relevant": false,
@@ -145064,29 +145133,24 @@
     "db25a78b148172f0",
     "7c0cfe3fbad2ddc9",
     "e1325e0c149d413e",
-    "3c2e6a22cefc2b71"
+    "3c2e6a22cefc2b71",
+    "42becb5bdba1bb91"
    ],
    "analysis": {
-    "relevant": true,
-    "title_fr": "Un séisme de magnitude 6,7 frappe le centre du Pérou",
-    "summary": "Un séisme de magnitude 6,7 a secoué le centre du Pérou le 20 novembre, causant des dégâts mineurs selon les premiers rapports.",
-    "why": "Les séismes génèrent une demande ponctuelle d'imagerie satellite pour évaluer les dommages et orienter les secours.",
-    "tabs": [
-     "geopolitique"
-    ],
-    "themes": [
-     "crises"
-    ],
-    "industries": [
-     "infrastructures"
-    ],
+    "relevant": false,
+    "title_fr": "Séisme de magnitude 6,7 dans les Andes péruviennes",
+    "summary": "Un séisme de magnitude 6,7 a secoué le centre du Pérou, sans dégâts ni victimes signalés dans l'immédiat.",
+    "why": "",
+    "tabs": [],
+    "themes": [],
+    "industries": [],
     "countries": [
      "PE"
     ],
     "impact": "faible"
    },
-   "analysed_at": "2026-11-21T08:03:31+01:00",
-   "analysed_size": 4,
+   "analysed_at": "2026-11-22T15:11:28+01:00",
+   "analysed_size": 8,
    "analysis_model": "claude_cli:sonnet"
   },
   {
@@ -145168,40 +145232,6 @@
    "analysed_at": "",
    "analysed_size": 0,
    "analysis_model": ""
-  },
-  {
-   "id": "s454f50fcd3200b0c",
-   "item_ids": [
-    "454f50fcd3200b0c",
-    "64736ee393e0616a",
-    "9540f684b7289394",
-    "1e155fe60af9effb",
-    "9c149dc4d345f956"
-   ],
-   "analysis": {
-    "relevant": true,
-    "title_fr": "Washington sanctionne des 'fiduciaires' iraniens collectant des revenus pétroliers",
-    "summary": "Le Trésor américain impose de nouvelles sanctions à des intermédiaires iraniens accusés de collecter des revenus pétroliers illicites pour Téhéran.",
-    "why": "Renforce la pression sur l'économie pétrolière iranienne, un facteur de risque pour la surveillance maritime et énergétique.",
-    "tabs": [
-     "geopolitique"
-    ],
-    "themes": [
-     "sanctions",
-     "ressources"
-    ],
-    "industries": [
-     "ogme"
-    ],
-    "countries": [
-     "US",
-     "IR"
-    ],
-    "impact": "moyen"
-   },
-   "analysed_at": "2026-11-21T08:03:31+01:00",
-   "analysed_size": 2,
-   "analysis_model": "claude_cli:sonnet"
   },
   {
    "id": "sa3b1908acaf76eba",
@@ -146018,25 +146048,32 @@
    ],
    "analysis": {
     "relevant": false,
-    "title_fr": "Un homme reconnu coupable d'avoir déclenché l'incendie meurtrier de Los Angeles",
-    "summary": "Jonathan Rinderknecht a été reconnu coupable d'avoir provoqué l'incendie de Palisades à Los Angeles, lors d'un second procès.",
+    "title_fr": "Incendies de Los Angeles : un suspect reconnu coupable après un second procès",
+    "summary": "Un homme a été reconnu coupable d'avoir déclenché un incendie meurtrier à Los Angeles, lors d'un second procès.",
     "why": "",
-    "tabs": [],
-    "themes": [],
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [
+     "crises"
+    ],
     "industries": [],
     "countries": [
      "US"
     ],
     "impact": "faible"
    },
-   "analysed_at": "2026-11-21T08:03:31+01:00",
-   "analysed_size": 1,
+   "analysed_at": "2026-11-22T15:11:28+01:00",
+   "analysed_size": 2,
    "analysis_model": "claude_cli:sonnet"
   },
   {
    "id": "s097cd957357e2e1d",
    "item_ids": [
-    "097cd957357e2e1d"
+    "097cd957357e2e1d",
+    "d9c088beb8f56b03",
+    "c55002b54f6e6c6d",
+    "e4993baba986be23"
    ],
    "analysis": {
     "relevant": true,
@@ -146146,20 +146183,21 @@
    "id": "scaa36d1e094e815b",
    "item_ids": [
     "caa36d1e094e815b",
-    "31e3e7530de712e8"
+    "31e3e7530de712e8",
+    "0fd5766b6f3ba224"
    ],
    "analysis": {
     "relevant": true,
-    "title_fr": "Un élu démocrate menace de bloquer des fonds SpaceX face au ralentissement de Starshield pour l'Ukraine",
-    "summary": "Le représentant Jim Himes pourrait retenir des financements destinés à SpaceX en raison d'un ralentissement du déploiement de Starshield pour l'Ukraine.",
-    "why": "Une tension politique autour du financement de Starshield montre les enjeux budgétaires liés aux services satellitaires militaires concurrents.",
+    "title_fr": "Le financement de SpaceX menacé par un différend sur Starshield en Ukraine",
+    "summary": "Un élu démocrate, Jim Himes, menace de bloquer des fonds pour SpaceX après un ralentissement du service Starshield destiné à l'Ukraine, posant la question du contrôle du programme.",
+    "why": "Révèle les tensions politiques autour du contrôle des capacités satellitaires militaires de SpaceX, concurrent clé en connectivité sécurisée.",
     "tabs": [
-     "economie",
-     "concurrents"
+     "concurrents",
+     "geopolitique"
     ],
     "themes": [
-     "budgets",
-     "programmes"
+     "programmes",
+     "conflits"
     ],
     "industries": [
      "defense",
@@ -146171,8 +146209,8 @@
     ],
     "impact": "moyen"
    },
-   "analysed_at": "2026-11-21T08:03:31+01:00",
-   "analysed_size": 1,
+   "analysed_at": "2026-11-22T15:11:28+01:00",
+   "analysed_size": 3,
    "analysis_model": "claude_cli:sonnet"
   },
   {
@@ -146297,12 +146335,15 @@
   {
    "id": "sd0a9573231aadae3",
    "item_ids": [
-    "d0a9573231aadae3"
+    "d0a9573231aadae3",
+    "1aab291e1dc49e72",
+    "4e99a5d5a4ce3b05",
+    "3c8441e2cac5a038"
    ],
    "analysis": {
     "relevant": false,
-    "title_fr": "Voyager 1 est désormais si loin que la lumière met 24 heures à l'atteindre",
-    "summary": "La sonde Voyager 1 de la NASA a atteint une distance telle que les signaux radio mettent 24 heures pour parvenir à la Terre.",
+    "title_fr": "Voyager 1 atteint une distance d'un jour-lumière de la Terre",
+    "summary": "La sonde Voyager 1 de la NASA est désormais si éloignée que ses signaux radio mettent 24 heures à atteindre la Terre.",
     "why": "",
     "tabs": [
      "geopolitique"
@@ -146314,8 +146355,8 @@
     ],
     "impact": "faible"
    },
-   "analysed_at": "2026-11-21T08:03:31+01:00",
-   "analysed_size": 1,
+   "analysed_at": "2026-11-22T15:11:28+01:00",
+   "analysed_size": 2,
    "analysis_model": "claude_cli:sonnet"
   },
   {
@@ -146521,7 +146562,12 @@
   {
    "id": "s3c7bc8fa5ac23803",
    "item_ids": [
-    "3c7bc8fa5ac23803"
+    "3c7bc8fa5ac23803",
+    "454f50fcd3200b0c",
+    "64736ee393e0616a",
+    "9540f684b7289394",
+    "1e155fe60af9effb",
+    "9c149dc4d345f956"
    ],
    "analysis": {
     "relevant": true,
@@ -146865,18 +146911,24 @@
     "40c449b75bf4c386",
     "d3fce976072e28a6",
     "c44b082f96fa08df",
-    "5795b5397a787f82"
+    "5795b5397a787f82",
+    "40fd0aa1c5524c75",
+    "b4ff7fa9ebcbeba8",
+    "95d314835d5bebc7",
+    "cdbc038ddc44338b"
    ],
    "analysis": {
     "relevant": true,
-    "title_fr": "SpaceX lance une mission secrète pour l'US Space Force depuis la Californie",
-    "summary": "SpaceX a lancé le 20 novembre une charge utile classifiée pour l'US Space Force depuis la base californienne de Vandenberg, avec récupération réussie du premier étage.",
-    "why": "Confirme SpaceX comme fournisseur privilégié de la défense américaine pour les lancements militaires, un marché clé pour les concurrents.",
+    "title_fr": "SpaceX lance une mission classifiée pour l'US Space Force depuis la Californie",
+    "summary": "SpaceX a lancé une fusée Falcon 9 transportant une charge utile secrète pour l'US Space Force depuis la base californienne, avec un atterrissage réussi du premier étage.",
+    "why": "Illustre la dépendance croissante du Pentagone à SpaceX pour l'accès à l'espace militaire, renforçant la position de ce concurrent sur le marché défense.",
     "tabs": [
-     "concurrents"
+     "concurrents",
+     "geopolitique"
     ],
     "themes": [
-     "lancements"
+     "lancements",
+     "programmes"
     ],
     "industries": [
      "defense"
@@ -146884,10 +146936,10 @@
     "countries": [
      "US"
     ],
-    "impact": "faible"
+    "impact": "moyen"
    },
-   "analysed_at": "2026-11-21T08:03:31+01:00",
-   "analysed_size": 4,
+   "analysed_at": "2026-11-22T15:11:28+01:00",
+   "analysed_size": 9,
    "analysis_model": "claude_cli:sonnet"
   },
   {
@@ -147411,38 +147463,6 @@
    "analysis_model": "claude_cli:sonnet"
   },
   {
-   "id": "s7b5a17fe2a2f12ec",
-   "item_ids": [
-    "7b5a17fe2a2f12ec",
-    "ddce75c82050a609",
-    "dcdb5cb399d3069b"
-   ],
-   "analysis": {
-    "relevant": true,
-    "title_fr": "Un pétrolier non conforme explose après avoir heurté une mine près d'Oman",
-    "summary": "Un pétrolier jugé non conforme aux normes a explosé après avoir heurté une mine marine à proximité d'un port omanais.",
-    "why": "Cet incident illustre les risques croissants pour la navigation dans le Golfe, renforçant le besoin de surveillance maritime satellite.",
-    "tabs": [
-     "geopolitique"
-    ],
-    "themes": [
-     "ressources",
-     "conflits"
-    ],
-    "industries": [
-     "maritime",
-     "securite"
-    ],
-    "countries": [
-     "OM"
-    ],
-    "impact": "moyen"
-   },
-   "analysed_at": "2026-11-21T08:03:31+01:00",
-   "analysed_size": 1,
-   "analysis_model": "claude_cli:sonnet"
-  },
-  {
    "id": "s6e0b9e0ec623e5ee",
    "item_ids": [
     "6e0b9e0ec623e5ee"
@@ -147489,13 +147509,14 @@
    "item_ids": [
     "d799d90e174452a7",
     "c0d6745e3ce5c7b6",
-    "a95bbc89c1986326"
+    "a95bbc89c1986326",
+    "b6ecb29104634e21"
    ],
    "analysis": {
     "relevant": true,
-    "title_fr": "Washington limite sa coopération militaire avec le Canada",
-    "summary": "Les États-Unis annoncent des restrictions sur leur coopération militaire avec le Canada, dans un contexte de tensions bilatérales.",
-    "why": "Une réduction de la coopération militaire nord-américaine peut redistribuer les opportunités de contrats de défense et de surveillance.",
+    "title_fr": "Hegseth restreint la coopération militaire avec le Canada",
+    "summary": "Le secrétaire américain à la Défense Pete Hegseth limite les liens militaires avec le Canada, dans un contexte de tensions commerciales et de désaccords sur les dépenses de défense et le F-35.",
+    "why": "Une fracture dans la coopération militaire nord-américaine pourrait affecter les programmes spatiaux et de défense partagés entre alliés.",
     "tabs": [
      "geopolitique"
     ],
@@ -147506,13 +147527,13 @@
      "defense"
     ],
     "countries": [
-     "US",
-     "CA"
+     "CA",
+     "US"
     ],
     "impact": "moyen"
    },
-   "analysed_at": "2026-11-21T08:03:31+01:00",
-   "analysed_size": 1,
+   "analysed_at": "2026-11-22T15:11:28+01:00",
+   "analysed_size": 4,
    "analysis_model": "claude_cli:sonnet"
   },
   {
@@ -147718,9 +147739,4327 @@
    ],
    "analysis": {
     "relevant": true,
-    "title_fr": "L'Arabie saoudite dit avoir intercepté trois missiles houthis visant Riyad",
-    "summary": "Les forces saoudiennes affirment avoir intercepté trois missiles balistiques tirés par les Houthis yéménites en direction de Riyad.",
-    "why": "L'escalade entre l'Arabie saoudite et les Houthis accroît la demande de surveillance satellite et de défense antimissile.",
+    "title_fr": "La coalition saoudienne intercepte des missiles houthis, l'Iran affirme avoir abattu un drone américain",
+    "summary": "La coalition menée par Riyad dit avoir intercepté trois missiles houthis visant Riyad, tandis que les Gardiens de la révolution iraniens affirment avoir abattu un drone américain MQ-9 près du détroit d'Ormuz.",
+    "why": "Escalade militaire au Moyen-Orient pouvant perturber le trafic maritime et énergétique dans une zone stratégique.",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [
+     "conflits",
+     "ressources"
+    ],
+    "industries": [
+     "defense",
+     "maritime",
+     "ogme"
+    ],
+    "countries": [
+     "IR",
+     "SA",
+     "YE",
+     "US"
+    ],
+    "impact": "moyen"
+   },
+   "analysed_at": "2026-11-22T15:11:28+01:00",
+   "analysed_size": 3,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s4dd47d522664eacc",
+   "item_ids": [
+    "4dd47d522664eacc"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sc47185db864b636f",
+   "item_ids": [
+    "c47185db864b636f"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "se95d11d0d3c49035",
+   "item_ids": [
+    "e95d11d0d3c49035"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s47162fcd5a36b41d",
+   "item_ids": [
+    "47162fcd5a36b41d"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s8ad160f4ef4e7775",
+   "item_ids": [
+    "8ad160f4ef4e7775"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s3408df00a769f4d4",
+   "item_ids": [
+    "3408df00a769f4d4"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sd51f24d827868bd2",
+   "item_ids": [
+    "d51f24d827868bd2"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "safdba3769c9529af",
+   "item_ids": [
+    "afdba3769c9529af"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s6fe76b22967b1cd9",
+   "item_ids": [
+    "6fe76b22967b1cd9"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s139ca55b1c2157f1",
+   "item_ids": [
+    "139ca55b1c2157f1"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sd088caa77fb0075a",
+   "item_ids": [
+    "d088caa77fb0075a"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "scf1b140bfa0f6fd3",
+   "item_ids": [
+    "cf1b140bfa0f6fd3"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s191b084da3f59b20",
+   "item_ids": [
+    "191b084da3f59b20"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s13f78e8674e499d4",
+   "item_ids": [
+    "13f78e8674e499d4"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s7bc2c1b6c36aeddb",
+   "item_ids": [
+    "7bc2c1b6c36aeddb"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s59d06c891b1a252b",
+   "item_ids": [
+    "59d06c891b1a252b"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sa10e8801e3c22acb",
+   "item_ids": [
+    "a10e8801e3c22acb"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s53bbff313c2560a8",
+   "item_ids": [
+    "53bbff313c2560a8"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sb0f4fc5cf916943a",
+   "item_ids": [
+    "b0f4fc5cf916943a"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sd8254e8f73598f41",
+   "item_ids": [
+    "d8254e8f73598f41"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sd5d9146790c51feb",
+   "item_ids": [
+    "d5d9146790c51feb"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s1e16ec14a7cd9351",
+   "item_ids": [
+    "1e16ec14a7cd9351"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s810f0994e154527d",
+   "item_ids": [
+    "810f0994e154527d"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s0a793eb25d4c6a7c",
+   "item_ids": [
+    "0a793eb25d4c6a7c"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s06e462926afbcb9d",
+   "item_ids": [
+    "06e462926afbcb9d"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s58f9394a45310ea6",
+   "item_ids": [
+    "58f9394a45310ea6"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s5165560da247e50c",
+   "item_ids": [
+    "5165560da247e50c"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s63f35fdbe1bb40b9",
+   "item_ids": [
+    "63f35fdbe1bb40b9"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s45063b35e31fac9d",
+   "item_ids": [
+    "45063b35e31fac9d"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sb193dd392b07cd25",
+   "item_ids": [
+    "b193dd392b07cd25"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sffd90fe4fd005c54",
+   "item_ids": [
+    "ffd90fe4fd005c54"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s2c70ee0d4d46ab65",
+   "item_ids": [
+    "2c70ee0d4d46ab65"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s8ff89e755c55c916",
+   "item_ids": [
+    "8ff89e755c55c916"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s13b137ce1269db7a",
+   "item_ids": [
+    "13b137ce1269db7a"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s7069f7a3ec9b1182",
+   "item_ids": [
+    "7069f7a3ec9b1182"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sfd9490c650535944",
+   "item_ids": [
+    "fd9490c650535944"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sbe5fe97d2bc05c38",
+   "item_ids": [
+    "be5fe97d2bc05c38"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s1c0915598ab64729",
+   "item_ids": [
+    "1c0915598ab64729"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s00085541542689ad",
+   "item_ids": [
+    "00085541542689ad"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sd70489dcb30870a9",
+   "item_ids": [
+    "d70489dcb30870a9"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s25dafd5b33075cee",
+   "item_ids": [
+    "25dafd5b33075cee"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s2483688f8b072662",
+   "item_ids": [
+    "2483688f8b072662"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s672b507ada85ae51",
+   "item_ids": [
+    "672b507ada85ae51"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "se45baf79478bae39",
+   "item_ids": [
+    "e45baf79478bae39"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s58c1eed1bab2ee47",
+   "item_ids": [
+    "58c1eed1bab2ee47"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s6cca94d85d12547e",
+   "item_ids": [
+    "6cca94d85d12547e"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s3c7cfbf27ac9b193",
+   "item_ids": [
+    "3c7cfbf27ac9b193"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s71719396677a2465",
+   "item_ids": [
+    "71719396677a2465"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s688f2779a78946c0",
+   "item_ids": [
+    "688f2779a78946c0"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sc6227f2d646f0a63",
+   "item_ids": [
+    "c6227f2d646f0a63"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s66861ba9ebb4ace1",
+   "item_ids": [
+    "66861ba9ebb4ace1"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s7d273cf5e9bdfcc7",
+   "item_ids": [
+    "7d273cf5e9bdfcc7"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s55f8b99352c54a32",
+   "item_ids": [
+    "55f8b99352c54a32"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s378dbb9675c9a804",
+   "item_ids": [
+    "378dbb9675c9a804"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "saab86887285ca770",
+   "item_ids": [
+    "aab86887285ca770"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sf028e6199dc2c99e",
+   "item_ids": [
+    "f028e6199dc2c99e"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s8bcb20f5159ba963",
+   "item_ids": [
+    "8bcb20f5159ba963"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sfcd2fbe941441d6f",
+   "item_ids": [
+    "fcd2fbe941441d6f"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s78dce6c79452087a",
+   "item_ids": [
+    "78dce6c79452087a"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s7e26ee159a3c25ac",
+   "item_ids": [
+    "7e26ee159a3c25ac"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sdebfcd3df92ac902",
+   "item_ids": [
+    "debfcd3df92ac902"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s8b4784ab04d474d4",
+   "item_ids": [
+    "8b4784ab04d474d4"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sd20974730fd107de",
+   "item_ids": [
+    "d20974730fd107de"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s67de01f7a51ebe66",
+   "item_ids": [
+    "67de01f7a51ebe66"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s48de4846ed944c15",
+   "item_ids": [
+    "48de4846ed944c15"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "scc7a3a9afd04dbe9",
+   "item_ids": [
+    "cc7a3a9afd04dbe9"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sd9b3aed0cd210bb0",
+   "item_ids": [
+    "d9b3aed0cd210bb0"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "se879c182ca819116",
+   "item_ids": [
+    "e879c182ca819116"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s2ac808299e47bebd",
+   "item_ids": [
+    "2ac808299e47bebd"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s02962c163c5d2eba",
+   "item_ids": [
+    "02962c163c5d2eba"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sc5369c1133a24f79",
+   "item_ids": [
+    "c5369c1133a24f79"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sad52cc47ac9e8ecb",
+   "item_ids": [
+    "ad52cc47ac9e8ecb"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s78d4bb005b7ca040",
+   "item_ids": [
+    "78d4bb005b7ca040"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s3215f13452bc6097",
+   "item_ids": [
+    "3215f13452bc6097"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s4ea9be66f0e9ce74",
+   "item_ids": [
+    "4ea9be66f0e9ce74"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s83e53c5a9270e02f",
+   "item_ids": [
+    "83e53c5a9270e02f"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "se7e04e8f34bed6b2",
+   "item_ids": [
+    "e7e04e8f34bed6b2"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sa6f237b1c9f409df",
+   "item_ids": [
+    "a6f237b1c9f409df"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s72169fc578a0fad9",
+   "item_ids": [
+    "72169fc578a0fad9"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sa1edf2e25a9c36d9",
+   "item_ids": [
+    "a1edf2e25a9c36d9"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s5934d91ec6279d5d",
+   "item_ids": [
+    "5934d91ec6279d5d"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s44397075b3de2e50",
+   "item_ids": [
+    "44397075b3de2e50"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s9a4ae6ff4d9e2751",
+   "item_ids": [
+    "9a4ae6ff4d9e2751"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "seff62697bac1df5f",
+   "item_ids": [
+    "eff62697bac1df5f"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s36d509ff2cf75dff",
+   "item_ids": [
+    "36d509ff2cf75dff"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sced5aa66c15eae0d",
+   "item_ids": [
+    "ced5aa66c15eae0d"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s8d440e32f95ff931",
+   "item_ids": [
+    "8d440e32f95ff931"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s9cbe0eb38ce5f3fb",
+   "item_ids": [
+    "9cbe0eb38ce5f3fb"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s5029431c0abc8d09",
+   "item_ids": [
+    "5029431c0abc8d09"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s51c707224e38598f",
+   "item_ids": [
+    "51c707224e38598f"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s1e04cb12364f2760",
+   "item_ids": [
+    "1e04cb12364f2760"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s34399e4e1a58480d",
+   "item_ids": [
+    "34399e4e1a58480d"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s832445a72046354f",
+   "item_ids": [
+    "832445a72046354f"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s3113509afce297e9",
+   "item_ids": [
+    "3113509afce297e9"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s54a447c6a2a65440",
+   "item_ids": [
+    "54a447c6a2a65440"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sfb72d667cb6295ab",
+   "item_ids": [
+    "fb72d667cb6295ab"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s3284352f84a29d22",
+   "item_ids": [
+    "3284352f84a29d22"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s22e9a8eb467c0e29",
+   "item_ids": [
+    "22e9a8eb467c0e29"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s8affbcfc1f14bb94",
+   "item_ids": [
+    "8affbcfc1f14bb94"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s81e9d1d7ee2335ad",
+   "item_ids": [
+    "81e9d1d7ee2335ad"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "seb6be1187812caa2",
+   "item_ids": [
+    "eb6be1187812caa2"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s4a729e3dafc9d0b1",
+   "item_ids": [
+    "4a729e3dafc9d0b1"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s3cf20d2894b167a8",
+   "item_ids": [
+    "3cf20d2894b167a8"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s496665e36408b180",
+   "item_ids": [
+    "496665e36408b180"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sf56b262b63a83fbd",
+   "item_ids": [
+    "f56b262b63a83fbd"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sfd19759575d82655",
+   "item_ids": [
+    "fd19759575d82655"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s83438392d6e84523",
+   "item_ids": [
+    "83438392d6e84523"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s57e5ad2ea46feaf5",
+   "item_ids": [
+    "57e5ad2ea46feaf5"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sf5357757b2cb3bad",
+   "item_ids": [
+    "f5357757b2cb3bad"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "saf20f4be763c2867",
+   "item_ids": [
+    "af20f4be763c2867"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s4342f07b3ee14547",
+   "item_ids": [
+    "4342f07b3ee14547"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s7c08e50308501406",
+   "item_ids": [
+    "7c08e50308501406"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s3f731e5d6af689ea",
+   "item_ids": [
+    "3f731e5d6af689ea"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sc41a7c69dde992a0",
+   "item_ids": [
+    "c41a7c69dde992a0"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s7d49afd6689a37c3",
+   "item_ids": [
+    "7d49afd6689a37c3"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sb8f0ff98b42d43cf",
+   "item_ids": [
+    "b8f0ff98b42d43cf"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s71f6c8ea15f37061",
+   "item_ids": [
+    "71f6c8ea15f37061"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "se1766c093f48bd17",
+   "item_ids": [
+    "e1766c093f48bd17"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sedba881fe674c82f",
+   "item_ids": [
+    "edba881fe674c82f"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sd2da4428d82c90d7",
+   "item_ids": [
+    "d2da4428d82c90d7"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s5174b40b597ea152",
+   "item_ids": [
+    "5174b40b597ea152"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "se5fdb5e455c1231e",
+   "item_ids": [
+    "e5fdb5e455c1231e"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "se98ec76ad57b73d8",
+   "item_ids": [
+    "e98ec76ad57b73d8"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s0697fd5e59e34ebc",
+   "item_ids": [
+    "0697fd5e59e34ebc"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s238827abdcce456e",
+   "item_ids": [
+    "238827abdcce456e"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s749c86e57f4107ec",
+   "item_ids": [
+    "749c86e57f4107ec"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sb9f71a1fac10a170",
+   "item_ids": [
+    "b9f71a1fac10a170"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sdcdef8cb0f5e5826",
+   "item_ids": [
+    "dcdef8cb0f5e5826"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s72b655fc77eca039",
+   "item_ids": [
+    "72b655fc77eca039"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sd0de4dfbe2a1449a",
+   "item_ids": [
+    "d0de4dfbe2a1449a"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s302f7ba26d3b361e",
+   "item_ids": [
+    "302f7ba26d3b361e"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s3d6a308df9b1a895",
+   "item_ids": [
+    "3d6a308df9b1a895"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s7d97878e3d811938",
+   "item_ids": [
+    "7d97878e3d811938"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s149657f6fdae8e51",
+   "item_ids": [
+    "149657f6fdae8e51"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s71ba7b768c938a17",
+   "item_ids": [
+    "71ba7b768c938a17"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s08e703df0f079aa7",
+   "item_ids": [
+    "08e703df0f079aa7"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s53add520bd003aa4",
+   "item_ids": [
+    "53add520bd003aa4"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s16d2a3be23e1d556",
+   "item_ids": [
+    "16d2a3be23e1d556"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s6ff85bf09e7035bc",
+   "item_ids": [
+    "6ff85bf09e7035bc"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s3ec05b2cee3f4137",
+   "item_ids": [
+    "3ec05b2cee3f4137"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s2d2472107687da59",
+   "item_ids": [
+    "2d2472107687da59"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sa223715774c06745",
+   "item_ids": [
+    "a223715774c06745"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sa5216724ccec03ed",
+   "item_ids": [
+    "a5216724ccec03ed"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s7b0a5d3127b2841b",
+   "item_ids": [
+    "7b0a5d3127b2841b"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s9ae278646dc92630",
+   "item_ids": [
+    "9ae278646dc92630"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s5ecb42043b7fd8c8",
+   "item_ids": [
+    "5ecb42043b7fd8c8"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s0140b003ca69a7b2",
+   "item_ids": [
+    "0140b003ca69a7b2"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s6761c6f5ad549d3b",
+   "item_ids": [
+    "6761c6f5ad549d3b"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sf2b5d6a60e5bdf1b",
+   "item_ids": [
+    "f2b5d6a60e5bdf1b"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "scd6e064c739b347b",
+   "item_ids": [
+    "cd6e064c739b347b"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s9375058c038a53d8",
+   "item_ids": [
+    "9375058c038a53d8"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s4183ec7f583a1d8f",
+   "item_ids": [
+    "4183ec7f583a1d8f"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sea3e38b6cb26f4a1",
+   "item_ids": [
+    "ea3e38b6cb26f4a1"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sa38f3e263c6f4824",
+   "item_ids": [
+    "a38f3e263c6f4824"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s1aff6f9a14253b39",
+   "item_ids": [
+    "1aff6f9a14253b39"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s1f9df95db27a68b6",
+   "item_ids": [
+    "1f9df95db27a68b6"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s1007eab9dc3f53e5",
+   "item_ids": [
+    "1007eab9dc3f53e5"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sba14336eb6bbf101",
+   "item_ids": [
+    "ba14336eb6bbf101"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s742cb5bf16729a74",
+   "item_ids": [
+    "742cb5bf16729a74"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sa76373b50dce3f98",
+   "item_ids": [
+    "a76373b50dce3f98"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sd7f5699911fe2147",
+   "item_ids": [
+    "d7f5699911fe2147"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s9c7b83bda541ff7d",
+   "item_ids": [
+    "9c7b83bda541ff7d"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sde8cca3ff4aee4b7",
+   "item_ids": [
+    "de8cca3ff4aee4b7"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s750c1037b53d0f43",
+   "item_ids": [
+    "750c1037b53d0f43"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s0c77b5bd8d3b1d22",
+   "item_ids": [
+    "0c77b5bd8d3b1d22"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s8c501d4b8106c079",
+   "item_ids": [
+    "8c501d4b8106c079"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sa911b581a06f7368",
+   "item_ids": [
+    "a911b581a06f7368"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s940672a4aa4a3498",
+   "item_ids": [
+    "940672a4aa4a3498"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sbeef156cf0cc11e6",
+   "item_ids": [
+    "beef156cf0cc11e6"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s1f1227fd37d8c171",
+   "item_ids": [
+    "1f1227fd37d8c171"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s615676e08e47d944",
+   "item_ids": [
+    "615676e08e47d944"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s9a1da4172669f107",
+   "item_ids": [
+    "9a1da4172669f107"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s6e359e576e9fb02e",
+   "item_ids": [
+    "6e359e576e9fb02e"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "scc595310a60c60a9",
+   "item_ids": [
+    "cc595310a60c60a9",
+    "339504a0c6ebe6f9",
+    "b906b568deff6fc8"
+   ],
+   "analysis": {
+    "relevant": false,
+    "title_fr": "Redwire Corporation : statistiques financières et de valorisation",
+    "summary": "Publication de données financières et de valorisation de Redwire Corporation, sans information sur son activité spatiale.",
+    "why": "",
+    "tabs": [
+     "concurrents"
+    ],
+    "themes": [],
+    "industries": [],
+    "countries": [
+     "US"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-22T15:11:28+01:00",
+   "analysed_size": 3,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s200e8351e44bb5bd",
+   "item_ids": [
+    "200e8351e44bb5bd"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s5fb1eca583b3c452",
+   "item_ids": [
+    "5fb1eca583b3c452"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sf77741e80dcb4ef4",
+   "item_ids": [
+    "f77741e80dcb4ef4"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s15c22cc0fc74f535",
+   "item_ids": [
+    "15c22cc0fc74f535"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "saa494df87b7d412d",
+   "item_ids": [
+    "aa494df87b7d412d"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s2b16f0e5c9feab98",
+   "item_ids": [
+    "2b16f0e5c9feab98"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s7943892ebe51e6ec",
+   "item_ids": [
+    "7943892ebe51e6ec"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sa5a9987a3d7ec489",
+   "item_ids": [
+    "a5a9987a3d7ec489"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "se2330f65b493d080",
+   "item_ids": [
+    "e2330f65b493d080"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s15644fd1264d2f84",
+   "item_ids": [
+    "15644fd1264d2f84"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s389b32ce8a662a28",
+   "item_ids": [
+    "389b32ce8a662a28"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s138ff66e357b1f14",
+   "item_ids": [
+    "138ff66e357b1f14"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s6524fbc091e0c8ba",
+   "item_ids": [
+    "6524fbc091e0c8ba"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "seba40672b0b35a00",
+   "item_ids": [
+    "eba40672b0b35a00"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s593d7998da0ae0ad",
+   "item_ids": [
+    "593d7998da0ae0ad"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s26f0a16324846a3f",
+   "item_ids": [
+    "26f0a16324846a3f"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s30c288e2725dfbc4",
+   "item_ids": [
+    "30c288e2725dfbc4"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sa47be673f65d2988",
+   "item_ids": [
+    "a47be673f65d2988"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s4f41b15e0f7e1df1",
+   "item_ids": [
+    "4f41b15e0f7e1df1"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sf68222ef7d78d5f7",
+   "item_ids": [
+    "f68222ef7d78d5f7"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s91e1fe1d49364d85",
+   "item_ids": [
+    "91e1fe1d49364d85"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s9ab1c9b2125e9f00",
+   "item_ids": [
+    "9ab1c9b2125e9f00"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s9423bb706be56979",
+   "item_ids": [
+    "9423bb706be56979"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s7456b875b05333be",
+   "item_ids": [
+    "7456b875b05333be"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sf1d4a25a27a3f297",
+   "item_ids": [
+    "f1d4a25a27a3f297"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sc9ca8d41519e2e64",
+   "item_ids": [
+    "c9ca8d41519e2e64"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s4063aee19bd15700",
+   "item_ids": [
+    "4063aee19bd15700"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sc8f948420af9ccf6",
+   "item_ids": [
+    "c8f948420af9ccf6"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s67fe209c6dc28a23",
+   "item_ids": [
+    "67fe209c6dc28a23"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s7e4e00f41fb3d4d6",
+   "item_ids": [
+    "7e4e00f41fb3d4d6",
+    "0ca7b45daae8d83f"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "ICEYE propose 2,05 Md€ pour racheter le fabricant de lanceurs italien Avio",
+    "summary": "La société finlandaise de radar satellite ICEYE a soumis une offre de 2,05 milliards d'euros pour acquérir Avio, fabricant italien de lanceurs, créant potentiellement un acteur spatial européen intégré.",
+    "why": "Un concurrent direct d'Airbus en imagerie SAR deviendrait un acteur spatial intégré européen, modifiant durablement la concurrence et la souveraineté spatiale du continent.",
+    "tabs": [
+     "concurrents",
+     "economie"
+    ],
+    "themes": [
+     "financements",
+     "programmes"
+    ],
+    "industries": [
+     "defense",
+     "securite",
+     "maritime"
+    ],
+    "countries": [
+     "FI",
+     "IT"
+    ],
+    "impact": "fort"
+   },
+   "analysed_at": "2026-11-22T15:11:28+01:00",
+   "analysed_size": 2,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "sddf343043eb93327",
+   "item_ids": [
+    "ddf343043eb93327"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s86ef4b5d0e3ea1bc",
+   "item_ids": [
+    "86ef4b5d0e3ea1bc"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s7361f1ddb93c2819",
+   "item_ids": [
+    "7361f1ddb93c2819"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sd6822e4408ab084f",
+   "item_ids": [
+    "d6822e4408ab084f"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sd01ac8d1a2e6087b",
+   "item_ids": [
+    "d01ac8d1a2e6087b"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sfd89f7151a893288",
+   "item_ids": [
+    "fd89f7151a893288"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s4c20198db7f019b6",
+   "item_ids": [
+    "4c20198db7f019b6"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s6fc8fb7d1c330534",
+   "item_ids": [
+    "6fc8fb7d1c330534"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s4850a801eb17706f",
+   "item_ids": [
+    "4850a801eb17706f"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s01bc21e65b45de75",
+   "item_ids": [
+    "01bc21e65b45de75"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sec3f93e1b3b25cab",
+   "item_ids": [
+    "ec3f93e1b3b25cab"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "se64e9812033ac634",
+   "item_ids": [
+    "e64e9812033ac634"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "scc8bb03381184fab",
+   "item_ids": [
+    "cc8bb03381184fab"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s15039781e2c6b117",
+   "item_ids": [
+    "15039781e2c6b117"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s87b1b2d8c8f83854",
+   "item_ids": [
+    "87b1b2d8c8f83854"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sca55496b93c411c1",
+   "item_ids": [
+    "ca55496b93c411c1"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s726fcc68af27ab41",
+   "item_ids": [
+    "726fcc68af27ab41"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s98e15474711f8b16",
+   "item_ids": [
+    "98e15474711f8b16"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s8e7daf7504df469e",
+   "item_ids": [
+    "8e7daf7504df469e"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s578b349a6f5ca2cd",
+   "item_ids": [
+    "578b349a6f5ca2cd",
+    "492392cd106520cc"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "SpaceX va retirer le premier étage supérieur de Starship capturé par les 'baguettes'",
+    "summary": "Elon Musk a annoncé que le premier étage supérieur de Starship récupéré par les bras de capture sera retiré du service et exposé comme pièce de musée.",
+    "why": "Marque une étape dans la maturation du programme Starship, concurrent potentiel pour les lancements lourds.",
+    "tabs": [
+     "concurrents"
+    ],
+    "themes": [
+     "lancements",
+     "produits"
+    ],
+    "industries": [],
+    "countries": [
+     "US"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-22T15:11:28+01:00",
+   "analysed_size": 2,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s914545dc2bae37f1",
+   "item_ids": [
+    "914545dc2bae37f1"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sd7dbe750766fe9f2",
+   "item_ids": [
+    "d7dbe750766fe9f2"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sdce025860d14fe40",
+   "item_ids": [
+    "dce025860d14fe40"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s95fccf4da5f09a0d",
+   "item_ids": [
+    "95fccf4da5f09a0d",
+    "480557c060087146"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sf967f71ad94acbe5",
+   "item_ids": [
+    "f967f71ad94acbe5"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s547fe277bcb30e78",
+   "item_ids": [
+    "547fe277bcb30e78"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sce53a2ad8650b32f",
+   "item_ids": [
+    "ce53a2ad8650b32f"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sceb3f2e191e3f964",
+   "item_ids": [
+    "ceb3f2e191e3f964"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s7485e0ee8c649540",
+   "item_ids": [
+    "7485e0ee8c649540"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s8ac16bdf3bca0191",
+   "item_ids": [
+    "8ac16bdf3bca0191",
+    "9fc1860775c68c74"
+   ],
+   "analysis": {
+    "relevant": false,
+    "title_fr": "La fondatrice de Wildberries quitte la direction après des sanctions européennes",
+    "summary": "Tatyana Kim a démissionné de son poste de PDG de Wildberries après l'annonce de sanctions de l'UE.",
+    "why": "",
+    "tabs": [],
+    "themes": [],
+    "industries": [],
+    "countries": [],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-22T15:11:28+01:00",
+   "analysed_size": 2,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "sf985f32456b3fa8e",
+   "item_ids": [
+    "f985f32456b3fa8e"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s065bdc62885b1019",
+   "item_ids": [
+    "065bdc62885b1019"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s778eeca4b8080a01",
+   "item_ids": [
+    "778eeca4b8080a01"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s3c9474b407102b73",
+   "item_ids": [
+    "3c9474b407102b73"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s13f374b56ebcf568",
+   "item_ids": [
+    "13f374b56ebcf568"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s30e08582259ba555",
+   "item_ids": [
+    "30e08582259ba555"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s8ca553adb3910a7f",
+   "item_ids": [
+    "8ca553adb3910a7f"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s1193dfd771691a4a",
+   "item_ids": [
+    "1193dfd771691a4a"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sd7dee19d211f1534",
+   "item_ids": [
+    "d7dee19d211f1534"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s2fc3e0a7f21ef243",
+   "item_ids": [
+    "2fc3e0a7f21ef243"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "scc255b9d5f7cbc64",
+   "item_ids": [
+    "cc255b9d5f7cbc64"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sabc311a7de2c1957",
+   "item_ids": [
+    "abc311a7de2c1957"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "se0b23b93facfbfee",
+   "item_ids": [
+    "e0b23b93facfbfee"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s90129861d600fd70",
+   "item_ids": [
+    "90129861d600fd70"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s4bceb05a4e0969e5",
+   "item_ids": [
+    "4bceb05a4e0969e5",
+    "29c8d99ed54dff4d",
+    "eb827d0a9c844335"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Le Canada rejoint le Fonds d'innovation de l'OTAN",
+    "summary": "Le Canada va contribuer environ 100 millions de dollars canadiens au Fonds d'innovation de l'OTAN, rejoignant ses alliés dans le financement des technologies de défense émergentes.",
+    "why": "Ce fonds soutient des start-ups spatiales et de défense, élargissant les opportunités de financement pour des technologies concurrentes ou complémentaires.",
+    "tabs": [
+     "economie"
+    ],
+    "themes": [
+     "financements",
+     "programmes"
+    ],
+    "industries": [
+     "defense"
+    ],
+    "countries": [
+     "CA"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-22T15:11:28+01:00",
+   "analysed_size": 3,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "sf3cf2f58ebbabbfa",
+   "item_ids": [
+    "f3cf2f58ebbabbfa"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sf5b4705fd6ca3130",
+   "item_ids": [
+    "f5b4705fd6ca3130"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sd15cad5c20d67225",
+   "item_ids": [
+    "d15cad5c20d67225"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s4c56d090a1a94d89",
+   "item_ids": [
+    "4c56d090a1a94d89"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s2f9708695379b91f",
+   "item_ids": [
+    "2f9708695379b91f"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s3a0963e75486a818",
+   "item_ids": [
+    "3a0963e75486a818"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "scac96c741c611ef7",
+   "item_ids": [
+    "cac96c741c611ef7"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s4e24ecf82be1df72",
+   "item_ids": [
+    "4e24ecf82be1df72"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "saec741cce9acc921",
+   "item_ids": [
+    "aec741cce9acc921"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sf05877eb84f5929d",
+   "item_ids": [
+    "f05877eb84f5929d"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s30ada80a58667c7b",
+   "item_ids": [
+    "30ada80a58667c7b"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s7d55f2086f45160a",
+   "item_ids": [
+    "7d55f2086f45160a"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "safa968ac35cc7f95",
+   "item_ids": [
+    "afa968ac35cc7f95"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sb717cc6db6eec472",
+   "item_ids": [
+    "b717cc6db6eec472"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s22034ddb70e6147a",
+   "item_ids": [
+    "22034ddb70e6147a"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s6dd9adaa9a300b5c",
+   "item_ids": [
+    "6dd9adaa9a300b5c"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s617fd2c7365ac50b",
+   "item_ids": [
+    "617fd2c7365ac50b"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s2c172603fc8973b1",
+   "item_ids": [
+    "2c172603fc8973b1"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s76f0d32a951c2273",
+   "item_ids": [
+    "76f0d32a951c2273"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "saf38e94f765aa97f",
+   "item_ids": [
+    "af38e94f765aa97f"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sb0c1f70a4ce360af",
+   "item_ids": [
+    "b0c1f70a4ce360af"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s3c299e08107c3fa9",
+   "item_ids": [
+    "3c299e08107c3fa9"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s59926c20a9a3864b",
+   "item_ids": [
+    "59926c20a9a3864b"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s50c18723a35eec15",
+   "item_ids": [
+    "50c18723a35eec15"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sde30395b4de0c340",
+   "item_ids": [
+    "de30395b4de0c340"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s10aa79451a823b49",
+   "item_ids": [
+    "10aa79451a823b49"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s33473637c43e0085",
+   "item_ids": [
+    "33473637c43e0085"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s95fbd30c78fba7ab",
+   "item_ids": [
+    "95fbd30c78fba7ab"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s478a74b5559a2394",
+   "item_ids": [
+    "478a74b5559a2394"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s8803f64dacd3630a",
+   "item_ids": [
+    "8803f64dacd3630a"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sacaa431be78d9576",
+   "item_ids": [
+    "acaa431be78d9576"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s6c41882fa25993a6",
+   "item_ids": [
+    "6c41882fa25993a6"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "saf4908b94f88c0b8",
+   "item_ids": [
+    "af4908b94f88c0b8"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s8f701a469ee414c8",
+   "item_ids": [
+    "8f701a469ee414c8"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s2600777bafa3a70c",
+   "item_ids": [
+    "2600777bafa3a70c"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s456abef7584b5216",
+   "item_ids": [
+    "456abef7584b5216"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sdd6913762001b0ff",
+   "item_ids": [
+    "dd6913762001b0ff"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sd64178603b20e74a",
+   "item_ids": [
+    "d64178603b20e74a"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "scf7f1c9102b8e99d",
+   "item_ids": [
+    "cf7f1c9102b8e99d"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s489835ab79f46803",
+   "item_ids": [
+    "489835ab79f46803"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s5e1f36d18673e1b9",
+   "item_ids": [
+    "5e1f36d18673e1b9"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s07f6ac3bef02aeed",
+   "item_ids": [
+    "07f6ac3bef02aeed",
+    "ccc974e1bc8e7822",
+    "74e1fb61d96ed8ed"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Isar Aerospace démarre la construction de son site de lancement en Nouvelle-Écosse",
+    "summary": "La société allemande Isar Aerospace a entamé les travaux de son site de lancement à Spaceport Nova Scotia, renforçant l'accès souverain du Canada à l'espace.",
+    "why": "Un nouveau site de lancement nord-américain pourrait accroître la concurrence pour les services de mise en orbite de satellites d'observation.",
+    "tabs": [
+     "concurrents"
+    ],
+    "themes": [
+     "lancements",
+     "programmes"
+    ],
+    "industries": [
+     "defense"
+    ],
+    "countries": [
+     "CA",
+     "DE"
+    ],
+    "impact": "moyen"
+   },
+   "analysed_at": "2026-11-22T15:11:28+01:00",
+   "analysed_size": 3,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "sfe24c7d0d0aa2461",
+   "item_ids": [
+    "fe24c7d0d0aa2461",
+    "0d59203a4ccef9e1"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "L'évolution de l'action Rocket Lab sur cinq ans malgré une chute de 60 %",
+    "summary": "Un article financier calcule qu'un investissement de 10 000 dollars dans Rocket Lab il y a cinq ans vaudrait aujourd'hui plus de 33 000 dollars, malgré une récente chute de 60 % du titre.",
+    "why": "Suit la valorisation boursière d'un concurrent direct dans le lancement et les satellites, indicateur de la confiance des investisseurs.",
+    "tabs": [
+     "concurrents"
+    ],
+    "themes": [
+     "financements"
+    ],
+    "industries": [],
+    "countries": [
+     "US"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-22T15:11:28+01:00",
+   "analysed_size": 2,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "sf9318c8123cb4664",
+   "item_ids": [
+    "f9318c8123cb4664"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s5d2247a9d529cc02",
+   "item_ids": [
+    "5d2247a9d529cc02"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s3d8f8ec9d77dbdd2",
+   "item_ids": [
+    "3d8f8ec9d77dbdd2"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sd4828cb1d36beee8",
+   "item_ids": [
+    "d4828cb1d36beee8",
+    "c10bc633f7128597"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Bahreïn accuse l'Iran d'avoir frappé un site industriel, Téhéran évoque une riposte aux USA",
+    "summary": "Bahreïn accuse l'Iran d'avoir frappé un de ses sites industriels, tandis que Téhéran affirme répondre à des tirs américains près du détroit d'Ormuz, où l'Iran dit avoir intercepté un drone américain.",
+    "why": "Escalade régionale au Moyen-Orient susceptible de perturber la sécurité maritime et énergétique dans le détroit d'Ormuz.",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [
+     "conflits",
+     "ressources"
+    ],
+    "industries": [
+     "defense",
+     "maritime",
+     "ogme"
+    ],
+    "countries": [
+     "BH",
+     "IR",
+     "US"
+    ],
+    "impact": "moyen"
+   },
+   "analysed_at": "2026-11-22T15:11:28+01:00",
+   "analysed_size": 2,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "se85eda58a2d1b7c3",
+   "item_ids": [
+    "e85eda58a2d1b7c3"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s9dc03828962136f4",
+   "item_ids": [
+    "9dc03828962136f4",
+    "a3d76445be540dcc"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Un ex-responsable de l'US Space Force propose le proof-of-work Bitcoin contre les cyberattaques IA",
+    "summary": "Un ancien directeur de l'US Space Force suggère d'utiliser le mécanisme de preuve de travail du Bitcoin pour protéger les infrastructures critiques américaines contre les cyberattaques pilotées par l'IA.",
+    "why": "Illustre les réflexions émergentes sur la cyberdéfense des infrastructures critiques face aux menaces liées à l'IA.",
+    "tabs": [
+     "economie"
+    ],
+    "themes": [
+     "reglementation"
+    ],
+    "industries": [
+     "securite"
+    ],
+    "countries": [
+     "US"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-22T15:11:28+01:00",
+   "analysed_size": 2,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s761557fc0d6420d8",
+   "item_ids": [
+    "761557fc0d6420d8"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s6be7cec6f7b66494",
+   "item_ids": [
+    "6be7cec6f7b66494"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s7eea5df19bedb871",
+   "item_ids": [
+    "7eea5df19bedb871"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sc9f4713f5ffd184f",
+   "item_ids": [
+    "c9f4713f5ffd184f"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s36ef664623950150",
+   "item_ids": [
+    "36ef664623950150"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sd5174027c61f0ccf",
+   "item_ids": [
+    "d5174027c61f0ccf"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s958c2574aa3d77c8",
+   "item_ids": [
+    "958c2574aa3d77c8"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sc9fcdeff1a7852d5",
+   "item_ids": [
+    "c9fcdeff1a7852d5"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s91ffe72c0ef24d96",
+   "item_ids": [
+    "91ffe72c0ef24d96"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s7a78a082bf35b8e1",
+   "item_ids": [
+    "7a78a082bf35b8e1"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s5587f1cc57895562",
+   "item_ids": [
+    "5587f1cc57895562"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s82a68e57e429e778",
+   "item_ids": [
+    "82a68e57e429e778"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sa7992f506d13433b",
+   "item_ids": [
+    "a7992f506d13433b"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s8d802371d4b4371e",
+   "item_ids": [
+    "8d802371d4b4371e"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s6a43a6ebe72b6359",
+   "item_ids": [
+    "6a43a6ebe72b6359"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s9dd40b4abaf50c77",
+   "item_ids": [
+    "9dd40b4abaf50c77"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s2990ed2beab9ff55",
+   "item_ids": [
+    "2990ed2beab9ff55"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s19df580f1f9d2ddd",
+   "item_ids": [
+    "19df580f1f9d2ddd",
+    "fb431ac6074abb17",
+    "e0a5f521689d5cdc"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Le Royaume-Uni rejoint l'initiative STARLIFT de l'OTAN pour les lancements satellites",
+    "summary": "Le Royaume-Uni a rejoint l'initiative STARLIFT de l'OTAN visant à renforcer la résilience spatiale et les capacités de lancement satellite des alliés.",
+    "why": "Cette initiative pourrait créer de nouvelles opportunités de contrats pour les fournisseurs de services de lancement et d'imagerie satellite alliés.",
+    "tabs": [
+     "economie",
+     "concurrents"
+    ],
+    "themes": [
+     "programmes"
+    ],
+    "industries": [
+     "defense"
+    ],
+    "countries": [
+     "GB"
+    ],
+    "impact": "moyen"
+   },
+   "analysed_at": "2026-11-22T15:11:28+01:00",
+   "analysed_size": 2,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "sbe376cea84a26e08",
+   "item_ids": [
+    "be376cea84a26e08"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s7358bfcb0f4087a9",
+   "item_ids": [
+    "7358bfcb0f4087a9"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s0f86ad1998f20ac1",
+   "item_ids": [
+    "0f86ad1998f20ac1"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s36e48712dfee3ddd",
+   "item_ids": [
+    "36e48712dfee3ddd"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sfe33916c2a92de07",
+   "item_ids": [
+    "fe33916c2a92de07"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s615a63e4d0c4e5fa",
+   "item_ids": [
+    "615a63e4d0c4e5fa"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s110a3c679dc715bb",
+   "item_ids": [
+    "110a3c679dc715bb"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sffb68a64ed0fb810",
+   "item_ids": [
+    "ffb68a64ed0fb810"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s94126ee0b366d007",
+   "item_ids": [
+    "94126ee0b366d007"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s7473711195a9a7fd",
+   "item_ids": [
+    "7473711195a9a7fd"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sae0e8ef6e7e6e12e",
+   "item_ids": [
+    "ae0e8ef6e7e6e12e"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s68181654b0f147b8",
+   "item_ids": [
+    "68181654b0f147b8"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sa16cb45053415741",
+   "item_ids": [
+    "a16cb45053415741"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s9e933403afb6d8ae",
+   "item_ids": [
+    "9e933403afb6d8ae"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s48290cc4569c6930",
+   "item_ids": [
+    "48290cc4569c6930"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s124a31ac2144a1a3",
+   "item_ids": [
+    "124a31ac2144a1a3"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s14806db31d6754a4",
+   "item_ids": [
+    "14806db31d6754a4"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s2bf101508e0084a4",
+   "item_ids": [
+    "2bf101508e0084a4"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "saec3bdd245149140",
+   "item_ids": [
+    "aec3bdd245149140"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s35b305815ee0d5f4",
+   "item_ids": [
+    "35b305815ee0d5f4"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s0869e5d3c2cc5c69",
+   "item_ids": [
+    "0869e5d3c2cc5c69"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s3ffe35d152297ebd",
+   "item_ids": [
+    "3ffe35d152297ebd"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s6e9cd8a95b652236",
+   "item_ids": [
+    "6e9cd8a95b652236"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s0a116eaff30e1e65",
+   "item_ids": [
+    "0a116eaff30e1e65"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s41b653601b6b1106",
+   "item_ids": [
+    "41b653601b6b1106"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sd244192a64838c2f",
+   "item_ids": [
+    "d244192a64838c2f"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sa98f1b873e0e550a",
+   "item_ids": [
+    "a98f1b873e0e550a"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s85284fdceec65a62",
+   "item_ids": [
+    "85284fdceec65a62"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sed04fda7c2e00cc9",
+   "item_ids": [
+    "ed04fda7c2e00cc9"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s64a617bc6cdf0a5c",
+   "item_ids": [
+    "64a617bc6cdf0a5c"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sf8a45fd2311b65eb",
+   "item_ids": [
+    "f8a45fd2311b65eb"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s47863f6b5bb32fc8",
+   "item_ids": [
+    "47863f6b5bb32fc8"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sc0bc3ed6cc1ab08f",
+   "item_ids": [
+    "c0bc3ed6cc1ab08f"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sa5b5f028304eac79",
+   "item_ids": [
+    "a5b5f028304eac79"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s5aa642df2bd39339",
+   "item_ids": [
+    "5aa642df2bd39339"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s7c2132f781b8a43a",
+   "item_ids": [
+    "7c2132f781b8a43a"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s916eaad7a3da7002",
+   "item_ids": [
+    "916eaad7a3da7002"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s73546d837efb009b",
+   "item_ids": [
+    "73546d837efb009b"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sf7d47606518247f0",
+   "item_ids": [
+    "f7d47606518247f0"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s5550ec66eb496cba",
+   "item_ids": [
+    "5550ec66eb496cba"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s924adb66e37b0814",
+   "item_ids": [
+    "924adb66e37b0814"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sabd1ca7a4be05a6a",
+   "item_ids": [
+    "abd1ca7a4be05a6a"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s7b39ed64dd8e4a10",
+   "item_ids": [
+    "7b39ed64dd8e4a10"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sa60568c7cf98c936",
+   "item_ids": [
+    "a60568c7cf98c936"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s836b067e0c2999ea",
+   "item_ids": [
+    "836b067e0c2999ea"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s67114776409a629c",
+   "item_ids": [
+    "67114776409a629c"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s6bcb76643209e53d",
+   "item_ids": [
+    "6bcb76643209e53d"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s86e40c878ff3b1c9",
+   "item_ids": [
+    "86e40c878ff3b1c9"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "scfc10f70f8984903",
+   "item_ids": [
+    "cfc10f70f8984903"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sa0e191497b17ca93",
+   "item_ids": [
+    "a0e191497b17ca93"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sd06b0c15b04eb565",
+   "item_ids": [
+    "d06b0c15b04eb565"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sd1ba4f102ccb5d4f",
+   "item_ids": [
+    "d1ba4f102ccb5d4f"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s8fdba7bb6389df13",
+   "item_ids": [
+    "8fdba7bb6389df13"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s26f25f7ef68ed79c",
+   "item_ids": [
+    "26f25f7ef68ed79c"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sfc174dc32907114a",
+   "item_ids": [
+    "fc174dc32907114a"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s53d088f01d2f7e9a",
+   "item_ids": [
+    "53d088f01d2f7e9a"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sf20a236f82a56b67",
+   "item_ids": [
+    "f20a236f82a56b67"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s0ab7e2b22bd5e773",
+   "item_ids": [
+    "0ab7e2b22bd5e773"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s9e7c4993aa60fe5f",
+   "item_ids": [
+    "9e7c4993aa60fe5f"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sa72ca15e901538e0",
+   "item_ids": [
+    "a72ca15e901538e0"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sf9fc2403d8bc7de1",
+   "item_ids": [
+    "f9fc2403d8bc7de1"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sb07ae55ccf208559",
+   "item_ids": [
+    "b07ae55ccf208559"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s2a94c8fc32fecc5a",
+   "item_ids": [
+    "2a94c8fc32fecc5a",
+    "4a3181c36e991992",
+    "b65e0b9c9e112ad7"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "La Thaïlande prévoit de bloquer des exportations chimiques liées aux terres rares du Myanmar",
+    "summary": "La Thaïlande envisage d'interdire l'exportation de produits chimiques utilisés dans l'extraction des terres rares au Myanmar afin de limiter la pollution transfrontalière.",
+    "why": "Une restriction des chaînes d'approvisionnement en terres rares pourrait affecter les industries dépendant de ces matériaux critiques, y compris le spatial.",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [
+     "ressources"
+    ],
+    "industries": [
+     "ogme",
+     "foret_environnement"
+    ],
+    "countries": [
+     "TH",
+     "MM"
+    ],
+    "impact": "moyen"
+   },
+   "analysed_at": "2026-11-22T15:11:28+01:00",
+   "analysed_size": 2,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s642a3b961bd0187a",
+   "item_ids": [
+    "642a3b961bd0187a"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sf4906da309593bfd",
+   "item_ids": [
+    "f4906da309593bfd"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sfefb3d5f3a0c534b",
+   "item_ids": [
+    "fefb3d5f3a0c534b"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s62aa52bc50c9db06",
+   "item_ids": [
+    "62aa52bc50c9db06"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sb1085aaa46ffd8d8",
+   "item_ids": [
+    "b1085aaa46ffd8d8"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sbea620c500a6a2e5",
+   "item_ids": [
+    "bea620c500a6a2e5"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s1805a6c6eb652c33",
+   "item_ids": [
+    "1805a6c6eb652c33"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s6f1d9044020db23b",
+   "item_ids": [
+    "6f1d9044020db23b"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s18adce2cc084c370",
+   "item_ids": [
+    "18adce2cc084c370"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s0a8f4ce46350dacc",
+   "item_ids": [
+    "0a8f4ce46350dacc"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s02a871c906d567ae",
+   "item_ids": [
+    "02a871c906d567ae"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s0c6129b13c505313",
+   "item_ids": [
+    "0c6129b13c505313"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sb52d826ccd60e0d0",
+   "item_ids": [
+    "b52d826ccd60e0d0"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s94398fecac66423e",
+   "item_ids": [
+    "94398fecac66423e"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sc6739451f3c1f614",
+   "item_ids": [
+    "c6739451f3c1f614"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s6bb18b28b5bd6321",
+   "item_ids": [
+    "6bb18b28b5bd6321"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sdfabe322de5dd881",
+   "item_ids": [
+    "dfabe322de5dd881"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "se948158ee5f6d12f",
+   "item_ids": [
+    "e948158ee5f6d12f"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "sa49d05b34128aa90",
+   "item_ids": [
+    "a49d05b34128aa90"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s9db3e7f7953bf5d4",
+   "item_ids": [
+    "9db3e7f7953bf5d4"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s57568cb262185fb5",
+   "item_ids": [
+    "57568cb262185fb5"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s95863c9ebd6d734a",
+   "item_ids": [
+    "95863c9ebd6d734a"
+   ],
+   "analysis": {},
+   "analysed_at": "",
+   "analysed_size": 0,
+   "analysis_model": ""
+  },
+  {
+   "id": "s89271525570adf66",
+   "item_ids": [
+    "89271525570adf66"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Où se situe stratégiquement la Corée du Sud dans l'ère de « crise permanente » ?",
+    "summary": "Un analyste militaire examine la position stratégique de la Corée du Sud face à l'évolution des équilibres de puissance régionaux.",
+    "why": "Les évolutions stratégiques régionales influencent les besoins de défense et de renseignement géospatial en Asie du Nord-Est.",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [
+     "conflits"
+    ],
+    "industries": [
+     "defense"
+    ],
+    "countries": [
+     "KR"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-22T15:11:28+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "sef04d3bd2fe302b1",
+   "item_ids": [
+    "ef04d3bd2fe302b1"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Le Jura et l'Ain placés en vigilance orange pluie-inondations",
+    "summary": "Météo-France a placé les départements du Jura et de l'Ain en vigilance orange pour risque de pluie et d'inondations.",
+    "why": "",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [
+     "crises"
+    ],
+    "industries": [
+     "infrastructures"
+    ],
+    "countries": [
+     "FR"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-22T15:11:28+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s6afbd689ca7c3182",
+   "item_ids": [
+    "6afbd689ca7c3182",
+    "21ad831be4eaea6f",
+    "8502aaa333213ed2"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Des frappes de drones touchent Khartoum, des drones venus d'Éthiopie selon l'armée soudanaise",
+    "summary": "Des frappes de drones ont endommagé des habitations à Khartoum ; un responsable militaire soudanais affirme que les drones provenaient d'Éthiopie.",
+    "why": "Une implication éthiopienne dans le conflit soudanais élargirait la zone de crise suivie pour la surveillance satellite régionale.",
     "tabs": [
      "geopolitique"
     ],
@@ -147732,13 +152071,1982 @@
      "securite"
     ],
     "countries": [
-     "SA",
-     "YE",
+     "SD",
+     "ET"
+    ],
+    "impact": "moyen"
+   },
+   "analysed_at": "2026-11-22T15:11:28+01:00",
+   "analysed_size": 2,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s9e38d68884f66c06",
+   "item_ids": [
+    "9e38d68884f66c06"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "La facture pétrolière et gazière de l'Inde bondit de 6 Md$ en octobre",
+    "summary": "Les importations d'hydrocarbures de l'Inde ont augmenté de 6 milliards de dollars en octobre en raison de la hausse des prix mondiaux.",
+    "why": "La hausse des coûts énergétiques peut accroître la demande de surveillance satellite des infrastructures et flux pétroliers.",
+    "tabs": [
+     "economie"
+    ],
+    "themes": [
+     "ressources"
+    ],
+    "industries": [
+     "ogme"
+    ],
+    "countries": [
+     "IN"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-22T15:11:28+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "sf267993e21721545",
+   "item_ids": [
+    "f267993e21721545"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "AT&T et AST SpaceMobile testent le transfert satellite-mobile",
+    "summary": "AT&T et AST SpaceMobile ont testé une bascule entre réseau mobile terrestre et connexion satellite directe vers smartphone.",
+    "why": "Ce test renforce la concurrence sur la connectivité satellite directe aux mobiles, un segment proche des activités spatiales d'Airbus.",
+    "tabs": [
+     "concurrents"
+    ],
+    "themes": [
+     "produits"
+    ],
+    "industries": [
+     "connectivite"
+    ],
+    "countries": [
+     "US"
+    ],
+    "impact": "moyen"
+   },
+   "analysed_at": "2026-11-22T15:11:28+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s1fb28ba3d33000bf",
+   "item_ids": [
+    "1fb28ba3d33000bf"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Un pétrolier iranien signalé dans le détroit d'Ormuz serait une fausse alerte de suivi",
+    "summary": "Un service de suivi maritime indique qu'un signalement de pétrolier iranien dans le détroit d'Ormuz était en réalité une fausse donnée.",
+    "why": "La fiabilité du suivi maritime par satellite est cruciale pour la sécurité et la surveillance des flux pétroliers dans une zone sous tension.",
+    "tabs": [
+     "marche",
+     "geopolitique"
+    ],
+    "themes": [
+     "ressources",
+     "conflits"
+    ],
+    "industries": [
+     "maritime",
+     "securite"
+    ],
+    "countries": [
      "IR"
     ],
     "impact": "moyen"
    },
-   "analysed_at": "2026-11-21T08:03:31+01:00",
+   "analysed_at": "2026-11-22T15:11:28+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "sf3f6e65a73dd2a72",
+   "item_ids": [
+    "f3f6e65a73dd2a72"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Hakeem Jeffries promet des sanctions contre les colons violents et la fin de la guerre en Iran",
+    "summary": "Le démocrate Hakeem Jeffries annonce vouloir sanctionner les colons israéliens violents en Cisjordanie et mettre fin à une guerre avec l'Iran.",
+    "why": "Des sanctions ciblées et une désescalade avec l'Iran influenceraient la stabilité régionale suivie par les clients défense et sécurité.",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [
+     "sanctions",
+     "conflits"
+    ],
+    "industries": [
+     "defense"
+    ],
+    "countries": [
+     "US",
+     "IR",
+     "PS"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-22T15:11:28+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s4ea1cb320f5c5217",
+   "item_ids": [
+    "4ea1cb320f5c5217"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Malgré la crise politique en Serbie, la Chine espère préserver ses liens",
+    "summary": "Pékin affirme vouloir maintenir des relations solides avec la Serbie malgré une instabilité politique qualifiée de « séisme ».",
+    "why": "",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [],
+    "industries": [],
+    "countries": [
+     "RS",
+     "CN"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-22T15:11:28+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "sc6c36703f07c6168",
+   "item_ids": [
+    "c6c36703f07c6168"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Un chef traditionnel veut associer les pêcheurs à la lutte contre la pêche illégale",
+    "summary": "Un responsable traditionnel appelle à impliquer les communautés de pêcheurs locales dans la surveillance de la pêche illégale.",
+    "why": "La surveillance de la pêche illégale est un cas d'usage clé pour l'imagerie satellite et la surveillance maritime.",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [
+     "ressources"
+    ],
+    "industries": [
+     "maritime"
+    ],
+    "countries": [],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-22T15:11:28+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "sa7b3eaf585d0fc93",
+   "item_ids": [
+    "a7b3eaf585d0fc93",
+    "bfe5ae902204fc50"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Tesla et SpaceX créent des comités indépendants pour étudier une fusion",
+    "summary": "Tesla et SpaceX ont chacune formé un comité indépendant afin d'examiner une possible fusion des deux entreprises d'Elon Musk.",
+    "why": "Une fusion Tesla-SpaceX pourrait modifier le financement et la stratégie d'un acteur majeur du lancement et de la connectivité satellite.",
+    "tabs": [
+     "concurrents",
+     "economie"
+    ],
+    "themes": [
+     "financements"
+    ],
+    "industries": [
+     "connectivite"
+    ],
+    "countries": [
+     "US"
+    ],
+    "impact": "moyen"
+   },
+   "analysed_at": "2026-11-22T15:11:28+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s96e0712ea1582f63",
+   "item_ids": [
+    "96e0712ea1582f63"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Le Japon accélère pour reconstituer sa chaîne d'approvisionnement en terres rares",
+    "summary": "Des entreprises japonaises intensifient leurs efforts pour sécuriser des terres rares alternatives face aux restrictions d'exportation chinoises.",
+    "why": "La dépendance aux terres rares chinoises concerne aussi les composants électroniques des satellites et équipements de défense.",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [
+     "ressources",
+     "sanctions"
+    ],
+    "industries": [
+     "ogme"
+    ],
+    "countries": [
+     "JP",
+     "CN"
+    ],
+    "impact": "moyen"
+   },
+   "analysed_at": "2026-11-22T15:11:28+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s8eca67303923d97a",
+   "item_ids": [
+    "8eca67303923d97a"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Des réserves de terres rares pourraient réduire la dépendance à la Chine",
+    "summary": "Des gisements de terres rares situés sur un continent pourraient potentiellement remplacer une partie des approvisionnements chinois, sans précision de localisation ni de calendrier.",
+    "why": "Diversifier les sources de terres rares concerne les matériaux critiques utilisés dans les satellites et l'électronique de défense.",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [
+     "ressources"
+    ],
+    "industries": [
+     "ogme"
+    ],
+    "countries": [
+     "CN"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-22T15:11:28+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s7d8eb711fc9d9b03",
+   "item_ids": [
+    "7d8eb711fc9d9b03"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Des satellites russes « tueurs » pourraient menacer Starlink et la surveillance de l'OTAN",
+    "summary": "Selon des informations de presse, de nouveaux satellites russes pourraient libérer des nuages de débris pour détruire Starlink et des capteurs de surveillance de l'OTAN.",
+    "why": "Une capacité anti-satellite russe menacerait directement les constellations d'observation et de connectivité utilisées par la défense occidentale.",
+    "tabs": [
+     "geopolitique",
+     "concurrents"
+    ],
+    "themes": [
+     "conflits",
+     "produits"
+    ],
+    "industries": [
+     "defense",
+     "connectivite"
+    ],
+    "countries": [
+     "RU",
+     "US"
+    ],
+    "impact": "moyen"
+   },
+   "analysed_at": "2026-11-22T15:11:28+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s5c8045ca299ac198",
+   "item_ids": [
+    "5c8045ca299ac198"
+   ],
+   "analysis": {
+    "relevant": false,
+    "title_fr": "Un investisseur voit des opportunités sur SpaceX, Tesla et Google",
+    "summary": "Un commentateur financier évoque des opportunités d'investissement sur SpaceX, Tesla et Google sans apporter d'information nouvelle sur leurs activités spatiales.",
+    "why": "",
+    "tabs": [],
+    "themes": [],
+    "industries": [],
+    "countries": [
+     "US"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-22T15:11:28+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s417e928d6df63826",
+   "item_ids": [
+    "417e928d6df63826"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Attaques hybrides et sanctions de visas : l'avenir des relations Russie-Europe en question",
+    "summary": "L'article analyse les attaques hybrides attribuées à la Russie et les sanctions de visas, et leurs effets sur les relations Russie-Europe.",
+    "why": "Les attaques hybrides et sanctions renforcent les besoins européens de surveillance et de renseignement géospatial.",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [
+     "sanctions",
+     "conflits"
+    ],
+    "industries": [
+     "defense",
+     "securite"
+    ],
+    "countries": [
+     "RU"
+    ],
+    "impact": "moyen"
+   },
+   "analysed_at": "2026-11-22T15:11:28+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s1dbafa7ee870ded1",
+   "item_ids": [
+    "1dbafa7ee870ded1"
+   ],
+   "analysis": {
+    "relevant": false,
+    "title_fr": "Programme du 21 novembre 2026 avec Arunn Jegan de Médecins Sans Frontières",
+    "summary": "Mention d'une intervention d'Arunn Jegan, responsable des affaires humanitaires chez MSF, dans un programme télévisé.",
+    "why": "",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [],
+    "industries": [],
+    "countries": [],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-22T15:11:28+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s1b6ac74e8c37d263",
+   "item_ids": [
+    "1b6ac74e8c37d263"
+   ],
+   "analysis": {
+    "relevant": false,
+    "title_fr": "Élèves, personnels et parents unis pour faire annuler des sanctions scolaires",
+    "summary": "Une mobilisation d'élèves, de personnels et de parents vise à faire annuler des sanctions disciplinaires dans un établissement scolaire.",
+    "why": "",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [],
+    "industries": [],
+    "countries": [],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-22T15:11:28+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s62c3ae824098d66b",
+   "item_ids": [
+    "62c3ae824098d66b"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Les fonds marins du Pacifique au cœur de la course aux minéraux critiques",
+    "summary": "La compétition internationale pour les minéraux critiques s'étend aux fonds marins du Pacifique, attirant une attention croissante.",
+    "why": "La cartographie et la surveillance des zones maritimes riches en minéraux critiques accroissent la demande d'imagerie satellite.",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [
+     "ressources"
+    ],
+    "industries": [
+     "ogme",
+     "maritime"
+    ],
+    "countries": [],
+    "impact": "moyen"
+   },
+   "analysed_at": "2026-11-22T15:11:28+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "sdd89f0202f5d9b02",
+   "item_ids": [
+    "dd89f0202f5d9b02",
+    "9f9035de54348865",
+    "c827b4cc5874d47a",
+    "00d6c5f5b35075c2",
+    "51a5a0efa83dd9f8",
+    "ee4a3b2d6c74948b",
+    "92a18889328608e4",
+    "2f376ebf5360f8d0",
+    "6a56660c63f0abe7",
+    "f6e8505d58d21527",
+    "5b58ad866ff6a6a2",
+    "e9df68f8bb205dad"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Un cargo russe reste en feu près de la Finlande après une attaque de drones",
+    "summary": "Un cargo russe en route vers Kaliningrad, endommagé par des drones en eaux internationales, continue de brûler après avoir dérivé dans les eaux finlandaises.",
+    "why": "Cet incident illustre les risques croissants pour le trafic maritime en Baltique, un enjeu pour la surveillance maritime par satellite.",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [
+     "conflits",
+     "ressources"
+    ],
+    "industries": [
+     "maritime"
+    ],
+    "countries": [
+     "RU",
+     "FI"
+    ],
+    "impact": "moyen"
+   },
+   "analysed_at": "2026-11-22T15:11:28+01:00",
+   "analysed_size": 2,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s4a18882f31853c9d",
+   "item_ids": [
+    "4a18882f31853c9d"
+   ],
+   "analysis": {
+    "relevant": false,
+    "title_fr": "Le bloc Eisenkot lance un plan pour annuler la réforme judiciaire de Netanyahu",
+    "summary": "Une coalition politique israélienne menée par Eisenkot engage un processus pour défaire la réforme judiciaire de Netanyahu.",
+    "why": "",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [],
+    "industries": [],
+    "countries": [
+     "IL"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-22T15:11:28+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s015eae3d04684006",
+   "item_ids": [
+    "015eae3d04684006"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Zelensky critique les retards américains sur les Patriot alors que la Russie tire 165 missiles en une semaine",
+    "summary": "Zelensky juge difficiles à comprendre les retards américains de livraison de missiles Patriot, alors que la Russie a tiré 165 missiles en une semaine.",
+    "why": "L'intensité des frappes russes et les retards de défense antiaérienne maintiennent une forte demande de surveillance et de défense.",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [
+     "conflits",
+     "budgets"
+    ],
+    "industries": [
+     "defense"
+    ],
+    "countries": [
+     "US",
+     "RU",
+     "UA"
+    ],
+    "impact": "moyen"
+   },
+   "analysed_at": "2026-11-22T15:11:28+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "sb34afedc731bda50",
+   "item_ids": [
+    "b34afedc731bda50"
+   ],
+   "analysis": {
+    "relevant": false,
+    "title_fr": "Pourquoi Gottéron a levé les sanctions contre ses ultras",
+    "summary": "Le club de hockey Gottéron a décidé de lever les sanctions imposées à ses supporters ultras.",
+    "why": "",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [],
+    "industries": [],
+    "countries": [],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-22T15:11:28+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s1803bccf69e10da3",
+   "item_ids": [
+    "1803bccf69e10da3",
+    "90c5cdc9373c5d34"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Gaza : l'armée israélienne affirme que trois tués dans un véhicule d'aide étaient des combattants",
+    "summary": "Après des informations sur une frappe visant un véhicule d'aide à Gaza, l'armée israélienne affirme que les trois personnes tuées étaient des militants.",
+    "why": "Ces incidents soulignent le rôle de l'imagerie satellite pour vérifier les circonstances des frappes en zone de conflit.",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [
+     "conflits"
+    ],
+    "industries": [
+     "defense",
+     "securite"
+    ],
+    "countries": [
+     "IL",
+     "PS"
+    ],
+    "impact": "moyen"
+   },
+   "analysed_at": "2026-11-22T15:11:28+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "sd38d5ac9f5a1e1f5",
+   "item_ids": [
+    "d38d5ac9f5a1e1f5"
+   ],
+   "analysis": {
+    "relevant": false,
+    "title_fr": "Météo en Picardie après les inondations : prévisions pour la semaine du 23 au 29 novembre",
+    "summary": "Bulletin météo local pour la Picardie après les récentes inondations.",
+    "why": "",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [],
+    "industries": [],
+    "countries": [],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-22T15:11:28+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "sf7df518b75379733",
+   "item_ids": [
+    "f7df518b75379733"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "SpaceX commande d'énormes volumes d'équipements solaires pour ses centres de données IA",
+    "summary": "SpaceX aurait commandé l'équivalent de 100 GW/an d'équipements solaires, un montant estimé à mille milliards de dollars par an selon Musk.",
+    "why": "Cette diversification massive de SpaceX vers les centres de données IA pourrait influencer ses priorités d'investissement spatial.",
+    "tabs": [
+     "concurrents"
+    ],
+    "themes": [
+     "financements"
+    ],
+    "industries": [
+     "connectivite"
+    ],
+    "countries": [
+     "US"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-22T15:11:28+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "saf8919437d3d916c",
+   "item_ids": [
+    "af8919437d3d916c",
+    "d93bcc0347245150"
+   ],
+   "analysis": {
+    "relevant": false,
+    "title_fr": "L'IPO record d'Anthropic a bien payé les banquiers mais frustré certains",
+    "summary": "L'introduction en bourse d'Anthropic, menée selon des conditions inspirées de SpaceX, a généré des frictions avec certains banquiers.",
+    "why": "",
+    "tabs": [
+     "economie"
+    ],
+    "themes": [
+     "financements"
+    ],
+    "industries": [],
+    "countries": [
+     "US"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-22T15:11:28+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "saf5543ef3d36695b",
+   "item_ids": [
+    "af5543ef3d36695b"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "L'US Space Force accélère les lancements de son réseau de satellites",
+    "summary": "L'US Space Force annonce une accélération du déploiement de son réseau de satellites militaires.",
+    "why": "Une cadence de lancements militaires plus rapide illustre la montée des besoins spatiaux de défense aux États-Unis.",
+    "tabs": [
+     "economie"
+    ],
+    "themes": [
+     "programmes"
+    ],
+    "industries": [
+     "defense"
+    ],
+    "countries": [
+     "US"
+    ],
+    "impact": "moyen"
+   },
+   "analysed_at": "2026-11-22T15:11:28+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s3260002f55896369",
+   "item_ids": [
+    "3260002f55896369"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Un raid terrestre israélien dans le centre de Gaza fait craindre un élargissement militaire",
+    "summary": "Une incursion terrestre israélienne dans le centre de Gaza suscite des craintes d'un élargissement des objectifs militaires.",
+    "why": "Une escalade à Gaza accroît les besoins de surveillance et de renseignement géospatial dans la région.",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [
+     "conflits"
+    ],
+    "industries": [
+     "defense",
+     "securite"
+    ],
+    "countries": [
+     "IL",
+     "PS"
+    ],
+    "impact": "moyen"
+   },
+   "analysed_at": "2026-11-22T15:11:28+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s5bc6aece1e667564",
+   "item_ids": [
+    "5bc6aece1e667564"
+   ],
+   "analysis": {
+    "relevant": false,
+    "title_fr": "Une anomalie magnétique inexpliquée sur la Lune pousse la NASA à enquêter",
+    "summary": "La NASA enquête sur une anomalie magnétique lunaire à l'aide d'un spectromètre à plasma de nouvelle génération.",
+    "why": "",
+    "tabs": [
+     "concurrents"
+    ],
+    "themes": [],
+    "industries": [],
+    "countries": [
+     "US"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-22T15:11:28+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s6a15a45505425caa",
+   "item_ids": [
+    "6a15a45505425caa",
+    "261e0a870ec40324",
+    "016653fdf703205b"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Les Forces de soutien rapide tuent 3 civils par drone à Omdurman, les défenses soudanaises interceptent des attaques",
+    "summary": "Des drones des Forces de soutien rapide ont tué trois civils à Omdurman tandis que les défenses aériennes soudanaises interceptaient d'autres attaques.",
+    "why": "L'intensification des attaques de drones au Soudan accroît la demande de surveillance et de renseignement géospatial.",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [
+     "conflits"
+    ],
+    "industries": [
+     "defense",
+     "securite"
+    ],
+    "countries": [
+     "SD"
+    ],
+    "impact": "moyen"
+   },
+   "analysed_at": "2026-11-22T15:11:28+01:00",
+   "analysed_size": 2,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s31788546c34a3fdf",
+   "item_ids": [
+    "31788546c34a3fdf"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Les États-Unis et Israël élaborent des plans d'attaque contre l'Iran",
+    "summary": "Washington et Israël développeraient des plans d'attaque contre l'Iran, tandis que Jeffries appelle à mettre fin à la guerre.",
+    "why": "Une escalade militaire majeure contre l'Iran transformerait la demande de renseignement géospatial dans la région.",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [
+     "conflits"
+    ],
+    "industries": [
+     "defense"
+    ],
+    "countries": [
+     "US",
+     "IL",
+     "IR"
+    ],
+    "impact": "fort"
+   },
+   "analysed_at": "2026-11-22T15:11:28+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s6b99d5512e4a5978",
+   "item_ids": [
+    "6b99d5512e4a5978"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Inondations : quelles aides pour les sinistrés en complément de l'assurance",
+    "summary": "Un article détaille les aides disponibles pour les sinistrés des inondations en France, en complément des indemnisations d'assurance.",
+    "why": "Le recours croissant aux aides après inondations souligne le rôle des données satellite pour l'évaluation des dommages.",
+    "tabs": [
+     "economie"
+    ],
+    "themes": [
+     "budgets"
+    ],
+    "industries": [
+     "finance_assurance"
+    ],
+    "countries": [
+     "FR"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-22T15:11:28+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s264b658e6ff10dc7",
+   "item_ids": [
+    "264b658e6ff10dc7"
+   ],
+   "analysis": {
+    "relevant": false,
+    "title_fr": "Le changement climatique menace le patrimoine du Pakistan",
+    "summary": "Un responsable pakistanais alerte sur les risques du changement climatique pour la civilisation et le patrimoine du pays.",
+    "why": "",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [
+     "crises"
+    ],
+    "industries": [],
+    "countries": [
+     "PK"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-22T15:11:28+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s35b356ba852f5268",
+   "item_ids": [
+    "35b356ba852f5268"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "La Turquie exclut les énergies fossiles du projet final de la COP31",
+    "summary": "Le projet final des négociations climatiques à la COP31 en Turquie ne mentionne pas les énergies fossiles responsables du réchauffement.",
+    "why": "Les blocages climatiques influencent les politiques de surveillance environnementale par satellite.",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [
+     "crises"
+    ],
+    "industries": [
+     "foret_environnement"
+    ],
+    "countries": [
+     "TR"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-22T15:11:28+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s4e2a6d7bce28aea2",
+   "item_ids": [
+    "4e2a6d7bce28aea2"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Inondations dans le Pas-de-Calais : la décrue se confirme en amont de La Canche",
+    "summary": "Le préfet du Pas-de-Calais indique que la décrue est nette sur l'amont de La Canche après les inondations.",
+    "why": "Les crues répétées alimentent la demande de surveillance par imagerie satellite pour la gestion des risques.",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [
+     "crises"
+    ],
+    "industries": [
+     "infrastructures",
+     "foret_environnement"
+    ],
+    "countries": [
+     "FR"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-22T15:11:28+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "saeb6f35b5effc011",
+   "item_ids": [
+    "aeb6f35b5effc011"
+   ],
+   "analysis": {
+    "relevant": false,
+    "title_fr": "Séisme de magnitude 3,3 au large de San Pedro",
+    "summary": "Un tremblement de terre de faible magnitude a été enregistré au large de la côte de San Pedro.",
+    "why": "",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [],
+    "industries": [],
+    "countries": [],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-22T15:11:28+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "sef3fa1292caaefdc",
+   "item_ids": [
+    "ef3fa1292caaefdc"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Pourquoi l'Iran intensifie ses attaques dans le Golfe",
+    "summary": "Téhéran multiplie les attaques dans le Golfe alors que le blocus naval américain et les sanctions pèsent lourdement sur son économie.",
+    "why": "Une escalade dans le Golfe accroît le risque pour le trafic maritime et la demande de surveillance satellite.",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [
+     "conflits",
+     "sanctions"
+    ],
+    "industries": [
+     "maritime",
+     "defense"
+    ],
+    "countries": [
+     "IR",
+     "US"
+    ],
+    "impact": "moyen"
+   },
+   "analysed_at": "2026-11-22T15:11:28+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "sbff37cd58373017d",
+   "item_ids": [
+    "bff37cd58373017d"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "State Farm investit dans une réponse plus rapide aux incendies de forêt",
+    "summary": "L'assureur américain State Farm annonce investir dans des technologies pour accélérer la détection et la réponse aux incendies de forêt.",
+    "why": "Illustre la demande croissante des assureurs pour des données géospatiales de suivi des incendies.",
+    "tabs": [
+     "economie"
+    ],
+    "themes": [
+     "programmes"
+    ],
+    "industries": [
+     "finance_assurance",
+     "foret_environnement"
+    ],
+    "countries": [
+     "US"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-22T15:11:28+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s3281980ffdd37dd7",
+   "item_ids": [
+    "3281980ffdd37dd7"
+   ],
+   "analysis": {
+    "relevant": false,
+    "title_fr": "L'ESA annonce l'insertion réussie de BepiColombo en orbite de Mercure",
+    "summary": "La sonde BepiColombo de l'ESA a été insérée avec succès en orbite autour de Mercure.",
+    "why": "",
+    "tabs": [
+     "economie"
+    ],
+    "themes": [],
+    "industries": [],
+    "countries": [],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-22T15:11:28+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s28fdb3ef1e664dc3",
+   "item_ids": [
+    "28fdb3ef1e664dc3"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Balaena et Kongsberg Maritime signent un accord sur le véhicule de surface sans équipage Arctic Hunter",
+    "summary": "Balaena et Kongsberg Maritime ont signé un accord de coopération autour du véhicule de surface autonome Arctic Hunter, destiné à la surveillance maritime.",
+    "why": "Ce partenariat renforce les capacités de surveillance maritime autonome, un segment concurrent à l'imagerie satellite pour le suivi des zones océaniques.",
+    "tabs": [
+     "concurrents",
+     "marche"
+    ],
+    "themes": [
+     "programmes"
+    ],
+    "industries": [
+     "maritime",
+     "defense"
+    ],
+    "countries": [],
+    "impact": "moyen"
+   },
+   "analysed_at": "2026-11-22T15:11:28+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s77d8c8a5045d5374",
+   "item_ids": [
+    "77d8c8a5045d5374"
+   ],
+   "analysis": {
+    "relevant": false,
+    "title_fr": "Une ex-employée de SpaceX conteste un redressement fiscal de l'IRS lié à un faux second emploi",
+    "summary": "Une ancienne salariée de SpaceX affirme que l'IRS lui réclame 19 000 dollars pour un emploi fictif situé à 3 200 km de son lieu de travail réel.",
+    "why": "",
+    "tabs": [
+     "economie"
+    ],
+    "themes": [],
+    "industries": [],
+    "countries": [
+     "US"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-22T15:11:28+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s595858181834ad5b",
+   "item_ids": [
+    "595858181834ad5b"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Les créanciers du contrat Nvidia-SpaceX de 43 Md$ s'inquiètent de garanties situées en orbite",
+    "summary": "Les prêteurs ayant financé l'accord de 43 Md$ entre SpaceX et Nvidia pour des GPU s'inquiètent de ne pouvoir récupérer le matériel s'il finit en orbite, en l'absence de garantie écrite 'Terre uniquement'.",
+    "why": "Les montages financiers risqués de SpaceX pour ses infrastructures IA spatiales pourraient fragiliser ses capacités d'investissement dans le spatial concurrentiel.",
+    "tabs": [
+     "concurrents"
+    ],
+    "themes": [
+     "financements"
+    ],
+    "industries": [
+     "connectivite"
+    ],
+    "countries": [
+     "US"
+    ],
+    "impact": "moyen"
+   },
+   "analysed_at": "2026-11-22T15:11:28+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s023f79697c34c5b2",
+   "item_ids": [
+    "023f79697c34c5b2"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Comment l'armée chinoise contre les essaims de drones FPV",
+    "summary": "Un article examine les méthodes développées par l'Armée populaire de libération chinoise pour contrer les petits drones FPV et leurs essaims.",
+    "why": "Les capacités anti-drones chinoises reflètent l'évolution des besoins en défense aérienne et en surveillance tactique.",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [
+     "conflits"
+    ],
+    "industries": [
+     "defense"
+    ],
+    "countries": [
+     "CN"
+    ],
+    "impact": "moyen"
+   },
+   "analysed_at": "2026-11-22T15:11:28+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s38dde9fb3b537b47",
+   "item_ids": [
+    "38dde9fb3b537b47"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Rocket Lab vise un test décisif en 2027 pour ses ambitions dans l'espace profond après un succès martien",
+    "summary": "Après un essai réussi de manœuvre orbitale martienne, Rocket Lab prépare pour septembre 2027 un test clé de ses capacités d'exploration spatiale profonde.",
+    "why": "Rocket Lab, concurrent d'Airbus sur les lanceurs et petits satellites, étend ses ambitions vers les missions interplanétaires.",
+    "tabs": [
+     "concurrents"
+    ],
+    "themes": [
+     "produits"
+    ],
+    "industries": [],
+    "countries": [
+     "US"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-22T15:11:28+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "sb8e2df5326f2ddf1",
+   "item_ids": [
+    "b8e2df5326f2ddf1",
+    "5d6e621a53429b04"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "SpaceX prévoit d'investir plus de 74 milliards de dollars dans des centres de données IA aux États-Unis",
+    "summary": "Selon Fortune, SpaceX envisage d'investir plus de 74 Md$ dans des centres de données IA américains, diversifiant ses activités au-delà du spatial.",
+    "why": "Cette diversification de SpaceX vers l'IA et les data centers pourrait mobiliser des ressources financières et techniques au détriment de ses activités spatiales concurrentes.",
+    "tabs": [
+     "concurrents"
+    ],
+    "themes": [
+     "financements"
+    ],
+    "industries": [
+     "connectivite"
+    ],
+    "countries": [
+     "US"
+    ],
+    "impact": "moyen"
+   },
+   "analysed_at": "2026-11-22T15:11:28+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s12404516f3a2495b",
+   "item_ids": [
+    "12404516f3a2495b"
+   ],
+   "analysis": {
+    "relevant": false,
+    "title_fr": "Aznar appelle à unir le vote du PP contre ceux qui 'achètent le gouvernement'",
+    "summary": "L'ancien président espagnol José María Aznar appelle à l'unité du parti PP contre les partisans de concessions aux séparatistes.",
+    "why": "",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [],
+    "industries": [],
+    "countries": [],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-22T15:11:28+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s74547ae4de08dd2e",
+   "item_ids": [
+    "74547ae4de08dd2e"
+   ],
+   "analysis": {
+    "relevant": false,
+    "title_fr": "Une étude financée par la NASA relie les radiations spatiales à des changements cérébraux sans effet comportemental",
+    "summary": "Une étude soutenue par la NASA montre que les radiations spatiales modifient les cellules cérébrales sans altérer le comportement observable.",
+    "why": "",
+    "tabs": [
+     "economie"
+    ],
+    "themes": [],
+    "industries": [],
+    "countries": [
+     "US"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-22T15:11:28+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s08f7b62720b3ae7d",
+   "item_ids": [
+    "08f7b62720b3ae7d",
+    "9f7809118bffdfbe",
+    "e46aa70ef70a7cc2"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Une frappe de drone russe fait s'effondrer un immeuble près de Kyiv, 14 personnes piégées",
+    "summary": "Une attaque de drone russe a provoqué l'effondrement d'un bâtiment dans la région de Kyiv, avec au moins 14 personnes potentiellement piégées sous les décombres.",
+    "why": "Les frappes russes sur des zones urbaines maintiennent une forte demande en imagerie satellite pour l'évaluation des dommages et le renseignement.",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [
+     "conflits"
+    ],
+    "industries": [
+     "defense",
+     "securite"
+    ],
+    "countries": [
+     "UA",
+     "RU"
+    ],
+    "impact": "moyen"
+   },
+   "analysed_at": "2026-11-22T15:11:28+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s2d323b529aed98eb",
+   "item_ids": [
+    "2d323b529aed98eb"
+   ],
+   "analysis": {
+    "relevant": false,
+    "title_fr": "De fortes pluies entraînent des risques d'inondation au Royaume-Uni",
+    "summary": "De fortes précipitations touchent plusieurs régions du Royaume-Uni, avec un risque d'inondation annoncé.",
+    "why": "",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [
+     "crises"
+    ],
+    "industries": [],
+    "countries": [
+     "GB"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-22T15:11:28+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s8b7000f4cf610780",
+   "item_ids": [
+    "8b7000f4cf610780"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Le Congrès américain pourrait-il stopper une guerre avec l'Iran comme il l'a fait pour le Vietnam ?",
+    "summary": "Un article rappelle que le Congrès américain avait coupé le financement de la guerre du Vietnam et s'interroge sur son pouvoir similaire face à une possible guerre avec l'Iran.",
+    "why": "Une escalade ou désescalade avec l'Iran influence la demande en surveillance et renseignement géospatial dans la région.",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [
+     "conflits"
+    ],
+    "industries": [
+     "defense"
+    ],
+    "countries": [
+     "US",
+     "IR"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-22T15:11:28+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s95e0f16fbcba2af3",
+   "item_ids": [
+    "95e0f16fbcba2af3",
+    "ff49d39d347e5331"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "La Chine aurait mené une opération secrète de 2 ans pour contourner les contrôles d'export de puces IA US",
+    "summary": "Le ministère chinois de la Sécurité d'État aurait organisé une opération clandestine de deux ans pour obtenir des puces IA américaines malgré les restrictions d'exportation.",
+    "why": "Les contournements des contrôles d'export technologiques affectent l'accès aux composants critiques pour les systèmes de défense et spatiaux.",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [
+     "sanctions"
+    ],
+    "industries": [
+     "defense"
+    ],
+    "countries": [
+     "CN",
+     "US"
+    ],
+    "impact": "moyen"
+   },
+   "analysed_at": "2026-11-22T15:11:28+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "sa11cd19784f7b14b",
+   "item_ids": [
+    "a11cd19784f7b14b",
+    "db0c8d40f6d40356"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "COP31 en Turquie devient la plus longue conférence climat de l'histoire",
+    "summary": "La COP31 en Turquie dépasse 44 heures de prolongation sans accord sur un texte final, devenant la plus longue COP jamais tenue.",
+    "why": "L'échec des négociations climatiques retarde les engagements publics pouvant soutenir la demande en observation de la Terre.",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [
+     "crises"
+    ],
+    "industries": [
+     "foret_environnement"
+    ],
+    "countries": [
+     "TR"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-22T15:11:28+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s851d23bde883bd1d",
+   "item_ids": [
+    "851d23bde883bd1d"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Guerre en Ukraine : la question de la responsabilité (accountability) s'intensifie",
+    "summary": "Un article analyse les efforts pour établir les responsabilités dans la guerre en Ukraine, plus de trois ans après le début du conflit.",
+    "why": "Le conflit ukrainien reste un moteur majeur de la demande en imagerie satellite et renseignement géospatial.",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [
+     "conflits"
+    ],
+    "industries": [
+     "defense"
+    ],
+    "countries": [
+     "UA"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-22T15:11:28+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "scbfbbbee358be7e3",
+   "item_ids": [
+    "cbfbbbee358be7e3"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Les marines chinoise et vietnamienne achèvent leur 41e patrouille conjointe dans le golfe du Tonkin",
+    "summary": "La Chine et le Vietnam ont mené leur 41e patrouille navale conjointe dans le golfe du Tonkin, renforçant selon des experts la confiance maritime régionale.",
+    "why": "Illustre la coopération maritime en mer de Chine du Sud, zone sensible pour la surveillance satellite et la sécurité maritime.",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [
+     "ressources"
+    ],
+    "industries": [
+     "maritime",
+     "defense"
+    ],
+    "countries": [
+     "CN",
+     "VN"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-22T15:11:28+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s724aab1a4a8b43c8",
+   "item_ids": [
+    "724aab1a4a8b43c8"
+   ],
+   "analysis": {
+    "relevant": false,
+    "title_fr": "Royaume-Uni : débat politique sur le Brexit et les relations avec l'UE",
+    "summary": "Des responsables politiques britanniques débattent du rapprochement avec l'UE après de nouveaux accords commerciaux.",
+    "why": "",
+    "tabs": [],
+    "themes": [],
+    "industries": [],
+    "countries": [
+     "GB"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-22T15:11:28+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "sf8577b0b8606a86d",
+   "item_ids": [
+    "f8577b0b8606a86d",
+    "aa162b63dc1c5988",
+    "538702008c971702"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Un bâtiment de l'ONU endommagé par des frappes de drones à Khartoum, guerre au Soudan",
+    "summary": "Des frappes de drones ont endommagé un bâtiment des Nations unies dans la capitale soudanaise, dans le cadre du conflit en cours au Soudan.",
+    "why": "Le conflit soudanais alimente la demande en surveillance satellite pour le suivi humanitaire et sécuritaire.",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [
+     "conflits"
+    ],
+    "industries": [
+     "defense",
+     "securite"
+    ],
+    "countries": [
+     "SD"
+    ],
+    "impact": "moyen"
+   },
+   "analysed_at": "2026-11-22T15:11:28+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "sf47088c38999b679",
+   "item_ids": [
+    "f47088c38999b679"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Un million de centres de données SpaceX dans l'espace serait catastrophique, alertent des scientifiques",
+    "summary": "Des scientifiques avertissent que le déploiement massif de centres de données spatiaux par SpaceX pourrait avoir un impact environnemental catastrophique.",
+    "why": "Soulève des enjeux de régulation et de durabilité pour les futurs projets d'infrastructures spatiales des concurrents.",
+    "tabs": [
+     "concurrents"
+    ],
+    "themes": [
+     "produits"
+    ],
+    "industries": [
+     "connectivite"
+    ],
+    "countries": [
+     "US"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-22T15:11:28+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s2c233516461cad65",
+   "item_ids": [
+    "2c233516461cad65"
+   ],
+   "analysis": {
+    "relevant": false,
+    "title_fr": "Les restaurateurs de Kyiv redoutent un hiver difficile sous la pression de la guerre",
+    "summary": "À Kyiv, les restaurateurs s'inquiètent des conséquences économiques de l'hiver dans un contexte de guerre persistante.",
+    "why": "",
+    "tabs": [],
+    "themes": [],
+    "industries": [],
+    "countries": [],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-22T15:11:28+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s108defea47cea052",
+   "item_ids": [
+    "108defea47cea052"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Inondations : la méga-pompe mobilisée dans le Pas-de-Calais",
+    "summary": "Une pompe de grande capacité est déployée pour évacuer les eaux de crue dans le Pas-de-Calais.",
+    "why": "",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [
+     "crises"
+    ],
+    "industries": [
+     "infrastructures"
+    ],
+    "countries": [
+     "FR"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-22T15:11:28+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s3038307e1b9903a4",
+   "item_ids": [
+    "3038307e1b9903a4"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Inondations dans le Montreuillois : le pire est-il passé ?",
+    "summary": "Les habitants du Montreuillois s'interrogent sur la fin des inondations alors que la situation semble s'améliorer progressivement.",
+    "why": "",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [
+     "crises"
+    ],
+    "industries": [
+     "infrastructures"
+    ],
+    "countries": [
+     "FR"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-22T15:11:28+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s2bf134b948736882",
+   "item_ids": [
+    "2bf134b948736882"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Awais Ahmed, cofondateur de Pixxel, distingué au TIME100 Next India 2026",
+    "summary": "Awais Ahmed, cofondateur indien de la société d'imagerie satellite Pixxel, est reconnu dans le classement TIME100 Next India 2026 pour ses travaux en technologie satellite.",
+    "why": "Met en lumière Pixxel, concurrent émergent dans l'imagerie satellite hyperspectrale, renforçant sa visibilité internationale.",
+    "tabs": [
+     "concurrents"
+    ],
+    "themes": [
+     "produits"
+    ],
+    "industries": [
+     "defense",
+     "ogme",
+     "agriculture"
+    ],
+    "countries": [
+     "IN"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-22T15:11:28+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "se581a5a15f2b49fc",
+   "item_ids": [
+    "e581a5a15f2b49fc"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "La capsule Dragon de SpaceX revient avec des expériences sur le cancer et le vieillissement",
+    "summary": "SpaceX a ramené sur Terre une capsule Dragon contenant des expériences scientifiques sur le cancer, le vieillissement et les bactéries résistantes.",
+    "why": "",
+    "tabs": [
+     "concurrents"
+    ],
+    "themes": [
+     "lancements"
+    ],
+    "industries": [],
+    "countries": [
+     "US"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-22T15:11:28+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "sd3615c5473ebd495",
+   "item_ids": [
+    "d3615c5473ebd495",
+    "8c862ce846031b75",
+    "17ea11856d5b493e"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "SpaceX bat son record de rotation à Vandenberg avec le lancement NROL-136",
+    "summary": "Falcon 9 de SpaceX établit un nouveau record de délai entre deux lancements depuis Vandenberg, avec le vol NROL-136 pour le renseignement américain (NRO).",
+    "why": "Illustre la cadence croissante de SpaceX dans les lancements de satellites de renseignement, renforçant sa position de concurrent clé en défense spatiale.",
+    "tabs": [
+     "concurrents"
+    ],
+    "themes": [
+     "lancements"
+    ],
+    "industries": [
+     "defense"
+    ],
+    "countries": [
+     "US"
+    ],
+    "impact": "moyen"
+   },
+   "analysed_at": "2026-11-22T15:11:28+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "se1acba09b65ebbe2",
+   "item_ids": [
+    "e1acba09b65ebbe2"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Guerre en Ukraine, jour 1732 : Zelensky dit n'avoir pas vu de proposition américaine de garanties type OTAN",
+    "summary": "Le président Zelensky affirme que l'Ukraine n'a pas encore reçu de proposition américaine formelle pour des garanties de sécurité similaires à l'article 5 de l'OTAN.",
+    "why": "Les garanties de sécurité à l'Ukraine conditionnent l'évolution du conflit et la demande en défense et surveillance spatiale.",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [
+     "conflits"
+    ],
+    "industries": [
+     "defense"
+    ],
+    "countries": [
+     "UA",
+     "US"
+    ],
+    "impact": "moyen"
+   },
+   "analysed_at": "2026-11-22T15:11:28+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s5c5a85b42fd1cb59",
+   "item_ids": [
+    "5c5a85b42fd1cb59"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Inondations dans le Pas-de-Calais : élan de solidarité à Montreuil-sur-Mer",
+    "summary": "Un vaste mouvement de solidarité s'organise à Montreuil-sur-Mer face aux inondations qui touchent le Pas-de-Calais.",
+    "why": "",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [
+     "crises"
+    ],
+    "industries": [
+     "infrastructures"
+    ],
+    "countries": [
+     "FR"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-22T15:11:28+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s3d305a30db31279c",
+   "item_ids": [
+    "3d305a30db31279c"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "À Gaza, les enfants diabétiques manquent d'insuline en raison du siège",
+    "summary": "Dans la bande de Gaza assiégée, l'insuline et le matériel de test glycémique deviennent de plus en plus difficiles à obtenir pour les enfants diabétiques.",
+    "why": "",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [
+     "crises"
+    ],
+    "industries": [],
+    "countries": [
+     "PS"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-22T15:11:28+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s98f2d9ca98627f8b",
+   "item_ids": [
+    "98f2d9ca98627f8b"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "L'Arabie saoudite intercepte un drone, les Houthis revendiquent une attaque sur Sanaa",
+    "summary": "La défense aérienne saoudienne a abattu un drone tandis que les médias houthis rapportent une attaque sur une compagnie pétrolière à Sanaa, blessant plusieurs personnes.",
+    "why": "Marque une escalade des tensions en mer Rouge et au Yémen, zone surveillée pour la sécurité énergétique et maritime.",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [
+     "conflits"
+    ],
+    "industries": [
+     "defense",
+     "securite",
+     "ogme"
+    ],
+    "countries": [
+     "SA",
+     "YE"
+    ],
+    "impact": "moyen"
+   },
+   "analysed_at": "2026-11-22T15:11:28+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "sd2b9d9ab1dc52d94",
+   "item_ids": [
+    "d2b9d9ab1dc52d94",
+    "2bdc454bd2bdf7ce"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Un nageur britannique traverse le détroit d'Ormuz pour alerter sur le coût environnemental de la guerre",
+    "summary": "Le nageur Lewis Pugh a traversé en trois jours le détroit d'Ormuz, témoin de navires en feu et de jets de combat, pour dénoncer l'impact environnemental du conflit en Iran.",
+    "why": "Illustre la tension persistante dans le détroit d'Ormuz, zone stratégique surveillée par imagerie satellite.",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [
+     "conflits"
+    ],
+    "industries": [
+     "maritime"
+    ],
+    "countries": [
+     "IR",
+     "GB"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-22T15:11:28+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s1a7db84ca4dbd27a",
+   "item_ids": [
+    "1a7db84ca4dbd27a",
+    "1a46746ff7b0f2b4"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Pas-de-Calais : une digue menace de céder sous la pression des eaux de crue",
+    "summary": "Dans une commune du Pas-de-Calais, une digue risque de s'effondrer sous la pression des inondations, menaçant les habitants.",
+    "why": "Les inondations répétées illustrent la demande croissante de surveillance par imagerie satellite des risques climatiques.",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [
+     "crises"
+    ],
+    "industries": [
+     "infrastructures",
+     "foret_environnement"
+    ],
+    "countries": [
+     "FR"
+    ],
+    "impact": "moyen"
+   },
+   "analysed_at": "2026-11-22T15:11:28+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s236dd998c9ec9c3b",
+   "item_ids": [
+    "236dd998c9ec9c3b",
+    "b4a28bd8beac4a3c"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Cisjordanie : une attaque de colons provoque un tollé politique en Israël",
+    "summary": "Des colons extrémistes ont incendié des véhicules et taggé des slogans racistes dans au moins quatre villages palestiniens de Cisjordanie, provoquant une controverse politique.",
+    "why": "",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [
+     "conflits"
+    ],
+    "industries": [],
+    "countries": [
+     "IL",
+     "PS"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-22T15:11:28+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s6dbdbe080f8e4481",
+   "item_ids": [
+    "6dbdbe080f8e4481",
+    "322860d3661756a4",
+    "9fdb78a41aa25e91"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Pas-de-Calais : le préfet alerte sur une situation d'inondation toujours instable",
+    "summary": "Le préfet François-Xavier Lauch indique que la situation des inondations dans le Pas-de-Calais n'est pas totalement stabilisée ce dimanche.",
+    "why": "Les crises d'inondations répétées illustrent la demande croissante en imagerie satellite pour la surveillance et la gestion des risques climatiques.",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [
+     "crises"
+    ],
+    "industries": [
+     "infrastructures",
+     "agriculture"
+    ],
+    "countries": [
+     "FR"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-22T15:11:28+01:00",
+   "analysed_size": 2,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s6b89eede87911aa0",
+   "item_ids": [
+    "6b89eede87911aa0"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Tesla cette semaine : livraisons du Cybercab, rumeurs de fusion avec SpaceX et Model Y sans volant",
+    "summary": "Actualités hebdomadaires Tesla incluant les premières livraisons du Cybercab, des rumeurs de fusion entre SpaceX et Tesla, et un Model Y sans volant.",
+    "why": "Une éventuelle fusion SpaceX-Tesla pourrait modifier la structure capitalistique d'un concurrent majeur du secteur spatial.",
+    "tabs": [
+     "concurrents",
+     "economie"
+    ],
+    "themes": [
+     "financements"
+    ],
+    "industries": [],
+    "countries": [
+     "US"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-22T15:11:28+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "se919bba678e1d016",
+   "item_ids": [
+    "e919bba678e1d016",
+    "fb1ff799cf708963"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "Trump menace de sanctions les entreprises américaines construisant des data centers à l'étranger",
+    "summary": "Donald Trump menace d'imposer de lourdes sanctions aux entreprises américaines qui construisent des centres de données hors des États-Unis.",
+    "why": "Pourrait affecter les investissements technologiques et numériques des clients du secteur de la connectivité sécurisée.",
+    "tabs": [
+     "economie"
+    ],
+    "themes": [
+     "reglementation",
+     "sanctions"
+    ],
+    "industries": [
+     "connectivite",
+     "finance_assurance"
+    ],
+    "countries": [
+     "US"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-22T15:11:28+01:00",
+   "analysed_size": 1,
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "s3b8fb851f1df7ac1",
+   "item_ids": [
+    "3b8fb851f1df7ac1"
+   ],
+   "analysis": {
+    "relevant": true,
+    "title_fr": "La guerre commerciale de Trump se retourne contre lui, Washington se rapproche de la Chine",
+    "summary": "La politique commerciale agressive de Trump envers la Chine montre des signes d'échec, poussant les États-Unis à rechercher un rapprochement avec Pékin.",
+    "why": "Une évolution des relations commerciales USA-Chine pourrait influencer les restrictions à l'export de technologies spatiales et de défense.",
+    "tabs": [
+     "geopolitique"
+    ],
+    "themes": [
+     "sanctions"
+    ],
+    "industries": [],
+    "countries": [
+     "CN",
+     "US"
+    ],
+    "impact": "faible"
+   },
+   "analysed_at": "2026-11-22T15:11:28+01:00",
    "analysed_size": 1,
    "analysis_model": "claude_cli:sonnet"
   }

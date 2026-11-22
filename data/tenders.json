@@ -33,15 +33,15 @@
    "ZAR": 19.1987
   }
  },
- "updated_at": "2026-11-21T08:18:59+01:00",
+ "updated_at": "2026-11-22T15:27:30+01:00",
  "sources": [
   {
    "name": "TED",
    "url": "https://api.ted.europa.eu/v3/notices/search",
    "ok": true,
    "error": "",
-   "fetched": 36,
-   "kept": 28,
+   "fetched": 20,
+   "kept": 17,
    "via": "tender"
   },
   {
@@ -49,21 +49,21 @@
    "url": "https://www.find-tender.service.gov.uk/api/1.0/ocdsReleasePackages",
    "ok": true,
    "error": "",
-   "fetched": 1273,
-   "kept": 7,
+   "fetched": 192,
+   "kept": 2,
    "via": "tender"
   }
  ],
  "last_run": {
-  "new": 4,
+  "new": 0,
   "sources": [
    {
     "name": "TED",
     "url": "https://api.ted.europa.eu/v3/notices/search",
     "ok": true,
     "error": "",
-    "fetched": 36,
-    "kept": 28,
+    "fetched": 20,
+    "kept": 17,
     "via": "tender"
    },
    {
@@ -71,20 +71,20 @@
     "url": "https://www.find-tender.service.gov.uk/api/1.0/ocdsReleasePackages",
     "ok": true,
     "error": "",
-    "fetched": 1273,
-    "kept": 7,
+    "fetched": 192,
+    "kept": 2,
     "via": "tender"
    }
   ],
   "analysis": {
-   "analysed": 4,
+   "analysed": 0,
    "relevant": 0,
    "error": "",
-   "cost_usd": 0.0448
+   "cost_usd": null
   },
   "pruned": 0
  },
- "fts_synced_until": "2026-11-21T07:00:00",
+ "fts_synced_until": "2026-11-22T14:00:00",
  "tenders": [
   {
    "id": "ted:810276-2026",
