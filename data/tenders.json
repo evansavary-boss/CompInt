@@ -1,47 +1,47 @@
 {
  "fx": {
-  "date": "2026-11-20",
+  "date": "2026-11-23",
   "rates": {
-   "USD": 1.099,
-   "JPY": 174.35,
-   "CZK": 24.469,
+   "USD": 1.0939,
+   "JPY": 174.01,
+   "CZK": 24.455,
    "DKK": 7.4746,
-   "GBP": 0.83735,
-   "HUF": 373.55,
-   "PLN": 4.4583,
-   "RON": 5.3493,
-   "SEK": 11.2125,
-   "CHF": 0.9223,
+   "GBP": 0.83673,
+   "HUF": 372.28,
+   "PLN": 4.4588,
+   "RON": 5.3483,
+   "SEK": 11.2375,
+   "CHF": 0.9186,
    "ISK": 137.2,
-   "NOK": 10.718,
-   "TRY": 55.5788,
-   "AUD": 1.6487,
-   "BRL": 6.5259,
-   "CAD": 1.5723,
-   "CNY": 7.3388,
-   "HKD": 8.615,
-   "IDR": 20071.37,
-   "ILS": 3.6737,
-   "INR": 101.85,
-   "KRW": 1472.04,
-   "MXN": 20.9547,
-   "MYR": 4.5196,
-   "NZD": 1.9968,
-   "PHP": 70.091,
-   "SGD": 1.416,
-   "THB": 37.262,
-   "ZAR": 19.1987
+   "NOK": 10.7285,
+   "TRY": 55.3405,
+   "AUD": 1.6532,
+   "BRL": 6.5611,
+   "CAD": 1.5711,
+   "CNY": 7.2905,
+   "HKD": 8.5772,
+   "IDR": 19932.94,
+   "ILS": 3.6643,
+   "INR": 101.6395,
+   "KRW": 1475.51,
+   "MXN": 21.0528,
+   "MYR": 4.5101,
+   "NZD": 2.0079,
+   "PHP": 69.851,
+   "SGD": 1.4124,
+   "THB": 37.242,
+   "ZAR": 19.1513
   }
  },
- "updated_at": "2026-11-22T15:27:30+01:00",
+ "updated_at": "2026-11-23T18:33:12+01:00",
  "sources": [
   {
    "name": "TED",
    "url": "https://api.ted.europa.eu/v3/notices/search",
    "ok": true,
    "error": "",
-   "fetched": 20,
-   "kept": 17,
+   "fetched": 21,
+   "kept": 16,
    "via": "tender"
   },
   {
@@ -49,21 +49,21 @@
    "url": "https://www.find-tender.service.gov.uk/api/1.0/ocdsReleasePackages",
    "ok": true,
    "error": "",
-   "fetched": 192,
-   "kept": 2,
+   "fetched": 408,
+   "kept": 3,
    "via": "tender"
   }
  ],
  "last_run": {
-  "new": 0,
+  "new": 8,
   "sources": [
    {
     "name": "TED",
     "url": "https://api.ted.europa.eu/v3/notices/search",
     "ok": true,
     "error": "",
-    "fetched": 20,
-    "kept": 17,
+    "fetched": 21,
+    "kept": 16,
     "via": "tender"
    },
    {
@@ -71,21 +71,346 @@
     "url": "https://www.find-tender.service.gov.uk/api/1.0/ocdsReleasePackages",
     "ok": true,
     "error": "",
-    "fetched": 192,
-    "kept": 2,
+    "fetched": 408,
+    "kept": 3,
     "via": "tender"
    }
   ],
   "analysis": {
    "analysed": 0,
    "relevant": 0,
-   "error": "",
+   "error": "analyse interrompue : Your organization has disabled Claude subscription access for Claude Code · Use an Anthropic API key instead, or ask your admin to enable access",
    "cost_usd": null
   },
   "pruned": 0
  },
- "fts_synced_until": "2026-11-22T14:00:00",
+ "fts_synced_until": "2026-11-23T17:00:00",
  "tenders": [
+  {
+   "id": "ted:814005-2026",
+   "source": "ted",
+   "kind": "open",
+   "notice": "814005-2026",
+   "notice_type": "cn-standard",
+   "title": "Budowa, modernizacja platform informatycznych Regionalnego Systemu Informacji Przestrzennej Województwa Łódzkiego wraz z e-usługami",
+   "buyer": "Województwo Łódzkie",
+   "buyer_country": "PL",
+   "published": "2026-11-23",
+   "url": "https://ted.europa.eu/fr/notice/-/detail/814005-2026",
+   "cpv_label": "Services d'établissement de cartes",
+   "countries": [
+    "PL"
+   ],
+   "cpv": [
+    "71354000",
+    "71351810",
+    "92312213"
+   ],
+   "deadline": "2026-12-22",
+   "value": null,
+   "currency": "",
+   "winners": [],
+   "description": "1. Przedmiotem zamówienia jest Opracowanie mapy zagrożenia erozją potencjalną na obszarze województwa łódzkiego 2. Przedmiot zamówienia został opisany szczegółowo w Opisie Przedmiotu Zamówienia (zwanym dalej „OPZ”), stanowiącym Załącznik Nr 1 do SWZ, będącym jednocześnie Załącznikiem Nr 1 do projektu umowy (Załącznik Nr 4 do SWZ).",
+   "status": "",
+   "first_seen": "2026-11-23T18:33:12+01:00",
+   "analysis": {},
+   "analysed_at": "",
+   "analysis_model": ""
+  },
+  {
+   "id": "ted:813123-2026",
+   "source": "ted",
+   "kind": "open",
+   "notice": "813123-2026",
+   "notice_type": "cn-standard",
+   "title": "SPD8/2026/146 - Framework Contract for Environmental and Geophysical Investigations to Support Sustainable Anchoring and Mooring Management in Selected Coastal Locations for the Environment and Resources Authority",
+   "buyer": "Sectoral Procurement Directorate",
+   "buyer_country": "MT",
+   "published": "2026-11-23",
+   "url": "https://ted.europa.eu/fr/notice/-/detail/813123-2026",
+   "cpv_label": "Services de cartographie maritime",
+   "countries": [
+    "MT"
+   ],
+   "cpv": [
+    "71354500",
+    "71351923",
+    "71351730",
+    "71335000",
+    "90713000",
+    "90710000",
+    "90712000"
+   ],
+   "deadline": "2027-01-06",
+   "value": 500915.0,
+   "currency": "EUR",
+   "winners": [],
+   "description": "The subject of this framework contract is the implementation of environmental and geophysical investigations to support sustainable anchoring and mooring management in selected coastal locations for the Environment and Resources Authority (ERA).",
+   "status": "",
+   "first_seen": "2026-11-23T18:33:12+01:00",
+   "analysis": {},
+   "analysed_at": "",
+   "analysis_model": ""
+  },
+  {
+   "id": "ted:812902-2026",
+   "source": "ted",
+   "kind": "open",
+   "notice": "812902-2026",
+   "notice_type": "cn-standard",
+   "title": "Raamovereenkomst Nautische Producten",
+   "buyer": "Ministerie van Defensie",
+   "buyer_country": "NL",
+   "published": "2026-11-23",
+   "url": "https://ted.europa.eu/fr/notice/-/detail/812902-2026",
+   "cpv_label": "Dictionnaires, cartes, livres de musique et autres livres",
+   "countries": [
+    "NL"
+   ],
+   "cpv": [
+    "22114000",
+    "22114300",
+    "38221000",
+    "48800000",
+    "71354000",
+    "72200000"
+   ],
+   "deadline": "2027-01-18",
+   "value": 4000000.0,
+   "currency": "EUR",
+   "winners": [],
+   "description": "De Koninklijke Marine streeft ernaar de inkoop van civiele nautische producten zo efficiënt mogelijk te laten verlopen. In verband hiermee is de aanbestedende dienst voornemens een raamovereenkomst voor de levering van civiele nautische publicaties te sluiten voor de duur van zeven jaar. Tevens wil de Koninklijke Marine graag advies uit de markt inwinnen met wat op dit moment mogelijk is betreffende PAYS-gebaseerd varen zonder de eigen scheepstrack en identiteit te delen met de leverancier. Derhalve PAYS geschikt te maken voor de militaire markt. De daadwerkelijke afname van een PAYS-systeem…",
+   "status": "",
+   "first_seen": "2026-11-23T18:33:12+01:00",
+   "analysis": {},
+   "analysed_at": "",
+   "analysis_model": ""
+  },
+  {
+   "id": "ted:812437-2026",
+   "source": "ted",
+   "kind": "award",
+   "notice": "812437-2026",
+   "notice_type": "can-standard",
+   "title": "SERVICII DE ELABORARE PLANURI DE MANAGEMENT SI DE INFORMARE SI PUBLICITATE ÎN CADRUL PROIECTULUI COD SMIS 137339",
+   "buyer": "Agentia Nationala pentru Mediu si Arii Protejate",
+   "buyer_country": "RO",
+   "published": "2026-11-23",
+   "url": "https://ted.europa.eu/fr/notice/-/detail/812437-2026",
+   "cpv_label": "Services de conception d'études",
+   "countries": [
+    "RO"
+   ],
+   "cpv": [
+    "79311100",
+    "22114300",
+    "30221000",
+    "39294100",
+    "55520000",
+    "71222200",
+    "71354100",
+    "72320000",
+    "72413000",
+    "72500000",
+    "79311200",
+    "79800000",
+    "79810000",
+    "79823000",
+    "79951000",
+    "79960000",
+    "90711400",
+    "90712400",
+    "92111250"
+   ],
+   "deadline": "",
+   "value": 17296500.0,
+   "currency": "RON",
+   "winners": [
+    "CCAT SOLUTION GRUP"
+   ],
+   "description": "Obiectul contractului il constituie prestarea de servicii de elaborarea planuri de management si de informare si publicitate in cadrul proiectului „Elaborarea Planurilor de management pentru ariile naturale protejate ROSCI0114 (incluzand rezervatiile naturale B.2. Mlastina Hergheliei si 2.371. Obanul Mare si Pestera Movile), ROSCI0191 (incluzand rezervatia naturala 2.358. Pestera Limanu), ROSPA0066, ROSCI0281, ROSCI0293, ROSCI0340, ROSCI0353, ROSCI0412, ROSPA0057”, Cod SMIS 137339. In cadrul contrractului se vor implementa urmatoarele activitati/subactivitati din cadrul proiectului…",
+   "status": "",
+   "first_seen": "2026-11-23T18:33:12+01:00",
+   "analysis": {},
+   "analysed_at": "",
+   "analysis_model": ""
+  },
+  {
+   "id": "ted:811804-2026",
+   "source": "ted",
+   "kind": "open",
+   "notice": "811804-2026",
+   "notice_type": "cn-standard",
+   "title": "Wsparcie wydajnego gospodarowania zasobami wodnymi w Gminie Łyszkowice",
+   "buyer": "Gmina Łyszkowice",
+   "buyer_country": "PL",
+   "published": "2026-11-23",
+   "url": "https://ted.europa.eu/fr/notice/-/detail/811804-2026",
+   "cpv_label": "Compteurs à eau",
+   "countries": [
+    "PL"
+   ],
+   "cpv": [
+    "38421100",
+    "72263000",
+    "48000000",
+    "38221000",
+    "32441200",
+    "32500000",
+    "45330000",
+    "42912310"
+   ],
+   "deadline": "2026-12-21",
+   "value": null,
+   "currency": "",
+   "winners": [],
+   "description": "Przedmiotem zamówienia jest wsparcie wydajnego gospodarowania zasobami wodnymi w Gminie Łyszkowice, realizowane jako projekt współfinansowany ze środków Europejskiego Funduszu Rozwoju Regionalnego w ramach programu Fundusze Europejskie dla Łódzkiego 2021–2027; Priorytet: „Fundusze europejskie dla zielonego Łódzkiego”; Działanie: Gospodarowanie wodą; Projekt FELD.02.12-IZ.00-0019/24. Zamówienie zostało podzielone na dwie Części: Część nr 1 – Dostawa i wymiana wodomierzy wraz z systemem zdalnego odczytu, systemem GIS oraz SCADA oraz Część nr 2 – Dostawa poidełek.",
+   "status": "",
+   "first_seen": "2026-11-23T18:33:12+01:00",
+   "analysis": {},
+   "analysed_at": "",
+   "analysis_model": ""
+  },
+  {
+   "id": "ted:811563-2026",
+   "source": "ted",
+   "kind": "award",
+   "notice": "811563-2026",
+   "notice_type": "can-standard",
+   "title": "Überarbeitung Lane-Model",
+   "buyer": "Landeshauptstadt München, Kommunalreferat, Recht und Verwaltung, Zentrale Dienste, Submissionsbüro",
+   "buyer_country": "DE",
+   "published": "2026-11-23",
+   "url": "https://ted.europa.eu/fr/notice/-/detail/811563-2026",
+   "cpv_label": "Services de cartographie numérique",
+   "countries": [
+    "DE"
+   ],
+   "cpv": [
+    "71354100",
+    "71354000",
+    "71300000",
+    "38221000"
+   ],
+   "deadline": "",
+   "value": 426650.0,
+   "currency": "EUR",
+   "winners": [
+    "Regio OÜ"
+   ],
+   "description": "Überarbeitung des Münchner Lane-Models",
+   "status": "",
+   "first_seen": "2026-11-23T18:33:12+01:00",
+   "analysis": {},
+   "analysed_at": "",
+   "analysis_model": ""
+  },
+  {
+   "id": "fts:ocds-h6vhtk-07c17c:planned",
+   "source": "fts",
+   "kind": "planned",
+   "notice": "110673-2026",
+   "notice_type": "UK3",
+   "title": "Facilities Management Services (Integrated Hard and Soft FM)",
+   "buyer": "Satellite Applications Catapult Ltd",
+   "buyer_country": "GB",
+   "published": "2026-11-23",
+   "url": "https://www.find-tender.service.gov.uk/Notice/110673-2026",
+   "cpv_label": "",
+   "countries": [
+    "GB"
+   ],
+   "cpv": [
+    "90910000",
+    "90500000",
+    "79993000",
+    "50000000"
+   ],
+   "deadline": "",
+   "value": null,
+   "currency": "",
+   "winners": [],
+   "description": "Satellite Applications Catapult is seeking a Facilities Management Service Partner to deliver integrated hard and soft facilities management services and ad hoc minor projects across its premises at Harwell Science and Innovation Campus, Oxfordshire, and Westcott Venture Park, Buckinghamshire. The estate comprises leased office space, and specialist technical facilities, including clean rooms, robotics and IT type laboratories, drone hangars and an unmanned far-field range.  Some of the estate is occupied by SAC tenants or open for customer use. Total managed estate is approximately 66,400…",
+   "status": "",
+   "first_seen": "2026-11-23T18:33:12+01:00",
+   "analysis": {},
+   "analysed_at": "",
+   "analysis_model": ""
+  },
+  {
+   "id": "fts:ocds-h6vhtk-0781f6:open",
+   "source": "fts",
+   "kind": "open",
+   "notice": "110441-2026",
+   "notice_type": "UK4",
+   "title": "Belfast Stories – Story Engine",
+   "buyer": "Belfast City Council",
+   "buyer_country": "GB",
+   "published": "2026-11-23",
+   "url": "https://www.find-tender.service.gov.uk/Notice/110441-2026",
+   "cpv_label": "",
+   "countries": [
+    "GB"
+   ],
+   "cpv": [
+    "72413000",
+    "72000000",
+    "72262000",
+    "72415000",
+    "72210000",
+    "72212222"
+   ],
+   "deadline": "2026-11-25",
+   "value": 550000.0,
+   "currency": "GBP",
+   "winners": [],
+   "description": "Belfast Stories is seeking to procure an experienced supplier to design, build and support a digital platform known as the ‘Stories Engine’ that supports:\n•\tStory collection and preservation\n•\tCommunity participation\n•\tArchive integration\n•\tSearch and discovery\n•\tInformation management including consent and participation considerations\n•\tGovernance on data management\n•\tPublic access points and satellite opportunities",
+   "status": "",
+   "first_seen": "2026-10-27T09:45:22+01:00",
+   "analysis": {
+    "relevant": false,
+    "segment": "cartographie",
+    "title_fr": "Plateforme numérique de collecte et d'archivage de récits « Story Engine »",
+    "summary": "Conception, développement et support d'une plateforme numérique de collecte, conservation et recherche de récits communautaires. Aucun besoin géospatial.",
+    "why": "",
+    "industries": [],
+    "fit": "faible"
+   },
+   "analysed_at": "2026-10-27T12:08:11+01:00",
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "fts:ocds-h6vhtk-04fe65:award",
+   "source": "fts",
+   "kind": "award",
+   "notice": "110631-2026",
+   "notice_type": "",
+   "title": "Active Debris Removal (ADR) Phase 3 Research and Development service",
+   "buyer": "UK Space Agency",
+   "buyer_country": "GB",
+   "published": "2026-11-23",
+   "url": "",
+   "cpv_label": "",
+   "countries": [
+    "GB"
+   ],
+   "cpv": [
+    "34712000",
+    "73100000"
+   ],
+   "deadline": "",
+   "value": null,
+   "currency": "",
+   "winners": [
+    "CLEARSPACE TODAY LTD"
+   ],
+   "description": "This procurement is for a Contract, which is an exempted contract under s 3(6) and Schedule 2, Part 2 (Subject-matter exempted contracts), paragraph 22 (Research and Development Services) of the Procurement Act 2023 (the 'Act').\nExempted contracts are not public contracts as defined in s3 of the Act and therefore are not required to be procured in accordance with the provisions of the Act that relate to a covered procurement.\nFor this procurement the Authority has operated a transparent competition process, to which any potential supplier was able to respond. In doing so the procurement…",
+   "status": "",
+   "first_seen": "2026-11-23T18:33:12+01:00",
+   "analysis": {},
+   "analysed_at": "",
+   "analysis_model": ""
+  },
   {
    "id": "ted:810276-2026",
    "source": "ted",
@@ -11528,48 +11853,6 @@
     "industries": [
      "maritime"
     ],
-    "fit": "faible"
-   },
-   "analysed_at": "2026-10-27T12:08:11+01:00",
-   "analysis_model": "claude_cli:sonnet"
-  },
-  {
-   "id": "fts:ocds-h6vhtk-0781f6:open",
-   "source": "fts",
-   "kind": "open",
-   "notice": "100418-2026",
-   "notice_type": "UK4",
-   "title": "Belfast Stories – Story Engine",
-   "buyer": "Belfast City Council",
-   "buyer_country": "GB",
-   "published": "2026-10-23",
-   "url": "https://www.find-tender.service.gov.uk/Notice/100418-2026",
-   "cpv_label": "",
-   "countries": [
-    "GB"
-   ],
-   "cpv": [
-    "72413000",
-    "72000000",
-    "72262000",
-    "72415000",
-    "72210000",
-    "72212222"
-   ],
-   "deadline": "2026-11-23",
-   "value": 550000.0,
-   "currency": "GBP",
-   "winners": [],
-   "description": "Belfast Stories is seeking to procure an experienced supplier to design, build and support a digital platform known as the ‘Stories Engine’ that supports:\n•\tStory collection and preservation\n•\tCommunity participation\n•\tArchive integration\n•\tSearch and discovery\n•\tInformation management including consent and participation considerations\n•\tGovernance on data management\n•\tPublic access points and satellite opportunities",
-   "status": "",
-   "first_seen": "2026-10-27T09:45:22+01:00",
-   "analysis": {
-    "relevant": false,
-    "segment": "cartographie",
-    "title_fr": "Plateforme numérique de collecte et d'archivage de récits « Story Engine »",
-    "summary": "Conception, développement et support d'une plateforme numérique de collecte, conservation et recherche de récits communautaires. Aucun besoin géospatial.",
-    "why": "",
-    "industries": [],
     "fit": "faible"
    },
    "analysed_at": "2026-10-27T12:08:11+01:00",
