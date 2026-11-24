@@ -1,47 +1,47 @@
 {
  "fx": {
-  "date": "2026-11-23",
+  "date": "2026-11-24",
   "rates": {
-   "USD": 1.0939,
-   "JPY": 174.01,
-   "CZK": 24.455,
-   "DKK": 7.4746,
-   "GBP": 0.83673,
-   "HUF": 372.28,
-   "PLN": 4.4588,
-   "RON": 5.3483,
-   "SEK": 11.2375,
-   "CHF": 0.9186,
+   "USD": 1.0963,
+   "JPY": 174.39,
+   "CZK": 24.428,
+   "DKK": 7.4744,
+   "GBP": 0.837,
+   "HUF": 369.7,
+   "PLN": 4.4599,
+   "RON": 5.3442,
+   "SEK": 11.221,
+   "CHF": 0.9183,
    "ISK": 137.2,
-   "NOK": 10.7285,
-   "TRY": 55.3405,
-   "AUD": 1.6532,
-   "BRL": 6.5611,
-   "CAD": 1.5711,
-   "CNY": 7.2905,
-   "HKD": 8.5772,
-   "IDR": 19932.94,
-   "ILS": 3.6643,
-   "INR": 101.6395,
-   "KRW": 1475.51,
-   "MXN": 21.0528,
-   "MYR": 4.5101,
-   "NZD": 2.0079,
-   "PHP": 69.851,
-   "SGD": 1.4124,
-   "THB": 37.242,
-   "ZAR": 19.1513
+   "NOK": 10.735,
+   "TRY": 55.5029,
+   "AUD": 1.6507,
+   "BRL": 6.4349,
+   "CAD": 1.5707,
+   "CNY": 7.3063,
+   "HKD": 8.597,
+   "IDR": 19983.58,
+   "ILS": 3.6618,
+   "INR": 101.867,
+   "KRW": 1473.99,
+   "MXN": 21.1238,
+   "MYR": 4.5118,
+   "NZD": 2.0038,
+   "PHP": 69.929,
+   "SGD": 1.4141,
+   "THB": 37.197,
+   "ZAR": 19.2333
   }
  },
- "updated_at": "2026-11-23T18:33:12+01:00",
+ "updated_at": "2026-11-24T18:06:29+01:00",
  "sources": [
   {
    "name": "TED",
    "url": "https://api.ted.europa.eu/v3/notices/search",
    "ok": true,
    "error": "",
-   "fetched": 21,
-   "kept": 16,
+   "fetched": 31,
+   "kept": 23,
    "via": "tender"
   },
   {
@@ -49,21 +49,21 @@
    "url": "https://www.find-tender.service.gov.uk/api/1.0/ocdsReleasePackages",
    "ok": true,
    "error": "",
-   "fetched": 408,
-   "kept": 3,
+   "fetched": 956,
+   "kept": 11,
    "via": "tender"
   }
  ],
  "last_run": {
-  "new": 8,
+  "new": 14,
   "sources": [
    {
     "name": "TED",
     "url": "https://api.ted.europa.eu/v3/notices/search",
     "ok": true,
     "error": "",
-    "fetched": 21,
-    "kept": 16,
+    "fetched": 31,
+    "kept": 23,
     "via": "tender"
    },
    {
@@ -71,8 +71,8 @@
     "url": "https://www.find-tender.service.gov.uk/api/1.0/ocdsReleasePackages",
     "ok": true,
     "error": "",
-    "fetched": 408,
-    "kept": 3,
+    "fetched": 956,
+    "kept": 11,
     "via": "tender"
    }
   ],
@@ -84,8 +84,525 @@
   },
   "pruned": 0
  },
- "fts_synced_until": "2026-11-23T17:00:00",
+ "fts_synced_until": "2026-11-24T17:00:00",
  "tenders": [
+  {
+   "id": "ted:816918-2026",
+   "source": "ted",
+   "kind": "award",
+   "notice": "816918-2026",
+   "notice_type": "can-standard",
+   "title": "Marijampolės savivaldybės nekilnojamojo turto kadastrinių matavimų paslaugos",
+   "buyer": "Marijampolės savivaldybės administracija",
+   "buyer_country": "LT",
+   "published": "2026-11-24",
+   "url": "https://ted.europa.eu/fr/notice/-/detail/816918-2026",
+   "cpv_label": "Services cadastraux",
+   "countries": [
+    "LT"
+   ],
+   "cpv": [
+    "71354300"
+   ],
+   "deadline": "",
+   "value": 41322.31,
+   "currency": "EUR",
+   "winners": [
+    "UAB Inreal Geo"
+   ],
+   "description": "Pirkimo objektas – Marijampolės savivaldybės nekilnojamojo turto kadastrinių matavimų paslaugos (toliau – Paslaugos). Pirkimo objekto BVPŽ kodas: 71354300-7 Kadastrinio tyrinėjimo paslaugos. Perkamų Paslaugų aprašymas, reikalavimai, sąlygos, terminai ir kt. nustatyti 5 pirkimo sąlygų priede pateiktoje techninėje specifikacijoje (toliau – Techninė specifikacija), 4 pirkimo sąlygų priede pateiktame sutarties projekte ir 1 pirkimo sąlygų priede pateiktoje pasiūlymo formoje.",
+   "status": "",
+   "first_seen": "2026-11-24T18:06:29+01:00",
+   "analysis": {},
+   "analysed_at": "",
+   "analysis_model": ""
+  },
+  {
+   "id": "ted:816760-2026",
+   "source": "ted",
+   "kind": "open",
+   "notice": "816760-2026",
+   "notice_type": "cn-standard",
+   "title": "Zakup oprogramowania, wdrożenie i uruchomienie e-usług ze szkoleniami w ramach projektu „Cyfryzacja administracji publicznej dla Gminy Radzionków” – część 1 i część 2",
+   "buyer": "Gmina Radzionków",
+   "buyer_country": "PL",
+   "published": "2026-11-24",
+   "url": "https://ted.europa.eu/fr/notice/-/detail/816760-2026",
+   "cpv_label": "Logiciels et systèmes d'information",
+   "countries": [
+    "PL"
+   ],
+   "cpv": [
+    "48000000",
+    "72263000",
+    "48613000",
+    "38221000",
+    "80533100",
+    "30213300",
+    "30231300",
+    "30216130",
+    "30213000",
+    "32420000",
+    "48820000",
+    "48823000",
+    "48730000",
+    "31154000",
+    "30216110",
+    "31213300"
+   ],
+   "deadline": "2026-12-29",
+   "value": null,
+   "currency": "",
+   "winners": [],
+   "description": "1. Przedmiotem zamówienia jest zakup oprogramowania, wdrożenie i uruchomienie e-usług ze szkoleniami w ramach projektu „Cyfryzacja administracji publicznej dla Gminy Radzionków”. 2. Przedmiot zamówienia został podzielony na dwie części i obejmuje w szczególności: 2.1. Część nr 1 - Cyfryzacja procesów back-office oraz wdrożenie e-usług publicznych, obejmujące cyfryzację procesów back-office oraz wdrożenie e-usług publicznych (zakup licencji, wdrożenie, digitalizacja zasobów oraz szkolenia), w tym: a) Modernizacja stron www z dostosowaniem ich do wymogów WCAG; b) Modernizacja EBOI…",
+   "status": "",
+   "first_seen": "2026-11-24T18:06:29+01:00",
+   "analysis": {},
+   "analysed_at": "",
+   "analysis_model": ""
+  },
+  {
+   "id": "ted:816408-2026",
+   "source": "ted",
+   "kind": "award",
+   "notice": "816408-2026",
+   "notice_type": "can-standard",
+   "title": "25GPT06 - Accord-cadre à bons de commandes de prestations topographiques, foncières et détection de réseaux, en groupement de commandes pour la commune de Toulon et la Métropole Toulon Provence Méditerranée (antenne Toulon / Le Revest), en 4 lots",
+   "buyer": "Metropole Toulon-Provence-Mediterranee",
+   "buyer_country": "FR",
+   "published": "2026-11-24",
+   "url": "https://ted.europa.eu/fr/notice/-/detail/816408-2026",
+   "cpv_label": "Services topographiques",
+   "countries": [
+    "FR"
+   ],
+   "cpv": [
+    "71351810",
+    "71354200",
+    "71354300",
+    "71352000"
+   ],
+   "deadline": "",
+   "value": 1235000.0,
+   "currency": "EUR",
+   "winners": [
+    "GEOSPACE",
+    "OPSIA AVIATION SARL",
+    "OPSIA MEDITERRANEE SELARL",
+    "CABINET ARRAGON SARL",
+    "DETECTION DERIVATION RESEAUX"
+   ],
+   "description": "La présente consultation relève de prestations topographiques, foncières et détection de réseaux, en groupement de commandes pour la commune de Toulon et la Métropole Toulon Provence Méditerranée (antenne Toulon / Le Revest), en 4 lots. Conformément aux dispositions des articles L. 2113-6 à L. 2113-8 du code de la commande publique, le présent accord cadre est passé par le groupement de commandes constitué de la Métropole Toulon Provence Méditerranée (antenne Toulon / Le Revest) et de la commune de Toulon. Conformément aux dispositions de l'article L. 2113-7 du code de la commande publique…",
+   "status": "",
+   "first_seen": "2026-11-24T18:06:29+01:00",
+   "analysis": {},
+   "analysed_at": "",
+   "analysis_model": ""
+  },
+  {
+   "id": "ted:815704-2026",
+   "source": "ted",
+   "kind": "open",
+   "notice": "815704-2026",
+   "notice_type": "cn-standard",
+   "title": "Vernieuwen Geo-stack",
+   "buyer": "Nederlands Instituut Publieke Veiligheid",
+   "buyer_country": "NL",
+   "published": "2026-11-24",
+   "url": "https://ted.europa.eu/fr/notice/-/detail/815704-2026",
+   "cpv_label": "Services de programmation et de conseil en logiciels",
+   "countries": [
+    "NL"
+   ],
+   "cpv": [
+    "72200000",
+    "38221000"
+   ],
+   "deadline": "2027-04-08",
+   "value": null,
+   "currency": "",
+   "winners": [],
+   "description": "De Opdracht is gericht op het vernieuwen van de Geo-stack voor Data4OOV en het verbreden van de geo-dienstverlening van het NIPV met een Geo-viewer en Registratie app. In deze aanbesteding vormen de Geo-stack, de Geo-viewer en de Registratie app samen één geïntegreerde Oplossing. De omvang van de Opdracht is geraamd op €150.000 - €200.000 exclusief btw per jaar.",
+   "status": "",
+   "first_seen": "2026-11-24T18:06:29+01:00",
+   "analysis": {},
+   "analysed_at": "",
+   "analysis_model": ""
+  },
+  {
+   "id": "ted:814983-2026",
+   "source": "ted",
+   "kind": "award",
+   "notice": "814983-2026",
+   "notice_type": "can-standard",
+   "title": "Digitální mapa",
+   "buyer": "Řízení letového provozu České republiky, státní podnik (ŘLP ČR, s.p.)",
+   "buyer_country": "CZ",
+   "published": "2026-11-24",
+   "url": "https://ted.europa.eu/fr/notice/-/detail/814983-2026",
+   "cpv_label": "Services de développement de logiciels de contrôle du trafic aérien",
+   "countries": [
+    "CZ"
+   ],
+   "cpv": [
+    "72212121",
+    "48326100",
+    "72263000",
+    "72265000",
+    "72254100"
+   ],
+   "deadline": "",
+   "value": 478150.0,
+   "currency": "CZK",
+   "winners": [
+    "Foxtrot Technologies, s.r.o."
+   ],
+   "description": "Předmětem plnění tohoto zadávacího řízení je dodávka, implementace, servis a rozvoj digitální mapy pro užívání vzdušného prostoru České republiky k létání bezpilotních systémů včetně dalších souvisejících služeb.",
+   "status": "",
+   "first_seen": "2026-11-24T18:06:29+01:00",
+   "analysis": {},
+   "analysed_at": "",
+   "analysis_model": ""
+  },
+  {
+   "id": "ted:814670-2026",
+   "source": "ted",
+   "kind": "open",
+   "notice": "814670-2026",
+   "notice_type": "cn-standard",
+   "title": "2026DDR215 - Prestations de détection, géoréférencement et marquage-piquetage des réseaux",
+   "buyer": "CONSEIL DEPARTEMENTAL DU CALVADOS (CD 14)",
+   "buyer_country": "FR",
+   "published": "2026-11-24",
+   "url": "https://ted.europa.eu/fr/notice/-/detail/814670-2026",
+   "cpv_label": "Services de cartographie numérique",
+   "countries": [
+    "FR"
+   ],
+   "cpv": [
+    "71354100"
+   ],
+   "deadline": "2027-01-18",
+   "value": null,
+   "currency": "",
+   "winners": [],
+   "description": "2026DDR215 - Prestations de détection, géoréférencement et marquage-piquetage des réseaux",
+   "status": "",
+   "first_seen": "2026-11-24T18:06:29+01:00",
+   "analysis": {},
+   "analysed_at": "",
+   "analysis_model": ""
+  },
+  {
+   "id": "ted:814333-2026",
+   "source": "ted",
+   "kind": "award",
+   "notice": "814333-2026",
+   "notice_type": "can-standard",
+   "title": "New Tender for Riverbed Mapping 2026",
+   "buyer": "Norges vassdrags- og energidirektorat (NVE)",
+   "buyer_country": "NO",
+   "published": "2026-11-24",
+   "url": "https://ted.europa.eu/fr/notice/-/detail/814333-2026",
+   "cpv_label": "Services d'exploration sous-marine",
+   "countries": [
+    "NO"
+   ],
+   "cpv": [
+    "71351924",
+    "45000000",
+    "71000000",
+    "71351200",
+    "71351900",
+    "71353100",
+    "71354400"
+   ],
+   "deadline": "",
+   "value": 4000000.0,
+   "currency": "NOK",
+   "winners": [
+    "FIELD GEOSPATIAL AS",
+    "ORIGON AS"
+   ],
+   "description": "Purpose and scope of the procurement The main purpose of this procurement is to acquire new bathymetric riverbed data using Airborne Laser Scanning (ALS), Airborne Lidar Bathymetry (ALB), and simultaneous image capture. The data will be used in projects related to flood risk mapping, erosion assessment and the development of hydraulic models. The procurement shall ensure sufficient data quality and coverage to support these purposes. A detailed description of the scope and requirements is set out in Annex 6.1 Specification of Requirements.",
+   "status": "",
+   "first_seen": "2026-11-24T18:06:29+01:00",
+   "analysis": {},
+   "analysed_at": "",
+   "analysis_model": ""
+  },
+  {
+   "id": "ted:814318-2026",
+   "source": "ted",
+   "kind": "open",
+   "notice": "814318-2026",
+   "notice_type": "cn-standard",
+   "title": "Opracowanie mapy zagrożenia erozją potencjalną na obszarze województwa łódzkiego",
+   "buyer": "Województwo Łódzkie",
+   "buyer_country": "PL",
+   "published": "2026-11-24",
+   "url": "https://ted.europa.eu/fr/notice/-/detail/814318-2026",
+   "cpv_label": "Services d'établissement de cartes",
+   "countries": [
+    "PL"
+   ],
+   "cpv": [
+    "71354000",
+    "71351810",
+    "92312213"
+   ],
+   "deadline": "2026-12-22",
+   "value": null,
+   "currency": "",
+   "winners": [],
+   "description": "1. Przedmiotem zamówienia jest Opracowanie mapy zagrożenia erozją potencjalną na obszarze województwa łódzkiego 2. Przedmiot zamówienia został opisany szczegółowo w Opisie Przedmiotu Zamówienia (zwanym dalej „OPZ”), stanowiącym Załącznik Nr 1 do SWZ, będącym jednocześnie Załącznikiem Nr 1 do projektu umowy (Załącznik Nr 4 do SWZ).",
+   "status": "",
+   "first_seen": "2026-11-24T18:06:29+01:00",
+   "analysis": {},
+   "analysed_at": "",
+   "analysis_model": ""
+  },
+  {
+   "id": "fts:ocds-h6vhtk-07c2c5:award",
+   "source": "fts",
+   "kind": "award",
+   "notice": "111300-2026",
+   "notice_type": "UK5",
+   "title": "Kratos Celesguard System ePFD Upgrade",
+   "buyer": "Ofcom",
+   "buyer_country": "GB",
+   "published": "2026-11-24",
+   "url": "https://www.find-tender.service.gov.uk/Notice/111300-2026",
+   "cpv_label": "",
+   "countries": [
+    "GB"
+   ],
+   "cpv": [
+    "32000000"
+   ],
+   "deadline": "",
+   "value": 602698.0,
+   "currency": "GBP",
+   "winners": [
+    "KRATOS COMMUNICATIONS SAS"
+   ],
+   "description": "Adding capability to the Kratos equipment Ofcom already has as part of their estate.  The hardware and software will add to our capabilities to enable Ofcom to carry out key measurements for ePFD.\nIt is important that Ofcom, as a Spectrum Regulator, can independently measure ePFD. ePFD is one of the principal regulatory mechanisms used to protect GSO satellite networks from interference caused by NGSO constellations to ensure compliance with Article 22 of the Radio Regulations.",
+   "status": "",
+   "first_seen": "2026-11-24T18:06:29+01:00",
+   "analysis": {},
+   "analysed_at": "",
+   "analysis_model": ""
+  },
+  {
+   "id": "fts:ocds-h6vhtk-07c2b3:award",
+   "source": "fts",
+   "kind": "award",
+   "notice": "111270-2026",
+   "notice_type": "",
+   "title": "Specialist Electronic Tags for Study of Sharks",
+   "buyer": "UNIVERSITY OF EXETER",
+   "buyer_country": "GB",
+   "published": "2026-11-24",
+   "url": "",
+   "cpv_label": "",
+   "countries": [
+    "GB"
+   ],
+   "cpv": [
+    "03000000"
+   ],
+   "deadline": "",
+   "value": null,
+   "currency": "",
+   "winners": [
+    "Wildlife Computers, Inc."
+   ],
+   "description": "Satellite tags for direct attachment to sharks in English waters in fulfilment of the deliverables on the Species Recovery Programme grant from Natural England to the University of Exeter.",
+   "status": "",
+   "first_seen": "2026-11-24T18:06:29+01:00",
+   "analysis": {},
+   "analysed_at": "",
+   "analysis_model": ""
+  },
+  {
+   "id": "fts:ocds-h6vhtk-07c224:award",
+   "source": "fts",
+   "kind": "award",
+   "notice": "111012-2026",
+   "notice_type": "",
+   "title": "CONSULTANCY AGREEMENT RELATING TO STRATEGIC HEAT RESOURCE MAPPING AND ASSESSMENT IN THE WEST MIDLANDS",
+   "buyer": "West Midlands Combined Authority",
+   "buyer_country": "GB",
+   "published": "2026-11-24",
+   "url": "",
+   "cpv_label": "",
+   "countries": [
+    "GB"
+   ],
+   "cpv": [
+    "71314300"
+   ],
+   "deadline": "",
+   "value": null,
+   "currency": "",
+   "winners": [
+    "RAMBOLL UK LIMITED"
+   ],
+   "description": "Services for the development of a strategic heat resource evidence base for the West Midlands. \nThe commission will identify, map and assess existing and potential strategic heat resources that could support future heat network development, produce GIS-compatible mapping outputs, identify barriers and enabling actions, engage key stakeholders and prioritise opportunities for future investigation. \nThe outputs will provide West Midlands Combined Authority (WMCA), Energy Capital and constituent local authorities with a robust foundation for future heat network planning, zoning, investment and…",
+   "status": "",
+   "first_seen": "2026-11-24T18:06:29+01:00",
+   "analysis": {},
+   "analysed_at": "",
+   "analysis_model": ""
+  },
+  {
+   "id": "fts:ocds-h6vhtk-07c215:award",
+   "source": "fts",
+   "kind": "award",
+   "notice": "110981-2026",
+   "notice_type": "",
+   "title": "CEFAS21-116 ITT for the provision of an International Ecosystem Survey in the Nordic Sea",
+   "buyer": "Centre for Environment, Fisheries and Aquaculture Science",
+   "buyer_country": "GB",
+   "published": "2026-11-24",
+   "url": "",
+   "cpv_label": "",
+   "countries": [
+    "GB"
+   ],
+   "cpv": [
+    "60651100"
+   ],
+   "deadline": "",
+   "value": null,
+   "currency": "",
+   "winners": [
+    "Castlehill LLP"
+   ],
+   "description": "NOTE: this is a contract extension from notice ocds-h6vhtk-03012f. \nProvision of a suitably equipped pelagic trawler and associated vessel services to support Cefas' participation in the 2026 International Ecosystem Survey in the Nordic Seas (IESNS). The vessel will support 24-hour acoustic transects, midwater trawling and the collection of biological, plankton and hydrographic data to assess the distribution and biomass of Norwegian spring-spawning herring, blue whiting and other pelagic fish species. The survey continues the time series undertaken by Cefas from 2022 to 2025 and contributes…",
+   "status": "",
+   "first_seen": "2026-11-24T18:06:29+01:00",
+   "analysis": {},
+   "analysed_at": "",
+   "analysis_model": ""
+  },
+  {
+   "id": "fts:ocds-h6vhtk-07bcf8:open",
+   "source": "fts",
+   "kind": "open",
+   "notice": "111107-2026",
+   "notice_type": "UK4",
+   "title": "ITT 70/2026 - Mourne Gullion Landscape Connections Baseline Environmental Surveys Reporting",
+   "buyer": "Newry Mourne and Down District Council",
+   "buyer_country": "GB",
+   "published": "2026-11-24",
+   "url": "https://www.find-tender.service.gov.uk/Notice/111107-2026",
+   "cpv_label": "",
+   "countries": [
+    "GB"
+   ],
+   "cpv": [
+    "90700000"
+   ],
+   "deadline": "2026-12-14",
+   "value": 330000.0,
+   "currency": "GBP",
+   "winners": [],
+   "description": "Newry, Mourne and Down District Council (The Council) is inviting tenders from suitably experienced suppliers to undertake the Mourne Gullion Landscape Connections Baseline Environmental Surveys and Reporting. This requires a suitably qualified and experienced environmental consultancy to undertake baseline environmental surveys across the Mourne and Ring of Gullion Areas of Outstanding Natural Beauty (AONBs). The commission shall comprise a combination of desktop data analysis, habitat mapping, field-based habitat survey and condition assessment, LiDAR and vegetation analysis, and drone…",
+   "status": "",
+   "first_seen": "2026-11-18T08:23:31+01:00",
+   "analysis": {
+    "relevant": true,
+    "segment": "aerien_lidar",
+    "title_fr": "Relevés environnementaux de référence avec LiDAR et drone, Mourne Gullion",
+    "summary": "Le conseil de Newry, Mourne and Down demande des relevés environnementaux de référence (habitats, LiDAR, végétation, drone) sur les AONB de Mourne et Ring of Gullion.",
+    "why": "Besoin de données LiDAR/drone local, hors cœur d'offre satellite Airbus mais signal de marché environnemental.",
+    "industries": [
+     "foret_environnement",
+     "infrastructures"
+    ],
+    "fit": "faible"
+   },
+   "analysed_at": "2026-11-18T08:23:31+01:00",
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "fts:ocds-h6vhtk-0794cb:award",
+   "source": "fts",
+   "kind": "award",
+   "notice": "111125-2026",
+   "notice_type": "UK6",
+   "title": "CEFAS26-06 Contract for an inspection-class Remotely Operated Vehicle with fibre-optic capability for seabed imagery research",
+   "buyer": "Centre for Environment, Fisheries and Aquaculture Science",
+   "buyer_country": "GB",
+   "published": "2026-11-24",
+   "url": "https://www.find-tender.service.gov.uk/Notice/111125-2026",
+   "cpv_label": "",
+   "countries": [
+    "GB"
+   ],
+   "cpv": [
+    "35512400"
+   ],
+   "deadline": "",
+   "value": 120000.0,
+   "currency": "GBP",
+   "winners": [
+    "JM Robotics AS"
+   ],
+   "description": "Cefas requires one complete, fibre-optic-capable, inspection-class ROV system, depth rated to 300m, built on open-source or open-architecture hardware and software. The system will be operated from Research Vessel Cefas Endeavour and will:\n• Collect high-definition, quantitative video and imagery of the seabed, including over rugged and complex terrain, using automatic depth / altitude holding, heading and altitude control.\n• Integrate a survey-grade subsea imaging system (i.e. inclusive of water corrected optics and enhanced capture controls) or computational / machine vision-based subsea…",
+   "status": "",
+   "first_seen": "2026-10-31T07:58:20+01:00",
+   "analysis": {
+    "relevant": false,
+    "segment": "environnement_climat",
+    "title_fr": "Véhicule télécommandé pour l'imagerie des fonds marins",
+    "summary": "Acquisition d'un ROV d'inspection avec capacité fibre optique pour l'imagerie haute définition des fonds marins depuis le navire Cefas Endeavour.",
+    "why": "",
+    "industries": [
+     "maritime"
+    ],
+    "fit": "faible"
+   },
+   "analysed_at": "2026-10-31T07:58:20+01:00",
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "fts:ocds-h6vhtk-069001:award",
+   "source": "fts",
+   "kind": "award",
+   "notice": "111123-2026",
+   "notice_type": "UK6",
+   "title": "Space-Based Time Transfer Service (Space BaTTS) Research & Development",
+   "buyer": "Department for Science, Innovation & Technology",
+   "buyer_country": "GB",
+   "published": "2026-11-24",
+   "url": "https://www.find-tender.service.gov.uk/Notice/111123-2026",
+   "cpv_label": "",
+   "countries": [
+    "GB"
+   ],
+   "cpv": [
+    "73000000"
+   ],
+   "deadline": "",
+   "value": 2056849.33,
+   "currency": "GBP",
+   "winners": [
+    "GMV NSL Ltd",
+    "Xona Space Systems UK Limited",
+    "Satellite Applications Catapult Ltd",
+    "PNTaaS Ltd",
+    "OHB Space UK Ltd",
+    "University of Strathclyde"
+   ],
+   "description": "The UK Space Agency (UKSA) is conducting a competitive procurement for the delivery of concept studies to explore potential technical and commercial approaches for the provision of a space‑based time transfer capability that is independent of Global Navigation Satellite Systems (GNSS). \nThe requirement is part of the Space-Based Time Transfer Service (Space BaTTS) Research & Development Programme to develop, validate, and assess technology concepts that could fulfil an unmet government requirement for GNSS-independent global timing, provide UK overseas territories with backup timing…",
+   "status": "",
+   "first_seen": "2026-11-24T18:06:29+01:00",
+   "analysis": {},
+   "analysed_at": "",
+   "analysis_model": ""
+  },
   {
    "id": "ted:814005-2026",
    "source": "ted",
@@ -378,6 +895,43 @@
    },
    "analysed_at": "2026-10-27T12:08:11+01:00",
    "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "fts:ocds-h6vhtk-06e9dd:award",
+   "source": "fts",
+   "kind": "award",
+   "notice": "110815-2026",
+   "notice_type": "UK6",
+   "title": "Marine Consultancy - Future Port Talbot",
+   "buyer": "ASSOCIATED BRITISH PORTS",
+   "buyer_country": "GB",
+   "published": "2026-11-23",
+   "url": "https://www.find-tender.service.gov.uk/Notice/110815-2026",
+   "cpv_label": "",
+   "countries": [
+    "GB"
+   ],
+   "cpv": [
+    "71351200",
+    "71351210",
+    "71354500",
+    "90700000",
+    "90711000",
+    "90711400",
+    "90713000"
+   ],
+   "deadline": "",
+   "value": 612278.0,
+   "currency": "GBP",
+   "winners": [
+    "ABP MARINE ENVIRONMENTAL RESEARCH LIMITED"
+   ],
+   "description": "Contract Description - \nAssociated British Ports is seeking a suitably experienced marine environmental and consenting consultant to support a key project within the Future Port Talbot programme. The project involves the phased development of the existing port into a major hub to support deployment and supply chains for Floating Offshore Wind in the Celtic Sea, including port expansion, land reclamation, marine and terrestrial works, and ecological mitigation or compensation \nScope of Services - \nThe consultant will lead the marine technical elements of the Environmental Impact Assessment…",
+   "status": "",
+   "first_seen": "2026-11-24T18:06:29+01:00",
+   "analysis": {},
+   "analysed_at": "",
+   "analysis_model": ""
   },
   {
    "id": "fts:ocds-h6vhtk-04fe65:award",
@@ -2905,46 +3459,6 @@
     "fit": "faible"
    },
    "analysed_at": "2026-11-16T09:32:32+01:00",
-   "analysis_model": "claude_cli:sonnet"
-  },
-  {
-   "id": "fts:ocds-h6vhtk-07bcf8:open",
-   "source": "fts",
-   "kind": "open",
-   "notice": "108584-2026",
-   "notice_type": "UK4",
-   "title": "ITT 70/2026 - Mourne Gullion Landscape Connections Baseline Environmental Surveys Reporting",
-   "buyer": "Newry Mourne and Down District Council",
-   "buyer_country": "GB",
-   "published": "2026-11-16",
-   "url": "https://www.find-tender.service.gov.uk/Notice/108584-2026",
-   "cpv_label": "",
-   "countries": [
-    "GB"
-   ],
-   "cpv": [
-    "90700000"
-   ],
-   "deadline": "2026-12-14",
-   "value": 330000.0,
-   "currency": "GBP",
-   "winners": [],
-   "description": "Newry, Mourne and Down District Council (The Council) is inviting tenders from suitably experienced suppliers to undertake the Mourne Gullion Landscape Connections Baseline Environmental Surveys and Reporting. This requires a suitably qualified and experienced environmental consultancy to undertake baseline environmental surveys across the Mourne and Ring of Gullion Areas of Outstanding Natural Beauty (AONBs). The commission shall comprise a combination of desktop data analysis, habitat mapping, field-based habitat survey and condition assessment, LiDAR and vegetation analysis, and drone…",
-   "status": "",
-   "first_seen": "2026-11-18T08:23:31+01:00",
-   "analysis": {
-    "relevant": true,
-    "segment": "aerien_lidar",
-    "title_fr": "Relevés environnementaux de référence avec LiDAR et drone, Mourne Gullion",
-    "summary": "Le conseil de Newry, Mourne and Down demande des relevés environnementaux de référence (habitats, LiDAR, végétation, drone) sur les AONB de Mourne et Ring of Gullion.",
-    "why": "Besoin de données LiDAR/drone local, hors cœur d'offre satellite Airbus mais signal de marché environnemental.",
-    "industries": [
-     "foret_environnement",
-     "infrastructures"
-    ],
-    "fit": "faible"
-   },
-   "analysed_at": "2026-11-18T08:23:31+01:00",
    "analysis_model": "claude_cli:sonnet"
   },
   {
@@ -8784,47 +9298,6 @@
     "why": "",
     "industries": [
      "foret_environnement"
-    ],
-    "fit": "faible"
-   },
-   "analysed_at": "2026-10-31T07:58:20+01:00",
-   "analysis_model": "claude_cli:sonnet"
-  },
-  {
-   "id": "fts:ocds-h6vhtk-0794cb:award",
-   "source": "fts",
-   "kind": "award",
-   "notice": "103300-2026",
-   "notice_type": "UK5",
-   "title": "CEFAS26-06 Contract for an inspection-class Remotely Operated Vehicle with fibre-optic capability for seabed imagery research",
-   "buyer": "Centre for Environment, Fisheries and Aquaculture Science",
-   "buyer_country": "GB",
-   "published": "2026-10-30",
-   "url": "https://www.find-tender.service.gov.uk/Notice/103300-2026",
-   "cpv_label": "",
-   "countries": [
-    "GB"
-   ],
-   "cpv": [
-    "35512400"
-   ],
-   "deadline": "",
-   "value": 120000.0,
-   "currency": "GBP",
-   "winners": [
-    "JM Robotics AS"
-   ],
-   "description": "Cefas requires one complete, fibre-optic-capable, inspection-class ROV system, depth rated to 300m, built on open-source or open-architecture hardware and software. The system will be operated from Research Vessel Cefas Endeavour and will:\n•\tCollect high-definition, quantitative video and imagery of the seabed, including over rugged and complex terrain, using automatic depth / altitude holding, heading and altitude control.\n•\tIntegrate a survey-grade subsea imaging system (i.e. inclusive of water corrected optics and enhanced capture controls) or computational / machine vision-based subsea…",
-   "status": "",
-   "first_seen": "2026-10-31T07:58:20+01:00",
-   "analysis": {
-    "relevant": false,
-    "segment": "environnement_climat",
-    "title_fr": "Véhicule télécommandé pour l'imagerie des fonds marins",
-    "summary": "Acquisition d'un ROV d'inspection avec capacité fibre optique pour l'imagerie haute définition des fonds marins depuis le navire Cefas Endeavour.",
-    "why": "",
-    "industries": [
-     "maritime"
     ],
     "fit": "faible"
    },
