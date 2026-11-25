@@ -1,39 +1,39 @@
 {
  "fx": {
-  "date": "2026-11-24",
+  "date": "2026-11-25",
   "rates": {
-   "USD": 1.0963,
-   "JPY": 174.39,
-   "CZK": 24.428,
-   "DKK": 7.4744,
-   "GBP": 0.837,
-   "HUF": 369.7,
-   "PLN": 4.4599,
-   "RON": 5.3442,
-   "SEK": 11.221,
-   "CHF": 0.9183,
+   "USD": 1.0935,
+   "JPY": 174.22,
+   "CZK": 24.435,
+   "DKK": 7.4743,
+   "GBP": 0.8373,
+   "HUF": 373.44,
+   "PLN": 4.48,
+   "RON": 5.343,
+   "SEK": 11.2385,
+   "CHF": 0.9085,
    "ISK": 137.2,
-   "NOK": 10.735,
-   "TRY": 55.5029,
-   "AUD": 1.6507,
-   "BRL": 6.4349,
-   "CAD": 1.5707,
-   "CNY": 7.3063,
-   "HKD": 8.597,
-   "IDR": 19983.58,
-   "ILS": 3.6618,
-   "INR": 101.867,
-   "KRW": 1473.99,
-   "MXN": 21.1238,
-   "MYR": 4.5118,
-   "NZD": 2.0038,
-   "PHP": 69.929,
-   "SGD": 1.4141,
-   "THB": 37.197,
-   "ZAR": 19.2333
+   "NOK": 10.7778,
+   "TRY": 55.4163,
+   "AUD": 1.6644,
+   "BRL": 6.4531,
+   "CAD": 1.5591,
+   "CNY": 7.2999,
+   "HKD": 8.5709,
+   "IDR": 20055.72,
+   "ILS": 3.6948,
+   "INR": 100.859,
+   "KRW": 1471.19,
+   "MXN": 21.5422,
+   "MYR": 4.5047,
+   "NZD": 2.0046,
+   "PHP": 69.558,
+   "SGD": 1.4129,
+   "THB": 37.321,
+   "ZAR": 19.3514
   }
  },
- "updated_at": "2026-11-24T18:06:29+01:00",
+ "updated_at": "2026-11-25T17:56:26+01:00",
  "sources": [
   {
    "name": "TED",
@@ -49,13 +49,13 @@
    "url": "https://www.find-tender.service.gov.uk/api/1.0/ocdsReleasePackages",
    "ok": true,
    "error": "",
-   "fetched": 956,
-   "kept": 11,
+   "fetched": 1053,
+   "kept": 9,
    "via": "tender"
   }
  ],
  "last_run": {
-  "new": 14,
+  "new": 10,
   "sources": [
    {
     "name": "TED",
@@ -71,8 +71,8 @@
     "url": "https://www.find-tender.service.gov.uk/api/1.0/ocdsReleasePackages",
     "ok": true,
     "error": "",
-    "fetched": 956,
-    "kept": 11,
+    "fetched": 1053,
+    "kept": 9,
     "via": "tender"
    }
   ],
@@ -84,8 +84,333 @@
   },
   "pruned": 0
  },
- "fts_synced_until": "2026-11-24T17:00:00",
+ "fts_synced_until": "2026-11-25T16:00:00",
  "tenders": [
+  {
+   "id": "ted:819588-2026",
+   "source": "ted",
+   "kind": "open",
+   "notice": "819588-2026",
+   "notice_type": "cn-standard",
+   "title": "Wykonanie dokumentacji projektowej dla zadania pn.: „Zabezpieczenie przeciwpowodziowe m. Cieszyn – prace przygotowawcze”",
+   "buyer": "Państwowe Gospodarstwo Wodne Wody Polskie",
+   "buyer_country": "PL",
+   "published": "2026-11-25",
+   "url": "https://ted.europa.eu/fr/notice/-/detail/819588-2026",
+   "cpv_label": "Services de conception technique pour la construction d'ouvrages de génie civil",
+   "countries": [
+    "PL"
+   ],
+   "cpv": [
+    "71322000",
+    "71352000",
+    "71354000",
+    "71355000",
+    "71351900",
+    "71313000",
+    "71320000",
+    "72242000",
+    "71242000",
+    "71248000"
+   ],
+   "deadline": "2026-12-30",
+   "value": null,
+   "currency": "",
+   "winners": [],
+   "description": "Przedmiotem zamówienia jest usługa polegająca na wykonaniu dokumentacji projektowej dla zadania pn.: „Zabezpieczenie przeciwpowodziowe m. Cieszyn – prace przygotowawcze” (dalej jako „Zadanie”) wraz z uzyskaniem wszystkich niezbędnych opinii/ uzgodnień/ pozwoleń/ decyzji oraz pełnieniem nadzoru autorskiego, umożliwiających wykonanie na jej podstawie robót budowlanych. Celem zamówienia jest stworzenie spójnego systemu ochrony przeciwpowodziowej, umożliwiającego bezpieczne i kontrolowane prowadzenie wód wezbraniowych oraz poprawa przeciwpowodziowa miasta Cieszyn. Projekt realizowany jest w…",
+   "status": "",
+   "first_seen": "2026-11-25T17:56:26+01:00",
+   "analysis": {},
+   "analysed_at": "",
+   "analysis_model": ""
+  },
+  {
+   "id": "ted:819445-2026",
+   "source": "ted",
+   "kind": "award",
+   "notice": "819445-2026",
+   "notice_type": "can-standard",
+   "title": "Kelio (statinio) ir kelio žemės sklypų kadastrinių matavimų ir teisinės registracijos paslaugos (9 dalis)",
+   "buyer": "AB Via Lietuva (PV)",
+   "buyer_country": "LT",
+   "published": "2026-11-25",
+   "url": "https://ted.europa.eu/fr/notice/-/detail/819445-2026",
+   "cpv_label": "Services cadastraux",
+   "countries": [
+    "LT"
+   ],
+   "cpv": [
+    "71354300"
+   ],
+   "deadline": "",
+   "value": 21468.97,
+   "currency": "EUR",
+   "winners": [
+    "VĮ Žemės ūkio duomenų centras"
+   ],
+   "description": "Kelio (statinio) ir kelio žemės sklypų kadastrinių matavimų ir teisinės registracijos paslaugos (9 dalis)",
+   "status": "",
+   "first_seen": "2026-11-25T17:56:26+01:00",
+   "analysis": {},
+   "analysed_at": "",
+   "analysis_model": ""
+  },
+  {
+   "id": "ted:818927-2026",
+   "source": "ted",
+   "kind": "award",
+   "notice": "818927-2026",
+   "notice_type": "can-standard",
+   "title": "„Wykonanie dokumentacji projektowo-kosztorysowej na budowę krytego basenu w Nowym Tomyślu”",
+   "buyer": "Gmina Nowy Tomyśl",
+   "buyer_country": "PL",
+   "published": "2026-11-25",
+   "url": "https://ted.europa.eu/fr/notice/-/detail/818927-2026",
+   "cpv_label": "Services de conception technique",
+   "countries": [
+    "PL"
+   ],
+   "cpv": [
+    "71320000",
+    "71354000",
+    "71248000"
+   ],
+   "deadline": "",
+   "value": 1257218.84,
+   "currency": "PLN",
+   "winners": [],
+   "description": "1. Przedmiotem zamówienia jest opracowanie wielobranżowej dokumentacji projektowej pływalni krytej wraz z uzyskaniem niezbędnych uzgodnień i decyzji administracyjnych, w tym pozwolenia na budowę. 2. Zakres Przedmiotu Umowy obejmuje w szczególności wykonanie i przekazanie Zamawiającemu następujących opracowań: 1) koncepcja wraz z programem funkcjonalnym i wizualizacjami 2) badania i opinia geotechniczna w zakresie koniecznym dla prawidłowego wykonania robót budowlanych 3) projekt architektoniczno – budowlany wraz z projektem zagospodarowania terenu 4) projekt techniczny/wykonawczy, który…",
+   "status": "",
+   "first_seen": "2026-11-25T17:56:26+01:00",
+   "analysis": {},
+   "analysed_at": "",
+   "analysis_model": ""
+  },
+  {
+   "id": "ted:818761-2026",
+   "source": "ted",
+   "kind": "award",
+   "notice": "818761-2026",
+   "notice_type": "can-standard",
+   "title": "685783 - Žemės sklypų kadastriniai matavimai",
+   "buyer": "VšĮ Vilniaus pirkimų agentūra",
+   "buyer_country": "LT",
+   "published": "2026-11-25",
+   "url": "https://ted.europa.eu/fr/notice/-/detail/818761-2026",
+   "cpv_label": "Services cadastraux",
+   "countries": [
+    "LT"
+   ],
+   "cpv": [
+    "71354300"
+   ],
+   "deadline": "",
+   "value": 49325.54,
+   "currency": "EUR",
+   "winners": [
+    "UAB „Žemės matavimų grupė“"
+   ],
+   "description": "Žemės sklypų kadastriniai matavimai (3 atnaujinti varžymai)",
+   "status": "",
+   "first_seen": "2026-11-25T17:56:26+01:00",
+   "analysis": {},
+   "analysed_at": "",
+   "analysis_model": ""
+  },
+  {
+   "id": "ted:818488-2026",
+   "source": "ted",
+   "kind": "open",
+   "notice": "818488-2026",
+   "notice_type": "cn-standard",
+   "title": "Opracowanie dokumentacji przygotowawczej wraz z nadzorem autorskim dla zadania \"Zbiornik przeciwpowodziowy Racławice Śląskie na rzece Osobłodze gm. Głogówek\"",
+   "buyer": "Państwowe Gospodarstwo Wodne Wody Polskie",
+   "buyer_country": "PL",
+   "published": "2026-11-25",
+   "url": "https://ted.europa.eu/fr/notice/-/detail/818488-2026",
+   "cpv_label": "Services de conception technique pour la construction d'ouvrages de génie civil",
+   "countries": [
+    "PL"
+   ],
+   "cpv": [
+    "71322000",
+    "71352000",
+    "71354000",
+    "71355000",
+    "71351900",
+    "71313000",
+    "71320000",
+    "72242000",
+    "71242000",
+    "71248000"
+   ],
+   "deadline": "2026-12-29",
+   "value": null,
+   "currency": "",
+   "winners": [],
+   "description": "Przedmiotem zamówienia jest usługa polegająca na opracowaniu dokumentacji projektowej dla Projektu pn.: „Budowa zbiornika przeciwpowodziowego Racławice Śląskie, gm. Głogówek i Głubczyce, woj. opolskie – prace przygotowawcze” (dalej jako „Zadanie”) wraz z uzyskaniem wszystkich niezbędnych opinii/ uzgodnień/ pozwoleń/ decyzji oraz pełnieniem nadzoru autorskiego, umożliwiających wykonanie na jej podstawie robót budowlanych. Celem przedsięwzięcia jest budowa suchego zbiornika przeciwpowodziowego na rzece Osobłoga w miejscowości Racławice Śląskie, w celu ochrony przeciwpowodziowej terenów…",
+   "status": "",
+   "first_seen": "2026-11-25T17:56:26+01:00",
+   "analysis": {},
+   "analysed_at": "",
+   "analysis_model": ""
+  },
+  {
+   "id": "ted:817957-2026",
+   "source": "ted",
+   "kind": "open",
+   "notice": "817957-2026",
+   "notice_type": "cn-standard",
+   "title": "Weiterführung digitalen Kanalkatasters",
+   "buyer": "Stadt Lauf a. d. Pegnitz",
+   "buyer_country": "DE",
+   "published": "2026-11-25",
+   "url": "https://ted.europa.eu/fr/notice/-/detail/817957-2026",
+   "cpv_label": "Services de conception technique pour la construction d'ouvrages de génie civil",
+   "countries": [
+    "DE"
+   ],
+   "cpv": [
+    "71322000",
+    "71354300"
+   ],
+   "deadline": "2026-12-23",
+   "value": null,
+   "currency": "",
+   "winners": [],
+   "description": "Vermessung = Planung / Ausschreibung / Überwachung ; Kanalreinigung = Planung / Ausschreibung / Überwachung / Zustandserfassung / Zustandsbewertung / Sanierungsplanung",
+   "status": "",
+   "first_seen": "2026-11-25T17:56:26+01:00",
+   "analysis": {},
+   "analysed_at": "",
+   "analysis_model": ""
+  },
+  {
+   "id": "ted:817831-2026",
+   "source": "ted",
+   "kind": "open",
+   "notice": "817831-2026",
+   "notice_type": "cn-standard",
+   "title": "Marché public de services relatif à la fourniture de données de Mobile Mapping et à la production de données géographiques issues de l'analyse d'images géoréférencées",
+   "buyer": "Agence du stationnement",
+   "buyer_country": "BE",
+   "published": "2026-11-25",
+   "url": "https://ted.europa.eu/fr/notice/-/detail/817831-2026",
+   "cpv_label": "Services de technologies de l'information, conseil, développement de logiciels, internet et appui",
+   "countries": [
+    "BE"
+   ],
+   "cpv": [
+    "72000000",
+    "71354100"
+   ],
+   "deadline": "2027-01-05",
+   "value": null,
+   "currency": "",
+   "winners": [],
+   "description": "L’Agence du Stationnement de la Région de Bruxelles-Capitale, créée par l’ordonnance du 22 janvier 2009, abrogée par l’ordonnance portant organisation de la politique du stationnement et redéfinissant les missions et modalités de gestion de l'Agence du Stationnement de la Région de Bruxelles-Capitale du 6 juillet 2022 (M.B. 08.09.2022) est une société anonyme de droit public (article 34§1er de l’ordonnance du 6 juillet 2022) qui doit réaliser les objectifs de cette ordonnance et dont les bureaux sont établis Rue de l'Hôpital 31 à 1000 Bruxelles. A ce titre, elle souhaite, par l’intermédiaire…",
+   "status": "",
+   "first_seen": "2026-11-25T17:56:26+01:00",
+   "analysis": {},
+   "analysed_at": "",
+   "analysis_model": ""
+  },
+  {
+   "id": "ted:817716-2026",
+   "source": "ted",
+   "kind": "award",
+   "notice": "817716-2026",
+   "notice_type": "can-standard",
+   "title": "Projekt \"Informationssystem Strassenentwässerung (IS-STRE)\"",
+   "buyer": "Generalsekretariat, P+I",
+   "buyer_country": "CH",
+   "published": "2026-11-25",
+   "url": "https://ted.europa.eu/fr/notice/-/detail/817716-2026",
+   "cpv_label": "Services relatifs aux logiciels",
+   "countries": [
+    "CH"
+   ],
+   "cpv": [
+    "72260000",
+    "38221000",
+    "48000000"
+   ],
+   "deadline": "",
+   "value": 523744.5,
+   "currency": "CHF",
+   "winners": [
+    "DE_Geocloud AG"
+   ],
+   "description": "Das Tiefbauamt des Kantons Zürich (TBA) verfolgt mit dem Projekt «Informationssystem Strassenentwässerung (IS-STRE)» das Ziel, die heutige, historisch gewachsene Systemlandschaft der Strassenentwässerung durch eine einheitliche GIS-basierte Fachanwendung auf Basis von ArcGIS Enterprise abzulösen. Die neue Lösung soll die Daten- und Prozesshoheit des TBA stärken, die Arbeitsabläufe zwischen Büro und Feld medienbruchfrei digital unterstützen sowie eine zentrale Datenhaltung auf Basis der Datenmodelle VSA-DSS 2020.1 und VSA-KEK 2020.1 ermöglichen. Gegenstand der Ausschreibung sind die…",
+   "status": "",
+   "first_seen": "2026-11-25T17:56:26+01:00",
+   "analysis": {},
+   "analysed_at": "",
+   "analysis_model": ""
+  },
+  {
+   "id": "ted:817559-2026",
+   "source": "ted",
+   "kind": "open",
+   "notice": "817559-2026",
+   "notice_type": "cn-standard",
+   "title": "”Servicii de elaborare a amenajamentelor silvice pt. Fondul forestier proprietatea publica a statului administrat de OS ROMAN”, DS NEAMT",
+   "buyer": "REGIA NATIONALA A PADURILOR - ROMSILVA RA prin DIRECȚIA SILVICA NEAMT",
+   "buyer_country": "RO",
+   "published": "2026-11-25",
+   "url": "https://ted.europa.eu/fr/notice/-/detail/817559-2026",
+   "cpv_label": "Services de conception d'études",
+   "countries": [
+    "RO"
+   ],
+   "cpv": [
+    "79311100",
+    "71354100",
+    "77230000",
+    "77231400",
+    "90711000"
+   ],
+   "deadline": "2027-01-11",
+   "value": 1775857.0,
+   "currency": "RON",
+   "winners": [],
+   "description": "Servicii de elaborare a amenajamentelor silvice pt. Fondul forestier proprietatea publica a statului administrat de OS ROMAN, conform caietului de sarcini.Descrierea achiziției: Potrivit prevederilor Art. 63 alin. (11) din Legea nr. 331/2024 privind Codul Silvic, cu modificările și completările ulterioare, este necesar ca elaborarea amenajamentelor silvice să se facă prin proceduri de achiziție publică. Amenajarea fondului forestier proprietate publică a statului constituie obligație prioritară a administratorilor fondului forestier. Modul de gestionare a fondului forestier proprietate…",
+   "status": "",
+   "first_seen": "2026-11-25T17:56:26+01:00",
+   "analysis": {},
+   "analysed_at": "",
+   "analysis_model": ""
+  },
+  {
+   "id": "fts:ocds-h6vhtk-07c379:open",
+   "source": "fts",
+   "kind": "open",
+   "notice": "111602-2026",
+   "notice_type": "UK4",
+   "title": "Invitation to Quote - Emesent Hovermap ST-X SLAM LiDAR or Equivalent",
+   "buyer": "CORSERV SOLUTIONS LIMITED",
+   "buyer_country": "GB",
+   "published": "2026-11-25",
+   "url": "https://www.find-tender.service.gov.uk/Notice/111602-2026",
+   "cpv_label": "",
+   "countries": [
+    "GB"
+   ],
+   "cpv": [
+    "38295000",
+    "38296000"
+   ],
+   "deadline": "2026-11-30",
+   "value": 45000.0,
+   "currency": "GBP",
+   "winners": [],
+   "description": "Corserv Solutions is seeking quotations for the supply of an Emesent Hovermap ST-X SLAM LiDAR system or an equivalent solution capable of delivering high-accuracy mobile 3D mapping and data capture.\nSuppliers may propose equivalent products; however, they must provide sufficient technical information to demonstrate equivalence, including details of performance, accuracy, functionality, software compatibility, training, support, and any associated licensing requirements.\nInterested suppliers are invited to submit:\n•\tProduct specification and technical literature.\n•\tDetails of any included…",
+   "status": "",
+   "first_seen": "2026-11-25T17:56:26+01:00",
+   "analysis": {},
+   "analysed_at": "",
+   "analysis_model": ""
+  },
   {
    "id": "ted:816918-2026",
    "source": "ted",
