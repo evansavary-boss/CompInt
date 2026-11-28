@@ -33,15 +33,15 @@
    "ZAR": 18.9949
   }
  },
- "updated_at": "2026-11-27T17:33:27+01:00",
+ "updated_at": "2026-11-28T16:24:55+01:00",
  "sources": [
   {
    "name": "TED",
    "url": "https://api.ted.europa.eu/v3/notices/search",
    "ok": true,
    "error": "",
-   "fetched": 59,
-   "kept": 43,
+   "fetched": 50,
+   "kept": 37,
    "via": "tender"
   },
   {
@@ -49,21 +49,21 @@
    "url": "https://www.find-tender.service.gov.uk/api/1.0/ocdsReleasePackages",
    "ok": true,
    "error": "",
-   "fetched": 935,
-   "kept": 1,
+   "fetched": 623,
+   "kept": 2,
    "via": "tender"
   }
  ],
  "last_run": {
-  "new": 8,
+  "new": 1,
   "sources": [
    {
     "name": "TED",
     "url": "https://api.ted.europa.eu/v3/notices/search",
     "ok": true,
     "error": "",
-    "fetched": 59,
-    "kept": 43,
+    "fetched": 50,
+    "kept": 37,
     "via": "tender"
    },
    {
@@ -71,20 +71,20 @@
     "url": "https://www.find-tender.service.gov.uk/api/1.0/ocdsReleasePackages",
     "ok": true,
     "error": "",
-    "fetched": 935,
-    "kept": 1,
+    "fetched": 623,
+    "kept": 2,
     "via": "tender"
    }
   ],
   "analysis": {
-   "analysed": 53,
-   "relevant": 23,
+   "analysed": 1,
+   "relevant": 1,
    "error": "",
-   "cost_usd": 0.5026
+   "cost_usd": 0.0341
   },
   "pruned": 0
  },
- "fts_synced_until": "2026-11-27T16:00:00",
+ "fts_synced_until": "2026-11-28T15:00:00",
  "tenders": [
   {
    "id": "ted:828092-2026",
@@ -435,6 +435,51 @@
     "fit": "faible"
    },
    "analysed_at": "2026-11-27T17:33:27+01:00",
+   "analysis_model": "claude_cli:sonnet"
+  },
+  {
+   "id": "fts:ocds-h6vhtk-07966a:open",
+   "source": "fts",
+   "kind": "open",
+   "notice": "112763-2026",
+   "notice_type": "UK4",
+   "title": "Satellite-Enabled Heat and Humidity Risk Management for NHS Estates",
+   "buyer": "Department for Science, Innovation & Technology",
+   "buyer_country": "GB",
+   "published": "2026-11-27",
+   "url": "https://www.find-tender.service.gov.uk/Notice/112763-2026",
+   "cpv_label": "",
+   "countries": [
+    "GB"
+   ],
+   "cpv": [
+    "34712000",
+    "34712100",
+    "73000000",
+    "73300000",
+    "48000000",
+    "48420000"
+   ],
+   "deadline": "2026-12-30",
+   "value": 1250000.0,
+   "currency": "GBP",
+   "winners": [],
+   "description": "The UK Space Agency (UKSA) is seeking innovative proposals to research, develop and demonstrate satellite-enabled approaches to identifying, assessing and predicting heat and humidity risks across NHS estates. The competition will fund research and development addressing specific technical uncertainties in translating satellite-derived environmental information into reliable, actionable intelligence for NHS estates and facilities management.\nSuccessful projects will work with participating NHS Trusts, relevant national NHS stakeholders and strategic partners to assess how satellite-derived…",
+   "status": "",
+   "first_seen": "2026-11-28T16:24:55+01:00",
+   "analysis": {
+    "relevant": true,
+    "segment": "environnement_climat",
+    "title_fr": "Gestion par satellite des risques de chaleur et d'humidité pour les sites du NHS",
+    "summary": "Appel à projets de R&D financé par l'UK Space Agency pour développer des méthodes satellitaires d'identification et de prévision des risques de chaleur et d'humidité sur le patrimoine immobilier du NHS.",
+    "why": "Signal d'intérêt public pour l'exploitation de données satellitaires d'observation de la Terre dans la gestion des risques climatiques des infrastructures.",
+    "industries": [
+     "infrastructures",
+     "foret_environnement"
+    ],
+    "fit": "moyenne"
+   },
+   "analysed_at": "2026-11-28T16:24:55+01:00",
    "analysis_model": "claude_cli:sonnet"
   },
   {
